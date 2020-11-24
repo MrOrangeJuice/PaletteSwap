@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"18a53e5a-f7b4-445f-8884-dc02d7d10dab","path":"sprites/sPlayerIdleGreen/sPlayerIdleGreen.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"18a53e5a-f7b4-445f-8884-dc02d7d10dab","path":"sprites/sPlayerIdleGreen/sPlayerIdleGreen.yy",},"LayerId":{"name":"462ec889-f8be-41c3-85d3-3923fc86da2b","path":"sprites/sPlayerIdleGreen/sPlayerIdleGreen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sPlayerIdleGreen","path":"sprites/sPlayerIdleGreen/sPlayerIdleGreen.yy",},"resourceVersion":"1.0","name":"18a53e5a-f7b4-445f-8884-dc02d7d10dab","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"376e28af-462d-4b0d-a52d-6825666c7c42","path":"sprites/sPlayerCanDashGreen/sPlayerCanDashGreen.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"376e28af-462d-4b0d-a52d-6825666c7c42","path":"sprites/sPlayerCanDashGreen/sPlayerCanDashGreen.yy",},"LayerId":{"name":"14fb49df-f182-4eaf-a8fd-c19b2f69a754","path":"sprites/sPlayerCanDashGreen/sPlayerCanDashGreen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sPlayerCanDashGreen","path":"sprites/sPlayerCanDashGreen/sPlayerCanDashGreen.yy",},"resourceVersion":"1.0","name":"376e28af-462d-4b0d-a52d-6825666c7c42","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sPlayerIdleGreen","path":"sprites/sPlayerIdleGreen/sPlayerIdleGreen.yy",},
+    "spriteId": {"name":"sPlayerCanDashGreen","path":"sprites/sPlayerCanDashGreen/sPlayerCanDashGreen.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"9e72e2a1-a624-4832-845a-07b0cdd3c639","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"18a53e5a-f7b4-445f-8884-dc02d7d10dab","path":"sprites/sPlayerIdleGreen/sPlayerIdleGreen.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"bfcb77a9-7c21-4309-a2d2-9657f81aa41e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"376e28af-462d-4b0d-a52d-6825666c7c42","path":"sprites/sPlayerCanDashGreen/sPlayerCanDashGreen.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,21 @@
     "yorigin": 8,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sPlayerIdleGreen","path":"sprites/sPlayerIdleGreen/sPlayerIdleGreen.yy",},
+    "parent": {"name":"sPlayerCanDashGreen","path":"sprites/sPlayerCanDashGreen/sPlayerCanDashGreen.yy",},
     "resourceVersion": "1.3",
-    "name": "sPlayerIdleGreen",
+    "name": "sPlayerCanDashGreen",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"462ec889-f8be-41c3-85d3-3923fc86da2b","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"14fb49df-f182-4eaf-a8fd-c19b2f69a754","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sPlayerIdleGreen",
+  "name": "sPlayerCanDashGreen",
   "tags": [],
   "resourceType": "GMSprite",
 }

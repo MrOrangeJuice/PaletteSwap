@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sPlayerIdleGreen",
-    "path": "sprites/sPlayerIdleGreen/sPlayerIdleGreen.yy",
+    "name": "sPlayerCanDashGreen",
+    "path": "sprites/sPlayerCanDashGreen/sPlayerCanDashGreen.yy",
   },
   "solid": false,
   "visible": true,

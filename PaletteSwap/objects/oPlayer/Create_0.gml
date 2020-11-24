@@ -1,14 +1,19 @@
 hsp = 0;
 vsp = 0;
-grv = 0.6;
-walksp = 2;
+grv = 0.4;
+walksp = 4;
+dashsp = 10;
+dashtime = room_speed * 0.25;
+dashup = false;
+dashdown = false;
+dashleft = false;
+dashright = false;
 currentwalksp = 0;
-running = false;
 airborne = false;
-crouching = false;
-runInAir = true;
+canDash = true;
+isDashing = false;
 canJump = true;
+jumpVar = true;
 jumpBuffer = 0;
-skidSound = true;
 
 controller = 0;
