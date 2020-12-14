@@ -1,3 +1,5 @@
+/// @description Update Physics
+
 // Get Player Input
 key_left = keyboard_check(ord("A"));
 key_right = keyboard_check(ord("D"));
@@ -363,17 +365,14 @@ else
 
 
 // Animation
-if(isDashing)
+
+if(airborne)
 {
-	sprite_index = sPlayerDashGreen;
-}
-else if(canDash)
-{
-	sprite_index = sPlayerCanDashGreen;
+	sprite_index = sFernJumpUp;	
 }
 else
 {
-	sprite_index = sPlayerIdleGreen;	
+	sprite_index = sFernIdle;	
 }
 
 if ((key_right - key_left) != 0) image_xscale = sign((key_right - key_left));
