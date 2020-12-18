@@ -10,6 +10,7 @@
     {"id":{"name":"sPlayerCanDashGreen","path":"sprites/sPlayerCanDashGreen/sPlayerCanDashGreen.yy",},"order":0,},
     {"id":{"name":"snd_Jump","path":"sounds/snd_Jump/snd_Jump.yy",},"order":0,},
     {"id":{"name":"sFernJumpDown","path":"sprites/sFernJumpDown/sFernJumpDown.yy",},"order":8,},
+    {"id":{"name":"sFernRun","path":"sprites/sFernRun/sFernRun.yy",},"order":9,},
     {"id":{"name":"snd_Thud","path":"sounds/snd_Thud/snd_Thud.yy",},"order":4,},
     {"id":{"name":"sFernIcon","path":"sprites/sFernIcon/sFernIcon.yy",},"order":6,},
     {"id":{"name":"sFernIdle","path":"sprites/sFernIdle/sFernIdle.yy",},"order":5,},

@@ -368,11 +368,7 @@ else
 
 if(airborne)
 {
-	if(vsp < -1)
-	{
-		sprite_index = sFernJumpUp;	
-	}
-	else if(vsp > -1 && vsp < 1)
+	if(vsp < 0)
 	{
 		sprite_index = sFernJumpUp;	
 	}
