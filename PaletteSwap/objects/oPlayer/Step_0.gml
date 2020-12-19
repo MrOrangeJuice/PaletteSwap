@@ -379,7 +379,14 @@ if(airborne)
 }
 else
 {
-	sprite_index = sFernIdle;	
+	if(abs(hsp) > 0)
+	{
+		sprite_index = sFernRun;	
+	}
+	else
+	{
+		sprite_index = sFernIdle;	
+	}	
 }
 
 if ((key_right - key_left) != 0) image_xscale = sign((key_right - key_left));

@@ -25,8 +25,8 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"3cc72c1b-beaa-4aaa-a3d0-23f7d5c49866","path":"sprites/sFernRun/sFernRun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3cc72c1b-beaa-4aaa-a3d0-23f7d5c49866","path":"sprites/sFernRun/sFernRun.yy",},"LayerId":{"name":"77572cc2-5077-486a-98bb-b2ebe07bb897","path":"sprites/sFernRun/sFernRun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"3cc72c1b-beaa-4aaa-a3d0-23f7d5c49866","path":"sprites/sFernRun/sFernRun.yy",},"LayerId":{"name":"e1ad6778-2c8f-431b-9a2c-b332d88dacce","path":"sprites/sFernRun/sFernRun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"3cc72c1b-beaa-4aaa-a3d0-23f7d5c49866","path":"sprites/sFernRun/sFernRun.yy",},"LayerId":{"name":"77572cc2-5077-486a-98bb-b2ebe07bb897","path":"sprites/sFernRun/sFernRun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"3cc72c1b-beaa-4aaa-a3d0-23f7d5c49866","path":"sprites/sFernRun/sFernRun.yy",},"LayerId":{"name":"f02d79cc-d42d-4128-b8e0-5fd23145187c","path":"sprites/sFernRun/sFernRun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sFernRun","path":"sprites/sFernRun/sFernRun.yy",},"resourceVersion":"1.0","name":"3cc72c1b-beaa-4aaa-a3d0-23f7d5c49866","tags":[],"resourceType":"GMSpriteFrame",},
   ],
@@ -68,8 +68,8 @@
   },
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Arms","resourceVersion":"1.0","name":"e1ad6778-2c8f-431b-9a2c-b332d88dacce","tags":[],"resourceType":"GMImageLayer",},
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Legs","resourceVersion":"1.0","name":"f02d79cc-d42d-4128-b8e0-5fd23145187c","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Body","resourceVersion":"1.0","name":"77572cc2-5077-486a-98bb-b2ebe07bb897","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Legs","resourceVersion":"1.0","name":"f02d79cc-d42d-4128-b8e0-5fd23145187c","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Sprites",
