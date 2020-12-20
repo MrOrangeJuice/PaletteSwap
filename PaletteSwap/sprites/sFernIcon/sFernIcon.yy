@@ -70,8 +70,8 @@
     {"visible":false,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"920d900e-77ae-40e6-87e6-cff2cfbd5a18","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Fern",
+    "path": "folders/Sprites/Fern.yy",
   },
   "resourceVersion": "1.0",
   "name": "sFernIcon",

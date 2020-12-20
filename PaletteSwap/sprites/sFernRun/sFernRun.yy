@@ -90,8 +90,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Legs","resourceVersion":"1.0","name":"f02d79cc-d42d-4128-b8e0-5fd23145187c","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Fern",
+    "path": "folders/Sprites/Fern.yy",
   },
   "resourceVersion": "1.0",
   "name": "sFernRun",

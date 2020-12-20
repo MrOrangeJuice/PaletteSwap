@@ -25,11 +25,10 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"3cc72c1b-beaa-4aaa-a3d0-23f7d5c49866","path":"sprites/sFernSkid/sFernSkid.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3cc72c1b-beaa-4aaa-a3d0-23f7d5c49866","path":"sprites/sFernSkid/sFernSkid.yy",},"LayerId":{"name":"77572cc2-5077-486a-98bb-b2ebe07bb897","path":"sprites/sFernSkid/sFernSkid.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"3cc72c1b-beaa-4aaa-a3d0-23f7d5c49866","path":"sprites/sFernSkid/sFernSkid.yy",},"LayerId":{"name":"98cfb9fb-7225-48ba-a285-e68accb1045f","path":"sprites/sFernSkid/sFernSkid.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"3cc72c1b-beaa-4aaa-a3d0-23f7d5c49866","path":"sprites/sFernSkid/sFernSkid.yy",},"LayerId":{"name":"76108ece-265c-47e8-8100-e3adb6b4d68d","path":"sprites/sFernSkid/sFernSkid.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"3cc72c1b-beaa-4aaa-a3d0-23f7d5c49866","path":"sprites/sFernSkid/sFernSkid.yy",},"LayerId":{"name":"4905f369-066c-4a6f-9d59-e67a0b7da387","path":"sprites/sFernSkid/sFernSkid.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"3cc72c1b-beaa-4aaa-a3d0-23f7d5c49866","path":"sprites/sFernSkid/sFernSkid.yy",},"LayerId":{"name":"e29028c4-c68d-4340-a977-3beaa8216b22","path":"sprites/sFernSkid/sFernSkid.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"3cc72c1b-beaa-4aaa-a3d0-23f7d5c49866","path":"sprites/sFernSkid/sFernSkid.yy",},"LayerId":{"name":"77572cc2-5077-486a-98bb-b2ebe07bb897","path":"sprites/sFernSkid/sFernSkid.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"3cc72c1b-beaa-4aaa-a3d0-23f7d5c49866","path":"sprites/sFernSkid/sFernSkid.yy",},"LayerId":{"name":"aa8d5a4a-8265-496c-beb8-09d0073c538f","path":"sprites/sFernSkid/sFernSkid.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sFernSkid","path":"sprites/sFernSkid/sFernSkid.yy",},"resourceVersion":"1.0","name":"3cc72c1b-beaa-4aaa-a3d0-23f7d5c49866","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"d14a34b8-8f62-4620-bbdc-51ecb19522af","path":"sprites/sFernSkid/sFernSkid.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
@@ -85,8 +84,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Left Arm","resourceVersion":"1.0","name":"aa8d5a4a-8265-496c-beb8-09d0073c538f","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Fern",
+    "path": "folders/Sprites/Fern.yy",
   },
   "resourceVersion": "1.0",
   "name": "sFernSkid",

@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"462ec889-f8be-41c3-85d3-3923fc86da2b","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Debug",
+    "path": "folders/Sprites/Debug.yy",
   },
   "resourceVersion": "1.0",
   "name": "sPlayerIdleGreen",

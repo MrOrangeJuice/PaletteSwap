@@ -7,8 +7,8 @@ if (instance_exists(oPlayer))
 }
 
 // Update object position
-x += (xTo - x) / 12;
-y += (yTo - y) / 12;
+x += (xTo - x) / 6;
+y += (yTo - y) / 6;
 
 // Keep camera center inside room
 x = clamp(x,view_w_half+buff,room_width-view_w_half-buff);

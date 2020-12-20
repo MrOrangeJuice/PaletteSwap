@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"14fb49df-f182-4eaf-a8fd-c19b2f69a754","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Debug",
+    "path": "folders/Sprites/Debug.yy",
   },
   "resourceVersion": "1.0",
   "name": "sPlayerIdleBlue",

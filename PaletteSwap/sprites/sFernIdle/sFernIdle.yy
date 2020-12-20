@@ -80,8 +80,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"77572cc2-5077-486a-98bb-b2ebe07bb897","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Fern",
+    "path": "folders/Sprites/Fern.yy",
   },
   "resourceVersion": "1.0",
   "name": "sFernIdle",

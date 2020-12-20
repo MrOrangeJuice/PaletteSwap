@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e258cae1-d570-4819-b623-41bbafba70c1","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Debug",
+    "path": "folders/Sprites/Debug.yy",
   },
   "resourceVersion": "1.0",
   "name": "sPlayerDashGreen",

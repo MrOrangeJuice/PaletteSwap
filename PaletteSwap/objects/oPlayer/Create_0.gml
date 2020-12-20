@@ -6,7 +6,6 @@ grv = 0.4;
 walksp = 4;
 dashsp = 10;
 dashtime = room_speed * 0.25;
-dashup = false;
 dashdown = false;
 dashleft = false;
 dashright = false;

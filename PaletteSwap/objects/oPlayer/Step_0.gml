@@ -15,13 +15,13 @@ if (key_left) || (key_right) || (key_jump) || (key_dash) || (key_down) || (key_u
 }
 
 // Gamepad input
-if (gamepad_axis_value(0,gp_axislh) < -0.2 || gamepad_button_check(0,gp_padl) || gamepad_axis_value(4,gp_axislh) < -0.2 || gamepad_button_check(4,gp_padl))
+if (gamepad_axis_value(0,gp_axislh) < -0.4 || gamepad_button_check(0,gp_padl) || gamepad_axis_value(4,gp_axislh) < -0.4 || gamepad_button_check(4,gp_padl))
 {
 	key_left = 1;
 	controller = 1;
 }
 
-if (gamepad_axis_value(0,gp_axislh) > 0.2 || gamepad_button_check(0,gp_padr) || gamepad_axis_value(4,gp_axislh) > 0.2 || gamepad_button_check(4,gp_padr))
+if (gamepad_axis_value(0,gp_axislh) > 0.4 || gamepad_button_check(0,gp_padr) || gamepad_axis_value(4,gp_axislh) > 0.4 || gamepad_button_check(4,gp_padr))
 {
 	key_right = 1;
 	controller = 1;
@@ -41,7 +41,6 @@ if (gamepad_button_check(0,gp_face1) || gamepad_button_check(4,gp_face1))
 if (gamepad_button_check_released(0,gp_face1) || gamepad_button_check_released(4,gp_face1))
 {
 	key_jump_released = 1;
-	controller = 1;
 }
 
 if (gamepad_button_check_pressed(0,gp_face3) || gamepad_button_check_pressed(0,gp_face2) || gamepad_button_check_pressed(4,gp_face3) || gamepad_button_check_pressed(4,gp_face2))
@@ -189,7 +188,7 @@ if(!isDashing)
 else
 {
 	// If a direction has not been picked yet, pick one
-	if(!dashup && !dashdown && !dashleft && !dashright)
+	if(!dashdown && !dashleft && !dashright)
 	{
 		// Reset vsp
 		vsp = 0;
@@ -197,11 +196,7 @@ else
 		// Play dash sound
 		audio_play_sound(snd_Dash, 5, false);
 		
-		if(key_up)
-		{
-			dashup = true;	
-		}
-		else if(key_right)
+		if(key_right)
 		{
 			dashright = true;	
 		}
@@ -228,23 +223,6 @@ else
 	}
 	
 	// Calculate movement
-	if(dashup)
-	{
-		jumpVar = false;
-		vsp = -dashsp;
-		// Handle Vertical Collision Normally
-		if (place_meeting(x,y+vsp,oWall))
-		{
-			while (!place_meeting(x,y+sign(vsp),oWall))
-			{
-				y = y + sign(vsp);
-			}
-			vsp = 0;
-			// Play sound effect
-			audio_play_sound(snd_Thud, 5, false);
-		}
-		y = y + vsp;
-	}
 	if(dashdown)
 	{
 		vsp = dashsp * 1.5;
@@ -260,7 +238,6 @@ else
 			isDashing = false;
 			dashtime = room_speed * 0.25;
 			// Reset dash direction
-			dashup = false;
 			dashdown = false;
 			dashleft = false;
 			dashright = false;
@@ -291,7 +268,6 @@ else
 			isDashing = false;
 			dashtime = room_speed * 0.25;
 			// Reset dash direction
-			dashup = false;
 			dashdown = false;
 			dashleft = false;
 			dashright = false;
@@ -323,7 +299,6 @@ else
 			isDashing = false;
 			dashtime = room_speed * 0.25;
 			// Reset dash direction
-			dashup = false;
 			dashdown = false;
 			dashleft = false;
 			dashright = false;
@@ -340,12 +315,8 @@ else
 	
 	// Decrement timer and end dash if necessary
 	// Up dash doesn't last as long
-	if(dashup)
-	{
-		dashtime = dashtime - 3;	
-	}
 	// Down dash only ends when you touch the ground
-	else if(!dashdown)
+	if(!dashdown)
 	{
 		dashtime--;
 	}
@@ -356,7 +327,6 @@ else
 		isDashing = false;
 		dashtime = room_speed * 0.25;
 		// Reset dash direction
-		dashup = false;
 		dashdown = false;
 		dashleft = false;
 		dashright = false;
