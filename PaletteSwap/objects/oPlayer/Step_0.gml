@@ -379,14 +379,33 @@ if(airborne)
 }
 else
 {
-	if(abs(hsp) > 0)
+	if (sign(hsp) == 0 && !key_left && !key_right)
 	{
-		sprite_index = sFernRun;	
+		sprite_index = sFernIdle;
+	}
+	else if (hsp > 2 && key_left)
+	{
+		sprite_index = sFernSkid;	
+		if(skidSound)
+		{
+			audio_play_sound(snd_Skid, 5, false);	
+		}
+		skidSound = false;
+	}
+	else if (hsp < -2 && key_right)
+	{
+		sprite_index = sFernSkid;	
+		if(skidSound)
+		{
+			audio_play_sound(snd_Skid, 5, false);	
+		}
+		skidSound = false;
 	}
 	else
 	{
-		sprite_index = sFernIdle;	
-	}	
+		skidSound = true;
+		sprite_index = sFernRun;
+	}
 }
 
 if ((key_right - key_left) != 0) image_xscale = sign((key_right - key_left));

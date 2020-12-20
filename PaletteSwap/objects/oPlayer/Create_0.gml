@@ -17,5 +17,6 @@ isDashing = false;
 canJump = true;
 jumpVar = true;
 jumpBuffer = 0;
+skidSound = true;
 
 controller = 0;
