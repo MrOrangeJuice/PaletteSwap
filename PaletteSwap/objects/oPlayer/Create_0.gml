@@ -17,5 +17,6 @@ canJump = true;
 jumpVar = true;
 jumpBuffer = 0;
 skidSound = true;
+wallHit = false;
 
 controller = 0;

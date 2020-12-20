@@ -190,8 +190,9 @@ else
 	// If a direction has not been picked yet, pick one
 	if(!dashdown && !dashleft && !dashright)
 	{
-		// Reset vsp
+		// Reset currentwalksp and vsp
 		vsp = 0;
+		currentwalksp = 0;
 		
 		// Play dash sound
 		audio_play_sound(snd_Dash, 5, false);
