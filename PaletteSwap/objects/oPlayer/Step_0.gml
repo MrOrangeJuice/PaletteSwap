@@ -279,6 +279,15 @@ else
 			// Play sound effect
 			audio_play_sound(snd_Thud, 5, false);
 		}
+		// Vertical Collision
+		if (place_meeting(x,y+vsp,oWall))
+		{
+			while (!place_meeting(x,y+sign(vsp),oWall))
+			{
+				y = y + sign(vsp);
+			}
+			vsp = 0;
+		}
 		x = x + hsp;
 		y = y + vsp;
 	}
@@ -309,6 +318,15 @@ else
 			jumpVar = false;
 			// Play sound effect
 			audio_play_sound(snd_Thud, 5, false);
+		}
+		// Vertical Collision
+		if (place_meeting(x,y+vsp,oWall))
+		{
+			while (!place_meeting(x,y+sign(vsp),oWall))
+			{
+				y = y + sign(vsp);
+			}
+			vsp = 0;
 		}
 		x = x + hsp;
 		y = y + vsp;
