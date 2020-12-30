@@ -1,4 +1,5 @@
 /// @description Render player
+
 draw_self();
 
 if(!canDash && !isDashing)
