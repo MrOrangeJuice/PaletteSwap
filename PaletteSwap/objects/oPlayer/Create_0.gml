@@ -20,3 +20,5 @@ skidSound = true;
 wallHit = false;
 
 controller = 0;
+
+currentframe = 0;

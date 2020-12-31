@@ -12,3 +12,5 @@ global.color = 0;
 //3 purple
 
 global.color_limit = 2; //limit scrollover
+
+global.color_count = 4;
