@@ -4,6 +4,9 @@ display_set_gui_size(RES_W,RES_H);
 
 global.coins = 0;
 coinTextScale = 1;
+global.time = 0;
+timeTextScale = 1;
+timeScaleSet = false;
 
 global.color = 0;
 //0 green
