@@ -24,6 +24,7 @@
     {"id":{"name":"sFernRun","path":"sprites/sFernRun/sFernRun.yy",},"order":4,},
     {"id":{"name":"snd_Thud","path":"sounds/snd_Thud/snd_Thud.yy",},"order":4,},
     {"id":{"name":"tSeaside","path":"tilesets/tSeaside/tSeaside.yy",},"order":0,},
+    {"id":{"name":"sSeaside","path":"sprites/sSeaside/sSeaside.yy",},"order":0,},
     {"id":{"name":"sFernSkid","path":"sprites/sFernSkid/sFernSkid.yy",},"order":5,},
     {"id":{"name":"oCoin","path":"objects/oCoin/oCoin.yy",},"order":4,},
     {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},"order":5,},
@@ -80,6 +81,7 @@
     {"folderPath":"folders/Sprites/Fern.yy","order":13,"resourceVersion":"1.0","name":"Fern","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Debug.yy","order":14,"resourceVersion":"1.0","name":"Debug","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Placeholders.yy","order":16,"resourceVersion":"1.0","name":"Placeholders","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Tilesets.yy","order":17,"resourceVersion":"1.0","name":"Tilesets","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},
