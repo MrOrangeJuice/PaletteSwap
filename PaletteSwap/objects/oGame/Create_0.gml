@@ -4,3 +4,13 @@ display_set_gui_size(RES_W,RES_H);
 
 global.coins = 0;
 coinTextScale = 1;
+
+global.color = 0;
+//0 green
+//1 blue
+//2 red
+//3 purple
+
+global.color_limit = 1; //limit scrollover
+
+global.color_count = 1;
