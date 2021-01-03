@@ -1,7 +1,7 @@
 /// @description Pausing
 if (keyboard_check_pressed(vk_escape)){
-	paused = !paused;
-	if(paused){
+	global.paused = !global.paused;
+	if(global.paused){
 		visible = true;
 		instance_deactivate_all(1);
 	}

@@ -2,8 +2,10 @@
 #macro RES_H 180
 display_set_gui_size(RES_W,RES_H);
 
+// Create basic global variables.
 global.coins = 0;
 global.time = 0;
+global.paused = false;
 
 
 global.color = 0;
