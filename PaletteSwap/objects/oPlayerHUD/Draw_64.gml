@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Draw Player Information
 
 // Draw Coin Count
 coinTextScale = max(coinTextScale * 0.95, 1);

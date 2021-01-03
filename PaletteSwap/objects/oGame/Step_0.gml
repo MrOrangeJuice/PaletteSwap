@@ -1,11 +1,11 @@
-/// @description Check For Full Screen
+/// @description Update core-game elements.
 if (keyboard_check(vk_control)) && (keyboard_check_pressed(ord("F"))) 
 {
 	window_set_fullscreen(!window_get_fullscreen());
 }
 
 // Switch which UI object is active based-on what state the game is in.
-if (global.paused)
+if (global.paused == true)
 {
 	instance_activate_object(pauseMenu);
 	instance_deactivate_object(playerHUD);
@@ -16,7 +16,7 @@ else
 	instance_deactivate_object(pauseMenu);
 }
 
-if(global.coins != 100 && !oScreenDarken.paused)
+if(global.coins != 100 && !global.paused)
 {
 	global.time++;
 }
