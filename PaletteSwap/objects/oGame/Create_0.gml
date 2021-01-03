@@ -14,6 +14,6 @@ global.color = 0;
 //2 red
 //3 purple
 
-global.color_limit = 1; //limit scrollover
+global.color_limit = 2; //limit scrollover
 
-global.color_count = 1;
+global.color_count = 2;
