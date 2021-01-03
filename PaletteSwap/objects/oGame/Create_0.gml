@@ -7,6 +7,8 @@ global.coins = 0;
 global.time = 0;
 global.paused = false;
 
+global.pauseMenu = instance_create_depth(0, 0, 0, pauseMenu);
+global.hud = instance_create_depth(0, 0, 0, playerHUD);
 
 global.color = 0;
 //0 green

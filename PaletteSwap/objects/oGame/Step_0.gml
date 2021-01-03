@@ -7,13 +7,13 @@ if (keyboard_check(vk_control)) && (keyboard_check_pressed(ord("F")))
 // Switch which UI object is active based-on what state the game is in.
 if (global.paused == true)
 {
-	instance_activate_object(pauseMenu);
-	instance_deactivate_object(playerHUD);
+	global.pauseMenu.visible = true;
+	global.hud.visible = false;
 }
 else 
 {
-	instance_activate_object(playerHUD);
-	instance_deactivate_object(pauseMenu);
+	global.pauseMenu.visible = false;
+	global.hud.visible = true;
 }
 
 if(global.coins != 100 && !global.paused)
