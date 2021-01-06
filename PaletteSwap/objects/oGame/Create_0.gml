@@ -6,6 +6,9 @@ display_set_gui_size(RES_W,RES_H);
 global.coins = 0;
 global.time = 0;
 global.paused = false;
+global.hp = 100;
+global.maxHP = 100;
+timeScaleSet = false;
 
 global.pauseMenu = instance_create_depth(0, 0, 0, pauseMenu);
 global.hud = instance_create_depth(0, 0, 0, playerHUD);

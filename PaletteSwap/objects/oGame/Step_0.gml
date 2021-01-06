@@ -4,6 +4,12 @@ if (keyboard_check(vk_control)) && (keyboard_check_pressed(ord("F")))
 	window_set_fullscreen(!window_get_fullscreen());
 }
 
+// Check for a pausing input.
+if (keyboard_check_pressed(vk_escape))
+{
+	global.paused = !global.paused;
+}
+
 // Switch which UI object is active based-on what state the game is in.
 if (global.paused == true)
 {
@@ -16,7 +22,7 @@ else
 	global.hud.visible = true;
 }
 
-if(global.coins != 100 && !global.paused)
+if(global.coins != 100 && global.paused == false)
 {
 	global.time++;
 }

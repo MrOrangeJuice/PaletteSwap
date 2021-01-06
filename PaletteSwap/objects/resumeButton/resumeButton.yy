@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "sCoin",
-    "path": "sprites/sCoin/sCoin.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -21,16 +18,17 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"oCoin","path":"objects/oCoin/oCoin.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":4,"eventType":6,"collisionObjectId":null,"parent":{"name":"resumeButton","path":"objects/resumeButton/resumeButton.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,"parent":{"name":"resumeButton","path":"objects/resumeButton/resumeButton.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Buttons",
+    "path": "folders/Objects/UI Elements/Buttons.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oCoin",
+  "name": "resumeButton",
   "tags": [],
   "resourceType": "GMObject",
 }
