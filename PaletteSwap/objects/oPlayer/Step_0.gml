@@ -353,14 +353,6 @@ else
 	}
 }
 
-// Palette Swap
-if (key_swap){
-	global.color++;
-	if (global.color >= global.color_limit) global.color = 0;
-}
-
-//update frame
-PaletteAnimationSwap();
 
 // Animation
 
@@ -407,3 +399,12 @@ else
 }
 
 if ((key_right - key_left) != 0) image_xscale = sign((key_right - key_left));
+
+// Palette Swap
+if (key_swap){
+	global.color++;
+	if (global.color >= global.color_limit) global.color = 0;
+}
+
+//update frame
+PaletteAnimationSwap();
