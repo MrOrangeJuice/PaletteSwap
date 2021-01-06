@@ -360,22 +360,26 @@ if(airborne)
 {
 	if(vsp < 0)
 	{
-		sprite_index = sFernJumpUp;	
+		//sprite_index = sFernJumpUp;
+		SwapSprite(sFernJumpUp);
 	}
 	else
 	{
-		sprite_index = sFernJumpDown;
+		//sprite_index = sFernJumpDown;
+		SwapSprite(sFernJumpDown);
 	}
 }
 else
 {
 	if (sign(hsp) == 0 && !key_left && !key_right)
 	{
-		sprite_index = sFernIdle;
+		//sprite_index = sFernIdle;
+		SwapSprite(sFernIdle);
 	}
 	else if (hsp > 2 && key_left)
 	{
-		sprite_index = sFernSkid;	
+		//sprite_index = sFernSkid;	
+		SwapSprite(sFernSkid);
 		if(skidSound)
 		{
 			audio_play_sound(snd_Skid, 5, false);	
@@ -384,7 +388,8 @@ else
 	}
 	else if (hsp < -2 && key_right)
 	{
-		sprite_index = sFernSkid;	
+		//sprite_index = sFernSkid;	
+		SwapSprite(sFernSkid);
 		if(skidSound)
 		{
 			audio_play_sound(snd_Skid, 5, false);	
@@ -394,7 +399,8 @@ else
 	else
 	{
 		skidSound = true;
-		sprite_index = sFernRun;
+		//sprite_index = sFernRun;
+		SwapSprite(sFernRun);
 	}
 }
 

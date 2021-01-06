@@ -17,6 +17,7 @@
     {"id":{"name":"sTutorial","path":"sprites/sTutorial/sTutorial.yy",},"order":15,},
     {"id":{"name":"PaletteAnimationSwap","path":"scripts/PaletteAnimationSwap/PaletteAnimationSwap.yy",},"order":3,},
     {"id":{"name":"snd_Jump","path":"sounds/snd_Jump/snd_Jump.yy",},"order":0,},
+    {"id":{"name":"SwapSprite","path":"scripts/SwapSprite/SwapSprite.yy",},"order":4,},
     {"id":{"name":"snd_Skid","path":"sounds/snd_Skid/snd_Skid.yy",},"order":7,},
     {"id":{"name":"oScreenDarken","path":"objects/oScreenDarken/oScreenDarken.yy",},"order":7,},
     {"id":{"name":"BluePH","path":"sprites/BluePH/BluePH.yy",},"order":1,},
