@@ -367,13 +367,42 @@ if (global.paused == false)
 
 	// Animation
 
-	if(airborne)
+if(airborne)
+{
+	if(vsp < 0)
 	{
-		if(vsp < 0)
+		//sprite_index = sFernJumpUp;
+		SwapSprite(sFernJumpUp);
+	}
+	else
+	{
+		//sprite_index = sFernJumpDown;
+		SwapSprite(sFernJumpDown);
+	}
+}
+else
+{
+	if (sign(hsp) == 0 && !key_left && !key_right)
+	{
+		//sprite_index = sFernIdle;
+		SwapSprite(sFernIdle);
+	}
+	else if (hsp > 2 && key_left)
+	{
+		//sprite_index = sFernSkid;	
+		SwapSprite(sFernSkid);
+		if(skidSound)
 		{
 			sprite_index = sFernJumpUp;	
 		}
 		else
+		skidSound = false;
+	}
+	else if (hsp < -2 && key_right)
+	{
+		//sprite_index = sFernSkid;	
+		SwapSprite(sFernSkid);
+		if(skidSound)
 		{
 			sprite_index = sFernJumpDown;
 		}
@@ -407,8 +436,21 @@ if (global.paused == false)
 			skidSound = true;
 			sprite_index = sFernRun;
 		}
+		skidSound = true;
+		//sprite_index = sFernRun;
+		SwapSprite(sFernRun);
 	}
 
 	if ((key_right - key_left) != 0) image_xscale = sign((key_right - key_left));
 
 }
+if ((key_right - key_left) != 0) image_xscale = sign((key_right - key_left));
+
+// Palette Swap
+if (key_swap){
+	global.color++;
+	if (global.color >= global.color_limit) global.color = 0;
+}
+
+//update frame
+PaletteAnimationSwap();
