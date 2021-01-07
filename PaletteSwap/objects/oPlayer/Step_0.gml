@@ -10,7 +10,7 @@ key_dash = keyboard_check_pressed(ord("O")) || keyboard_check_pressed(vk_lshift)
 key_up = keyboard_check(ord("W"));
 key_swap = keyboard_check_released(ord("I")) || keyboard_check_released(ord("Q"));
 
-if (key_left) || (key_right) || (key_jump) || (key_dash) || (key_down) || (key_up) || (key_jump_released)
+if (key_left) || (key_right) || (key_jump) || (key_dash) || (key_down) || (key_up) || (key_jump_released) || (key_swap)
 {
 	controller = 0;
 }
@@ -54,7 +54,13 @@ if (gamepad_axis_value(0,gp_axislv) < -0.4 || gamepad_button_check(0,gp_padu) ||
 	key_up = 1;
 	controller = 1;
 }
-	
+
+if (gamepad_button_check_pressed(0,gp_shoulderr) || gamepad_button_check_pressed(0,gp_shoulderl) || gamepad_button_check_pressed(3,gp_shoulderr) || gamepad_button_check_pressed(3,gp_shoulderl))
+{
+	key_swap = 1;
+	controller = 1;
+}
+
 // If player doesn't release jump, they can't jump again
 if(key_jump_released)
 {
