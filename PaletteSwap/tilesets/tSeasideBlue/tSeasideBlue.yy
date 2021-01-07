@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sSeasideGreen",
-    "path": "sprites/sSeasideGreen/sSeasideGreen.yy",
+    "name": "sSeasideBlue",
+    "path": "sprites/sSeasideBlue/sSeasideBlue.yy",
   },
   "tileWidth": 16,
   "tileHeight": 16,
@@ -100,7 +100,7 @@
     "path": "folders/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "tSeaside",
+  "name": "tSeasideBlue",
   "tags": [],
   "resourceType": "GMTileSet",
 }

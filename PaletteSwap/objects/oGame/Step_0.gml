@@ -16,3 +16,15 @@ else
 		timeScaleSet = true;
 	}
 }
+
+// Set tile layer
+if(global.color == 1)
+{
+	layer_set_visible("GreenTiles", false);	
+	layer_set_visible("GreenBackground", false);	
+}
+if(global.color == 0)
+{
+	layer_set_visible("GreenTiles", true);	
+	layer_set_visible("GreenBackground", true);	
+}

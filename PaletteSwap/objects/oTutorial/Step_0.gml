@@ -1,9 +1,12 @@
-/// @description Switch input
+/// @description Switch Input and Palette
 if (oPlayer.controller)
 {
-	image_index = 0;
+	sprite_index = sTutorialController;
 }
 else
 {
-	image_index = 1;	
+	sprite_index = sTutorialKeyboard;
 }
+
+//update frame
+PaletteAnimationSwap();
