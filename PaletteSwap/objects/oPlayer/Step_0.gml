@@ -451,6 +451,7 @@ if (key_swap){
 	global.color++;
 	if (global.color >= global.color_limit) global.color = 0;
 }
+}
 
 //update frame
 PaletteAnimationSwap();

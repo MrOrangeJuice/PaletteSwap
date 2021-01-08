@@ -2,17 +2,17 @@
 
 // Draw Coin Count
 coinTextScale = max(coinTextScale * 0.95, 1);
-DrawSetText($002704, fUI, fa_right, fa_top);
+DrawSetText(c_black, fUI, fa_right, fa_top);
 draw_text_transformed(RES_W-2,3,"Coins *" + string(global.coins), coinTextScale, coinTextScale,0);
 
 // Draw Time
 timeTextScale = max(timeTextScale * 0.95, 1);
-DrawSetText($002704, fUI, fa_right, fa_top);
+DrawSetText(c_black, fUI, fa_right, fa_top);
 draw_text_transformed(RES_W-2,12,"Time: " + string_format((global.time / room_speed), 0, 2), timeTextScale, timeTextScale,0);
 
 // Draw Player HP
 hpTextScale = max(hpTextScale * 0.95, 1);
-DrawSetText($002704, fUI, fa_right, fa_top);
+DrawSetText(c_black, fUI, fa_right, fa_top);
 draw_text_transformed(RES_W-2,21,"HP: " + string(global.hp) + "/ " + string(global.maxHP), hpTextScale, hpTextScale,0);
 
 // Draw current palette color.
@@ -40,5 +40,5 @@ switch (global.color)
 
 // Draw Currently Active Palette
 paletteTextScale = max(paletteTextScale * 0.95, 1);
-DrawSetText($002704, fUI, fa_right, fa_top);
+DrawSetText(c_black, fUI, fa_right, fa_top);
 draw_text_transformed(RES_W-2,30, currentColor, paletteTextScale, paletteTextScale,0);

@@ -10,8 +10,8 @@ global.hp = 100;
 global.maxHP = 100;
 timeScaleSet = false;
 
-global.pauseMenu = instance_create_depth(0, 0, 0, pauseMenu);
-global.hud = instance_create_depth(0, 0, 0, playerHUD);
+global.pauseMenu = instance_create_layer(0, 0, "Player", pauseMenu);
+global.hud = instance_create_layer(0, 0, "Player", playerHUD);
 
 global.color = 0;
 //0 green

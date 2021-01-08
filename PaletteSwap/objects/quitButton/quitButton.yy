@@ -1,10 +1,10 @@
 {
   "spriteId": {
-    "name": "GrayPH",
-    "path": "sprites/GrayPH/GrayPH.yy",
+    "name": "ExitGameButton",
+    "path": "sprites/ExitGameButton/ExitGameButton.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -20,7 +20,9 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,"parent":{"name":"quitButton","path":"objects/quitButton/quitButton.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {

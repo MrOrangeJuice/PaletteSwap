@@ -5,5 +5,5 @@ image_yscale = 0.5;
 
 if (global.paused == true)
 {
-	draw_self();	
+	draw_self();
 }

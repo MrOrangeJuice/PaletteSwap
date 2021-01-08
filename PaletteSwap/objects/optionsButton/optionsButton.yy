@@ -1,10 +1,10 @@
 {
   "spriteId": {
-    "name": "BrownPH",
-    "path": "sprites/BrownPH/BrownPH.yy",
+    "name": "OptionsButton",
+    "path": "sprites/OptionsButton/OptionsButton.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -20,7 +20,9 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,"parent":{"name":"optionsButton","path":"objects/optionsButton/optionsButton.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
