@@ -13,6 +13,8 @@ global.color = 0;
 //1 blue
 //2 red
 //3 purple
+coinTextScale = 1;
+timeTextScale = 1.2;
 
 global.color_limit = 2; //limit scrollover
 

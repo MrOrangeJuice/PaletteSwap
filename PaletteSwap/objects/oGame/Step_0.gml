@@ -16,7 +16,7 @@ else
 	instance_deactivate_object(pauseMenu);
 }
 
-if(global.coins != 100 && !oScreenDarken.paused)
+if(global.coins != 100 && !global.paused)
 {
 	global.time++;
 }

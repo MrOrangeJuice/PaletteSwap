@@ -23,6 +23,7 @@
     {"id":{"name":"SwapSprite","path":"scripts/SwapSprite/SwapSprite.yy",},"order":4,},
     {"id":{"name":"snd_Skid","path":"sounds/snd_Skid/snd_Skid.yy",},"order":7,},
     {"id":{"name":"oScreenDarken","path":"objects/oScreenDarken/oScreenDarken.yy",},"order":7,},
+    {"id":{"name":"oPauseButtons","path":"objects/oPauseButtons/oPauseButtons.yy",},"order":10,},
     {"id":{"name":"BluePH","path":"sprites/BluePH/BluePH.yy",},"order":1,},
     {"id":{"name":"snd_Coin","path":"sounds/snd_Coin/snd_Coin.yy",},"order":8,},
     {"id":{"name":"sFernJumpDown","path":"sprites/sFernJumpDown/sFernJumpDown.yy",},"order":2,},
@@ -45,6 +46,7 @@
     {"id":{"name":"shDark","path":"shaders/shDark/shDark.yy",},"order":0,},
     {"id":{"name":"DrawSetText","path":"scripts/DrawSetText/DrawSetText.yy",},"order":2,},
     {"id":{"name":"sFernJumpUp","path":"sprites/sFernJumpUp/sFernJumpUp.yy",},"order":3,},
+    {"id":{"name":"MainMenu","path":"rooms/MainMenu/MainMenu.yy",},"order":1,},
     {"id":{"name":"sPlayerDashGreen","path":"sprites/sPlayerDashGreen/sPlayerDashGreen.yy",},"order":1,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":0,},
     {"id":{"name":"PinkPH","path":"sprites/PinkPH/PinkPH.yy",},"order":6,},
@@ -52,6 +54,7 @@
     {"id":{"name":"sCoin","path":"sprites/sCoin/sCoin.yy",},"order":12,},
     {"id":{"name":"GrayPH","path":"sprites/GrayPH/GrayPH.yy",},"order":3,},
     {"id":{"name":"sBackgroundBlue","path":"sprites/sBackgroundBlue/sBackgroundBlue.yy",},"order":21,},
+    {"id":{"name":"oMenu","path":"objects/oMenu/oMenu.yy",},"order":9,},
     {"id":{"name":"RedPH","path":"sprites/RedPH/RedPH.yy",},"order":7,},
     {"id":{"name":"BrownPH","path":"sprites/BrownPH/BrownPH.yy",},"order":2,},
     {"id":{"name":"GreenPH","path":"sprites/GreenPH/GreenPH.yy",},"order":4,},
@@ -72,6 +75,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"MainMenu","path":"rooms/MainMenu/MainMenu.yy",},},
     {"roomId":{"name":"rTest","path":"rooms/rTest/rTest.yy",},},
   ],
   "Folders": [
