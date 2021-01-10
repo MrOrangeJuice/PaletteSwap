@@ -244,13 +244,14 @@ else
 			// If you hit the ground, pop up and reenable dash
 			vsp = -11;
 			isDashing = false;
+			alarm[0] = room_speed * 0.3;
 			dashtime = room_speed * 0.25;
 			// Reset dash direction
 			dashdown = false;
 			dashleft = false;
 			dashright = false;
 			// Reset dash ability
-			canDash = true;
+				//canDash = true;
 			// Disable variable jump
 			jumpVar = false;
 			// Play sound effect
@@ -274,13 +275,14 @@ else
 			vsp = -7;
 			
 			isDashing = false;
+			alarm[0] = room_speed * 0.3;
 			dashtime = room_speed * 0.25;
 			// Reset dash direction
 			dashdown = false;
 			dashleft = false;
 			dashright = false;
 			// Reset dash ability
-			canDash = true;
+				//canDash = true;
 			// Disable variable jump
 			jumpVar = false;
 			// Play sound effect
@@ -314,13 +316,14 @@ else
 			vsp = -7;
 			
 			isDashing = false;
+			alarm[0] = room_speed * 0.3;
 			dashtime = room_speed * 0.25;
 			// Reset dash direction
 			dashdown = false;
 			dashleft = false;
 			dashright = false;
 			// Reset dash ability
-			canDash = true;
+				//canDash = true;
 			// Disable variable jump
 			jumpVar = false;
 			// Play sound effect
