@@ -1,0 +1,13 @@
+Movement changes:
+-Dash has a cooldown on rebounding, so dashing into walls cannot be continually spammed
+-You cannot perform a downward dash unless you are midair
+-Downward dash is easier to input
+-Inputting left and right simultaneously on keyboard results in Fern skidding to a halt, and are treated as if no directional input is given
+-Fern will always dash the way he is facing now
+
+Visual changes:
+-Sprite swaps have an optional 'slow mode' for delayed but cleaner transition in some cases
+
+Potential Bugs:
+-Jumping while dashing results in a very large jump (possible tech)
+-Drashing into a wall you are already colliding with results in having no cooldown (possible tech)

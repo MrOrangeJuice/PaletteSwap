@@ -204,17 +204,17 @@ else
 		// Play dash sound
 		audio_play_sound(snd_Dash, 5, false);
 		
-		if(key_right)
+		if(key_down && airborne)
+		{
+			dashdown = true;	
+		}
+		else if(key_right && !key_left)
 		{
 			dashright = true;	
 		}
-		else if(key_left)
+		else if(key_left && !key_right)
 		{
 			dashleft = true;	
-		}
-		else if(key_down)
-		{
-			dashdown = true;	
 		}
 		else
 		{
@@ -375,7 +375,7 @@ if(airborne)
 	else
 	{
 		//sprite_index = sFernJumpDown;
-		SwapSprite(sFernJumpDown, true);
+		SwapSprite(sFernJumpDown, false);
 	}
 }
 else
