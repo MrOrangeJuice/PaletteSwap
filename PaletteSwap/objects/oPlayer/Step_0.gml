@@ -10,7 +10,7 @@ key_dash = keyboard_check_pressed(ord("O")) || keyboard_check_pressed(vk_lshift)
 key_up = keyboard_check(ord("W"));
 key_swap = keyboard_check_released(ord("I")) || keyboard_check_released(ord("Q"));
 
-if (key_left) || (key_right) || (key_jump) || (key_dash) || (key_down) || (key_up) || (key_jump_released)
+if (key_left) || (key_right) || (key_jump) || (key_dash) || (key_down) || (key_up) || (key_jump_released) || (key_swap)
 {
 	controller = 0;
 }
@@ -54,7 +54,13 @@ if (gamepad_axis_value(0,gp_axislv) < -0.4 || gamepad_button_check(0,gp_padu) ||
 	key_up = 1;
 	controller = 1;
 }
-	
+
+if (gamepad_button_check_pressed(0,gp_shoulderr) || gamepad_button_check_pressed(0,gp_shoulderl) || gamepad_button_check_pressed(3,gp_shoulderr) || gamepad_button_check_pressed(3,gp_shoulderl))
+{
+	key_swap = 1;
+	controller = 1;
+}
+
 // If player doesn't release jump, they can't jump again
 if(key_jump_released)
 {
@@ -353,14 +359,6 @@ else
 	}
 }
 
-// Palette Swap
-if (key_swap){
-	global.color++;
-	if (global.color >= global.color_limit) global.color = 0;
-}
-
-//update frame
-PaletteAnimationSwap();
 
 // Animation
 
@@ -368,22 +366,26 @@ if(airborne)
 {
 	if(vsp < 0)
 	{
-		sprite_index = sFernJumpUp;	
+		//sprite_index = sFernJumpUp;
+		SwapSprite(sFernJumpUp);
 	}
 	else
 	{
-		sprite_index = sFernJumpDown;
+		//sprite_index = sFernJumpDown;
+		SwapSprite(sFernJumpDown);
 	}
 }
 else
 {
 	if (sign(hsp) == 0 && !key_left && !key_right)
 	{
-		sprite_index = sFernIdle;
+		//sprite_index = sFernIdle;
+		SwapSprite(sFernIdle);
 	}
 	else if (hsp > 2 && key_left)
 	{
-		sprite_index = sFernSkid;	
+		//sprite_index = sFernSkid;	
+		SwapSprite(sFernSkid);
 		if(skidSound)
 		{
 			audio_play_sound(snd_Skid, 5, false);	
@@ -392,7 +394,8 @@ else
 	}
 	else if (hsp < -2 && key_right)
 	{
-		sprite_index = sFernSkid;	
+		//sprite_index = sFernSkid;	
+		SwapSprite(sFernSkid);
 		if(skidSound)
 		{
 			audio_play_sound(snd_Skid, 5, false);	
@@ -402,8 +405,18 @@ else
 	else
 	{
 		skidSound = true;
-		sprite_index = sFernRun;
+		//sprite_index = sFernRun;
+		SwapSprite(sFernRun);
 	}
 }
 
 if ((key_right - key_left) != 0) image_xscale = sign((key_right - key_left));
+
+// Palette Swap
+if (key_swap){
+	global.color++;
+	if (global.color >= global.color_limit) global.color = 0;
+}
+
+//update frame
+PaletteAnimationSwap();
