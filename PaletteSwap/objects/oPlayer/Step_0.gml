@@ -8,9 +8,10 @@ key_jump_released = keyboard_check_released(ord("P")) || keyboard_check_released
 key_down = keyboard_check(ord("S"));
 key_dash = keyboard_check_pressed(ord("O")) || keyboard_check_pressed(vk_lshift);
 key_up = keyboard_check(ord("W"));
-key_swap = keyboard_check_released(ord("I")) || keyboard_check_released(ord("Q"));
+key_swap_down = keyboard_check_released(ord("Q")) || keyboard_check_released(ord("U"));
+key_swap_up = keyboard_check_released(ord("E")) || keyboard_check_released(ord("I"));
 
-if (key_left) || (key_right) || (key_jump) || (key_dash) || (key_down) || (key_up) || (key_jump_released) || (key_swap)
+if (key_left) || (key_right) || (key_jump) || (key_dash) || (key_down) || (key_up) || (key_jump_released) || (key_swap_up) || (key_swap_down)
 {
 	controller = 0;
 }
@@ -55,9 +56,14 @@ if (gamepad_axis_value(0,gp_axislv) < -0.4 || gamepad_button_check(0,gp_padu) ||
 	controller = 1;
 }
 
-if (gamepad_button_check_pressed(0,gp_shoulderr) || gamepad_button_check_pressed(0,gp_shoulderl) || gamepad_button_check_pressed(3,gp_shoulderr) || gamepad_button_check_pressed(3,gp_shoulderl))
+if (gamepad_button_check_pressed(0,gp_shoulderr) || gamepad_button_check_pressed(0,gp_shoulderl))
 {
-	key_swap = 1;
+	key_swap_down = 1;
+	controller = 1;
+}
+if (gamepad_button_check_pressed(3,gp_shoulderr) || gamepad_button_check_pressed(3,gp_shoulderl))
+{
+	key_swap_up = 1;
 	controller = 1;
 }
 
@@ -417,9 +423,13 @@ else
 if ((key_right - key_left) != 0 && !isDashing) image_xscale = sign((key_right - key_left));
 
 // Palette Swap
-if (key_swap){
+if (key_swap_up){
 	global.color++;
 	if (global.color >= global.color_limit) global.color = 0;
+}
+if (key_swap_down){
+	global.color--;
+	if (global.color < 0) global.color = global.color_limit - 1;
 }
 
 //update frame
