@@ -413,7 +413,8 @@ else
 	}
 }
 
-if ((key_right - key_left) != 0) image_xscale = sign((key_right - key_left));
+
+if ((key_right - key_left) != 0 && !isDashing) image_xscale = sign((key_right - key_left));
 
 // Palette Swap
 if (key_swap){
