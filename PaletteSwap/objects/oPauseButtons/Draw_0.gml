@@ -9,4 +9,3 @@ repeat(buttonCount){
 	draw_text(global.menuX, global.menuY + buttonHeight * c - 50, button[c]);
 	c++;	
 }
-show_debug_message("HERE");

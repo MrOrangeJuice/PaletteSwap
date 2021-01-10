@@ -3,8 +3,8 @@ if (keyboard_check_pressed(vk_escape)){
 	global.paused = !global.paused;
 	if(global.paused){
 		visible = true;
-		global.menuX = oPlayer.x;
-		global.menuY = oPlayer.y;
+		global.menuX = oCamera.x;
+		global.menuY = oCamera.y;
 		instance_deactivate_all(1);
 		instance_activate_object(oPauseButtons);
 	}
