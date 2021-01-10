@@ -113,7 +113,7 @@ if (key_dash && canDash)
 if(!isDashing)
 {
 	// Build up speed depending on inputs
-	if(key_left)
+	if(key_left && !key_right)
 	{
 		currentwalksp -= 0.25;
 		if(currentwalksp < -walksp)
@@ -121,7 +121,7 @@ if(!isDashing)
 			currentwalksp = -walksp;
 		}
 	}
-	if(key_right)
+	if(key_right && !key_left)
 	{
 		currentwalksp += 0.25;
 		if(currentwalksp > walksp)
@@ -130,7 +130,7 @@ if(!isDashing)
 		}
 	}
 	// Slow down if not moving
-	if (!key_left && !key_right)
+	if (!(key_left || key_right) || (key_left && key_right))
 	{
 		if(currentwalksp < 0)
 		{
@@ -370,25 +370,25 @@ if(airborne)
 	if(vsp < 0)
 	{
 		//sprite_index = sFernJumpUp;
-		SwapSprite(sFernJumpUp);
+		SwapSprite(sFernJumpUp, false);
 	}
 	else
 	{
 		//sprite_index = sFernJumpDown;
-		SwapSprite(sFernJumpDown);
+		SwapSprite(sFernJumpDown, true);
 	}
 }
 else
 {
-	if (sign(hsp) == 0 && !key_left && !key_right)
+	if (sign(hsp) == 0 && ( !(key_left || key_right) || (key_left && key_right) ) )
 	{
 		//sprite_index = sFernIdle;
-		SwapSprite(sFernIdle);
+		SwapSprite(sFernIdle, true);
 	}
 	else if (hsp > 2 && key_left)
 	{
 		//sprite_index = sFernSkid;	
-		SwapSprite(sFernSkid);
+		SwapSprite(sFernSkid, false);
 		if(skidSound)
 		{
 			audio_play_sound(snd_Skid, 5, false);	
@@ -398,7 +398,7 @@ else
 	else if (hsp < -2 && key_right)
 	{
 		//sprite_index = sFernSkid;	
-		SwapSprite(sFernSkid);
+		SwapSprite(sFernSkid, false);
 		if(skidSound)
 		{
 			audio_play_sound(snd_Skid, 5, false);	
@@ -409,7 +409,7 @@ else
 	{
 		skidSound = true;
 		//sprite_index = sFernRun;
-		SwapSprite(sFernRun);
+		SwapSprite(sFernRun, false);
 	}
 }
 

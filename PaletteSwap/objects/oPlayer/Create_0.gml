@@ -22,3 +22,4 @@ wallHit = false;
 controller = 0;
 
 currentframe = 0;
+currentframe_floor = 0;
