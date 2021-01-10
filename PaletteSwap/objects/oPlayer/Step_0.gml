@@ -8,7 +8,7 @@ key_jump_released = keyboard_check_released(ord("P")) || keyboard_check_released
 key_down = keyboard_check(ord("S"));
 key_dash = keyboard_check_pressed(ord("O")) || keyboard_check_pressed(vk_lshift);
 key_up = keyboard_check(ord("W"));
-key_swap = keyboard_check_released(ord("I")) || keyboard_check_released(ord("Q"));
+key_swap = keyboard_check_pressed(ord("I")) || keyboard_check_pressed(ord("Q"));
 
 if (key_left) || (key_right) || (key_jump) || (key_dash) || (key_down) || (key_up) || (key_jump_released) || (key_swap)
 {
@@ -255,6 +255,8 @@ else
 			jumpVar = false;
 			// Play sound effect
 			audio_play_sound(snd_Thud, 5, false);
+			// Shake screen
+			ScreenShake(1,5);
 		}
 		y = y + vsp;
 	}
@@ -285,6 +287,8 @@ else
 			jumpVar = false;
 			// Play sound effect
 			audio_play_sound(snd_Thud, 5, false);
+			// Shake screen
+			ScreenShake(1,5);
 		}
 		// Vertical Collision
 		if (place_meeting(x,y+vsp,oWall))
@@ -325,6 +329,8 @@ else
 			jumpVar = false;
 			// Play sound effect
 			audio_play_sound(snd_Thud, 5, false);
+			// Shake screen
+			ScreenShake(1,5);
 		}
 		// Vertical Collision
 		if (place_meeting(x,y+vsp,oWall))
@@ -416,6 +422,10 @@ if ((key_right - key_left) != 0) image_xscale = sign((key_right - key_left));
 if (key_swap){
 	global.color++;
 	if (global.color >= global.color_limit) global.color = 0;
+	// Create swapping effects
+	instance_create_layer(x,y,"FX",oRift);
+	audio_play_sound(snd_Swap,5,false);
+	ScreenShake(2,10);
 }
 
 //update frame
