@@ -5,6 +5,7 @@ Movement changes:
 -Inputting left and right simultaneously on keyboard results in Fern skidding to a halt, and are treated as if no directional input is given
 -Fern will always dash the way he is facing now
 -Fern can not visually turn around during a dash
+-Q and U cycle palettes left, E and I cycle right
 
 Visual changes:
 -Sprite swaps have an optional 'slow mode' for delayed but cleaner transition in some cases- this will be changed for something better shortly
