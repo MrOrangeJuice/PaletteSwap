@@ -16,6 +16,7 @@ isDashing = false;
 canJump = true;
 jumpVar = true;
 jumpBuffer = 0;
+jumped = false; //purely to stop jumpdash
 skidSound = true;
 wallHit = false;
 

@@ -67,20 +67,13 @@ if (gamepad_button_check_pressed(3,gp_shoulderr) || gamepad_button_check_pressed
 	controller = 1;
 }
 
+//orient sprite
+if ((key_right - key_left) != 0 && !isDashing) image_xscale = sign((key_right - key_left));
+
 // If player doesn't release jump, they can't jump again
 if(key_jump_released)
 {
 	canJump = true;
-}
-
-// Decrement jump buffer
-jumpBuffer -= 1;
-if (jumpBuffer > 0) && (key_jump) && (canJump)
-{
-	jumpBuffer = 0;
-	vsp = -10;
-	audio_play_sound(snd_Jump, 5, false);
-	canJump = false;
 }
 
 // Check if player is airborne
@@ -93,6 +86,20 @@ else
 	airborne = false;
 	// Reset jump buffer
 	jumpBuffer = 5;
+	jumped = false;
+	global.color = 0;
+}
+
+// Decrement jump buffer
+jumpBuffer -= 1;
+if (jumpBuffer > 0) && (key_jump) && (canJump)
+{
+	jumpBuffer = 0;
+	vsp = -10;
+	audio_play_sound(snd_Jump, 5, false);
+	canJump = false;
+	jumped = true;
+	global.color = 1;
 }
 
 // Check if player can dash
@@ -113,6 +120,8 @@ else
 if (key_dash && canDash)
 {
 	isDashing = true;
+	jumped = false;
+	global.color = 0;
 }
 
 // If player is dashing, don't worry about other inputs
@@ -250,7 +259,7 @@ else
 			// If you hit the ground, pop up and reenable dash
 			vsp = -11;
 			isDashing = false;
-			alarm[0] = room_speed * 0.3;
+			alarm[0] = room_speed * 0.15;
 			dashtime = room_speed * 0.25;
 			// Reset dash direction
 			dashdown = false;
@@ -281,7 +290,7 @@ else
 			vsp = -7;
 			
 			isDashing = false;
-			alarm[0] = room_speed * 0.3;
+			alarm[0] = room_speed * 0.15;
 			dashtime = room_speed * 0.25;
 			// Reset dash direction
 			dashdown = false;
@@ -304,6 +313,10 @@ else
 			vsp = 0;
 		}
 		x = x + hsp;
+		//apply gravity if dashing in air
+		if (jumped){
+			vsp += grv;
+		}
 		y = y + vsp;
 	}
 	if(dashleft)
@@ -322,7 +335,7 @@ else
 			vsp = -7;
 			
 			isDashing = false;
-			alarm[0] = room_speed * 0.3;
+			alarm[0] = room_speed * 0.15;
 			dashtime = room_speed * 0.25;
 			// Reset dash direction
 			dashdown = false;
@@ -345,6 +358,10 @@ else
 			vsp = 0;
 		}
 		x = x + hsp;
+		//apply gravity if dashing in air
+		if (jumped){
+			vsp += grv;
+		}
 		y = y + vsp;
 	}
 	
@@ -404,7 +421,7 @@ else
 		skidSound = false;
 	}
 	//skid l -> r
-	else if (hsp < 0 && key_right)
+	else if (hsp < -0 && key_right)
 	{
 		//sprite_index = sFernSkid;	
 		SwapSprite(sFernSkid);
@@ -422,9 +439,6 @@ else
 		SwapSprite(sFernRun);
 	}
 }
-
-
-if ((key_right - key_left) != 0 && !isDashing) image_xscale = sign((key_right - key_left));
 
 // Palette Swap
 if (key_swap_up){
