@@ -87,7 +87,6 @@ else
 	// Reset jump buffer
 	jumpBuffer = 5;
 	jumped = false;
-	global.color = 0;
 }
 
 // Decrement jump buffer
@@ -99,7 +98,6 @@ if (jumpBuffer > 0) && (key_jump) && (canJump)
 	audio_play_sound(snd_Jump, 5, false);
 	canJump = false;
 	jumped = true;
-	global.color = 1;
 }
 
 // Check if player can dash
@@ -121,7 +119,6 @@ if (key_dash && canDash)
 {
 	isDashing = true;
 	jumped = false;
-	global.color = 0;
 }
 
 // If player is dashing, don't worry about other inputs
