@@ -1,2 +1,2 @@
 /// @description Create
-paused = false;
+global.paused = false;

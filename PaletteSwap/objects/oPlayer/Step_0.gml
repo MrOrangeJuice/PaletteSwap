@@ -50,18 +50,19 @@ if (gamepad_button_check_pressed(0,gp_face3) || gamepad_button_check_pressed(0,g
 	key_dash = 1;
 	controller = 1;
 }
+
 if (gamepad_axis_value(0,gp_axislv) < -0.4 || gamepad_button_check(0,gp_padu) || gamepad_axis_value(4,gp_axislv) < -0.4 || gamepad_button_check(4,gp_padu))
 {
 	key_up = 1;
 	controller = 1;
 }
 
-if (gamepad_button_check_pressed(0,gp_shoulderr) || gamepad_button_check_pressed(0,gp_shoulderl))
+if (gamepad_button_check_pressed(0,gp_shoulderr) || gamepad_button_check_pressed(0,gp_shoulderl) || gamepad_button_check_pressed(4,gp_shoulderr) || gamepad_button_check_pressed(4,gp_shoulderl))
 {
 	key_swap_down = 1;
 	controller = 1;
 }
-if (gamepad_button_check_pressed(3,gp_shoulderr) || gamepad_button_check_pressed(3,gp_shoulderl))
+if (gamepad_button_check_pressed(3,gp_shoulderr) || gamepad_button_check_pressed(3,gp_shoulderl) || gamepad_button_check_pressed(7,gp_shoulderr) || gamepad_button_check_pressed(7gp_shoulderl))
 {
 	key_swap_up = 1;
 	controller = 1;
@@ -268,6 +269,8 @@ else
 			jumpVar = false;
 			// Play sound effect
 			audio_play_sound(snd_Thud, 5, false);
+			// Shake screen
+			ScreenShake(1,5);
 		}
 		y = y + vsp;
 	}
@@ -299,6 +302,8 @@ else
 			jumpVar = false;
 			// Play sound effect
 			audio_play_sound(snd_Thud, 5, false);
+			// Shake screen
+			ScreenShake(1,5);
 		}
 		// Vertical Collision
 		if (place_meeting(x,y+vsp,oWall))
@@ -344,6 +349,8 @@ else
 			jumpVar = false;
 			// Play sound effect
 			audio_play_sound(snd_Thud, 5, false);
+			// Shake screen
+			ScreenShake(1,5);
 		}
 		// Vertical Collision
 		if (place_meeting(x,y+vsp,oWall))
@@ -441,6 +448,10 @@ else
 if (key_swap_up){
 	global.color++;
 	if (global.color >= global.color_limit) global.color = 0;
+	// Create swapping effects
+	instance_create_layer(x,y,"FX",oRift);
+	audio_play_sound(snd_Swap,5,false);
+	ScreenShake(2,10);
 }
 if (key_swap_down){
 	global.color--;
