@@ -6,14 +6,11 @@ Movement changes:
 -Fern will always dash the way he is facing now
 -Fern can not visually turn around during a dash
 -Q and U cycle palettes left, E and I cycle right
-
-Visual changes:
--Sprite swaps have an optional 'slow mode' for delayed but cleaner transition in some cases- this will be changed for something better shortly
+-Removed backwards dash
+-Removed long jump
 
 Potential Bugs, Possible Tech:
--Jumping while dashing results in a very large jump
 -Dashing into a wall you are already colliding with results in having no cooldown
--A backwards dash can be performed
 
 Known Bugs:
--Game reads inputs while window isn't in focus
+-Game reads SHIFT input while window isn't in focus
