@@ -368,52 +368,65 @@ else
 
 
 // Animation
-
-if(airborne)
+if(isDashing)
 {
-	if(vsp < 0)
+	if(dashdown)
 	{
-		//sprite_index = sFernJumpUp;
-		SwapSprite(sFernJumpUp);
+		SwapSprite(sFernDashDown);	
 	}
 	else
 	{
-		//sprite_index = sFernJumpDown;
-		SwapSprite(sFernJumpDown);
-	}
+		SwapSprite(sFernDash);
+	}	
 }
 else
 {
-	if (sign(hsp) == 0 && !key_left && !key_right)
+	if(airborne)
 	{
-		//sprite_index = sFernIdle;
-		SwapSprite(sFernIdle);
-	}
-	else if (hsp > 2 && key_left)
-	{
-		//sprite_index = sFernSkid;	
-		SwapSprite(sFernSkid);
-		if(skidSound)
+		if(vsp < 0)
 		{
-			audio_play_sound(snd_Skid, 5, false);	
+			//sprite_index = sFernJumpUp;
+			SwapSprite(sFernJumpUp);
 		}
-		skidSound = false;
-	}
-	else if (hsp < -2 && key_right)
-	{
-		//sprite_index = sFernSkid;	
-		SwapSprite(sFernSkid);
-		if(skidSound)
+		else
 		{
-			audio_play_sound(snd_Skid, 5, false);	
+			//sprite_index = sFernJumpDown;
+			SwapSprite(sFernJumpDown);
 		}
-		skidSound = false;
 	}
 	else
 	{
-		skidSound = true;
-		//sprite_index = sFernRun;
-		SwapSprite(sFernRun);
+		if (sign(hsp) == 0 && !key_left && !key_right)
+		{
+			//sprite_index = sFernIdle;
+			SwapSprite(sFernIdle);
+		}
+		else if (hsp > 2 && key_left)
+		{
+			//sprite_index = sFernSkid;	
+			SwapSprite(sFernSkid);
+			if(skidSound)
+			{
+				audio_play_sound(snd_Skid, 5, false);	
+			}
+			skidSound = false;
+		}
+		else if (hsp < -2 && key_right)
+		{
+			//sprite_index = sFernSkid;	
+			SwapSprite(sFernSkid);
+			if(skidSound)
+			{
+				audio_play_sound(snd_Skid, 5, false);	
+			}
+			skidSound = false;
+		}
+		else
+		{
+			skidSound = true;
+			//sprite_index = sFernRun;
+			SwapSprite(sFernRun);
+		}
 	}
 }
 
