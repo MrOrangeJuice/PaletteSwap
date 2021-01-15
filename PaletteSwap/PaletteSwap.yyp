@@ -23,6 +23,7 @@
     {"id":{"name":"SwapSprite","path":"scripts/SwapSprite/SwapSprite.yy",},"order":4,},
     {"id":{"name":"snd_Swap","path":"sounds/snd_Swap/snd_Swap.yy",},"order":9,},
     {"id":{"name":"sFernDash","path":"sprites/sFernDash/sFernDash.yy",},"order":6,},
+    {"id":{"name":"sFernDashDown","path":"sprites/sFernDashDown/sFernDashDown.yy",},"order":7,},
     {"id":{"name":"snd_Skid","path":"sounds/snd_Skid/snd_Skid.yy",},"order":7,},
     {"id":{"name":"oScreenDarken","path":"objects/oScreenDarken/oScreenDarken.yy",},"order":7,},
     {"id":{"name":"oPauseButtons","path":"objects/oPauseButtons/oPauseButtons.yy",},"order":10,},

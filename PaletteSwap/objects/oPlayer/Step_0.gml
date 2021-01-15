@@ -391,23 +391,36 @@ else
 
 
 // Animation
-
-if(airborne)
+if(isDashing)
 {
-	if(vsp < 0)
+	if(dashdown)
 	{
-		//sprite_index = sFernJumpUp;
-		SwapSprite(sFernJumpUp);
+		SwapSprite(sFernDashDown);	
 	}
 	else
 	{
-		//sprite_index = sFernJumpDown;
-		SwapSprite(sFernJumpDown);
-	}
+		SwapSprite(sFernDash);
+	}	
 }
 else
 {
-	//idle
+	if(airborne)
+	{
+		if(vsp < 0)
+		{
+			//sprite_index = sFernJumpUp;
+			SwapSprite(sFernJumpUp);
+		}
+		else
+		{
+			//sprite_index = sFernJumpDown;
+			SwapSprite(sFernJumpDown);
+		}
+	}
+	//run otherwise
+	else
+	{
+		//idle
 	if (sign(hsp) == 0 && ( !(key_left || key_right) || (key_left && key_right) ) )
 	{
 		//sprite_index = sFernIdle;
@@ -419,10 +432,10 @@ else
 		//sprite_index = sFernSkid;	
 		SwapSprite(sFernSkid);
 		if(skidSound)
-		{
-			audio_play_sound(snd_Skid, 5, false);	
-		}
-		skidSound = false;
+			{
+				audio_play_sound(snd_Skid, 5, false);	
+			}
+			skidSound = false;
 	}
 	//skid l -> r
 	else if (hsp < -0 && key_right)
@@ -430,17 +443,17 @@ else
 		//sprite_index = sFernSkid;	
 		SwapSprite(sFernSkid);
 		if(skidSound)
-		{
-			audio_play_sound(snd_Skid, 5, false);	
+			{
+				audio_play_sound(snd_Skid, 5, false);	
+			}
+			skidSound = false;
 		}
-		skidSound = false;
-	}
-	//run otherwise
-	else
-	{
-		skidSound = true;
-		//sprite_index = sFernRun;
-		SwapSprite(sFernRun);
+		else
+		{
+			skidSound = true;
+			//sprite_index = sFernRun;
+			SwapSprite(sFernRun);
+		}
 	}
 }
 
