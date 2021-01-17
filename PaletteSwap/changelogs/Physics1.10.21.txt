@@ -1,0 +1,16 @@
+Movement changes:
+-Dash has a cooldown on rebounding, so dashing into walls cannot be continually spammed
+-You cannot perform a downward dash unless you are midair
+-Downward dash is easier to input
+-Inputting left and right simultaneously on keyboard results in Fern skidding to a halt, and are treated as if no directional input is given
+-Fern will always dash the way he is facing now
+-Fern can not visually turn around during a dash
+-Q and U cycle palettes left, E and I cycle right
+-Removed backwards dash
+-Removed long jump
+
+Potential Bugs, Possible Tech:
+-Dashing into a wall you are already colliding with results in having no cooldown
+
+Known Bugs:
+-Game reads SHIFT input while window isn't in focus

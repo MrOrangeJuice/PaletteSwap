@@ -8,9 +8,10 @@ key_jump_released = keyboard_check_released(ord("P")) || keyboard_check_released
 key_down = keyboard_check(ord("S"));
 key_dash = keyboard_check_pressed(ord("O")) || keyboard_check_pressed(vk_lshift);
 key_up = keyboard_check(ord("W"));
-key_swap = keyboard_check_released(ord("I")) || keyboard_check_released(ord("Q"));
+key_swap_down = keyboard_check_released(ord("Q")) || keyboard_check_released(ord("U"));
+key_swap_up = keyboard_check_released(ord("E")) || keyboard_check_released(ord("I"));
 
-if (key_left) || (key_right) || (key_jump) || (key_dash) || (key_down) || (key_up) || (key_jump_released) || (key_swap)
+if (key_left) || (key_right) || (key_jump) || (key_dash) || (key_down) || (key_up) || (key_jump_released) || (key_swap_up) || (key_swap_down)
 {
 	controller = 0;
 }
@@ -49,32 +50,31 @@ if (gamepad_button_check_pressed(0,gp_face3) || gamepad_button_check_pressed(0,g
 	key_dash = 1;
 	controller = 1;
 }
+
 if (gamepad_axis_value(0,gp_axislv) < -0.4 || gamepad_button_check(0,gp_padu) || gamepad_axis_value(4,gp_axislv) < -0.4 || gamepad_button_check(4,gp_padu))
 {
 	key_up = 1;
 	controller = 1;
 }
 
-if (gamepad_button_check_pressed(0,gp_shoulderr) || gamepad_button_check_pressed(0,gp_shoulderl) || gamepad_button_check_pressed(3,gp_shoulderr) || gamepad_button_check_pressed(3,gp_shoulderl))
+if (gamepad_button_check_pressed(0,gp_shoulderl) || gamepad_button_check_pressed(0,gp_shoulderl) || gamepad_button_check_pressed(4,gp_shoulderl) || gamepad_button_check_pressed(4,gp_shoulderl))
 {
-	key_swap = 1;
+	key_swap_down = 1;
 	controller = 1;
 }
+if (gamepad_button_check_pressed(0,gp_shoulderr) || gamepad_button_check_pressed(0,gp_shoulderr) || gamepad_button_check_pressed(4,gp_shoulderr) || gamepad_button_check_pressed(4,gp_shoulderr))
+{
+	key_swap_up = 1;
+	controller = 1;
+}
+
+//orient sprite
+if ((key_right - key_left) != 0 && !isDashing) image_xscale = sign((key_right - key_left));
 
 // If player doesn't release jump, they can't jump again
 if(key_jump_released)
 {
 	canJump = true;
-}
-
-// Decrement jump buffer
-jumpBuffer -= 1;
-if (jumpBuffer > 0) && (key_jump) && (canJump)
-{
-	jumpBuffer = 0;
-	vsp = -10;
-	audio_play_sound(snd_Jump, 5, false);
-	canJump = false;
 }
 
 // Check if player is airborne
@@ -87,6 +87,18 @@ else
 	airborne = false;
 	// Reset jump buffer
 	jumpBuffer = 5;
+	jumped = false;
+}
+
+// Decrement jump buffer
+jumpBuffer -= 1;
+if (jumpBuffer > 0) && (key_jump) && (canJump)
+{
+	jumpBuffer = 0;
+	vsp = -10;
+	audio_play_sound(snd_Jump, 5, false);
+	canJump = false;
+	jumped = true;
 }
 
 // Check if player can dash
@@ -107,13 +119,14 @@ else
 if (key_dash && canDash)
 {
 	isDashing = true;
+	jumped = false;
 }
 
 // If player is dashing, don't worry about other inputs
 if(!isDashing)
 {
 	// Build up speed depending on inputs
-	if(key_left)
+	if(key_left && !key_right)
 	{
 		currentwalksp -= 0.25;
 		if(currentwalksp < -walksp)
@@ -121,7 +134,7 @@ if(!isDashing)
 			currentwalksp = -walksp;
 		}
 	}
-	if(key_right)
+	if(key_right && !key_left)
 	{
 		currentwalksp += 0.25;
 		if(currentwalksp > walksp)
@@ -130,7 +143,7 @@ if(!isDashing)
 		}
 	}
 	// Slow down if not moving
-	if (!key_left && !key_right)
+	if (!(key_left || key_right) || (key_left && key_right))
 	{
 		if(currentwalksp < 0)
 		{
@@ -204,17 +217,17 @@ else
 		// Play dash sound
 		audio_play_sound(snd_Dash, 5, false);
 		
-		if(key_right)
+		if(key_down && airborne)
+		{
+			dashdown = true;	
+		}
+		else if(key_right && !key_left)
 		{
 			dashright = true;	
 		}
-		else if(key_left)
+		else if(key_left && !key_right)
 		{
 			dashleft = true;	
-		}
-		else if(key_down)
-		{
-			dashdown = true;	
 		}
 		else
 		{
@@ -244,17 +257,20 @@ else
 			// If you hit the ground, pop up and reenable dash
 			vsp = -11;
 			isDashing = false;
+			alarm[0] = room_speed * 0.15;
 			dashtime = room_speed * 0.25;
 			// Reset dash direction
 			dashdown = false;
 			dashleft = false;
 			dashright = false;
 			// Reset dash ability
-			canDash = true;
+				//canDash = true;
 			// Disable variable jump
 			jumpVar = false;
 			// Play sound effect
 			audio_play_sound(snd_Thud, 5, false);
+			// Shake screen
+			ScreenShake(1,5);
 		}
 		y = y + vsp;
 	}
@@ -274,17 +290,20 @@ else
 			vsp = -7;
 			
 			isDashing = false;
+			alarm[0] = room_speed * 0.15;
 			dashtime = room_speed * 0.25;
 			// Reset dash direction
 			dashdown = false;
 			dashleft = false;
 			dashright = false;
 			// Reset dash ability
-			canDash = true;
+				//canDash = true;
 			// Disable variable jump
 			jumpVar = false;
 			// Play sound effect
 			audio_play_sound(snd_Thud, 5, false);
+			// Shake screen
+			ScreenShake(1,5);
 		}
 		// Vertical Collision
 		if (place_meeting(x,y+vsp,oWall))
@@ -296,6 +315,10 @@ else
 			vsp = 0;
 		}
 		x = x + hsp;
+		//apply gravity if dashing in air
+		if (jumped){
+			vsp += grv;
+		}
 		y = y + vsp;
 	}
 	if(dashleft)
@@ -314,17 +337,20 @@ else
 			vsp = -7;
 			
 			isDashing = false;
+			alarm[0] = room_speed * 0.15;
 			dashtime = room_speed * 0.25;
 			// Reset dash direction
 			dashdown = false;
 			dashleft = false;
 			dashright = false;
 			// Reset dash ability
-			canDash = true;
+				//canDash = true;
 			// Disable variable jump
 			jumpVar = false;
 			// Play sound effect
 			audio_play_sound(snd_Thud, 5, false);
+			// Shake screen
+			ScreenShake(1,5);
 		}
 		// Vertical Collision
 		if (place_meeting(x,y+vsp,oWall))
@@ -336,6 +362,10 @@ else
 			vsp = 0;
 		}
 		x = x + hsp;
+		//apply gravity if dashing in air
+		if (jumped){
+			vsp += grv;
+		}
 		y = y + vsp;
 	}
 	
@@ -361,61 +391,88 @@ else
 
 
 // Animation
-
-if(airborne)
+if(isDashing)
 {
-	if(vsp < 0)
+	if(dashdown)
 	{
-		//sprite_index = sFernJumpUp;
-		SwapSprite(sFernJumpUp);
+		SwapSprite(sFernDashDown);	
 	}
 	else
 	{
-		//sprite_index = sFernJumpDown;
-		SwapSprite(sFernJumpDown);
-	}
+		SwapSprite(sFernDash);
+	}	
 }
 else
 {
-	if (sign(hsp) == 0 && !key_left && !key_right)
+	if(airborne)
+	{
+		if(vsp < 0)
+		{
+			//sprite_index = sFernJumpUp;
+			SwapSprite(sFernJumpUp);
+		}
+		else
+		{
+			//sprite_index = sFernJumpDown;
+			SwapSprite(sFernJumpDown);
+		}
+	}
+	//run otherwise
+	else
+	{
+		//idle
+	if (sign(hsp) == 0 && ( !(key_left || key_right) || (key_left && key_right) ) )
 	{
 		//sprite_index = sFernIdle;
 		SwapSprite(sFernIdle);
 	}
-	else if (hsp > 2 && key_left)
+	//slid r -> l
+	else if (hsp > 0 && key_left)
 	{
 		//sprite_index = sFernSkid;	
 		SwapSprite(sFernSkid);
 		if(skidSound)
-		{
-			audio_play_sound(snd_Skid, 5, false);	
-		}
-		skidSound = false;
+			{
+				audio_play_sound(snd_Skid, 5, false);	
+			}
+			skidSound = false;
 	}
-	else if (hsp < -2 && key_right)
+	//skid l -> r
+	else if (hsp < -0 && key_right)
 	{
 		//sprite_index = sFernSkid;	
 		SwapSprite(sFernSkid);
 		if(skidSound)
-		{
-			audio_play_sound(snd_Skid, 5, false);	
+			{
+				audio_play_sound(snd_Skid, 5, false);	
+			}
+			skidSound = false;
 		}
-		skidSound = false;
-	}
-	else
-	{
-		skidSound = true;
-		//sprite_index = sFernRun;
-		SwapSprite(sFernRun);
+		else
+		{
+			skidSound = true;
+			//sprite_index = sFernRun;
+			SwapSprite(sFernRun);
+		}
 	}
 }
 
-if ((key_right - key_left) != 0) image_xscale = sign((key_right - key_left));
-
 // Palette Swap
-if (key_swap){
+if (key_swap_up){
 	global.color++;
 	if (global.color >= global.color_limit) global.color = 0;
+	// Create swapping effects
+	instance_create_layer(x,y,"FX",oRift);
+	audio_play_sound(snd_Swap,5,false);
+	ScreenShake(2,10);
+}
+if (key_swap_down){
+	global.color--;
+	if (global.color < 0) global.color = global.color_limit - 1;
+	// Create swapping effects
+	instance_create_layer(x,y,"FX",oRift);
+	audio_play_sound(snd_Swap,5,false);
+	ScreenShake(2,10);
 }
 
 //update frame

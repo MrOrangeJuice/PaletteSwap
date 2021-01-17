@@ -4,7 +4,7 @@
 //updates sprite, needs currentframe
 function SwapSprite(newSprite){
 	if (sprite_index != newSprite){
-		sprite_index = newSprite;
-		currentframe = 0;
+			sprite_index = newSprite;
+			currentframe = 0;
 	}
 }
