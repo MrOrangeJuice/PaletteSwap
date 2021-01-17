@@ -9,6 +9,11 @@ global.paused = false;
 
 global.hp = 100;
 global.maxHP = 100;
+global.textSpeed = .75;
+global.stopMovement = false;
+global.textUp = false;
+global.lastAxislv4Value = 0;
+global.lastAxislv0Value = 0;
 
 global.color = 0;
 //0 green
