@@ -73,6 +73,7 @@
     {"id":{"name":"sTextbox","path":"sprites/sTextbox/sTextbox.yy",},"order":23,},
     {"id":{"name":"StretchBox","path":"scripts/StretchBox/StretchBox.yy",},"order":5,},
     {"id":{"name":"snd_Reset","path":"sounds/snd_Reset/snd_Reset.yy",},"order":1,},
+    {"id":{"name":"rTest","path":"rooms/rTest/rTest.yy",},"order":6,},
     {"id":{"name":"rTestAlex","path":"rooms/rTestAlex/rTestAlex.yy",},"order":0,},
   ],
   "Options": [
@@ -95,6 +96,7 @@
     {"roomId":{"name":"rTestJulien","path":"rooms/rTestJulien/rTestJulien.yy",},},
     {"roomId":{"name":"rTestJustin","path":"rooms/rTestJustin/rTestJustin.yy",},},
     {"roomId":{"name":"rTestNick","path":"rooms/rTestNick/rTestNick.yy",},},
+    {"roomId":{"name":"rTest","path":"rooms/rTest/rTest.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
