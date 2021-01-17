@@ -1,5 +1,4 @@
 /// @description Update Physics
-
 // Get Player Input
 key_left = keyboard_check(ord("A"));
 key_right = keyboard_check(ord("D"));
@@ -60,7 +59,7 @@ if (gamepad_button_check_pressed(0,gp_shoulderr) || gamepad_button_check_pressed
 	key_swap = 1;
 	controller = 1;
 }
-
+if(!global.paused && !global.textUp){
 // If player doesn't release jump, they can't jump again
 if(key_jump_released)
 {
@@ -167,7 +166,6 @@ if(!isDashing)
 	{
 		jumpVar = true;	
 	}
-
 	// Horizontal Collision
 	if (place_meeting(x+hsp,y,oWall))
 	{
@@ -417,6 +415,6 @@ if (key_swap){
 	global.color++;
 	if (global.color >= global.color_limit) global.color = 0;
 }
-
+}
 //update frame
 PaletteAnimationSwap();

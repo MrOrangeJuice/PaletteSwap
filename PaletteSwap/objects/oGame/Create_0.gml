@@ -6,7 +6,11 @@ display_set_gui_size(RES_W,RES_H);
 global.coins = 0;
 global.time = 0;
 global.paused = false;
-
+global.textSpeed = .75;
+global.stopMovement = false;
+global.textUp = false;
+global.lastAxislv4Value = 0;
+global.lastAxislv0Value = 0;
 
 global.color = 0;
 //0 green
@@ -15,6 +19,7 @@ global.color = 0;
 //3 purple
 coinTextScale = 1;
 timeTextScale = 1.2;
+timeScaleSet = false;
 
 global.color_limit = 2; //limit scrollover
 
