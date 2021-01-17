@@ -1,5 +1,4 @@
 /// @description Update Physics
-
 // Get Player Input
 key_left = keyboard_check(ord("A"));
 key_right = keyboard_check(ord("D"));
@@ -68,9 +67,10 @@ if (gamepad_button_check_pressed(0,gp_shoulderr) || gamepad_button_check_pressed
 	controller = 1;
 }
 
-//orient sprite
-if ((key_right - key_left) != 0 && !isDashing) image_xscale = sign((key_right - key_left));
+if(!global.paused && !global.textUp){
 
+	//orient sprite
+	if ((key_right - key_left) != 0 && !isDashing) image_xscale = sign((key_right - key_left));
 // If player doesn't release jump, they can't jump again
 if(key_jump_released)
 {
@@ -180,7 +180,6 @@ if(!isDashing)
 	{
 		jumpVar = true;	
 	}
-
 	// Horizontal Collision
 	if (place_meeting(x+hsp,y,oWall))
 	{
@@ -474,6 +473,6 @@ if (key_swap_down){
 	audio_play_sound(snd_Swap,5,false);
 	ScreenShake(2,10);
 }
-
+}
 //update frame
 PaletteAnimationSwap();
