@@ -20,6 +20,8 @@ jumped = false; //purely to stop jumpdash
 skidSound = true;
 wallHit = false;
 
+skidding = false; //skidding check
+
 controller = 0;
 
 currentframe = 0;
