@@ -9,7 +9,7 @@ if (gamepad_button_check_pressed(0,gp_face1) || gamepad_button_check_pressed(4,g
 if(key_enter == 1){
 	switch(menuIndex){
 	case 0:
-	room_goto(rTest);
+	room_goto(rTestDrew);
 		break;
 	case 1:
 		game_end();

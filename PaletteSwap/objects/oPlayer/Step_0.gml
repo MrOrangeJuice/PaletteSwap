@@ -166,7 +166,6 @@ if(!isDashing)
 	}
 
 	hsp = currentwalksp;
-
 	vsp = vsp + grv;
 
 	// Variable jump height
@@ -190,6 +189,24 @@ if(!isDashing)
 		hsp = 0;
 		currentwalksp = 0;
 	}
+	//collision with palette walls
+	if (place_meeting(x+hsp,y,oPaletteWall))
+	{
+		switch (global.color){
+			case 0:
+				while (!place_meeting(x+sign(hsp),y,oPaletteWall))
+				{
+					x = x + sign(hsp);
+				}
+				hsp = 0;
+				currentwalksp = 0;
+			break;
+			case 1:
+				//currentwalksp /= 1.2;
+				hsp /= 2;
+			break;
+		}
+	}
 	x = x + hsp;
 
 	// Vertical Collision
@@ -200,6 +217,22 @@ if(!isDashing)
 			y = y + sign(vsp);
 		}
 		vsp = 0;
+	}
+	// Vertical Collision
+	if (place_meeting(x,y+vsp,oPaletteWall))
+	{
+		switch (global.color){
+			case 0:
+				while (!place_meeting(x,y+sign(vsp),oPaletteWall))
+				{
+					y = y + sign(vsp);
+				}
+				vsp = 0;
+			break;
+			case 1:
+				vsp /= 1.2;
+			break;
+		}
 	}
 	y = y + vsp;
 }
