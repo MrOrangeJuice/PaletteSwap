@@ -78,12 +78,11 @@ if(key_jump_released)
 }
 
 // Check if player is airborne
-if (!place_meeting(x,y+1,oWall))
+if (!place_meeting(x,y+1,oWall) && !place_meeting(x,y+1,oPaletteWall))
 {
 	airborne = true;
 }
-else 
-{
+else if ((swimming && (vsp == 0 || vsp > 1.6)) || !swimming){
 	airborne = false;
 	// Reset jump buffer
 	jumpBuffer = 5;
@@ -228,11 +227,16 @@ if(!isDashing)
 					y = y + sign(vsp);
 				}
 				vsp = 0;
+				swimming = false;
 			break;
 			case 1:
 				vsp /= 1.2;
+				swimming = true;
 			break;
 		}
+	}
+	else{
+		swimming = false;
 	}
 	y = y + vsp;
 }
@@ -304,6 +308,38 @@ else
 			// Shake screen
 			ScreenShake(1,5);
 		}
+		if (place_meeting(x,y+vsp,oPaletteWall))
+		{
+			switch (global.color)
+			{
+			case 0:
+				while (!place_meeting(x,y+sign(vsp),oPaletteWall))
+				{
+					y = y + sign(vsp);
+				}
+				// If you hit the ground, pop up and reenable dash
+				vsp = -11;
+				isDashing = false;
+				alarm[0] = room_speed * 0.15;
+				dashtime = room_speed * 0.25;
+				// Reset dash direction
+				dashdown = false;
+				dashleft = false;
+				dashright = false;
+				// Reset dash ability
+					//canDash = true;
+				// Disable variable jump
+				jumpVar = false;
+				// Play sound effect
+				audio_play_sound(snd_Thud, 5, false);
+				// Shake screen
+				ScreenShake(1,5);
+			break;
+			case 1:
+				vsp /= 1.5;
+			break;
+			}
+		}
 		y = y + vsp;
 	}
 	if(dashright)
@@ -336,6 +372,41 @@ else
 			audio_play_sound(snd_Thud, 5, false);
 			// Shake screen
 			ScreenShake(1,5);
+		}
+		//palette block
+		if (place_meeting(x+hsp,y,oPaletteWall))
+		{
+			switch (global.color){
+			case 0:
+				while (!place_meeting(x+sign(hsp),y,oPaletteWall))
+				{
+					x = x + sign(hsp);
+				}
+				// Bounce off wall
+				currentwalksp = -6;
+				hsp = currentwalksp;
+				vsp = -7;
+			
+				isDashing = false;
+				alarm[0] = room_speed * 0.15;
+				dashtime = room_speed * 0.25;
+				// Reset dash direction
+				dashdown = false;
+				dashleft = false;
+				dashright = false;
+				// Reset dash ability
+					//canDash = true;
+				// Disable variable jump
+				jumpVar = false;
+				// Play sound effect
+				audio_play_sound(snd_Thud, 5, false);
+				// Shake screen
+				ScreenShake(1,5);
+			break;
+			case 1:
+				hsp /= 1.5;
+			break;
+			}
 		}
 		// Vertical Collision
 		if (place_meeting(x,y+vsp,oWall))
@@ -383,6 +454,40 @@ else
 			audio_play_sound(snd_Thud, 5, false);
 			// Shake screen
 			ScreenShake(1,5);
+		}
+		if (place_meeting(x+hsp,y,oPaletteWall))
+		{
+			switch (global.color){
+			case 0:
+				while (!place_meeting(x+sign(hsp),y,oPaletteWall))
+				{
+					x = x + sign(hsp);
+				}
+				// Bounce off wall
+				currentwalksp = 6;
+				hsp = currentwalksp;
+				vsp = -7;
+			
+				isDashing = false;
+				alarm[0] = room_speed * 0.15;
+				dashtime = room_speed * 0.25;
+				// Reset dash direction
+				dashdown = false;
+				dashleft = false;
+				dashright = false;
+				// Reset dash ability
+					//canDash = true;
+				// Disable variable jump
+				jumpVar = false;
+				// Play sound effect
+				audio_play_sound(snd_Thud, 5, false);
+				// Shake screen
+				ScreenShake(1,5);
+			break;
+			case 1:
+				hsp /= 1.5;
+			break;
+			}
 		}
 		// Vertical Collision
 		if (place_meeting(x,y+vsp,oWall))
@@ -459,7 +564,7 @@ else
 		SwapSprite(sFernIdle);
 	}
 	//slid r -> l
-	else if ((hsp > 2 || (skidding && hsp > 0)) && key_left)
+	else if ((hsp > 2 || (skidding && hsp > 0)) && key_left && !swimming)
 	{
 		//sprite_index = sFernSkid;	
 		SwapSprite(sFernSkid);
@@ -471,7 +576,7 @@ else
 			skidSound = false;
 	}
 	//skid l -> r
-	else if ((hsp < -2 || (skidding && hsp < 0)) && key_right)
+	else if ((hsp < -2 || (skidding && hsp < 0)) && key_right && !swimming)
 	{
 		//sprite_index = sFernSkid;	
 		SwapSprite(sFernSkid);
@@ -493,7 +598,7 @@ else
 }
 
 // Palette Swap
-if (key_swap_up){
+if (key_swap_up && !swimming){
 	global.color++;
 	if (global.color >= global.color_limit) global.color = 0;
 	// Create swapping effects
@@ -501,7 +606,7 @@ if (key_swap_up){
 	audio_play_sound(snd_Swap,5,false);
 	ScreenShake(2,10);
 }
-if (key_swap_down){
+if (key_swap_down && !swimming){
 	global.color--;
 	if (global.color < 0) global.color = global.color_limit - 1;
 	// Create swapping effects
@@ -509,6 +614,7 @@ if (key_swap_down){
 	audio_play_sound(snd_Swap,5,false);
 	ScreenShake(2,10);
 }
-}
+
 //update frame
 PaletteAnimationSwap();
+}
