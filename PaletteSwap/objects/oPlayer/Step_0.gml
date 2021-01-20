@@ -7,8 +7,8 @@ key_jump_released = keyboard_check_released(ord("P")) || keyboard_check_released
 key_down = keyboard_check(ord("S"));
 key_dash = keyboard_check_pressed(ord("O")) || keyboard_check_pressed(vk_lshift);
 key_up = keyboard_check(ord("W"));
-key_swap_down = keyboard_check_released(ord("Q")) || keyboard_check_released(ord("U"));
-key_swap_up = keyboard_check_released(ord("E")) || keyboard_check_released(ord("I"));
+key_swap_down = keyboard_check_pressed(ord("Q")) || keyboard_check_pressed(ord("U"));
+key_swap_up = keyboard_check_pressed(ord("E")) || keyboard_check_pressed(ord("I"));
 
 if (key_left) || (key_right) || (key_jump) || (key_dash) || (key_down) || (key_up) || (key_jump_released) || (key_swap_up) || (key_swap_down)
 {
