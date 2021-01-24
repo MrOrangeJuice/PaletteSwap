@@ -12,6 +12,9 @@ if(key_enter == 1){
 	room_goto(rTest);
 		break;
 	case 1:
+	room_goto(rTutorial);
+		break;
+	case 2:
 		game_end();
 		break;
 	default:
