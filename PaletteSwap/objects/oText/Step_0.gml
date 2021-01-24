@@ -25,6 +25,7 @@ if(key_space == 1){
 	}
 	else{
 		global.textUp = false;
+		oPlayer.canJump = false;
 		instance_destroy();
 	}
 	//if(textProgress >= messageLength){
