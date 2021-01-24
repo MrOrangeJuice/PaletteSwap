@@ -8,4 +8,4 @@ movingRight = true;
 vsp = 0;
 grv = 0.4;
 hsp = 0;
-walkOffLedge = false;
+ledgeTurn = ledgeTurn;

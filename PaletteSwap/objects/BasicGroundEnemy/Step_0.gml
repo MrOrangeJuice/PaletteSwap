@@ -21,7 +21,7 @@ if (place_meeting(x,y,oWall))
 vsp += grv;
 
 // Check for ledge collision horizontally and vertically if this enemy can't walk off the ledge.
-if (walkOffLedge == false) 
+if (ledgeTurn == true) 
 {
 	if (place_meeting(x + 10, y + vsp, oWall) == false)
 	{
