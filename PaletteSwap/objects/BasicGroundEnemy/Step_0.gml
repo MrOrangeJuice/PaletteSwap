@@ -41,19 +41,7 @@ if (place_meeting(x, y, oPlayer))
 		// Damage the player.
 		global.hp -= damage;
 		
-		// Check player direction.
-		if(player.image_xscale == 1)
-		{
-			player.currentwalksp = -6;	
-		}
-		else if(player.image_xscale == -1)
-		{
-			player.currentwalksp = 6;
-		}
-			
-		// Apply knockback to player.	
-		player.hsp = player.currentwalksp;
-		player.vsp = -7;
+		InitiateKnockback(player);
 	}
 }
 
