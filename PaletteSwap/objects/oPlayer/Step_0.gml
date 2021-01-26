@@ -181,11 +181,7 @@ if(!isDashing)
 	// Horizontal Collision
 	if (place_meeting(x+hsp,y,oWall))
 	{
-		while (!place_meeting(x+sign(hsp),y,oWall))
-		{
-			x = x + sign(hsp);
-		}
-		hsp = 0;
+		DoCollision(oWall, false);
 		currentwalksp = 0;
 	}
 	//collision with palette walls
@@ -193,11 +189,8 @@ if(!isDashing)
 	{
 		switch (global.color){
 			case 0:
-				while (!place_meeting(x+sign(hsp),y,oPaletteWall))
-				{
-					x = x + sign(hsp);
-				}
-				hsp = 0;
+			//walking through water
+				DoCollision(oPaletteWall, false);
 				currentwalksp = 0;
 			break;
 			case 1:
@@ -211,22 +204,15 @@ if(!isDashing)
 	// Vertical Collision
 	if (place_meeting(x,y+vsp,oWall))
 	{
-		while (!place_meeting(x,y+sign(vsp),oWall))
-		{
-			y = y + sign(vsp);
-		}
-		vsp = 0;
+		DoCollision(oWall, true);
 	}
-	// Vertical Collision
+	// palette wall Collision
 	if (place_meeting(x,y+vsp,oPaletteWall))
 	{
 		switch (global.color){
 			case 0:
-				while (!place_meeting(x,y+sign(vsp),oPaletteWall))
-				{
-					y = y + sign(vsp);
-				}
-				vsp = 0;
+			//collide and not swimming
+				DoCollision(oPaletteWall, true);
 				swimming = false;
 			break;
 			case 1:
@@ -286,56 +272,19 @@ else
 		// Handle Vertical Collision Normally
 		if (place_meeting(x,y+vsp,oWall))
 		{
-			while (!place_meeting(x,y+sign(vsp),oWall))
-			{
-				y = y + sign(vsp);
-			}
-			// If you hit the ground, pop up and reenable dash
-			vsp = -11;
-			isDashing = false;
-			alarm[0] = room_speed * 0.15;
-			dashtime = room_speed * 0.25;
-			// Reset dash direction
-			dashdown = false;
-			dashleft = false;
-			dashright = false;
-			// Reset dash ability
-				//canDash = true;
-			// Disable variable jump
-			jumpVar = false;
-			// Play sound effect
-			audio_play_sound(snd_Thud, 5, false);
-			// Shake screen
-			ScreenShake(1,5);
+			//collide with wall
+			DoDashCollision(oWall, -11, 0, true);
 		}
 		if (place_meeting(x,y+vsp,oPaletteWall))
 		{
 			switch (global.color)
 			{
 			case 0:
-				while (!place_meeting(x,y+sign(vsp),oPaletteWall))
-				{
-					y = y + sign(vsp);
-				}
-				// If you hit the ground, pop up and reenable dash
-				vsp = -11;
-				isDashing = false;
-				alarm[0] = room_speed * 0.15;
-				dashtime = room_speed * 0.25;
-				// Reset dash direction
-				dashdown = false;
-				dashleft = false;
-				dashright = false;
-				// Reset dash ability
-					//canDash = true;
-				// Disable variable jump
-				jumpVar = false;
-				// Play sound effect
-				audio_play_sound(snd_Thud, 5, false);
-				// Shake screen
-				ScreenShake(1,5);
+			//if green collide with wall
+				DoDashCollision(oPaletteWall, -11, 0, true);
 			break;
 			case 1:
+			//if blue enter water
 				vsp /= 1.5;
 			break;
 			}
@@ -348,74 +297,31 @@ else
 		// Horizontal Collision
 		if (place_meeting(x+hsp,y,oWall))
 		{
-			while (!place_meeting(x+sign(hsp),y,oWall))
-			{
-				x = x + sign(hsp);
-			}
-			// Bounce off wall
-			currentwalksp = -6;
-			hsp = currentwalksp;
-			vsp = -7;
-			
-			isDashing = false;
-			alarm[0] = room_speed * 0.15;
-			dashtime = room_speed * 0.25;
-			// Reset dash direction
-			dashdown = false;
-			dashleft = false;
-			dashright = false;
-			// Reset dash ability
-				//canDash = true;
-			// Disable variable jump
-			jumpVar = false;
-			// Play sound effect
-			audio_play_sound(snd_Thud, 5, false);
-			// Shake screen
-			ScreenShake(1,5);
+			DoDashCollision(oWall, -7, -6, false);
 		}
 		//palette block
 		if (place_meeting(x+hsp,y,oPaletteWall))
 		{
 			switch (global.color){
 			case 0:
-				while (!place_meeting(x+sign(hsp),y,oPaletteWall))
-				{
-					x = x + sign(hsp);
-				}
-				// Bounce off wall
-				currentwalksp = -6;
-				hsp = currentwalksp;
-				vsp = -7;
-			
-				isDashing = false;
-				alarm[0] = room_speed * 0.15;
-				dashtime = room_speed * 0.25;
-				// Reset dash direction
-				dashdown = false;
-				dashleft = false;
-				dashright = false;
-				// Reset dash ability
-					//canDash = true;
-				// Disable variable jump
-				jumpVar = false;
-				// Play sound effect
-				audio_play_sound(snd_Thud, 5, false);
-				// Shake screen
-				ScreenShake(1,5);
+				DoDashCollision(oPaletteWall, -7, -6, false);
+				swimming = false;
 			break;
 			case 1:
 				hsp /= 1.5;
+				swimming = true;
 			break;
 			}
 		}
+		else swimming = false;
 		// Vertical Collision
 		if (place_meeting(x,y+vsp,oWall))
 		{
-			while (!place_meeting(x,y+sign(vsp),oWall))
-			{
-				y = y + sign(vsp);
-			}
-			vsp = 0;
+			DoCollision(oWall, false);
+		}
+		if (place_meeting(x,y+vsp,oPaletteWall) && !swimming)
+		{
+			DoCollision(oPaletteWall, true);
 		}
 		x = x + hsp;
 		//apply gravity if dashing in air
@@ -430,73 +336,30 @@ else
 		// Horizontal Collision
 		if (place_meeting(x+hsp,y,oWall))
 		{
-			while (!place_meeting(x+sign(hsp),y,oWall))
-			{
-				x = x + sign(hsp);
-			}
-			// Bounce off wall
-			currentwalksp = 6;
-			hsp = currentwalksp;
-			vsp = -7;
-			
-			isDashing = false;
-			alarm[0] = room_speed * 0.15;
-			dashtime = room_speed * 0.25;
-			// Reset dash direction
-			dashdown = false;
-			dashleft = false;
-			dashright = false;
-			// Reset dash ability
-				//canDash = true;
-			// Disable variable jump
-			jumpVar = false;
-			// Play sound effect
-			audio_play_sound(snd_Thud, 5, false);
-			// Shake screen
-			ScreenShake(1,5);
+			DoDashCollision(oWall, -7, 6, false);
 		}
 		if (place_meeting(x+hsp,y,oPaletteWall))
 		{
 			switch (global.color){
 			case 0:
-				while (!place_meeting(x+sign(hsp),y,oPaletteWall))
-				{
-					x = x + sign(hsp);
-				}
-				// Bounce off wall
-				currentwalksp = 6;
-				hsp = currentwalksp;
-				vsp = -7;
-			
-				isDashing = false;
-				alarm[0] = room_speed * 0.15;
-				dashtime = room_speed * 0.25;
-				// Reset dash direction
-				dashdown = false;
-				dashleft = false;
-				dashright = false;
-				// Reset dash ability
-					//canDash = true;
-				// Disable variable jump
-				jumpVar = false;
-				// Play sound effect
-				audio_play_sound(snd_Thud, 5, false);
-				// Shake screen
-				ScreenShake(1,5);
+				DoDashCollision(oPaletteWall, -7, 6, false);
+				swimming = false;
 			break;
 			case 1:
 				hsp /= 1.5;
+				swimming = true;
 			break;
 			}
 		}
+		else swimming = false;
 		// Vertical Collision
 		if (place_meeting(x,y+vsp,oWall))
 		{
-			while (!place_meeting(x,y+sign(vsp),oWall))
-			{
-				y = y + sign(vsp);
-			}
-			vsp = 0;
+			DoCollision(oWall, true);
+		}
+		if (place_meeting(x,y+vsp,oPaletteWall) && !swimming)
+		{
+			DoCollision(oPaletteWall, true);
 		}
 		x = x + hsp;
 		//apply gravity if dashing in air
@@ -515,7 +378,7 @@ else
 	}
 	
 	// If timer is up
-	if(dashtime <= 0)
+	if(dashtime <= 0 && !swimming)
 	{
 		isDashing = false;
 		dashtime = room_speed * 0.25;
@@ -615,6 +478,6 @@ if (key_swap_down && !swimming){
 	ScreenShake(2,10);
 }
 
+}
 //update frame
 PaletteAnimationSwap();
-}
