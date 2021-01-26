@@ -82,7 +82,7 @@ if (!place_meeting(x,y+1,oWall) && !place_meeting(x,y+1,oPaletteWall))
 {
 	airborne = true;
 }
-else if ((swimming && (vsp == 0 || vsp > 1.6)) || !swimming){
+else if ((swimming && (vsp == 0 || vsp > 0.6)) || !swimming){
 	airborne = false;
 	// Reset jump buffer
 	jumpBuffer = 5;
@@ -94,7 +94,14 @@ jumpBuffer -= 1;
 if (jumpBuffer > 0) && (key_jump) && (canJump)
 {
 	jumpBuffer = 0;
-	vsp = -10;
+	if (swimming)
+	{
+		vsp = -10;
+	}
+	else
+	{
+		vsp = -10;
+	}
 	audio_play_sound(snd_Jump, 5, false);
 	canJump = false;
 	jumped = true;
@@ -165,6 +172,10 @@ if(!isDashing)
 	}
 
 	hsp = currentwalksp;
+	if (swimming){
+		grv= 0.2;
+	}
+		else grv = 0.4;
 	vsp = vsp + grv;
 
 	// Variable jump height
@@ -216,7 +227,7 @@ if(!isDashing)
 				swimming = false;
 			break;
 			case 1:
-				vsp /= 1.2;
+				vsp /= 1.25;
 				swimming = true;
 			break;
 		}
