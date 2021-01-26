@@ -13,8 +13,8 @@
   "soundFile": "msc_Title.wav",
   "duration": 32.505,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Music",
+    "path": "folders/Sounds/Music.yy",
   },
   "resourceVersion": "1.0",
   "name": "msc_Title",
