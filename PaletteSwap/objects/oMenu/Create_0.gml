@@ -1,9 +1,11 @@
 /// @description Create
 menuX = x;
 menuY = y;
-buttonHeight = 32;
+buttonHeight = 16;
 button[0] = "Start";
-button[1] = "Quit";
+button[1] = "Fullscreen";
+button[2] = "Tutorial";
+button[3] = "Quit";
 buttonCount = array_length_1d(button);
 menuIndex = 0;
 lastSelected = 0;

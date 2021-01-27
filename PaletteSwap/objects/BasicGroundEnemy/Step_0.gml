@@ -1,6 +1,7 @@
 /// @description Move Enemy side-to-side
 
 // Check what direction this enemy is moving in.
+if(!global.paused && !global.textUp){
 if (movingRight == true)
 {
 	x = x + walkSpeed;
@@ -20,6 +21,15 @@ if (place_meeting(x,y,oWall))
 // Calculate any verticle movement by adding gravity and checking collisions.
 vsp += grv;
 
+// Check for ledge collision horizontally and vertically if this enemy can't walk off the ledge.
+if (ledgeTurn == true) 
+{
+	if (place_meeting(x + 10, y + vsp, oWall) == false)
+	{
+		movingRight = !movingRight;
+	}
+}
+
 if (place_meeting(x, y + vsp, oWall))
 {
 	vsp = 0;
@@ -35,9 +45,13 @@ if (place_meeting(x, y, oPlayer))
 	{
 		eHP -= 1;
 	}
+	// If the player is not dashing, then knock them back and begin their iframes.
 	else 
 	{
+		// Damage the player.
 		global.hp -= damage;
+		
+		InitiateKnockback(player);
 	}
 }
 
@@ -45,4 +59,5 @@ if (place_meeting(x, y, oPlayer))
 if (eHP <= 0)
 {
 	instance_deactivate_object(self);
+}
 }

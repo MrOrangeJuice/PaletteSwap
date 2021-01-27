@@ -14,3 +14,16 @@ textProgress = 0;
 
 //message = "Hey what's up loser";
 global.textUp = true;
+curResponseId = 0;
+textList = ds_list_create();
+startOfText = 1;
+for(c = 0; c < string_length(message); c++){
+	if(string_char_at(message, c) == "#"){
+		ds_list_add(textList, string_copy(message, startOfText, c-startOfText));
+		startOfText = c+1;
+	}
+	else if(c == string_length(message) - 1){
+		ds_list_add(textList, string_copy(message, startOfText, c-startOfText+2));
+	}
+}
+curResponse = ds_list_find_value(textList, 0);

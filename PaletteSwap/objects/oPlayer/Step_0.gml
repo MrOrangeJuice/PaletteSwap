@@ -7,8 +7,8 @@ key_jump_released = keyboard_check_released(ord("P")) || keyboard_check_released
 key_down = keyboard_check(ord("S"));
 key_dash = keyboard_check_pressed(ord("O")) || keyboard_check_pressed(vk_lshift);
 key_up = keyboard_check(ord("W"));
-key_swap_down = keyboard_check_released(ord("Q")) || keyboard_check_released(ord("U"));
-key_swap_up = keyboard_check_released(ord("E")) || keyboard_check_released(ord("I"));
+key_swap_down = keyboard_check_pressed(ord("Q")) || keyboard_check_pressed(ord("U"));
+key_swap_up = keyboard_check_pressed(ord("E")) || keyboard_check_pressed(ord("I"));
 
 if (key_left) || (key_right) || (key_jump) || (key_dash) || (key_down) || (key_up) || (key_jump_released) || (key_swap_up) || (key_swap_down)
 {
@@ -87,6 +87,8 @@ else if ((swimming && (vsp == 0 || vsp > 0.6)) || !swimming){
 	// Reset jump buffer
 	jumpBuffer = 5;
 	jumped = false;
+	// Reset roll
+	isRolling = false;
 }
 
 // Decrement jump buffer
@@ -392,6 +394,8 @@ else
 	if(dashtime <= 0 && !swimming)
 	{
 		isDashing = false;
+		// Cancel roll if the dash ends without hitting a wall
+		isRolling = false;
 		dashtime = room_speed * 0.25;
 		// Reset dash direction
 		dashdown = false;
@@ -415,58 +419,65 @@ if(isDashing)
 }
 else
 {
-	if(airborne)
+	if(isRolling)
 	{
-		if(vsp < 0)
-		{
-			//sprite_index = sFernJumpUp;
-			SwapSprite(sFernJumpUp);
-		}
-		else
-		{
-			//sprite_index = sFernJumpDown;
-			SwapSprite(sFernJumpDown);
-		}
+		SwapSprite(sFernRoll);	
 	}
-	//run otherwise
 	else
 	{
-		//idle
-	if (sign(hsp) == 0 && ( !(key_left || key_right) || (key_left && key_right) ) )
-	{
-		//sprite_index = sFernIdle;
-		SwapSprite(sFernIdle);
-	}
-	//slid r -> l
-	else if ((hsp > 2 || (skidding && hsp > 0)) && key_left && !swimming)
-	{
-		//sprite_index = sFernSkid;	
-		SwapSprite(sFernSkid);
-		skidding = true;
-		if(skidSound)
+		if(airborne)
+		{
+			if(vsp < 0)
 			{
-				audio_play_sound(snd_Skid, 5, false);	
+				//sprite_index = sFernJumpUp;
+				SwapSprite(sFernJumpUp);
 			}
-			skidSound = false;
-	}
-	//skid l -> r
-	else if ((hsp < -2 || (skidding && hsp < 0)) && key_right && !swimming)
-	{
-		//sprite_index = sFernSkid;	
-		SwapSprite(sFernSkid);
-		skidding = true;
-		if(skidSound)
+			else
 			{
-				audio_play_sound(snd_Skid, 5, false);	
+				//sprite_index = sFernJumpDown;
+				SwapSprite(sFernJumpDown);
 			}
-			skidSound = false;
 		}
+		//run otherwise
 		else
 		{
-			skidSound = true;
-			skidding = false;
-			//sprite_index = sFernRun;
-			SwapSprite(sFernRun);
+			//idle
+		if (sign(hsp) == 0 && ( !(key_left || key_right) || (key_left && key_right) ) )
+		{
+			//sprite_index = sFernIdle;
+			SwapSprite(sFernIdle);
+		}
+		//slid r -> l
+		else if ((hsp > 2 || (skidding && hsp > 0)) && key_left)
+		{
+			//sprite_index = sFernSkid;	
+			SwapSprite(sFernSkid);
+			skidding = true;
+			if(skidSound)
+				{
+					audio_play_sound(snd_Skid, 5, false);	
+				}
+				skidSound = false;
+		}
+		//skid l -> r
+		else if ((hsp < -2 || (skidding && hsp < 0)) && key_right)
+		{
+			//sprite_index = sFernSkid;	
+			SwapSprite(sFernSkid);
+			skidding = true;
+			if(skidSound)
+				{
+					audio_play_sound(snd_Skid, 5, false);	
+				}
+				skidSound = false;
+			}
+			else
+			{
+				skidSound = true;
+				skidding = false;
+				//sprite_index = sFernRun;
+				SwapSprite(sFernRun);
+			}
 		}
 	}
 }
