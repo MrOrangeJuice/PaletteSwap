@@ -19,6 +19,7 @@ function DoDashCollision(wallType, newVSP, newHSP, vert){
 			hsp = currentwalksp;
 			vsp = newVSP;
 			isDashing = false;
+			isRolling = true;
 			alarm[0] = room_speed * 0.15;
 			dashtime = room_speed * 0.25;
 			// Reset dash direction
