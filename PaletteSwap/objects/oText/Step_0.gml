@@ -1,6 +1,19 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(!global.paused){
+if(message != "" && !started){
+	started = true;
+	for(c = 0; c < string_length(message); c++){
+		if(string_char_at(message, c) == "#"){
+			ds_list_add(textList, string_copy(message, startOfText, c-startOfText));
+			startOfText = c+1;
+		}
+		else if(c == string_length(message) - 1){
+			ds_list_add(textList, string_copy(message, startOfText, c-startOfText+2));
+		}
+	}
+	curResponse = ds_list_find_value(textList, 0);
+}
+if(!global.paused && started){
 key_space = keyboard_check_pressed(vk_space);
 if (gamepad_button_check(0,gp_face3) || gamepad_button_check(4,gp_face3))
 {

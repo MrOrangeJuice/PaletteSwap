@@ -88,6 +88,7 @@
     {"id":{"name":"StretchBox","path":"scripts/StretchBox/StretchBox.yy",},"order":5,},
     {"id":{"name":"snd_Reset","path":"sounds/snd_Reset/snd_Reset.yy",},"order":1,},
     {"id":{"name":"rTest","path":"rooms/rTest/rTest.yy",},"order":6,},
+    {"id":{"name":"MakeTextBox","path":"scripts/MakeTextBox/MakeTextBox.yy",},"order":6,},
     {"id":{"name":"rTestAlex","path":"rooms/rTestAlex/rTestAlex.yy",},"order":0,},
   ],
   "Options": [
