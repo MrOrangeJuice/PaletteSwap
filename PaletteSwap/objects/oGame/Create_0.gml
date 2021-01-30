@@ -13,8 +13,20 @@ global.textSpeed = .75;
 global.textUp = false;
 global.lastAxislv4Value = 0;
 global.lastAxislv0Value = 0;
+global.coinId = 0;
+global.coinArrX = ds_list_create();
+global.coinArrY = ds_list_create();
 
 global.color = 0;
+global.loaded = false;
+global.loadX = 0;
+global.loadY = 0;
+global.loadCoins = 0;
+global.loadHp = 100;
+global.loadTime = 0;
+global.loadCoinsX = ds_list_create();
+global.loadCoinsY = ds_list_create();
+global.coinsDestroyed = false;
 //0 green
 //1 blue
 //2 red
