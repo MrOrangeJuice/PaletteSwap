@@ -9,12 +9,13 @@ if (key_esc = 1){
 	if(global.paused){
 		audio_play_sound(snd_Pause2,5,false);
 		visible = true;
-		global.menuX = oCamera.x;
-		global.menuY = oCamera.y;
+		global.menuX = RES_W/2;
+		global.menuY = RES_H/2;
 		//instance_deactivate_all(1);
 		instance_activate_object(oPauseButtons);
 	}
 	else{
+		oPlayer.canJump = false;
 		audio_play_sound(snd_Pause2_out,5,false);
 		visible = false;
 		//instance_activate_all();

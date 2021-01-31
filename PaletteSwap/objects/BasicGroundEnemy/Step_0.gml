@@ -1,6 +1,7 @@
 /// @description Move Enemy side-to-side
 
 // Check what direction this enemy is moving in.
+if(!global.paused && !global.textUp){
 if (movingRight == true)
 {
 	x = x + walkSpeed;
@@ -59,4 +60,5 @@ if (place_meeting(x, y, oPlayer))
 if (eHP <= 0)
 {
 	instance_deactivate_object(self);
+}
 }

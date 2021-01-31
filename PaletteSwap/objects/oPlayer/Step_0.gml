@@ -78,16 +78,17 @@ if(key_jump_released)
 }
 
 // Check if player is airborne
-if (!place_meeting(x,y+1,oWall))
+if (!place_meeting(x,y+1,oWall) && !place_meeting(x,y+1,oPaletteWall))
 {
 	airborne = true;
 }
-else 
-{
+else if ((swimming && (vsp == 0 || vsp > 0.6)) || !swimming){
 	airborne = false;
 	// Reset jump buffer
 	jumpBuffer = 5;
 	jumped = false;
+	// Reset roll
+	isRolling = false;
 }
 
 // Decrement jump buffer
@@ -95,7 +96,14 @@ jumpBuffer -= 1;
 if (jumpBuffer > 0) && (key_jump) && (canJump)
 {
 	jumpBuffer = 0;
-	vsp = -10;
+	if (swimming)
+	{
+		vsp = -10;
+	}
+	else
+	{
+		vsp = -10;
+	}
 	audio_play_sound(snd_Jump, 5, false);
 	canJump = false;
 	jumped = true;
@@ -166,7 +174,10 @@ if(!isDashing)
 	}
 
 	hsp = currentwalksp;
-
+	if (swimming){
+		grv= 0.2;
+	}
+		else grv = 0.4;
 	vsp = vsp + grv;
 
 	// Variable jump height
@@ -183,23 +194,48 @@ if(!isDashing)
 	// Horizontal Collision
 	if (place_meeting(x+hsp,y,oWall))
 	{
-		while (!place_meeting(x+sign(hsp),y,oWall))
-		{
-			x = x + sign(hsp);
-		}
-		hsp = 0;
+		DoCollision(oWall, false);
 		currentwalksp = 0;
+	}
+	//collision with palette walls
+	if (place_meeting(x+hsp,y,oPaletteWall))
+	{
+		switch (global.color){
+			case 0:
+			//walking through water
+				DoCollision(oPaletteWall, false);
+				currentwalksp = 0;
+			break;
+			case 1:
+				//currentwalksp /= 1.2;
+				hsp /= 2;
+			break;
+		}
 	}
 	x = x + hsp;
 
 	// Vertical Collision
 	if (place_meeting(x,y+vsp,oWall))
 	{
-		while (!place_meeting(x,y+sign(vsp),oWall))
-		{
-			y = y + sign(vsp);
+		DoCollision(oWall, true);
+	}
+	// palette wall Collision
+	if (place_meeting(x,y+vsp,oPaletteWall))
+	{
+		switch (global.color){
+			case 0:
+			//collide and not swimming
+				DoCollision(oPaletteWall, true);
+				swimming = false;
+			break;
+			case 1:
+				vsp /= 1.25;
+				swimming = true;
+			break;
 		}
-		vsp = 0;
+	}
+	else{
+		swimming = false;
 	}
 	y = y + vsp;
 }
@@ -249,27 +285,22 @@ else
 		// Handle Vertical Collision Normally
 		if (place_meeting(x,y+vsp,oWall))
 		{
-			while (!place_meeting(x,y+sign(vsp),oWall))
+			//collide with wall
+			DoDashCollision(oWall, -11, 0, true);
+		}
+		if (place_meeting(x,y+vsp,oPaletteWall))
+		{
+			switch (global.color)
 			{
-				y = y + sign(vsp);
+			case 0:
+			//if green collide with wall
+				DoDashCollision(oPaletteWall, -11, 0, true);
+			break;
+			case 1:
+			//if blue enter water
+				vsp /= 1.5;
+			break;
 			}
-			// If you hit the ground, pop up and reenable dash
-			vsp = -11;
-			isDashing = false;
-			alarm[0] = room_speed * 0.15;
-			dashtime = room_speed * 0.25;
-			// Reset dash direction
-			dashdown = false;
-			dashleft = false;
-			dashright = false;
-			// Reset dash ability
-				//canDash = true;
-			// Disable variable jump
-			jumpVar = false;
-			// Play sound effect
-			audio_play_sound(snd_Thud, 5, false);
-			// Shake screen
-			ScreenShake(1,5);
 		}
 		y = y + vsp;
 	}
@@ -279,39 +310,31 @@ else
 		// Horizontal Collision
 		if (place_meeting(x+hsp,y,oWall))
 		{
-			while (!place_meeting(x+sign(hsp),y,oWall))
-			{
-				x = x + sign(hsp);
-			}
-			// Bounce off wall
-			currentwalksp = -6;
-			hsp = currentwalksp;
-			vsp = -7;
-			
-			isDashing = false;
-			alarm[0] = room_speed * 0.15;
-			dashtime = room_speed * 0.25;
-			// Reset dash direction
-			dashdown = false;
-			dashleft = false;
-			dashright = false;
-			// Reset dash ability
-				//canDash = true;
-			// Disable variable jump
-			jumpVar = false;
-			// Play sound effect
-			audio_play_sound(snd_Thud, 5, false);
-			// Shake screen
-			ScreenShake(1,5);
+			DoDashCollision(oWall, -7, -6, false);
 		}
+		//palette block
+		if (place_meeting(x+hsp,y,oPaletteWall))
+		{
+			switch (global.color){
+			case 0:
+				DoDashCollision(oPaletteWall, -7, -6, false);
+				swimming = false;
+			break;
+			case 1:
+				hsp /= 1.5;
+				swimming = true;
+			break;
+			}
+		}
+		else swimming = false;
 		// Vertical Collision
 		if (place_meeting(x,y+vsp,oWall))
 		{
-			while (!place_meeting(x,y+sign(vsp),oWall))
-			{
-				y = y + sign(vsp);
-			}
-			vsp = 0;
+			DoCollision(oWall, false);
+		}
+		if (place_meeting(x,y+vsp,oPaletteWall) && !swimming)
+		{
+			DoCollision(oPaletteWall, true);
 		}
 		x = x + hsp;
 		//apply gravity if dashing in air
@@ -326,39 +349,30 @@ else
 		// Horizontal Collision
 		if (place_meeting(x+hsp,y,oWall))
 		{
-			while (!place_meeting(x+sign(hsp),y,oWall))
-			{
-				x = x + sign(hsp);
-			}
-			// Bounce off wall
-			currentwalksp = 6;
-			hsp = currentwalksp;
-			vsp = -7;
-			
-			isDashing = false;
-			alarm[0] = room_speed * 0.15;
-			dashtime = room_speed * 0.25;
-			// Reset dash direction
-			dashdown = false;
-			dashleft = false;
-			dashright = false;
-			// Reset dash ability
-				//canDash = true;
-			// Disable variable jump
-			jumpVar = false;
-			// Play sound effect
-			audio_play_sound(snd_Thud, 5, false);
-			// Shake screen
-			ScreenShake(1,5);
+			DoDashCollision(oWall, -7, 6, false);
 		}
+		if (place_meeting(x+hsp,y,oPaletteWall))
+		{
+			switch (global.color){
+			case 0:
+				DoDashCollision(oPaletteWall, -7, 6, false);
+				swimming = false;
+			break;
+			case 1:
+				hsp /= 1.5;
+				swimming = true;
+			break;
+			}
+		}
+		else swimming = false;
 		// Vertical Collision
 		if (place_meeting(x,y+vsp,oWall))
 		{
-			while (!place_meeting(x,y+sign(vsp),oWall))
-			{
-				y = y + sign(vsp);
-			}
-			vsp = 0;
+			DoCollision(oWall, true);
+		}
+		if (place_meeting(x,y+vsp,oPaletteWall) && !swimming)
+		{
+			DoCollision(oPaletteWall, true);
 		}
 		x = x + hsp;
 		//apply gravity if dashing in air
@@ -377,9 +391,11 @@ else
 	}
 	
 	// If timer is up
-	if(dashtime <= 0)
+	if(dashtime <= 0 && !swimming)
 	{
 		isDashing = false;
+		// Cancel roll if the dash ends without hitting a wall
+		isRolling = false;
 		dashtime = room_speed * 0.25;
 		// Reset dash direction
 		dashdown = false;
@@ -403,64 +419,71 @@ if(isDashing)
 }
 else
 {
-	if(airborne)
+	if(isRolling)
 	{
-		if(vsp < 0)
-		{
-			//sprite_index = sFernJumpUp;
-			SwapSprite(sFernJumpUp);
-		}
-		else
-		{
-			//sprite_index = sFernJumpDown;
-			SwapSprite(sFernJumpDown);
-		}
+		SwapSprite(sFernRoll);	
 	}
-	//run otherwise
 	else
 	{
-		//idle
-	if (sign(hsp) == 0 && ( !(key_left || key_right) || (key_left && key_right) ) )
-	{
-		//sprite_index = sFernIdle;
-		SwapSprite(sFernIdle);
-	}
-	//slid r -> l
-	else if ((hsp > 2 || (skidding && hsp > 0)) && key_left)
-	{
-		//sprite_index = sFernSkid;	
-		SwapSprite(sFernSkid);
-		skidding = true;
-		if(skidSound)
+		if(airborne)
+		{
+			if(vsp < 0)
 			{
-				audio_play_sound(snd_Skid, 5, false);	
+				//sprite_index = sFernJumpUp;
+				SwapSprite(sFernJumpUp);
 			}
-			skidSound = false;
-	}
-	//skid l -> r
-	else if ((hsp < -2 || (skidding && hsp < 0)) && key_right)
-	{
-		//sprite_index = sFernSkid;	
-		SwapSprite(sFernSkid);
-		skidding = true;
-		if(skidSound)
+			else
 			{
-				audio_play_sound(snd_Skid, 5, false);	
+				//sprite_index = sFernJumpDown;
+				SwapSprite(sFernJumpDown);
 			}
-			skidSound = false;
 		}
+		//run otherwise
 		else
 		{
-			skidSound = true;
-			skidding = false;
-			//sprite_index = sFernRun;
-			SwapSprite(sFernRun);
+			//idle
+		if (sign(hsp) == 0 && ( !(key_left || key_right) || (key_left && key_right) ) )
+		{
+			//sprite_index = sFernIdle;
+			SwapSprite(sFernIdle);
+		}
+		//slid r -> l
+		else if ((hsp > 2 || (skidding && hsp > 0)) && key_left)
+		{
+			//sprite_index = sFernSkid;	
+			SwapSprite(sFernSkid);
+			skidding = true;
+			if(skidSound)
+				{
+					audio_play_sound(snd_Skid, 5, false);	
+				}
+				skidSound = false;
+		}
+		//skid l -> r
+		else if ((hsp < -2 || (skidding && hsp < 0)) && key_right)
+		{
+			//sprite_index = sFernSkid;	
+			SwapSprite(sFernSkid);
+			skidding = true;
+			if(skidSound)
+				{
+					audio_play_sound(snd_Skid, 5, false);	
+				}
+				skidSound = false;
+			}
+			else
+			{
+				skidSound = true;
+				skidding = false;
+				//sprite_index = sFernRun;
+				SwapSprite(sFernRun);
+			}
 		}
 	}
 }
 
 // Palette Swap
-if (key_swap_up){
+if (key_swap_up && !swimming){
 	global.color++;
 	if (global.color >= global.color_limit) global.color = 0;
 	// Create swapping effects
@@ -468,7 +491,7 @@ if (key_swap_up){
 	audio_play_sound(snd_Swap,5,false);
 	ScreenShake(2,10);
 }
-if (key_swap_down){
+if (key_swap_down && !swimming){
 	global.color--;
 	if (global.color < 0) global.color = global.color_limit - 1;
 	// Create swapping effects
@@ -476,6 +499,7 @@ if (key_swap_down){
 	audio_play_sound(snd_Swap,5,false);
 	ScreenShake(2,10);
 }
+
 }
 //update frame
 PaletteAnimationSwap();

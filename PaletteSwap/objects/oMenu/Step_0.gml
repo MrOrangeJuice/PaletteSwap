@@ -9,7 +9,7 @@ if (gamepad_button_check_pressed(0,gp_face1) || gamepad_button_check_pressed(4,g
 if(key_select == 1){
 	switch(menuIndex){
 	case 0:
-		SlideTransition(TRANS_MODE.GOTO, rTest);
+		SlideTransition(TRANS_MODE.GOTO, rTestDrew);
 		break;
 	case 1:
 		window_set_fullscreen(!window_get_fullscreen());
