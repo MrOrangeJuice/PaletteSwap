@@ -43,6 +43,7 @@ if (place_meeting(x, y, oPlayer))
 	if (player.isDashing == true)
 	{
 		eHP -= 1;
+		InitiateKnockback(player, 0, -10);
 	}
 	// If the player is not dashing, then knock them back and begin their iframes.
 	else 
@@ -50,7 +51,7 @@ if (place_meeting(x, y, oPlayer))
 		// Damage the player.
 		global.hp -= damage;
 		
-		InitiateKnockback(player);
+		InitiateKnockback(player, 6, -7);
 	}
 }
 
