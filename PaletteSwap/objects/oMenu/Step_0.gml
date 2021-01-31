@@ -21,7 +21,6 @@ if(key_select == 1){
 			global.loadCoins = ini_read_real("Vars", "coins", 0);
 			global.loadTime = ini_read_real("Vars", "time", 0);
 			index = 0;
-			show_debug_message(global.coinId);
 			while(true){
 				curX = ini_read_real("Coins", "coinX" + string(index), 0);
 				if(curX == -69420666){

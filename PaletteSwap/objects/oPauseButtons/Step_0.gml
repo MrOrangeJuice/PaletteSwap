@@ -18,11 +18,17 @@ if(key_select == 1){
 	case 1:
 		global.color = 0;
 		global.coinId = 0;
+		global.loaded = false;
+		global.coinsDestroyed = false;
+		ds_list_clear(global.coinArrX);
+		ds_list_clear(global.coinArrY);
+		ds_list_clear(global.loadCoinsX);
+		ds_list_clear(global.loadCoinsY);
 		SlideTransition(TRANS_MODE.GOTO, MainMenu);
 		break;
 	case 2:
 		if(file_exists(SAVEFILE)){
-			file_delete(SAVEFILE);	
+			file_delete(SAVEFILE);
 		}
 		ini_open(SAVEFILE);
 		ini_write_real("Vars", "playerX", oPlayer.x);
@@ -31,10 +37,8 @@ if(key_select == 1){
 		ini_write_real("Vars", "coins", global.coins);
 		ini_write_real("Vars", "time", global.time);
 		realIndex = 0;
-		show_debug_message(global.coinId);
 		for(c = 0; c < global.coinId; c++){
 			curX = ds_list_find_value(global.coinArrX, c);
-			//show_debug_message(curX);
 			curY = ds_list_find_value(global.coinArrY, c);
 			ini_write_real("Coins", "coinX" + string(realIndex), curX);
 			ini_write_real("Coins", "coinY" + string(realIndex), curY);
