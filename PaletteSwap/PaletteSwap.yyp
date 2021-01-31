@@ -14,7 +14,6 @@
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"order":3,},
     {"id":{"name":"oTutorialNoSwap","path":"objects/oTutorialNoSwap/oTutorialNoSwap.yy",},"order":12,},
     {"id":{"name":"WhitePH","path":"sprites/WhitePH/WhitePH.yy",},"order":8,},
-    {"id":{"name":"sUpSpikes","path":"sprites/sUpSpikes/sUpSpikes.yy",},"order":27,},
     {"id":{"name":"snd_Pause","path":"sounds/snd_Pause/snd_Pause.yy",},"order":13,},
     {"id":{"name":"BlackPH","path":"sprites/BlackPH/BlackPH.yy",},"order":0,},
     {"id":{"name":"SlideTransition","path":"scripts/SlideTransition/SlideTransition.yy",},"order":1,},
