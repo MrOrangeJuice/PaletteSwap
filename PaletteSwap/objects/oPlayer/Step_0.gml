@@ -88,6 +88,8 @@ else
 	// Reset jump buffer
 	jumpBuffer = 5;
 	jumped = false;
+	// Reset roll
+	isRolling = false;
 }
 
 // Decrement jump buffer
@@ -256,6 +258,7 @@ else
 			// If you hit the ground, pop up and reenable dash
 			vsp = -11;
 			isDashing = false;
+			isRolling = true;
 			alarm[0] = room_speed * 0.15;
 			dashtime = room_speed * 0.25;
 			// Reset dash direction
@@ -289,6 +292,7 @@ else
 			vsp = -7;
 			
 			isDashing = false;
+			isRolling = true;
 			alarm[0] = room_speed * 0.15;
 			dashtime = room_speed * 0.25;
 			// Reset dash direction
@@ -336,6 +340,7 @@ else
 			vsp = -7;
 			
 			isDashing = false;
+			isRolling = true;
 			alarm[0] = room_speed * 0.15;
 			dashtime = room_speed * 0.25;
 			// Reset dash direction
@@ -380,6 +385,8 @@ else
 	if(dashtime <= 0)
 	{
 		isDashing = false;
+		// Cancel roll if the dash ends without hitting a wall
+		isRolling = false;
 		dashtime = room_speed * 0.25;
 		// Reset dash direction
 		dashdown = false;
@@ -403,58 +410,65 @@ if(isDashing)
 }
 else
 {
-	if(airborne)
+	if(isRolling)
 	{
-		if(vsp < 0)
-		{
-			//sprite_index = sFernJumpUp;
-			SwapSprite(sFernJumpUp);
-		}
-		else
-		{
-			//sprite_index = sFernJumpDown;
-			SwapSprite(sFernJumpDown);
-		}
+		SwapSprite(sFernRoll);	
 	}
-	//run otherwise
 	else
 	{
-		//idle
-	if (sign(hsp) == 0 && ( !(key_left || key_right) || (key_left && key_right) ) )
-	{
-		//sprite_index = sFernIdle;
-		SwapSprite(sFernIdle);
-	}
-	//slid r -> l
-	else if ((hsp > 2 || (skidding && hsp > 0)) && key_left)
-	{
-		//sprite_index = sFernSkid;	
-		SwapSprite(sFernSkid);
-		skidding = true;
-		if(skidSound)
+		if(airborne)
+		{
+			if(vsp < 0)
 			{
-				audio_play_sound(snd_Skid, 5, false);	
+				//sprite_index = sFernJumpUp;
+				SwapSprite(sFernJumpUp);
 			}
-			skidSound = false;
-	}
-	//skid l -> r
-	else if ((hsp < -2 || (skidding && hsp < 0)) && key_right)
-	{
-		//sprite_index = sFernSkid;	
-		SwapSprite(sFernSkid);
-		skidding = true;
-		if(skidSound)
+			else
 			{
-				audio_play_sound(snd_Skid, 5, false);	
+				//sprite_index = sFernJumpDown;
+				SwapSprite(sFernJumpDown);
 			}
-			skidSound = false;
 		}
+		//run otherwise
 		else
 		{
-			skidSound = true;
-			skidding = false;
-			//sprite_index = sFernRun;
-			SwapSprite(sFernRun);
+			//idle
+		if (sign(hsp) == 0 && ( !(key_left || key_right) || (key_left && key_right) ) )
+		{
+			//sprite_index = sFernIdle;
+			SwapSprite(sFernIdle);
+		}
+		//slid r -> l
+		else if ((hsp > 2 || (skidding && hsp > 0)) && key_left)
+		{
+			//sprite_index = sFernSkid;	
+			SwapSprite(sFernSkid);
+			skidding = true;
+			if(skidSound)
+				{
+					audio_play_sound(snd_Skid, 5, false);	
+				}
+				skidSound = false;
+		}
+		//skid l -> r
+		else if ((hsp < -2 || (skidding && hsp < 0)) && key_right)
+		{
+			//sprite_index = sFernSkid;	
+			SwapSprite(sFernSkid);
+			skidding = true;
+			if(skidSound)
+				{
+					audio_play_sound(snd_Skid, 5, false);	
+				}
+				skidSound = false;
+			}
+			else
+			{
+				skidSound = true;
+				skidding = false;
+				//sprite_index = sFernRun;
+				SwapSprite(sFernRun);
+			}
 		}
 	}
 }
