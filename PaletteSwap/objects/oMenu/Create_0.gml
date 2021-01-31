@@ -3,7 +3,7 @@
 #macro SAVEFILE "Save.ini"
 
 menuX = x;
-menuY = y-10;
+menuY = y;
 buttonHeight = 16;
 button[0] = "New Game";
 button[1] = "Continue";

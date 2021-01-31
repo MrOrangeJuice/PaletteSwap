@@ -27,7 +27,6 @@
     {"id":{"name":"PaletteAnimationSwap","path":"scripts/PaletteAnimationSwap/PaletteAnimationSwap.yy",},"order":3,},
     {"id":{"name":"snd_Jump","path":"sounds/snd_Jump/snd_Jump.yy",},"order":0,},
     {"id":{"name":"SwapSprite","path":"scripts/SwapSprite/SwapSprite.yy",},"order":4,},
-    {"id":{"name":"oSpikes","path":"objects/oSpikes/oSpikes.yy",},"order":15,},
     {"id":{"name":"sTitle","path":"sprites/sTitle/sTitle.yy",},"order":25,},
     {"id":{"name":"rTestJulien","path":"rooms/rTestJulien/rTestJulien.yy",},"order":3,},
     {"id":{"name":"snd_Swap","path":"sounds/snd_Swap/snd_Swap.yy",},"order":9,},
