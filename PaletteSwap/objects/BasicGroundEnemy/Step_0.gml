@@ -44,7 +44,8 @@ if (place_meeting(x, y, oPlayer))
 	if (player.isDashing == true)
 	{
 		eHP -= 1;
-		InitiateKnockback(player, 0, -10);
+		InitiateKnockback(player, 0, -8);
+		DashReset();
 	}
 	// If the player is not dashing, then knock them back and begin their iframes.
 	else 

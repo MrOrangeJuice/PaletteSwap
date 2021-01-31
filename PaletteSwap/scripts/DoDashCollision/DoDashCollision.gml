@@ -18,17 +18,10 @@ function DoDashCollision(wallType, newVSP, newHSP, vert){
 			currentwalksp = newHSP;
 			hsp = currentwalksp;
 			vsp = newVSP;
-			isDashing = false;
-			isRolling = true;
-			alarm[0] = room_speed * 0.15;
-			dashtime = room_speed * 0.25;
-			// Reset dash direction
-			dashdown = false;
-			dashleft = false;
-			dashright = false;
-			// Disable variable jump
-			jumpVar = false;
-			airborne = true;
+
+			// Reset the player's dash.
+			DashReset();
+			
 			// Play sound effect
 			audio_play_sound(snd_Thud, 5, false);
 			// Shake screen
