@@ -20,6 +20,7 @@ jumpBuffer = 0;
 jumped = false; //purely to stop jumpdash
 skidSound = true;
 wallHit = false;
+swimming = false;
 
 skidding = false; //skidding check
 
