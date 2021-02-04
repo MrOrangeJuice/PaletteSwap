@@ -60,6 +60,7 @@
     {"id":{"name":"oRift","path":"objects/oRift/oRift.yy",},"order":8,},
     {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},"order":5,},
     {"id":{"name":"rTestJustin","path":"rooms/rTestJustin/rTestJustin.yy",},"order":4,},
+    {"id":{"name":"sSeasideGreenBig","path":"sprites/sSeasideGreenBig/sSeasideGreenBig.yy",},"order":2,},
     {"id":{"name":"sBackgroundGreen","path":"sprites/sBackgroundGreen/sBackgroundGreen.yy",},"order":20,},
     {"id":{"name":"snd_MenuSelect2","path":"sounds/snd_MenuSelect2/snd_MenuSelect2.yy",},"order":12,},
     {"id":{"name":"snd_Menu","path":"sounds/snd_Menu/snd_Menu.yy",},"order":10,},
