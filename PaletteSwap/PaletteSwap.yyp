@@ -25,6 +25,7 @@
     {"id":{"name":"sTutorialKeyboard","path":"sprites/sTutorialKeyboard/sTutorialKeyboard.yy",},"order":15,},
     {"id":{"name":"PaletteAnimationSwap","path":"scripts/PaletteAnimationSwap/PaletteAnimationSwap.yy",},"order":3,},
     {"id":{"name":"snd_Jump","path":"sounds/snd_Jump/snd_Jump.yy",},"order":0,},
+    {"id":{"name":"sShip","path":"sprites/sShip/sShip.yy",},"order":27,},
     {"id":{"name":"DoCollision","path":"scripts/DoCollision/DoCollision.yy",},"order":7,},
     {"id":{"name":"SwapSprite","path":"scripts/SwapSprite/SwapSprite.yy",},"order":4,},
     {"id":{"name":"sTitle","path":"sprites/sTitle/sTitle.yy",},"order":25,},
