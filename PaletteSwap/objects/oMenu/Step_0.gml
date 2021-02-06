@@ -13,6 +13,7 @@ if(key_select == 1){
 		break;
 	case 1:
 		if(file_exists(SAVEFILE)){
+			show_debug_message("HERE");
 			global.loaded = true;
 			ini_open(SAVEFILE);
 			global.loadX = ini_read_real("Vars", "playerX", 0);
@@ -36,12 +37,18 @@ if(key_select == 1){
 		SlideTransition(TRANS_MODE.GOTO, rTest);
 		break;
 	case 2:
-		window_set_fullscreen(!window_get_fullscreen());
+		if(file_exists(SAVEFILE)){
+			file_delete(SAVEFILE);
+		}
 		break;
 	case 3:
-	room_goto(rTutorial);
+		window_set_fullscreen(!window_get_fullscreen());
 		break;
 	case 4:
+		global.color_limit = 1;
+		room_goto(rTutorial);
+		break;
+	case 5:
 		game_end();
 		break;
 	default:

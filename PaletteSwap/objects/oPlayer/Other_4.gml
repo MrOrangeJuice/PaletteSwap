@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+global.lastCheckpointX = x;
+global.lastCheckpointY = y;
 if(global.loaded){
 	x = global.loadX;
 	y = global.loadY;

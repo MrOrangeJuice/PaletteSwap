@@ -490,6 +490,11 @@ if (key_swap_down){
 	audio_play_sound(snd_Swap,5,false);
 	ScreenShake(2,10);
 }
+if(global.hp <= 0){
+	global.hp = 100;
+	x = global.lastCheckpointX;
+	y = global.lastCheckpointY;
+}
 }
 //update frame
 PaletteAnimationSwap();

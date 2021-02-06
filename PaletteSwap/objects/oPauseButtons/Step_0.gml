@@ -24,6 +24,7 @@ if(key_select == 1){
 		ds_list_clear(global.coinArrY);
 		ds_list_clear(global.loadCoinsX);
 		ds_list_clear(global.loadCoinsY);
+		global.color_limit = 2;
 		SlideTransition(TRANS_MODE.GOTO, MainMenu);
 		break;
 	case 2:
