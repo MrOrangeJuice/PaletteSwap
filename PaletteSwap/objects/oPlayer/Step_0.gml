@@ -12,32 +12,32 @@ key_swap_up = keyboard_check_pressed(ord("E")) || keyboard_check_pressed(ord("I"
 
 if (key_left) || (key_right) || (key_jump) || (key_dash) || (key_down) || (key_up) || (key_jump_released) || (key_swap_up) || (key_swap_down)
 {
-	controller = 0;
+	global.controller = 0;
 }
 
 // Gamepad input
 if (gamepad_axis_value(0,gp_axislh) < -0.4 || gamepad_button_check(0,gp_padl) || gamepad_axis_value(4,gp_axislh) < -0.4 || gamepad_button_check(4,gp_padl))
 {
 	key_left = 1;
-	controller = 1;
+	global.controller = 1;
 }
 
 if (gamepad_axis_value(0,gp_axislh) > 0.4 || gamepad_button_check(0,gp_padr) || gamepad_axis_value(4,gp_axislh) > 0.4 || gamepad_button_check(4,gp_padr))
 {
 	key_right = 1;
-	controller = 1;
+	global.controller = 1;
 }
 
 if (gamepad_axis_value(0,gp_axislv) > 0.4 || gamepad_button_check(0,gp_padd) || gamepad_axis_value(4,gp_axislv) > 0.4 || gamepad_button_check(4,gp_padd))
 {
 	key_down = 1;
-	controller = 1;
+	global.controller = 1;
 }
 
 if (gamepad_button_check(0,gp_face1) || gamepad_button_check(4,gp_face1))
 {
 	key_jump = 1;
-	controller = 1;
+	global.controller = 1;
 }
 if (gamepad_button_check_released(0,gp_face1) || gamepad_button_check_released(4,gp_face1))
 {
@@ -47,24 +47,24 @@ if (gamepad_button_check_released(0,gp_face1) || gamepad_button_check_released(4
 if (gamepad_button_check_pressed(0,gp_face3) || gamepad_button_check_pressed(0,gp_face2) || gamepad_button_check_pressed(4,gp_face3) || gamepad_button_check_pressed(4,gp_face2))
 {
 	key_dash = 1;
-	controller = 1;
+	global.controller = 1;
 }
 
 if (gamepad_axis_value(0,gp_axislv) < -0.4 || gamepad_button_check(0,gp_padu) || gamepad_axis_value(4,gp_axislv) < -0.4 || gamepad_button_check(4,gp_padu))
 {
 	key_up = 1;
-	controller = 1;
+	global.controller = 1;
 }
 
 if (gamepad_button_check_pressed(0,gp_shoulderl) || gamepad_button_check_pressed(0,gp_shoulderl) || gamepad_button_check_pressed(4,gp_shoulderl) || gamepad_button_check_pressed(4,gp_shoulderl))
 {
 	key_swap_down = 1;
-	controller = 1;
+	global.controller = 1;
 }
 if (gamepad_button_check_pressed(0,gp_shoulderr) || gamepad_button_check_pressed(0,gp_shoulderr) || gamepad_button_check_pressed(4,gp_shoulderr) || gamepad_button_check_pressed(4,gp_shoulderr))
 {
 	key_swap_up = 1;
-	controller = 1;
+	global.controller = 1;
 }
 
 if(!global.paused && !global.textUp){

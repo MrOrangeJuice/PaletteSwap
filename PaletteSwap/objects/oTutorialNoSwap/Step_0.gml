@@ -1,5 +1,5 @@
 /// @description Switch Input and Palette
-if (oPlayer.controller)
+if (global.controller)
 {
 	sprite_index = sTutorialControllerNoSwap;
 }

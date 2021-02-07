@@ -30,5 +30,6 @@ iFrameCount = 0;
 isInvulnerable = false;
 
 controller = 0;
+global.controller = 0;
 
 currentframe = 0;
