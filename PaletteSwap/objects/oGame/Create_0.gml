@@ -15,6 +15,11 @@ global.textSpeed = .75;
 global.textUp = false;
 global.lastAxislv4Value = 0;
 global.lastAxislv0Value = 0;
+global.coinId = 0;
+global.coinArrX = ds_list_create();
+global.coinArrY = ds_list_create();
+global.lastCheckpointX = 0;
+global.lastCheckpointY = 0;
 
 global.color = 0;
 //0 green
