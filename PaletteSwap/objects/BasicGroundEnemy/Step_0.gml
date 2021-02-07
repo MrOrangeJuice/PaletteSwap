@@ -54,10 +54,14 @@ if (place_meeting(x, y, oPlayer))
 	// If the player is not dashing, then knock them back and begin their iframes.
 	else 
 	{
-		// Damage the player.
-		global.hp -= damage;
-		
-		InitiateKnockback(player, 6, -7);
+		// Damage and knockback the player if they're vulnerable.
+		if (player.isInvulnerable == false) 
+		{
+			global.hp -= damage;
+			player.isInvulnerable = true;
+			
+			InitiateKnockback(player, 6, -7);
+		}
 	}
 }
 

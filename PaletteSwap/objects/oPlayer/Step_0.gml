@@ -404,6 +404,18 @@ else
 	}
 }
 
+// Invulnerrability calculations.
+if (isInvulnerable)
+{
+	iFrameCount += (delta_time / 1000000);
+	// If the player has been invulnerable long-enough, then reset the iFrameCount and set the player to vulnerable.
+	if (iFrameCount >= iFrameTime)
+	{
+		isInvulnerable = false;
+		iFrameCount = 0;
+	}
+}
+
 
 // Animation
 if(isDashing)

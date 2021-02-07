@@ -24,6 +24,11 @@ swimming = false;
 
 skidding = false; //skidding check
 
+// I-Frame variables
+iFrameTime = 1;
+iFrameCount = 0;
+isInvulnerable = false;
+
 controller = 0;
 
 currentframe = 0;
