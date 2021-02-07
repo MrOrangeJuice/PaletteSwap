@@ -17,14 +17,6 @@ if(key_select == 1){
 		break;
 	case 1:
 		global.color = 0;
-		global.coinId = 0;
-		global.loaded = false;
-		global.coinsDestroyed = false;
-		ds_list_clear(global.coinArrX);
-		ds_list_clear(global.coinArrY);
-		ds_list_clear(global.loadCoinsX);
-		ds_list_clear(global.loadCoinsY);
-		global.color_limit = 2;
 		SlideTransition(TRANS_MODE.GOTO, MainMenu);
 		break;
 	case 2:
