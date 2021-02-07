@@ -4,18 +4,18 @@ function DashReset()
 {
 	player = instance_find(oPlayer, 0);
 	
-	isDashing = false;
-	isRolling = true;
+	player.isDashing = false;
+	player.isRolling = true;
 	
 	alarm[0] = room_speed * 0.15;
-	dashtime = room_speed * 0.25;
+	player.dashtime = room_speed * 0.25;
 	
 	// Reset dash direction
-	dashdown = false;
-	dashleft = false;
-	dashright = false;
+	player.dashdown = false;
+	player.dashleft = false;
+	player.dashright = false;
 	
 	// DIsable variable jump
-	jumpVar = false;
-	airborne = true;
+	player.jumpVar = false;
+	player.airborne = true;
 }
