@@ -97,6 +97,7 @@
     {"id":{"name":"sCoin","path":"sprites/sCoin/sCoin.yy",},"order":12,},
     {"id":{"name":"sFernRoll","path":"sprites/sFernRoll/sFernRoll.yy",},"order":9,},
     {"id":{"name":"GrayPH","path":"sprites/GrayPH/GrayPH.yy",},"order":3,},
+    {"id":{"name":"sCrate","path":"sprites/sCrate/sCrate.yy",},"order":30,},
     {"id":{"name":"sBackgroundBlue","path":"sprites/sBackgroundBlue/sBackgroundBlue.yy",},"order":21,},
     {"id":{"name":"oMenu","path":"objects/oMenu/oMenu.yy",},"order":9,},
     {"id":{"name":"RedPH","path":"sprites/RedPH/RedPH.yy",},"order":7,},
