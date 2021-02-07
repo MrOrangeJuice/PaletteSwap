@@ -24,6 +24,6 @@ swimming = false;
 
 skidding = false; //skidding check
 
-controller = 0;
+global.controller = 0;
 
 currentframe = 0;

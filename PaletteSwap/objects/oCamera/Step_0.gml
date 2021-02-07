@@ -2,13 +2,25 @@
 // Update destination
 if (instance_exists(oPlayer))
 {
+	follow = oPlayer;
 	xTo = follow.x;
 	yTo = follow.y;
+	jelliness = 6;
+}	
+else
+{
+	if (instance_exists(oShip))
+	{
+		follow = oShip;
+		xTo = follow.x;
+		yTo = follow.y;
+		jelliness = 1;
+	}	
 }
 
 // Update object position
-x += (xTo - x) / 6;
-y += (yTo - y) / 6;
+x += (xTo - x) / jelliness;
+y += (yTo - y) / jelliness;
 
 // Keep camera center inside room
 x = clamp(x,view_w_half+buff,room_width-view_w_half-buff);

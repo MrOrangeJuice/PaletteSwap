@@ -6,6 +6,8 @@ display_set_gui_size(RES_W,RES_H);
 global.coins = 0;
 global.time = 0;
 global.paused = false;
+global.cutscene = false;
+global.controller = 0;
 
 global.hp = 100;
 global.maxHP = 100;

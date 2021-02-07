@@ -15,7 +15,7 @@ if(key_select == 1){
 		window_set_fullscreen(!window_get_fullscreen());
 		break;
 	case 2:
-	room_goto(rTutorial);
+	SlideTransition(TRANS_MODE.GOTO, rTutorialAlex);
 		break;
 	case 3:
 		game_end();
