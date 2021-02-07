@@ -46,7 +46,7 @@ if (place_meeting(x, y, oPlayer))
 		eHP -= 1;
 		
 		// Send player flying.
-		InitiateKnockback(player, 0, -8);
+		InitiateKnockback(player, -10, -8);
 		
 		// Refresh player's dash.
 		DashReset();
