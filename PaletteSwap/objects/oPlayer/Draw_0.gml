@@ -1,7 +1,5 @@
 /// @description Render player
 
-draw_self();
-
 /*
 if(!canDash && !isDashing)
 {
@@ -10,3 +8,11 @@ if(!canDash && !isDashing)
 	shader_reset();
 }
 */
+
+if (isInvulnerable)
+{
+	shader_set(shTransparent);
+}
+
+draw_self();
+shader_reset();
