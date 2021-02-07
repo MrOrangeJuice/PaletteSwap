@@ -46,7 +46,7 @@ if(key_select == 1){
 		break;
 	case 4:
 		global.color_limit = 1;
-		room_goto(rTutorial);
+		SlideTransition(TRANS_MODE.GOTO, rTutorialAlex);
 		break;
 	case 5:
 		game_end();
