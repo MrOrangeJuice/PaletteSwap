@@ -330,7 +330,7 @@ else
 		// Vertical Collision
 		if (place_meeting(x,y+vsp,oWall))
 		{
-			DoCollision(oWall, false);
+			DoCollision(oWall, true);
 		}
 		if (place_meeting(x,y+vsp,oPaletteWall) && !swimming)
 		{
