@@ -1,6 +1,6 @@
 /// @description Create
 menuX = x;
-menuY = y;
+menuY = y-10;
 buttonHeight = 16;
 button[0] = "New Game";
 button[1] = "Continue";

@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 if(hitTimer < 0){
-	hitTimer = 5000000;
+	hitTimer = 50000000;
 	global.hp -= 30;
 	InitiateKnockback(oPlayer, 6, -7);
 }

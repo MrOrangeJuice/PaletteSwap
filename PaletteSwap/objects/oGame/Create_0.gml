@@ -1,5 +1,6 @@
 #macro RES_W 320
 #macro RES_H 180
+#macro SAVEFILE "Save.ini"
 display_set_gui_size(RES_W,RES_H);
 
 // Create basic global variables.
@@ -20,6 +21,16 @@ global.coinArrX = ds_list_create();
 global.coinArrY = ds_list_create();
 global.lastCheckpointX = 0;
 global.lastCheckpointY = 0;
+global.coinsDestroyed = false;
+global.loadCoinsX = ds_list_create();
+global.loadCoinsY = ds_list_create();
+global.loadX = 0;
+global.loadY = 0;
+global.loadHp = 100;
+global.loadCoins = 0;
+global.loadTime = 0;
+global.loaded = false;
+global.coinId = 0;
 
 global.color = 0;
 //0 green
