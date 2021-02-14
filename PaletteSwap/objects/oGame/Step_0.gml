@@ -24,6 +24,13 @@ else
 {
 	if(!timeScaleSet)
 	{
+		ini_open(SAVEFILE);
+		show_debug_message(global.time);
+		show_debug_message(ini_read_real("Vars", "bestTime", 0));
+		if(ini_read_real("Vars", "bestTime", 0) == 0 || global.time < ini_read_real("Vars", "bestTime", 0)){
+			ini_write_real("Vars", "bestTime", global.time);
+		}
+		ini_close();
 		timeTextScale = 1.2;
 		timeScaleSet = true;
 	}

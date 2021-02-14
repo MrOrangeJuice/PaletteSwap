@@ -16,9 +16,6 @@ if(key_select == 1){
 		instance_deactivate_object(oPauseButtons);
 		break;
 	case 1:
-		if(file_exists(SAVEFILE)){
-			file_delete(SAVEFILE);
-		}
 		ini_open(SAVEFILE);
 		ini_write_real("Vars", "playerX", oPlayer.x);
 		ini_write_real("Vars", "playerY", oPlayer.y);
