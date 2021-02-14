@@ -58,6 +58,12 @@ if (place_meeting(x, y, oPlayer))
 		if (player.isInvulnerable == false) 
 		{
 			global.hp -= damage;
+			
+			// Check for death
+			if (global.hp <= 0) 
+			{
+				PlayerDeath(player);
+			}
 			player.isInvulnerable = true;
 			
 			InitiateKnockback(player, 6, -7);

@@ -109,6 +109,7 @@
     {"id":{"name":"GreenPH","path":"sprites/GreenPH/GreenPH.yy",},"order":4,},
     {"id":{"name":"DoDashCollision","path":"scripts/DoDashCollision/DoDashCollision.yy",},"order":6,},
     {"id":{"name":"sTextbox","path":"sprites/sTextbox/sTextbox.yy",},"order":23,},
+    {"id":{"name":"PlayerDeath","path":"scripts/PlayerDeath/PlayerDeath.yy",},"order":9,},
     {"id":{"name":"StretchBox","path":"scripts/StretchBox/StretchBox.yy",},"order":5,},
     {"id":{"name":"snd_Reset","path":"sounds/snd_Reset/snd_Reset.yy",},"order":1,},
     {"id":{"name":"sCheckpoint","path":"sprites/sCheckpoint/sCheckpoint.yy",},"order":28,},

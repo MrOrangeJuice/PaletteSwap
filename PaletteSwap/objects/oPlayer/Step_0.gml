@@ -513,8 +513,7 @@ if (key_swap_down && !swimming){
 }
 if(global.hp <= 0){
 	global.hp = 100;
-	x = global.lastCheckpointX;
-	y = global.lastCheckpointY;
+	PlayerDeath(instance_id);
 }
 }
 //update frame

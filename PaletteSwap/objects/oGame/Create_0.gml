@@ -20,6 +20,7 @@ global.coinArrX = ds_list_create();
 global.coinArrY = ds_list_create();
 global.lastCheckpointX = 0;
 global.lastCheckpointY = 0;
+global.playerDead = false;
 
 global.color = 0;
 //0 green
