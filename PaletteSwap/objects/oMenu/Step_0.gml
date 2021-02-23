@@ -9,7 +9,7 @@ if (gamepad_button_check_pressed(0,gp_face1) || gamepad_button_check_pressed(4,g
 if(key_select == 1){
 	switch(menuIndex){
 	case 0:
-		SlideTransition(TRANS_MODE.GOTO, rTest);
+		SlideTransition(TRANS_MODE.GOTO, rTestJulien);
 		break;
 	case 1:
 		if(file_exists(SAVEFILE)){
@@ -46,7 +46,7 @@ if(key_select == 1){
 		break;
 	case 4:
 		global.color_limit = 1;
-		SlideTransition(TRANS_MODE.GOTO, rTutorialAlex);
+		SlideTransition(TRANS_MODE.GOTO, rTutorial);
 		break;
 	case 5:
 		game_end();

@@ -15,21 +15,21 @@ if(key_select == 1){
 		//instance_activate_all();
 		instance_deactivate_object(oPauseButtons);
 		break;
+	//case 1:
+	//	ini_open(SAVEFILE);
+	//	ini_write_real("Vars", "playerX", oPlayer.x);
+	//	ini_write_real("Vars", "playerY", oPlayer.y);
+	//	ini_write_real("Vars", "hp", global.hp);
+	//	ini_write_real("Vars", "coins", global.coins);
+	//	ini_write_real("Vars", "time", global.time);
+	//	for(c = 0; c < global.coinId; c++){
+	//		ini_write_real("Coins", "coinX" + string(c), ds_list_find_value(global.coinArrX, c));
+	//		ini_write_real("Coins", "coinY" + string(c), ds_list_find_value(global.coinArrY, c));
+	//	}
+	//	ini_write_real("Coins", "coinX" + string(global.coinId), -69420666);
+	//	ini_close();
+	//	break;
 	case 1:
-		ini_open(SAVEFILE);
-		ini_write_real("Vars", "playerX", oPlayer.x);
-		ini_write_real("Vars", "playerY", oPlayer.y);
-		ini_write_real("Vars", "hp", global.hp);
-		ini_write_real("Vars", "coins", global.coins);
-		ini_write_real("Vars", "time", global.time);
-		for(c = 0; c < global.coinId; c++){
-			ini_write_real("Coins", "coinX" + string(c), ds_list_find_value(global.coinArrX, c));
-			ini_write_real("Coins", "coinY" + string(c), ds_list_find_value(global.coinArrY, c));
-		}
-		ini_write_real("Coins", "coinX" + string(global.coinId), -69420666);
-		ini_close();
-		break;
-	case 2:
 		global.color = 0;
 		global.coinId = 0;
 		global.loaded = false;
@@ -41,7 +41,7 @@ if(key_select == 1){
 		global.color_limit = 2;
 		SlideTransition(TRANS_MODE.GOTO, MainMenu);
 		break;
-	case 3:
+	case 2:
 		game_end();
 		break;
 	default:
