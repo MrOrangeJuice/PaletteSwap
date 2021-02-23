@@ -125,6 +125,7 @@
     {"id":{"name":"sCheckpoint","path":"sprites/sCheckpoint/sCheckpoint.yy",},"order":28,},
     {"id":{"name":"rTest","path":"rooms/rTest/rTest.yy",},"order":6,},
     {"id":{"name":"sDoor","path":"sprites/sDoor/sDoor.yy",},"order":36,},
+    {"id":{"name":"sFernHit","path":"sprites/sFernHit/sFernHit.yy",},"order":10,},
     {"id":{"name":"oMenuMusic","path":"objects/oMenuMusic/oMenuMusic.yy",},"order":14,},
     {"id":{"name":"MakeTextBox","path":"scripts/MakeTextBox/MakeTextBox.yy",},"order":6,},
     {"id":{"name":"rTestAlex","path":"rooms/rTestAlex/rTestAlex.yy",},"order":0,},
