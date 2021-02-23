@@ -3,7 +3,6 @@
 
 /// @description Draw Player Information
 
-
 // Draw Coin Count
 coinTextScale = max(coinTextScale * 0.95, 1);
 DrawSetText(c_black, fUI, fa_right, fa_top);
