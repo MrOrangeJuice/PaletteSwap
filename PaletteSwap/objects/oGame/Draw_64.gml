@@ -3,9 +3,9 @@
 if(room != MainMenu)
 {
 	// healthbar
-	draw_sprite_stretched(sHealthBarBase, global.color, 2, -4, 64, 32);
-	draw_sprite_stretched(sHealthbar, global.color, 4, 4, (global.hp / global.maxHP) * 60, 16);
-	draw_sprite_stretched(sHealthBarFrame, global.color, 2, -4, 64, 32);
+	draw_sprite_stretched(sHealthBarBase, global.color, 4, 4, 64, 16);
+	draw_sprite_stretched(sHealthbar, global.color, 6, 6, (global.hp / global.maxHP) * 60, 12);
+	draw_sprite_stretched(sHealthBarFrame, global.color, 4, 4, 64, 16);
 	
 	// Draw Coin Count
 	coinTextScale = max(coinTextScale * 0.95, 1);
