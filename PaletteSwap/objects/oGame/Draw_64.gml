@@ -71,6 +71,7 @@ if(room != MainMenu)
 			break;
 	}
 
+	/*
 	// Draw Currently Active Palette
 	paletteTextScale = max(paletteTextScale * 0.95, 1);
 	switch(global.color)
@@ -83,4 +84,5 @@ if(room != MainMenu)
 			break;
 	}
 	draw_text_transformed(RES_W-2,30, currentColor, paletteTextScale, paletteTextScale,0);
+	*/
 }

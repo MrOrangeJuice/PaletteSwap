@@ -15,7 +15,10 @@ if (key_esc = 1){
 		instance_activate_object(oPauseButtons);
 	}
 	else{
-		oPlayer.canJump = false;
+		if(!instance_exists(oShip))
+		{
+			oPlayer.canJump = false;	
+		}
 		audio_play_sound(snd_Pause2_out,5,false);
 		visible = false;
 		//instance_activate_all();
