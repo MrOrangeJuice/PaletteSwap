@@ -2,10 +2,10 @@
 
 hsp = 0;
 vsp = 0;
-grv = 0.4;
-walksp = 4;
-dashsp = 10;
-dashtime = room_speed * 0.25;
+grv = 0.3;
+walksp = 3.5;
+dashsp = 8;
+dashtime = room_speed * 0.3;
 dashdown = false;
 dashleft = false;
 dashright = false;
