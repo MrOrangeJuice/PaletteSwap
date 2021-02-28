@@ -514,7 +514,7 @@ else
 }
 
 // Palette Swap
-if (key_swap_up && !swimming){
+if (key_swap_up && !swimming && room != rTutorial){
 	global.color++;
 	if (global.color >= global.color_limit) global.color = 0;
 	// Create swapping effects
@@ -522,7 +522,7 @@ if (key_swap_up && !swimming){
 	audio_play_sound(snd_Swap,5,false);
 	ScreenShake(2,10);
 }
-if (key_swap_down && !swimming){
+if (key_swap_down && !swimming && room != rTutorial){
 	global.color--;
 	if (global.color < 0) global.color = global.color_limit - 1;
 	// Create swapping effects
