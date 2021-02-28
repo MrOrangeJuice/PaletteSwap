@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+if(instance_exists(oPlayer)){
 absX = abs(oPlayer.x-x);
 absY = abs(oPlayer.y-y);
 switch(global.color){
@@ -45,4 +46,5 @@ if(absY < requiredDistance && absX < 16){
 	else if(global.color == 3 && oPlayer.y > y){
 		oPlayer.y += pushForce * (1 - (absY / requiredDistance));
 	}
+}
 }

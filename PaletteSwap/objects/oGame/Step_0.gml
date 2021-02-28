@@ -22,7 +22,7 @@ if(global.coins != 100 && !global.paused && !global.textUp)
 }
 else
 {
-	if(!timeScaleSet && !global.paused)
+	if(!timeScaleSet && !global.paused && room == rTest)
 	{
 		ini_open(SAVEFILE);
 		show_debug_message(global.time);
