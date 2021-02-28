@@ -9,9 +9,11 @@ if (gamepad_button_check_pressed(0,gp_face1) || gamepad_button_check_pressed(4,g
 if(key_select == 1){
 	switch(menuIndex){
 	case 0:
-		SlideTransition(TRANS_MODE.GOTO, rTest);
+		global.color_limit = 1;
+		SlideTransition(TRANS_MODE.GOTO, rTutorial);
 		break;
 	case 1:
+		/*
 		if(file_exists(SAVEFILE)){
 			show_debug_message("HERE");
 			global.loaded = true;
@@ -36,6 +38,8 @@ if(key_select == 1){
 		}
 		SlideTransition(TRANS_MODE.GOTO, rTest);
 		break;
+		*/
+		SlideTransition(TRANS_MODE.GOTO, rTest);
 	case 2:
 		if(file_exists(SAVEFILE)){
 			file_delete(SAVEFILE);
@@ -43,12 +47,8 @@ if(key_select == 1){
 		break;
 	case 3:
 		window_set_fullscreen(!window_get_fullscreen());
-		break;
+			break;
 	case 4:
-		global.color_limit = 1;
-		SlideTransition(TRANS_MODE.GOTO, rTutorialAlex);
-		break;
-	case 5:
 		game_end();
 		break;
 	default:

@@ -22,8 +22,15 @@ if(global.coins != 100 && !global.paused && !global.textUp)
 }
 else
 {
-	if(!timeScaleSet)
+	if(!timeScaleSet && !global.paused)
 	{
+		ini_open(SAVEFILE);
+		show_debug_message(global.time);
+		show_debug_message(ini_read_real("Vars", "best", 0));
+		if(ini_read_real("Vars", "best", 0) == 0 || global.time < ini_read_real("Vars", "best", 0)){
+			ini_write_real("Vars", "best", global.time);
+		}
+		ini_close();
 		timeTextScale = 1.2;
 		timeScaleSet = true;
 	}

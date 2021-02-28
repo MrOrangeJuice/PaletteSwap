@@ -12,3 +12,15 @@ repeat(buttonCount){
 	draw_text(menuX, menuY + buttonHeight * c, button[c]);
 	c++;	
 }
+DrawSetText($002704, fUI, 0, 0);
+	if(file_exists(SAVEFILE)){
+		ini_open(SAVEFILE);
+		if(ini_read_real("Vars", "best", 0) == 0){
+			draw_text(200, 150, "No high score");
+		}
+		else{
+			draw_text_transformed(275, 5, "High Score:", .5, .5, 0);
+			draw_text_transformed(275, 10, string_format(ini_read_real("Vars", "best", 0) / room_speed, 0, 2), .5, .5, 0);
+		}
+		ini_close();
+	}

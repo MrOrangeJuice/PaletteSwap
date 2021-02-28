@@ -5,7 +5,8 @@ key_right = keyboard_check(ord("D"));
 key_jump = keyboard_check(ord("P")) || keyboard_check(vk_space);
 key_jump_released = keyboard_check_released(ord("P")) || keyboard_check_released(vk_space);
 key_down = keyboard_check(ord("S"));
-key_dash = keyboard_check_pressed(ord("O")) || keyboard_check_pressed(vk_lshift);
+key_dash = 0;
+if(window_has_focus()) key_dash = keyboard_check_pressed(ord("O")) || keyboard_check_pressed(vk_lshift);
 key_up = keyboard_check(ord("W"));
 key_swap_down = keyboard_check_pressed(ord("Q")) || keyboard_check_pressed(ord("U"));
 key_swap_up = keyboard_check_pressed(ord("E")) || keyboard_check_pressed(ord("I"));
@@ -495,7 +496,7 @@ else
 }
 
 // Palette Swap
-if (key_swap_up && !swimming){
+if (key_swap_up && !swimming && room != rTutorial){
 	global.color++;
 	if (global.color >= global.color_limit) global.color = 0;
 	// Create swapping effects
@@ -503,7 +504,7 @@ if (key_swap_up && !swimming){
 	audio_play_sound(snd_Swap,5,false);
 	ScreenShake(2,10);
 }
-if (key_swap_down && !swimming){
+if (key_swap_down && !swimming && room != rTutorial){
 	global.color--;
 	if (global.color < 0) global.color = global.color_limit - 1;
 	// Create swapping effects

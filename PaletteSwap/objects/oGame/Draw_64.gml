@@ -2,6 +2,11 @@
 
 if(room != MainMenu)
 {
+	// healthbar
+	draw_sprite_stretched(sHealthBarBase, global.color, 4, 4, 64, 16);
+	draw_sprite_stretched(sHealthbar, global.color, 6, 6, (global.hp / global.maxHP) * 60, 12);
+	draw_sprite_stretched(sHealthBarFrame, global.color, 4, 4, 64, 16);
+	
 	// Draw Coin Count
 	coinTextScale = max(coinTextScale * 0.95, 1);
 	switch(global.color)
@@ -29,6 +34,7 @@ if(room != MainMenu)
 	draw_text_transformed(RES_W-2,12,"Time: " + string_format((global.time / room_speed), 0, 2), timeTextScale, timeTextScale,0);
 
 	// Draw Player HP
+	/*
 	hpTextScale = max(hpTextScale * 0.95, 1);
 	switch(global.color)
 	{
@@ -40,6 +46,7 @@ if(room != MainMenu)
 			break;
 	}
 	draw_text_transformed(RES_W-2,21,"HP: " + string(global.hp) + "/ " + string(global.maxHP), hpTextScale, hpTextScale,0);
+	*/
 
 	// Draw current palette color.
 	currentColor = "";
@@ -64,6 +71,7 @@ if(room != MainMenu)
 			break;
 	}
 
+	/*
 	// Draw Currently Active Palette
 	paletteTextScale = max(paletteTextScale * 0.95, 1);
 	switch(global.color)
@@ -76,4 +84,5 @@ if(room != MainMenu)
 			break;
 	}
 	draw_text_transformed(RES_W-2,30, currentColor, paletteTextScale, paletteTextScale,0);
+	*/
 }
