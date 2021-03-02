@@ -437,6 +437,15 @@ if (isInvulnerable)
 
 
 // Animation
+if (global.knockedBack)
+{
+	SwapSprite(sFernHit);
+}
+else 
+{
+	SwapSprite(sFernIdle);
+}
+
 if(isDashing)
 {
 	if(dashdown)

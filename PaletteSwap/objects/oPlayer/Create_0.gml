@@ -21,7 +21,7 @@ jumped = false; //purely to stop jumpdash
 skidSound = true;
 wallHit = false;
 swimming = false;
-spikeImmune = false;
+global.knockedBack = false;
 
 skidding = false; //skidding check
 
