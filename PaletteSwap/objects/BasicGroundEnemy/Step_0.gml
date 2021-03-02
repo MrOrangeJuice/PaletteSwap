@@ -51,6 +51,16 @@ if (place_meeting(x, y, oPlayer))
 		// Refresh player's dash.
 		DashReset();
 	}
+	else if (player.isRolling == true)
+	{
+		eHP -= 1;
+		
+		// Send player flying.
+		InitiateKnockback(player, 0, -8);
+		
+		// Refresh player's dash.
+		DashReset();
+	}
 	// If the player is not dashing, then knock them back and begin their iframes.
 	else 
 	{

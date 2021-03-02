@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sSpikes",
-    "path": "sprites/sSpikes/sSpikes.yy",
+    "name": "sFernGlasses",
+    "path": "sprites/sFernGlasses/sFernGlasses.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,17 +20,18 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
-  "properties": [
-    {"varType":3,"value":"True","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"isPit","tags":[],"resourceType":"GMObjectProperty",},
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"oGlasses","path":"objects/oGlasses/oGlasses.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"oGlasses","path":"objects/oGlasses/oGlasses.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
+  "properties": [],
   "overriddenProperties": [],
   "parent": {
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oSpikes",
+  "name": "oGlasses",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -404,6 +404,24 @@ else
 		dashright = false;
 	}
 }
+//Spike collisions
+collidingSpikes = instance_place(x, y, oSpikes);
+if(collidingSpikes != noone){
+	if(!spikeImmune){
+		spikeImmune = true;
+		global.hp -= 10;
+		if(collidingSpikes.isPit){
+			oPlayer.x = global.lastCheckpointX;
+			oPlayer.y = global.lastCheckpointY;
+		}
+		else{
+			InitiateKnockback(oPlayer, 6, -7);
+		}
+	}
+}
+else{
+	spikeImmune = false;
+}
 
 // Invulnerrability calculations.
 if (isInvulnerable)
