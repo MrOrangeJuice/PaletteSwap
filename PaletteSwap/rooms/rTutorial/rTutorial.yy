@@ -2206,7 +2206,6 @@
     {"name":"inst_599B60B4","path":"rooms/rTutorial/rTutorial.yy",},
     {"name":"inst_62C9C","path":"rooms/rTutorial/rTutorial.yy",},
     {"name":"inst_2D2D9664","path":"rooms/rTutorial/rTutorial.yy",},
-    {"name":"inst_32C9A2DF","path":"rooms/rTutorial/rTutorial.yy",},
     {"name":"inst_75102E7B","path":"rooms/rTutorial/rTutorial.yy",},
     {"name":"inst_5702A70F","path":"rooms/rTutorial/rTutorial.yy",},
     {"name":"inst_6795DF2A","path":"rooms/rTutorial/rTutorial.yy",},

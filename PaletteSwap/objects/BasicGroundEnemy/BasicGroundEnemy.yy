@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "PinkPH",
-    "path": "sprites/PinkPH/PinkPH.yy",
+    "name": "sCrab",
+    "path": "sprites/sCrab/sCrab.yy",
   },
   "solid": false,
   "visible": true,
