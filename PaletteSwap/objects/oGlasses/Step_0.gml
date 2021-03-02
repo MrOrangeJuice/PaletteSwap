@@ -9,13 +9,5 @@ if (place_meeting(x,y+vsp,oWall))
 
 y = y + vsp;
 
-deathCount += (delta_time / 1000000);
-
-if (deathCount >= deathTime)
-{
-	global.isDead = false;
-	instance_change(oPlayer, true);
-}
-
 //update frame
 PaletteAnimationSwap();

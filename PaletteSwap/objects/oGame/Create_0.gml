@@ -12,7 +12,6 @@ global.controller = 0;
 
 global.hp = 100;
 global.maxHP = 100;
-global.isDead = false;
 global.textSpeed = .75;
 global.textUp = false;
 global.lastAxislv4Value = 0;

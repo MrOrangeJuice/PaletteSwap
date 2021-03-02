@@ -530,8 +530,8 @@ if (knockBackCount >= knockBackTime)
 // Handling death
 if (global.hp <= 0)
 {
-	global.isDead = true;
-	instance_change(oGlasses, true);
+	instance_create_layer(x, y, "Player", oGlasses);
+	instance_destroy();
 }
 
 // Palette Swap
