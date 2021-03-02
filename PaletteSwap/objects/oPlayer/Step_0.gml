@@ -437,6 +437,8 @@ if (isInvulnerable)
 
 
 // Animation
+
+
 if(isDashing)
 {
 	if(dashdown)
@@ -511,6 +513,25 @@ else
 			}
 		}
 	}
+}
+
+if (global.knockedBack)
+{
+	SwapSprite(sFernHit);
+	knockBackCount += (delta_time / 1000000);
+}
+
+if (knockBackCount >= knockBackTime)
+{
+	knockBackCount = 0;
+	global.knockedBack = false;	
+}
+
+// Handling death
+if (global.hp <= 0)
+{
+	global.isDead = true;
+	instance_change(oGlasses, true);
 }
 
 // Palette Swap
