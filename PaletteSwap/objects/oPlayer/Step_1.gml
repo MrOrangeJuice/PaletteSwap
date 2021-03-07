@@ -1,6 +1,6 @@
 /// @description Update Physics
 // Get Player Input
-/*key_left = keyboard_check(ord("A"));
+key_left = keyboard_check(ord("A"));
 key_right = keyboard_check(ord("D"));
 key_jump = keyboard_check(ord("P")) || keyboard_check(vk_space);
 key_jump_released = keyboard_check_released(ord("P")) || keyboard_check_released(vk_space);
@@ -93,7 +93,7 @@ else if ((swimming && (vsp == 0 || vsp > 0.6)) || !swimming){
 }*/
 
 // Decrement jump buffer
-/*jumpBuffer -= 1;
+jumpBuffer -= 1;
 if (jumpBuffer > 0) && (key_jump) && (canJump)
 {
 	jumpBuffer = 0;
@@ -174,7 +174,7 @@ if(!isDashing)
 		}
 	}
 
-	/*hsp = currentwalksp;
+	hsp = currentwalksp;
 	if (swimming){
 		grv= 0.2;
 	}
@@ -185,7 +185,7 @@ if(!isDashing)
 	if vsp < 0 && (!(key_jump)) && jumpVar //if you're moving upwards in the air but not holding down jump
 	{
 		vsp *= 0.85; //essentially, divide your vertical speed
-	}*/
+	}
 	
 	// Restore ability to variably jump once the bounce hits its apex
 	/*if (vsp > 0)
@@ -238,7 +238,7 @@ if(!isDashing)
 	else{
 		swimming = false;
 	}
-	y = y + vsp;
+	y = y + vsp;*/
 }
 // Dash
 else
@@ -303,7 +303,7 @@ else
 			break;
 			}
 		}
-		y = y + vsp;
+		y = y + vsp;*/
 	}
 	if(dashright)
 	{
@@ -342,7 +342,7 @@ else
 		if (jumped){
 			vsp += grv;
 		}
-		y = y + vsp;
+		y = y + vsp;*/
 	}
 	if(dashleft)
 	{
@@ -380,7 +380,7 @@ else
 		if (jumped){
 			vsp += grv;
 		}
-		y = y + vsp;
+		y = y + vsp;*/
 	}
 	
 	// Decrement timer and end dash if necessary
@@ -421,7 +421,7 @@ if(collidingSpikes != noone){
 }
 else{
 	spikeImmune = false;
-}
+}*/
 
 // Invulnerrability calculations.
 if (isInvulnerable)
@@ -537,4 +537,4 @@ if(global.hp <= 0){
 }
 }
 //update frame
-PaletteAnimationSwap();*/
+PaletteAnimationSwap();

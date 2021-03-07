@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"rOldTutorialCopy","path":"rooms/rOldTutorialCopy/rOldTutorialCopy.yy",},"order":9,},
     {"id":{"name":"rTutorialAlex","path":"rooms/rTutorialAlex/rTutorialAlex.yy",},"order":8,},
     {"id":{"name":"sShipDamaged","path":"sprites/sShipDamaged/sShipDamaged.yy",},"order":28,},
     {"id":{"name":"sGround","path":"sprites/sGround/sGround.yy",},"order":18,},
@@ -162,6 +163,7 @@
     {"roomId":{"name":"rTest","path":"rooms/rTest/rTest.yy",},},
     {"roomId":{"name":"rTutorial","path":"rooms/rTutorial/rTutorial.yy",},},
     {"roomId":{"name":"rTutorialAlex","path":"rooms/rTutorialAlex/rTutorialAlex.yy",},},
+    {"roomId":{"name":"rOldTutorialCopy","path":"rooms/rOldTutorialCopy/rOldTutorialCopy.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

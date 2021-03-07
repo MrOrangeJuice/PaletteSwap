@@ -22,6 +22,8 @@ skidSound = true;
 wallHit = false;
 swimming = false;
 spikeImmune = false;
+lastGroundedPosX = 0;
+lastGroundedPosY = 0;
 
 skidding = false; //skidding check
 
