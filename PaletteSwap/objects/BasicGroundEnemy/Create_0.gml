@@ -1,7 +1,7 @@
 /// @description Initialize enemy parameters
 
 walkSpeed = 2;
-damage = 2;
+damage = 10;
 eMaxHP = 1;
 eHP = 1;
 movingRight = true;

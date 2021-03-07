@@ -2,10 +2,10 @@
 
 hsp = 0;
 vsp = 0;
-grv = 0.4;
-walksp = 4;
-dashsp = 10;
-dashtime = room_speed * 0.25;
+grv = 0.3;
+walksp = 3.5;
+dashsp = 8;
+dashtime = room_speed * 0.3;
 dashdown = false;
 dashleft = false;
 dashright = false;
@@ -24,6 +24,11 @@ swimming = false;
 spikeImmune = false;
 lastGroundedPosX = 0;
 lastGroundedPosY = 0;
+
+// Knockback variables.
+global.knockedBack = false;
+knockBackTime = 0.25;
+knockBackCount = 0;
 
 skidding = false; //skidding check
 
