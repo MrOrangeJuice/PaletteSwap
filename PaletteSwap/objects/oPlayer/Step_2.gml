@@ -17,7 +17,7 @@ if(collidingSpikes != noone){
 else{
 	spikeImmune = false;
 }
-}
+
 	bottomWall = place_meeting(x, y+1, oWall);
 	bottomPalette = place_meeting(x, y+1, oPaletteWall);
 if (!bottomWall && !bottomPalette)
@@ -195,4 +195,5 @@ else{
 		}
 		y = y + vsp;
 	}
+}
 }
