@@ -9,3 +9,5 @@ else
 	sprite_index = sCheckpointInactive;	
 	active = false;
 }
+
+PaletteAnimationSwap();
