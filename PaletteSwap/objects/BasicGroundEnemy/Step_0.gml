@@ -77,6 +77,8 @@ if (place_meeting(x, y, oPlayer))
 			player.isInvulnerable = true;
 			
 			InitiateKnockback(player, 6, -7);
+			
+			global.knockedBack = true;
 		}
 	}
 }

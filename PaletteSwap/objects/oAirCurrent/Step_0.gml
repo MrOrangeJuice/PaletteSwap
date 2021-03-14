@@ -30,21 +30,21 @@ if(absY < 16 && absX < requiredDistance){
 		myAir.rotation = 180;
 		myAir.x = x - requiredDistance;
 		myAir.y = y;
-		oPlayer.x -= pushForce * (1 - (absX / requiredDistance));
+		oPlayer.hsp -= pushForce * (1 - (absX / requiredDistance));
 	}
 	else if(global.color == 1 && oPlayer.x > x){
 		myAir.rotation = 0;
 		myAir.x = x + 16;
 		myAir.y = y;
-		oPlayer.x += pushForce * (1 - (absX / requiredDistance));
+		oPlayer.hsp += pushForce * (1 - (absX / requiredDistance));
 	}
 }
 if(absY < requiredDistance && absX < 16){
 	if(global.color == 2 && oPlayer.y < y){
-		oPlayer.y -= pushForce * (1 - (absY / requiredDistance));
+		oPlayer.vsp -= pushForce * (1 - (absY / requiredDistance));
 	}
 	else if(global.color == 3 && oPlayer.y > y){
-		oPlayer.y += pushForce * (1 - (absY / requiredDistance));
+		oPlayer.vsp += pushForce * (1 - (absY / requiredDistance));
 	}
 }
 }

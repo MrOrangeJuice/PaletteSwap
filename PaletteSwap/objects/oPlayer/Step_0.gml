@@ -1,6 +1,6 @@
 /// @description Update Physics
 // Get Player Input
-key_left = keyboard_check(ord("A"));
+/*key_left = keyboard_check(ord("A"));
 key_right = keyboard_check(ord("D"));
 key_jump = keyboard_check(ord("P")) || keyboard_check(vk_space);
 key_jump_released = keyboard_check_released(ord("P")) || keyboard_check_released(vk_space);
@@ -79,7 +79,7 @@ if(key_jump_released)
 }
 
 // Check if player is airborne
-if (!place_meeting(x,y+1,oWall) && !place_meeting(x,y+1,oPaletteWall))
+/*if (!place_meeting(x,y+1,oWall) && !place_meeting(x,y+1,oPaletteWall))
 {
 	airborne = true;
 }
@@ -90,10 +90,10 @@ else if ((swimming && (vsp == 0 || vsp > 0.6)) || !swimming){
 	jumped = false;
 	// Reset roll
 	isRolling = false;
-}
+}*/
 
 // Decrement jump buffer
-jumpBuffer -= 1;
+/*jumpBuffer -= 1;
 if (jumpBuffer > 0) && (key_jump) && (canJump)
 {
 	jumpBuffer = 0;
@@ -174,7 +174,7 @@ if(!isDashing)
 		}
 	}
 
-	hsp = currentwalksp;
+	/*hsp = currentwalksp;
 	if (swimming){
 		grv= 0.2;
 	}
@@ -185,10 +185,10 @@ if(!isDashing)
 	if vsp < 0 && (!(key_jump)) && jumpVar //if you're moving upwards in the air but not holding down jump
 	{
 		vsp *= 0.85; //essentially, divide your vertical speed
-	}
+	}*/
 	
 	// Restore ability to variably jump once the bounce hits its apex
-	if (vsp > 0)
+	/*if (vsp > 0)
 	{
 		jumpVar = true;	
 	}
@@ -284,7 +284,7 @@ else
 	{
 		vsp = dashsp * 1.5;
 		// Handle Vertical Collision Normally
-		if (place_meeting(x,y+vsp,oWall))
+		/*if (place_meeting(x,y+vsp,oWall))
 		{
 			//collide with wall
 			DoDashCollision(oWall, -11, 0, true);
@@ -309,7 +309,7 @@ else
 	{
 		hsp = dashsp;
 		// Horizontal Collision
-		if (place_meeting(x+hsp,y,oWall))
+		/*if (place_meeting(x+hsp,y,oWall))
 		{
 			DoDashCollision(oWall, -7, -6, false);
 		}
@@ -348,7 +348,7 @@ else
 	{
 		hsp = -dashsp;
 		// Horizontal Collision
-		if (place_meeting(x+hsp,y,oWall))
+		/*if (place_meeting(x+hsp,y,oWall))
 		{
 			DoDashCollision(oWall, -7, 6, false);
 		}
@@ -405,7 +405,7 @@ else
 	}
 }
 //Spike collisions
-collidingSpikes = instance_place(x, y, oSpikes);
+/*collidingSpikes = instance_place(x, y, oSpikes);
 if(collidingSpikes != noone){
 	if(!spikeImmune){
 		spikeImmune = true;
@@ -522,6 +522,25 @@ else
 	}
 }
 
+if (global.knockedBack)
+{
+	SwapSprite(sFernHit);
+	knockBackCount += (delta_time / 1000000);
+}
+
+if (knockBackCount >= knockBackTime)
+{
+	knockBackCount = 0;
+	global.knockedBack = false;	
+}
+
+// Handling death
+if (global.hp <= 0)
+{
+	instance_create_layer(x, y, "Player", oGlasses);
+	instance_destroy();
+}
+
 // Palette Swap
 if (key_swap_up && !swimming && room != rTutorial){
 	global.color++;
@@ -545,4 +564,4 @@ if(global.hp <= 0){
 }
 }
 //update frame
-PaletteAnimationSwap();
+PaletteAnimationSwap();*/
