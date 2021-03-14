@@ -128,7 +128,6 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"oSpikes","path":"objects/oSpikes/oSpikes.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3544.0,"y":632.0,"resourceVersion":"1.0","name":"inst_1AB4AD83","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oSpikes","path":"objects/oSpikes/oSpikes.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3560.0,"y":632.0,"resourceVersion":"1.0","name":"inst_481C443C","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oSpikes","path":"objects/oSpikes/oSpikes.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3576.0,"y":632.0,"resourceVersion":"1.0","name":"inst_2CBE156F","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"oSpikes","path":"objects/oSpikes/oSpikes.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3592.0,"y":632.0,"resourceVersion":"1.0","name":"inst_432DA966","tags":[],"resourceType":"GMRInstance",},
         {"properties":[
             {"propertyId":{"name":"isPit","path":"objects/oSpikes/oSpikes.yy",},"objectId":{"name":"oSpikes","path":"objects/oSpikes/oSpikes.yy",},"value":"False","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"oSpikes","path":"objects/oSpikes/oSpikes.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":90.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3688.0,"y":472.0,"resourceVersion":"1.0","name":"inst_D05ED25","tags":[],"resourceType":"GMRInstance",},
@@ -1467,7 +1466,6 @@
     {"name":"inst_1AB4AD83","path":"rooms/rTutorial/rTutorial.yy",},
     {"name":"inst_481C443C","path":"rooms/rTutorial/rTutorial.yy",},
     {"name":"inst_2CBE156F","path":"rooms/rTutorial/rTutorial.yy",},
-    {"name":"inst_432DA966","path":"rooms/rTutorial/rTutorial.yy",},
     {"name":"inst_D05ED25","path":"rooms/rTutorial/rTutorial.yy",},
     {"name":"inst_7B85316D","path":"rooms/rTutorial/rTutorial.yy",},
     {"name":"inst_5740BF4","path":"rooms/rTutorial/rTutorial.yy",},
