@@ -3,6 +3,7 @@
     {"id":{"name":"rOldTutorialCopy","path":"rooms/rOldTutorialCopy/rOldTutorialCopy.yy",},"order":9,},
     {"id":{"name":"rTutorialAlex","path":"rooms/rTutorialAlex/rTutorialAlex.yy",},"order":8,},
     {"id":{"name":"sShipDamaged","path":"sprites/sShipDamaged/sShipDamaged.yy",},"order":28,},
+    {"id":{"name":"sFernDeath","path":"sprites/sFernDeath/sFernDeath.yy",},"order":12,},
     {"id":{"name":"sGround","path":"sprites/sGround/sGround.yy",},"order":18,},
     {"id":{"name":"sSeasideBlue","path":"sprites/sSeasideBlue/sSeasideBlue.yy",},"order":1,},
     {"id":{"name":"fUI","path":"fonts/fUI/fUI.yy",},"order":0,},
