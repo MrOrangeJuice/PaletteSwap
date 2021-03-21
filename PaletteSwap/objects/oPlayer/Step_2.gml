@@ -4,8 +4,8 @@ collidingSpikes = instance_place(x, y, oSpikes);
 if(collidingSpikes != noone){
 	if(!spikeImmune){
 		spikeImmune = true;
-		global.hp -= 10;
 		if(collidingSpikes.isPit){
+			global.hp -= 10;
 			global.canControlTimer = 60;
 			oPlayer.vsp = 0;
 			oPlayer.hsp = 0;
@@ -13,7 +13,12 @@ if(collidingSpikes != noone){
 			oPlayer.y = lastGroundedPosY;
 		}
 		else{
-			InitiateKnockback(oPlayer, 6, -7);
+			if (isInvulnerable == false) {
+				global.hp -= 10;
+				isInvulnerable = true;
+				InitiateKnockback(oPlayer, 6, -7);
+				global.knockedBack = true;
+			}
 		}
 	}
 }
