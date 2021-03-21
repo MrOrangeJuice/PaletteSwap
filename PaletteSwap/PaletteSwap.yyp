@@ -126,6 +126,7 @@
     {"id":{"name":"sCoin","path":"sprites/sCoin/sCoin.yy",},"order":12,},
     {"id":{"name":"sFernRoll","path":"sprites/sFernRoll/sFernRoll.yy",},"order":9,},
     {"id":{"name":"oEddyCutscene","path":"objects/oEddyCutscene/oEddyCutscene.yy",},"order":23,},
+    {"id":{"name":"PaletteTempleLevel","path":"rooms/PaletteTempleLevel/PaletteTempleLevel.yy",},"order":11,},
     {"id":{"name":"oMovingPlatform","path":"objects/oMovingPlatform/oMovingPlatform.yy",},"order":18,},
     {"id":{"name":"GrayPH","path":"sprites/GrayPH/GrayPH.yy",},"order":3,},
     {"id":{"name":"oCrate","path":"objects/oCrate/oCrate.yy",},"order":21,},
@@ -179,6 +180,7 @@
     {"roomId":{"name":"rTutorialAlex","path":"rooms/rTutorialAlex/rTutorialAlex.yy",},},
     {"roomId":{"name":"rOldTutorialCopy","path":"rooms/rOldTutorialCopy/rOldTutorialCopy.yy",},},
     {"roomId":{"name":"rTutorial","path":"rooms/rTutorial/rTutorial.yy",},},
+    {"roomId":{"name":"PaletteTempleLevel","path":"rooms/PaletteTempleLevel/PaletteTempleLevel.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
