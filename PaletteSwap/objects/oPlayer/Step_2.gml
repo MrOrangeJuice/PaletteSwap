@@ -1,4 +1,4 @@
-if(!global.paused && !global.textUp){
+if(!global.paused && !global.textUp && global.canControlTimer < 0){
 	//Spike collision
 collidingSpikes = instance_place(x, y, oSpikes);
 if(collidingSpikes != noone){
@@ -6,6 +6,9 @@ if(collidingSpikes != noone){
 		spikeImmune = true;
 		global.hp -= 10;
 		if(collidingSpikes.isPit){
+			global.canControlTimer = 60;
+			oPlayer.vsp = 0;
+			oPlayer.hsp = 0;
 			oPlayer.x = lastGroundedPosX;
 			oPlayer.y = lastGroundedPosY;
 		}

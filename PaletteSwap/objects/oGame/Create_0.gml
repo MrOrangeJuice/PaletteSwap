@@ -31,6 +31,7 @@ global.loadCoins = 0;
 global.loadTime = 0;
 global.loaded = false;
 global.coinId = 0;
+global.canControlTimer = -1;
 
 global.color = 0;
 //0 green
