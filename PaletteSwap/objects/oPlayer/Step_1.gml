@@ -422,7 +422,7 @@ else{
 	spikeImmune = false;
 }*/
 
-// Invulnerrability calculations.
+// Invulnerability calculations.
 if (isInvulnerable)
 {
 	iFrameCount += (delta_time / 1000000);
