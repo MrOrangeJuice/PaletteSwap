@@ -44,6 +44,7 @@
     {"id":{"name":"sTitle","path":"sprites/sTitle/sTitle.yy",},"order":25,},
     {"id":{"name":"rTestJulien","path":"rooms/rTestJulien/rTestJulien.yy",},"order":3,},
     {"id":{"name":"oShipCollision","path":"objects/oShipCollision/oShipCollision.yy",},"order":16,},
+    {"id":{"name":"sTempleGreen","path":"sprites/sTempleGreen/sTempleGreen.yy",},"order":5,},
     {"id":{"name":"snd_Swap","path":"sounds/snd_Swap/snd_Swap.yy",},"order":9,},
     {"id":{"name":"sFernDash","path":"sprites/sFernDash/sFernDash.yy",},"order":6,},
     {"id":{"name":"oTutorialDash","path":"objects/oTutorialDash/oTutorialDash.yy",},"order":19,},
