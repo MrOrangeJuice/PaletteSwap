@@ -68,6 +68,13 @@ if (gamepad_button_check_pressed(0,gp_shoulderr) || gamepad_button_check_pressed
 	global.controller = 1;
 }
 
+// Prevent player from swapping in certain rooms
+if(room == rTutorial || room == rTutorial2)
+{
+	key_swap_down = 0;
+	key_swap_up = 0;
+}
+
 if(!global.paused && !global.textUp && global.canControlTimer < 0){
 
 	//orient sprite
@@ -422,7 +429,7 @@ else{
 	spikeImmune = false;
 }*/
 
-// Invulnerrability calculations.
+// Invulnerability calculations.
 if (isInvulnerable)
 {
 	iFrameCount += (delta_time / 1000000);
