@@ -433,6 +433,11 @@ else{
 if (isInvulnerable)
 {
 	iFrameCount += (delta_time / 1000000);
+	
+	if (iFrameCount >= iFrameTime / 4)
+	{
+		global.knockedBack = false;
+	}
 	// If the player has been invulnerable long-enough, then reset the iFrameCount and set the player to vulnerable.
 	if (iFrameCount >= iFrameTime)
 	{
@@ -441,9 +446,12 @@ if (isInvulnerable)
 	}
 }
 
-
 // Animation
-if(isDashing)
+if (global.knockedBack == true)
+{
+	SwapSprite(sFernHit);
+}
+else if(isDashing)
 {
 	if(dashdown)
 	{
@@ -518,6 +526,8 @@ else
 		}
 	}
 }
+
+
 
 // Palette Swap
 if (key_swap_up && !swimming && room != rTutorial){
