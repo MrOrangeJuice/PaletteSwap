@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sTempleGreen",
-    "path": "sprites/sTempleGreen/sTempleGreen.yy",
+    "name": "sPaletteGreen",
+    "path": "sprites/sPaletteGreen/sPaletteGreen.yy",
   },
   "tileWidth": 16,
   "tileHeight": 16,
@@ -100,7 +100,7 @@
     "path": "folders/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "tTemple",
+  "name": "tGreenPalette",
   "tags": [],
   "resourceType": "GMTileSet",
 }
