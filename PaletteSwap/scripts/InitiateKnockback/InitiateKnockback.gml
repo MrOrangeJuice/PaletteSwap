@@ -14,8 +14,6 @@ function InitiateKnockback(_object, _xVel, _yVel)
 		{
 			_object.currentwalksp = -1 * _xVel;
 		}
-		
-		global.knockedBack = true;
 	
 		// Finally apply knockback to the player.
 		_object.hsp = _object.currentwalksp;

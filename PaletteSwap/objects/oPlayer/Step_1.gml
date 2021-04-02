@@ -433,11 +433,7 @@ else{
 if (isInvulnerable)
 {
 	iFrameCount += (delta_time / 1000000);
-	
-	if (iFrameCount >= iFrameTime / 4)
-	{
-		global.knockedBack = false;
-	}
+
 	// If the player has been invulnerable long-enough, then reset the iFrameCount and set the player to vulnerable.
 	if (iFrameCount >= iFrameTime)
 	{
