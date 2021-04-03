@@ -15,7 +15,7 @@
   "VTile": false,
   "For3D": false,
   "width": 128,
-  "height": 128,
+  "height": 256,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -55,7 +55,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 64,
-    "yorigin": 64,
+    "yorigin": 128,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sSeasideBlue","path":"sprites/sSeasideBlue/sSeasideBlue.yy",},
