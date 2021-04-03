@@ -108,6 +108,7 @@
     {"id":{"name":"sFernIcon","path":"sprites/sFernIcon/sFernIcon.yy",},"order":0,},
     {"id":{"name":"rTutorial","path":"rooms/rTutorial/rTutorial.yy",},"order":10,},
     {"id":{"name":"sWallMany","path":"sprites/sWallMany/sWallMany.yy",},"order":25,},
+    {"id":{"name":"oHiddenArea2","path":"objects/oHiddenArea2/oHiddenArea2.yy",},"order":28,},
     {"id":{"name":"oShip","path":"objects/oShip/oShip.yy",},"order":15,},
     {"id":{"name":"sFernIdle","path":"sprites/sFernIdle/sFernIdle.yy",},"order":1,},
     {"id":{"name":"msc_Level","path":"sounds/msc_Level/msc_Level.yy",},"order":1,},
