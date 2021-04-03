@@ -19,5 +19,4 @@ function InitiateKnockback(_object, _xVel, _yVel)
 		_object.hsp = _object.currentwalksp;
 		_object.vsp = _yVel;
 	}
-	
 }

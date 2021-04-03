@@ -68,7 +68,14 @@ if (gamepad_button_check_pressed(0,gp_shoulderr) || gamepad_button_check_pressed
 	global.controller = 1;
 }
 
-if(!global.paused && !global.textUp){
+// Prevent player from swapping in certain rooms
+if(room == rTutorial || room == rTutorial2)
+{
+	key_swap_down = 0;
+	key_swap_up = 0;
+}
+
+if(!global.paused && !global.textUp && global.canControlTimer < 0){
 
 	//orient sprite
 	if ((key_right - key_left) != 0 && !isDashing) image_xscale = sign((key_right - key_left));
@@ -99,11 +106,11 @@ if (jumpBuffer > 0) && (key_jump) && (canJump)
 	jumpBuffer = 0;
 	if (swimming)
 	{
-		vsp = -10;
+		if(global.canControlTimer < 0) vsp = -10;
 	}
 	else
 	{
-		vsp = -10;
+		if(global.canControlTimer < 0) vsp = -10;
 	}
 	audio_play_sound(snd_Jump, 5, false);
 	canJump = false;
@@ -173,18 +180,17 @@ if(!isDashing)
 			}
 		}
 	}
-
-	hsp = currentwalksp;
+	if(global.canControlTimer < 0) hsp = currentwalksp;
 	if (swimming){
 		grv= 0.2;
 	}
 		else grv = 0.4;
-	vsp = vsp + grv;
+	if(global.canControlTimer < 0) vsp = vsp + grv;
 
 	// Variable jump height
 	if vsp < 0 && (!(key_jump)) && jumpVar //if you're moving upwards in the air but not holding down jump
 	{
-		vsp *= 0.85; //essentially, divide your vertical speed
+		if(global.canControlTimer < 0) vsp *= 0.85; //essentially, divide your vertical speed
 	}
 	
 	// Restore ability to variably jump once the bounce hits its apex
@@ -247,7 +253,7 @@ else
 	if(!dashdown && !dashleft && !dashright)
 	{
 		// Reset currentwalksp and vsp
-		vsp = 0;
+		if(global.canControlTimer < 0) vsp = 0;
 		currentwalksp = 0;
 		
 		// Play dash sound
@@ -282,7 +288,7 @@ else
 	// Calculate movement
 	if(dashdown)
 	{
-		vsp = dashsp * 1.5;
+		if(global.canControlTimer < 0) vsp = dashsp * 1.5;
 		// Handle Vertical Collision Normally
 		/*if (place_meeting(x,y+vsp,oWall))
 		{
@@ -307,7 +313,7 @@ else
 	}
 	if(dashright)
 	{
-		hsp = dashsp;
+		if(global.canControlTimer < 0) hsp = dashsp;
 		// Horizontal Collision
 		/*if (place_meeting(x+hsp,y,oWall))
 		{
@@ -346,7 +352,7 @@ else
 	}
 	if(dashleft)
 	{
-		hsp = -dashsp;
+		if(global.canControlTimer < 0) hsp = -dashsp;
 		// Horizontal Collision
 		/*if (place_meeting(x+hsp,y,oWall))
 		{
@@ -423,10 +429,11 @@ else{
 	spikeImmune = false;
 }*/
 
-// Invulnerrability calculations.
+// Invulnerability calculations.
 if (isInvulnerable)
 {
 	iFrameCount += (delta_time / 1000000);
+
 	// If the player has been invulnerable long-enough, then reset the iFrameCount and set the player to vulnerable.
 	if (iFrameCount >= iFrameTime)
 	{
@@ -435,9 +442,12 @@ if (isInvulnerable)
 	}
 }
 
-
 // Animation
-if(isDashing)
+if (global.knockedBack == true)
+{
+	SwapSprite(sFernHit);
+}
+else if(isDashing)
 {
 	if(dashdown)
 	{
@@ -513,6 +523,8 @@ else
 	}
 }
 
+
+
 // Palette Swap
 if (key_swap_up && !swimming && room != rTutorial){
 	global.color++;
@@ -532,6 +544,9 @@ if (key_swap_down && !swimming && room != rTutorial){
 }
 if(global.hp <= 0){
 	global.hp = 100;
+	global.canControlTimer = 60;
+	oPlayer.vsp = 0;
+	oPlayer.hsp = 0;
 	x = global.lastCheckpointX;
 	y = global.lastCheckpointY;
 }

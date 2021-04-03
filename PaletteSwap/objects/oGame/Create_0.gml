@@ -1,5 +1,3 @@
-#macro RES_W 320
-#macro RES_H 180
 #macro SAVEFILE "Save.ini"
 display_set_gui_size(RES_W,RES_H);
 
@@ -31,6 +29,7 @@ global.loadCoins = 0;
 global.loadTime = 0;
 global.loaded = false;
 global.coinId = 0;
+global.canControlTimer = -1;
 
 global.color = 0;
 //0 green

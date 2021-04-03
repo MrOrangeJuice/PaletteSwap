@@ -16,6 +16,8 @@ else
 	instance_deactivate_object(pauseMenu);
 }
 
+global.canControlTimer--;
+
 if(global.coins != 100 && !global.paused && !global.textUp)
 {
 	global.time++;

@@ -45,7 +45,17 @@ y = y + vsp;
 if (place_meeting(x, y, oPlayer))
 {
 	player = instance_find(oPlayer, 0);
-	if (player.isDashing == true)
+	if (player.dashdown == true)
+	{
+		eHP -= 1;
+		
+		// Send player flying.
+		InitiateKnockback(player, 0, -8);
+		
+		// Refresh player's dash.
+		DashReset();
+	}
+	else if (player.isDashing == true)
 	{
 		eHP -= 1;
 		
@@ -64,7 +74,7 @@ if (place_meeting(x, y, oPlayer))
 		
 		// Refresh player's dash.
 		DashReset();
-	}
+	} 
 	// If the player is not dashing, then knock them back and begin their iframes.
 	else 
 	{
