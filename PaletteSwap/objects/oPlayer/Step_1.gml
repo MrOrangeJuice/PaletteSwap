@@ -69,7 +69,7 @@ if (gamepad_button_check_pressed(0,gp_shoulderr) || gamepad_button_check_pressed
 }
 
 // Prevent player from swapping in certain rooms
-if(room == rTutorial || room == rTutorial2)
+if(room == rTutorial || room == rTutorial2 || !canSwap)
 {
 	key_swap_down = 0;
 	key_swap_up = 0;
