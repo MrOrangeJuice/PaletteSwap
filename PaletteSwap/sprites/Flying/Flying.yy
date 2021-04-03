@@ -53,7 +53,7 @@
     "spriteId": {"name":"Flying","path":"sprites/Flying/Flying.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 10.0,
+    "playbackSpeed": 12.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -95,6 +95,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"cf4d69a9-90f0-43f2-8d2c-71ff6d74355f","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "FlyingEnemy",
     "path": "folders/Sprites/FlyingEnemy.yy",
