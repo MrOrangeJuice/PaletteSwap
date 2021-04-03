@@ -75,6 +75,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"oCheckpoint","path":"objects/oCheckpoint/oCheckpoint.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":304.0,"y":616.0,"resourceVersion":"1.0","name":"inst_5EE7CA67","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oCheckpoint","path":"objects/oCheckpoint/oCheckpoint.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2880.0,"y":344.0,"resourceVersion":"1.0","name":"inst_389FA523","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oCheckpoint","path":"objects/oCheckpoint/oCheckpoint.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3696.0,"y":392.0,"resourceVersion":"1.0","name":"inst_D5F1F73","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"oLevelMusic","path":"objects/oLevelMusic/oLevelMusic.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":160.0,"y":560.0,"resourceVersion":"1.0","name":"inst_36BE6AFE","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Checkpoints","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"oSpikes","path":"objects/oSpikes/oSpikes.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3976.0,"y":632.0,"resourceVersion":"1.0","name":"inst_793E014C","tags":[],"resourceType":"GMRInstance",},
@@ -2767,6 +2768,7 @@
     {"name":"inst_5D091893","path":"rooms/rTutorial/rTutorial.yy",},
     {"name":"inst_6C4DBEE0","path":"rooms/rTutorial/rTutorial.yy",},
     {"name":"inst_7976B49E","path":"rooms/rTutorial/rTutorial.yy",},
+    {"name":"inst_36BE6AFE","path":"rooms/rTutorial/rTutorial.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
