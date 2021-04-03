@@ -259,7 +259,7 @@ else
 		// Play dash sound
 		audio_play_sound(snd_Dash, 5, false);
 		
-		if(key_down && airborne)
+		if(key_down && (airborne || swimming))
 		{
 			dashdown = true;	
 		}
