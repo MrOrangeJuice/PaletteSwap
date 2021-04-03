@@ -26,6 +26,7 @@
     {"id":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},"order":20,},
     {"id":{"name":"snd_Pause","path":"sounds/snd_Pause/snd_Pause.yy",},"order":13,},
     {"id":{"name":"BlackPH","path":"sprites/BlackPH/BlackPH.yy",},"order":0,},
+    {"id":{"name":"sAirCurrent2","path":"sprites/sAirCurrent2/sAirCurrent2.yy",},"order":43,},
     {"id":{"name":"sBlownAir","path":"sprites/sBlownAir/sBlownAir.yy",},"order":34,},
     {"id":{"name":"SlideTransition","path":"scripts/SlideTransition/SlideTransition.yy",},"order":1,},
     {"id":{"name":"sTutorialKeyboardDash","path":"sprites/sTutorialKeyboardDash/sTutorialKeyboardDash.yy",},"order":35,},
