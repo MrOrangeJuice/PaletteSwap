@@ -1,3 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-playerIn = false;
+layer_set_visible("GreenTiles", false);
