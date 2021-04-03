@@ -9,3 +9,4 @@ vsp = 0;
 grv = 0.4;
 hsp = 0;
 ledgeTurn = ledgeTurn;
+currentframe = 0;
