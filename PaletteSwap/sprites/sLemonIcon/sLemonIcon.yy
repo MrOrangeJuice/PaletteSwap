@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
-  "bbox_right": 159,
-  "bbox_top": 0,
-  "bbox_bottom": 15,
+  "bbox_left": 4,
+  "bbox_right": 123,
+  "bbox_top": 16,
+  "bbox_bottom": 111,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 160,
-  "height": 16,
+  "width": 128,
+  "height": 128,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"252ce253-fd11-49e2-8c37-c5d365777049","path":"sprites/sBlownAir/sBlownAir.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"252ce253-fd11-49e2-8c37-c5d365777049","path":"sprites/sBlownAir/sBlownAir.yy",},"LayerId":{"name":"56134db1-4b3b-4b5b-ae70-045a882e365c","path":"sprites/sBlownAir/sBlownAir.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sBlownAir","path":"sprites/sBlownAir/sBlownAir.yy",},"resourceVersion":"1.0","name":"252ce253-fd11-49e2-8c37-c5d365777049","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"14ab0f55-7789-4034-9374-417aeaecbf89","path":"sprites/sLemonIcon/sLemonIcon.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"14ab0f55-7789-4034-9374-417aeaecbf89","path":"sprites/sLemonIcon/sLemonIcon.yy",},"LayerId":{"name":"5539c70b-d705-4a2e-87a1-46a5a73733ee","path":"sprites/sLemonIcon/sLemonIcon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sLemonIcon","path":"sprites/sLemonIcon/sLemonIcon.yy",},"resourceVersion":"1.0","name":"14ab0f55-7789-4034-9374-417aeaecbf89","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sBlownAir","path":"sprites/sBlownAir/sBlownAir.yy",},
+    "spriteId": {"name":"sLemonIcon","path":"sprites/sLemonIcon/sLemonIcon.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"ad37a6ba-bbb7-42fe-b6fd-b7dd65069e9c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"252ce253-fd11-49e2-8c37-c5d365777049","path":"sprites/sBlownAir/sBlownAir.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9426f668-2d56-43a6-9ce9-ccfbb431772c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"14ab0f55-7789-4034-9374-417aeaecbf89","path":"sprites/sLemonIcon/sLemonIcon.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sBlownAir","path":"sprites/sBlownAir/sBlownAir.yy",},
+    "parent": {"name":"sLemonIcon","path":"sprites/sLemonIcon/sLemonIcon.yy",},
     "resourceVersion": "1.3",
-    "name": "sBlownAir",
+    "name": "sLemonIcon",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"56134db1-4b3b-4b5b-ae70-045a882e365c","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5539c70b-d705-4a2e-87a1-46a5a73733ee","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sBlownAir",
+  "name": "sLemonIcon",
   "tags": [],
   "resourceType": "GMSprite",
 }
