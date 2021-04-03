@@ -98,4 +98,13 @@ if (eHP <= 0)
 }
 }
 
+// Animation
+if (movingRight) {
+	image_xscale = -1;
+}
+else
+{
+	image_xscale = 1;
+}
+
 PaletteAnimationSwap();

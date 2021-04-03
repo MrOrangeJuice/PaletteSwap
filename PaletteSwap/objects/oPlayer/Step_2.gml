@@ -32,7 +32,7 @@ if (!bottomWall && !bottomPalette)
 {
 	airborne = true;
 }
-else if ((swimming && (vsp >= 0)) || !swimming){
+else if ((swimming && (vsp == 0 || vsp > 0.6)) || !swimming){
 	airborne = false;
 	if(collidingSpikes == noone){
 	if(bottomWall){

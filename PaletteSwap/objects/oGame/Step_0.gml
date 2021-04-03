@@ -48,8 +48,8 @@ if(global.color == 1)
 }
 if(global.color == 0)
 {
-	//layer_set_visible("GreenTiles", true);	
+	layer_set_visible("GreenTiles", true);	
 	layer_set_visible("GreenBackground", true);	
-	//layer_set_visible("BlueTiles", false);	
+	layer_set_visible("BlueTiles", false);	
 	layer_set_visible("BlueBackground", false);
 }

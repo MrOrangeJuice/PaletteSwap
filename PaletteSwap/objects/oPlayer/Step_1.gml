@@ -103,7 +103,6 @@ else if ((swimming && (vsp == 0 || vsp > 0.6)) || !swimming){
 jumpBuffer -= 1;
 if (jumpBuffer > 0) && (key_jump) && (canJump)
 {
-	
 	jumpBuffer = 0;
 	if (swimming)
 	{
