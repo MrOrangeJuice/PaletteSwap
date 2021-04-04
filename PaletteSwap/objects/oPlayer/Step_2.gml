@@ -4,11 +4,22 @@ collidingSpikes = instance_place(x, y, oSpikes);
 if(collidingSpikes != noone){
 	if(!spikeImmune){
 		spikeImmune = true;
-		if (isInvulnerable == false) {
+		if(collidingSpikes.isPit){
 			global.hp -= 10;
-			isInvulnerable = true;
-			InitiateKnockback(oPlayer, 6, -7);
-			global.knockedBack = true;
+			global.canControlTimer = 60;
+			oPlayer.vsp = 0;
+			oPlayer.hsp = 0;
+			oPlayer.x = lastGroundedPosX;
+			oPlayer.y = lastGroundedPosY;
+		}
+		else{
+			if (isInvulnerable == false) {
+				global.hp -= 10;
+				isInvulnerable = true;
+				InitiateKnockback(oPlayer, 6, -7);
+				global.knockedBack = true;
+				audio_play_sound(snd_Damage, 5, false);
+			}
 		}
 	}
 }
