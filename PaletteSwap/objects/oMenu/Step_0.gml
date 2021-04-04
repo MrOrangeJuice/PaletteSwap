@@ -10,7 +10,7 @@ if(key_select == 1){
 	switch(menuIndex){
 	case 0:
 		//global.color_limit = 1;
-		SlideTransition(TRANS_MODE.GOTO, PaletteTempleLevel);
+		SlideTransition(TRANS_MODE.GOTO, rTutorial);
 		break;
 	case 1:
 		/*
