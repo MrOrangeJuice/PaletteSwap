@@ -1,17 +1,17 @@
 {
   "spriteId": {
-    "name": "sAirCurrent",
-    "path": "sprites/sAirCurrent/sAirCurrent.yy",
+    "name": "sCrab",
+    "path": "sprites/sCrab/sCrab.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "oWall",
-    "path": "objects/oWall/oWall.yy",
+    "name": "oGroundEnemy",
+    "path": "objects/oGroundEnemy/oGroundEnemy.yy",
   },
-  "physicsObject": false,
+  "physicsObject": true,
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 1,
@@ -26,15 +26,16 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Enemies",
+    "path": "folders/Objects/Enemies.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oAirCurrent",
+  "name": "oCrab",
   "tags": [],
   "resourceType": "GMObject",
 }

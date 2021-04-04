@@ -402,7 +402,10 @@ else
 	{
 		isDashing = false;
 		// Cancel roll if the dash ends without hitting a wall
-		isRolling = false;
+		if (place_meeting(x, y, oCrab) == false)
+		{
+			isRolling = false;
+		}
 		dashtime = room_speed * 0.25;
 		// Reset dash direction
 		dashdown = false;
@@ -522,8 +525,6 @@ else
 		}
 	}
 }
-
-
 
 // Palette Swap
 if (key_swap_up && !swimming && room != rTutorial){
