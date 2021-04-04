@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sAirCurrent2",
-    "path": "sprites/sAirCurrent2/sAirCurrent2.yy",
+    "name": "sAirCurrent",
+    "path": "sprites/sAirCurrent/sAirCurrent.yy",
   },
   "solid": false,
   "visible": true,

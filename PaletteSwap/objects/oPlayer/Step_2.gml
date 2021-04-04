@@ -18,7 +18,6 @@ if(collidingSpikes != noone){
 				isInvulnerable = true;
 				InitiateKnockback(oPlayer, 6, -7);
 				global.knockedBack = true;
-				audio_play_sound(snd_Damage, 5, false);
 			}
 		}
 	}
@@ -33,7 +32,7 @@ if (!bottomWall && !bottomPalette)
 {
 	airborne = true;
 }
-else if ((swimming && vsp >= 0) || !swimming){
+else if ((swimming && (vsp == 0 || vsp > 0.6)) || !swimming){
 	airborne = false;
 	if(collidingSpikes == noone){
 	if(bottomWall){
