@@ -21,5 +21,12 @@ if (gamepad_button_check_pressed(0,gp_shoulderr) || gamepad_button_check_pressed
 
 if(key_swap_up || key_swap_down)
 {
+	global.paused = false;
+	global.color++;
+	if (global.color >= global.color_limit) global.color = 0;
+	// Create swapping effects
+	instance_create_layer(oPlayer.x,oPlayer.y,"FX",oRift);
+	audio_play_sound(snd_Swap,5,false);
+	ScreenShake(2,10);
 	instance_destroy();	
 }

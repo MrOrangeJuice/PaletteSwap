@@ -69,7 +69,7 @@ if (gamepad_button_check_pressed(0,gp_shoulderr) || gamepad_button_check_pressed
 }
 
 // Prevent player from swapping in certain rooms
-if(room == rTutorial || room == rTutorial2)
+if(room == rTutorial || room == rTutorial2 || !canSwap)
 {
 	key_swap_down = 0;
 	key_swap_up = 0;
@@ -259,7 +259,7 @@ else
 		// Play dash sound
 		audio_play_sound(snd_Dash, 5, false);
 		
-		if(key_down && airborne)
+		if(key_down && (airborne || swimming))
 		{
 			dashdown = true;	
 		}
@@ -402,10 +402,7 @@ else
 	{
 		isDashing = false;
 		// Cancel roll if the dash ends without hitting a wall
-		if (place_meeting(x, y, oCrab) == false)
-		{
-			isRolling = false;
-		}
+		isRolling = false;
 		dashtime = room_speed * 0.25;
 		// Reset dash direction
 		dashdown = false;
@@ -525,6 +522,8 @@ else
 		}
 	}
 }
+
+
 
 // Palette Swap
 if (key_swap_up && !swimming && room != rTutorial){
