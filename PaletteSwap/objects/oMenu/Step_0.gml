@@ -39,7 +39,7 @@ if(key_select == 1){
 		SlideTransition(TRANS_MODE.GOTO, rTest);
 		break;
 		*/
-		SlideTransition(TRANS_MODE.GOTO, rTest);
+		SlideTransition(TRANS_MODE.GOTO, rTestJulien);
 	case 2:
 		if(file_exists(SAVEFILE)){
 			file_delete(SAVEFILE);

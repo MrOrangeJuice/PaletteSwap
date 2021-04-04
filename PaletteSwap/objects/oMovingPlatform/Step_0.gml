@@ -1,7 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 if((goForward && x > curTargetX) || (!goForward && x < curTargetX)){
-	show_debug_message("HERE");
 	goForward = !goForward;
 	if(curTargetNum == 1){
 		curTargetNum = 2;
@@ -28,3 +27,8 @@ if((goForward && x > curTargetX) || (!goForward && x < curTargetX)){
 }
 x += overallMoveX;
 y += overallMoveY;
+if(place_meeting(x, y, oPlayer)){
+	oPlayer.vsp = 0;
+	oPlayer.x += overallMoveX * 2.3;
+	oPlayer.y = y - 16;
+}
