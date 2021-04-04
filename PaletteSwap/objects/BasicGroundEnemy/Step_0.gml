@@ -84,6 +84,8 @@ if (place_meeting(x, y, oPlayer))
 			global.hp -= damage;
 			player.isInvulnerable = true;
 			
+			audio_play_sound(snd_Damage, 5, false);
+			
 			InitiateKnockback(player, 6, -7);
 			
 			global.knockedBack = true;
@@ -94,6 +96,7 @@ if (place_meeting(x, y, oPlayer))
 // Check for enemy death.
 if (eHP <= 0)
 {
+	audio_play_sound(snd_CrabDeath, 5, false);
 	instance_deactivate_object(self);
 }
 }

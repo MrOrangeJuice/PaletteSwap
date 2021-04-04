@@ -18,6 +18,7 @@ if(collidingSpikes != noone){
 				isInvulnerable = true;
 				InitiateKnockback(oPlayer, 6, -7);
 				global.knockedBack = true;
+				audio_play_sound(snd_Damage, 5, false);
 			}
 		}
 	}
