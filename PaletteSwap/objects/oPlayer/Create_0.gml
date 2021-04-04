@@ -24,11 +24,6 @@ swimming = false;
 spikeImmune = false;
 lastGroundedPosX = 0;
 lastGroundedPosY = 0;
-canSwap = false;
-if(room == PaletteTempleLevel)
-{
-	canSwap = false;	
-}
 
 // Knockback variables.
 global.knockedBack = false;
