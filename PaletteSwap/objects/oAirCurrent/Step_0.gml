@@ -48,3 +48,4 @@ if(absY < requiredDistance && absX < 16){
 	}
 }
 }
+PaletteAnimationSwap();

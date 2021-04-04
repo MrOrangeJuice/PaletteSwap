@@ -10,12 +10,12 @@
   "bbox_left": 0,
   "bbox_right": 127,
   "bbox_top": 0,
-  "bbox_bottom": 47,
+  "bbox_bottom": 239,
   "HTile": false,
   "VTile": false,
   "For3D": false,
   "width": 128,
-  "height": 128,
+  "height": 256,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -55,7 +55,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 64,
-    "yorigin": 64,
+    "yorigin": 128,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sSeasideBlue","path":"sprites/sSeasideBlue/sSeasideBlue.yy",},
@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3b031929-30e6-454f-b971-8d4d94dba993","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Tilesets",
     "path": "folders/Sprites/Tilesets.yy",
