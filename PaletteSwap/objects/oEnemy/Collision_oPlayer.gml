@@ -17,7 +17,7 @@ else if (player.isDashing == true)
 		
 	// Send player flying.
 	InitiateKnockback(player, -10, -8);
-		
+		 
 	// Refresh player's dash.
 	DashReset();
 }
