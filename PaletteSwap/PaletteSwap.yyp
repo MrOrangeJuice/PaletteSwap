@@ -17,6 +17,7 @@
     {"id":{"name":"sTutorialKeyboardJump","path":"sprites/sTutorialKeyboardJump/sTutorialKeyboardJump.yy",},"order":33,},
     {"id":{"name":"rTestDrew","path":"rooms/rTestDrew/rTestDrew.yy",},"order":2,},
     {"id":{"name":"sSplashScreen","path":"sprites/sSplashScreen/sSplashScreen.yy",},"order":45,},
+    {"id":{"name":"rExample","path":"rooms/rExample/rExample.yy",},"order":12,},
     {"id":{"name":"snd_Bounce","path":"sounds/snd_Bounce/snd_Bounce.yy",},"order":5,},
     {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"order":1,},
     {"id":{"name":"sTutorialController","path":"sprites/sTutorialController/sTutorialController.yy",},"order":22,},
@@ -205,6 +206,7 @@
     {"roomId":{"name":"rOldTutorialCopy","path":"rooms/rOldTutorialCopy/rOldTutorialCopy.yy",},},
     {"roomId":{"name":"rTutorial","path":"rooms/rTutorial/rTutorial.yy",},},
     {"roomId":{"name":"PaletteTempleLevel","path":"rooms/PaletteTempleLevel/PaletteTempleLevel.yy",},},
+    {"roomId":{"name":"rExample","path":"rooms/rExample/rExample.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
