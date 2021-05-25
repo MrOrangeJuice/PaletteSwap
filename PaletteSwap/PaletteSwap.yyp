@@ -16,6 +16,7 @@
     {"id":{"name":"snd_Dash","path":"sounds/snd_Dash/snd_Dash.yy",},"order":6,},
     {"id":{"name":"sTutorialKeyboardJump","path":"sprites/sTutorialKeyboardJump/sTutorialKeyboardJump.yy",},"order":33,},
     {"id":{"name":"rTestDrew","path":"rooms/rTestDrew/rTestDrew.yy",},"order":2,},
+    {"id":{"name":"NoveauPaletteTemple","path":"rooms/NoveauPaletteTemple/NoveauPaletteTemple.yy",},"order":13,},
     {"id":{"name":"sSplashScreen","path":"sprites/sSplashScreen/sSplashScreen.yy",},"order":45,},
     {"id":{"name":"rExample","path":"rooms/rExample/rExample.yy",},"order":12,},
     {"id":{"name":"oCollectible","path":"objects/oCollectible/oCollectible.yy",},"order":30,},
@@ -211,6 +212,7 @@
     {"roomId":{"name":"rTutorial","path":"rooms/rTutorial/rTutorial.yy",},},
     {"roomId":{"name":"PaletteTempleLevel","path":"rooms/PaletteTempleLevel/PaletteTempleLevel.yy",},},
     {"roomId":{"name":"rExample","path":"rooms/rExample/rExample.yy",},},
+    {"roomId":{"name":"NoveauPaletteTemple","path":"rooms/NoveauPaletteTemple/NoveauPaletteTemple.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
