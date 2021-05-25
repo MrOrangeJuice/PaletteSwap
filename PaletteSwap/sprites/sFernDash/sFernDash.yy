@@ -104,6 +104,7 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Left Leg","resourceVersion":"1.0","name":"57cbc6af-9763-4997-a8b1-1f991e501efc","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Left Arm","resourceVersion":"1.0","name":"97f8abc7-d4e6-4a54-9347-b1645ecc9b59","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "Fern",
     "path": "folders/Sprites/Fern.yy",
