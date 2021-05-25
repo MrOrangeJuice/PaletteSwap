@@ -75,6 +75,7 @@
     {"id":{"name":"oPauseButtons","path":"objects/oPauseButtons/oPauseButtons.yy",},"order":10,},
     {"id":{"name":"sFernRunNoSwap","path":"sprites/sFernRunNoSwap/sFernRunNoSwap.yy",},"order":8,},
     {"id":{"name":"sCrab","path":"sprites/sCrab/sCrab.yy",},"order":0,},
+    {"id":{"name":"sCollectible","path":"sprites/sCollectible/sCollectible.yy",},"order":49,},
     {"id":{"name":"oCrab","path":"objects/oCrab/oCrab.yy",},"order":0,},
     {"id":{"name":"BluePH","path":"sprites/BluePH/BluePH.yy",},"order":1,},
     {"id":{"name":"tBluePalette","path":"tilesets/tBluePalette/tBluePalette.yy",},"order":5,},
@@ -242,7 +243,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.2.556",
+    "IDEVersion": "2.3.2.560",
   },
   "resourceVersion": "1.4",
   "name": "PaletteSwap",
