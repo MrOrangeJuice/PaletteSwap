@@ -1,7 +1,7 @@
 {
   "resources": [
     {"id":{"name":"rOldTutorialCopy","path":"rooms/rOldTutorialCopy/rOldTutorialCopy.yy",},"order":9,},
-    {"id":{"name":"rTutorialAlex","path":"rooms/rTutorialAlex/rTutorialAlex.yy",},"order":8,},
+    {"id":{"name":"rAlexLevel","path":"rooms/rAlexLevel/rAlexLevel.yy",},"order":8,},
     {"id":{"name":"oGroundEnemy","path":"objects/oGroundEnemy/oGroundEnemy.yy",},"order":3,},
     {"id":{"name":"sShipDamaged","path":"sprites/sShipDamaged/sShipDamaged.yy",},"order":28,},
     {"id":{"name":"sFernDeath","path":"sprites/sFernDeath/sFernDeath.yy",},"order":12,},
@@ -19,6 +19,7 @@
     {"id":{"name":"NoveauPaletteTemple","path":"rooms/NoveauPaletteTemple/NoveauPaletteTemple.yy",},"order":13,},
     {"id":{"name":"sSplashScreen","path":"sprites/sSplashScreen/sSplashScreen.yy",},"order":45,},
     {"id":{"name":"rExample","path":"rooms/rExample/rExample.yy",},"order":12,},
+    {"id":{"name":"oCollectible","path":"objects/oCollectible/oCollectible.yy",},"order":30,},
     {"id":{"name":"snd_Bounce","path":"sounds/snd_Bounce/snd_Bounce.yy",},"order":5,},
     {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"order":1,},
     {"id":{"name":"sTutorialController","path":"sprites/sTutorialController/sTutorialController.yy",},"order":22,},
@@ -121,6 +122,7 @@
     {"id":{"name":"sWallMany","path":"sprites/sWallMany/sWallMany.yy",},"order":25,},
     {"id":{"name":"oHiddenArea2","path":"objects/oHiddenArea2/oHiddenArea2.yy",},"order":28,},
     {"id":{"name":"oShip","path":"objects/oShip/oShip.yy",},"order":15,},
+    {"id":{"name":"snd_Collectible","path":"sounds/snd_Collectible/snd_Collectible.yy",},"order":25,},
     {"id":{"name":"sFernIdle","path":"sprites/sFernIdle/sFernIdle.yy",},"order":1,},
     {"id":{"name":"msc_Level","path":"sounds/msc_Level/msc_Level.yy",},"order":1,},
     {"id":{"name":"snd_Explosion","path":"sounds/snd_Explosion/snd_Explosion.yy",},"order":20,},
@@ -205,7 +207,7 @@
     {"roomId":{"name":"rTestNick","path":"rooms/rTestNick/rTestNick.yy",},},
     {"roomId":{"name":"rTest","path":"rooms/rTest/rTest.yy",},},
     {"roomId":{"name":"rTutorial2","path":"rooms/rTutorial2/rTutorial2.yy",},},
-    {"roomId":{"name":"rTutorialAlex","path":"rooms/rTutorialAlex/rTutorialAlex.yy",},},
+    {"roomId":{"name":"rAlexLevel","path":"rooms/rAlexLevel/rAlexLevel.yy",},},
     {"roomId":{"name":"rOldTutorialCopy","path":"rooms/rOldTutorialCopy/rOldTutorialCopy.yy",},},
     {"roomId":{"name":"rTutorial","path":"rooms/rTutorial/rTutorial.yy",},},
     {"roomId":{"name":"PaletteTempleLevel","path":"rooms/PaletteTempleLevel/PaletteTempleLevel.yy",},},

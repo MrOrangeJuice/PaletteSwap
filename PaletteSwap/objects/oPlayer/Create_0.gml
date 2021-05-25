@@ -3,7 +3,7 @@
 hsp = 0;
 vsp = 0;
 grv = 0.3;
-walksp = 3.5;
+walksp = 4.5;
 dashsp = 8;
 dashtime = room_speed * 0.3;
 dashdown = false;
@@ -24,7 +24,7 @@ swimming = false;
 spikeImmune = false;
 lastGroundedPosX = 0;
 lastGroundedPosY = 0;
-canSwap = false;
+canSwap = true;
 if(room == PaletteTempleLevel)
 {
 	canSwap = false;	

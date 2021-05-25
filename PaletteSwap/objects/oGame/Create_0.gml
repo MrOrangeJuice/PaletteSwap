@@ -3,6 +3,7 @@ display_set_gui_size(RES_W,RES_H);
 
 // Create basic global variables.
 global.coins = 0;
+global.collectibles = 0;
 global.time = 0;
 global.paused = false;
 global.cutscene = false;
@@ -40,6 +41,7 @@ hpTextScale = 1;
 coinTextScale = 1;
 timeTextScale = 1.2;
 paletteTextScale = 1;
+collectableTextScale = 1;
 timeScaleSet = false;
 
 global.color_limit = 2; //limit scrollover
