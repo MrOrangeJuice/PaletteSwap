@@ -11,7 +11,10 @@ if(key_select == 1){
 	case 0:
 		global.paused = !global.paused;
 		oPlayer.canJump = false;
-		oScreenDarken.visible = false;
+		draw_set_color(c_black);
+		draw_set_alpha(0.0);
+		draw_rectangle(0,0,RES_W,RES_H,0);
+		//oScreenDarken.visible = false;
 		//instance_activate_all();
 		instance_deactivate_object(oPauseButtons);
 		break;
