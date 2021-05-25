@@ -404,6 +404,15 @@ else
 		// Cancel roll if the dash ends without hitting a wall
 		isRolling = false;
 		dashtime = room_speed * 0.25;
+		// Maintain momentum
+		if(dashleft)
+		{
+			currentwalksp = -5;
+		}
+		if(dashright)
+		{
+			currentwalksp = 5;
+		}
 		// Reset dash direction
 		dashdown = false;
 		dashleft = false;
