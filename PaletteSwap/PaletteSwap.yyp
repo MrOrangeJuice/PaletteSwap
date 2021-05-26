@@ -123,6 +123,7 @@
     {"id":{"name":"rTutorial","path":"rooms/rTutorial/rTutorial.yy",},"order":10,},
     {"id":{"name":"sWallMany","path":"sprites/sWallMany/sWallMany.yy",},"order":17,},
     {"id":{"name":"oHiddenArea2","path":"objects/oHiddenArea2/oHiddenArea2.yy",},"order":28,},
+    {"id":{"name":"sVillager","path":"sprites/sVillager/sVillager.yy",},"order":49,},
     {"id":{"name":"oShip","path":"objects/oShip/oShip.yy",},"order":15,},
     {"id":{"name":"snd_Collectible","path":"sounds/snd_Collectible/snd_Collectible.yy",},"order":25,},
     {"id":{"name":"sFernIdle","path":"sprites/sFernIdle/sFernIdle.yy",},"order":1,},
