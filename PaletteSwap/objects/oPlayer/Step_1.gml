@@ -407,11 +407,25 @@ else
 		// Maintain momentum
 		if(dashleft)
 		{
-			currentwalksp = -5;
+			if(key_left)
+			{
+				currentwalksp = -5;
+			}
+			else
+			{
+				currentwalksp = -1;	
+			}
 		}
 		if(dashright)
 		{
-			currentwalksp = 5;
+			if(key_right)
+			{
+				currentwalksp = 5;
+			}
+			else
+			{
+				currentwalksp = 1;	
+			}
 		}
 		// Reset dash direction
 		dashdown = false;
