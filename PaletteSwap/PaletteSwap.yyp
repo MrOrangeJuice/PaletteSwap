@@ -55,6 +55,7 @@
     {"id":{"name":"sBlownAir2","path":"sprites/sBlownAir2/sBlownAir2.yy",},"order":41,},
     {"id":{"name":"sTitle","path":"sprites/sTitle/sTitle.yy",},"order":15,},
     {"id":{"name":"rTestJulien","path":"rooms/rTestJulien/rTestJulien.yy",},"order":3,},
+    {"id":{"name":"sGBStatue","path":"sprites/sGBStatue/sGBStatue.yy",},"order":49,},
     {"id":{"name":"oShipCollision","path":"objects/oShipCollision/oShipCollision.yy",},"order":16,},
     {"id":{"name":"sTempleGreen","path":"sprites/sTempleGreen/sTempleGreen.yy",},"order":5,},
     {"id":{"name":"sPaletteBlue","path":"sprites/sPaletteBlue/sPaletteBlue.yy",},"order":8,},
