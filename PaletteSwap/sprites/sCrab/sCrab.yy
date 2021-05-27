@@ -122,7 +122,7 @@
   },
   "parent": {
     "name": "GroundEnemy",
-    "path": "folders/Sprites/GroundEnemy.yy",
+    "path": "folders/Sprites/Enemies/GroundEnemy.yy",
   },
   "resourceVersion": "1.0",
   "name": "sCrab",
