@@ -49,7 +49,9 @@ else if ((swimming && vsp >= 0) || !swimming){
 	}
 	// Reset jump buffer
 	jumpBuffer = 5;
-	jumped = false;
+	if (!isDashing)	{
+		jumped = false;
+	}
 	// Reset roll
 	isRolling = false;
 }

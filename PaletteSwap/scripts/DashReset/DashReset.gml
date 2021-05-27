@@ -6,7 +6,6 @@ function DashReset()
 	
 	player.isDashing = false;
 	player.isRolling = true;
-	player.canDash = true;
 	
 	alarm[0] = room_speed * 0.15;
 	player.dashtime = room_speed * 0.25;
