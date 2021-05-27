@@ -71,9 +71,10 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c69b6bfb-f3d9-476f-acbd-b53b13c3f81b","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Obstacles",
+    "path": "folders/Sprites/Obstacles.yy",
   },
   "resourceVersion": "1.0",
   "name": "sSpikes",

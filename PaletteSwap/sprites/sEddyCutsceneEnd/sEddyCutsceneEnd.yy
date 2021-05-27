@@ -106,8 +106,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Eddy",
+    "path": "folders/Sprites/NPC/Eddy.yy",
   },
   "resourceVersion": "1.0",
   "name": "sEddyCutsceneEnd",
