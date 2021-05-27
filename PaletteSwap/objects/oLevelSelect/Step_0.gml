@@ -1,6 +1,6 @@
 /// @description Checking key presses
-key_left = keyboard_check_pressed(ord("S")) || keyboard_check_pressed(vk_down);
-key_right = keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_up);
+key_left = keyboard_check_pressed(ord("A")) || keyboard_check_pressed(vk_down);
+key_right = keyboard_check_pressed(ord("D")) || keyboard_check_pressed(vk_up);
 key_select = keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("P"));
 if (gamepad_button_check_pressed(0,gp_face1) || gamepad_button_check_pressed(4,gp_face1))
 {
