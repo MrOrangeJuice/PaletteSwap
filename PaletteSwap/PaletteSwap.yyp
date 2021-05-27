@@ -24,7 +24,6 @@
     {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"order":1,},
     {"id":{"name":"rLevelSelect","path":"rooms/rLevelSelect/rLevelSelect.yy",},"order":14,},
     {"id":{"name":"sTutorialController","path":"sprites/sTutorialController/sTutorialController.yy",},"order":11,},
-
     {"id":{"name":"oCheckpoint","path":"objects/oCheckpoint/oCheckpoint.yy",},"order":16,},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"order":3,},
     {"id":{"name":"oTutorialNoSwap","path":"objects/oTutorialNoSwap/oTutorialNoSwap.yy",},"order":12,},
