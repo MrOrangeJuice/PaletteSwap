@@ -22,6 +22,7 @@
     {"id":{"name":"oCollectible","path":"objects/oCollectible/oCollectible.yy",},"order":30,},
     {"id":{"name":"snd_Bounce","path":"sounds/snd_Bounce/snd_Bounce.yy",},"order":5,},
     {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"order":1,},
+    {"id":{"name":"rLevelSelect","path":"rooms/rLevelSelect/rLevelSelect.yy",},"order":14,},
     {"id":{"name":"sTutorialController","path":"sprites/sTutorialController/sTutorialController.yy",},"order":11,},
     {"id":{"name":"oCheckpoint","path":"objects/oCheckpoint/oCheckpoint.yy",},"order":16,},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"order":3,},
@@ -150,6 +151,7 @@
     {"id":{"name":"tGreenPalette","path":"tilesets/tGreenPalette/tGreenPalette.yy",},"order":4,},
     {"id":{"name":"snd_Checkpoint","path":"sounds/snd_Checkpoint/snd_Checkpoint.yy",},"order":21,},
     {"id":{"name":"sPaletteGreen","path":"sprites/sPaletteGreen/sPaletteGreen.yy",},"order":7,},
+    {"id":{"name":"oLevelSelect","path":"objects/oLevelSelect/oLevelSelect.yy",},"order":31,},
     {"id":{"name":"oPaletteWall","path":"objects/oPaletteWall/oPaletteWall.yy",},"order":12,},
     {"id":{"name":"sEddyCutsceneEnd","path":"sprites/sEddyCutsceneEnd/sEddyCutsceneEnd.yy",},"order":38,},
     {"id":{"name":"sSpikes","path":"sprites/sSpikes/sSpikes.yy",},"order":24,},
@@ -217,6 +219,7 @@
     {"roomId":{"name":"PaletteTempleLevel","path":"rooms/PaletteTempleLevel/PaletteTempleLevel.yy",},},
     {"roomId":{"name":"rExample","path":"rooms/rExample/rExample.yy",},},
     {"roomId":{"name":"NoveauPaletteTemple","path":"rooms/NoveauPaletteTemple/NoveauPaletteTemple.yy",},},
+    {"roomId":{"name":"rLevelSelect","path":"rooms/rLevelSelect/rLevelSelect.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
