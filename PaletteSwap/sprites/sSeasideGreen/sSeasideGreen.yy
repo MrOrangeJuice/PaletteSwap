@@ -21,8 +21,8 @@
     "path": "texturegroups/Default",
   },
   "swatchColours": null,
-  "gridX": 0,
-  "gridY": 0,
+  "gridX": 16,
+  "gridY": 8,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"3c0f3d29-041c-4af9-9a70-eb57975c2665","path":"sprites/sSeasideGreen/sSeasideGreen.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"3c0f3d29-041c-4af9-9a70-eb57975c2665","path":"sprites/sSeasideGreen/sSeasideGreen.yy",},"LayerId":{"name":"3b031929-30e6-454f-b971-8d4d94dba993","path":"sprites/sSeasideGreen/sSeasideGreen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
