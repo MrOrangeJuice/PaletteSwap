@@ -138,6 +138,7 @@
     {"id":{"name":"snd_Collectible","path":"sounds/snd_Collectible/snd_Collectible.yy",},"order":25,},
     {"id":{"name":"sFernIdle","path":"sprites/sFernIdle/sFernIdle.yy",},"order":1,},
     {"id":{"name":"msc_Level","path":"sounds/msc_Level/msc_Level.yy",},"order":1,},
+    {"id":{"name":"sIcicle","path":"sprites/sIcicle/sIcicle.yy",},"order":2,},
     {"id":{"name":"snd_Explosion","path":"sounds/snd_Explosion/snd_Explosion.yy",},"order":20,},
     {"id":{"name":"rTestNick","path":"rooms/rTestNick/rTestNick.yy",},"order":5,},
     {"id":{"name":"sFernPlant","path":"sprites/sFernPlant/sFernPlant.yy",},"order":2,},
