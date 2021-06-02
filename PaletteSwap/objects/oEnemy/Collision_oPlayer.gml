@@ -1,7 +1,7 @@
 /// @description Handle Player Collision
 
 player = instance_find(oPlayer, 0);
-if (player.dashdown == true)
+if (player.dashdown)
 {
 	eHP -= 1;
 		
@@ -11,7 +11,7 @@ if (player.dashdown == true)
 	// Refresh player's dash.
 	DashReset();
 }
-else if (player.isDashing == true)
+else if (player.isDashing)
 {
 	eHP -= 1;
 		
@@ -21,7 +21,7 @@ else if (player.isDashing == true)
 	// Refresh player's dash.
 	DashReset();
 }
-else if (player.isRolling == true)
+else if (player.isRolling)
 {
 	eHP -= 1;
 		
@@ -35,7 +35,7 @@ else if (player.isRolling == true)
 else 
 {
 	// Damage and knockback the player if they're vulnerable.
-	if (player.isInvulnerable == false) 
+	if (!player.isInvulnerable) 
 	{
 		global.hp -= damage;
 		player.isInvulnerable = true;

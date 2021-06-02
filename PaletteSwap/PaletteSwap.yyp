@@ -122,6 +122,7 @@
     {"id":{"name":"sTutorialControllerDash","path":"sprites/sTutorialControllerDash/sTutorialControllerDash.yy",},"order":1,},
     {"id":{"name":"oCoin","path":"objects/oCoin/oCoin.yy",},"order":4,},
     {"id":{"name":"sWaterTemp","path":"sprites/sWaterTemp/sWaterTemp.yy",},"order":3,},
+    {"id":{"name":"oIcicleSpike","path":"objects/oIcicleSpike/oIcicleSpike.yy",},"order":33,},
     {"id":{"name":"oRift","path":"objects/oRift/oRift.yy",},"order":8,},
     {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},"order":5,},
     {"id":{"name":"rTestJustin","path":"rooms/rTestJustin/rTestJustin.yy",},"order":4,},
