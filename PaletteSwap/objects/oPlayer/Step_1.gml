@@ -305,6 +305,17 @@ else if(isDashing)
 		SwapSprite(sFernDash);
 	}	
 }
+else if(swimming)
+{
+	if(vsp >= 0)
+	{
+		SwapSprite(sFernSwim);	
+	}
+	else
+	{
+		SwapSprite(sFernSwimUp);	
+	}
+}
 else
 {
 	if(isRolling)
