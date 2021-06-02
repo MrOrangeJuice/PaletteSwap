@@ -13,6 +13,7 @@
     {"id":{"name":"oTransition","path":"objects/oTransition/oTransition.yy",},"order":2,},
     {"id":{"name":"sTutorialControllerJump","path":"sprites/sTutorialControllerJump/sTutorialControllerJump.yy",},"order":2,},
     {"id":{"name":"snd_MenuSelect","path":"sounds/snd_MenuSelect/snd_MenuSelect.yy",},"order":11,},
+    {"id":{"name":"sFernSwimNew","path":"sprites/sFernSwimNew/sFernSwimNew.yy",},"order":17,},
     {"id":{"name":"snd_Dash","path":"sounds/snd_Dash/snd_Dash.yy",},"order":6,},
     {"id":{"name":"sTutorialKeyboardJump","path":"sprites/sTutorialKeyboardJump/sTutorialKeyboardJump.yy",},"order":6,},
     {"id":{"name":"rTestDrew","path":"rooms/rTestDrew/rTestDrew.yy",},"order":2,},
