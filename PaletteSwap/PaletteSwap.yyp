@@ -121,6 +121,7 @@
     {"id":{"name":"sFernJumpUp","path":"sprites/sFernJumpUp/sFernJumpUp.yy",},"order":13,},
     {"id":{"name":"sDoorPrompt","path":"sprites/sDoorPrompt/sDoorPrompt.yy",},"order":8,},
     {"id":{"name":"sBeegFern","path":"sprites/sBeegFern/sBeegFern.yy",},"order":18,},
+    {"id":{"name":"sDoorPromptNo","path":"sprites/sDoorPromptNo/sDoorPromptNo.yy",},"order":10,},
     {"id":{"name":"sServerIcon","path":"sprites/sServerIcon/sServerIcon.yy",},"order":26,},
     {"id":{"name":"oPlayerRun","path":"objects/oPlayerRun/oPlayerRun.yy",},"order":12,},
     {"id":{"name":"oPortal","path":"objects/oPortal/oPortal.yy",},"order":35,},

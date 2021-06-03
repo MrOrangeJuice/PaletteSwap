@@ -32,6 +32,14 @@ if(place_meeting(x, y, oPlayer) && oPlayer.villager)
 		SlideTransition(TRANS_MODE.GOTO, next_room);	
 	}
 }
+else if(place_meeting(x, y, oPlayer))
+{
+	if(!prompt)
+	{
+		oDoorPrompt.visible = true;	
+		prompt = true;	
+	}
+}
 else
 {
 	if(prompt)
@@ -46,3 +54,5 @@ if(oPlayer.villager)
 {
 	oPortal.visible = true;	
 }
+
+PaletteAnimationSwap();

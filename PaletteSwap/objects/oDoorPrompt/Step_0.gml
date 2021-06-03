@@ -1,11 +1,17 @@
 /// @description Switch Input and Palette
-if (global.controller)
+if(!oPlayer.villager)
 {
-	sprite_index = sDoorPromptController;
+	sprite_index = sDoorPromptNo;
 }
-else
-{
-	sprite_index = sDoorPrompt;
+else {
+	if (global.controller)
+	{
+		sprite_index = sDoorPromptController;
+	}
+	else
+	{
+		sprite_index = sDoorPrompt;
+	}
 }
 
 //update frame
