@@ -166,8 +166,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "NPC",
+    "path": "folders/Sprites/NPC.yy",
   },
   "resourceVersion": "1.0",
   "name": "sVillager",
