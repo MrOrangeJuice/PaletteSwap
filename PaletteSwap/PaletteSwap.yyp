@@ -119,6 +119,7 @@
     {"id":{"name":"rPurpleTest","path":"rooms/rPurpleTest/rPurpleTest.yy",},"order":16,},
     {"id":{"name":"sFernJumpUp","path":"sprites/sFernJumpUp/sFernJumpUp.yy",},"order":13,},
     {"id":{"name":"sBeegFern","path":"sprites/sBeegFern/sBeegFern.yy",},"order":18,},
+    {"id":{"name":"sServerIcon","path":"sprites/sServerIcon/sServerIcon.yy",},"order":26,},
     {"id":{"name":"oPlayerRun","path":"objects/oPlayerRun/oPlayerRun.yy",},"order":12,},
     {"id":{"name":"sPortalFrame","path":"sprites/sPortalFrame/sPortalFrame.yy",},"order":6,},
     {"id":{"name":"oAirCurrent","path":"objects/oAirCurrent/oAirCurrent.yy",},"order":19,},
