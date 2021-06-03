@@ -309,7 +309,7 @@ else if(swimming)
 {
 	if(vsp >= 0)
 	{
-		SwapSprite(sFernSwim);	
+		SwapSprite(sFernSwimNew);	
 	}
 	else
 	{

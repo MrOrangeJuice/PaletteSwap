@@ -4,6 +4,7 @@ level[1] = "rAlexLevel";
 level[2] = "PaletteTempleLevel";
 level[3] = "rTest";
 level[4] = "rTestDrew";
+level[5] = "rRedTest";
 levelCount = array_length_1d(level);
 menuIndex = 0;
 lastSelected = 0;
