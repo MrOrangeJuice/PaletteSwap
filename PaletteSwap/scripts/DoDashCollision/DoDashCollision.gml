@@ -15,9 +15,11 @@ function DoDashCollision(wallType, newVSP, newHSP, vert){
 			}
 	}
 			// If you hit the ground, pop up and reenable dash
-			currentwalksp = newHSP;
-			hsp = currentwalksp;
-			vsp = newVSP;
+			//if (global.color == 0){
+				currentwalksp = newHSP;
+				hsp = currentwalksp;
+				vsp = newVSP;
+			//}
 
 			// Reset the player's dash.
 			DashReset();
