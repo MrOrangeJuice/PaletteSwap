@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "AirCurrent",
+    "path": "folders/Sprites/Obstacles/AirCurrent.yy",
   },
   "resourceVersion": "1.0",
   "name": "sAirCurrent2",

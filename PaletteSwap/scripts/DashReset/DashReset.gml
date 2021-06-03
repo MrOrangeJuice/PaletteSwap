@@ -6,9 +6,9 @@ function DashReset()
 	
 	player.isDashing = false;
 	player.isRolling = true;
-	player.canDash = true;
+	//player.canDash = true;
 	
-	alarm[0] = room_speed * 0.15;
+	player.alarm[0] = room_speed * 0.15;
 	player.dashtime = room_speed * 0.25;
 	
 	// Reset dash direction

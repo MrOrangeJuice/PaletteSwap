@@ -98,7 +98,7 @@
   "nineSlice": null,
   "parent": {
     "name": "FlyingEnemy",
-    "path": "folders/Sprites/FlyingEnemy.yy",
+    "path": "folders/Sprites/Enemies/FlyingEnemy.yy",
   },
   "resourceVersion": "1.0",
   "name": "Flying",

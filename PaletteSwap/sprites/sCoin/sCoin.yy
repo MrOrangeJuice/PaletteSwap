@@ -95,9 +95,10 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"49e08b15-2121-4e5e-8fed-69f8e4f1e36a","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Collectables ",
+    "path": "folders/Sprites/Collectables .yy",
   },
   "resourceVersion": "1.0",
   "name": "sCoin",
