@@ -27,6 +27,9 @@
     {"compositeImage":{"FrameId":{"name":"5fe8ce81-8de4-4b31-bfc8-e766b18b66e6","path":"sprites/sVaseCracked/sVaseCracked.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"5fe8ce81-8de4-4b31-bfc8-e766b18b66e6","path":"sprites/sVaseCracked/sVaseCracked.yy",},"LayerId":{"name":"f33ec1f0-57c8-415d-bd30-a65ecd552853","path":"sprites/sVaseCracked/sVaseCracked.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sVaseCracked","path":"sprites/sVaseCracked/sVaseCracked.yy",},"resourceVersion":"1.0","name":"5fe8ce81-8de4-4b31-bfc8-e766b18b66e6","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"cc24c5ee-552f-4c45-8c84-085c96a5aebe","path":"sprites/sVaseCracked/sVaseCracked.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"cc24c5ee-552f-4c45-8c84-085c96a5aebe","path":"sprites/sVaseCracked/sVaseCracked.yy",},"LayerId":{"name":"f33ec1f0-57c8-415d-bd30-a65ecd552853","path":"sprites/sVaseCracked/sVaseCracked.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sVaseCracked","path":"sprites/sVaseCracked/sVaseCracked.yy",},"resourceVersion":"1.0","name":"cc24c5ee-552f-4c45-8c84-085c96a5aebe","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sVaseCracked","path":"sprites/sVaseCracked/sVaseCracked.yy",},
@@ -36,12 +39,13 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 2.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"5a3f26e1-c715-46a2-b507-aa6a154e518e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5fe8ce81-8de4-4b31-bfc8-e766b18b66e6","path":"sprites/sVaseCracked/sVaseCracked.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6ff56c12-d223-4745-a295-4d1cfd576e90","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cc24c5ee-552f-4c45-8c84-085c96a5aebe","path":"sprites/sVaseCracked/sVaseCracked.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
