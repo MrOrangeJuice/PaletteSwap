@@ -3,3 +3,4 @@
 falling = false;
 vsp = 0;
 grv = 0.3;
+currentframe = 0;
