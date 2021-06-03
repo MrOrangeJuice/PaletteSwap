@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sPortalFrame",
-    "path": "sprites/sPortalFrame/sPortalFrame.yy",
+    "name": "sDoorPrompt",
+    "path": "sprites/sDoorPrompt/sDoorPrompt.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,16 +24,14 @@
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
-  "properties": [
-    {"varType":5,"value":"MainMenu","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"next_room","tags":[],"resourceType":"GMObjectProperty",},
-  ],
+  "properties": [],
   "overriddenProperties": [],
   "parent": {
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oDoor",
+  "name": "oDoorPrompt",
   "tags": [],
   "resourceType": "GMObject",
 }
