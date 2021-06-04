@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"8dfc9123-042f-48bd-b423-0ea01c85cd06","path":"sprites/sScaffoldingWoodMiddle/sScaffoldingWoodMiddle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8dfc9123-042f-48bd-b423-0ea01c85cd06","path":"sprites/sScaffoldingWoodMiddle/sScaffoldingWoodMiddle.yy",},"LayerId":{"name":"19931827-e173-40a8-a898-54e54b81e7e5","path":"sprites/sScaffoldingWoodMiddle/sScaffoldingWoodMiddle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sScaffoldingWoodMiddle","path":"sprites/sScaffoldingWoodMiddle/sScaffoldingWoodMiddle.yy",},"resourceVersion":"1.0","name":"8dfc9123-042f-48bd-b423-0ea01c85cd06","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"8dfc9123-042f-48bd-b423-0ea01c85cd06","path":"sprites/sScaffoldingWoodMiddle3d/sScaffoldingWoodMiddle3d.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"8dfc9123-042f-48bd-b423-0ea01c85cd06","path":"sprites/sScaffoldingWoodMiddle3d/sScaffoldingWoodMiddle3d.yy",},"LayerId":{"name":"19931827-e173-40a8-a898-54e54b81e7e5","path":"sprites/sScaffoldingWoodMiddle3d/sScaffoldingWoodMiddle3d.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sScaffoldingWoodMiddle3d","path":"sprites/sScaffoldingWoodMiddle3d/sScaffoldingWoodMiddle3d.yy",},"resourceVersion":"1.0","name":"8dfc9123-042f-48bd-b423-0ea01c85cd06","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sScaffoldingWoodMiddle","path":"sprites/sScaffoldingWoodMiddle/sScaffoldingWoodMiddle.yy",},
+    "spriteId": {"name":"sScaffoldingWoodMiddle3d","path":"sprites/sScaffoldingWoodMiddle3d/sScaffoldingWoodMiddle3d.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"93055100-050a-4a53-ae20-9d47e35199f6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8dfc9123-042f-48bd-b423-0ea01c85cd06","path":"sprites/sScaffoldingWoodMiddle/sScaffoldingWoodMiddle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"93055100-050a-4a53-ae20-9d47e35199f6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8dfc9123-042f-48bd-b423-0ea01c85cd06","path":"sprites/sScaffoldingWoodMiddle3d/sScaffoldingWoodMiddle3d.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 16,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sScaffoldingWoodMiddle","path":"sprites/sScaffoldingWoodMiddle/sScaffoldingWoodMiddle.yy",},
+    "parent": {"name":"sScaffoldingWoodMiddle3d","path":"sprites/sScaffoldingWoodMiddle3d/sScaffoldingWoodMiddle3d.yy",},
     "resourceVersion": "1.3",
-    "name": "sScaffoldingWoodMiddle",
+    "name": "sScaffoldingWoodMiddle3d",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sScaffoldingWoodMiddle",
+  "name": "sScaffoldingWoodMiddle3d",
   "tags": [],
   "resourceType": "GMSprite",
 }
