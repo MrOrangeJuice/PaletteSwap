@@ -8,7 +8,8 @@ if (place_meeting(x+hsp,y,oWall))
 }
 
 x = x + hsp;
-image_angle += rollsp;
+
+vsp = vsp + grv;
 
 // Vertical Collision
 if (place_meeting(x,y+vsp,oWall))
@@ -21,3 +22,4 @@ if (place_meeting(x,y+vsp,oWall))
 }
 
 y = y + vsp;
+rollangle += rollsp;
