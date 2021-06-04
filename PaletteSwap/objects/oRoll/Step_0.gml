@@ -4,7 +4,7 @@
 if (place_meeting(x+hsp,y,oWall))
 {
 	hsp *= -1;
-	//rollsp *= -1;
+	rollsp *= -1;
 }
 
 x = x + hsp;
