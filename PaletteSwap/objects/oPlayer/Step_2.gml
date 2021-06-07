@@ -14,7 +14,7 @@ if(collidingSpikes != noone){
 		}
 		else{
 			if (isInvulnerable == false) {
-				global.hp -= 10;
+				global.hp -= 20;
 				isInvulnerable = true;
 				InitiateKnockback(oPlayer, 6, -7);
 				global.knockedBack = true;
