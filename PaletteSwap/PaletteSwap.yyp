@@ -142,6 +142,7 @@
     {"id":{"name":"snd_Thud","path":"sounds/snd_Thud/snd_Thud.yy",},"order":4,},
     {"id":{"name":"snd_Fall","path":"sounds/snd_Fall/snd_Fall.yy",},"order":18,},
     {"id":{"name":"oDoorPrompt","path":"objects/oDoorPrompt/oDoorPrompt.yy",},"order":34,},
+    {"id":{"name":"snd_Villager","path":"sounds/snd_Villager/snd_Villager.yy",},"order":26,},
     {"id":{"name":"tSeaside","path":"tilesets/tSeaside/tSeaside.yy",},"order":0,},
     {"id":{"name":"sSeasideGreen","path":"sprites/sSeasideGreen/sSeasideGreen.yy",},"order":0,},
     {"id":{"name":"rRedTest","path":"rooms/rRedTest/rRedTest.yy",},"order":15,},
