@@ -1,7 +1,6 @@
 /// @description Init
 image_speed = 0;
-xdir = 1;
-hsp = 2 * xdir;
+hsp = 2;
 vsp = 0;
 grv = 0.4;
 rollsp = -3;
