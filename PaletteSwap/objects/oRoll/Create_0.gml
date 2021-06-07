@@ -1,6 +1,8 @@
 /// @description Init
-currentframe = 0;
+image_speed = 0;
 hsp = 2;
 vsp = 0;
-grv = 0.6;
-rollsp = -2;
+grv = 0.4;
+rollsp = -3;
+rollangle = 0;
+damage = 10;
