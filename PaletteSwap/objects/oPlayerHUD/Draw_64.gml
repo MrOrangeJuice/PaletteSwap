@@ -10,9 +10,11 @@ DrawSetText(c_black, fUI, fa_right, fa_top);
 draw_text_transformed(RES_W-2,3,"Coins *" + string(global.coins), coinTextScale, coinTextScale,0);
 
 // Draw Time
+/*
 timeTextScale = max(timeTextScale * 0.95, 1);
 DrawSetText(c_black, fUI, fa_right, fa_top);
 draw_text_transformed(RES_W-2,12,"Time: " + string_format((global.time / room_speed), 0, 2), timeTextScale, timeTextScale,0);
+*/
 
 // Draw Player HP
 hpTextScale = max(hpTextScale * 0.95, 1);
