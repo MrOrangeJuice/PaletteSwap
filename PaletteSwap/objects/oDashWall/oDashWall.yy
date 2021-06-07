@@ -1,13 +1,16 @@
 {
   "spriteId": {
-    "name": "sWallGreen",
-    "path": "sprites/sWallGreen/sWallGreen.yy",
+    "name": "PinkPH",
+    "path": "sprites/PinkPH/PinkPH.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "oWall",
+    "path": "objects/oWall/oWall.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -30,7 +33,7 @@
     "path": "folders/Objects/Walls.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oWall",
+  "name": "oDashWall",
   "tags": [],
   "resourceType": "GMObject",
 }
