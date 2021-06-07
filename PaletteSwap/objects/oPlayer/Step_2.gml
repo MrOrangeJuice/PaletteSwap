@@ -124,10 +124,12 @@ else{
 			case 0:
 			//if green collide with wall
 				DoDashCollision(oPaletteWall, -11, 0, true);
+				swimming = false;
 			break;
 			case 1:
 			//if blue enter water
 				vsp /= 1.5;
+				swimming = true;
 			break;
 			}
 		}
