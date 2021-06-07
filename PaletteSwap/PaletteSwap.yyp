@@ -195,6 +195,7 @@
     {"id":{"name":"MainMenu","path":"rooms/MainMenu/MainMenu.yy",},"order":1,},
     {"id":{"name":"oLevelMusic","path":"objects/oLevelMusic/oLevelMusic.yy",},"order":27,},
     {"id":{"name":"sPlayerDashGreen","path":"sprites/sPlayerDashGreen/sPlayerDashGreen.yy",},"order":1,},
+    {"id":{"name":"sPortalEffectSpawn","path":"sprites/sPortalEffectSpawn/sPortalEffectSpawn.yy",},"order":22,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":0,},
     {"id":{"name":"tGreenPalette","path":"tilesets/tGreenPalette/tGreenPalette.yy",},"order":4,},
     {"id":{"name":"snd_Checkpoint","path":"sounds/snd_Checkpoint/snd_Checkpoint.yy",},"order":21,},
