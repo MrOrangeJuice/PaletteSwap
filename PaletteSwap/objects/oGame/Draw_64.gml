@@ -4,11 +4,11 @@ if(room != MainMenu && room != rLevelSelect)
 {
 	// healthbar
 	draw_sprite_stretched(sHealthBarBase, global.color, 4, 4, 64, 16);
-	draw_sprite_stretched(sHealthbar, global.color, 6, 6, (global.hp / global.maxHP) * 60, 12);
+	draw_sprite_stretched(sHealthbar, global.color, 4, 4, (global.hp / global.maxHP) * 64, 16);
 	draw_sprite_stretched(sHealthBarFrame, global.color, 4, 4, 64, 16);
 	
 	// Draw Coin Count
-	coinTextScale = max(coinTextScale * 0.95, 1);
+	coinTextScale = max(coinTextScale * .95, 1);
 	switch(global.color)
 	{
 		case 0:
@@ -18,7 +18,8 @@ if(room != MainMenu && room != rLevelSelect)
 			DrawSetText($331800, fUI, fa_right, fa_top);
 			break;
 	}
-	draw_text_transformed(RES_W-2,3,"Coins *" + string(global.coins), coinTextScale, coinTextScale,0);
+	draw_sprite_stretched(sCoinStatic, global.color, 270, 4, 16, 16);
+	draw_text_transformed(RES_W-2,5,"*" + string(global.coins), coinTextScale, coinTextScale,0);
 	
 	// Draw Collectable Count
 	collectableTextScale = max(collectableTextScale * 0.95, 1);
@@ -31,9 +32,11 @@ if(room != MainMenu && room != rLevelSelect)
 			DrawSetText($331800, fUI, fa_right, fa_top);
 			break;
 	}
-	draw_text_transformed(RES_W-2,12,"Gears *" + string(global.collectibles), collectableTextScale, collectableTextScale,0);
+	draw_sprite_stretched(sCollectibleStatic, global.color, 271, 20, 16, 16);
+	draw_text_transformed(RES_W-2,21,"*" + string(global.collectibles), collectableTextScale, collectableTextScale,0);
 
 	// Draw Time
+	/*
 	timeTextScale = max(timeTextScale * 0.95, 1);
 	switch(global.color)
 	{
@@ -45,7 +48,8 @@ if(room != MainMenu && room != rLevelSelect)
 			break;
 	}
 	draw_text_transformed(RES_W-2,21,"Time: " + string_format((global.time / room_speed), 0, 2), timeTextScale, timeTextScale,0);
-
+	*/
+	
 	// Draw Player HP
 	/*
 	hpTextScale = max(hpTextScale * 0.95, 1);
