@@ -21,15 +21,15 @@
     "path": "texturegroups/Default",
   },
   "swatchColours": null,
-  "gridX": 0,
-  "gridY": 0,
+  "gridX": 16,
+  "gridY": 16,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"3c0f3d29-041c-4af9-9a70-eb57975c2665","path":"sprites/sSeasideBlue/sSeasideBlue.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3c0f3d29-041c-4af9-9a70-eb57975c2665","path":"sprites/sSeasideBlue/sSeasideBlue.yy",},"LayerId":{"name":"3b031929-30e6-454f-b971-8d4d94dba993","path":"sprites/sSeasideBlue/sSeasideBlue.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sSeasideBlue","path":"sprites/sSeasideBlue/sSeasideBlue.yy",},"resourceVersion":"1.0","name":"3c0f3d29-041c-4af9-9a70-eb57975c2665","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3c0f3d29-041c-4af9-9a70-eb57975c2665","path":"sprites/sGreen/sGreen.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3c0f3d29-041c-4af9-9a70-eb57975c2665","path":"sprites/sGreen/sGreen.yy",},"LayerId":{"name":"3b031929-30e6-454f-b971-8d4d94dba993","path":"sprites/sGreen/sGreen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sGreen","path":"sprites/sGreen/sGreen.yy",},"resourceVersion":"1.0","name":"3c0f3d29-041c-4af9-9a70-eb57975c2665","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sSeasideBlue","path":"sprites/sSeasideBlue/sSeasideBlue.yy",},
+    "spriteId": {"name":"sGreen","path":"sprites/sGreen/sGreen.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"711ca953-6441-40f0-911f-d34b136fde68","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3c0f3d29-041c-4af9-9a70-eb57975c2665","path":"sprites/sSeasideBlue/sSeasideBlue.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3221042a-633b-4663-b23e-ee0727708746","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3c0f3d29-041c-4af9-9a70-eb57975c2665","path":"sprites/sGreen/sGreen.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 192,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sSeasideBlue","path":"sprites/sSeasideBlue/sSeasideBlue.yy",},
+    "parent": {"name":"sGreen","path":"sprites/sGreen/sGreen.yy",},
     "resourceVersion": "1.3",
-    "name": "sSeasideBlue",
+    "name": "sGreen",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Tilesets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sSeasideBlue",
+  "name": "sGreen",
   "tags": [],
   "resourceType": "GMSprite",
 }
