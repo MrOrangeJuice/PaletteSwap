@@ -32,7 +32,7 @@ if(room != MainMenu && room != rLevelSelect)
 			DrawSetText($331800, fUI, fa_right, fa_top);
 			break;
 	}
-	draw_sprite_stretched(sCollectibleStatic, global.color, 271, 20, 16, 16);
+	draw_sprite_stretched(sGearSmall, global.color, 271, 20, 16, 16);
 	draw_text_transformed(RES_W-2,21,"*" + string(global.collectibles), collectableTextScale, collectableTextScale,0);
 
 	// Draw Time
