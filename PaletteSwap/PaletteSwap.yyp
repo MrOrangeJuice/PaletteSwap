@@ -142,6 +142,7 @@
     {"id":{"name":"oAirCurrent","path":"objects/oAirCurrent/oAirCurrent.yy",},"order":19,},
     {"id":{"name":"snd_Thud","path":"sounds/snd_Thud/snd_Thud.yy",},"order":4,},
     {"id":{"name":"snd_Fall","path":"sounds/snd_Fall/snd_Fall.yy",},"order":18,},
+    {"id":{"name":"sTextBubble","path":"sprites/sTextBubble/sTextBubble.yy",},"order":4,},
     {"id":{"name":"oDoorPrompt","path":"objects/oDoorPrompt/oDoorPrompt.yy",},"order":34,},
     {"id":{"name":"snd_Villager","path":"sounds/snd_Villager/snd_Villager.yy",},"order":26,},
     {"id":{"name":"tSeaside","path":"tilesets/tSeaside/tSeaside.yy",},"order":0,},
