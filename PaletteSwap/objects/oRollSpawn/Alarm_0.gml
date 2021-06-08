@@ -1,6 +1,6 @@
 /// @description Spawn Roll
 
-newRoll = instance_create_layer(x,y + 32, "EnemiesAndOtherCharacters",oRoll);
+newRoll = instance_create_layer(x,y + 32, "Enemies",oRoll);
 if(global.color == 0) 
 {
 	newRoll.hsp = 2;
