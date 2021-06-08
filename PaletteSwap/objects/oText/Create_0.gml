@@ -12,7 +12,7 @@ x2Target = RES_W;
 lerpProgress = 0;
 textProgress = 0;
 
-//message = "Hey what's up loser";
+message = "Hey what's up loser";
 global.textUp = true;
 curResponseId = 0;
 textList = ds_list_create();
