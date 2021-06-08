@@ -1,5 +1,5 @@
 /// @description Switch Input and Palette
-if(!oPortal.visible)
+if(!oPlayer.villager)
 {
 	sprite_index = sDoorPromptNo;
 }
