@@ -1,0 +1,2 @@
+/// @description Palette
+PaletteAnimationSwap();
