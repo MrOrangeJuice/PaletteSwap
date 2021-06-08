@@ -9,9 +9,22 @@ DrawSetText(c_black, fUI, fa_center, fa_top);
 var print = string_copy(curResponse, 1, textProgress);
 draw_text((x1+x2)/2, y1+12, print);
 if(global.paused){
-	draw_set_color(c_gray);
+	if(global.color == 0)
+	{
+		draw_set_color($042700);
+	}
+	else if(global.color == 1){
+		draw_set_color($331800);
+	}
 }
 else{
-	draw_set_color(c_white);
+	if(global.color == 0)
+	{
+		draw_set_color($B7FFF7);
+	}
+	else if(global.color == 1){
+		draw_set_color($E5F49F);
+	}
+
 }
 draw_text((x1+x2)/2, y1+11, print);
