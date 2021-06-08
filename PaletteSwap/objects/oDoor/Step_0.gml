@@ -15,7 +15,7 @@ if (gamepad_button_check_pressed(0,gp_face4) || gamepad_button_check_pressed(4,g
 }
 
 // Render prompt
-if(place_meeting(x, y, oPlayer) && oPlayer.villager)
+if(place_meeting(x, y, oPlayer) && oPortal.visible)
 {
 	if(!prompt)
 	{
@@ -49,10 +49,5 @@ else
 	}
 }
 
-// Render portal
-if(oPlayer.villager)
-{
-	oPortal.visible = true;	
-}
 
 PaletteAnimationSwap();
