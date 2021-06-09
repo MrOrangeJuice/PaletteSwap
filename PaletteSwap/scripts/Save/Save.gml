@@ -1,7 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function Save(){
-	var _saveData = array_create(0);
-	
-	var _save
+	ini_open("savedata.ini");
+	//ini_write_real("savegame", "");
 }
