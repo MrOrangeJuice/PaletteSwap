@@ -26,7 +26,7 @@
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[
-            {"propertyId":{"name":"levelTo","path":"objects/oLevelDoor/oLevelDoor.yy",},"objectId":{"name":"oLevelDoor","path":"objects/oLevelDoor/oLevelDoor.yy",},"value":"NoveauPaletteTemple","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"levelTo","path":"objects/oLevelDoor/oLevelDoor.yy",},"objectId":{"name":"oLevelDoor","path":"objects/oLevelDoor/oLevelDoor.yy",},"value":"rPaletteTemple","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"oLevelDoor","path":"objects/oLevelDoor/oLevelDoor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":728.0,"y":680.0,"resourceVersion":"1.0","name":"inst_68CE3EF","tags":[],"resourceType":"GMRInstance",},
         {"properties":[
             {"propertyId":{"name":"gearRequirement","path":"objects/oLevelDoor/oLevelDoor.yy",},"objectId":{"name":"oLevelDoor","path":"objects/oLevelDoor/oLevelDoor.yy",},"value":"6","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},

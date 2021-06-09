@@ -1,5 +1,18 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Update visuals and check for entry
+
+// Get input
+key_enter = keyboard_check(ord("X"));
+
+if (key_enter)
+{
+	global.controller = 0;
+}
+
+if (gamepad_button_check_pressed(0,gp_face4) || gamepad_button_check_pressed(4,gp_face4))
+{
+	key_enter = 1;
+	global.controller = 1;
+}
 
 if(place_meeting(x, y, oPlayer))
 {
@@ -11,7 +24,7 @@ if(place_meeting(x, y, oPlayer))
 			case "MainMenu":
 				info.levelName = "Finish Demo";
 				break;
-			case "NoveauPaletteTemple":
+			case "rPaletteTemple":
 				info.levelName = "Palette Shrine";
 				break;
 			case "rAlexLevel":
@@ -28,6 +41,18 @@ else
 	{
 		instance_destroy(info);
 		createdInfo = false;
+	}
+}
+
+// if player has enough gears to enter
+if(global.gearTotal > gearRequirement)
+{
+	// Set portal to visible
+	portal.visible = true;	
+	if(key_enter)
+	{
+		global.color = 0;
+		SlideTransition(TRANS_MODE.GOTO, asset_get_index(levelTo));	
 	}
 }
 

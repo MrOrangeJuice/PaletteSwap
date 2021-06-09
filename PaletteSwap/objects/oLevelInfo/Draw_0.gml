@@ -47,5 +47,17 @@ if(global.gearTotal >= levelRequirement)
 }
 else
 {
-		draw_sprite(sGearSmallBlacked,global.color,x,y+16);
+	// Draw required gears
+	draw_sprite(sGearSmall,global.color,x-10,y+16);
+	if(global.color == 0)
+	{
+		DrawSetText($002704, fUI, 0, 0);
+	}
+	if(global.color == 1)
+	{
+		DrawSetText($001833, fUI, 0, 0);
+	}
+	draw_set_halign(fa_center);
+	gearString = "x" + string(levelRequirement);
+	draw_text(x+10, y+12, gearString);
 }
