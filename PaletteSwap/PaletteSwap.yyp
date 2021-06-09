@@ -186,6 +186,7 @@
     {"id":{"name":"oHiddenArea2","path":"objects/oHiddenArea2/oHiddenArea2.yy",},"order":37,},
     {"id":{"name":"sVillager","path":"sprites/sVillager/sVillager.yy",},"order":1,},
     {"id":{"name":"oShip","path":"objects/oShip/oShip.yy",},"order":20,},
+    {"id":{"name":"fGame","path":"fonts/fGame/fGame.yy",},"order":1,},
     {"id":{"name":"snd_Collectible","path":"sounds/snd_Collectible/snd_Collectible.yy",},"order":25,},
     {"id":{"name":"sPortalInfo","path":"sprites/sPortalInfo/sPortalInfo.yy",},"order":22,},
     {"id":{"name":"sFernIdle","path":"sprites/sFernIdle/sFernIdle.yy",},"order":1,},
