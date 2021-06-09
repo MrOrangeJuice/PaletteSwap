@@ -49,10 +49,24 @@ if(global.gearTotal > gearRequirement)
 {
 	// Set portal to visible
 	portal.visible = true;	
-	if(key_enter)
+	if(place_meeting(x,y,oPlayer) && key_enter)
 	{
 		global.color = 0;
-		SlideTransition(TRANS_MODE.GOTO, asset_get_index(levelTo));	
+		switch(levelTo)
+		{
+			case "MainMenu":
+				SlideTransition(TRANS_MODE.GOTO, MainMenu);	
+				break;
+			case "rPaletteTemple":
+				SlideTransition(TRANS_MODE.GOTO, rPaletteTemple);	
+				break;
+			case "rAlexLevel":
+				SlideTransition(TRANS_MODE.GOTO, rAlexLevel);	
+				break;
+			default:
+				SlideTransition(TRANS_MODE.GOTO, rHub);
+				break;
+		}
 	}
 }
 

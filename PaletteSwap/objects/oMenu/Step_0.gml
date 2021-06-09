@@ -15,8 +15,8 @@ if(key_select == 1){
 	case 1:
 		SlideTransition(TRANS_MODE.GOTO, rLevelSelect);
 		break;
+	/*
 	case 2:
-		/*
 		if(file_exists(SAVEFILE)){
 			show_debug_message("HERE");
 			global.loaded = true;
@@ -43,15 +43,15 @@ if(key_select == 1){
 		break;
 		*/
 		SlideTransition(TRANS_MODE.GOTO, rTest);
-	case 3:
+	case 2:
 		if(file_exists(SAVEFILE)){
 			file_delete(SAVEFILE);
 		}
 		break;
-	case 4:
+	case 3:
 		window_set_fullscreen(!window_get_fullscreen());
 			break;
-	case 5:
+	case 4:
 		game_end();
 		break;
 	default:

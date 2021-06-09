@@ -25,6 +25,7 @@ if(place_meeting(x, y, oPlayer) && oPortal.visible)
 	if(key_enter)
 	{
 		global.color = 0;
+		global.hp = 100;
 		if(room == PaletteTempleLevel)
 		{
 			audio_stop_sound(msc_Level);

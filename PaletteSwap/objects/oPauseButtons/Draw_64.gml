@@ -1,5 +1,6 @@
 /// @description Drawing buttons out
 var c = 0;
+draw_set_font(fGame);
 repeat(buttonCount){
 	draw_set_halign(fa_center);
 	switch(global.color)
