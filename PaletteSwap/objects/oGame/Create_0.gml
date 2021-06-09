@@ -32,6 +32,12 @@ global.loaded = false;
 global.coinId = 0;
 global.canControlTimer = -1;
 
+global.templeGears = 5;
+global.templeGearsCollected = 3;
+global.seasideGears = 4;
+global.seasideGearsCollected = 3;
+global.gearTotal = 9;
+
 global.color = 0;
 //0 green
 //1 blue
