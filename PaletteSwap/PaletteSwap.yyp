@@ -16,6 +16,7 @@
     {"id":{"name":"sTutorialControllerJump","path":"sprites/sTutorialControllerJump/sTutorialControllerJump.yy",},"order":1,},
     {"id":{"name":"sGreen","path":"sprites/sGreen/sGreen.yy",},"order":16,},
     {"id":{"name":"snd_MenuSelect","path":"sounds/snd_MenuSelect/snd_MenuSelect.yy",},"order":11,},
+    {"id":{"name":"sCollectibleBlacked","path":"sprites/sCollectibleBlacked/sCollectibleBlacked.yy",},"order":6,},
     {"id":{"name":"sFernSwimNew","path":"sprites/sFernSwimNew/sFernSwimNew.yy",},"order":17,},
     {"id":{"name":"snd_Dash","path":"sounds/snd_Dash/snd_Dash.yy",},"order":6,},
     {"id":{"name":"sTutorialKeyboardJump","path":"sprites/sTutorialKeyboardJump/sTutorialKeyboardJump.yy",},"order":5,},
