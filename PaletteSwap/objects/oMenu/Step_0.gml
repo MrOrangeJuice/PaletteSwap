@@ -16,17 +16,14 @@ if(key_select == 1){
 		SlideTransition(TRANS_MODE.GOTO, rLevelSelect);
 		break;
 	case 2:
-		SlideTransition(TRANS_MODE.GOTO, rTest);
-		break;
-	case 3:
 		if(file_exists(SAVEFILE)){
 			file_delete(SAVEFILE);
 		}
 		break;
-	case 4:
+	case 3:
 		window_set_fullscreen(!window_get_fullscreen());
 			break;
-	case 5:
+	case 4:
 		game_end();
 		break;
 	default:
