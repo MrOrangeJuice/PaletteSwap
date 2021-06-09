@@ -22,16 +22,16 @@ if(global.gearTotal >= levelRequirement)
 			startingX = 8 * (global.templeGears - 1);
 			for(i = 0; i < global.templeGears; i++)
 			{
-				if(global.templeGearsCollected < (i+1)) draw_sprite(sGearSmallBlacked,global.color,x-startingX+(i*16),y+16);	
-				if(global.templeGearsCollected >= (i+1)) draw_sprite(sGearSmall,global.color,x-startingX+(i*16),y+16);	
+				if(!global.templeGearArray[i]) draw_sprite(sGearSmallBlacked,global.color,x-startingX+(i*16),y+16);	
+				if(global.templeGearArray[i]) draw_sprite(sGearSmall,global.color,x-startingX+(i*16),y+16);	
 			}
 			break;
 		case "Seaside Glide":
 			startingX = 8 * (global.seasideGears - 1);
 			for(i = 0; i < global.seasideGears; i++)
 			{
-				if(global.seasideGearsCollected < (i+1)) draw_sprite(sGearSmallBlacked,global.color,x-startingX+(i*16),y+16);	
-				if(global.seasideGearsCollected >= (i+1)) draw_sprite(sGearSmall,global.color,x-startingX+(i*16),y+16);	
+				if(!global.seasideGearArray[i]) draw_sprite(sGearSmallBlacked,global.color,x-startingX+(i*16),y+16);	
+				if(global.seasideGearArray[i]) draw_sprite(sGearSmall,global.color,x-startingX+(i*16),y+16);	
 			}
 			break;
 	}

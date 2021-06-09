@@ -38,6 +38,18 @@ global.seasideGears = 4;
 global.seasideGearsCollected = 3;
 global.gearTotal = 4;
 
+global.templeGearArray = array_create(global.templeGears);
+for(i = 0; i < global.templeGears; i++)
+{
+	global.templeGearArray[i] = false;
+}
+
+global.seasideGearArray = array_create(global.seasideGears);
+for(i = 0; i < global.seasideGears; i++)
+{
+	global.seasideGearArray[i] = false;
+}
+
 global.color = 0;
 //0 green
 //1 blue
