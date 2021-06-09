@@ -16,33 +16,8 @@ if(key_select == 1){
 		SlideTransition(TRANS_MODE.GOTO, rLevelSelect);
 		break;
 	case 2:
-		/*
-		if(file_exists(SAVEFILE)){
-			show_debug_message("HERE");
-			global.loaded = true;
-			ini_open(SAVEFILE);
-			global.loadX = ini_read_real("Vars", "playerX", 0);
-			global.loadY = ini_read_real("Vars", "playerY", 0);
-			global.loadHp = ini_read_real("Vars", "hp", 100);
-			global.loadCoins = ini_read_real("Vars", "coins", 0);
-			global.loadTime = ini_read_real("Vars", "time", 0);
-			index = 0;
-			while(true){
-				curX = ini_read_real("Coins", "coinX" + string(index), 0);
-				if(curX == -69420666){
-					break;
-				}
-				curY = ini_read_real("Coins", "coinY" + string(index), 0);
-				ds_list_add(global.loadCoinsX, curX);
-				ds_list_add(global.loadCoinsY, curY);
-				index++;
-			}
-			ini_close();
-		}
 		SlideTransition(TRANS_MODE.GOTO, rTest);
 		break;
-		*/
-		SlideTransition(TRANS_MODE.GOTO, rTest);
 	case 3:
 		if(file_exists(SAVEFILE)){
 			file_delete(SAVEFILE);
