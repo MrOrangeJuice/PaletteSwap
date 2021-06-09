@@ -18,6 +18,7 @@ if(place_meeting(x, y, oPlayer))
 				info.levelName = "Seaside Glide";
 				break;
 		}
+		info.levelRequirement = gearRequirement;
 		createdInfo = true;
 	}
 }
