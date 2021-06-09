@@ -41,8 +41,8 @@ if(key_select == 1){
 		}
 		SlideTransition(TRANS_MODE.GOTO, rTest);
 		break;
-		*/
 		SlideTransition(TRANS_MODE.GOTO, rTest);
+	*/
 	case 2:
 		if(file_exists(SAVEFILE)){
 			file_delete(SAVEFILE);
