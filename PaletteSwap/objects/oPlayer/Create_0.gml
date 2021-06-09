@@ -24,7 +24,6 @@ swimming = false;
 spikeImmune = false;
 lastGroundedPosX = 0;
 lastGroundedPosY = 0;
-canSwap = true;
 villager = false;
 if(room == PaletteTempleLevel)
 {
