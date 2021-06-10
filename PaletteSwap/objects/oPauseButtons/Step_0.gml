@@ -26,6 +26,7 @@ if(key_select == 1){
 		ds_list_clear(global.loadCoinsY);
 		global.color_limit = 2;
 		audio_stop_sound(msc_Level);
+		audio_stop_sound(msc_Seaside);
 		SlideTransition(TRANS_MODE.GOTO, MainMenu);
 		break;
 	case 2:

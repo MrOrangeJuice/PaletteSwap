@@ -63,7 +63,6 @@ if(global.gearTotal >= gearRequirement)
 				break;
 			case "rAlexLevel":
 				audio_stop_sound(msc_Level);
-				audio_play_sound(msc_Seaside, 5, true);
 				SlideTransition(TRANS_MODE.GOTO, rAlexLevel);	
 				break;
 			default:

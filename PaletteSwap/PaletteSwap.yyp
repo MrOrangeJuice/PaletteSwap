@@ -89,6 +89,7 @@
     {"id":{"name":"oTutorialDash","path":"objects/oTutorialDash/oTutorialDash.yy",},"order":26,},
     {"id":{"name":"sBackgroundPurple","path":"sprites/sBackgroundPurple/sBackgroundPurple.yy",},"order":22,},
     {"id":{"name":"sTutorialControllerNoSwap","path":"sprites/sTutorialControllerNoSwap/sTutorialControllerNoSwap.yy",},"order":2,},
+    {"id":{"name":"oSeasideMusic","path":"objects/oSeasideMusic/oSeasideMusic.yy",},"order":50,},
     {"id":{"name":"sLemonIcon","path":"sprites/sLemonIcon/sLemonIcon.yy",},"order":14,},
     {"id":{"name":"sTrigger","path":"sprites/sTrigger/sTrigger.yy",},"order":27,},
     {"id":{"name":"sFernDashDown","path":"sprites/sFernDashDown/sFernDashDown.yy",},"order":7,},
