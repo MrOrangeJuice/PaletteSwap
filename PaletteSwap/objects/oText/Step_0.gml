@@ -14,8 +14,8 @@ if(message != "" && !started){
 	curResponse = ds_list_find_value(textList, 0);
 }
 if(!global.paused && started){
-key_space = keyboard_check_pressed(vk_space);
-if (gamepad_button_check(0,gp_face3) || gamepad_button_check(4,gp_face3))
+key_space = keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("P"));
+if (gamepad_button_check(0,gp_face1) || gamepad_button_check(4,gp_face1))
 {
 	key_space = 1;
 }
