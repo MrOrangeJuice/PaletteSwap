@@ -31,6 +31,10 @@ if(place_meeting(x, y, oPlayer) && oPortal.visible)
 			global.tutorialCompleted = true;
 			audio_stop_sound(msc_Level);
 		}
+		if(room == rPaletteTemple)
+		{
+			audio_stop_sound(msc_Level);
+		}
 		if(room == rAlexLevel)
 		{
 			audio_stop_sound(msc_Seaside);
