@@ -5,4 +5,5 @@ fixed = true;
 fixing = false;
 alarm[0] = room_speed * 0.35;
 SwapSprite(sVillagerWalk);
+//for some reason, this happens late and you need to set the frame manually :)
 image_index = global.color * (sprite_get_number(sprite_index) / global.color_count);
