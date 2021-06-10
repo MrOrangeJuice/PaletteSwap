@@ -4,7 +4,7 @@ var c = 0;
 repeat(buttonCount){
 	draw_set_halign(fa_center);
 	draw_set_color($45D1A5);
-	draw_set_font(fUI);
+	draw_set_font(fGame);
 	if(menuIndex == c){
 		draw_set_color($37802A);
 	}

@@ -2,7 +2,7 @@
 
 if(global.lastCheckpointX == x && global.lastCheckpointY == y)
 {
-	sprite_index = sCheckpoint;	
+	sprite_index = sCheckpoint2;	
 }
 else
 {

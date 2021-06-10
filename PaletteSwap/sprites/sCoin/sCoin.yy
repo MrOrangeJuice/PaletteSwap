@@ -88,7 +88,7 @@
     "eventStubScript": null,
     "parent": {"name":"sCoin","path":"sprites/sCoin/sCoin.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "sCoin",
     "tags": [],
     "resourceType": "GMSequence",
   },

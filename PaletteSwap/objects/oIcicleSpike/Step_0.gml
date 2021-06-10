@@ -26,3 +26,5 @@ if (falling) {
 	} else if (grv = 0.15) grv = 3;
 }
 
+PaletteAnimationSwap();
+

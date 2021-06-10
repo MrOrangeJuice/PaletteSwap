@@ -3,7 +3,6 @@ display_set_gui_size(RES_W,RES_H);
 
 // Create basic global variables.
 global.coins = 0;
-global.collectibles = 0;
 global.time = 0;
 global.paused = false;
 global.cutscene = false;
@@ -31,6 +30,25 @@ global.loadTime = 0;
 global.loaded = false;
 global.coinId = 0;
 global.canControlTimer = -1;
+
+// Player data
+global.tutorialCompleted = false;
+
+global.templeGears = 5;
+global.seasideGears = 4;
+global.gearTotal = 0;
+
+global.templeGearArray = array_create(global.templeGears);
+for(i = 0; i < global.templeGears; i++)
+{
+	global.templeGearArray[i] = false;
+}
+
+global.seasideGearArray = array_create(global.seasideGears);
+for(i = 0; i < global.seasideGears; i++)
+{
+	global.seasideGearArray[i] = false;
+}
 
 global.color = 0;
 //0 green
