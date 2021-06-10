@@ -19,7 +19,6 @@
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Pause","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":1184.0,"resourceVersion":"1.0","name":"inst_66D4D4A6","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"oGame","path":"objects/oGame/oGame.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":96.0,"y":1184.0,"resourceVersion":"1.0","name":"inst_204273E2","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oTransition","path":"objects/oTransition/oTransition.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":128.0,"y":1184.0,"resourceVersion":"1.0","name":"inst_3492D907","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oEddy","path":"objects/oEddy/oEddy.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1088.0,"y":2320.0,"resourceVersion":"1.0","name":"inst_56D9B76F","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2448.0,"y":576.0,"resourceVersion":"1.0","name":"inst_77052560","tags":[],"resourceType":"GMRInstance",},
@@ -1586,7 +1585,6 @@
     {"name":"inst_73656E4B","path":"rooms/NoveauPaletteTemple/NoveauPaletteTemple.yy",},
     {"name":"inst_24A8B16C","path":"rooms/NoveauPaletteTemple/NoveauPaletteTemple.yy",},
     {"name":"inst_66D4D4A6","path":"rooms/NoveauPaletteTemple/NoveauPaletteTemple.yy",},
-    {"name":"inst_204273E2","path":"rooms/NoveauPaletteTemple/NoveauPaletteTemple.yy",},
     {"name":"inst_3492D907","path":"rooms/NoveauPaletteTemple/NoveauPaletteTemple.yy",},
     {"name":"inst_332BA197","path":"rooms/NoveauPaletteTemple/NoveauPaletteTemple.yy",},
     {"name":"inst_45EF9E00","path":"rooms/NoveauPaletteTemple/NoveauPaletteTemple.yy",},

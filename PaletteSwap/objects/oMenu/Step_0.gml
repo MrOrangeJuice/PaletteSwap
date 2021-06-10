@@ -10,14 +10,23 @@ if(key_select == 1){
 	switch(menuIndex){
 	case 0:
 		//global.color_limit = 1;
-		SlideTransition(TRANS_MODE.GOTO, rHub);
+		// Load in data
+		Load();
+		if(global.tutorialCompleted)
+		{
+			SlideTransition(TRANS_MODE.GOTO, rHub);
+		}
+		else
+		{
+			SlideTransition(TRANS_MODE.GOTO, rTutorial);
+		}
 		break;
 	case 1:
 		SlideTransition(TRANS_MODE.GOTO, rLevelSelect);
 		break;
 	case 2:
-		if(file_exists(SAVEFILE)){
-			file_delete(SAVEFILE);
+		if(file_exists("savedata.ini")){
+			file_delete("savedata.ini");
 		}
 		break;
 	case 3:

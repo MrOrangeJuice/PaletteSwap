@@ -45,7 +45,7 @@ else
 }
 
 // if player has enough gears to enter
-if(global.gearTotal > gearRequirement)
+if(global.gearTotal >= gearRequirement)
 {
 	// Set portal to visible
 	portal.visible = true;	

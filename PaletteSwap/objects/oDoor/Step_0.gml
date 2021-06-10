@@ -26,10 +26,11 @@ if(place_meeting(x, y, oPlayer) && oPortal.visible)
 	{
 		global.color = 0;
 		global.hp = 100;
-		if(room == PaletteTempleLevel)
+		if(room == NoveauPaletteTemple)
 		{
-			audio_stop_sound(msc_Level);
+			global.tutorialCompleted = true;
 		}
+		Save();
 		SlideTransition(TRANS_MODE.GOTO, next_room);	
 	}
 }
