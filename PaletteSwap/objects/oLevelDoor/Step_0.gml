@@ -55,12 +55,15 @@ if(global.gearTotal >= gearRequirement)
 		switch(levelTo)
 		{
 			case "MainMenu":
+				audio_stop_sound(msc_Level);
 				SlideTransition(TRANS_MODE.GOTO, MainMenu);	
 				break;
 			case "rPaletteTemple":
 				SlideTransition(TRANS_MODE.GOTO, rPaletteTemple);	
 				break;
 			case "rAlexLevel":
+				audio_stop_sound(msc_Level);
+				audio_play_sound(msc_Seaside, 5, true);
 				SlideTransition(TRANS_MODE.GOTO, rAlexLevel);	
 				break;
 			default:

@@ -30,6 +30,11 @@ if(place_meeting(x, y, oPlayer) && oPortal.visible)
 		{
 			global.tutorialCompleted = true;
 		}
+		if(room == rAlexLevel)
+		{
+			audio_stop_sound(msc_Seaside);
+			audio_play_sound(msc_Level, 5, false);
+		}
 		Save();
 		SlideTransition(TRANS_MODE.GOTO, next_room);	
 	}

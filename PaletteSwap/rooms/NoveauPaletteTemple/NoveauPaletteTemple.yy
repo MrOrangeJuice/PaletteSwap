@@ -298,7 +298,7 @@
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"oCollectible","path":"objects/oCollectible/oCollectible.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":608.0,"y":2592.0,"resourceVersion":"1.0","name":"inst_53CB45EC","tags":[],"resourceType":"GMRInstance",},
         {"properties":[
-            {"propertyId":{"name":"gid","path":"objects/oCollectible/oCollectible.yy",},"objectId":{"name":"oCollectible","path":"objects/oCollectible/oCollectible.yy",},"value":"3","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"gid","path":"objects/oCollectible/oCollectible.yy",},"objectId":{"name":"oCollectible","path":"objects/oCollectible/oCollectible.yy",},"value":"4","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"oCollectible","path":"objects/oCollectible/oCollectible.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3064.0,"y":2792.0,"resourceVersion":"1.0","name":"inst_5A05051B","tags":[],"resourceType":"GMRInstance",},
         {"properties":[
             {"propertyId":{"name":"gid","path":"objects/oCollectible/oCollectible.yy",},"objectId":{"name":"oCollectible","path":"objects/oCollectible/oCollectible.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
