@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sDoorPrompt",
-    "path": "sprites/sDoorPrompt/sDoorPrompt.yy",
+    "name": "sDoorPromptNew",
+    "path": "sprites/sDoorPromptNew/sDoorPromptNew.yy",
   },
   "solid": false,
   "visible": true,
