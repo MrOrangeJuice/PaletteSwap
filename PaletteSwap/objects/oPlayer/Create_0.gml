@@ -32,8 +32,6 @@ if(room == PaletteTempleLevel)
 
 // Knockback variables.
 global.knockedBack = false;
-knockBackTime = 0.25;
-knockBackCount = 0;
 
 skidding = false; //skidding check
 

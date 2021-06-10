@@ -101,6 +101,7 @@ if (jumpBuffer > 0) && (key_jump) && (canJump)
 	audio_play_sound(snd_Jump, 5, false);
 	canJump = false;
 	jumped = true;
+	global.knockedBack = false;
 }
 
 // Check if player can dash
@@ -121,6 +122,7 @@ else
 if (key_dash && canDash)
 {
 	isDashing = true;
+	global.knockedBack = false;
 	jumped = false;
 }
 

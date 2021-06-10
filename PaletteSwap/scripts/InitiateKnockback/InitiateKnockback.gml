@@ -18,5 +18,6 @@ function InitiateKnockback(_object, _xVel, _yVel)
 		// Finally apply knockback to the player.
 		_object.hsp = _object.currentwalksp;
 		_object.vsp = _yVel;
+		_object.alarm[1] = room_speed * 0.75;
 	}
 }
