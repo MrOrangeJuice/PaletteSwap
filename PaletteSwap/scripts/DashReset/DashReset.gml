@@ -5,8 +5,9 @@ function DashReset()
 	player = instance_find(oPlayer, 0);
 	
 	player.isDashing = false;
-	player.isRolling = true;
-	//player.canDash = true;
+	if (!global.knockedBack){
+		player.isRolling = true;
+	}
 	
 	player.alarm[0] = room_speed * 0.15;
 	player.dashtime = room_speed * 0.25;
