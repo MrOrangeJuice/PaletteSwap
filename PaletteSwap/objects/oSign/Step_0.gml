@@ -16,31 +16,23 @@ if (gamepad_button_check_pressed(0,gp_face4) || gamepad_button_check_pressed(4,g
 
 if(place_meeting(x, y, oPlayer))
 {
-	if(!createdInfo)
+	if(!createdPrompt)
 	{
-		info = instance_create_layer(x,y-86,"Portals",oLevelInfo);
-		switch(levelTo)
-		{
-			case "MainMenu":
-				info.levelName = "Finish Demo";
-				break;
-			case "rPaletteTemple":
-				info.levelName = "Palette Shrine";
-				break;
-			case "rAlexLevel":
-				info.levelName = "Seaside Glide";
-				break;
-		}
-		info.levelRequirement = gearRequirement;
-		createdInfo = true;
+		prompt = instance_create_layer(x,y-24,"Portals",oNPCPrompt);
+		createdPrompt = true;
+	}
+	if(key_enter)
+	{
+		text = instance_create_layer(x,y,"FX",oText);	
+		text.textMessage = signMessage;
 	}
 }
 else
 {
-	if(createdInfo)
+	if(createdPrompt)
 	{
-		instance_destroy(info);
-		createdInfo = false;
+		instance_destroy(prompt);
+		createdPrompt = false;
 	}
 }
 

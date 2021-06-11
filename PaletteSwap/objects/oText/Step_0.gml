@@ -1,14 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(message != "" && !started){
+if(textMessage != "" && !started){
 	started = true;
-	for(c = 0; c < string_length(message); c++){
-		if(string_char_at(message, c) == "#"){
-			ds_list_add(textList, string_copy(message, startOfText, c-startOfText));
+	for(c = 0; c < string_length(textMessage); c++){
+		if(string_char_at(textMessage, c) == "#"){
+			ds_list_add(textList, string_copy(textMessage, startOfText, c-startOfText));
 			startOfText = c+1;
 		}
-		else if(c == string_length(message) - 1){
-			ds_list_add(textList, string_copy(message, startOfText, c-startOfText+2));
+		else if(c == string_length(textMessage) - 1){
+			ds_list_add(textList, string_copy(textMessage, startOfText, c-startOfText+2));
 		}
 	}
 	curResponse = ds_list_find_value(textList, 0);
