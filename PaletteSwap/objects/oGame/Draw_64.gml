@@ -1,6 +1,6 @@
 /// @description Draw GUI
 
-if(room != MainMenu && room != rLevelSelect)
+if(room != MainMenu && room != rLevelSelect && room != rThanks)
 {
 	// healthbar
 	draw_sprite_stretched(sHealthBarBase, global.color, 4, 4, 64, 16);

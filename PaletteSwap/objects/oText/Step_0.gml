@@ -26,6 +26,7 @@ x1 = lerp(x1, x1Target, lerpProgress);
 x2 = lerp(x2, x2Target, lerpProgress);
 
 if(key_space == 1){
+	audio_play_sound(snd_Dialogue, 4, false);
 	lerpProgress = 0;
 	textProgress = 0;
 	curResponseId++;

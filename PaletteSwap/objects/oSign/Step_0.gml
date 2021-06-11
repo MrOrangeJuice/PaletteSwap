@@ -1,7 +1,7 @@
 /// @description Swap Palette and Spawn Prompt or Text
 
 // Get input
-key_enter = keyboard_check(ord("X"));
+key_enter = keyboard_check_pressed(ord("X"));
 
 if (key_enter)
 {
@@ -23,6 +23,7 @@ if(place_meeting(x, y, oPlayer))
 	}
 	if(key_enter)
 	{
+		audio_play_sound(snd_Interact, 5, false);
 		text = instance_create_layer(x,y,"FX",oText);	
 		text.textMessage = signMessage;
 	}

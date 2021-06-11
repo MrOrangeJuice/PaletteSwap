@@ -36,6 +36,7 @@ else
 	// Damage and knockback the player if they're vulnerable.
 	if (!other.isInvulnerable) 
 	{
+		audio_play_sound(snd_PlayerDamage, 5, false);
 		global.hp -= damage;
 		other.isInvulnerable = true;
 			

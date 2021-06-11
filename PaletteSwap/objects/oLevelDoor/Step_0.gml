@@ -63,6 +63,7 @@ if(global.gearTotal >= gearRequirement)
 				break;
 			case "rThanks":
 				SlideTransition(TRANS_MODE.GOTO, rThanks);
+				break;
 			case "rPaletteTemple":
 				SlideTransition(TRANS_MODE.GOTO, rPaletteTemple);	
 				break;
