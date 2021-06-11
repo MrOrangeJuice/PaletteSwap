@@ -24,6 +24,9 @@ if(place_meeting(x, y, oPlayer))
 			case "MainMenu":
 				info.levelName = "Finish Demo";
 				break;
+			case "rThanks":
+				info.levelName = "Finish Demo\nBut Cooler";
+				break;
 			case "rPaletteTemple":
 				info.levelName = "Palette Shrine";
 				break;
@@ -58,6 +61,8 @@ if(global.gearTotal >= gearRequirement)
 				audio_stop_sound(msc_Level);
 				SlideTransition(TRANS_MODE.GOTO, MainMenu);	
 				break;
+			case "rThanks":
+				SlideTransition(TRANS_MODE.GOTO, rThanks);
 			case "rPaletteTemple":
 				SlideTransition(TRANS_MODE.GOTO, rPaletteTemple);	
 				break;

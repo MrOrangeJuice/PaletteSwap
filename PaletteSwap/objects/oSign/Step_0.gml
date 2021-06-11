@@ -18,7 +18,7 @@ if(place_meeting(x, y, oPlayer))
 {
 	if(!createdPrompt)
 	{
-		prompt = instance_create_layer(x,y-24,"Portals",oNPCPrompt);
+		prompt = instance_create_layer(x,y-24,"Coins",oNPCPrompt);
 		createdPrompt = true;
 	}
 	if(key_enter)
