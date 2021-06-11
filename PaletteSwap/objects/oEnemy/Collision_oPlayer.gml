@@ -1,32 +1,31 @@
 /// @description Handle Player Collision
 
-player = instance_find(oPlayer, 0);
-if (player.dashdown)
+if (other.dashdown)
 {
 	eHP -= 1;
 		
 	// Send player flying.
-	InitiateKnockback(player, 0, -8);
+	InitiateKnockback(other, 0, -8);
 		
 	// Refresh player's dash.
 	DashReset();
 }
-else if (player.isDashing)
+else if (other.isDashing)
 {
 	eHP -= 1;
 		
 	// Send player flying.
-	InitiateKnockback(player, -10, -8);
+	InitiateKnockback(other, -8, -8);
 		 
 	// Refresh player's dash.
 	DashReset();
 }
-else if (player.isRolling)
+else if (other.isRolling)
 {
 	eHP -= 1;
 		
 	// Send player flying.
-	InitiateKnockback(player, 0, -8);
+	InitiateKnockback(other, 0, -8);
 		
 	// Refresh player's dash.
 	DashReset();
@@ -35,12 +34,12 @@ else if (player.isRolling)
 else 
 {
 	// Damage and knockback the player if they're vulnerable.
-	if (!player.isInvulnerable) 
+	if (!other.isInvulnerable) 
 	{
 		global.hp -= damage;
-		player.isInvulnerable = true;
+		other.isInvulnerable = true;
 			
-		InitiateKnockback(player, 6, -7);
+		InitiateKnockback(other, 6, -7);
 			
 		global.knockedBack = true;
 	}
