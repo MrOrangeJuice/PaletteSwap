@@ -43,7 +43,9 @@ else if ((swimming && vsp >= 0) || !swimming){
 		jumped = false;
 	}
 	// Reset roll
-	isRolling = false;
+	if (canDash){
+		isRolling = false;
+	}
 }
 if(!isDashing){
 	// Restore ability to variably jump once the bounce hits its apex
