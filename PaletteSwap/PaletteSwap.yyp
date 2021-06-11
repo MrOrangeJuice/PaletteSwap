@@ -12,6 +12,7 @@
     {"id":{"name":"sPlayerIdleGreen","path":"sprites/sPlayerIdleGreen/sPlayerIdleGreen.yy",},"order":3,},
     {"id":{"name":"snd_PlayerDamage","path":"sounds/snd_PlayerDamage/snd_PlayerDamage.yy",},"order":29,},
     {"id":{"name":"ScreenShake","path":"scripts/ScreenShake/ScreenShake.yy",},"order":0,},
+    {"id":{"name":"sKindaBeegTitle","path":"sprites/sKindaBeegTitle/sKindaBeegTitle.yy",},"order":11,},
     {"id":{"name":"sBigRed","path":"sprites/sBigRed/sBigRed.yy",},"order":23,},
     {"id":{"name":"oTransition","path":"objects/oTransition/oTransition.yy",},"order":2,},
     {"id":{"name":"sTutorialControllerJump","path":"sprites/sTutorialControllerJump/sTutorialControllerJump.yy",},"order":1,},
