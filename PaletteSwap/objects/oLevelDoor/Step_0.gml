@@ -54,6 +54,7 @@ if(global.gearTotal >= gearRequirement)
 	portal.visible = true;	
 	if(place_meeting(x,y,oPlayer) && key_enter)
 	{
+		audio_play_sound(snd_PortalEnter,5,false);
 		global.color = 0;
 		switch(levelTo)
 		{
