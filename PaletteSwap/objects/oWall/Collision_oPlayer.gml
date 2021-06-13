@@ -4,18 +4,50 @@
 if (other.isDashing == true) {
 	// Check if this is a horizontal or vertical dash.
 	if (other.dashdown) {
+		intersections = CalculateCollisionOverlap(self, other, false, true);
+		xOverlap = intersections[0];
+		yOverlap = intersections[1];
 		
+		// Change player's momentum.
+		other.currentwalksp = 0;
+		other.hsp = other.currentwalksp;
+		other.vsp =  -11;
 	}
 	else if (other.dashleft) {
+		intersections = CalculateCollisionOverlap(self, other, true, true);
+		xOverlap = intersections[0];
+		yOverlap = intersections[1];
 		
+		// Change player's momentum.
+		other.currentwalksp = 6;
+		other.hsp = other.currentwalksp;
+		other.vsp =  -7;
 	}
 	else if (other.dashright) {
+	
+		intersections = CalculateCollisionOverlap(self, other, false, true);
+		xOverlap = intersections[0];
+		yOverlap = intersections[1];
 		
-		
-		// If you hit the ground, pop up and reenable dash
-		currentwalksp = newHSP;
-		hsp = currentwalksp;
-		vsp = newVSP;
+		// Change player's momentum.
+		other.currentwalksp = -6;
+		other.hsp = other.currentwalksp;
+		other.vsp =   -7;
+	}
+	
+	// Apply overlap-offsets based-on given directions
+	if (isLeft) {
+		other.x += xOverlap;
+	}
+	else {
+		other.x -= xOverlap;
+	}
+	
+	if (isDown) {
+		other.y += yOverlap;
+	}
+	else {
+		other.y -= yOverlap;
 	}
 	
 	// Reset the player's dash.
@@ -27,20 +59,40 @@ if (other.isDashing == true) {
 	ScreenShake(1,5);
 }
 else {
-	// First, determine Fern's direction so we know what way to stop him.
+	// First, determine direction.
+	isLeft = false;
+	isDown = false;
 	
-	// The case when Fern is moving horizontally.
-	if (other.hsp != 0) {
-		other.x -= other.hsp;
+	// The case when Fern is moving right.
+	if (other.hsp < 0) {
+		isLeft = true;
 		other.hsp = 0;
 		other.currentwalksp = 0;
-		
 	}
 	
 	// The case when Fern is moving vertically.
-	if (other.vsp != 0) {
-		other.y -= other.vsp;
+	if (other.vsp < 0) {
+		isDown = true;
 		other.vsp = 0;
+	}
+	
+	intersections = CalculateCollisionOverlap(self, other, isLeft, isDown);
+	xOverlap = intersections[0];
+	yOverlap = intersections[1];
+	
+	// Apply overlap-offsets based-on given directions
+	if (isLeft) {
+		other.x += xOverlap;
+	}
+	else {
+		other.x -= xOverlap;
+	}
+	
+	if (isDown) {
+		other.y += yOverlap;
+	}
+	else {
+		other.y -= yOverlap;
 	}
 
 	// Restore ability to variably jump once the bounce hits its apex
