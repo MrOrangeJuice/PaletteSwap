@@ -4,22 +4,12 @@ collidingSpikes = instance_place(x, y, oSpikes);
 if(collidingSpikes != noone){
 	if(!spikeImmune){
 		spikeImmune = true;
-		if(collidingSpikes.isPit){
-			global.hp -= 10;
-			global.canControlTimer = 60;
-			oPlayer.vsp = 0;
-			oPlayer.hsp = 0;
-			oPlayer.x = lastGroundedPosX;
-			oPlayer.y = lastGroundedPosY;
-		}
-		else{
 			if (isInvulnerable == false) {
 				global.hp -= 20;
 				isInvulnerable = true;
 				InitiateKnockback(oPlayer, 6, -7);
 				global.knockedBack = true;
 				audio_play_sound(snd_Damage, 5, false);
-			}
 		}
 	}
 }
@@ -53,7 +43,9 @@ else if ((swimming && vsp >= 0) || !swimming){
 		jumped = false;
 	}
 	// Reset roll
-	isRolling = false;
+	if (canDash){
+		isRolling = false;
+	}
 }
 if(!isDashing){
 	// Restore ability to variably jump once the bounce hits its apex

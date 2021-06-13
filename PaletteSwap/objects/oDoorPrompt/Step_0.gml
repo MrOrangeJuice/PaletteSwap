@@ -6,11 +6,11 @@ if(!oPortal.visible)
 else {
 	if (global.controller)
 	{
-		sprite_index = sDoorPromptController;
+		sprite_index = sDoorPromptControllerNew;
 	}
 	else
 	{
-		sprite_index = sDoorPrompt;
+		sprite_index = sDoorPromptNew;
 	}
 }
 

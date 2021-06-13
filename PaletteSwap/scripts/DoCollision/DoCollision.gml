@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function DoCollision(wallType, vert){
-if (global.knockedBack == true)
+if (global.knockedBack == true && vert && vsp > 0)
 {
 	global.knockedBack = false;
 }

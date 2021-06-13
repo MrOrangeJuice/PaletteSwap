@@ -24,6 +24,9 @@ if(place_meeting(x, y, oPlayer))
 			case "MainMenu":
 				info.levelName = "Finish Demo";
 				break;
+			case "rThanks":
+				info.levelName = "Finish Demo\nBut Cooler";
+				break;
 			case "rPaletteTemple":
 				info.levelName = "Palette Shrine";
 				break;
@@ -51,12 +54,16 @@ if(global.gearTotal >= gearRequirement)
 	portal.visible = true;	
 	if(place_meeting(x,y,oPlayer) && key_enter)
 	{
+		audio_play_sound(snd_PortalEnter,5,false);
 		global.color = 0;
 		switch(levelTo)
 		{
 			case "MainMenu":
 				audio_stop_sound(msc_Level);
 				SlideTransition(TRANS_MODE.GOTO, MainMenu);	
+				break;
+			case "rThanks":
+				SlideTransition(TRANS_MODE.GOTO, rThanks);
 				break;
 			case "rPaletteTemple":
 				SlideTransition(TRANS_MODE.GOTO, rPaletteTemple);	
