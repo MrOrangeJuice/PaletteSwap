@@ -66,6 +66,18 @@ if(room != MainMenu && room != rLevelSelect && room != rThanks)
 	*/
 
 	// Draw current palette color.
+	switch(global.color)
+	{
+		case 0:
+			DrawSetText($002704, fUI, fa_center, fa_top);
+			break;
+		case 1:
+			DrawSetText($331800, fUI, fa_center, fa_top);
+			break;
+	}
+	
+	draw_sprite_stretched(sPortalInfo, global.color, RES_W / 2 - 30, -10, 60, 30);
+	
 	currentColor = "";
 
 	switch (global.color)
@@ -87,6 +99,8 @@ if(room != MainMenu && room != rLevelSelect && room != rThanks)
 			currentColor = "Purple";
 			break;
 	}
+	
+	draw_text_transformed(RES_W / 2, 4, string(currentColor), collectableTextScale, collectableTextScale, 0);
 
 	/*
 	// Draw Currently Active Palette
