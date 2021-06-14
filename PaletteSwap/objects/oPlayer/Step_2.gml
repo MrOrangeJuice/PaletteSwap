@@ -92,7 +92,7 @@ if(!isDashing){
 			break;
 			case 1:
 			//drastic slowdown if hitting water fast
-				if (vsp >= 6){
+				if (vsp >= 3){
 					vsp /= 2;
 				}
 				if (vsp > 0) {
