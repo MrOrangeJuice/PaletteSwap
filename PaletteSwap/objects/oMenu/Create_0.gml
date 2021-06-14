@@ -1,7 +1,7 @@
 /// @description Create
 menuX = x;
 menuY = y-5;
-buttonHeight = 12;
+buttonHeight = 18;
 button[0] = "Start";
 button[1] = "Level Select";
 button[2] = "Delete Save";

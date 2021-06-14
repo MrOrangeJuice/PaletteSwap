@@ -5,22 +5,21 @@ repeat(buttonCount){
 	draw_set_halign(fa_center);
 	draw_set_color($45D1A5);
 	draw_set_font(fGame);
-	if(menuIndex == c){
+	// Draw shadow text
+	if(menuIndex == c) {
 		draw_set_color($37802A);
 	}
-	//draw_text_transformed(menuX,menuY + buttonHeight * c * 4,button[c], 4, 4,0);
-	draw_text(menuX, menuY + buttonHeight * c, button[c]);
+	else {
+		draw_set_color($042700);
+	}
+	draw_text_transformed(menuX, menuY + buttonHeight * c + 1.5, button[c],1.5,1.5,0);
+	// Draw normal text
+	if(menuIndex == c) {
+		draw_set_color($45D1A5);
+	}
+	else {
+		draw_set_color($37802A);
+	}
+	draw_text_transformed(menuX, menuY + buttonHeight * c, button[c],1.5,1.5,0);
 	c++;	
 }
-DrawSetText($002704, fUI, 0, 0);
-	if(file_exists(SAVEFILE)){
-		ini_open(SAVEFILE);
-		if(ini_read_real("Vars", "best", 0) == 0){
-			draw_text(200, 150, "No high score");
-		}
-		else{
-			draw_text_transformed(275, 5, "High Score:", .5, .5, 0);
-			draw_text_transformed(275, 10, string_format(ini_read_real("Vars", "best", 0) / room_speed, 0, 2), .5, .5, 0);
-		}
-		ini_close();
-	}
