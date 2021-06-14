@@ -5,7 +5,7 @@ if (other.dashdown)
 	eHP -= 1;
 		
 	// Send player flying.
-	InitiateKnockback(other, 0, -7);
+	InitiateKnockback(other, 0, -9);
 		
 	// Refresh player's dash.
 	DashReset();
