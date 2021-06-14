@@ -6,7 +6,7 @@ function InitiateKnockback(_object, _xVel, _yVel)
 	if (_object.object_index == oPlayer.object_index) 
 	{
 		// Next, determine what direction the player is facing.
-		_object.currentwalksp =  _object.image_xscale * _xVel;	
+		_object.currentwalksp = _xVel;	
 	
 		// Finally apply knockback to the player.
 		_object.hsp = _object.currentwalksp;
