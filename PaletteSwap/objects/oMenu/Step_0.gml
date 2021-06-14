@@ -21,20 +21,18 @@ if(key_select == 1){
 			SlideTransition(TRANS_MODE.GOTO, rTutorial);
 		}
 		break;
-		/*
 	case 1:
 		SlideTransition(TRANS_MODE.GOTO, rLevelSelect);
 		break;
-		*/
-	case 1:
+	case 2:
 		if(file_exists("savedata.ini")){
 			file_delete("savedata.ini");
 		}
 		break;
-	case 2:
+	case 3:
 		window_set_fullscreen(!window_get_fullscreen());
 			break;
-	case 3:
+	case 4:
 		game_end();
 		break;
 	default:
