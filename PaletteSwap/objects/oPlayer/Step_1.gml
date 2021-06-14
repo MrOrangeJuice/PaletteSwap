@@ -170,7 +170,7 @@ if(!isDashing)
 	}
 	if(global.canControlTimer < 0) hsp = currentwalksp;
 	if (swimming){
-		grv= 0.2;
+		grv= 0.4;
 	}
 		else grv = 0.4;
 	if(global.canControlTimer < 0) vsp = vsp + grv;

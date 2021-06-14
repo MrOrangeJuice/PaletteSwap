@@ -91,7 +91,14 @@ if(!isDashing){
 				swimming = false;
 			break;
 			case 1:
-				vsp /= 1.25;
+			//drastic slowdown if hitting water fast
+				if (vsp >= 6){
+					vsp /= 2;
+				}
+				if (vsp > 0) {
+					//fall slower in water than you swim up
+					vsp /= 1.25;
+				} else vsp /= 1.1;
 				swimming = true;
 			break;
 		}
