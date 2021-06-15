@@ -33,3 +33,15 @@ shake_remain = max(0,shake_remain-((1/shake_length)*shake_magnitude));
 
 // Update camera view
 camera_set_view_pos(cam,x-view_w_half,y-view_h_half);
+
+if (layer_exists("GreenClouds"))
+{
+	layer_x("GreenClouds",x/4);
+	layer_y("GreenClouds",y/4);
+}
+
+if (layer_exists("BlueClouds"))
+{
+	layer_x("BlueClouds",x/4);
+	layer_y("BlueClouds",y/4);
+}

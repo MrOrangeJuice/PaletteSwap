@@ -45,13 +45,17 @@ if(global.color == 1)
 {
 	layer_set_visible("GreenTiles", false);	
 	layer_set_visible("GreenBackground", false);
+	layer_set_visible("GreenClouds", false);
 	layer_set_visible("BlueTiles", true);	
 	layer_set_visible("BlueBackground", true);
+	layer_set_visible("BlueClouds", true);
 }
 if(global.color == 0)
 {
 	layer_set_visible("GreenTiles", true);	
-	layer_set_visible("GreenBackground", true);	
+	layer_set_visible("GreenBackground", true);
+	layer_set_visible("GreenClouds", true);
 	layer_set_visible("BlueTiles", false);	
 	layer_set_visible("BlueBackground", false);
+	layer_set_visible("BlueClouds", false);
 }
