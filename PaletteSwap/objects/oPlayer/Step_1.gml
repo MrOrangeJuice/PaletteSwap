@@ -393,6 +393,8 @@ if (key_swap_up && !swimming && room != rTutorial){
 	instance_create_layer(x,y,"FX",oRift);
 	audio_play_sound(snd_Swap,5,false);
 	ScreenShake(2,10);
+	canSwap = false;
+	alarm[2] = room_speed * 0.2;
 }
 if (key_swap_down && !swimming && room != rTutorial){
 	global.color--;
@@ -401,6 +403,8 @@ if (key_swap_down && !swimming && room != rTutorial){
 	instance_create_layer(x,y,"FX",oRift);
 	audio_play_sound(snd_Swap,5,false);
 	ScreenShake(2,10);
+	canSwap = false;
+	alarm[2] = room_speed * 0.2;
 }
 if(global.hp <= 0){
 	global.hp = 100;
