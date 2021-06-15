@@ -200,6 +200,7 @@
     {"id":{"name":"oRollSpawnNoSwap","path":"objects/oRollSpawnNoSwap/oRollSpawnNoSwap.yy",},"order":7,},
     {"id":{"name":"snd_Menu","path":"sounds/snd_Menu/snd_Menu.yy",},"order":10,},
     {"id":{"name":"Flying","path":"sprites/Flying/Flying.yy",},"order":0,},
+    {"id":{"name":"sColorBlindDisplay","path":"sprites/sColorBlindDisplay/sColorBlindDisplay.yy",},"order":12,},
     {"id":{"name":"sFernIcon","path":"sprites/sFernIcon/sFernIcon.yy",},"order":0,},
     {"id":{"name":"rTutorial","path":"rooms/rTutorial/rTutorial.yy",},"order":10,},
     {"id":{"name":"rHub","path":"rooms/rHub/rHub.yy",},"order":17,},

@@ -76,7 +76,7 @@ if(room != MainMenu && room != rLevelSelect && room != rThanks)
 			break;
 	}
 	
-	draw_sprite_stretched(sPortalInfo, global.color, RES_W / 2 - 30, -10, 60, 30);
+	draw_sprite(sColorBlindDisplay, global.color, RES_W / 2 - 32, 0);
 	
 	currentColor = "";
 
