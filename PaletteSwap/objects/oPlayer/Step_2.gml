@@ -47,6 +47,9 @@ else if ((swimming && vsp >= 0) || !swimming){
 		isRolling = false;
 	}
 }
+
+y = y + vsp;
+/*
 if(!isDashing){
 	// Restore ability to variably jump once the bounce hits its apex
 	if (vsp > 0)
@@ -56,7 +59,7 @@ if(!isDashing){
 	// Horizontal Collision
 	if (place_meeting(x+hsp,y,oWall))
 	{
-		DoCollision(oWall, false);
+		//DoCollision(oWall, false);
 		currentwalksp = 0;
 	}
 	//collision with palette walls
@@ -65,7 +68,7 @@ if(!isDashing){
 		switch (global.color){
 			case 0:
 			//walking through water
-				DoCollision(oPaletteWall, false);
+				//DoCollision(oPaletteWall, false);
 				currentwalksp = 0;
 			break;
 			case 1:
@@ -79,7 +82,7 @@ if(!isDashing){
 	// Vertical Collision
 	if (place_meeting(x,y+vsp,oWall))
 	{
-		DoCollision(oWall, true);
+		//DoCollision(oWall, true);
 	}
 	// palette wall Collision
 	if (place_meeting(x,y+vsp,oPaletteWall))
@@ -87,7 +90,7 @@ if(!isDashing){
 		switch (global.color){
 			case 0:
 			//collide and not swimming
-				DoCollision(oPaletteWall, true);
+				//DoCollision(oPaletteWall, true);
 				swimming = false;
 			break;
 			case 1:
@@ -107,7 +110,7 @@ else{
 		if (place_meeting(x,y+vsp,oWall))
 		{
 			//collide with wall
-			DoDashCollision(oWall, -11, 0, true);
+			//DoDashCollision(oWall, -11, 0, true);
 		}
 		if (place_meeting(x,y+vsp,oPaletteWall))
 		{
@@ -115,7 +118,7 @@ else{
 			{
 			case 0:
 			//if green collide with wall
-				DoDashCollision(oPaletteWall, -11, 0, true);
+				//DoDashCollision(oPaletteWall, -11, 0, true);
 				swimming = false;
 			break;
 			case 1:
@@ -138,7 +141,7 @@ else{
 		{
 			switch (global.color){
 			case 0:
-				DoDashCollision(oPaletteWall, -7, -6, false);
+				//DoDashCollision(oPaletteWall, -7, -6, false);
 				swimming = false;
 			break;
 			case 1:
@@ -151,11 +154,11 @@ else{
 		// Vertical Collision
 		if (place_meeting(x,y+vsp,oWall))
 		{
-			DoCollision(oWall, true);
+			//DoCollision(oWall, true);
 		}
 		if (place_meeting(x,y+vsp,oPaletteWall) && !swimming)
 		{
-			DoCollision(oPaletteWall, true);
+			//DoCollision(oPaletteWall, true);
 		}
 		x = x + hsp;
 		//apply gravity if dashing in air
@@ -168,13 +171,13 @@ else{
 		// Horizontal Collision
 		if (place_meeting(x+hsp,y,oWall))
 		{
-			DoDashCollision(oWall, -7, 6, false);
+			//DoDashCollision(oWall, -7, 6, false);
 		}
 		if (place_meeting(x+hsp,y,oPaletteWall))
 		{
 			switch (global.color){
 			case 0:
-				DoDashCollision(oPaletteWall, -7, 6, false);
+				//DoDashCollision(oPaletteWall, -7, 6, false);
 				swimming = false;
 			break;
 			case 1:
@@ -187,11 +190,11 @@ else{
 		// Vertical Collision
 		if (place_meeting(x,y+vsp,oWall))
 		{
-			DoCollision(oWall, true);
+			//DoCollision(oWall, true);
 		}
 		if (place_meeting(x,y+vsp,oPaletteWall) && !swimming)
 		{
-			DoCollision(oPaletteWall, true);
+			//DoCollision(oPaletteWall, true);
 		}
 		x = x + hsp;
 		//apply gravity if dashing in air
@@ -201,4 +204,5 @@ else{
 		y = y + vsp;
 	}
 }
+*/
 }

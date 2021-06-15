@@ -61,90 +61,48 @@ if (other.isDashing == true) {
 else {
 	// First, determine direction.
 	isLeft = false;
-	isDown = false;
+	isDown = true;
 	
 	// The case when Fern is moving right.
 	if (other.hsp < 0) {
 		isLeft = true;
 		other.hsp = 0;
-		other.currentwalksp = 0;
+		other.currentwalksp = other.hsp;
 	}
 	
 	// The case when Fern is moving vertically.
 	if (other.vsp < 0) {
-		isDown = true;
+		isDown = false;
 		other.vsp = 0;
 	}
 	
-	intersections = CalculateCollisionOverlap(self, other, isLeft, isDown);
-	xOverlap = intersections[0];
-	yOverlap = intersections[1];
-	
 	// Apply overlap-offsets based-on given directions
 	if (isLeft) {
-		other.x += xOverlap;
+		//other.x += xOverlap;
+		if (other.bbox_right - self.bbox_left > 0){
+			other.x = self.bbox_left - (other.sprite_width / 2);
+		}
 	}
 	else {
-		other.x -= xOverlap;
+		//other.x -= xOverlap;
+		if (other.bbox_left - self.bbox_right > 0){
+			other.x = self.bbox_right + (other.sprite_width / 2);
+		}
 	}
 	
 	if (isDown) {
-		other.y += yOverlap;
+		//other.y += yOverlap /2;
+		if (other.bbox_bottom - self.bbox_top > 0) {
+			other.y = self.bbox_top - (other.sprite_height / 2);
+		}
 	}
 	else {
-		other.y -= yOverlap;
-	}
-
-	// Restore ability to variably jump once the bounce hits its apex
-	if (vsp > 0)
-	{
-		jumpVar = true;	
-	}
-	// Horizontal Collision
-	if (place_meeting(x+hsp,y,oWall))
-	{
-		DoCollision(oWall, false);
-		currentwalksp = 0;
-	}
-	//collision with palette walls
-	if (place_meeting(x+hsp,y,oPaletteWall))
-	{
-		switch (global.color){
-			case 0:
-			//walking through water
-				DoCollision(oPaletteWall, false);
-				currentwalksp = 0;
-			break;
-			case 1:
-				//currentwalksp /= 1.2;
-				hsp /= 2;
-			break;
+		//other.y -= yOverlap /2;
+		if (other.bbox_top - self.bbox_bottom > 0) {
+			other.y = self.bbox_bottom + (other.sprite_height / 2);
 		}
 	}
-	x = x + hsp;
-
-	// Vertical Collision
-	if (place_meeting(x,y+vsp,oWall))
-	{
-		DoCollision(oWall, true);
-	}
-	// palette wall Collision
-	if (place_meeting(x,y+vsp,oPaletteWall))
-	{
-		switch (global.color){
-			case 0:
-			//collide and not swimming
-				DoCollision(oPaletteWall, true);
-				swimming = false;
-			break;
-			case 1:
-				vsp /= 1.25;
-				swimming = true;
-			break;
-		}
-	}
-	else{
-		swimming = false;
-	}
-	y = y + vsp;
+	other.x += 0;
+	other.y += 0;
+	other.vsp += 0;
 }
