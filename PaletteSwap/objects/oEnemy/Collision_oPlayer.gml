@@ -5,7 +5,7 @@ if (other.dashdown)
 	eHP -= 1;
 		
 	// Send player flying.
-	InitiateKnockback(other, 0, -8);
+	InitiateKnockback(other, 0, -9);
 		
 	// Refresh player's dash.
 	DashReset();
@@ -15,7 +15,7 @@ else if (other.isDashing)
 	eHP -= 1;
 		
 	// Send player flying.
-	InitiateKnockback(other, -8, -8);
+	InitiateKnockback(other, other.image_xscale * 8, -7);
 		 
 	// Refresh player's dash.
 	DashReset();
@@ -25,7 +25,7 @@ else if (other.isRolling)
 	eHP -= 1;
 		
 	// Send player flying.
-	InitiateKnockback(other, 0, -8);
+	InitiateKnockback(other, other.hsp, -7);
 		
 	// Refresh player's dash.
 	DashReset();
@@ -40,7 +40,7 @@ else
 		global.hp -= damage;
 		other.isInvulnerable = true;
 			
-		InitiateKnockback(other, 6, -7);
+		InitiateKnockback(other, other.image_xscale * -6, -7);
 			
 		global.knockedBack = true;
 	}
