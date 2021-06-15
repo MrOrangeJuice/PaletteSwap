@@ -43,5 +43,6 @@ else
 		InitiateKnockback(other, other.image_xscale * -6, -7);
 			
 		global.knockedBack = true;
+		other.isRolling = false;
 	}
 }
