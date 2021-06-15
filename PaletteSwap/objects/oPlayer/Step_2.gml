@@ -97,7 +97,7 @@ if(!isDashing){
 				}
 				if (vsp > 0) {
 					//fall slower in water than you swim up
-					vsp /= 1.25;
+					vsp /= 1.3;
 				} else vsp /= 1.1;
 				swimming = true;
 			break;
