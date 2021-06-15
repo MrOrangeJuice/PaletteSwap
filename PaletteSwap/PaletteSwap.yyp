@@ -25,6 +25,7 @@
     {"id":{"name":"sTutorialKeyboardJump","path":"sprites/sTutorialKeyboardJump/sTutorialKeyboardJump.yy",},"order":5,},
     {"id":{"name":"sVillagerWalk","path":"sprites/sVillagerWalk/sVillagerWalk.yy",},"order":2,},
     {"id":{"name":"rTestDrew","path":"rooms/rTestDrew/rTestDrew.yy",},"order":2,},
+    {"id":{"name":"oPLEntry","path":"objects/oPLEntry/oPLEntry.yy",},"order":57,},
     {"id":{"name":"NoveauPaletteTemple","path":"rooms/NoveauPaletteTemple/NoveauPaletteTemple.yy",},"order":13,},
     {"id":{"name":"sGrass1","path":"sprites/sGrass1/sGrass1.yy",},"order":3,},
     {"id":{"name":"sSplashScreen","path":"sprites/sSplashScreen/sSplashScreen.yy",},"order":13,},
