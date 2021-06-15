@@ -48,11 +48,15 @@ if(key_select == 1){
 				else if(global.fullscreen) global.fullscreen = false;
 					break;
 			case 1:
+				if(!global.colorblind) global.colorblind = true;
+				else if(global.colorblind) global.colorblind = false;
+				break;
+			case 2:
 				if(file_exists("savedata.ini")){
 					file_delete("savedata.ini");
 				}
 				break;
-			case 2:
+			case 3:
 				menuActive = true;
 				break;
 			default:
@@ -122,4 +126,14 @@ if(global.fullscreen)
 else
 {
 	options[0] = "Fullscreen: Off";	
+}
+
+// Update colorblind toggle
+if(global.colorblind)
+{
+	options[1] = "Color Blind: On";	
+}
+else
+{
+	options[1] = "Color Blind: Off";	
 }

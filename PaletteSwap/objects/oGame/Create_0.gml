@@ -34,6 +34,10 @@ global.canControlTimer = -1;
 // Player data
 global.tutorialCompleted = false;
 
+// Options
+global.fullscreen = false;
+global.colorblind = false;
+
 global.templeGears = 5;
 global.seasideGears = 4;
 global.gearTotal = 0;

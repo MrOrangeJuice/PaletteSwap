@@ -76,8 +76,6 @@ if(room != MainMenu && room != rLevelSelect && room != rThanks)
 			break;
 	}
 	
-	draw_sprite(sColorBlindDisplay, global.color, RES_W / 2 - 32, 0);
-	
 	currentColor = "";
 
 	switch (global.color)
@@ -100,8 +98,11 @@ if(room != MainMenu && room != rLevelSelect && room != rThanks)
 			break;
 	}
 	
-	draw_text_transformed(RES_W / 2, 4, string(currentColor), collectableTextScale, collectableTextScale, 0);
-
+	if(global.colorblind)
+	{
+		draw_sprite(sColorBlindDisplay, global.color, RES_W / 2 - 32, 0);
+		draw_text_transformed(RES_W / 2, 4, string(currentColor), collectableTextScale, collectableTextScale, 0);
+	}
 	/*
 	// Draw Currently Active Palette
 	paletteTextScale = max(paletteTextScale * 0.95, 1);
