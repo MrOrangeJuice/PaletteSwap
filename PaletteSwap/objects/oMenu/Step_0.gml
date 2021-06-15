@@ -44,6 +44,8 @@ if(key_select == 1){
 		{
 			case 0:
 				window_set_fullscreen(!window_get_fullscreen());
+				if(!global.fullscreen) global.fullscreen = true;
+				else if(global.fullscreen) global.fullscreen = false;
 					break;
 			case 1:
 				if(file_exists("savedata.ini")){
@@ -110,4 +112,14 @@ if(menuActive && (camOffset != 0))
 {
 	camOffset -= 5;
 	camera_set_view_pos(cam,(x-144) + camOffset,y-96);
+}
+
+// Update fullscreen toggle
+if(global.fullscreen)
+{
+	options[0] = "Fullscreen: On";	
+}
+else
+{
+	options[0] = "Fullscreen: Off";	
 }

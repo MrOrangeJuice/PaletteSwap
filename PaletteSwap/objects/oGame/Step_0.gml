@@ -2,6 +2,8 @@
 if (keyboard_check(vk_control)) && (keyboard_check_pressed(ord("F"))) 
 {
 	window_set_fullscreen(!window_get_fullscreen());
+	if(!global.fullscreen) global.fullscreen = true;
+	else if(global.fullscreen) global.fullscreen = false;
 }
 
 // Switch which UI object is active based-on what state the game is in.
