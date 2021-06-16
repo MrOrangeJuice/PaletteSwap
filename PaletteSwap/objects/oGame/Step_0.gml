@@ -40,6 +40,8 @@ else
 	}
 }
 
+// Turn mouse off if player inputs something
+
 // Set tile layer and cursor
 if(global.color == 1)
 {
