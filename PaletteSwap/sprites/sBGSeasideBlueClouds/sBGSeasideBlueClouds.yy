@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"7b414fab-3aaf-444a-91aa-3b8772af1f99","path":"sprites/sBGSeasideGreenClouds/sBGSeasideGreenClouds.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7b414fab-3aaf-444a-91aa-3b8772af1f99","path":"sprites/sBGSeasideGreenClouds/sBGSeasideGreenClouds.yy",},"LayerId":{"name":"6b18fb24-a0c5-41c6-ac54-fe6209f03ca2","path":"sprites/sBGSeasideGreenClouds/sBGSeasideGreenClouds.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sBGSeasideGreenClouds","path":"sprites/sBGSeasideGreenClouds/sBGSeasideGreenClouds.yy",},"resourceVersion":"1.0","name":"7b414fab-3aaf-444a-91aa-3b8772af1f99","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"7b414fab-3aaf-444a-91aa-3b8772af1f99","path":"sprites/sBGSeasideBlueClouds/sBGSeasideBlueClouds.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7b414fab-3aaf-444a-91aa-3b8772af1f99","path":"sprites/sBGSeasideBlueClouds/sBGSeasideBlueClouds.yy",},"LayerId":{"name":"6b18fb24-a0c5-41c6-ac54-fe6209f03ca2","path":"sprites/sBGSeasideBlueClouds/sBGSeasideBlueClouds.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sBGSeasideBlueClouds","path":"sprites/sBGSeasideBlueClouds/sBGSeasideBlueClouds.yy",},"resourceVersion":"1.0","name":"7b414fab-3aaf-444a-91aa-3b8772af1f99","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sBGSeasideGreenClouds","path":"sprites/sBGSeasideGreenClouds/sBGSeasideGreenClouds.yy",},
+    "spriteId": {"name":"sBGSeasideBlueClouds","path":"sprites/sBGSeasideBlueClouds/sBGSeasideBlueClouds.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"60edda85-7c3c-47a3-9b1e-444c71514b5d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7b414fab-3aaf-444a-91aa-3b8772af1f99","path":"sprites/sBGSeasideGreenClouds/sBGSeasideGreenClouds.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9ca681e9-a6b4-46a4-a177-322a4e9a7789","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7b414fab-3aaf-444a-91aa-3b8772af1f99","path":"sprites/sBGSeasideBlueClouds/sBGSeasideBlueClouds.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 128,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sBGSeasideGreenClouds","path":"sprites/sBGSeasideGreenClouds/sBGSeasideGreenClouds.yy",},
+    "parent": {"name":"sBGSeasideBlueClouds","path":"sprites/sBGSeasideBlueClouds/sBGSeasideBlueClouds.yy",},
     "resourceVersion": "1.3",
-    "name": "sBGSeasideGreenClouds",
+    "name": "sBGSeasideBlueClouds",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Backgrounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sBGSeasideGreenClouds",
+  "name": "sBGSeasideBlueClouds",
   "tags": [],
   "resourceType": "GMSprite",
 }

@@ -255,7 +255,7 @@ else
 		{
 			if(key_left)
 			{
-				currentwalksp = -5;
+				currentwalksp = -6;
 			}
 			else
 			{
@@ -266,7 +266,7 @@ else
 		{
 			if(key_right)
 			{
-				currentwalksp = 5;
+				currentwalksp = 6;
 			}
 			else
 			{
