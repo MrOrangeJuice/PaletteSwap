@@ -48,7 +48,6 @@ else if ((swimming && vsp >= 0) || !swimming){
 	}
 }
 
-y = y + vsp;
 /*
 if(!isDashing){
 	// Restore ability to variably jump once the bounce hits its apex

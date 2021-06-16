@@ -173,7 +173,7 @@ if(!isDashing)
 		grv= 0.2;
 	}
 		else grv = 0.4;
-	if(global.canControlTimer < 0) vsp = vsp + grv;
+	if(global.canControlTimer < 0 && airborne) vsp = vsp + grv;
 
 	// Variable jump height
 	if vsp < 0 && (!(key_jump)) && jumpVar //if you're moving upwards in the air but not holding down jump
@@ -290,6 +290,17 @@ if (isInvulnerable)
 		iFrameCount = 0;
 	}
 }
+
+if (vsp > 0)
+	{
+		jumpVar = true;	
+	}
+
+if (jumped && isDashing){
+	vsp += grv;
+}
+y += vsp;
+x += hsp;
 
 // Animation
 if (global.knockedBack == true)
