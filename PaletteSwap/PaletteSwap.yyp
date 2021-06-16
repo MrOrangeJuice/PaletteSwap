@@ -2,7 +2,6 @@
   "resources": [
     {"id":{"name":"rOldTutorialCopy","path":"rooms/rOldTutorialCopy/rOldTutorialCopy.yy",},"order":9,},
     {"id":{"name":"oBirdRespawner","path":"objects/oBirdRespawner/oBirdRespawner.yy",},"order":8,},
-    {"id":{"name":"sBGSeasideBlueClouds","path":"sprites/sBGSeasideBlueClouds/sBGSeasideBlueClouds.yy",},"order":5,},
     {"id":{"name":"rAlexLevel","path":"rooms/rAlexLevel/rAlexLevel.yy",},"order":8,},
     {"id":{"name":"oGroundEnemy","path":"objects/oGroundEnemy/oGroundEnemy.yy",},"order":3,},
     {"id":{"name":"sShipDamaged","path":"sprites/sShipDamaged/sShipDamaged.yy",},"order":8,},
@@ -86,6 +85,7 @@
     {"id":{"name":"sTutorialKeyboardNew","path":"sprites/sTutorialKeyboardNew/sTutorialKeyboardNew.yy",},"order":15,},
     {"id":{"name":"fUISmall","path":"fonts/fUISmall/fUISmall.yy",},"order":2,},
     {"id":{"name":"SwapSprite","path":"scripts/SwapSprite/SwapSprite.yy",},"order":4,},
+    {"id":{"name":"sBGSeasideBlueClouds","path":"sprites/sBGSeasideBlueClouds/sBGSeasideBlueClouds.yy",},"order":5,},
     {"id":{"name":"sBlownAir2","path":"sprites/sBlownAir2/sBlownAir2.yy",},"order":3,},
     {"id":{"name":"sTitle","path":"sprites/sTitle/sTitle.yy",},"order":7,},
     {"id":{"name":"rTestJulien","path":"rooms/rTestJulien/rTestJulien.yy",},"order":3,},
