@@ -40,12 +40,31 @@ else
 	}
 }
 
+
+
 // Turn mouse off if player inputs something
+if(keyboard_check_pressed(ord("W")) || keyboard_check_pressed(ord("S")) || keyboard_check_pressed(ord("A")) || keyboard_check_pressed(ord("D")) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(0, gp_face2) || gamepad_button_check_pressed(4, gp_face1) || gamepad_button_check_pressed(4, gp_face2))
+{
+	global.mouse = 0;
+}
+
+if(prevMousePos != mouse_x)
+{
+	global.mouse = 1;
+}
+prevMousePos = mouse_x;
 
 // Set tile layer and cursor
 if(global.color == 1)
 {
-	cursor_sprite = sCursorBlue;
+	if(global.mouse)
+	{
+		cursor_sprite = sCursorBlue;
+	}
+	else
+	{
+		cursor_sprite = sCursorNone;	
+	}
 	layer_set_visible("GreenTiles", false);	
 	layer_set_visible("GreenBackground", false);
 	layer_set_visible("GreenClouds", false);
@@ -55,7 +74,14 @@ if(global.color == 1)
 }
 if(global.color == 0)
 {
-	cursor_sprite = sCursor;
+	if(global.mouse)
+	{
+		cursor_sprite = sCursor;
+	}
+	else
+	{
+		cursor_sprite = sCursorNone;	
+	}
 	layer_set_visible("GreenTiles", true);	
 	layer_set_visible("GreenBackground", true);
 	layer_set_visible("GreenClouds", true);

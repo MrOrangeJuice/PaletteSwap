@@ -7,6 +7,7 @@ global.time = 0;
 global.paused = false;
 global.cutscene = false;
 global.controller = 0;
+global.mouse = 0;
 
 global.hp = 100;
 global.maxHP = 100;
@@ -55,7 +56,7 @@ for(i = 0; i < global.seasideGears; i++)
 }
 
 // Set cursor
-cursor_sprite = sCursor;
+prevMousePos = mouse_x;
 
 global.color = 0;
 //0 green
