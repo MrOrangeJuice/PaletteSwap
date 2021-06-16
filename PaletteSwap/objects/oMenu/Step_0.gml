@@ -2,23 +2,32 @@
 key_down = keyboard_check_pressed(ord("S")) || keyboard_check_pressed(vk_down);
 key_up = keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_up);
 key_select = keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("P"));
+
+if (key_down) || (key_up) || (key_select)
+{
+	global.controller = 0;
+}
+
 if (gamepad_button_check_pressed(0,gp_face1) || gamepad_button_check_pressed(4,gp_face1))
 {
 	key_select = 1;
+	global.controller = 1;
 }
 
 if ((gamepad_axis_value(4,gp_axislv) > 0.4  && lastAxis4Value <= 0.4) || gamepad_button_check_pressed(4,gp_padd) || (gamepad_axis_value(0,gp_axislv) > 0.4  && lastAxis0Value <= 0.4) || gamepad_button_check_pressed(0,gp_padd))
 {
 	key_down = 1;
+	global.controller = 1;
 }
 if ((gamepad_axis_value(4,gp_axislv) < -0.4 && lastAxis4Value >= -0.4) || gamepad_button_check_pressed(4,gp_padu) || (gamepad_axis_value(0,gp_axislv) < -0.4 && lastAxis0Value >= -0.4) || gamepad_button_check_pressed(0,gp_padu))
 {
 	key_up = 1;
+	global.controller = 1;
 }
 
 // Mouse menu
 var mouse_y_gui = device_mouse_y_to_gui(0);
-if(menuActive)
+if(menuActive && global.mouse)
 {
 	if (mouse_y_gui > menuY) && (mouse_y_gui < menuBottom)
 	{
@@ -38,7 +47,7 @@ if(menuActive)
 		}
 	}
 }
-else
+else if (!menuActive && global.mouse)
 {
 	if (mouse_y_gui > optionsY) && (mouse_y_gui < optionBottom)
 	{
@@ -84,6 +93,7 @@ if(key_select == 1){
 				break;
 				*/
 			case 1:
+				global.mouse = 0;
 				menuActive = false;
 				break;
 			case 2:
@@ -99,6 +109,7 @@ if(key_select == 1){
 		switch(optionsIndex)
 		{
 			case 0:
+				global.mouse = 0;
 				window_set_fullscreen(!window_get_fullscreen());
 				if(!global.fullscreen) global.fullscreen = true;
 				else if(global.fullscreen) global.fullscreen = false;
@@ -113,6 +124,7 @@ if(key_select == 1){
 				}
 				break;
 			case 3:
+				global.mouse = 0;
 				menuActive = true;
 				break;
 			default:

@@ -43,16 +43,19 @@ else
 
 
 // Turn mouse off if player inputs something
-if(keyboard_check_pressed(ord("W")) || keyboard_check_pressed(ord("S")) || keyboard_check_pressed(ord("A")) || keyboard_check_pressed(ord("D")) || gamepad_button_check_pressed(0, gp_face1) || gamepad_button_check_pressed(0, gp_face2) || gamepad_button_check_pressed(4, gp_face1) || gamepad_button_check_pressed(4, gp_face2))
+if(keyboard_check(vk_anykey) || global.controller = 1)
 {
 	global.mouse = 0;
 }
 
-if(prevMousePos != mouse_x)
+
+if(prevMousePos < device_mouse_x_to_gui(0) - 3 || prevMousePos > device_mouse_x_to_gui(0) + 3)
 {
 	global.mouse = 1;
+	global.controller = 0;
 }
-prevMousePos = mouse_x;
+
+prevMousePos = device_mouse_x_to_gui(0);
 
 // Set tile layer and cursor
 if(global.color == 1)
