@@ -49,7 +49,7 @@ if(keyboard_check(vk_anykey) || global.controller = 1)
 }
 
 
-if(prevMousePos < device_mouse_x_to_gui(0) - 3 || prevMousePos > device_mouse_x_to_gui(0) + 3)
+if(prevMousePos != device_mouse_x_to_gui(0))
 {
 	global.mouse = 1;
 	global.controller = 0;
