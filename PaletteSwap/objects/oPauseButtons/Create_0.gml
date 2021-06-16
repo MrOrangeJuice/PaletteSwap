@@ -9,4 +9,7 @@ button[2] = "Quit";
 buttonCount = array_length_1d(button);
 menuIndex = 0;
 lastSelected = 0;
+menuBottom = global.menuY + ((buttonHeight) * buttonCount);
+prevMenuIndex = 0;
+menuOffset = 0;
 instance_deactivate_object(oPauseButtons);

@@ -2,10 +2,52 @@
 key_down = keyboard_check_pressed(ord("S")) || keyboard_check_pressed(vk_down);
 key_up = keyboard_check_pressed(ord("W")) || keyboard_check_pressed(vk_up);
 key_select = keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("P"));
+
+if (key_down) || (key_up) || (key_select)
+{
+	global.controller = 0;
+}
+
 if (gamepad_button_check_pressed(0,gp_face1) || gamepad_button_check_pressed(4,gp_face1))
 {
 	key_select = 1;
+	global.controller = 1;
 }
+
+if ((gamepad_axis_value(4,gp_axislv) > 0.4 && global.lastAxislv4Value <= 0.4) || gamepad_button_check_pressed(4,gp_padd) || (gamepad_axis_value(0,gp_axislv) > 0.4 && global.lastAxislv0Value <= 0.4) || gamepad_button_check_pressed(0,gp_padd))
+{
+	key_down = 1;
+	global.controller = 1;
+}
+if ((gamepad_axis_value(4,gp_axislv) < -0.4 && global.lastAxislv4Value >= -0.4) || gamepad_button_check_pressed(4,gp_padu) || (gamepad_axis_value(0,gp_axislv) < -0.4 && global.lastAxislv0Value >= -0.4) || gamepad_button_check_pressed(0,gp_padu))
+{
+	key_up = 1;
+	global.controller = 1;
+}
+
+var mouse_y_gui = device_mouse_y_to_gui(0);
+
+if(global.mouse)
+{
+	if (mouse_y_gui > global.menuY) && (mouse_y_gui < menuBottom)
+	{
+		prevMenuIndex = menuIndex;
+		if (mouse_y_gui > global.menuY) && (mouse_y_gui < (global.menuY + (menuBottom / 6)) - menuOffset) menuIndex = 0;
+		if (mouse_y_gui > (global.menuY + (menuBottom / 6)) - menuOffset) && (mouse_y_gui < (global.menuY + (2 * menuBottom / 6)) - menuOffset) menuIndex = 1;
+		if (mouse_y_gui >(global.menuY + (2 * menuBottom / 6)) - menuOffset) && (mouse_y_gui <  (global.menuY + (3 * (menuBottom / 6)) - menuOffset)) menuIndex = 2;
+	
+		if (prevMenuIndex != menuIndex)
+		{
+			audio_play_sound(snd_Menu, 5, false);	
+		}
+	
+		if (mouse_check_button_pressed(mb_left))
+		{
+			key_select = 1;
+		}
+	}
+}
+
 if(key_select == 1){
 	switch(menuIndex){
 	case 0:
@@ -37,17 +79,6 @@ if(key_select == 1){
 		break;
 	}
 	audio_play_sound(snd_MenuSelect,5,false);
-}
-
-if ((gamepad_axis_value(4,gp_axislv) > 0.4 && global.lastAxislv4Value <= 0.4) || gamepad_button_check_pressed(4,gp_padd) || (gamepad_axis_value(0,gp_axislv) > 0.4 && global.lastAxislv0Value <= 0.4) || gamepad_button_check_pressed(0,gp_padd))
-{
-	key_down = 1;
-	controller = 1;
-}
-if ((gamepad_axis_value(4,gp_axislv) < -0.4 && global.lastAxislv4Value >= -0.4) || gamepad_button_check_pressed(4,gp_padu) || (gamepad_axis_value(0,gp_axislv) < -0.4 && global.lastAxislv0Value >= -0.4) || gamepad_button_check_pressed(0,gp_padu))
-{
-	key_up = 1;
-	controller = 1;
 }
 
 // Play sound
