@@ -6,6 +6,60 @@ if (gamepad_button_check_pressed(0,gp_face1) || gamepad_button_check_pressed(4,g
 {
 	key_select = 1;
 }
+
+if ((gamepad_axis_value(4,gp_axislv) > 0.4  && lastAxis4Value <= 0.4) || gamepad_button_check_pressed(4,gp_padd) || (gamepad_axis_value(0,gp_axislv) > 0.4  && lastAxis0Value <= 0.4) || gamepad_button_check_pressed(0,gp_padd))
+{
+	key_down = 1;
+}
+if ((gamepad_axis_value(4,gp_axislv) < -0.4 && lastAxis4Value >= -0.4) || gamepad_button_check_pressed(4,gp_padu) || (gamepad_axis_value(0,gp_axislv) < -0.4 && lastAxis0Value >= -0.4) || gamepad_button_check_pressed(0,gp_padu))
+{
+	key_up = 1;
+}
+
+// Mouse menu
+var mouse_y_gui = device_mouse_y_to_gui(0);
+if(menuActive)
+{
+	if (mouse_y_gui > menuY) && (mouse_y_gui < menuBottom)
+	{
+		prevMenuIndex = menuIndex;
+		if (mouse_y_gui > menuY) && (mouse_y_gui < (menuY + (menuBottom / 6)) - menuOffset) menuIndex = 0;
+		if (mouse_y_gui > (menuY + (menuBottom / 6)) - menuOffset) && (mouse_y_gui < (menuY + (2 * menuBottom / 6)) - menuOffset) menuIndex = 1;
+		if (mouse_y_gui >(menuY + (2 * menuBottom / 6)) - menuOffset) && (mouse_y_gui <  (menuY + (3 * (menuBottom / 6)) - menuOffset)) menuIndex = 2;
+	
+		if (prevMenuIndex != menuIndex)
+		{
+			audio_play_sound(snd_Menu, 5, false);	
+		}
+	
+		if (mouse_check_button_pressed(mb_left))
+		{
+			key_select = 1;
+		}
+	}
+}
+else
+{
+	if (mouse_y_gui > optionsY) && (mouse_y_gui < optionBottom)
+	{
+		prevOptionIndex = optionsIndex;
+		if (mouse_y_gui > optionsY) && (mouse_y_gui < (optionsY + (optionBottom / 8)) - optionOffset) optionsIndex = 0;
+		if (mouse_y_gui > (optionsY + (optionBottom / 8)) - optionOffset) && (mouse_y_gui < (optionsY + (2 * optionBottom / 8)) - optionOffset) optionsIndex = 1;
+		if (mouse_y_gui > (optionsY + (2 * optionBottom / 8)) - optionOffset) && (mouse_y_gui < (optionsY + (3 * (optionBottom / 8)) - optionOffset)) optionsIndex = 2;
+		if (mouse_y_gui > (optionsY + (3 * optionBottom / 8)) - optionOffset) && (mouse_y_gui < (optionsY + (4 * (optionBottom / 8)) - optionOffset)) optionsIndex = 3;
+	
+		if (prevOptionIndex != optionsIndex)
+		{
+			audio_play_sound(snd_Menu, 5, false);	
+		}
+	
+		if (mouse_check_button_pressed(mb_left))
+		{
+			key_select = 1;
+		}
+	}
+}
+
 if(key_select == 1){
 	if(menuActive)
 	{
@@ -24,13 +78,15 @@ if(key_select == 1){
 					SlideTransition(TRANS_MODE.GOTO, rTutorial);
 				}
 				break;
+				/*
 			case 1:
 				SlideTransition(TRANS_MODE.GOTO, rLevelSelect);
 				break;
-			case 2:
+				*/
+			case 1:
 				menuActive = false;
 				break;
-			case 3:
+			case 2:
 				game_end();
 				break;
 			default:
@@ -64,14 +120,6 @@ if(key_select == 1){
 		}
 	}
 	audio_play_sound(snd_MenuSelect,5,false);
-}
-if ((gamepad_axis_value(4,gp_axislv) > 0.4  && lastAxis4Value <= 0.4) || gamepad_button_check_pressed(4,gp_padd) || (gamepad_axis_value(0,gp_axislv) > 0.4  && lastAxis0Value <= 0.4) || gamepad_button_check_pressed(0,gp_padd))
-{
-	key_down = 1;
-}
-if ((gamepad_axis_value(4,gp_axislv) < -0.4 && lastAxis4Value >= -0.4) || gamepad_button_check_pressed(4,gp_padu) || (gamepad_axis_value(0,gp_axislv) < -0.4 && lastAxis0Value >= -0.4) || gamepad_button_check_pressed(0,gp_padu))
-{
-	key_up = 1;
 }
 
 // Play sound
@@ -108,13 +156,13 @@ lastAxis4Value = gamepad_axis_value(4, gp_axislv);
 // Move camera
 if(!menuActive && (camOffset != camDistance))
 {
-	camOffset += 5;
+	camOffset += 10;
 	camera_set_view_pos(cam,(x-144) + camOffset,y-96);	
 }
 
 if(menuActive && (camOffset != 0))
 {
-	camOffset -= 5;
+	camOffset -= 10;
 	camera_set_view_pos(cam,(x-144) + camOffset,y-96);
 }
 

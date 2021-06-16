@@ -40,9 +40,10 @@ else
 	}
 }
 
-// Set tile layer
+// Set tile layer and cursor
 if(global.color == 1)
 {
+	cursor_sprite = sCursorBlue;
 	layer_set_visible("GreenTiles", false);	
 	layer_set_visible("GreenBackground", false);
 	layer_set_visible("GreenClouds", false);
@@ -52,6 +53,7 @@ if(global.color == 1)
 }
 if(global.color == 0)
 {
+	cursor_sprite = sCursor;
 	layer_set_visible("GreenTiles", true);	
 	layer_set_visible("GreenBackground", true);
 	layer_set_visible("GreenClouds", true);

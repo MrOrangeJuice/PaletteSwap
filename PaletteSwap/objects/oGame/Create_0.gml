@@ -54,6 +54,9 @@ for(i = 0; i < global.seasideGears; i++)
 	global.seasideGearArray[i] = false;
 }
 
+// Set cursor
+cursor_sprite = sCursor;
+
 global.color = 0;
 //0 green
 //1 blue
