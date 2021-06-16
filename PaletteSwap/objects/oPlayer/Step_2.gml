@@ -5,10 +5,11 @@ if(collidingSpikes != noone){
 	if(!spikeImmune){
 		spikeImmune = true;
 			if (isInvulnerable == false) {
-				global.hp -= 20;
+				global.hp -= 10;
 				isInvulnerable = true;
-				InitiateKnockback(oPlayer, 6, -7);
+				InitiateKnockback(oPlayer, image_xscale * -6, -7);
 				global.knockedBack = true;
+				isRolling = false;
 				audio_play_sound(snd_Damage, 5, false);
 		}
 	}

@@ -1,6 +1,7 @@
 /// @description Falling
 // You can write your code in this editor
 if (falling) {
+	visible = true;
 	vsp += grv;
 	y += vsp;
 	
