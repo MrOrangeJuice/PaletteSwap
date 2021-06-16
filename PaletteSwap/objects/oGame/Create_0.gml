@@ -56,7 +56,7 @@ for(i = 0; i < global.seasideGears; i++)
 }
 
 // Set cursor
-prevMousePos = mouse_x;
+prevMousePos = device_mouse_x_to_gui(0);
 
 global.color = 0;
 //0 green
