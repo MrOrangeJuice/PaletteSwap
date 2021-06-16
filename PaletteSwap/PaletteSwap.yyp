@@ -120,6 +120,7 @@
     {"id":{"name":"snd_Damage","path":"sounds/snd_Damage/snd_Damage.yy",},"order":22,},
     {"id":{"name":"oSpikes","path":"objects/oSpikes/oSpikes.yy",},"order":23,},
     {"id":{"name":"sWallCollisionDust","path":"sprites/sWallCollisionDust/sWallCollisionDust.yy",},"order":0,},
+    {"id":{"name":"sCoinCollect","path":"sprites/sCoinCollect/sCoinCollect.yy",},"order":1,},
     {"id":{"name":"oEddyCutsceneEnd","path":"objects/oEddyCutsceneEnd/oEddyCutsceneEnd.yy",},"order":34,},
     {"id":{"name":"tTempleBlue","path":"tilesets/tTempleBlue/tTempleBlue.yy",},"order":3,},
     {"id":{"name":"oPauseButtons","path":"objects/oPauseButtons/oPauseButtons.yy",},"order":12,},
