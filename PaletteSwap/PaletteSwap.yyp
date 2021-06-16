@@ -151,6 +151,7 @@
     {"id":{"name":"YellowPH","path":"sprites/YellowPH/YellowPH.yy",},"order":9,},
     {"id":{"name":"snd_CrabDeath","path":"sounds/snd_CrabDeath/snd_CrabDeath.yy",},"order":23,},
     {"id":{"name":"sHealthbar","path":"sprites/sHealthbar/sHealthbar.yy",},"order":0,},
+    {"id":{"name":"sCursorNone","path":"sprites/sCursorNone/sCursorNone.yy",},"order":15,},
     {"id":{"name":"oTutorialJump","path":"objects/oTutorialJump/oTutorialJump.yy",},"order":24,},
     {"id":{"name":"oShadow","path":"sprites/oShadow/oShadow.yy",},"order":23,},
     {"id":{"name":"sScreenDarken","path":"sprites/sScreenDarken/sScreenDarken.yy",},"order":4,},
