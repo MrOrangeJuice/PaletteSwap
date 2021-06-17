@@ -90,14 +90,17 @@ jumpBuffer -= 1;
 if (jumpBuffer > 0) && (key_jump) && (canJump)
 {
 	jumpBuffer = 0;
-	if (swimming)
+	if (swimming && isDashing)
 	{
-		if(global.canControlTimer < 0) vsp = -10;
+		thsp = 0;
+		if (key_left && dashleft || key_right && dashright){
+			thsp = dashsp;
+		}
+		DashReset();
+		currentwalksp += image_xscale * thsp;
+		isRolling = false;
 	}
-	else
-	{
-		if(global.canControlTimer < 0) vsp = -10;
-	}
+	if(global.canControlTimer < 0) vsp = -10;
 	audio_play_sound(snd_Jump, 5, false);
 	canJump = false;
 	jumped = true;

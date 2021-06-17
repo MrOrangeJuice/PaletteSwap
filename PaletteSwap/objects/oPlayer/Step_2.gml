@@ -72,7 +72,6 @@ if(!isDashing){
 				currentwalksp = 0;
 			break;
 			case 1:
-				//currentwalksp /= 1.2;
 				hsp /= 2;
 			break;
 		}
@@ -189,6 +188,7 @@ else{
 		//apply gravity if dashing in air
 		if (jumped){
 			vsp += grv;
+			if (swimming && vsp > 0) vsp = 0;
 		}
 		y = y + vsp;
 	}
