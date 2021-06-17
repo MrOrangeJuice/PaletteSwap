@@ -26,6 +26,7 @@ if (!bottomWall && !bottomPalette)
 }
 else if ((swimming && vsp >= 0) || !swimming){
 	airborne = false;
+	/*
 	if(collidingSpikes == noone){
 	if(bottomWall){
 		inst = instance_place(x, y+1, oWall);
@@ -38,6 +39,7 @@ else if ((swimming && vsp >= 0) || !swimming){
 		lastGroundedPosY = inst.y - 24;
 	}
 	}
+	*/
 	// Reset jump buffer
 	jumpBuffer = 5;
 	if (!isDashing)	{
@@ -100,7 +102,11 @@ if(!isDashing){
 					//fall slower in water than you swim up
 					vsp /= 1.3;
 				} else vsp /= 1.1;
-				swimming = true;
+				
+				if (place_meeting(x,y+vsp,oPaletteWall)) //dum dum fix
+				{
+					swimming = true;
+				}
 			break;
 		}
 	}
