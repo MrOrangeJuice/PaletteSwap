@@ -9,5 +9,6 @@ for(c = 0; c < ds_list_size(global.coinArrX); c++){
 }
 global.coinId--;
 instance_destroy(other);
+instance_create_layer(other.x,other.y,"Coins",oCoinFX);
 global.coins++;
 with (oGame) coinTextScale = 1.2;
