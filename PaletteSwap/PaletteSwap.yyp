@@ -54,6 +54,7 @@
     {"id":{"name":"snd_Pause","path":"sounds/snd_Pause/snd_Pause.yy",},"order":13,},
     {"id":{"name":"BlackPH","path":"sprites/BlackPH/BlackPH.yy",},"order":0,},
     {"id":{"name":"oLevelMusicCollision","path":"objects/oLevelMusicCollision/oLevelMusicCollision.yy",},"order":38,},
+    {"id":{"name":"oCoinFX","path":"objects/oCoinFX/oCoinFX.yy",},"order":58,},
     {"id":{"name":"sVillagerFix","path":"sprites/sVillagerFix/sVillagerFix.yy",},"order":3,},
     {"id":{"name":"sAirCurrent2","path":"sprites/sAirCurrent2/sAirCurrent2.yy",},"order":1,},
     {"id":{"name":"sBlownAir","path":"sprites/sBlownAir/sBlownAir.yy",},"order":2,},
