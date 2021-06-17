@@ -27,14 +27,16 @@ if ((gamepad_axis_value(4,gp_axislv) < -0.4 && global.lastAxislv4Value >= -0.4) 
 
 var mouse_y_gui = device_mouse_y_to_gui(0);
 
+menuY = global.menuY - 50;
+
 if(global.mouse)
 {
-	if (mouse_y_gui > global.menuY) && (mouse_y_gui < menuBottom)
+	if (mouse_y_gui > menuY) && (mouse_y_gui < menuBottom)
 	{
 		prevMenuIndex = menuIndex;
-		if (mouse_y_gui > global.menuY) && (mouse_y_gui < (global.menuY + (menuBottom / 6)) - menuOffset) menuIndex = 0;
-		if (mouse_y_gui > (global.menuY + (menuBottom / 6)) - menuOffset) && (mouse_y_gui < (global.menuY + (2 * menuBottom / 6)) - menuOffset) menuIndex = 1;
-		if (mouse_y_gui >(global.menuY + (2 * menuBottom / 6)) - menuOffset) && (mouse_y_gui <  (global.menuY + (3 * (menuBottom / 6)) - menuOffset)) menuIndex = 2;
+		if (mouse_y_gui > menuY) && (mouse_y_gui < (menuY + (menuBottom / 6)) - menuOffset) menuIndex = 0;
+		if (mouse_y_gui > (menuY + (menuBottom / 6)) - menuOffset) && (mouse_y_gui < (menuY + (2 * menuBottom / 6)) - menuOffset) menuIndex = 1;
+		if (mouse_y_gui >(menuY + (2 * menuBottom / 6)) - menuOffset) && (mouse_y_gui <  (menuY + (3 * (menuBottom / 6)) - menuOffset)) menuIndex = 2;
 	
 		if (prevMenuIndex != menuIndex)
 		{
