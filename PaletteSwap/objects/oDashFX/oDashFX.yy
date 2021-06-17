@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sWallCollisionDustBig",
-    "path": "sprites/sWallCollisionDustBig/sWallCollisionDustBig.yy",
+    "name": "sWallCollisionDust",
+    "path": "sprites/sWallCollisionDust/sWallCollisionDust.yy",
   },
   "solid": false,
   "visible": true,
