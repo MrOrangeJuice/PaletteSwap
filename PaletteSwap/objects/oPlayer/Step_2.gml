@@ -114,6 +114,11 @@ else{
 		// Handle Vertical Collision Normally
 		if (place_meeting(x,y+vsp,oWall))
 		{
+			wallY = 0;
+			while (!place_meeting(x,y+wallY,oWall))
+			{
+				wallY = wallY + sign(vsp);
+			}
 			instance_create_layer(x, y+vsp,"Coins",oDashFX);
 			//collide with wall
 			DoDashCollision(oWall, -11, 0, true);
@@ -140,6 +145,14 @@ else{
 		// Horizontal Collision
 		if (place_meeting(x+hsp,y,oWall))
 		{
+			// Determine where wall is
+			wallX = 0;
+			while (!place_meeting(x+wallX,y,oWall))
+			{
+				wallX = wallX + sign(hsp);
+			}
+			FX = instance_create_layer(x+wallX, y,"Coins",oDashFX);
+			FX.image_angle = 90;
 			DoDashCollision(oWall, -7, -6, false);
 		}
 		//palette block
@@ -177,6 +190,13 @@ else{
 		// Horizontal Collision
 		if (place_meeting(x+hsp,y,oWall))
 		{
+			wallX = 0;
+			while (!place_meeting(x+wallX,y,oWall))
+			{
+				wallX = wallX + sign(hsp);
+			}
+			FX = instance_create_layer(x+wallX, y,"Coins",oDashFX);
+			FX.image_angle = -90;
 			DoDashCollision(oWall, -7, 6, false);
 		}
 		if (place_meeting(x+hsp,y,oPaletteWall))
