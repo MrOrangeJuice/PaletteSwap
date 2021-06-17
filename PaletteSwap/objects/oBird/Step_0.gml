@@ -4,6 +4,7 @@
 // Inherit the parent event
 if (eHP <= 0){
 	audio_play_sound(snd_BirdDeath, 4, false);
+	instance_create_layer(x, y, "Enemies", oEnemyFX);
 	instance_create_layer(x, y, "Enemies", oBirdRespawner);
 }
 event_inherited();
