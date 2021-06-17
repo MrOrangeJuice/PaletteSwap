@@ -114,6 +114,12 @@ else{
 		// Handle Vertical Collision Normally
 		if (place_meeting(x,y+vsp,oWall))
 		{
+			wallY = 0;
+			while (!place_meeting(x,y+wallY,oWall))
+			{
+				wallY = wallY + sign(vsp);
+			}
+			instance_create_layer(x, y+vsp,"Coins",oDashFX);
 			//collide with wall
 			DoDashCollision(oWall, -11, 0, true);
 		}
@@ -135,18 +141,26 @@ else{
 		}
 		y = y + vsp;
 	}
-	if(dashright){
+	else {
 		// Horizontal Collision
 		if (place_meeting(x+hsp,y,oWall))
 		{
-			DoDashCollision(oWall, -7, -6, false);
+			// Determine where wall is
+			wallX = 0;
+			while (!place_meeting(x+wallX,y,oWall))
+			{
+				wallX = wallX + sign(hsp);
+			}
+			FX = instance_create_layer(x+wallX, y,"Coins",oDashFX);
+			FX.image_angle = sign(hsp) * 90;
+			DoDashCollision(oWall, -7, sign(hsp) * -6, false);
 		}
 		//palette block
 		if (place_meeting(x+hsp,y,oPaletteWall))
 		{
 			switch (global.color){
 			case 0:
-				DoDashCollision(oPaletteWall, -7, -6, false);
+				DoDashCollision(oPaletteWall, -7, sign(hsp) * -6, false);
 				swimming = false;
 			break;
 			case 1:
@@ -161,7 +175,7 @@ else{
 		{
 			DoCollision(oWall, true);
 		}
-		if (place_meeting(x,y+vsp,oPaletteWall) && !swimming)
+		if (place_meeting(x,y+vsp,oPaletteWall) && !swimming && global.color != 1)
 		{
 			DoCollision(oPaletteWall, true);
 		}
@@ -172,41 +186,6 @@ else{
 		}
 		y = y + vsp;
 	}
-	if(dashleft){
-		// Horizontal Collision
-		if (place_meeting(x+hsp,y,oWall))
-		{
-			DoDashCollision(oWall, -7, 6, false);
-		}
-		if (place_meeting(x+hsp,y,oPaletteWall))
-		{
-			switch (global.color){
-			case 0:
-				DoDashCollision(oPaletteWall, -7, 6, false);
-				swimming = false;
-			break;
-			case 1:
-				hsp /= 1.5;
-				swimming = true;
-			break;
-			}
-		}
-		else swimming = false;
-		// Vertical Collision
-		if (place_meeting(x,y+vsp,oWall))
-		{
-			DoCollision(oWall, true);
-		}
-		if (place_meeting(x,y+vsp,oPaletteWall) && !swimming)
-		{
-			DoCollision(oPaletteWall, true);
-		}
-		x = x + hsp;
-		//apply gravity if dashing in air
-		if (jumped){
-			vsp += grv;
-		}
-		y = y + vsp;
-	}
+	
 }
 }
