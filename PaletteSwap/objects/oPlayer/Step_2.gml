@@ -114,6 +114,7 @@ else{
 		// Handle Vertical Collision Normally
 		if (place_meeting(x,y+vsp,oWall))
 		{
+			instance_create_layer(x, y+vsp,"Coins",oDashFX);
 			//collide with wall
 			DoDashCollision(oWall, -11, 0, true);
 		}
