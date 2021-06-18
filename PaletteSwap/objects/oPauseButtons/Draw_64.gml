@@ -26,7 +26,7 @@ repeat(buttonCount){
 			draw_set_color($331800);
 			break;
 		case 2:
-			draw_set_color($2B0000);
+			draw_set_color($00002B);
 			break;
 		}
 	}
