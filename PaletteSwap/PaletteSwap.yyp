@@ -182,6 +182,7 @@
     {"id":{"name":"sTextBubble","path":"sprites/sTextBubble/sTextBubble.yy",},"order":3,},
     {"id":{"name":"oDoorPrompt","path":"objects/oDoorPrompt/oDoorPrompt.yy",},"order":43,},
     {"id":{"name":"snd_Villager","path":"sounds/snd_Villager/snd_Villager.yy",},"order":26,},
+    {"id":{"name":"sBGSeasideRedClouds","path":"sprites/sBGSeasideRedClouds/sBGSeasideRedClouds.yy",},"order":6,},
     {"id":{"name":"tSeaside","path":"tilesets/tSeaside/tSeaside.yy",},"order":0,},
     {"id":{"name":"sSeasideGreen","path":"sprites/sSeasideGreen/sSeasideGreen.yy",},"order":0,},
     {"id":{"name":"rRedTest","path":"rooms/rRedTest/rRedTest.yy",},"order":15,},
