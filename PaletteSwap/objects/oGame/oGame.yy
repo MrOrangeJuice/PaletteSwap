@@ -27,9 +27,6 @@
     {"varType":5,"value":"oPlayerHUD","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[
         "GMObject",
       ],"resourceVersion":"1.0","name":"playerHUD","tags":[],"resourceType":"GMObjectProperty",},
-    {"varType":5,"value":"oPauseMenu","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[
-        "GMObject",
-      ],"resourceVersion":"1.0","name":"pauseMenu","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],
   "parent": {

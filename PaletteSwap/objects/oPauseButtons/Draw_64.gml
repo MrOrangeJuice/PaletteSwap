@@ -12,6 +12,9 @@ repeat(buttonCount){
 		case 1:
 			draw_set_color($8C5F00);
 			break;
+		case 2:
+			draw_set_color($00189F);
+			break;
 	}
 	if(menuIndex == c){
 		switch(global.color)
@@ -21,6 +24,9 @@ repeat(buttonCount){
 			break;
 		case 1:
 			draw_set_color($331800);
+			break;
+		case 2:
+			draw_set_color($2B0000);
 			break;
 		}
 	}
@@ -34,6 +40,9 @@ repeat(buttonCount){
 		case 1:
 			draw_set_color($BEB900);
 			break;
+		case 2:
+			draw_set_color($3548F6);
+			break;
 	}
 	if(menuIndex == c){
 		switch(global.color)
@@ -43,6 +52,9 @@ repeat(buttonCount){
 				break;
 			case 1:
 				draw_set_color($8C5F00);
+				break;
+			case 2:
+				draw_set_color($00189F);
 				break;
 		}
 	}
