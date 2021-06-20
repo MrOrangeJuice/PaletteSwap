@@ -87,14 +87,16 @@ if(key_select == 1){
 					SlideTransition(TRANS_MODE.GOTO, rTutorial);
 				}
 				break;
+			/*
 			case 1:
 				SlideTransition(TRANS_MODE.GOTO, rLevelSelect);
 				break;
-			case 2:
+			*/
+			case 1:
 				global.mouse = 0;
 				menuActive = false;
 				break;
-			case 3:
+			case 2:
 				game_end();
 				break;
 			default:
