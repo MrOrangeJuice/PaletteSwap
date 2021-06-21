@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "sTutorialKeyboardDash",
-    "path": "sprites/sTutorialKeyboardDash/sTutorialKeyboardDash.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
