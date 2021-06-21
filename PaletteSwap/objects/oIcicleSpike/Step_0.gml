@@ -3,7 +3,6 @@
 if (falling) {
 	visible = true;
 	vsp += grv;
-	y += vsp;
 	
 	//collide with wall
 	if (place_meeting(x, y, oWall)){
@@ -16,15 +15,16 @@ if (falling) {
 		switch (global.color){
 		case 1:
 			//water entry
-			grv = 0.15;
+			vsp /= 1.3;
 			break;
 		default:
 			//play aniation and sound
 			instance_destroy(self);
 			break;
 		}
-		//reset gravity if exiting water
-	} else if (grv = 0.15) grv = 3;
+	}
+
+	y += vsp;
 }
 
 PaletteAnimationSwap();

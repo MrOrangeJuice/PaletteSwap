@@ -7,9 +7,13 @@ if(global.color == 0)
 {
 	DrawSetText($002704, fUI, 0, 0);
 }
-if(global.color == 1)
+else if(global.color == 1)
 {
 	DrawSetText($001833, fUI, 0, 0);
+}
+else if(global.color == 2)
+{
+	DrawSetText($2B0000, fUI, 0, 0);
 }
 draw_set_halign(fa_center);
 draw_text(x, y-8, levelName);
@@ -56,6 +60,10 @@ else
 	if(global.color == 1)
 	{
 		DrawSetText($001833, fUI, 0, 0);
+	}
+	if(global.color == 2)
+	{
+		DrawSetText($2B0000, fUI, 0, 0);
 	}
 	draw_set_halign(fa_center);
 	gearString = "x" + string(levelRequirement);

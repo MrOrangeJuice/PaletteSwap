@@ -67,13 +67,15 @@ if(!isDashing){
 	{
 		switch (global.color){
 			case 0:
-			//walking through water
 				DoCollision(oPaletteWall, false);
 				currentwalksp = 0;
 			break;
 			case 1:
 				hsp /= 2;
 			break;
+			case 2:
+				DoCollision(oPaletteWall, false);
+				currentwalksp = 0;
 		}
 	}
 	x = x + hsp;
@@ -106,6 +108,11 @@ if(!isDashing){
 				{
 					swimming = true;
 				}
+			break;
+			case 2:
+			//collide and not swimming
+				DoCollision(oPaletteWall, true);
+				swimming = false;
 			break;
 		}
 	}
@@ -142,6 +149,11 @@ else{
 				vsp /= 1.5;
 				swimming = true;
 			break;
+			case 2:
+			//todo red
+				DoDashCollision(oPaletteWall, -11, 0, true);
+				swimming = false;
+			break;
 			}
 		}
 		y = y + vsp;
@@ -171,6 +183,10 @@ else{
 			case 1:
 				hsp /= 1.5;
 				swimming = true;
+			break;
+			case 2:
+				DoDashCollision(oPaletteWall, -7, sign(hsp) * -6, false);
+				swimming = false;
 			break;
 			}
 		}
