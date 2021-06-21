@@ -311,7 +311,6 @@
     {"id":{"name":"sFernGlasses","path":"sprites/sFernGlasses/sFernGlasses.yy",},"order":11,},
     {"id":{"name":"sCollectibleStatic","path":"sprites/sCollectibleStatic/sCollectibleStatic.yy",},"order":5,},
     {"id":{"name":"sSign","path":"sprites/sSign/sSign.yy",},"order":4,},
-    {"id":{"name":"sDoor","path":"sprites/sDoor/sDoor.yy",},"order":3,},
     {"id":{"name":"sCursorBlue","path":"sprites/sCursorBlue/sCursorBlue.yy",},"order":14,},
     {"id":{"name":"sFernHit","path":"sprites/sFernHit/sFernHit.yy",},"order":10,},
     {"id":{"name":"oMenuMusic","path":"objects/oMenuMusic/oMenuMusic.yy",},"order":19,},
