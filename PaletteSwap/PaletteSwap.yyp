@@ -296,6 +296,7 @@
     {"id":{"name":"sTextbox","path":"sprites/sTextbox/sTextbox.yy",},"order":8,},
     {"id":{"name":"StretchBox","path":"scripts/StretchBox/StretchBox.yy",},"order":5,},
     {"id":{"name":"oEddy","path":"objects/oEddy/oEddy.yy",},"order":33,},
+    {"id":{"name":"oNPC","path":"objects/oNPC/oNPC.yy",},"order":63,},
     {"id":{"name":"snd_Reset","path":"sounds/snd_Reset/snd_Reset.yy",},"order":1,},
     {"id":{"name":"sGrass2","path":"sprites/sGrass2/sGrass2.yy",},"order":6,},
     {"id":{"name":"rAaronLevel","path":"rooms/rAaronLevel/rAaronLevel.yy",},"order":19,},
