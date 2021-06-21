@@ -80,6 +80,7 @@
     {"id":{"name":"sDoorPromptController","path":"sprites/sDoorPromptController/sDoorPromptController.yy",},"order":9,},
     {"id":{"name":"sTutorialKeyboard","path":"sprites/sTutorialKeyboard/sTutorialKeyboard.yy",},"order":3,},
     {"id":{"name":"sGBStatue3","path":"sprites/sGBStatue3/sGBStatue3.yy",},"order":14,},
+    {"id":{"name":"sCursorRed","path":"sprites/sCursorRed/sCursorRed.yy",},"order":16,},
     {"id":{"name":"PaletteAnimationSwap","path":"scripts/PaletteAnimationSwap/PaletteAnimationSwap.yy",},"order":3,},
     {"id":{"name":"snd_Jump","path":"sounds/snd_Jump/snd_Jump.yy",},"order":0,},
     {"id":{"name":"sShip","path":"sprites/sShip/sShip.yy",},"order":7,},
