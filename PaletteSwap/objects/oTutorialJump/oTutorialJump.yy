@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "sTutorialKeyboardJump",
-    "path": "sprites/sTutorialKeyboardJump/sTutorialKeyboardJump.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
