@@ -14,6 +14,10 @@ if (mode != TRANS_MODE.OFF)
 	{
 		draw_set_color($00002B);
 	}
+	else if (global.color == 3)
+	{
+		draw_set_color($2C142D);
+	}
 	draw_rectangle(0,0,w,percent*h_half,false);
 	draw_rectangle(0,h,w,h-(percent*h_half),false);
 }
