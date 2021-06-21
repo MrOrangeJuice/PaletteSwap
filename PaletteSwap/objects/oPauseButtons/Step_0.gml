@@ -61,6 +61,7 @@ if(key_select == 1){
 		break;
 	case 1:
 		global.color = 0;
+		/*
 		global.coinId = 0;
 		global.loaded = false;
 		global.coinsDestroyed = false;
@@ -68,6 +69,7 @@ if(key_select == 1){
 		ds_list_clear(global.coinArrY);
 		ds_list_clear(global.loadCoinsX);
 		ds_list_clear(global.loadCoinsY);
+		*/
 		global.color_limit = 2;
 		audio_stop_sound(msc_Level);
 		audio_stop_sound(msc_Seaside);

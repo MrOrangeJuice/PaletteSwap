@@ -13,5 +13,6 @@ function Load(){
 	global.seasideGearArray[2] = ini_read_real("savegame", "seasideGear3", 0);
 	global.seasideGearArray[3] = ini_read_real("savegame", "seasideGear4", 0);
 	global.gearTotal = ini_read_real("savegame", "totalGears", 0);
+	global.coins = ini_read_real("savegame", "totalCoins", 0);
 	ini_close();
 }
