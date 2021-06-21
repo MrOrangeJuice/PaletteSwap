@@ -216,6 +216,7 @@
     {"id":{"name":"oHiddenArea2","path":"objects/oHiddenArea2/oHiddenArea2.yy",},"order":37,},
     {"id":{"name":"sVillager","path":"sprites/sVillager/sVillager.yy",},"order":1,},
     {"id":{"name":"oSign","path":"objects/oSign/oSign.yy",},"order":51,},
+    {"id":{"name":"sVendingMachine","path":"sprites/sVendingMachine/sVendingMachine.yy",},"order":24,},
     {"id":{"name":"tRed","path":"tilesets/tRed/tRed.yy",},"order":7,},
     {"id":{"name":"oShip","path":"objects/oShip/oShip.yy",},"order":20,},
     {"id":{"name":"fGame","path":"fonts/fGame/fGame.yy",},"order":1,},
