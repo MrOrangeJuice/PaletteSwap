@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "sTutorialKeyboard",
-    "path": "sprites/sTutorialKeyboard/sTutorialKeyboard.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

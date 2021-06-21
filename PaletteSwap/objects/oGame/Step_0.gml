@@ -9,13 +9,11 @@ if (keyboard_check(vk_control)) && (keyboard_check_pressed(ord("F")))
 // Switch which UI object is active based-on what state the game is in.
 if (global.paused)
 {
-	instance_activate_object(pauseMenu);
 	instance_deactivate_object(playerHUD);
 }
 else 
 {
 	instance_activate_object(playerHUD);
-	instance_deactivate_object(pauseMenu);
 }
 
 global.canControlTimer--;
@@ -57,6 +55,53 @@ if(prevMousePos != device_mouse_x_to_gui(0))
 
 prevMousePos = device_mouse_x_to_gui(0);
 
+//reset tiles/ mouse
+layer_set_visible("GreenTiles", false);	
+layer_set_visible("GreenBackground", false);
+layer_set_visible("GreenClouds", false);
+if (global.color_limit > 0){
+layer_set_visible("BlueTiles", false);	
+layer_set_visible("BlueBackground", false);
+layer_set_visible("BlueClouds", false);
+}
+if (global.color_limit > 1){
+layer_set_visible("RedTiles", false);	
+layer_set_visible("RedBackground", false);
+layer_set_visible("RedClouds", false);
+}
+cursor_sprite = sCursorNone;
+	
+//set tile layers and cursor
+switch (global.color) {
+	case 0: 
+		if(global.mouse)
+		{
+		cursor_sprite = sCursor;
+		}
+		layer_set_visible("GreenTiles", true);	
+		layer_set_visible("GreenBackground", true);
+		layer_set_visible("GreenClouds", true);
+	break;
+	case 1:
+		if(global.mouse)
+		{
+		cursor_sprite = sCursorBlue;
+		}
+		layer_set_visible("BlueTiles", true);	
+		layer_set_visible("BlueBackground", true);
+		layer_set_visible("BlueClouds", true);
+	break;
+	case 2:
+		if(global.mouse)
+		{
+		cursor_sprite = sCursorRed;
+		}
+		layer_set_visible("RedTiles", true);	
+		layer_set_visible("RedBackground", true);
+		layer_set_visible("RedClouds", true);
+	break;
+}
+/*
 // Set tile layer and cursor
 if(global.color == 1)
 {
@@ -92,3 +137,4 @@ if(global.color == 0)
 	layer_set_visible("BlueBackground", false);
 	layer_set_visible("BlueClouds", false);
 }
+*/

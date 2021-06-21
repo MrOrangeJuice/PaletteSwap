@@ -16,6 +16,9 @@ if(global.paused){
 	else if(global.color == 1){
 		draw_set_color($331800);
 	}
+	else if(global.color == 2){
+		draw_set_color($00002B);
+	}
 }
 else{
 	if(global.color == 0)
@@ -24,6 +27,9 @@ else{
 	}
 	else if(global.color == 1){
 		draw_set_color($E5F49F);
+	}
+	else if(global.color == 2){
+		draw_set_color($7DA4FD);
 	}
 
 }

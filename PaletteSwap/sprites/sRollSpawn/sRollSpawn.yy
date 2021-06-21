@@ -32,6 +32,10 @@
         {"FrameId":{"name":"eb1c0eec-bf52-42b9-b58c-5ac8f66aae89","path":"sprites/sRollSpawn/sRollSpawn.yy",},"LayerId":{"name":"dba3e1f2-4c2f-4df6-b11d-ebe34f8a0cb8","path":"sprites/sRollSpawn/sRollSpawn.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"eb1c0eec-bf52-42b9-b58c-5ac8f66aae89","path":"sprites/sRollSpawn/sRollSpawn.yy",},"LayerId":{"name":"4b2c4d22-f00f-4ca1-a8cf-3fee0482bbf3","path":"sprites/sRollSpawn/sRollSpawn.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sRollSpawn","path":"sprites/sRollSpawn/sRollSpawn.yy",},"resourceVersion":"1.0","name":"eb1c0eec-bf52-42b9-b58c-5ac8f66aae89","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"83ca1a87-8214-46c6-8d77-f2475f192021","path":"sprites/sRollSpawn/sRollSpawn.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"83ca1a87-8214-46c6-8d77-f2475f192021","path":"sprites/sRollSpawn/sRollSpawn.yy",},"LayerId":{"name":"dba3e1f2-4c2f-4df6-b11d-ebe34f8a0cb8","path":"sprites/sRollSpawn/sRollSpawn.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"83ca1a87-8214-46c6-8d77-f2475f192021","path":"sprites/sRollSpawn/sRollSpawn.yy",},"LayerId":{"name":"4b2c4d22-f00f-4ca1-a8cf-3fee0482bbf3","path":"sprites/sRollSpawn/sRollSpawn.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sRollSpawn","path":"sprites/sRollSpawn/sRollSpawn.yy",},"resourceVersion":"1.0","name":"83ca1a87-8214-46c6-8d77-f2475f192021","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sRollSpawn","path":"sprites/sRollSpawn/sRollSpawn.yy",},
@@ -41,13 +45,14 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 2.0,
+    "length": 3.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"f5186324-9a88-4708-86b1-32d9b33146f4","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"788b458d-a15e-4f9b-9f19-61c5d7c13728","path":"sprites/sRollSpawn/sRollSpawn.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"3eb6fe28-6daa-4518-a842-9bc7b9fc5845","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"eb1c0eec-bf52-42b9-b58c-5ac8f66aae89","path":"sprites/sRollSpawn/sRollSpawn.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8e2812b0-3b81-470a-98c2-034e0b20f1d3","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"83ca1a87-8214-46c6-8d77-f2475f192021","path":"sprites/sRollSpawn/sRollSpawn.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
