@@ -109,8 +109,7 @@ if(room != MainMenu && room != rLevelSelect && room != rThanks)
 	
 	if(global.colorblind)
 	{
-		draw_sprite(sColorBlindDisplay, global.color, 4, 24);
-		draw_text_transformed(36, 28, string(currentColor), collectableTextScale, collectableTextScale, 0);
+		draw_text_transformed(37, 8, string(currentColor), collectableTextScale, collectableTextScale, 0);
 	}
 	/*
 	// Draw Currently Active Palette
