@@ -1,6 +1,6 @@
 /// @description Create
 menuX = x+16;
-menuY = y-5;
+menuY = y+5;
 optionsX = x+336;
 optionsY = y-20;
 buttonHeight = 18;
