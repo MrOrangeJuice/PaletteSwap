@@ -94,7 +94,7 @@ switch (global.color) {
 	case 2:
 		if(global.mouse)
 		{
-		cursor_sprite = sCursor;
+		cursor_sprite = sCursorRed;
 		}
 		layer_set_visible("RedTiles", true);	
 		layer_set_visible("RedBackground", true);
