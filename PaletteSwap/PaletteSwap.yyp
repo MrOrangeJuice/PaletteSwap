@@ -287,6 +287,7 @@
     {"id":{"name":"sPortalInfoSpawn","path":"sprites/sPortalInfoSpawn/sPortalInfoSpawn.yy",},"order":21,},
     {"id":{"name":"sBushDead","path":"sprites/sBushDead/sBushDead.yy",},"order":1,},
     {"id":{"name":"Save","path":"scripts/Save/Save.yy",},"order":10,},
+    {"id":{"name":"sTextFrame","path":"sprites/sTextFrame/sTextFrame.yy",},"order":17,},
     {"id":{"name":"rTutorial2","path":"rooms/rTutorial2/rTutorial2.yy",},"order":7,},
     {"id":{"name":"GreenPH","path":"sprites/GreenPH/GreenPH.yy",},"order":4,},
     {"id":{"name":"oPortalFixTrigger","path":"objects/oPortalFixTrigger/oPortalFixTrigger.yy",},"order":47,},
