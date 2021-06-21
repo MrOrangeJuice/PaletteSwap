@@ -51,3 +51,9 @@ if (layer_exists("RedClouds"))
 	layer_x("RedClouds",x/6);
 	layer_y("RedClouds",y/6);
 }
+
+if (layer_exists("PurpleClouds"))
+{
+	layer_x("PurpleClouds",x/6);
+	layer_y("PurpleClouds",y/6);
+}

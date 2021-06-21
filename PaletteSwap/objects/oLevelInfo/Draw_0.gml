@@ -65,6 +65,10 @@ else
 	{
 		DrawSetText($2B0000, fUI, 0, 0);
 	}
+	if(global.color == 3)
+	{
+		DrawSetText($2D142C, fUI, 0, 0);
+	}
 	draw_set_halign(fa_center);
 	gearString = "x" + string(levelRequirement);
 	draw_text(x+10, y+20, gearString);

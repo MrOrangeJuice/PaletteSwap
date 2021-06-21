@@ -76,6 +76,11 @@ if(!isDashing){
 			case 2:
 				DoCollision(oPaletteWall, false);
 				currentwalksp = 0;
+				break;
+			case 3:
+				DoCollision(oPaletteWall, false);
+				currentwalksp = 0;
+				break;
 		}
 	}
 	x = x + hsp;
@@ -110,6 +115,11 @@ if(!isDashing){
 				}
 			break;
 			case 2:
+			//collide and not swimming
+				DoCollision(oPaletteWall, true);
+				swimming = false;
+			break;
+			case 3:
 			//collide and not swimming
 				DoCollision(oPaletteWall, true);
 				swimming = false;
@@ -154,6 +164,11 @@ else{
 				DoDashCollision(oPaletteWall, -11, 0, true);
 				swimming = false;
 			break;
+			case 3:
+			//todo red
+				DoDashCollision(oPaletteWall, -11, 0, true);
+				swimming = false;
+			break;
 			}
 		}
 		y = y + vsp;
@@ -185,6 +200,10 @@ else{
 				swimming = true;
 			break;
 			case 2:
+				DoDashCollision(oPaletteWall, -7, sign(hsp) * -6, false);
+				swimming = false;
+			break;
+			case 3:
 				DoDashCollision(oPaletteWall, -7, sign(hsp) * -6, false);
 				swimming = false;
 			break;

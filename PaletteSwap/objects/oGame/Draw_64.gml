@@ -20,6 +20,9 @@ if(room != MainMenu && room != rLevelSelect && room != rThanks)
 		case 2:
 			DrawSetText($00002B, fUI, fa_right, fa_top);
 			break;
+		case 3:
+			DrawSetText($2C142D, fUI, fa_right, fa_top);
+			break;
 	}
 	draw_sprite_stretched(sCoinStatic, global.color, 270, 4, 16, 16);
 	draw_text_transformed(RES_W-2,5,"*" + string(global.coins), coinTextScale, coinTextScale,0);
@@ -37,6 +40,10 @@ if(room != MainMenu && room != rLevelSelect && room != rThanks)
 		case 2:
 			DrawSetText($00002B, fUI, fa_right, fa_top);
 			break;
+		case 3:
+			DrawSetText($2C142D, fUI, fa_right, fa_top);
+			break;
+			
 	}
 	draw_sprite_stretched(sGearSmall, global.color, 271, 20, 16, 16);
 	draw_text_transformed(RES_W-2,21,"*" + string(global.gearTotal), collectableTextScale, collectableTextScale,0);
@@ -82,6 +89,9 @@ if(room != MainMenu && room != rLevelSelect && room != rThanks)
 			break;
 		case 2:
 			DrawSetText($00002B, fUI, fa_center, fa_top);
+			break;
+		case 3:
+			DrawSetText($2C142D, fUI, fa_center, fa_top);
 			break;
 	}
 	
