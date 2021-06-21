@@ -70,6 +70,6 @@ paletteTextScale = 1;
 collectableTextScale = 1;
 timeScaleSet = false;
 
-global.color_limit = 3; //limit scrollover
+global.color_limit = 4; //limit scrollover
 
-global.color_count = 3;
+global.color_count = 4;

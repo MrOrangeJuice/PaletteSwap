@@ -59,15 +59,20 @@ prevMousePos = device_mouse_x_to_gui(0);
 layer_set_visible("GreenTiles", false);	
 layer_set_visible("GreenBackground", false);
 layer_set_visible("GreenClouds", false);
-if (global.color_limit > 0){
+if (global.color_limit > 1){
 layer_set_visible("BlueTiles", false);	
 layer_set_visible("BlueBackground", false);
 layer_set_visible("BlueClouds", false);
 }
-if (global.color_limit > 1){
+if (global.color_limit > 2){
 layer_set_visible("RedTiles", false);	
 layer_set_visible("RedBackground", false);
 layer_set_visible("RedClouds", false);
+}
+if (global.color_limit > 3){
+layer_set_visible("PurpleTiles", false);	
+layer_set_visible("PurpleBackground", false);
+layer_set_visible("PurpleClouds", false);
 }
 cursor_sprite = sCursorNone;
 	
@@ -99,6 +104,15 @@ switch (global.color) {
 		layer_set_visible("RedTiles", true);	
 		layer_set_visible("RedBackground", true);
 		layer_set_visible("RedClouds", true);
+	break;
+	case 3:
+		if(global.mouse)
+		{
+		cursor_sprite = sCursorPurple;
+		}
+		layer_set_visible("PurpleTiles", true);	
+		layer_set_visible("PurpleBackground", true);
+		layer_set_visible("PurpleClouds", true);
 	break;
 }
 /*
