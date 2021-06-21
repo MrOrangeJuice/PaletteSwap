@@ -20,6 +20,9 @@ else if(global.color == 1){
 else if(global.color == 2){
 	draw_set_color($00002B);
 }
+else if(global.color == 3){
+	draw_set_color($2C142D);
+}
 var print = string_copy(curResponse, 1, textProgress);
 draw_text_transformed((x1+x2)/2, y1+9.25, print, 1.25, 1.25, 0);
 // Draw main text
@@ -32,5 +35,8 @@ else if(global.color == 1){
 }
 else if(global.color == 2){
 	draw_set_color($00189F);
+}
+else if(global.color == 3){
+	draw_set_color($B8208E);
 }
 draw_text_transformed((x1+x2)/2, y1+8, print, 1.25, 1.25, 0);
