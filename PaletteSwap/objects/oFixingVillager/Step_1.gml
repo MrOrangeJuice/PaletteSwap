@@ -7,24 +7,19 @@ if (!fixing){
 	hsp = sign(door.x - x);
 	image_xscale = sign(x - door.x);
 
-	//horizontal
+	//jump
 	if (place_meeting(x+ (hsp * 8),y,oWall) && vsp == 0)
 	{
 		vsp -= 6;
 	}
-	//jump
-	else if (place_meeting(x+hsp,y,oWall))
-	{
-		while (!place_meeting(x+sign(hsp),y,oWall))
-		{
-			x = x + sign(hsp);
-		}
-		hsp = 0;
-	}
 	
 	//move
-	x += hsp;
 	vsp += grv;
+	
+	if (!place_meeting(x+hsp,y,oWall))
+	{
+		x += hsp;
+	}
 
 	// Vertical Collision
 	if (place_meeting(x,y+vsp,oWall))
