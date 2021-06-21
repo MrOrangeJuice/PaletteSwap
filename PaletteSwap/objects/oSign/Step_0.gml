@@ -2,6 +2,7 @@
 
 // Get input
 key_enter = keyboard_check_pressed(ord("X"));
+key_space = keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("P"));
 
 if (key_enter)
 {
@@ -14,6 +15,12 @@ if (gamepad_button_check_pressed(0,gp_face4) || gamepad_button_check_pressed(4,g
 	global.controller = 1;
 }
 
+if (gamepad_button_check(0,gp_face1) || gamepad_button_check(4,gp_face1))
+{
+	key_space = 1;
+	global.controller = 1;
+}
+
 if(place_meeting(x, y, oPlayer))
 {
 	if(!createdPrompt)
@@ -21,10 +28,11 @@ if(place_meeting(x, y, oPlayer))
 		prompt = instance_create_layer(x,y-24,"Coins",oNPCPrompt);
 		createdPrompt = true;
 	}
-	if(key_enter)
+	if(key_enter && !createdText)
 	{
 		audio_play_sound(snd_Interact, 5, false);
 		text = instance_create_layer(x,y,"FX",oText);	
+		createdText = true;
 		text.textMessage = signMessage;
 	}
 }
