@@ -3,6 +3,8 @@
 function Load(){
 	ini_open("savedata.ini");
 	global.tutorialCompleted = ini_read_real("savegame", "tutorialCompleted", 0);
+	global.templeCompleted = ini_read_real("savegame", "templeCompleted", 0);
+	global.tutorialCompleted = ini_read_real("savegame", "seasideCompleted", 0);
 	global.templeGearArray[0] = ini_read_real("savegame", "templeGear1", 0);
 	global.templeGearArray[1] = ini_read_real("savegame", "templeGear2", 0);
 	global.templeGearArray[2] = ini_read_real("savegame", "templeGear3", 0);
@@ -13,5 +15,6 @@ function Load(){
 	global.seasideGearArray[2] = ini_read_real("savegame", "seasideGear3", 0);
 	global.seasideGearArray[3] = ini_read_real("savegame", "seasideGear4", 0);
 	global.gearTotal = ini_read_real("savegame", "totalGears", 0);
+	global.coins = ini_read_real("savegame", "totalCoins", 0);
 	ini_close();
 }

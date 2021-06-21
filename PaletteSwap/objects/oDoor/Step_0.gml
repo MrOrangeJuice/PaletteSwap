@@ -30,14 +30,12 @@ if(place_meeting(x, y, oPlayer) && oPortal.visible)
 		if(room == rPaletteTemple)
 		{
 			global.tutorialCompleted = true;
-			audio_stop_sound(msc_Level);
-		}
-		if(room == rPaletteTemple)
-		{
+			global.templeCompleted = true;
 			audio_stop_sound(msc_Level);
 		}
 		if(room == rAlexLevel)
 		{
+			global.seasideCompleted = true;
 			audio_stop_sound(msc_Seaside);
 		}
 		Save();

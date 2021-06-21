@@ -15,25 +15,27 @@ global.textSpeed = .75;
 global.textUp = false;
 global.lastAxislv4Value = 0;
 global.lastAxislv0Value = 0;
-global.coinId = 0;
-global.coinArrX = ds_list_create();
-global.coinArrY = ds_list_create();
+//global.coinId = 0;
+//global.coinArrX = ds_list_create();
+//global.coinArrY = ds_list_create();
 global.lastCheckpointX = 0;
 global.lastCheckpointY = 0;
-global.coinsDestroyed = false;
+//global.coinsDestroyed = false;
 global.loadCoinsX = ds_list_create();
 global.loadCoinsY = ds_list_create();
 global.loadX = 0;
 global.loadY = 0;
 global.loadHp = 100;
-global.loadCoins = 0;
+//global.loadCoins = 0;
 global.loadTime = 0;
 global.loaded = false;
-global.coinId = 0;
+//global.coinId = 0;
 global.canControlTimer = -1;
 
 // Player data
 global.tutorialCompleted = false;
+global.templeCompleted = false;
+global.seasideCompleted = false;
 
 // Options
 global.fullscreen = false;
