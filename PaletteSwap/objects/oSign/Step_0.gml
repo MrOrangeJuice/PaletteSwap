@@ -4,7 +4,7 @@
 key_enter = keyboard_check_pressed(ord("X"));
 key_space = keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("P"));
 
-if (key_enter)
+if (key_enter || key_space)
 {
 	global.controller = 0;
 }
@@ -43,6 +43,11 @@ else
 		instance_destroy(prompt);
 		createdPrompt = false;
 	}
+}
+
+if(key_space)
+{
+	createdText = false;
 }
 
 
