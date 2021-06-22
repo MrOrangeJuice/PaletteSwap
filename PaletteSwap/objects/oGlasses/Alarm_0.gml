@@ -1,3 +1,2 @@
-/// @description Reset Room
-
-SlideTransition(TRANS_MODE.GOTO,room);
+/// @description Destroy
+instance_destroy();

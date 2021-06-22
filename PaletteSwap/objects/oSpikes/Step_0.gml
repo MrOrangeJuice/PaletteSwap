@@ -1,5 +1,6 @@
 /// @description Swap Palette
 //update frame
+playerRef = instance_find(oPlayer, 0);
 if (spikeReady && global.color = 1){
 	if (place_meeting(x, playerRef.y, playerRef) && playerRef.y >= y && playerRef.y - y < 160){
 		spikeReady = false;
