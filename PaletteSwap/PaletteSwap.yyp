@@ -145,6 +145,7 @@
     {"id":{"name":"sFernSwimUp","path":"sprites/sFernSwimUp/sFernSwimUp.yy",},"order":15,},
     {"id":{"name":"sCheckpoint2","path":"sprites/sCheckpoint2/sCheckpoint2.yy",},"order":11,},
     {"id":{"name":"sFernJumpDown","path":"sprites/sFernJumpDown/sFernJumpDown.yy",},"order":2,},
+    {"id":{"name":"CalculateCollisionOverlap","path":"scripts/CalculateCollisionOverlap/CalculateCollisionOverlap.yy",},"order":12,},
     {"id":{"name":"sDoorPromptNew","path":"sprites/sDoorPromptNew/sDoorPromptNew.yy",},"order":11,},
     {"id":{"name":"sFlyingSpawn","path":"sprites/sFlyingSpawn/sFlyingSpawn.yy",},"order":1,},
     {"id":{"name":"snd_Pause2","path":"sounds/snd_Pause2/snd_Pause2.yy",},"order":14,},
