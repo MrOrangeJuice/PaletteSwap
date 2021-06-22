@@ -6,6 +6,7 @@
     {"id":{"name":"oGroundEnemy","path":"objects/oGroundEnemy/oGroundEnemy.yy",},"order":3,},
     {"id":{"name":"sShipDamaged","path":"sprites/sShipDamaged/sShipDamaged.yy",},"order":8,},
     {"id":{"name":"sFernDeath","path":"sprites/sFernDeath/sFernDeath.yy",},"order":12,},
+    {"id":{"name":"sCartridge","path":"sprites/sCartridge/sCartridge.yy",},"order":7,},
     {"id":{"name":"sGround","path":"sprites/sGround/sGround.yy",},"order":11,},
     {"id":{"name":"oDashFX","path":"objects/oDashFX/oDashFX.yy",},"order":60,},
     {"id":{"name":"sSeasideBlue","path":"sprites/sSeasideBlue/sSeasideBlue.yy",},"order":1,},
