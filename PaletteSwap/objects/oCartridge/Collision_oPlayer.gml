@@ -2,6 +2,7 @@
 // You can write your code in this editor
 visible = false;
 global.allPalettesUnlocked = true;
+global.color_limit = 4;
 if(!createdText)
 {
 	createdText = true;

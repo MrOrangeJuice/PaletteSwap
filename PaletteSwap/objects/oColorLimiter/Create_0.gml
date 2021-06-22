@@ -11,6 +11,17 @@ if(room == rHub)
 		global.color_limit = 2;	
 	}
 }
+if(room == rSecret)
+{
+	if(global.allPalettesUnlocked)
+	{
+		global.color_limit = 4;	
+	}
+	else
+	{
+		global.color_limit = 2;	
+	}
+}
 else
 {
 	global.color_limit = localLimit;

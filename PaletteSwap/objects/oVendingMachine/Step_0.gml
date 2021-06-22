@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 // Get input
-key_enter = keyboard_check(ord("X"));
+key_enter = keyboard_check_pressed(ord("X"));
 
 if (key_enter)
 {
