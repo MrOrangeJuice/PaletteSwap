@@ -223,7 +223,7 @@ else{
 		//apply gravity if dashing in air
 		if (jumped){
 			vsp += grv;
-			if (swimming && vsp > 0) vsp = 0;
+			if (vsp > 0) vsp = 0;
 		}
 		y = y + vsp;
 	}
