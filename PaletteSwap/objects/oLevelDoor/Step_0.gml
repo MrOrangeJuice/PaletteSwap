@@ -56,6 +56,7 @@ if(global.gearTotal >= gearRequirement)
 	{
 		audio_play_sound(snd_PortalEnter,5,false);
 		global.color = 0;
+		Save();
 		switch(levelTo)
 		{
 			case "MainMenu":

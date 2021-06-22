@@ -78,7 +78,7 @@ if(key_select == 1){
 				//global.color_limit = 1;
 				// Load in data
 				Load();
-				if(global.tutorialCompleted)
+				if(global.templeCompleted)
 				{
 					SlideTransition(TRANS_MODE.GOTO, rHub);
 				}

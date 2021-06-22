@@ -29,7 +29,6 @@ if(place_meeting(x, y, oPlayer) && oPortal.visible)
 		audio_play_sound(snd_PortalEnter,5,false);
 		if(room == rPaletteTemple)
 		{
-			global.tutorialCompleted = true;
 			global.templeCompleted = true;
 			audio_stop_sound(msc_Level);
 		}
