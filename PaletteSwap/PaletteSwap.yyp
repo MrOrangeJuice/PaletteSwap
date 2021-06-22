@@ -239,6 +239,7 @@
     {"id":{"name":"sIcicle","path":"sprites/sIcicle/sIcicle.yy",},"order":2,},
     {"id":{"name":"snd_Interact","path":"sounds/snd_Interact/snd_Interact.yy",},"order":28,},
     {"id":{"name":"sGearSmallBlacked","path":"sprites/sGearSmallBlacked/sGearSmallBlacked.yy",},"order":3,},
+    {"id":{"name":"oBoxMoveTrigger","path":"objects/oBoxMoveTrigger/oBoxMoveTrigger.yy",},"order":73,},
     {"id":{"name":"sBeegFernGreen","path":"sprites/sBeegFernGreen/sBeegFernGreen.yy",},"order":19,},
     {"id":{"name":"snd_Explosion","path":"sounds/snd_Explosion/snd_Explosion.yy",},"order":20,},
     {"id":{"name":"sTest1","path":"sprites/sTest1/sTest1.yy",},"order":4,},
