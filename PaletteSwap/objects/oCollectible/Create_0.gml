@@ -1,7 +1,7 @@
 /// @description Initialize variables
 currentframe = 0;
 collected = false;
-if(room == NoveauPaletteTemple || room == rPaletteTemple)
+if(room == rPaletteTemple)
 {
 	if(global.templeGearArray[gid])
 	{

@@ -11,7 +11,7 @@ else
 {
 	global.gearTotal++;
 	with (oGame) collectableTextScale = 1.2;
-	if(room == NoveauPaletteTemple || room == rPaletteTemple)
+	if(room == rPaletteTemple)
 	{
 		global.templeGearArray[other.gid] = true;
 	}
