@@ -2,10 +2,17 @@
 // You can write your code in this editor
 draw_self();
 
-draw_sprite(sVendingPrice,global.color,x,y+16);
+if(global.vendingGearsCollected < global.vendingGears)
+{
+	draw_sprite(sVendingPrice,global.color,x,y+16);
+}
+else
+{
+	draw_sprite(sVendingOut,global.color,x,y+16);
+}
 
 // Draw Prompt
-if(global.coins >= 200)
+if(global.coins >= 200 && global.vendingGearsCollected < global.vendingGears)
 {
 	if (global.controller)
 	{
