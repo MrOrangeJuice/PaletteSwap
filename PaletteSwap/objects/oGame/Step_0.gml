@@ -59,21 +59,21 @@ prevMousePos = device_mouse_x_to_gui(0);
 layer_set_visible("GreenTiles", false);	
 layer_set_visible("GreenBackground", false);
 layer_set_visible("GreenClouds", false);
-if (global.color_limit > 1){
+//if (global.color_limit > 1){
 layer_set_visible("BlueTiles", false);	
 layer_set_visible("BlueBackground", false);
 layer_set_visible("BlueClouds", false);
-}
-if (global.color_limit > 2){
+//}
+//if (global.color_limit > 2){
 layer_set_visible("RedTiles", false);	
 layer_set_visible("RedBackground", false);
 layer_set_visible("RedClouds", false);
-}
-if (global.color_limit > 3){
+//}
+//if (global.color_limit > 3){
 layer_set_visible("PurpleTiles", false);	
 layer_set_visible("PurpleBackground", false);
 layer_set_visible("PurpleClouds", false);
-}
+//}
 cursor_sprite = sCursorNone;
 	
 //set tile layers and cursor
