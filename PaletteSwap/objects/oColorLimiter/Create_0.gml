@@ -11,7 +11,7 @@ if(room == rHub)
 		global.color_limit = 2;	
 	}
 }
-if(room == rSecret)
+else if(room == rSecret)
 {
 	if(global.allPalettesUnlocked)
 	{
