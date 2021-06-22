@@ -141,16 +141,22 @@ else{
 			{
 				wallY = wallY + sign(vsp);
 			}
-			instance_create_layer(x, y+vsp,"Coins",oDashFX);
+			instance_create_layer(x, y+wallY,"Coins",oDashFX);
 			//collide with wall
 			DoDashCollision(oWall, -11, 0, true);
 		}
 		if (place_meeting(x,y+vsp,oPaletteWall))
 		{
+			wallY = 0;
+			while (!place_meeting(x,y+wallY,oPaletteWall))
+			{
+				wallY = wallY + sign(vsp);
+			}
 			switch (global.color)
 			{
 			case 0:
 			//if green collide with wall
+				instance_create_layer(x, y+wallY,"Coins",oDashFX);
 				DoDashCollision(oPaletteWall, -11, 0, true);
 				swimming = false;
 			break;
@@ -161,11 +167,13 @@ else{
 			break;
 			case 2:
 			//todo red
+				instance_create_layer(x, y+wallY,"Coins",oDashFX);
 				DoDashCollision(oPaletteWall, -11, 0, true);
 				swimming = false;
 			break;
 			case 3:
 			//todo red
+				instance_create_layer(x, y+wallY,"Coins",oDashFX);
 				DoDashCollision(oPaletteWall, -11, 0, true);
 				swimming = false;
 			break;
@@ -183,15 +191,22 @@ else{
 			{
 				wallX = wallX + sign(hsp);
 			}
-			FX = instance_create_layer(x+wallX, y,"Coins",oDashFX);
+			FX = instance_create_layer(x+wallX-hsp, y,"Coins",oDashFX);
 			FX.image_angle = sign(hsp) * 90;
 			DoDashCollision(oWall, -7, sign(hsp) * -6, false);
 		}
 		//palette block
 		if (place_meeting(x+hsp,y,oPaletteWall))
 		{
+			wallX = 0;
+			while (!place_meeting(x+wallX,y,oPaletteWall))
+			{
+				wallX = wallX + sign(hsp);
+			}
 			switch (global.color){
 			case 0:
+				FX = instance_create_layer(x+wallX-hsp, y,"Coins",oDashFX);
+				FX.image_angle = sign(hsp) * 90;
 				DoDashCollision(oPaletteWall, -7, sign(hsp) * -6, false);
 				swimming = false;
 			break;
@@ -200,10 +215,14 @@ else{
 				swimming = true;
 			break;
 			case 2:
+				FX = instance_create_layer(x+wallX-hsp, y,"Coins",oDashFX);
+				FX.image_angle = sign(hsp) * 90;
 				DoDashCollision(oPaletteWall, -7, sign(hsp) * -6, false);
 				swimming = false;
 			break;
 			case 3:
+				FX = instance_create_layer(x+wallX-hsp, y,"Coins",oDashFX);
+				FX.image_angle = sign(hsp) * 90;
 				DoDashCollision(oPaletteWall, -7, sign(hsp) * -6, false);
 				swimming = false;
 			break;
