@@ -410,12 +410,17 @@ if (key_swap_down && !swimming && room != rTutorial){
 	alarm[2] = room_speed * 0.2;
 }
 if(global.hp <= 0){
+	instance_create_layer(x,y,"Player",oPlayerDeath);
+	instance_create_layer(x,y,"Player",oGlasses);
+	instance_destroy();
+	/*
 	global.hp = 100;
 	global.canControlTimer = 60;
 	oPlayer.vsp = 0;
 	oPlayer.hsp = 0;
 	x = global.lastCheckpointX;
 	y = global.lastCheckpointY;
+	*/
 }
 }
 //update frame
