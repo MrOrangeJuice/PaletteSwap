@@ -141,7 +141,7 @@ else{
 			{
 				wallY = wallY + sign(vsp);
 			}
-			instance_create_layer(x, y+vsp,"Coins",oDashFX);
+			instance_create_layer(x, y+wallY,"Coins",oDashFX);
 			//collide with wall
 			DoDashCollision(oWall, -11, 0, true);
 		}
@@ -183,7 +183,7 @@ else{
 			{
 				wallX = wallX + sign(hsp);
 			}
-			FX = instance_create_layer(x+wallX, y,"Coins",oDashFX);
+			FX = instance_create_layer(x+wallX-hsp, y,"Coins",oDashFX);
 			FX.image_angle = sign(hsp) * 90;
 			DoDashCollision(oWall, -7, sign(hsp) * -6, false);
 		}
@@ -192,6 +192,8 @@ else{
 		{
 			switch (global.color){
 			case 0:
+				FX = instance_create_layer(x+wallX-hsp, y,"Coins",oDashFX);
+				FX.image_angle = sign(hsp) * 90;
 				DoDashCollision(oPaletteWall, -7, sign(hsp) * -6, false);
 				swimming = false;
 			break;
@@ -200,10 +202,14 @@ else{
 				swimming = true;
 			break;
 			case 2:
+				FX = instance_create_layer(x+wallX-hsp, y,"Coins",oDashFX);
+				FX.image_angle = sign(hsp) * 90;
 				DoDashCollision(oPaletteWall, -7, sign(hsp) * -6, false);
 				swimming = false;
 			break;
 			case 3:
+				FX = instance_create_layer(x+wallX-hsp, y,"Coins",oDashFX);
+				FX.image_angle = sign(hsp) * 90;
 				DoDashCollision(oPaletteWall, -7, sign(hsp) * -6, false);
 				swimming = false;
 			break;
@@ -213,10 +219,12 @@ else{
 		// Vertical Collision
 		if (place_meeting(x,y+vsp,oWall))
 		{
+			instance_create_layer(x, y+wallY,"Coins",oDashFX);
 			DoCollision(oWall, true);
 		}
 		if (place_meeting(x,y+vsp,oPaletteWall) && !swimming && global.color != 1)
 		{
+			instance_create_layer(x, y+wallY,"Coins",oDashFX);
 			DoCollision(oPaletteWall, true);
 		}
 		x = x + hsp;
