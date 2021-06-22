@@ -133,6 +133,7 @@ if(!isDashing){
 }
 else{
 	if(dashdown){
+		//this is temp
 		// Handle Vertical Collision Normally
 		if (place_meeting(x,y+vsp,oWall))
 		{
