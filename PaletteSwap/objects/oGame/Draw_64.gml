@@ -24,8 +24,8 @@ if(room != MainMenu && room != rLevelSelect && room != rThanks)
 			DrawSetText($2C142D, fUI, fa_right, fa_top);
 			break;
 	}
-	draw_sprite_stretched(sCoinStatic, global.color, 270, 4, 16, 16);
-	draw_text_transformed(RES_W-2,5,"*" + string(global.coins), coinTextScale, coinTextScale,0);
+	draw_sprite_stretched(sCoinStatic, global.color, 268, 4, 16, 16);
+	draw_text_transformed(RES_W-2,7,"*" + string(global.coins), coinTextScale, coinTextScale,0);
 	
 	// Draw Collectable Count
 	collectableTextScale = max(collectableTextScale * 0.95, 1);
@@ -45,8 +45,8 @@ if(room != MainMenu && room != rLevelSelect && room != rThanks)
 			break;
 			
 	}
-	draw_sprite_stretched(sGearSmall, global.color, 271, 20, 16, 16);
-	draw_text_transformed(RES_W-2,21,"*" + string(global.gearTotal), collectableTextScale, collectableTextScale,0);
+	draw_sprite_stretched(sGearSmall, global.color, 269, 20, 16, 16);
+	draw_text_transformed(RES_W-2,22,"*" + string(global.gearTotal), collectableTextScale, collectableTextScale,0);
 
 	// Draw Time
 	/*
