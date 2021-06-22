@@ -5,7 +5,7 @@ if(collidingSpikes != noone){
 	if(!spikeImmune){
 		spikeImmune = true;
 			if (isInvulnerable == false) {
-				global.hp -= 10;
+				global.hp -= 15;
 				isInvulnerable = true;
 				InitiateKnockback(oPlayer, image_xscale * -6, -7);
 				global.knockedBack = true;
