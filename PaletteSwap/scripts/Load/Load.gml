@@ -5,6 +5,7 @@ function Load(){
 	global.tutorialCompleted = ini_read_real("savegame", "tutorialCompleted", 0);
 	global.templeCompleted = ini_read_real("savegame", "templeCompleted", 0);
 	global.seasideCompleted = ini_read_real("savegame", "seasideCompleted", 0);
+	global.allPalettesUnlocked = ini_read_real("savegame", "allPalettes", 0);
 	global.templeGearArray[0] = ini_read_real("savegame", "templeGear1", 0);
 	global.templeGearArray[1] = ini_read_real("savegame", "templeGear2", 0);
 	global.templeGearArray[2] = ini_read_real("savegame", "templeGear3", 0);

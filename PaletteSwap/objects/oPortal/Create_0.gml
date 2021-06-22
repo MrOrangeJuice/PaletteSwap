@@ -14,5 +14,9 @@ if(room == rAlexLevel)
 		visible = true;	
 	}
 }
+if(room == rSecret)
+{
+	visible = true;	
+}
 image_speed = 0;
 currentframe = 0;

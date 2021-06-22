@@ -5,6 +5,7 @@ function Save(){
 	ini_write_real("savegame", "tutorialCompleted", global.tutorialCompleted);
 	ini_write_real("savegame", "templeCompleted", global.templeCompleted);
 	ini_write_real("savegame", "seasideCompleted", global.seasideCompleted);
+	ini_write_real("savegame", "allPalettes", global.allPalettesUnlocked);
 	ini_write_real("savegame", "templeGear1", global.templeGearArray[0]);
 	ini_write_real("savegame", "templeGear2", global.templeGearArray[1]);
 	ini_write_real("savegame", "templeGear3", global.templeGearArray[2]);

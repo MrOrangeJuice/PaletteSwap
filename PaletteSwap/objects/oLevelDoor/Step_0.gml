@@ -33,6 +33,15 @@ if(place_meeting(x, y, oPlayer))
 			case "rAlexLevel":
 				info.levelName = "Seaside Glide";
 				break;
+			case "rSecret":
+			if(!global.allPalettesUnlocked)
+			{
+				info.levelName = "???";
+			}
+			else
+			{
+				info.levelName = "Secret Room";	
+			}
 		}
 		info.levelRequirement = gearRequirement;
 		createdInfo = true;
@@ -73,9 +82,9 @@ if(global.gearTotal >= gearRequirement)
 				audio_stop_sound(msc_Level);
 				SlideTransition(TRANS_MODE.GOTO, rAlexLevel);	
 				break;
-			default:
-				SlideTransition(TRANS_MODE.GOTO, rHub);
-				break;
+			case "rSecret":
+				audio_stop_sound(msc_Hub);
+				SlideTransition(TRANS_MODE.GOTO, rSecret);	
 		}
 	}
 }

@@ -46,6 +46,7 @@ global.seasideGears = 4;
 global.vendingGears = 3;
 global.vendingGearsCollected = 0;
 global.gearTotal = 0;
+global.allPalettesUnlocked = false;
 
 global.templeGearArray = array_create(global.templeGears);
 for(i = 0; i < global.templeGears; i++)
