@@ -14,6 +14,7 @@ function Save(){
 	ini_write_real("savegame", "seasideGear2", global.seasideGearArray[1]);
 	ini_write_real("savegame", "seasideGear3", global.seasideGearArray[2]);
 	ini_write_real("savegame", "seasideGear4", global.seasideGearArray[3]);
+	ini_write_real("savegame", "totalVending", global.vendingGearsCollected);
 	ini_write_real("savegame", "totalGears", global.gearTotal);
 	ini_write_real("savegame", "totalCoins", global.coins);
 	ini_close();

@@ -43,6 +43,8 @@ global.colorblind = false;
 
 global.templeGears = 5;
 global.seasideGears = 4;
+global.vendingGears = 3;
+global.vendingGearsCollected = 0;
 global.gearTotal = 0;
 
 global.templeGearArray = array_create(global.templeGears);
