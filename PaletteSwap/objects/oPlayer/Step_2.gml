@@ -83,6 +83,21 @@ if(!isDashing){
 				break;
 		}
 	}
+		//reset red palette speed if not holding down a button
+		if (!(key_left && hsp < 0) && !(key_right && hsp > 0)){
+			walksp = 4.5;
+		}
+		//speed decay
+		else if (walksp > 4.5 && global.color == 2){
+			walksp -= 0.02;
+		}
+		else if (walksp > 4.5){
+			walksp -= 0.1
+		}
+		else if (walksp < 4.5){
+			walksp = 4.5;
+		}
+	
 	x = x + hsp;
 
 	// Vertical Collision
@@ -118,6 +133,7 @@ if(!isDashing){
 			//collide and not swimming
 				DoCollision(oPaletteWall, true);
 				swimming = false;
+				if (vsp >= 0) walksp = 9;
 			break;
 			case 3:
 			//collide and not swimming
