@@ -39,6 +39,7 @@
     {"id":{"name":"oRoll","path":"objects/oRoll/oRoll.yy",},"order":5,},
     {"id":{"name":"oCheckpoint","path":"objects/oCheckpoint/oCheckpoint.yy",},"order":21,},
     {"id":{"name":"sTest3","path":"sprites/sTest3/sTest3.yy",},"order":6,},
+    {"id":{"name":"sThumbnailNew","path":"sprites/sThumbnailNew/sThumbnailNew.yy",},"order":35,},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"order":3,},
     {"id":{"name":"oTutorialNoSwap","path":"objects/oTutorialNoSwap/oTutorialNoSwap.yy",},"order":15,},
     {"id":{"name":"tTemple","path":"tilesets/tTemple/tTemple.yy",},"order":2,},

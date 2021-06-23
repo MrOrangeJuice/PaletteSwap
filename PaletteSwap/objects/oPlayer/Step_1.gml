@@ -416,7 +416,8 @@ if (key_swap_down && !swimming && room != rTutorial){
 	alarm[2] = room_speed * 0.2;
 }
 if(global.hp <= 0){
-	instance_create_layer(x,y,"Player",oPlayerDeath);
+	death = instance_create_layer(x,y,"Player",oPlayerDeath);
+	death.villager = villager;
 	instance_create_layer(x,y,"Player",oGlasses);
 	instance_destroy();
 	/*
