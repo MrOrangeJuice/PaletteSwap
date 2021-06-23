@@ -87,6 +87,7 @@
     {"id":{"name":"sShip","path":"sprites/sShip/sShip.yy",},"order":7,},
     {"id":{"name":"DoCollision","path":"scripts/DoCollision/DoCollision.yy",},"order":7,},
     {"id":{"name":"fUISmall","path":"fonts/fUISmall/fUISmall.yy",},"order":2,},
+    {"id":{"name":"sVillagerBlack","path":"sprites/sVillagerBlack/sVillagerBlack.yy",},"order":5,},
     {"id":{"name":"SwapSprite","path":"scripts/SwapSprite/SwapSprite.yy",},"order":4,},
     {"id":{"name":"sBGSeasideBlueClouds","path":"sprites/sBGSeasideBlueClouds/sBGSeasideBlueClouds.yy",},"order":5,},
     {"id":{"name":"sBlownAir2","path":"sprites/sBlownAir2/sBlownAir2.yy",},"order":3,},
