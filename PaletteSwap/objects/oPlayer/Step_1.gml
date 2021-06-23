@@ -100,6 +100,12 @@ if (jumpBuffer > 0) && (key_jump) && (canJump)
 		currentwalksp += image_xscale * thsp;
 		isRolling = false;
 	}
+	if (swimming)
+	{
+		swimup = true;
+		alarm[3] = room_speed / 3;
+		image_index = global.color * (sprite_get_number(sprite_index) / global.color_count);
+	}
 	if(global.canControlTimer < 0) vsp = -10;
 	audio_play_sound(snd_Jump, 5, false);
 	canJump = false;
@@ -312,13 +318,13 @@ else if(isDashing)
 }
 else if(swimming)
 {
-	if(vsp >= 0)
+	if(!swimup)
 	{
 		SwapSprite(sFernSwimNew);	
 	}
 	else
 	{
-		SwapSprite(sFernSwimUp);	
+		SwapSprite(sFernSwimUpNew);	
 	}
 }
 else
