@@ -9,6 +9,7 @@ dashtime = room_speed * 0.3;
 dashdown = false;
 dashleft = false;
 dashright = false;
+swimup = false;
 currentwalksp = 0;
 airborne = false;
 canDash = true;
