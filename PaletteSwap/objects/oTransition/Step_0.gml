@@ -41,8 +41,10 @@ if (mode != TRANS_MODE.OFF)
 	}
 }
 
+/*
 // Check for gamepad restart
 if (keyboard_check_pressed(ord("R")) || gamepad_button_check_pressed(0,gp_select) || gamepad_button_check_pressed(4,gp_select)) {
 	SlideTransition(TRANS_MODE.RESTART);
 	audio_play_sound(snd_Reset, 5, false);
 }
+*/
