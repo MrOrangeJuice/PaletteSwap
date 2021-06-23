@@ -324,7 +324,7 @@ else if(swimming)
 	}
 	else
 	{
-		SwapSprite(sFernSwimUp);	
+		SwapSprite(sFernSwimUpNew);	
 	}
 }
 else
