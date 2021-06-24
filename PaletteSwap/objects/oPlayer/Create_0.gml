@@ -46,3 +46,7 @@ controller = 0;
 global.controller = 0;
 
 currentframe = 0;
+
+//fix crash on death >:(
+key_left = 0;
+key_right = 0;
