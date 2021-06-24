@@ -26,20 +26,6 @@ if (!bottomWall && !bottomPalette)
 }
 else if ((swimming && vsp >= 0) || !swimming){
 	airborne = false;
-	/*
-	if(collidingSpikes == noone){
-	if(bottomWall){
-		inst = instance_place(x, y+1, oWall);
-		lastGroundedPosX = inst.x;
-		lastGroundedPosY = inst.y - 24;
-	}
-	else{
-		inst = instance_place(x, y+1, oPaletteWall);
-		lastGroundedPosX = inst.x;
-		lastGroundedPosY = inst.y - 24;
-	}
-	}
-	*/
 	// Reset jump buffer
 	jumpBuffer = 5;
 	if (!isDashing)	{
@@ -83,6 +69,21 @@ if(!isDashing){
 				break;
 		}
 	}
+		//reset red palette speed if not holding down a button
+		if (!(key_left && hsp < 0) && !(key_right && hsp > 0)){
+			walksp = 4.5;
+		}
+		//speed decay
+		else if (walksp > 4.5 && global.color == 2){
+			walksp -= 0.02;
+		}
+		else if (walksp > 4.5){
+			walksp -= 0.07
+		}
+		else if (walksp < 4.5){
+			walksp = 4.5;
+		}
+	
 	x = x + hsp;
 
 	// Vertical Collision
@@ -118,6 +119,7 @@ if(!isDashing){
 			//collide and not swimming
 				DoCollision(oPaletteWall, true);
 				swimming = false;
+				if (bottomPalette) walksp = 9;
 			break;
 			case 3:
 			//collide and not swimming
