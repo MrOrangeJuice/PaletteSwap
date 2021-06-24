@@ -279,6 +279,7 @@
     {"id":{"name":"sBeegFernPurple","path":"sprites/sBeegFernPurple/sBeegFernPurple.yy",},"order":22,},
     {"id":{"name":"oLevelSelect","path":"objects/oLevelSelect/oLevelSelect.yy",},"order":40,},
     {"id":{"name":"oPaletteWall","path":"objects/oPaletteWall/oPaletteWall.yy",},"order":17,},
+    {"id":{"name":"sCursorBig","path":"sprites/sCursorBig/sCursorBig.yy",},"order":20,},
     {"id":{"name":"oPlayerDeath","path":"objects/oPlayerDeath/oPlayerDeath.yy",},"order":72,},
     {"id":{"name":"sEddyCutsceneEnd","path":"sprites/sEddyCutsceneEnd/sEddyCutsceneEnd.yy",},"order":2,},
     {"id":{"name":"oVendingInfo","path":"objects/oVendingInfo/oVendingInfo.yy",},"order":65,},
