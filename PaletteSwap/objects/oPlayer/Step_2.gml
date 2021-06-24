@@ -78,7 +78,7 @@ if(!isDashing){
 			walksp -= 0.02;
 		}
 		else if (walksp > 4.5){
-			walksp -= 0.1
+			walksp -= 0.07
 		}
 		else if (walksp < 4.5){
 			walksp = 4.5;
@@ -119,7 +119,7 @@ if(!isDashing){
 			//collide and not swimming
 				DoCollision(oPaletteWall, true);
 				swimming = false;
-				if (vsp >= 0) walksp = 9;
+				if (bottomPalette) walksp = 9;
 			break;
 			case 3:
 			//collide and not swimming
