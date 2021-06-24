@@ -26,20 +26,6 @@ if (!bottomWall && !bottomPalette)
 }
 else if ((swimming && vsp >= 0) || !swimming){
 	airborne = false;
-	/*
-	if(collidingSpikes == noone){
-	if(bottomWall){
-		inst = instance_place(x, y+1, oWall);
-		lastGroundedPosX = inst.x;
-		lastGroundedPosY = inst.y - 24;
-	}
-	else{
-		inst = instance_place(x, y+1, oPaletteWall);
-		lastGroundedPosX = inst.x;
-		lastGroundedPosY = inst.y - 24;
-	}
-	}
-	*/
 	// Reset jump buffer
 	jumpBuffer = 5;
 	if (!isDashing)	{
