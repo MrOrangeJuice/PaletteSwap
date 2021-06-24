@@ -104,7 +104,7 @@ if (jumpBuffer > 0) && (key_jump) && (canJump)
 	{
 		swimup = true;
 		alarm[3] = room_speed / 3;
-		image_index = global.color * (sprite_get_number(sprite_index) / global.color_count);
+		currentframe = 0;
 	}
 	if(global.canControlTimer < 0) vsp = -10;
 	audio_play_sound(snd_Jump, 5, false);
