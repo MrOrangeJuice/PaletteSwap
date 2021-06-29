@@ -329,6 +329,7 @@
     {"id":{"name":"snd_Reset","path":"sounds/snd_Reset/snd_Reset.yy",},"order":1,},
     {"id":{"name":"sGrass2","path":"sprites/sGrass2/sGrass2.yy",},"order":6,},
     {"id":{"name":"rAaronLevel","path":"rooms/rAaronLevel/rAaronLevel.yy",},"order":19,},
+    {"id":{"name":"rSeasideGlide","path":"rooms/rSeasideGlide/rSeasideGlide.yy",},"order":23,},
     {"id":{"name":"sCheckpoint","path":"sprites/sCheckpoint/sCheckpoint.yy",},"order":0,},
     {"id":{"name":"rThanks","path":"rooms/rThanks/rThanks.yy",},"order":20,},
     {"id":{"name":"oGlasses","path":"objects/oGlasses/oGlasses.yy",},"order":31,},
@@ -385,6 +386,7 @@
     {"roomId":{"name":"rThanks","path":"rooms/rThanks/rThanks.yy",},},
     {"roomId":{"name":"rSecret","path":"rooms/rSecret/rSecret.yy",},},
     {"roomId":{"name":"rPaletteTempleV3","path":"rooms/rPaletteTempleV3/rPaletteTempleV3.yy",},},
+    {"roomId":{"name":"rSeasideGlide","path":"rooms/rSeasideGlide/rSeasideGlide.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
