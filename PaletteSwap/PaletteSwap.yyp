@@ -222,6 +222,7 @@
     {"id":{"name":"sEddy","path":"sprites/sEddy/sEddy.yy",},"order":0,},
     {"id":{"name":"oRollSpawnNoSwap","path":"objects/oRollSpawnNoSwap/oRollSpawnNoSwap.yy",},"order":7,},
     {"id":{"name":"snd_Menu","path":"sounds/snd_Menu/snd_Menu.yy",},"order":10,},
+    {"id":{"name":"sPillar","path":"sprites/sPillar/sPillar.yy",},"order":25,},
     {"id":{"name":"Flying","path":"sprites/Flying/Flying.yy",},"order":0,},
     {"id":{"name":"sRiftNew2","path":"sprites/sRiftNew2/sRiftNew2.yy",},"order":6,},
     {"id":{"name":"sColorBlindDisplay","path":"sprites/sColorBlindDisplay/sColorBlindDisplay.yy",},"order":12,},
