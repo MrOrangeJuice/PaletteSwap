@@ -56,24 +56,30 @@ if(prevMousePos != device_mouse_x_to_gui(0))
 prevMousePos = device_mouse_x_to_gui(0);
 
 //reset tiles/ mouse
-layer_set_visible("GreenTiles", false);	
-layer_set_visible("GreenBackground", false);
-layer_set_visible("GreenClouds", false);
-//if (global.color_limit > 1){
-layer_set_visible("BlueTiles", false);	
-layer_set_visible("BlueBackground", false);
-layer_set_visible("BlueClouds", false);
-//}
-//if (global.color_limit > 2){
-layer_set_visible("RedTiles", false);	
-layer_set_visible("RedBackground", false);
-layer_set_visible("RedClouds", false);
-//}
-//if (global.color_limit > 3){
-layer_set_visible("PurpleTiles", false);	
-layer_set_visible("PurpleBackground", false);
-layer_set_visible("PurpleClouds", false);
-//}
+if (layer_exists("GreenTiles")){
+	layer_set_visible("GreenTiles", false);	
+	layer_set_visible("GreenBackground", false);
+	layer_set_visible("GreenClouds", false);
+	layer_set_visible("GreenBGTile", false);
+}
+if (layer_exists("BlueTiles")){
+	layer_set_visible("BlueTiles", false);	
+	layer_set_visible("BlueBackground", false);
+	layer_set_visible("BlueClouds", false);
+	layer_set_visible("BlueBGTile", false);
+}
+if (layer_exists("RedTiles")){
+	layer_set_visible("RedTiles", false);	
+	layer_set_visible("RedBackground", false);
+	layer_set_visible("RedClouds", false);
+	layer_set_visible("RedBGTile", false);
+}
+if (layer_exists("PurpleTiles")){
+	layer_set_visible("PurpleTiles", false);	
+	layer_set_visible("PurpleBackground", false);
+	layer_set_visible("PurpleClouds", false);
+	layer_set_visible("PurpleBGTile", false);
+}
 cursor_sprite = sCursorNone;
 	
 //set tile layers and cursor
@@ -86,6 +92,7 @@ switch (global.color) {
 		layer_set_visible("GreenTiles", true);	
 		layer_set_visible("GreenBackground", true);
 		layer_set_visible("GreenClouds", true);
+		layer_set_visible("GreenBGTile", true);
 	break;
 	case 1:
 		if(global.mouse)
@@ -95,6 +102,7 @@ switch (global.color) {
 		layer_set_visible("BlueTiles", true);	
 		layer_set_visible("BlueBackground", true);
 		layer_set_visible("BlueClouds", true);
+		layer_set_visible("BlueBGTile", true);
 	break;
 	case 2:
 		if(global.mouse)
@@ -104,6 +112,7 @@ switch (global.color) {
 		layer_set_visible("RedTiles", true);	
 		layer_set_visible("RedBackground", true);
 		layer_set_visible("RedClouds", true);
+		layer_set_visible("RedBGTile", true);
 	break;
 	case 3:
 		if(global.mouse)
@@ -113,6 +122,7 @@ switch (global.color) {
 		layer_set_visible("PurpleTiles", true);	
 		layer_set_visible("PurpleBackground", true);
 		layer_set_visible("PurpleClouds", true);
+		layer_set_visible("PurpleBGTile", true);
 	break;
 }
 /*
