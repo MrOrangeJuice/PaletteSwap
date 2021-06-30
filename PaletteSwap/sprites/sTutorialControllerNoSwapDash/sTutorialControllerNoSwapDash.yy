@@ -7,8 +7,8 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 16,
-  "bbox_right": 58,
+  "bbox_left": 69,
+  "bbox_right": 111,
   "bbox_top": 4,
   "bbox_bottom": 59,
   "HTile": false,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"fa54b748-6a45-40ad-9955-0386dbe47c07","path":"sprites/sTutorialControllerNoSwap/sTutorialControllerNoSwap.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fa54b748-6a45-40ad-9955-0386dbe47c07","path":"sprites/sTutorialControllerNoSwap/sTutorialControllerNoSwap.yy",},"LayerId":{"name":"3215ea26-3a8f-4d5d-88fd-060d7988d9b8","path":"sprites/sTutorialControllerNoSwap/sTutorialControllerNoSwap.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sTutorialControllerNoSwap","path":"sprites/sTutorialControllerNoSwap/sTutorialControllerNoSwap.yy",},"resourceVersion":"1.0","name":"fa54b748-6a45-40ad-9955-0386dbe47c07","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"fa54b748-6a45-40ad-9955-0386dbe47c07","path":"sprites/sTutorialControllerNoSwapDash/sTutorialControllerNoSwapDash.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"fa54b748-6a45-40ad-9955-0386dbe47c07","path":"sprites/sTutorialControllerNoSwapDash/sTutorialControllerNoSwapDash.yy",},"LayerId":{"name":"3215ea26-3a8f-4d5d-88fd-060d7988d9b8","path":"sprites/sTutorialControllerNoSwapDash/sTutorialControllerNoSwapDash.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialControllerNoSwapDash","path":"sprites/sTutorialControllerNoSwapDash/sTutorialControllerNoSwapDash.yy",},"resourceVersion":"1.0","name":"fa54b748-6a45-40ad-9955-0386dbe47c07","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sTutorialControllerNoSwap","path":"sprites/sTutorialControllerNoSwap/sTutorialControllerNoSwap.yy",},
+    "spriteId": {"name":"sTutorialControllerNoSwapDash","path":"sprites/sTutorialControllerNoSwapDash/sTutorialControllerNoSwapDash.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"bebcdc5c-d5f9-4fd4-b2ef-5a840cdc2bac","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fa54b748-6a45-40ad-9955-0386dbe47c07","path":"sprites/sTutorialControllerNoSwap/sTutorialControllerNoSwap.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f1d9bd8c-eae0-4f44-a9a1-61dfdd50588d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fa54b748-6a45-40ad-9955-0386dbe47c07","path":"sprites/sTutorialControllerNoSwapDash/sTutorialControllerNoSwapDash.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sTutorialControllerNoSwap","path":"sprites/sTutorialControllerNoSwap/sTutorialControllerNoSwap.yy",},
+    "parent": {"name":"sTutorialControllerNoSwapDash","path":"sprites/sTutorialControllerNoSwapDash/sTutorialControllerNoSwapDash.yy",},
     "resourceVersion": "1.3",
-    "name": "sTutorialControllerNoSwap",
+    "name": "sTutorialControllerNoSwapDash",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Tutorial.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sTutorialControllerNoSwap",
+  "name": "sTutorialControllerNoSwapDash",
   "tags": [],
   "resourceType": "GMSprite",
 }
