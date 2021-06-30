@@ -244,6 +244,7 @@
     {"id":{"name":"sPortalInfo","path":"sprites/sPortalInfo/sPortalInfo.yy",},"order":22,},
     {"id":{"name":"sFernIdle","path":"sprites/sFernIdle/sFernIdle.yy",},"order":1,},
     {"id":{"name":"msc_Level","path":"sounds/msc_Level/msc_Level.yy",},"order":1,},
+    {"id":{"name":"sTutorialControllerNoSwapDash","path":"sprites/sTutorialControllerNoSwapDash/sTutorialControllerNoSwapDash.yy",},"order":17,},
     {"id":{"name":"rSecret","path":"rooms/rSecret/rSecret.yy",},"order":21,},
     {"id":{"name":"sIcicle","path":"sprites/sIcicle/sIcicle.yy",},"order":2,},
     {"id":{"name":"snd_Interact","path":"sounds/snd_Interact/snd_Interact.yy",},"order":28,},
