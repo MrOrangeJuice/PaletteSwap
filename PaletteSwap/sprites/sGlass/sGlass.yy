@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 7,
-  "bbox_right": 56,
-  "bbox_top": 0,
-  "bbox_bottom": 303,
+  "bbox_left": 5,
+  "bbox_right": 58,
+  "bbox_top": 1,
+  "bbox_bottom": 91,
   "HTile": false,
   "VTile": false,
   "For3D": false,
   "width": 64,
-  "height": 304,
+  "height": 96,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"0fbc2304-0767-4183-a4e0-4f44685c5913","path":"sprites/sPillar/sPillar.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0fbc2304-0767-4183-a4e0-4f44685c5913","path":"sprites/sPillar/sPillar.yy",},"LayerId":{"name":"e7cb614c-e518-453c-ba46-d800573617a1","path":"sprites/sPillar/sPillar.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sPillar","path":"sprites/sPillar/sPillar.yy",},"resourceVersion":"1.0","name":"0fbc2304-0767-4183-a4e0-4f44685c5913","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"522947c5-036d-4065-944c-94a58dbb3832","path":"sprites/sGlass/sGlass.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"522947c5-036d-4065-944c-94a58dbb3832","path":"sprites/sGlass/sGlass.yy",},"LayerId":{"name":"e1c475f1-3563-4026-8dce-3bfdc2e473a6","path":"sprites/sGlass/sGlass.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sGlass","path":"sprites/sGlass/sGlass.yy",},"resourceVersion":"1.0","name":"522947c5-036d-4065-944c-94a58dbb3832","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sPillar","path":"sprites/sPillar/sPillar.yy",},
+    "spriteId": {"name":"sGlass","path":"sprites/sGlass/sGlass.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"cf769bcd-6b92-4edb-9bdf-d60f9efbbf95","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0fbc2304-0767-4183-a4e0-4f44685c5913","path":"sprites/sPillar/sPillar.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"79d7f4dc-6b72-4bd4-93d8-add29952ccac","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"522947c5-036d-4065-944c-94a58dbb3832","path":"sprites/sGlass/sGlass.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -55,17 +55,17 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 32,
-    "yorigin": 152,
+    "yorigin": 48,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sPillar","path":"sprites/sPillar/sPillar.yy",},
+    "parent": {"name":"sGlass","path":"sprites/sGlass/sGlass.yy",},
     "resourceVersion": "1.3",
-    "name": "sPillar",
+    "name": "sGlass",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e7cb614c-e518-453c-ba46-d800573617a1","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e1c475f1-3563-4026-8dce-3bfdc2e473a6","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Objects/RuinDecor.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sPillar",
+  "name": "sGlass",
   "tags": [],
   "resourceType": "GMSprite",
 }
