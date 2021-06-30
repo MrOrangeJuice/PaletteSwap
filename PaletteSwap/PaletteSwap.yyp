@@ -190,6 +190,7 @@
     {"id":{"name":"sPortalFrame","path":"sprites/sPortalFrame/sPortalFrame.yy",},"order":6,},
     {"id":{"name":"oAirCurrent","path":"objects/oAirCurrent/oAirCurrent.yy",},"order":27,},
     {"id":{"name":"sBackToMenu","path":"sprites/sBackToMenu/sBackToMenu.yy",},"order":10,},
+    {"id":{"name":"oFish","path":"objects/oFish/oFish.yy",},"order":9,},
     {"id":{"name":"msc_Seaside","path":"sounds/msc_Seaside/msc_Seaside.yy",},"order":2,},
     {"id":{"name":"snd_Thud","path":"sounds/snd_Thud/snd_Thud.yy",},"order":4,},
     {"id":{"name":"snd_Fall","path":"sounds/snd_Fall/snd_Fall.yy",},"order":18,},
