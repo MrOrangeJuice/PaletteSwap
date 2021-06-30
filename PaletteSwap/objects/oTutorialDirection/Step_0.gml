@@ -1,11 +1,11 @@
 /// @description Switch Input and Palette
 if (global.controller)
 {
-	sprite_index = sTutorialController;
+	sprite_index = sDown;
 }
 else
 {
-	sprite_index = sTutorialKeyboard;
+	sprite_index = sDown;
 }
 
 //update frame
