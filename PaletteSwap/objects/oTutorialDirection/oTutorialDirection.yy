@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "sDown",
+    "path": "sprites/sDown/sDown.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -28,7 +31,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oTutorial",
+  "name": "oTutorialDirection",
   "tags": [],
   "resourceType": "GMObject",
 }
