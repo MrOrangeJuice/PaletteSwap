@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "sTutorialKeyboardNoSwap",
+    "path": "sprites/sTutorialKeyboardNoSwap/sTutorialKeyboardNoSwap.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

@@ -79,7 +79,7 @@
     {"id":{"name":"sPlayerCanDashGreen","path":"sprites/sPlayerCanDashGreen/sPlayerCanDashGreen.yy",},"order":0,},
     {"id":{"name":"tGreen","path":"tilesets/tGreen/tGreen.yy",},"order":6,},
     {"id":{"name":"sWaterBlue","path":"sprites/sWaterBlue/sWaterBlue.yy",},"order":4,},
-    {"id":{"name":"oTutorial","path":"objects/oTutorial/oTutorial.yy",},"order":6,},
+    {"id":{"name":"oTutorialDirection","path":"objects/oTutorialDirection/oTutorialDirection.yy",},"order":6,},
     {"id":{"name":"tSeasideBlue","path":"tilesets/tSeasideBlue/tSeasideBlue.yy",},"order":1,},
     {"id":{"name":"sTutorialKeyboardNoSwap","path":"sprites/sTutorialKeyboardNoSwap/sTutorialKeyboardNoSwap.yy",},"order":6,},
     {"id":{"name":"oBird","path":"objects/oBird/oBird.yy",},"order":4,},

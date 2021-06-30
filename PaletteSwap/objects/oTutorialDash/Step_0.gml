@@ -1,7 +1,7 @@
 /// @description Switch Input and Palette
 if (global.controller)
 {
-	sprite_index = sTutorialControllerDash;
+	sprite_index = sTutorialControllerNoSwapDash;
 }
 else
 {
