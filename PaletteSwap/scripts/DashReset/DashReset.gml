@@ -16,6 +16,7 @@ function DashReset()
 	player.dashdown = false;
 	player.dashleft = false;
 	player.dashright = false;
+	player.dashup = false;
 	
 	// DIsable variable jump
 	player.jumpVar = false;

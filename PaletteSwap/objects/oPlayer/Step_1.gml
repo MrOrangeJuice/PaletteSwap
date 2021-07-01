@@ -77,8 +77,8 @@ if(room == rTutorial || room == rTutorial2 || !canSwap)
 
 if(!global.paused && !global.textUp && global.canControlTimer < 0){
 
-	//orient sprite
-	if ((key_right - key_left) != 0 && !isDashing) image_xscale = sign((key_right - key_left));
+//orient sprite
+if ((key_right - key_left) != 0 && !isDashing) image_xscale = sign((key_right - key_left));
 // If player doesn't release jump, they can't jump again
 if(key_jump_released)
 {
@@ -195,7 +195,7 @@ if(!isDashing)
 else
 {
 	// If a direction has not been picked yet, pick one
-	if(!dashdown && !dashleft && !dashright)
+	if(!dashdown && !dashleft && !dashright && !dashup)
 	{
 		// Reset currentwalksp and vsp
 		if(global.canControlTimer < 0) vsp = 0;
@@ -207,6 +207,9 @@ else
 		if(key_down && (airborne || swimming))
 		{
 			dashdown = true;	
+		}
+		else if (key_up && swimming){
+			dashup = true;	
 		}
 		else if(key_right && !key_left)
 		{
@@ -235,11 +238,14 @@ else
 	{
 		if(global.canControlTimer < 0) vsp = dashsp * 1.5;
 	}
-	if(dashright)
+	else if (dashup){
+		if(global.canControlTimer < 0) vsp = dashsp * -0.9;
+	}
+	else if(dashright)
 	{
 		if(global.canControlTimer < 0) hsp = dashsp;
 	}
-	if(dashleft)
+	else if(dashleft)
 	{
 		if(global.canControlTimer < 0) hsp = -dashsp;
 	}
@@ -286,6 +292,7 @@ else
 		dashdown = false;
 		dashleft = false;
 		dashright = false;
+		dashup = false;
 	}
 }
 if (isInvulnerable)
@@ -301,6 +308,7 @@ if (isInvulnerable)
 }
 
 // Animation
+image_angle = 0;
 if (global.knockedBack == true)
 {
 	SwapSprite(sFernHit);
@@ -310,6 +318,10 @@ else if(isDashing)
 	if(dashdown)
 	{
 		SwapSprite(sFernDashDown);	
+	}
+	else if(dashup){
+		SwapSprite(sFernDashDown);
+		image_angle	= 180;
 	}
 	else
 	{
