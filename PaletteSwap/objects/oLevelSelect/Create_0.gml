@@ -10,6 +10,7 @@ level[7] = "rAaronLevel";
 level[8] = "rPaletteTempleV3";
 level[9] = "rSeasideGlide";
 level[10] = "rTutorial2";
+level[11] = "rFactory";
 levelCount = array_length_1d(level);
 menuIndex = 0;
 lastSelected = 0;
