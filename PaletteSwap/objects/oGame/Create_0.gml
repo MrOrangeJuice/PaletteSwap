@@ -41,7 +41,7 @@ global.seasideCompleted = false;
 global.fullscreen = false;
 global.colorblind = false;
 
-global.templeGears = 5;
+global.templeGears = 4;
 global.seasideGears = 4;
 global.vendingGears = 3;
 global.vendingGearsCollected = 0;
