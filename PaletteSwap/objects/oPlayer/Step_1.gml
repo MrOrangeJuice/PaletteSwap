@@ -68,10 +68,6 @@ if (gamepad_button_check_pressed(0,gp_shoulderr) || gamepad_button_check_pressed
 	global.controller = 1;
 }
 
-if (global.cutscene) {
-	exit;	
-}
-
 // Prevent player from swapping in certain rooms
 if(room == rTutorial || room == rTutorial2 || !canSwap)
 {
