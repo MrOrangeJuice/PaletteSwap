@@ -203,6 +203,7 @@
     {"id":{"name":"sSeasideGreen","path":"sprites/sSeasideGreen/sSeasideGreen.yy",},"order":0,},
     {"id":{"name":"rRedTest","path":"rooms/rRedTest/rRedTest.yy",},"order":15,},
     {"id":{"name":"sThankYou","path":"sprites/sThankYou/sThankYou.yy",},"order":9,},
+    {"id":{"name":"sSandCastle","path":"sprites/sSandCastle/sSandCastle.yy",},"order":1,},
     {"id":{"name":"oText","path":"objects/oText/oText.yy",},"order":14,},
     {"id":{"name":"sCrateSmall","path":"sprites/sCrateSmall/sCrateSmall.yy",},"order":20,},
     {"id":{"name":"sFernSkid","path":"sprites/sFernSkid/sFernSkid.yy",},"order":5,},
@@ -228,6 +229,7 @@
     {"id":{"name":"oRollSpawnNoSwap","path":"objects/oRollSpawnNoSwap/oRollSpawnNoSwap.yy",},"order":7,},
     {"id":{"name":"snd_Menu","path":"sounds/snd_Menu/snd_Menu.yy",},"order":10,},
     {"id":{"name":"sPillar","path":"sprites/sPillar/sPillar.yy",},"order":4,},
+    {"id":{"name":"sSandBucket","path":"sprites/sSandBucket/sSandBucket.yy",},"order":0,},
     {"id":{"name":"sFactory","path":"sprites/sFactory/sFactory.yy",},"order":19,},
     {"id":{"name":"Flying","path":"sprites/Flying/Flying.yy",},"order":0,},
     {"id":{"name":"sRiftNew2","path":"sprites/sRiftNew2/sRiftNew2.yy",},"order":6,},
@@ -435,6 +437,7 @@
     {"folderPath":"folders/Sprites/Enemies/WaterEnemy.yy","order":2,"resourceVersion":"1.0","name":"WaterEnemy","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Backgrounds.yy","order":30,"resourceVersion":"1.0","name":"Backgrounds","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/VFX.yy","order":31,"resourceVersion":"1.0","name":"VFX","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Objects/SeasideDecor.yy","order":25,"resourceVersion":"1.0","name":"SeasideDecor","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
