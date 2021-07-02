@@ -36,6 +36,7 @@ global.canControlTimer = -1;
 global.tutorialCompleted = false;
 global.templeCompleted = false;
 global.seasideCompleted = false;
+global.factoryCompleted = false;
 
 // Options
 global.fullscreen = false;
@@ -43,7 +44,8 @@ global.colorblind = false;
 
 global.templeGears = 4;
 global.seasideGears = 4;
-global.vendingGears = 3;
+global.vendingGears = 7;
+global.factoryGears = 5;
 global.vendingGearsCollected = 0;
 global.gearTotal = 0;
 global.allPalettesUnlocked = false;
@@ -58,6 +60,12 @@ global.seasideGearArray = array_create(global.seasideGears);
 for(i = 0; i < global.seasideGears; i++)
 {
 	global.seasideGearArray[i] = false;
+}
+
+global.factoryGearArray = array_create(global.factoryGears);
+for(i = 0; i < global.factoryGears; i++)
+{
+	global.factoryGearArray[i] = false;	
 }
 
 // Set cursor

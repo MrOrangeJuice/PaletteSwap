@@ -14,6 +14,13 @@ if(room == rAlexLevel)
 		visible = true;	
 	}
 }
+if(room == rFactory)
+{
+	if(global.factoryCompleted)
+	{
+		visible = true;	
+	}
+}
 if(room == rSecret)
 {
 	visible = true;	
