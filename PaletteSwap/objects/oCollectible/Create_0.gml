@@ -15,6 +15,13 @@ if(room == rAlexLevel)
 		collected = true;
 	}
 }
+if(room == rFactory)
+{
+	if(global.factoryGearArray[gid])
+	{
+		collected = true;
+	}
+}
 
 if(collected)
 {

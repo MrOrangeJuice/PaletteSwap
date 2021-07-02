@@ -10,3 +10,10 @@ if(levelComplete == "seaside")
 		instance_destroy();	
 	}
 }
+if(levelComplete == "factory")
+{
+	if(!global.factoryCompleted)	
+	{
+		instance_destroy();	
+	}
+}
