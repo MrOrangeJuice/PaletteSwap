@@ -89,9 +89,11 @@ if(global.gearTotal >= gearRequirement)
 			case "rSecret":
 				audio_stop_sound(msc_Hub);
 				SlideTransition(TRANS_MODE.GOTO, rSecret);
+				break;
 			case "rFactory":
 				audio_stop_sound(msc_Hub);
 				SlideTransition(TRANS_MODE.GOTO, rFactory);
+				break;
 		}
 	}
 }
