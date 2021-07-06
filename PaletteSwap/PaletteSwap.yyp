@@ -216,6 +216,7 @@
     {"id":{"name":"rExample","path":"rooms/rExample/rExample.yy",},"order":25,},
     {"id":{"name":"oEnemyFX","path":"objects/oEnemyFX/oEnemyFX.yy",},"order":61,},
     {"id":{"name":"sOil","path":"sprites/sOil/sOil.yy",},"order":0,},
+    {"id":{"name":"sBGFactory","path":"sprites/sBGFactory/sBGFactory.yy",},"order":8,},
     {"id":{"name":"oCoin","path":"objects/oCoin/oCoin.yy",},"order":4,},
     {"id":{"name":"sWaterTemp","path":"sprites/sWaterTemp/sWaterTemp.yy",},"order":3,},
     {"id":{"name":"sTest2","path":"sprites/sTest2/sTest2.yy",},"order":5,},
