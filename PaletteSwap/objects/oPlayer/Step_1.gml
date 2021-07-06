@@ -85,6 +85,12 @@ if(key_jump_released)
 	canJump = true;
 }
 
+sidewall = place_meeting(x + 2, y, oWall) || place_meeting(x - 2, y, oWall) || place_meeting(x + 2, y, oPaletteWall) || place_meeting(x - 2, y, oPaletteWall);
+
+if (!sidewall){
+	wallgrab = false;
+}
+
 // Decrement jump buffer
 jumpBuffer -= 1;
 if (jumpBuffer > 0) && (key_jump) && (canJump)
@@ -109,12 +115,13 @@ if (jumpBuffer > 0) && (key_jump) && (canJump)
 	if(global.canControlTimer < 0) vsp = -10;
 	audio_play_sound(snd_Jump, 5, false);
 	canJump = false;
+	wallgrab = false;
 	jumped = true;
 	global.knockedBack = false;
 }
 
 // Check if player can dash
-if (isDashing)
+if (isDashing && !wallgrab)
 {
 	canDash = false;
 }
@@ -132,6 +139,10 @@ if (key_dash && canDash)
 {
 	isDashing = true;
 	global.knockedBack = false;
+	dashup = false;
+	dashdown = false;
+	dashleft = false;
+	dashright = false;
 	jumped = false;
 }
 
@@ -204,7 +215,19 @@ else
 		// Play dash sound
 		audio_play_sound(snd_Dash, 5, false);
 		
-		if(key_down && (airborne || swimming))
+		//dash out of wallgrab
+		if (wallgrab){
+			if (sign(image_xscale) == 1){
+				dashleft = true;
+				
+			} else {
+				dashright = true;
+			}
+			dashtime = room_speed * 0.3;
+			image_xscale *= -1;
+		}
+		//normal dashes
+		else if(key_down && (airborne || swimming))
 		{
 			dashdown = true;	
 		}
@@ -251,15 +274,11 @@ else
 	}
 	
 	// Decrement timer and end dash if necessary
-	// Up dash doesn't last as long
 	// Down dash only ends when you touch the ground
-	if(!dashdown)
-	{
-		dashtime--;
-	}
+	dashtime--;
 	
 	// If timer is up
-	if(dashtime <= 0 && !swimming)
+	if(dashtime <= 0 && !dashdown && !swimming && !wallgrab)
 	{
 		isDashing = false;
 		// Cancel roll if the dash ends without hitting a wall
