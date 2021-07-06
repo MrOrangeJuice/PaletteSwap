@@ -5,7 +5,7 @@ if (instance_exists(oPlayer))
 	follow = oPlayer;
 	xTo = follow.x;
 	yTo = follow.y;
-	jelliness = 2;
+	jelliness = 4;
 }	
 else
 {
