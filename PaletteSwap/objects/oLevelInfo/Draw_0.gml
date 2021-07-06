@@ -38,6 +38,14 @@ if(global.gearTotal >= levelRequirement)
 				if(global.seasideGearArray[i]) draw_sprite(sGearSmall,global.color,x-startingX+(i*16),y+16);	
 			}
 			break;
+		case "Mechanic Panic":
+			startingX = 8 * (global.factoryGears - 1);
+			for(i = 0; i < global.factoryGears; i++)
+			{
+				if(!global.factoryGearArray[i]) draw_sprite(sGearSmallBlacked,global.color,x-startingX+(i*16),y+16);	
+				if(global.factoryGearArray[i]) draw_sprite(sGearSmall,global.color,x-startingX+(i*16),y+16);	
+			}
+			break;
 	}
 	// Draw Prompt
 	if (global.controller)

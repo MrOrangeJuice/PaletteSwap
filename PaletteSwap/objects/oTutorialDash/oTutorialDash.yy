@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "sTutorialControllerNoSwapDash",
+    "path": "sprites/sTutorialControllerNoSwapDash/sTutorialControllerNoSwapDash.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

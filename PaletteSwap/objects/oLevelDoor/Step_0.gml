@@ -34,14 +34,18 @@ if(place_meeting(x, y, oPlayer))
 				info.levelName = "Seaside Glide";
 				break;
 			case "rSecret":
-			if(!global.allPalettesUnlocked)
-			{
-				info.levelName = "???";
-			}
-			else
-			{
-				info.levelName = "Secret Room";	
-			}
+				if(!global.allPalettesUnlocked)
+				{
+					info.levelName = "???";
+				}
+				else
+				{
+					info.levelName = "Secret Room";	
+				}
+				break;
+			case "rFactory":
+				info.levelName = "Mechanic Panic";
+				break;
 		}
 		info.levelRequirement = gearRequirement;
 		createdInfo = true;
@@ -84,7 +88,12 @@ if(global.gearTotal >= gearRequirement)
 				break;
 			case "rSecret":
 				audio_stop_sound(msc_Hub);
-				SlideTransition(TRANS_MODE.GOTO, rSecret);	
+				SlideTransition(TRANS_MODE.GOTO, rSecret);
+				break;
+			case "rFactory":
+				audio_stop_sound(msc_Hub);
+				SlideTransition(TRANS_MODE.GOTO, rFactory);
+				break;
 		}
 	}
 }

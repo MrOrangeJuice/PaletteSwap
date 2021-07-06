@@ -19,5 +19,9 @@ else
 	{
 		global.seasideGearArray[other.gid] = true;
 	}
+	if(room == rFactory)
+	{
+		global.factoryGearArray[other.gid] = true;	
+	}
 }
 instance_destroy(other);

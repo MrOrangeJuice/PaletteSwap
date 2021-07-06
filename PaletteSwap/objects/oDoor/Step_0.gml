@@ -37,6 +37,10 @@ if(place_meeting(x, y, oPlayer) && oPortal.visible)
 			global.seasideCompleted = true;
 			audio_stop_sound(msc_Seaside);
 		}
+		if(room == rFactory)
+		{
+			global.factoryCompleted = true;
+		}
 		Save();
 		SlideTransition(TRANS_MODE.GOTO, next_room);	
 	}

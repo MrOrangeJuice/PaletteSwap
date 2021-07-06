@@ -24,7 +24,7 @@ if (!bottomWall && !bottomPalette)
 {
 	airborne = true;
 }
-else if ((swimming && vsp >= 0) || !swimming){
+else if ((swimming && (vsp >= 0 || dashup)) || !swimming){
 	airborne = false;
 	// Reset jump buffer
 	jumpBuffer = 5;
@@ -134,7 +134,7 @@ if(!isDashing){
 	y = y + vsp;
 }
 else{
-	if(dashdown){
+	if(dashdown || dashup){
 		// Handle Vertical Collision Normally
 		if (place_meeting(x,y+vsp,oWall))
 		{
@@ -143,9 +143,12 @@ else{
 			{
 				wallY = wallY + sign(vsp);
 			}
-			instance_create_layer(x, y+wallY,"Coins",oDashFX);
-			//collide with wall
-			DoDashCollision(oWall, -11, 0, true);
+			 FX = instance_create_layer(x, y+wallY,"Coins",oDashFX);
+			if (dashup) {
+				FX.image_angle = 180;
+			}
+			//collide with wall    |  -11 down, 5 up  |
+			DoDashCollision(oWall, (sign(vsp) * -8) - 3, 0, true);
 		}
 		if (place_meeting(x,y+vsp,oPaletteWall))
 		{
@@ -158,8 +161,11 @@ else{
 			{
 			case 0:
 			//if green collide with wall
-				instance_create_layer(x, y+wallY,"Coins",oDashFX);
-				DoDashCollision(oPaletteWall, -11, 0, true);
+				fx = instance_create_layer(x, y+wallY,"Coins",oDashFX);
+				if (dashup) {
+					fx.image_angle = 180;
+				}
+				DoDashCollision(oPaletteWall, (sign(vsp) * -8) - 3, 0, true);
 				swimming = false;
 			break;
 			case 1:
@@ -170,17 +176,24 @@ else{
 			case 2:
 			//todo red
 				instance_create_layer(x, y+wallY,"Coins",oDashFX);
-				DoDashCollision(oPaletteWall, -11, 0, true);
+				if (dashup) {
+					FX.image_angle = 180;
+				}
+				DoDashCollision(oPaletteWall, (sign(vsp) * -8) - 3, 0, true);
 				swimming = false;
 			break;
 			case 3:
 			//todo red
 				instance_create_layer(x, y+wallY,"Coins",oDashFX);
-				DoDashCollision(oPaletteWall, -11, 0, true);
+				if (dashup) {
+					FX.image_angle = 180;
+				}
+				DoDashCollision(oPaletteWall, (sign(vsp) * -8) - 3, 0, true);
 				swimming = false;
 			break;
 			}
 		}
+		else {swimming = false;}
 		y = y + vsp;
 	}
 	else {
