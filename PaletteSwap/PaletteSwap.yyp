@@ -208,6 +208,7 @@
     {"id":{"name":"snd_Fall","path":"sounds/snd_Fall/snd_Fall.yy",},"order":18,},
     {"id":{"name":"sTextBubble","path":"sprites/sTextBubble/sTextBubble.yy",},"order":3,},
     {"id":{"name":"oDoorPrompt","path":"objects/oDoorPrompt/oDoorPrompt.yy",},"order":43,},
+    {"id":{"name":"rVolcano","path":"rooms/rVolcano/rVolcano.yy",},"order":26,},
     {"id":{"name":"snd_Villager","path":"sounds/snd_Villager/snd_Villager.yy",},"order":26,},
     {"id":{"name":"sBGSeasideRedClouds","path":"sprites/sBGSeasideRedClouds/sBGSeasideRedClouds.yy",},"order":6,},
     {"id":{"name":"tSeaside","path":"tilesets/tSeaside/tSeaside.yy",},"order":0,},
@@ -417,6 +418,7 @@
     {"roomId":{"name":"rAlexLevel","path":"rooms/rAlexLevel/rAlexLevel.yy",},},
     {"roomId":{"name":"rTutorial2","path":"rooms/rTutorial2/rTutorial2.yy",},},
     {"roomId":{"name":"rExample","path":"rooms/rExample/rExample.yy",},},
+    {"roomId":{"name":"rVolcano","path":"rooms/rVolcano/rVolcano.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

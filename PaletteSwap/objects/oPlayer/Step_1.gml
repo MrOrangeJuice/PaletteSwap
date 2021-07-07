@@ -119,7 +119,14 @@ if (jumpBuffer > 0) && (key_jump) && (canJump)
 	if(global.canControlTimer < 0) vsp = -10;
 	audio_play_sound(snd_Jump, 5, false);
 	canJump = false;
-	wallgrab = false;
+	if (wallgrab && global.canControlTimer < 0){
+		wallgrab = false;
+		vsp = -5.8;
+		currentwalksp += image_xscale * -7.6;
+		canDash = false;
+		DashReset();
+		isRolling = false;
+	}
 	jumped = true;
 	global.knockedBack = false;
 }
