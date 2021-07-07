@@ -1,6 +1,6 @@
 /// @description Pausing
 
-if (global.paused == true) {
+if (global.cutscene == true) {
 	exit;	
 }
 
