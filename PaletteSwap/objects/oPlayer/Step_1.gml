@@ -29,7 +29,7 @@ if (gamepad_axis_value(0,gp_axislh) > 0.4 || gamepad_button_check(0,gp_padr) || 
 	global.controller = 1;
 }
 
-if (gamepad_axis_value(0,gp_axislv) > 0.6 || gamepad_button_check(0,gp_padd) || gamepad_axis_value(4,gp_axislv) > 0.6 || gamepad_button_check(4,gp_padd))
+if (gamepad_axis_value(0,gp_axislv) > 0.7 || gamepad_button_check(0,gp_padd) || gamepad_axis_value(4,gp_axislv) > 0.6 || gamepad_button_check(4,gp_padd))
 {
 	key_down = 1;
 	global.controller = 1;
@@ -78,11 +78,21 @@ if(room == rTutorial || room == rTutorial2 || !canSwap)
 if(!global.paused && !global.textUp && global.canControlTimer < 0){
 
 //orient sprite
-if ((key_right - key_left) != 0 && !isDashing) image_xscale = sign((key_right - key_left));
+if ((key_right - key_left) != 0 && !isDashing && !wallgrab) image_xscale = sign((key_right - key_left));
 // If player doesn't release jump, they can't jump again
 if(key_jump_released)
 {
 	canJump = true;
+}
+
+sidewall = place_meeting(x + 2, y, oWall) || place_meeting(x - 2, y, oWall) || place_meeting(x + 2, y, oPaletteWall) || place_meeting(x - 2, y, oPaletteWall);
+
+if ((!sidewall || global.color != 2) && wallgrab){
+	wallgrab = false;
+	if (vsp < 0 && !isDashing){
+		vsp -= 4;
+		currentwalksp = image_xscale * 3;
+	}
 }
 
 // Decrement jump buffer
@@ -109,12 +119,13 @@ if (jumpBuffer > 0) && (key_jump) && (canJump)
 	if(global.canControlTimer < 0) vsp = -10;
 	audio_play_sound(snd_Jump, 5, false);
 	canJump = false;
+	wallgrab = false;
 	jumped = true;
 	global.knockedBack = false;
 }
 
 // Check if player can dash
-if (isDashing)
+if (isDashing && !wallgrab)
 {
 	canDash = false;
 }
@@ -132,11 +143,24 @@ if (key_dash && canDash)
 {
 	isDashing = true;
 	global.knockedBack = false;
+	dashup = false;
+	dashdown = false;
+	dashleft = false;
+	dashright = false;
 	jumped = false;
 }
 
 // If player is dashing, don't worry about other inputs
-if(!isDashing)
+if (wallgrab && !isDashing){
+	if (key_up && !key_down){
+		if(global.canControlTimer < 0) vsp = -2;
+	}
+	else if (key_down && !key_up){
+		if(global.canControlTimer < 0) vsp = 2;
+	}
+	else vsp = 0;
+}
+else if(!isDashing)
 {
 	// Build up speed depending on inputs
 	if(key_left && !key_right)
@@ -178,10 +202,6 @@ if(!isDashing)
 		}
 	}
 	if(global.canControlTimer < 0) hsp = currentwalksp;
-	if (swimming){
-		grv= 0.4;
-	}
-		else grv = 0.4;
 	if(global.canControlTimer < 0) vsp = vsp + grv;
 
 	// Variable jump height
@@ -204,7 +224,19 @@ else
 		// Play dash sound
 		audio_play_sound(snd_Dash, 5, false);
 		
-		if(key_down && (airborne || swimming))
+		//dash out of wallgrab
+		if (wallgrab){
+			if (sign(image_xscale) == 1){
+				dashleft = true;
+				
+			} else {
+				dashright = true;
+			}
+			dashtime = room_speed * 0.3;
+			image_xscale *= -1;
+		}
+		//normal dashes
+		else if(key_down && (airborne || swimming))
 		{
 			dashdown = true;	
 		}
@@ -251,15 +283,11 @@ else
 	}
 	
 	// Decrement timer and end dash if necessary
-	// Up dash doesn't last as long
 	// Down dash only ends when you touch the ground
-	if(!dashdown)
-	{
-		dashtime--;
-	}
+	dashtime--;
 	
 	// If timer is up
-	if(dashtime <= 0 && !swimming)
+	if(dashtime <= 0 && !dashdown && !swimming && !wallgrab)
 	{
 		isDashing = false;
 		// Cancel roll if the dash ends without hitting a wall

@@ -20,7 +20,7 @@ else{
 
 	bottomWall = place_meeting(x, y+1, oWall);
 	bottomPalette = place_meeting(x, y+1, oPaletteWall);
-if (!bottomWall && !bottomPalette)
+if (!bottomWall && !bottomPalette && !wallgrab)
 {
 	airborne = true;
 }
@@ -232,8 +232,18 @@ else{
 			case 2:
 				FX = instance_create_layer(x+wallX-hsp, y,"Coins",oDashFX);
 				FX.image_angle = sign(hsp) * 90;
-				DoDashCollision(oPaletteWall, -7, sign(hsp) * -6, false);
+				//align with wall
+				while (!place_meeting(x+sign(hsp),y,oPaletteWall))
+				{
+					x += sign(hsp);
+				}
+				wallgrab = true;
+				canDash = true;
+				dashleft = false;
+				dashright = false;
+				dashup = true;
 				swimming = false;
+				canJump = true;
 			break;
 			case 3:
 				FX = instance_create_layer(x+wallX-hsp, y,"Coins",oDashFX);
