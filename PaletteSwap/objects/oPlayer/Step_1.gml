@@ -87,7 +87,7 @@ if(key_jump_released)
 
 sidewall = place_meeting(x + 2, y, oWall) || place_meeting(x - 2, y, oWall) || place_meeting(x + 2, y, oPaletteWall) || place_meeting(x - 2, y, oPaletteWall);
 
-if (!sidewall && wallgrab){
+if ((!sidewall || global.color != 2) && wallgrab){
 	wallgrab = false;
 	if (vsp < 0 && !isDashing){
 		vsp -= 4;
