@@ -23,6 +23,7 @@ jumped = false; //purely to stop jumpdash
 skidSound = true;
 wallHit = false;
 swimming = false;
+wallgrab = false;
 spikeImmune = false;
 lastGroundedPosX = 0;
 lastGroundedPosY = 0;
