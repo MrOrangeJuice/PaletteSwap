@@ -78,7 +78,7 @@ if(room == rTutorial || room == rTutorial2 || !canSwap)
 if(!global.paused && !global.textUp && global.canControlTimer < 0){
 
 //orient sprite
-if ((key_right - key_left) != 0 && !isDashing) image_xscale = sign((key_right - key_left));
+if ((key_right - key_left) != 0 && !isDashing && !wallgrab) image_xscale = sign((key_right - key_left));
 // If player doesn't release jump, they can't jump again
 if(key_jump_released)
 {
@@ -147,7 +147,16 @@ if (key_dash && canDash)
 }
 
 // If player is dashing, don't worry about other inputs
-if(!isDashing)
+if (wallgrab && !isDashing){
+	if (key_up && !key_down){
+		if(global.canControlTimer < 0) vsp = -2;
+	}
+	else if (key_down && !key_up){
+		if(global.canControlTimer < 0) vsp = 2;
+	}
+	else vsp = 0;
+}
+else if(!isDashing)
 {
 	// Build up speed depending on inputs
 	if(key_left && !key_right)
@@ -189,10 +198,6 @@ if(!isDashing)
 		}
 	}
 	if(global.canControlTimer < 0) hsp = currentwalksp;
-	if (swimming){
-		grv= 0.4;
-	}
-		else grv = 0.4;
 	if(global.canControlTimer < 0) vsp = vsp + grv;
 
 	// Variable jump height
