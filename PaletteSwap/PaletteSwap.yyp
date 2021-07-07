@@ -173,6 +173,7 @@
     {"id":{"name":"snd_CrabDeath","path":"sounds/snd_CrabDeath/snd_CrabDeath.yy",},"order":23,},
     {"id":{"name":"tPurple","path":"tilesets/tPurple/tPurple.yy",},"order":8,},
     {"id":{"name":"sHealthbar","path":"sprites/sHealthbar/sHealthbar.yy",},"order":0,},
+    {"id":{"name":"oAbstractWallBase","path":"objects/oAbstractWallBase/oAbstractWallBase.yy",},"order":78,},
     {"id":{"name":"sCursorNone","path":"sprites/sCursorNone/sCursorNone.yy",},"order":15,},
     {"id":{"name":"oTutorialJump","path":"objects/oTutorialJump/oTutorialJump.yy",},"order":24,},
     {"id":{"name":"oShadow","path":"sprites/oShadow/oShadow.yy",},"order":22,},
