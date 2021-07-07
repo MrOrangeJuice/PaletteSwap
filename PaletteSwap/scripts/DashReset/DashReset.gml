@@ -19,7 +19,7 @@ function DashReset()
 	player.dashup = false;
 	
 	// DIsable variable jump
-	if (!wallgrab){
+	if (!player.wallgrab){
 		player.jumpVar = false;
 	}
 	player.airborne = true;
