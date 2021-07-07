@@ -20,7 +20,8 @@ function DoDashCollision(wallType, newVSP, newHSP, vert){
 			if (global.color == 0){
 				vsp = newVSP;
 			} else if (global.color == 2){
-				hsp = 0;
+				currentwalksp = 0;
+				hsp = currentwalksp;
 				vsp = 0;
 				wallgrab = true;
 			} else if (vert) {

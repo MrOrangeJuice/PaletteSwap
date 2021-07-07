@@ -87,8 +87,12 @@ if(key_jump_released)
 
 sidewall = place_meeting(x + 2, y, oWall) || place_meeting(x - 2, y, oWall) || place_meeting(x + 2, y, oPaletteWall) || place_meeting(x - 2, y, oPaletteWall);
 
-if (!sidewall){
+if (!sidewall && wallgrab){
 	wallgrab = false;
+	if (vsp < 0 && !isDashing){
+		vsp -= 4;
+		currentwalksp = image_xscale * 3;
+	}
 }
 
 // Decrement jump buffer
