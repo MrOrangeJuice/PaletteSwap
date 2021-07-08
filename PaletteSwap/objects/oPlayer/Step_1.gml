@@ -29,7 +29,7 @@ if (gamepad_axis_value(0,gp_axislh) > 0.4 || gamepad_button_check(0,gp_padr) || 
 	global.controller = 1;
 }
 
-if (gamepad_axis_value(0,gp_axislv) > 0.7 || gamepad_button_check(0,gp_padd) || gamepad_axis_value(4,gp_axislv) > 0.6 || gamepad_button_check(4,gp_padd))
+if (gamepad_axis_value(0,gp_axislv) > 0.8 || gamepad_button_check(0,gp_padd) || gamepad_axis_value(4,gp_axislv) > 0.8 || gamepad_button_check(4,gp_padd))
 {
 	key_down = 1;
 	global.controller = 1;
@@ -51,7 +51,7 @@ if (gamepad_button_check_pressed(0,gp_face3) || gamepad_button_check_pressed(0,g
 	global.controller = 1;
 }
 
-if (gamepad_axis_value(0,gp_axislv) < -0.7 || gamepad_button_check(0,gp_padu) || gamepad_axis_value(4,gp_axislv) < -0.7 || gamepad_button_check(4,gp_padu))
+if (gamepad_axis_value(0,gp_axislv) < -0.8 || gamepad_button_check(0,gp_padu) || gamepad_axis_value(4,gp_axislv) < -0.8 || gamepad_button_check(4,gp_padu))
 {
 	key_up = 1;
 	global.controller = 1;
