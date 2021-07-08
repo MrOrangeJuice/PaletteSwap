@@ -51,7 +51,7 @@ if (gamepad_button_check_pressed(0,gp_face3) || gamepad_button_check_pressed(0,g
 	global.controller = 1;
 }
 
-if (gamepad_axis_value(0,gp_axislv) < -0.4 || gamepad_button_check(0,gp_padu) || gamepad_axis_value(4,gp_axislv) < -0.4 || gamepad_button_check(4,gp_padu))
+if (gamepad_axis_value(0,gp_axislv) < -0.7 || gamepad_button_check(0,gp_padu) || gamepad_axis_value(4,gp_axislv) < -0.7 || gamepad_button_check(4,gp_padu))
 {
 	key_up = 1;
 	global.controller = 1;
@@ -461,6 +461,11 @@ if (key_swap_down && !swimming && room != rTutorial){
 	ScreenShake(2,10);
 	canSwap = false;
 	alarm[2] = room_speed * 0.2;
+}
+if ((key_swap_down || key_swap_up) && swimming)
+{
+	audio_play_sound(snd_NoSwap,5,false);
+	ScreenShake(2,10);
 }
 if(global.hp <= 0){
 	death = instance_create_layer(x,y,"Player",oPlayerDeath);
