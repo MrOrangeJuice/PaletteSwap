@@ -122,6 +122,7 @@
     {"id":{"name":"oSeasideMusic","path":"objects/oSeasideMusic/oSeasideMusic.yy",},"order":50,},
     {"id":{"name":"sLemonIcon","path":"sprites/sLemonIcon/sLemonIcon.yy",},"order":14,},
     {"id":{"name":"sTrigger","path":"sprites/sTrigger/sTrigger.yy",},"order":27,},
+    {"id":{"name":"snd_NoSwap","path":"sounds/snd_NoSwap/snd_NoSwap.yy",},"order":36,},
     {"id":{"name":"sFernDashDown","path":"sprites/sFernDashDown/sFernDashDown.yy",},"order":7,},
     {"id":{"name":"sGBStatue2","path":"sprites/sGBStatue2/sGBStatue2.yy",},"order":12,},
     {"id":{"name":"sBigPurple","path":"sprites/sBigPurple/sBigPurple.yy",},"order":24,},
