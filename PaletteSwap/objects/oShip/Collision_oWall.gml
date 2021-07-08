@@ -1,5 +1,4 @@
 /// @description Stop falling and begin alarm
-global.cutscene = false;
 vsp = 0;
 sprite_index = sShipDamaged;
 
