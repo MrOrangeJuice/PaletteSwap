@@ -21,7 +21,7 @@ if (gamepad_button_check_pressed(0,gp_shoulderr) || gamepad_button_check_pressed
 
 if(key_swap_up || key_swap_down)
 {
-	global.paused = false;
+	global.cutscene = false;
 	global.color++;
 	if (global.color >= global.color_limit) global.color = 0;
 	// Create swapping effects
