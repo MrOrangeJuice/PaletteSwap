@@ -53,6 +53,7 @@
     {"id":{"name":"sContinuePromptController","path":"sprites/sContinuePromptController/sContinuePromptController.yy",},"order":14,},
     {"id":{"name":"sPot","path":"sprites/sPot/sPot.yy",},"order":0,},
     {"id":{"name":"sThumbnail","path":"sprites/sThumbnail/sThumbnail.yy",},"order":12,},
+    {"id":{"name":"sFernRunGreen","path":"sprites/sFernRunGreen/sFernRunGreen.yy",},"order":25,},
     {"id":{"name":"sCaution","path":"sprites/sCaution/sCaution.yy",},"order":2,},
     {"id":{"name":"WhitePH","path":"sprites/WhitePH/WhitePH.yy",},"order":8,},
     {"id":{"name":"oCartridge","path":"objects/oCartridge/oCartridge.yy",},"order":70,},
