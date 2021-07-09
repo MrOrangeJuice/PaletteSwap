@@ -74,6 +74,7 @@
     {"id":{"name":"SlideTransition","path":"scripts/SlideTransition/SlideTransition.yy",},"order":1,},
     {"id":{"name":"oTunnelGateway","path":"objects/oTunnelGateway/oTunnelGateway.yy",},"order":49,},
     {"id":{"name":"oHubMusic","path":"objects/oHubMusic/oHubMusic.yy",},"order":62,},
+    {"id":{"name":"oStickTest","path":"objects/oStickTest/oStickTest.yy",},"order":79,},
     {"id":{"name":"sContinuePrompt","path":"sprites/sContinuePrompt/sContinuePrompt.yy",},"order":13,},
     {"id":{"name":"oNPCPrompt","path":"objects/oNPCPrompt/oNPCPrompt.yy",},"order":52,},
     {"id":{"name":"oLevelDoor","path":"objects/oLevelDoor/oLevelDoor.yy",},"order":45,},
@@ -300,6 +301,7 @@
     {"id":{"name":"sPlayerDashGreen","path":"sprites/sPlayerDashGreen/sPlayerDashGreen.yy",},"order":1,},
     {"id":{"name":"Load","path":"scripts/Load/Load.yy",},"order":11,},
     {"id":{"name":"sPortalEffectSpawn","path":"sprites/sPortalEffectSpawn/sPortalEffectSpawn.yy",},"order":18,},
+    {"id":{"name":"rStickTest","path":"rooms/rStickTest/rStickTest.yy",},"order":27,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":0,},
     {"id":{"name":"tGreenPalette","path":"tilesets/tGreenPalette/tGreenPalette.yy",},"order":4,},
     {"id":{"name":"sDoorPromptControllerNew","path":"sprites/sDoorPromptControllerNew/sDoorPromptControllerNew.yy",},"order":12,},
@@ -425,6 +427,7 @@
     {"roomId":{"name":"rTutorial2","path":"rooms/rTutorial2/rTutorial2.yy",},},
     {"roomId":{"name":"rExample","path":"rooms/rExample/rExample.yy",},},
     {"roomId":{"name":"rVolcano","path":"rooms/rVolcano/rVolcano.yy",},},
+    {"roomId":{"name":"rStickTest","path":"rooms/rStickTest/rStickTest.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

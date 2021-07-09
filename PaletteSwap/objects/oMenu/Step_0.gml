@@ -119,11 +119,13 @@ if(key_select == 1){
 				else if(global.colorblind) global.colorblind = false;
 				break;
 			case 2:
+				SlideTransition(TRANS_MODE.GOTO, rStickTest);
+			case 3:
 				if(file_exists("savedata.ini")){
 					file_delete("savedata.ini");
 				}
 				break;
-			case 3:
+			case 4:
 				global.mouse = 0;
 				menuActive = true;
 				break;
