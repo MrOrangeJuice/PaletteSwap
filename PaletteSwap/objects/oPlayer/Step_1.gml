@@ -433,7 +433,7 @@ else
 				skidSound = true;
 				skidding = false;
 				//sprite_index = sFernRun;
-				SwapSprite(sFernRun);
+				SwapSprite(sFernRunNew);
 			}
 		}
 	}
