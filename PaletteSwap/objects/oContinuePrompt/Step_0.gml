@@ -16,6 +16,7 @@ if (gamepad_button_check_pressed(0,gp_face1) || gamepad_button_check_pressed(4,g
 
 if(key_enter)
 {
+	audio_play_sound(snd_MenuSelect,5,false);
 	SlideTransition(TRANS_MODE.GOTO, MainMenu);	
 }
 
