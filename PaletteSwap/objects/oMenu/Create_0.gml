@@ -30,4 +30,4 @@ lastAxis4Value = 0;
 menuBottom = menuY + ((buttonHeight) * buttonCount);
 optionBottom = optionsY + ((buttonHeight) * optionCount);
 menuOffset = 12;
-optionOffset = 6;
+optionOffset = 2;

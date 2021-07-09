@@ -52,10 +52,11 @@ else if (!menuActive && global.mouse)
 	if (mouse_y_gui > optionsY) && (mouse_y_gui < optionBottom)
 	{
 		prevOptionIndex = optionsIndex;
-		if (mouse_y_gui > optionsY) && (mouse_y_gui < (optionsY + (optionBottom / 8)) - optionOffset) optionsIndex = 0;
-		if (mouse_y_gui > (optionsY + (optionBottom / 8)) - optionOffset) && (mouse_y_gui < (optionsY + (2 * optionBottom / 8)) - optionOffset) optionsIndex = 1;
-		if (mouse_y_gui > (optionsY + (2 * optionBottom / 8)) - optionOffset) && (mouse_y_gui < (optionsY + (3 * (optionBottom / 8)) - optionOffset)) optionsIndex = 2;
-		if (mouse_y_gui > (optionsY + (3 * optionBottom / 8)) - optionOffset) && (mouse_y_gui < (optionsY + (4 * (optionBottom / 8)) - optionOffset)) optionsIndex = 3;
+		if (mouse_y_gui > optionsY) && (mouse_y_gui < (optionsY + (optionBottom / 10)) - optionOffset) optionsIndex = 0;
+		if (mouse_y_gui > (optionsY + (optionBottom / 10)) - optionOffset) && (mouse_y_gui < (optionsY + (2 * optionBottom / 10)) - optionOffset) optionsIndex = 1;
+		if (mouse_y_gui > (optionsY + (2 * optionBottom / 10)) - optionOffset) && (mouse_y_gui < (optionsY + (3 * (optionBottom / 10)) - optionOffset)) optionsIndex = 2;
+		if (mouse_y_gui > (optionsY + (3 * optionBottom / 10)) - optionOffset) && (mouse_y_gui < (optionsY + (4 * (optionBottom / 10)) - optionOffset)) optionsIndex = 3;
+		if (mouse_y_gui > (optionsY + (4 * optionBottom / 10)) - optionOffset) && (mouse_y_gui < (optionsY + (5 * (optionBottom / 10)) - optionOffset)) optionsIndex = 4;
 	
 		if (prevOptionIndex != optionsIndex)
 		{
