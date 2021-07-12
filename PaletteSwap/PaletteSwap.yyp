@@ -8,6 +8,7 @@
     {"id":{"name":"sShipDamaged","path":"sprites/sShipDamaged/sShipDamaged.yy",},"order":7,},
     {"id":{"name":"sFernDeath","path":"sprites/sFernDeath/sFernDeath.yy",},"order":12,},
     {"id":{"name":"sCartridge","path":"sprites/sCartridge/sCartridge.yy",},"order":7,},
+    {"id":{"name":"rTutorialReordered","path":"rooms/rTutorialReordered/rTutorialReordered.yy",},"order":28,},
     {"id":{"name":"sGround","path":"sprites/sGround/sGround.yy",},"order":11,},
     {"id":{"name":"oDashFX","path":"objects/oDashFX/oDashFX.yy",},"order":60,},
     {"id":{"name":"sRiftBubble","path":"sprites/sRiftBubble/sRiftBubble.yy",},"order":7,},
@@ -435,6 +436,7 @@
     {"roomId":{"name":"rExample","path":"rooms/rExample/rExample.yy",},},
     {"roomId":{"name":"rVolcano","path":"rooms/rVolcano/rVolcano.yy",},},
     {"roomId":{"name":"rStickTest","path":"rooms/rStickTest/rStickTest.yy",},},
+    {"roomId":{"name":"rTutorialReordered","path":"rooms/rTutorialReordered/rTutorialReordered.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
