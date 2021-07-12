@@ -1,25 +1,27 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(x < oPlayer.x)
+if(instance_exists(oPlayer))
 {
-	xdir = 1;	
-}
-else
-{
-	xdir = -1;	
+	if(x < oPlayer.x)
+	{
+		xdir = 1;	
+	}
+	else
+	{
+		xdir = -1;	
+	}
 }
 
 image_xscale = xdir;
 
 if(instance_exists(oPlayer))
 {
-	if(point_distance(x,y,oPlayer.x,oPlayer.y) < 50)
+	if(point_distance(x,y,oPlayer.x,oPlayer.y) < 200)
 	{
 		if(!playerSeen)
 		{
-			alarm[0] = room_speed * 2;
-			alarm[1] = room_speed * 1;
+			alarm[0] = room_speed * 0.5;
 		}
 		playerSeen = true;
 	}
@@ -29,12 +31,13 @@ if(instance_exists(oPlayer))
 	}
 }
 
-if(sprite_index == sGunWeaselFire)
+
+// Check for enemy death.
+if (eHP <= 0)
 {
-	if(currentframe == 10)
-	{
-		sprite_index = sGunWeasel;
-	}
+	instance_create_layer(x, y, "Enemies", oEnemyFX);
+	audio_play_sound(snd_BirdDeath, 5, false);
+	instance_destroy();
 }
 
 PaletteAnimationSwap();

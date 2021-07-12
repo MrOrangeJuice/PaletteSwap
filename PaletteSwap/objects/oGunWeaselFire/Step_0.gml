@@ -1,31 +1,27 @@
 /// @description Insert description here
 // You can write your code in this editor
-
 image_xscale = xdir;
 
-if(instance_exists(oPlayer))
+if(currentframe == 8)
 {
-	if(point_distance(x,y,oPlayer.x,oPlayer.y) < 50)
-	{
-		if(!playerSeen)
-		{
-			alarm[0] = room_speed * 2;
-			alarm[1] = room_speed * 1;
-		}
-		playerSeen = true;
-	}
-	else
-	{
-		playerSeen = false;	
-	}
+	audio_play_sound(snd_Laser,5,false);
+	laser = instance_create_layer(x+(8*xdir),y-4,"FX",oLaser);
+	laser.xdir = xdir;	
+}
+else if(currentframe == 10)
+{
+	instance_create_layer(x,y,"Enemies",oGunWeasel);
+	instance_destroy();
 }
 
-if(sprite_index == sGunWeaselFire)
+// Check for enemy death.
+if (eHP <= 0)
 {
-	if(currentframe == 10)
-	{
-		sprite_index = sGunWeasel;
-	}
+	instance_create_layer(x, y, "Enemies", oEnemyFX);
+	audio_play_sound(snd_BirdDeath, 5, false);
+	instance_destroy();
 }
+
+
 
 PaletteAnimationSwap();
