@@ -59,6 +59,7 @@
     {"id":{"name":"WhitePH","path":"sprites/WhitePH/WhitePH.yy",},"order":8,},
     {"id":{"name":"oCartridge","path":"objects/oCartridge/oCartridge.yy",},"order":70,},
     {"id":{"name":"sWallCollisionDustBig","path":"sprites/sWallCollisionDustBig/sWallCollisionDustBig.yy",},"order":3,},
+    {"id":{"name":"snd_Laser","path":"sounds/snd_Laser/snd_Laser.yy",},"order":37,},
     {"id":{"name":"oConveyer","path":"objects/oConveyer/oConveyer.yy",},"order":74,},
     {"id":{"name":"snd_Dialogue","path":"sounds/snd_Dialogue/snd_Dialogue.yy",},"order":31,},
     {"id":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},"order":28,},
