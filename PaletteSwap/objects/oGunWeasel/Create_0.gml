@@ -10,9 +10,9 @@ if(instance_exists(oPlayer))
 	{
 		xdir = -1;	
 	}
+	
+	image_xscale = xdir;
 }
-
-image_xscale = xdir;
 
 currentframe = 0;
 xdir = 1;

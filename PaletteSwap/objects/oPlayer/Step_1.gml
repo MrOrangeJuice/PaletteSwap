@@ -402,7 +402,7 @@ else
 		if (sign(hsp) == 0 && ( !(key_left || key_right) || (key_left && key_right) ) )
 		{
 			//sprite_index = sFernIdle;
-			SwapSprite(sFernIdle);
+			SwapSprite(sFernIdle2);
 		}
 		//slid r -> l
 		else if ((hsp > 2 || (skidding && hsp > 0)) && key_left)
