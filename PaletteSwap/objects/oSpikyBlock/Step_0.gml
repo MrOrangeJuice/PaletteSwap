@@ -1,9 +1,9 @@
 /// @description Move
 
 vsp = vsp + grv;
-if(vsp > 10)
+if(vsp > 8)
 {
-	vsp = 10;	
+	vsp = 8;	
 }
 
 // Vertical Collision
