@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_Lever.wav",
-  "duration": 0.133141,
+  "duration": 0.128141,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

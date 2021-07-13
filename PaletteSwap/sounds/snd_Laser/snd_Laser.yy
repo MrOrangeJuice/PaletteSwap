@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_Laser.wav",
-  "duration": 0.39788,
+  "duration": 0.39288,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

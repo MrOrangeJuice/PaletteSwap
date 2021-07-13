@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_NoSwap.wav",
-  "duration": 0.055635,
+  "duration": 0.050635,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

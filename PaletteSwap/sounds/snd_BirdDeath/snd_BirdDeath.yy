@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_BirdDeath.wav",
-  "duration": 0.262007,
+  "duration": 0.257007,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
