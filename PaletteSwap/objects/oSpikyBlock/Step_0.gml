@@ -1,6 +1,10 @@
 /// @description Move
 
 vsp = vsp + grv;
+if(vsp > 10)
+{
+	vsp = 10;	
+}
 
 // Vertical Collision
 if (place_meeting(x,y+vsp,oWall))
