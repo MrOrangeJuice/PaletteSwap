@@ -231,6 +231,7 @@
     {"id":{"name":"sSeasideGreen","path":"sprites/sSeasideGreen/sSeasideGreen.yy",},"order":0,},
     {"id":{"name":"rRedTest","path":"rooms/rRedTest/rRedTest.yy",},"order":15,},
     {"id":{"name":"sThankYou","path":"sprites/sThankYou/sThankYou.yy",},"order":9,},
+    {"id":{"name":"rTutorialReordered2","path":"rooms/rTutorialReordered2/rTutorialReordered2.yy",},"order":29,},
     {"id":{"name":"sSandCastle","path":"sprites/sSandCastle/sSandCastle.yy",},"order":1,},
     {"id":{"name":"oText","path":"objects/oText/oText.yy",},"order":14,},
     {"id":{"name":"sCrateSmall","path":"sprites/sCrateSmall/sCrateSmall.yy",},"order":19,},
@@ -443,6 +444,7 @@
     {"roomId":{"name":"rVolcano","path":"rooms/rVolcano/rVolcano.yy",},},
     {"roomId":{"name":"rStickTest","path":"rooms/rStickTest/rStickTest.yy",},},
     {"roomId":{"name":"rTutorialReordered","path":"rooms/rTutorialReordered/rTutorialReordered.yy",},},
+    {"roomId":{"name":"rTutorialReordered2","path":"rooms/rTutorialReordered2/rTutorialReordered2.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
