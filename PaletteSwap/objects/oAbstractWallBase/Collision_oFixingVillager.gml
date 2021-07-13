@@ -12,4 +12,3 @@ else {
 		other.x += intersection[0];
 	}
 }
-
