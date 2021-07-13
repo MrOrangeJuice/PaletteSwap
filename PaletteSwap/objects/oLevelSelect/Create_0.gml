@@ -11,6 +11,7 @@ level[8] = "rTutorial2";
 level[9] = "rFactory";
 level[10] = "rVolcano";
 level[10] = "rTutorialReordered";
+level[11] = "rTutorialReordered2";
 levelCount = array_length_1d(level);
 menuIndex = 0;
 lastSelected = 0;
