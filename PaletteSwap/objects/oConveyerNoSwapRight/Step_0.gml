@@ -2,5 +2,5 @@
 
 if(place_meeting(x,y-1,oPlayer))
 {
-	oPlayer.x += beltDirection;
+	oPlayer.x += 2;
 }

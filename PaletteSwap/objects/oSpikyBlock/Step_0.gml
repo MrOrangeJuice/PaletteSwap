@@ -23,4 +23,14 @@ if(place_meeting(x,y+1,oConveyer))
 	x += oConveyer.beltDirection;
 }
 
+if(place_meeting(x,y+1,oConveyerNoSwapRight))
+{
+	x += 2;
+}
+
+if(place_meeting(x,y+1,oConveyerNoSwapLeft))
+{
+	x -= 2;
+}
+
 PaletteAnimationSwap();
