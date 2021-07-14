@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sPiston",
-    "path": "sprites/sPiston/sPiston.yy",
+    "name": "sPistonStick",
+    "path": "sprites/sPistonStick/sPistonStick.yy",
   },
   "solid": false,
   "visible": true,
@@ -38,7 +38,7 @@
     "path": "folders/Objects/Enemies.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oPiston",
+  "name": "oPistonStick",
   "tags": [],
   "resourceType": "GMObject",
 }

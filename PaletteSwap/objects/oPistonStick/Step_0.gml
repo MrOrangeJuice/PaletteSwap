@@ -9,6 +9,7 @@ if(crashingDown && place_meeting(x,y+1,oConveyer))
 	alarm[0] = timing * room_speed;
 }
 
+/*
 if(crashingDown && place_meeting(x,y+1,oPlayer))
 {
 	if (!oPlayer.isInvulnerable) 
@@ -18,6 +19,7 @@ if(crashingDown && place_meeting(x,y+1,oPlayer))
 		other.isInvulnerable = true;
 	}
 }
+*/
 
 // If at resting position, set going up to false
 if(y = originaly)
