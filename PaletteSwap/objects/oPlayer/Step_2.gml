@@ -18,9 +18,9 @@ else{
 	spikeImmune = false;
 }
 
-	bottomWall = place_meeting(x, y+1, oWall);
+	bottomWall = place_meeting(x, y+1, oAbstractWallBase);
 	bottomPalette = place_meeting(x, y+1, oPaletteWall);
-if (!bottomWall && !bottomPalette && !wallgrab)
+if (!bottomWall && !wallgrab)
 {
 	airborne = true;
 }
