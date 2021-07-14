@@ -54,7 +54,7 @@ if(key_select == 1){
 	switch(menuIndex){
 	case 0:
 		global.paused = !global.paused;
-		oPlayer.canJump = false;
+		if(instance_exists(oPlayer)) oPlayer.canJump = false;
 		oScreenDarken.visible = false;
 		//instance_activate_all();
 		instance_deactivate_object(oPauseButtons);
@@ -74,6 +74,7 @@ if(key_select == 1){
 		audio_stop_sound(msc_Level);
 		audio_stop_sound(msc_Seaside);
 		visible = false;
+		global.hp = 100;
 		SlideTransition(TRANS_MODE.GOTO, MainMenu);
 		break;
 	case 2:
