@@ -28,5 +28,6 @@ if(key_swap_up || key_swap_down)
 	instance_create_layer(oPlayer.x,oPlayer.y,"FX",oRift);
 	audio_play_sound(snd_Swap,5,false);
 	ScreenShake(2,10);
+	global.paused = false;
 	instance_destroy();	
 }
