@@ -36,6 +36,17 @@ else if ((swimming && (vsp >= 0 || dashup)) || !swimming){
 		isRolling = false;
 	}
 }
+
+if(!isInvulnerable)
+{
+	// Destroy if caught between piston and ceiling
+	if (place_meeting(x,y+1,oPiston) && place_meeting(x,y-1,oWall))
+	{
+		global.hp -= 100;
+	}
+}
+
+
 if(!isDashing){
 	// Restore ability to variably jump once the bounce hits its apex
 	if (vsp > 0)
