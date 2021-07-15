@@ -54,6 +54,7 @@ if(!isDashing){
 		jumpVar = true;	
 	}
 	// Horizontal Collision
+	/*
 	if (place_meeting(x+hsp,y,oWall))
 	{
 		DoCollision(oWall, false);
@@ -80,6 +81,7 @@ if(!isDashing){
 				break;
 		}
 	}
+	*/
 		//reset red palette speed if not holding down a button
 		if (!(key_left && hsp < 0) && !(key_right && hsp > 0)){
 			walksp = 4.5;
@@ -98,6 +100,7 @@ if(!isDashing){
 	x = x + hsp;
 
 	// Vertical Collision
+	/*
 	if (place_meeting(x,y+vsp,oWall))
 	{
 		DoCollision(oWall, true);
@@ -142,11 +145,13 @@ if(!isDashing){
 	else{
 		swimming = false;
 	}
+	*/
 	y = y + vsp;
 }
 else{
 	if(dashdown || dashup){
 		// Handle Vertical Collision Normally
+		/*
 		if (place_meeting(x,y+vsp,oWall))
 		{
 			wallY = 0;
@@ -205,10 +210,12 @@ else{
 			}
 		}
 		else {swimming = false;}
+		*/
 		y = y + vsp;
 	}
 	else {
 		// Horizontal Collision
+		/*
 		if (place_meeting(x+hsp,y,oWall))
 		{
 			// Determine where wall is
@@ -274,6 +281,7 @@ else{
 		{
 			DoCollision(oPaletteWall, true);
 		}
+		*/
 		x = x + hsp;
 		//apply gravity if dashing in air
 		if (jumped){
