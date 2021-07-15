@@ -348,6 +348,7 @@
     {"id":{"name":"sFernSwimUpNew","path":"sprites/sFernSwimUpNew/sFernSwimUpNew.yy",},"order":23,},
     {"id":{"name":"sPistonStick","path":"sprites/sPistonStick/sPistonStick.yy",},"order":3,},
     {"id":{"name":"oTitle","path":"objects/oTitle/oTitle.yy",},"order":18,},
+    {"id":{"name":"sConveyorRight","path":"sprites/sConveyorRight/sConveyorRight.yy",},"order":7,},
     {"id":{"name":"sBlock","path":"sprites/sBlock/sBlock.yy",},"order":9,},
     {"id":{"name":"snd_BirdDeath","path":"sounds/snd_BirdDeath/snd_BirdDeath.yy",},"order":32,},
     {"id":{"name":"PinkPH","path":"sprites/PinkPH/PinkPH.yy",},"order":6,},
