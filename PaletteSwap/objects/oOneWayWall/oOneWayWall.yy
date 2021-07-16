@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sConveyerNoSwap",
-    "path": "sprites/sConveyerNoSwap/sConveyerNoSwap.yy",
+    "name": "sOneWay",
+    "path": "sprites/sOneWay/sOneWay.yy",
   },
   "solid": false,
   "visible": true,

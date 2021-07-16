@@ -22,5 +22,17 @@ function CalculateCollisionOverlap(object1, object2){
 		yOverlap = object1.bbox_bottom - object2.bbox_top + 1; //this will be positive
 	}
 	
+	//correct wide xoverlap
+	temp = object2.bbox_right - object2.bbox_left;
+	if (temp < abs(xOverlap)) xOverlap = sign(xOverlap) * temp;
+	temp = object1.bbox_right - object1.bbox_left;
+	if (temp < abs(xOverlap)) xOverlap = sign(xOverlap) * temp;
+	
+	//correct tall yoverlap
+	temp = object2.bbox_bottom - object2.bbox_top;
+	if (temp < abs(yOverlap)) yOverlap = sign(yOverlap) * temp;
+	temp = object1.bbox_bottom - object1.bbox_top;
+	if (temp < abs(yOverlap)) yOverlap = sign(yOverlap) * temp;
+	
 	return [xOverlap, yOverlap]; //these will both be positive
 }
