@@ -10,6 +10,7 @@ level[7] = "rAaronLevel";
 level[8] = "rTutorial2";
 level[9] = "rFactory";
 level[10] = "rVolcano";
+level[11] = "rSpeedrun3";
 levelCount = array_length_1d(level);
 menuIndex = 0;
 lastSelected = 0;
