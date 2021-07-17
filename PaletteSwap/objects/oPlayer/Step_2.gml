@@ -154,7 +154,7 @@ else{
 			{
 				wallY = wallY + sign(vsp);
 			}
-			 FX = instance_create_layer(x, y+wallY,"Coins",oDashFX);
+			FX = instance_create_layer(x, y+wallY,"Coins",oDashFX);
 			if (dashup) {
 				FX.image_angle = 180;
 			}
