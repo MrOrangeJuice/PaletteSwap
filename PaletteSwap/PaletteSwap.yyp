@@ -370,6 +370,7 @@
     {"id":{"name":"GrayPH","path":"sprites/GrayPH/GrayPH.yy",},"order":3,},
     {"id":{"name":"oCrate","path":"objects/oCrate/oCrate.yy",},"order":30,},
     {"id":{"name":"sMrsPuff","path":"sprites/sMrsPuff/sMrsPuff.yy",},"order":0,},
+    {"id":{"name":"Room29","path":"rooms/Room29/Room29.yy",},"order":30,},
     {"id":{"name":"sCrate","path":"sprites/sCrate/sCrate.yy",},"order":2,},
     {"id":{"name":"sVolt","path":"sprites/sVolt/sVolt.yy",},"order":8,},
     {"id":{"name":"sBackgroundBlue","path":"sprites/sBackgroundBlue/sBackgroundBlue.yy",},"order":6,},
@@ -463,6 +464,7 @@
     {"roomId":{"name":"rStickTest","path":"rooms/rStickTest/rStickTest.yy",},},
     {"roomId":{"name":"rTutorial","path":"rooms/rTutorial/rTutorial.yy",},},
     {"roomId":{"name":"rTutorial2","path":"rooms/rTutorial2/rTutorial2.yy",},},
+    {"roomId":{"name":"Room29","path":"rooms/Room29/Room29.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
