@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Villager",
+    "path": "folders/Objects/Characters/Villager.yy",
   },
   "resourceVersion": "1.0",
   "name": "oNPCPrompt",

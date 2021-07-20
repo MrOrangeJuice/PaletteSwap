@@ -28,8 +28,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Interactables",
+    "path": "folders/Objects/Level Components/Interactables.yy",
   },
   "resourceVersion": "1.0",
   "name": "oVendingInfo",

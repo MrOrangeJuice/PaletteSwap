@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Decor",
+    "path": "folders/Objects/Level Components/Decor.yy",
   },
   "resourceVersion": "1.0",
   "name": "oPillar",
