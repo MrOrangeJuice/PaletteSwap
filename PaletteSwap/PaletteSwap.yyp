@@ -40,6 +40,7 @@
     {"id":{"name":"oLever2","path":"objects/oLever2/oLever2.yy",},"order":10,},
     {"id":{"name":"sConveyor","path":"sprites/sConveyor/sConveyor.yy",},"order":5,},
     {"id":{"name":"oLeverBlock3","path":"objects/oLeverBlock3/oLeverBlock3.yy",},"order":14,},
+    {"id":{"name":"sOneWay2x2","path":"sprites/sOneWay2x2/sOneWay2x2.yy",},"order":9,},
     {"id":{"name":"rTestDrew","path":"rooms/rTestDrew/rTestDrew.yy",},"order":2,},
     {"id":{"name":"oPLEntry","path":"objects/oPLEntry/oPLEntry.yy",},"order":4,},
     {"id":{"name":"sGrass1","path":"sprites/sGrass1/sGrass1.yy",},"order":3,},
