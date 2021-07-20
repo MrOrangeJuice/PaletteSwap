@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Hazards",
+    "path": "folders/Objects/Level Components/Hazards.yy",
   },
   "resourceVersion": "1.0",
   "name": "oIcicleSpike",

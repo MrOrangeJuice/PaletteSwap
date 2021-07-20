@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Eddi",
+    "path": "folders/Objects/Characters/Eddi.yy",
   },
   "resourceVersion": "1.0",
   "name": "oEddyCutsceneEnd",
