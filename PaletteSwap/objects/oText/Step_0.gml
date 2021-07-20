@@ -14,12 +14,7 @@ if(textMessage != "" && !started){
 	curResponse = ds_list_find_value(textList, 0);
 }
 if(!global.paused && started){
-key_space = keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("P"));
-if (gamepad_button_check_pressed(0,gp_face1) || gamepad_button_check_pressed(4,gp_face1))
-{
-	key_space = 1;
-	global.controller = 1;
-}
+
 lerpProgress += (1-lerpProgress) / 50;
 textProgress += global.textSpeed;
 global.textUp = true;

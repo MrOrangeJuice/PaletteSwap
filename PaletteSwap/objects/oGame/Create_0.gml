@@ -32,6 +32,8 @@ global.loaded = false;
 //global.coinId = 0;
 global.canControlTimer = -1;
 
+global.isSpeedrun = false;
+
 // Player data
 global.tutorialCompleted = false;
 global.templeCompleted = false;

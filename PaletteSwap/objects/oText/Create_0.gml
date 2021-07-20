@@ -18,3 +18,5 @@ curResponseId = 0;
 textList = ds_list_create();
 startOfText = 1;
 started = false;
+
+key_space = 0;
