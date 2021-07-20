@@ -339,6 +339,7 @@
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":0,},
     {"id":{"name":"tGreenPalette","path":"tilesets/tGreenPalette/tGreenPalette.yy",},"order":4,},
     {"id":{"name":"sDoorPromptControllerNew","path":"sprites/sDoorPromptControllerNew/sDoorPromptControllerNew.yy",},"order":12,},
+    {"id":{"name":"sDashCrystal","path":"sprites/sDashCrystal/sDashCrystal.yy",},"order":9,},
     {"id":{"name":"snd_Checkpoint","path":"sounds/snd_Checkpoint/snd_Checkpoint.yy",},"order":21,},
     {"id":{"name":"sFernRunNew2","path":"sprites/sFernRunNew2/sFernRunNew2.yy",},"order":1,},
     {"id":{"name":"sPaletteGreen","path":"sprites/sPaletteGreen/sPaletteGreen.yy",},"order":7,},
@@ -524,7 +525,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.2.560",
+    "IDEVersion": "2.3.3.570",
   },
   "resourceVersion": "1.4",
   "name": "PaletteSwap",
