@@ -389,6 +389,7 @@
     {"id":{"name":"sFernRoll","path":"sprites/sFernRoll/sFernRoll.yy",},"order":9,},
     {"id":{"name":"sFernPalette","path":"sprites/sFernPalette/sFernPalette.yy",},"order":16,},
     {"id":{"name":"sFlyingExplode","path":"sprites/sFlyingExplode/sFlyingExplode.yy",},"order":2,},
+    {"id":{"name":"sIcicleGrow","path":"sprites/sIcicleGrow/sIcicleGrow.yy",},"order":10,},
     {"id":{"name":"oEddyCutscene","path":"objects/oEddyCutscene/oEddyCutscene.yy",},"order":1,},
     {"id":{"name":"PaletteTempleLevel","path":"rooms/PaletteTempleLevel/PaletteTempleLevel.yy",},"order":11,},
     {"id":{"name":"oRollSpawn","path":"objects/oRollSpawn/oRollSpawn.yy",},"order":6,},
@@ -559,7 +560,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.2.560",
+    "IDEVersion": "2.3.3.570",
   },
   "resourceVersion": "1.4",
   "name": "PaletteSwap",
