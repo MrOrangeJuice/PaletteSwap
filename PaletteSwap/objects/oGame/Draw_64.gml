@@ -60,7 +60,7 @@ if(room != MainMenu && room != rLevelSelect && room != rThanks && room != rStick
 				DrawSetText($331800, fUI, fa_right, fa_top);
 				break;
 		}
-		draw_text_transformed(RES_W-2,21,"Time: " + string_format((global.time / room_speed), 0, 2), timeTextScale, timeTextScale,0);
+		draw_text_transformed(RES_W-2,37,"Time: " + string_format((global.time / room_speed), 0, 2), timeTextScale, timeTextScale,0);
 	}
 	// Draw Player HP
 	/*
