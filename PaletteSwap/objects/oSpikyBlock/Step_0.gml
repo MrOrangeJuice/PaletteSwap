@@ -28,7 +28,7 @@ else if(place_meeting(x,y+1,oConveyerNoSwapRight))
 }
 else if(place_meeting(x,y+1,oConveyerNoSwapLeft))
 {
-	hsp = 2;
+	hsp = -2;
 }
 else
 {

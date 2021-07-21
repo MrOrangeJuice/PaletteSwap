@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sBackgroundPurple",
-    "path": "sprites/sBackgroundPurple/sBackgroundPurple.yy",
+    "name": "sCannon",
+    "path": "sprites/sCannon/sCannon.yy",
   },
   "solid": false,
   "visible": true,

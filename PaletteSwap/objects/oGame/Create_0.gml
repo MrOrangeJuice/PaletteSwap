@@ -46,8 +46,8 @@ global.colorblind = false;
 
 global.templeGears = 4;
 global.seasideGears = 4;
-global.vendingGears = 4;
-global.factoryGears = 5;
+global.vendingGears = 8;
+global.factoryGears = 4;
 global.vendingGearsCollected = 0;
 global.gearTotal = 0;
 global.allPalettesUnlocked = false;
