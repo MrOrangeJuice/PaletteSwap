@@ -206,6 +206,7 @@
     {"id":{"name":"snd_Pause2","path":"sounds/snd_Pause2/snd_Pause2.yy",},"order":14,},
     {"id":{"name":"snd_Flip","path":"sounds/snd_Flip/snd_Flip.yy",},"order":19,},
     {"id":{"name":"msc_Title","path":"sounds/msc_Title/msc_Title.yy",},"order":0,},
+    {"id":{"name":"oScreenText","path":"objects/oScreenText/oScreenText.yy",},"order":9,},
     {"id":{"name":"InitiateKnockback","path":"scripts/InitiateKnockback/InitiateKnockback.yy",},"order":6,},
     {"id":{"name":"sTutorialKeyboardDash","path":"sprites/sTutorialKeyboardDash/sTutorialKeyboardDash.yy",},"order":15,},
     {"id":{"name":"sGrass3","path":"sprites/sGrass3/sGrass3.yy",},"order":7,},

@@ -3,11 +3,13 @@
 
 instance_destroy(text);
 if (count > 0){
-	text = instance_create_layer(x,y,"FX",oText);
+	text = instance_create_layer(x,y,"FX",oScreenText);
 	text.textMessage = count;
-	count--;
 	alarm[0] = room_speed * 0.6;
-} else {
-	text = instance_create_layer(x,y,"FX",oText);
+} else if (count == 0) {
+	text = instance_create_layer(x,y,"FX",oScreenText);
 	text.textMessage = "GO!";
+	global.textUp = false;
+	alarm[0] = room_speed;
 }
+count--;
