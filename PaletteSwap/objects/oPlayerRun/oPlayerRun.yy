@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sFernRunNoSwap",
-    "path": "sprites/sFernRunNoSwap/sFernRunNoSwap.yy",
+    "name": "sFernRunNewNoSwap",
+    "path": "sprites/sFernRunNewNoSwap/sFernRunNewNoSwap.yy",
   },
   "solid": false,
   "visible": true,
