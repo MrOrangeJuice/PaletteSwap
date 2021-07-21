@@ -43,6 +43,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"oPortalFixTrigger","path":"objects/oPortalFixTrigger/oPortalFixTrigger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.189999938,"scaleY":0.213333353,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":172.0,"y":1784.0,"resourceVersion":"1.0","name":"inst_2F57E439","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oCheckpoint","path":"objects/oCheckpoint/oCheckpoint.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3144.0,"y":1816.0,"resourceVersion":"1.0","name":"inst_25206A12","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oCheckpoint","path":"objects/oCheckpoint/oCheckpoint.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2768.0,"y":1032.0,"resourceVersion":"1.0","name":"inst_7B04E3DB","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"oCheckpoint","path":"objects/oCheckpoint/oCheckpoint.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":736.0,"y":2376.0,"resourceVersion":"1.0","name":"inst_7B5AF751","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":4,"gridY":4,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Portals","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"oSpikySpawn","path":"objects/oSpikySpawn/oSpikySpawn.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1376.0,"y":1304.0,"resourceVersion":"1.0","name":"inst_25BB90D4","tags":[],"resourceType":"GMRInstance",},
@@ -1748,6 +1749,7 @@
     {"name":"inst_DBA0668","path":"rooms/rFactory/rFactory.yy",},
     {"name":"inst_6AD0EACB","path":"rooms/rFactory/rFactory.yy",},
     {"name":"inst_4D26204F","path":"rooms/rFactory/rFactory.yy",},
+    {"name":"inst_7B5AF751","path":"rooms/rFactory/rFactory.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
