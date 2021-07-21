@@ -21,14 +21,17 @@ else
 	sprite_index = sVillager;	
 }
 
-// Turn to look at player
-if(x < oPlayer.x)
+if(instance_exists(oPlayer))
 {
-	image_xscale = -1;	
-}
-else
-{
-	image_xscale = 1;	
+	// Turn to look at player
+	if(x < oPlayer.x)
+	{
+		image_xscale = -1;	
+	}
+	else
+	{
+		image_xscale = 1;	
+	}
 }
 
 PaletteAnimationSwap();
