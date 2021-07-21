@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sOneWay",
-    "path": "sprites/sOneWay/sOneWay.yy",
+    "name": "sOneWay2x2",
+    "path": "sprites/sOneWay2x2/sOneWay2x2.yy",
   },
   "solid": false,
   "visible": true,

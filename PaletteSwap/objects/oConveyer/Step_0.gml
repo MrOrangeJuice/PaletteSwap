@@ -19,8 +19,12 @@ switch(global.color)
 		break;
 }
 
-if(place_meeting(x,y-1,oPlayer))
+ 
+if(place_meeting(x,y-1,oPlayer) && ((oPlayer.key_left && !oPlayer.key_right) || (oPlayer.key_right && !oPlayer.key_left)) && sign(oPlayer.hsp) != sign(beltDirection) && !oPlayer.skidding)
 {
+	oPlayer.hsp += oPlayer.hsp / beltDirection + sign(beltDirection) * 0.25;
+}
+else if(place_meeting(x,y-1,oPlayer)) {
 	oPlayer.hsp += beltDirection;
 }
 
