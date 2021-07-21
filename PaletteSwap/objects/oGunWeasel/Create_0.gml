@@ -17,3 +17,4 @@ if(instance_exists(oPlayer))
 currentframe = 0;
 xdir = 1;
 playerSeen = false;
+image_index = global.color * (sprite_get_number(sprite_index) / global.color_count);

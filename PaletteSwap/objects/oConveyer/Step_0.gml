@@ -21,7 +21,7 @@ switch(global.color)
 
 if(place_meeting(x,y-1,oPlayer))
 {
-	oPlayer.x += beltDirection;
+	oPlayer.hsp += beltDirection;
 }
 
 PaletteAnimationSwap();
