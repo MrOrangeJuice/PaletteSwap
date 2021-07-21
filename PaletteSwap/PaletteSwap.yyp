@@ -61,6 +61,7 @@
     {"id":{"name":"sThumbnailNew","path":"sprites/sThumbnailNew/sThumbnailNew.yy",},"order":35,},
     {"id":{"name":"sHero","path":"sprites/sHero/sHero.yy",},"order":42,},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"order":0,},
+    {"id":{"name":"sFernRunNewNoSwap","path":"sprites/sFernRunNewNoSwap/sFernRunNewNoSwap.yy",},"order":27,},
     {"id":{"name":"sVerticalCapsule","path":"sprites/sVerticalCapsule/sVerticalCapsule.yy",},"order":47,},
     {"id":{"name":"oTutorialNoSwap","path":"objects/oTutorialNoSwap/oTutorialNoSwap.yy",},"order":3,},
     {"id":{"name":"tTemple","path":"tilesets/tTemple/tTemple.yy",},"order":2,},
