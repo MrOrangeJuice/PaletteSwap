@@ -8,3 +8,11 @@ if(zone == 2)
 {
 	oDanger2.visible = true;	
 }
+if(zone == 3)
+{
+	oDanger3.visible = true;	
+}
+if(zone == 4)
+{
+	oDanger4.visible = true;	
+}

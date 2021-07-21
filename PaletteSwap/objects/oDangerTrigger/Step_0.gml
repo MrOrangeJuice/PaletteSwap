@@ -8,3 +8,11 @@ if(zone == 2)
 {
 	if(!place_meeting(x,y,oSpikyBlock)) oDanger2.visible = false;
 }
+if(zone == 3)
+{
+	if(!place_meeting(x,y,oSpikyBlock)) oDanger3.visible = false;
+}
+if(zone == 4)
+{
+	if(!place_meeting(x,y,oSpikyBlock)) oDanger4.visible = false;
+}

@@ -2,5 +2,5 @@
 
 if(place_meeting(x,y-1,oPlayer))
 {
-	oPlayer.x -= 2;
+	oPlayer.hsp -= 2;
 }
