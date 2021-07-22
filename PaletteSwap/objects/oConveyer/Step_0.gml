@@ -20,9 +20,9 @@ switch(global.color)
 }
 
  
-if(place_meeting(x,y-1,oPlayer) && ((oPlayer.key_left && !oPlayer.key_right) || (oPlayer.key_right && !oPlayer.key_left)) && sign(oPlayer.hsp) != sign(beltDirection) && !oPlayer.skidding)
+if(place_meeting(x,y-1,oPlayer) && ((oPlayer.key_left && !oPlayer.key_right && oPlayer.hsp <= 0) || (oPlayer.key_right && !oPlayer.key_left && oPlayer.hsp >= 0)) && sign(oPlayer.currentwalksp) != sign(beltDirection) && !oPlayer.skidding)
 {
-	oPlayer.hsp += oPlayer.hsp / beltDirection + sign(beltDirection) * 0.25;
+	oPlayer.hsp += abs(oPlayer.hsp) / beltDirection + sign(beltDirection) * 0.25;
 }
 else if(place_meeting(x,y-1,oPlayer)) {
 	oPlayer.hsp += beltDirection;
