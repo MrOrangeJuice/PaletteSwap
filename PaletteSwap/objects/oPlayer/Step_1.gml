@@ -405,29 +405,16 @@ else
 			SwapSprite(sFernIdle2);
 		}
 		//slid r -> l
-		else if ((hsp > 2 || (skidding && hsp > 0)) && key_left)
+		else if (skidding)
 		{
 			//sprite_index = sFernSkid;	
 			SwapSprite(sFernSkid);
-			skidding = true;
 			if(skidSound)
 				{
 					audio_play_sound(snd_Skid, 5, false);	
 				}
 				skidSound = false;
 		}
-		//skid l -> r
-		else if ((hsp < -2 || (skidding && hsp < 0)) && key_right)
-		{
-			//sprite_index = sFernSkid;	
-			SwapSprite(sFernSkid);
-			skidding = true;
-			if(skidSound)
-				{
-					audio_play_sound(snd_Skid, 5, false);	
-				}
-				skidSound = false;
-			}
 			else
 			{
 				skidSound = true;

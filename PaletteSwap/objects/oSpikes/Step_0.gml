@@ -15,9 +15,7 @@ if (spikeReady && global.color = 1){
 		alarm[0] = room_speed * 0.5;
 		hasSpike = false;
 	}
-} else if(!spikeReady && isCeiling & hasSpike) {
-	spikeRef.image_xscale += 0.01;
-	spikeRef.image_yscale += 0.01;
-	if (spikeRef.image_xscale >= 1) {spikeReady = true};
+} else if(!spikeReady && isCeiling && hasSpike) {
+	spikeReady = (spikeRef.sprite_index == sIcicle);
 }
 PaletteAnimationSwap();
