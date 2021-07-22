@@ -111,7 +111,7 @@
         191,
       ],"resourceVersion":"1.0","name":"animation_9","tags":[],"resourceType":"GMTileAnimation",},
   ],
-  "tileAnimationSpeed": 10.0,
+  "tileAnimationSpeed": 8.0,
   "tileAnimation": {
     "FrameData": [
       0,
