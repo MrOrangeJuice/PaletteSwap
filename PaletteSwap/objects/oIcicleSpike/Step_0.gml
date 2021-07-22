@@ -1,5 +1,6 @@
 /// @description Falling
 // You can write your code in this editor
+if (sprite_index == sIcicle){
 if (falling) {
 	visible = true;
 	vsp += grv;
@@ -28,4 +29,7 @@ if (falling) {
 }
 
 PaletteAnimationSwap();
+} else {
+	PaletteAnimationSwapSingle();
+}
 
