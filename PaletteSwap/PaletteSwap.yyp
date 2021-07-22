@@ -315,6 +315,7 @@
     {"id":{"name":"sPortalInfo","path":"sprites/sPortalInfo/sPortalInfo.yy",},"order":21,},
     {"id":{"name":"sFernIdle","path":"sprites/sFernIdle/sFernIdle.yy",},"order":1,},
     {"id":{"name":"msc_Level","path":"sounds/msc_Level/msc_Level.yy",},"order":1,},
+    {"id":{"name":"sEndArrow","path":"sprites/sEndArrow/sEndArrow.yy",},"order":10,},
     {"id":{"name":"sConveyorLeft","path":"sprites/sConveyorLeft/sConveyorLeft.yy",},"order":6,},
     {"id":{"name":"sTutorialControllerNoSwapDash","path":"sprites/sTutorialControllerNoSwapDash/sTutorialControllerNoSwapDash.yy",},"order":17,},
     {"id":{"name":"rSecret","path":"rooms/rSecret/rSecret.yy",},"order":21,},
