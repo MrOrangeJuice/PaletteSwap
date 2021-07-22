@@ -5,4 +5,5 @@ if ((global.color == 1 || falling) && !other.isInvulnerable){
 	other.isInvulnerable = true;
 	InitiateKnockback(other, -1 * other.vsp, -6);
 	global.knockedBack = true;
+	audio_play_sound(snd_Damage, 5, false);
 }

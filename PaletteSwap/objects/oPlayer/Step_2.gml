@@ -37,6 +37,12 @@ else if ((swimming && (vsp >= 0 || dashup)) || !swimming){
 	}
 }
 
+//skidding check
+if ( ((hsp > 2 || (skidding && hsp > 0)) && key_left) || ((hsp < -2 || (skidding && hsp < 0)) && key_right) ) {
+	skidding = true;
+}
+else skidding = false;
+
 if(!isInvulnerable)
 {
 	// Destroy if caught between piston and ceiling
