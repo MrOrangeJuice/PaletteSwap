@@ -27,6 +27,34 @@ if(room != MainMenu && room != rLevelSelect && room != rThanks && room != rStick
 	draw_sprite_stretched(sCoinStatic, global.color, 268, 4, 16, 16);
 	draw_text_transformed(RES_W-2,7,"*" + string(global.coins), coinTextScale, coinTextScale,0);
 	
+	switch(room)
+	{
+		case rPaletteTemple:
+			startingX = 8 * (global.templeGears - 1);
+			for(i = 0; i < global.templeGears; i++)
+			{
+				if(!global.templeGearArray[i]) draw_sprite(sGearSmallBlacked,global.color,gearHUDX-startingX+(i*16),gearHUDY);	
+				if(global.templeGearArray[i]) draw_sprite(sGearSmall,global.color,gearHUDX-startingX+(i*16),gearHUDY);	
+			}
+			break;
+		case rAlexLevel:
+			startingX = 8 * (global.seasideGears - 1);
+			for(i = 0; i < global.seasideGears; i++)
+			{
+				if(!global.seasideGearArray[i]) draw_sprite(sGearSmallBlacked,global.color,gearHUDX-startingX+(i*16),gearHUDY);	
+				if(global.seasideGearArray[i]) draw_sprite(sGearSmall,global.color,gearHUDX-startingX+(i*16),gearHUDY);	
+			}
+			break;
+		case rFactory:
+			startingX = 8 * (global.factoryGears - 1);
+			for(i = 0; i < global.factoryGears; i++)
+			{
+				if(!global.factoryGearArray[i]) draw_sprite(sGearSmallBlacked,global.color,gearHUDX-startingX+(i*16),gearHUDY);	
+				if(global.factoryGearArray[i]) draw_sprite(sGearSmall,global.color,gearHUDX-startingX+(i*16),gearHUDY);	
+			}
+			break;
+	}
+	
 	// Draw Collectable Count
 	collectableTextScale = max(collectableTextScale * 0.95, 1);
 	switch(global.color)
