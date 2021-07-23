@@ -7,7 +7,24 @@ if(room != MainMenu && room != rLevelSelect && room != rThanks && room != rStick
 	draw_sprite_stretched(sHealthbar, global.color, 5, 5, (global.hp / global.maxHP) * 60, 14);
 	draw_sprite(sColorBlindDisplay, global.color, 4, 4);
 	
+	coinOffset = 0;
 	// Draw Coin Count
+	if(global.coins < 10)
+	{
+		coinOffset = 16;	
+	}
+	else if(global.coins < 100)
+	{
+		coinOffset = 8;	
+	}
+	else if(global.coins < 1000)
+	{
+		coinOffset = 0;	
+	}
+	else
+	{
+		coinOffset = -8;	
+	}
 	coinTextScale = max(coinTextScale * .95, 1);
 	switch(global.color)
 	{
@@ -24,7 +41,7 @@ if(room != MainMenu && room != rLevelSelect && room != rThanks && room != rStick
 			DrawSetText($2C142D, fUI, fa_right, fa_top);
 			break;
 	}
-	draw_sprite_stretched(sCoinStatic, global.color, 268, 4, 16, 16);
+	draw_sprite_stretched(sCoinStatic, global.color, 268 + coinOffset, 4, 16, 16);
 	draw_text_transformed(RES_W-2,7,"*" + string(global.coins), coinTextScale, coinTextScale,0);
 	
 	switch(room)
@@ -56,6 +73,15 @@ if(room != MainMenu && room != rLevelSelect && room != rThanks && room != rStick
 	}
 	
 	// Draw Collectable Count
+	gearOffset = 0;
+	if(global.coins < 10)
+	{
+		gearOffset = 0;	
+	}
+	else
+	{
+		gearOffset = -8;	
+	}
 	collectableTextScale = max(collectableTextScale * 0.95, 1);
 	switch(global.color)
 	{
@@ -73,7 +99,7 @@ if(room != MainMenu && room != rLevelSelect && room != rThanks && room != rStick
 			break;
 			
 	}
-	draw_sprite_stretched(sGearSmall, global.color, 269, 20, 16, 16);
+	draw_sprite_stretched(sGearSmall, global.color, 284 + gearOffset, 20, 16, 16);
 	draw_text_transformed(RES_W-2,22,"*" + string(global.gearTotal), collectableTextScale, collectableTextScale,0);
 
 	// Draw Time
