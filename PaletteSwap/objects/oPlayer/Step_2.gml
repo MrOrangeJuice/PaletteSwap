@@ -290,4 +290,14 @@ else{
 	}
 	
 }
+
+if(place_meeting(x,y+1,oConveyer)) {
+	if (key_left && !key_right && currentwalksp == 0 && place_meeting(x +1, y, oAbstractWallBase)) {
+		x--;
+	}
+
+	if (!key_left && key_right && currentwalksp == 0 && place_meeting(x -1, y, oAbstractWallBase)) {
+		x++;
+	}
+}
 }

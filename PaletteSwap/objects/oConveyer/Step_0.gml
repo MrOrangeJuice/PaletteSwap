@@ -19,17 +19,13 @@ switch(global.color)
 		break;
 }
 
- 
 if(place_meeting(x,y-1,oPlayer) && ((oPlayer.key_left && !oPlayer.key_right && oPlayer.hsp <= 0) || (oPlayer.key_right && !oPlayer.key_left && oPlayer.hsp >= 0)) && sign(oPlayer.currentwalksp) != sign(beltDirection) && !oPlayer.skidding)
 {
 	oPlayer.hsp += abs(oPlayer.hsp) / beltDirection + sign(beltDirection) * 0.25;
 }
 else if(place_meeting(x,y-1,oPlayer)) {
-	with (oPlayer) {
-		if (!place_meeting(x + other.beltDirection,y,oWall) && (!place_meeting(x + other.beltDirection,y,oPaletteWall) || global.color == 1)){
-			hsp += other.beltDirection;
-		}
-	}
+	oPlayer.hsp += beltDirection;
 }
+
 
 PaletteAnimationSwap();
