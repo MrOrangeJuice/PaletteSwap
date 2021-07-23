@@ -330,6 +330,12 @@ else
 		dashup = false;
 	}
 }
+
+//clamp vsp
+if (vsp > dashsp * 1.5){
+	vsp = dashsp * 1.5;
+}
+
 if (isInvulnerable)
 {
 	iFrameCount += (delta_time / 1000000);

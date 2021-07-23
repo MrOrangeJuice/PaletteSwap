@@ -291,12 +291,12 @@ else{
 	
 }
 
-if(place_meeting(x,y+1,oConveyer)) {
-	if (key_left && !key_right && currentwalksp == 0 && place_meeting(x +1, y, oAbstractWallBase)) {
+if(place_meeting(x,y+1,oConveyer) && currentwalksp == 0) {
+	if (key_left && !key_right && place_meeting(x +1, y, oAbstractWallBase)) {
 		x--;
 	}
 
-	if (!key_left && key_right && currentwalksp == 0 && place_meeting(x -1, y, oAbstractWallBase)) {
+	if (!key_left && key_right && place_meeting(x -1, y, oAbstractWallBase)) {
 		x++;
 	}
 }
