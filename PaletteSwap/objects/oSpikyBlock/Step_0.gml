@@ -22,11 +22,11 @@ if(place_meeting(x,y+1,oConveyer))
 {
 	hsp = oConveyer.beltDirection;
 }
-else if(place_meeting(x,y+1,oConveyerNoSwapRight) && !global.paused)
+else if(place_meeting(x,y+1,oConveyerNoSwapRight))
 {
 	hsp = 2;
 }
-else if(place_meeting(x,y+1,oConveyerNoSwapLeft) && !global.paused)
+else if(place_meeting(x,y+1,oConveyerNoSwapLeft))
 {
 	hsp = -2;
 }
