@@ -1,5 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
-oPlayer.canDash = true;
-audio_play_sound(snd_DashReset,5,false);
-instance_destroy();
+if(canCollide){
+	global.wasDashReset = true;
+	oPlayer.canDash = true;
+	timer = room_speed * 3;
+	visible = false;
+	canCollide = false;
+}

@@ -132,7 +132,7 @@ if (jumpBuffer > 0) && (key_jump) && (canJump)
 }
 
 // Check if player can dash
-if (isDashing && !wallgrab)
+if (isDashing && !wallgrab && !global.wasDashReset)
 {
 	canDash = false;
 }
@@ -155,6 +155,7 @@ if (key_dash && canDash)
 	dashleft = false;
 	dashright = false;
 	jumped = false;
+	global.wasDashReset = false;
 }
 
 // If player is dashing, don't worry about other inputs

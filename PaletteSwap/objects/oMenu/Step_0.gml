@@ -85,7 +85,7 @@ if(key_select == 1){
 				}
 				else
 				{
-					SlideTransition(TRANS_MODE.GOTO, rTutorial);
+					SlideTransition(TRANS_MODE.GOTO, rTestJulien);
 				}
 				break;
 			case 1:
