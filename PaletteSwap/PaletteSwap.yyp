@@ -347,6 +347,7 @@
     {"id":{"name":"shTransparent","path":"shaders/shTransparent/shTransparent.yy",},"order":1,},
     {"id":{"name":"oBlownAir","path":"objects/oBlownAir/oBlownAir.yy",},"order":1,},
     {"id":{"name":"sHealthBarFrame","path":"sprites/sHealthBarFrame/sHealthBarFrame.yy",},"order":1,},
+    {"id":{"name":"oDashReset","path":"objects/oDashReset/oDashReset.yy",},"order":10,},
     {"id":{"name":"MainMenu","path":"rooms/MainMenu/MainMenu.yy",},"order":1,},
     {"id":{"name":"oLevelMusic","path":"objects/oLevelMusic/oLevelMusic.yy",},"order":1,},
     {"id":{"name":"oLevelInfo","path":"objects/oLevelInfo/oLevelInfo.yy",},"order":4,},
@@ -570,7 +571,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.2.558",
+    "IDEVersion": "2.3.3.574",
   },
   "resourceVersion": "1.4",
   "name": "PaletteSwap",
