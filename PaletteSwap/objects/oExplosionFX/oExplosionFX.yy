@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sSpikeBlock1",
-    "path": "sprites/sSpikeBlock1/sSpikeBlock1.yy",
+    "name": "sFernDeath",
+    "path": "sprites/sFernDeath/sFernDeath.yy",
   },
   "solid": false,
   "visible": true,
@@ -23,18 +23,16 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oSpikes","path":"objects/oSpikes/oSpikes.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oSpikyBlock","path":"objects/oSpikyBlock/oSpikyBlock.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Objects/Enemies.yy",
+    "name": "FX",
+    "path": "folders/Objects/FX.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oSpikyBlock",
+  "name": "oExplosionFX",
   "tags": [],
   "resourceType": "GMObject",
 }
