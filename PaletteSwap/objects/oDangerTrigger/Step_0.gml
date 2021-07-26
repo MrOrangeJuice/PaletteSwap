@@ -16,3 +16,7 @@ if(zone == 4)
 {
 	if(!place_meeting(x,y,oSpikyBlock)) oDanger4.visible = false;
 }
+if(zone == 5)
+{
+	if(!place_meeting(x,y,oSpikyBlock)) oDanger5.visible = false;
+}
