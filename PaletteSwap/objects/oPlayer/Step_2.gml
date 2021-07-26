@@ -106,7 +106,7 @@ if(!isDashing){
 	// Vertical Collision
 	if (place_meeting(x,y+vsp,oWall))
 	{
-		if(prevAirborne && bottomWall && vsp >= 2 && !isDashing) instance_create_layer(x, y+6,"Coins",oFallFX);
+		//if(prevAirborne && bottomWall && vsp >= 2 && !isDashing) instance_create_layer(x, y+6,"Coins",oFallFX);
 		DoCollision(oWall, true);
 		if(bottomWall) prevAirborne = false;
 	}

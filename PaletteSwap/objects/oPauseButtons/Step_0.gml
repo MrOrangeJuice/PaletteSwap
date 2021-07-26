@@ -73,6 +73,8 @@ if(key_select == 1){
 		global.color_limit = 2;
 		audio_stop_sound(msc_Level);
 		audio_stop_sound(msc_Seaside);
+		audio_stop_sound(msc_FactoryIntro);
+		audio_stop_sound(msc_FactoryLoop);
 		visible = false;
 		global.hp = 100;
 		SlideTransition(TRANS_MODE.GOTO, MainMenu);
