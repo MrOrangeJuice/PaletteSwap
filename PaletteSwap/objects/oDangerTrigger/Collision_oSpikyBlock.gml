@@ -16,3 +16,7 @@ if(zone == 4)
 {
 	oDanger4.visible = true;	
 }
+if(zone == 5)
+{
+	oDanger5.visible = true;	
+}
