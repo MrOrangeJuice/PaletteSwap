@@ -1,6 +1,6 @@
 /// @description Handle Player Collision
 
-if (other.dashdown)
+if (other.dashdown || other.dashup)
 {
 	eHP -= 1;
 		
