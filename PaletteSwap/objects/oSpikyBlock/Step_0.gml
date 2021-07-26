@@ -18,17 +18,17 @@ if (place_meeting(x,y+vsp,oWall))
 
 y = y + vsp;
 
-if(place_meeting(x,y+1,oConveyer))
-{
-	hsp = oConveyer.beltDirection;
-}
-else if(place_meeting(x,y+1,oConveyerNoSwapRight) && !global.paused)
+if(place_meeting(x,y+1,oConveyerNoSwapRight) && !global.paused)
 {
 	hsp = 2;
 }
 else if(place_meeting(x,y+1,oConveyerNoSwapLeft) && !global.paused)
 {
 	hsp = -2;
+}
+else if(place_meeting(x,y+1,oConveyer))
+{
+	hsp = oConveyer.beltDirection;
 }
 else
 {
