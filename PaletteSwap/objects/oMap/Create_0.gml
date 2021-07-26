@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-iconX = 0;
-iconY = 0;
+iconX = RES_W / 2;
+iconY = RES_H /2;
 mapUp = false;
+key_tab = 0;
