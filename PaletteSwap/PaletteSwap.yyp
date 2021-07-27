@@ -376,6 +376,7 @@
     {"id":{"name":"sPaletteGreen","path":"sprites/sPaletteGreen/sPaletteGreen.yy",},"order":7,},
     {"id":{"name":"sGBStatue4","path":"sprites/sGBStatue4/sGBStatue4.yy",},"order":14,},
     {"id":{"name":"sCursor","path":"sprites/sCursor/sCursor.yy",},"order":13,},
+    {"id":{"name":"oNPCFishing","path":"objects/oNPCFishing/oNPCFishing.yy",},"order":4,},
     {"id":{"name":"sVendingOut","path":"sprites/sVendingOut/sVendingOut.yy",},"order":19,},
     {"id":{"name":"oLaser","path":"objects/oLaser/oLaser.yy",},"order":14,},
     {"id":{"name":"sFactoryBlue","path":"sprites/sFactoryBlue/sFactoryBlue.yy",},"order":22,},
