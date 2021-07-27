@@ -226,6 +226,7 @@
     {"id":{"name":"oGunWeasel","path":"objects/oGunWeasel/oGunWeasel.yy",},"order":13,},
     {"id":{"name":"sOneWay","path":"sprites/sOneWay/sOneWay.yy",},"order":8,},
     {"id":{"name":"oShadow","path":"sprites/oShadow/oShadow.yy",},"order":22,},
+    {"id":{"name":"sMotel","path":"sprites/sMotel/sMotel.yy",},"order":49,},
     {"id":{"name":"sScreenDarken","path":"sprites/sScreenDarken/sScreenDarken.yy",},"order":4,},
     {"id":{"name":"oStatue3","path":"objects/oStatue3/oStatue3.yy",},"order":4,},
     {"id":{"name":"sFernRun","path":"sprites/sFernRun/sFernRun.yy",},"order":4,},
@@ -577,7 +578,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.2.560",
+    "IDEVersion": "2.3.3.570",
   },
   "resourceVersion": "1.4",
   "name": "PaletteSwap",
