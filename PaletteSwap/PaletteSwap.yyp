@@ -219,6 +219,7 @@
     {"id":{"name":"oPlayerHUD","path":"objects/oPlayerHUD/oPlayerHUD.yy",},"order":3,},
     {"id":{"name":"YellowPH","path":"sprites/YellowPH/YellowPH.yy",},"order":9,},
     {"id":{"name":"snd_CrabDeath","path":"sounds/snd_CrabDeath/snd_CrabDeath.yy",},"order":23,},
+    {"id":{"name":"rNewHub","path":"rooms/rNewHub/rNewHub.yy",},"order":31,},
     {"id":{"name":"tPurple","path":"tilesets/tPurple/tPurple.yy",},"order":8,},
     {"id":{"name":"sFernSkidBeeg","path":"sprites/sFernSkidBeeg/sFernSkidBeeg.yy",},"order":26,},
     {"id":{"name":"sHealthbar","path":"sprites/sHealthbar/sHealthbar.yy",},"order":0,},
@@ -329,6 +330,7 @@
     {"id":{"name":"sTutorialControllerNoSwapDash","path":"sprites/sTutorialControllerNoSwapDash/sTutorialControllerNoSwapDash.yy",},"order":17,},
     {"id":{"name":"rSecret","path":"rooms/rSecret/rSecret.yy",},"order":21,},
     {"id":{"name":"sIcicle","path":"sprites/sIcicle/sIcicle.yy",},"order":2,},
+    {"id":{"name":"sVillagerFish","path":"sprites/sVillagerFish/sVillagerFish.yy",},"order":7,},
     {"id":{"name":"snd_Interact","path":"sounds/snd_Interact/snd_Interact.yy",},"order":28,},
     {"id":{"name":"sGearSmallBlacked","path":"sprites/sGearSmallBlacked/sGearSmallBlacked.yy",},"order":3,},
     {"id":{"name":"oBoxMoveTrigger","path":"objects/oBoxMoveTrigger/oBoxMoveTrigger.yy",},"order":0,},
@@ -515,6 +517,7 @@
     {"roomId":{"name":"rTutorial","path":"rooms/rTutorial/rTutorial.yy",},},
     {"roomId":{"name":"rTutorial2","path":"rooms/rTutorial2/rTutorial2.yy",},},
     {"roomId":{"name":"rSpeedrun3","path":"rooms/rSpeedrun3/rSpeedrun3.yy",},},
+    {"roomId":{"name":"rNewHub","path":"rooms/rNewHub/rNewHub.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -581,7 +584,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.2.560",
+    "IDEVersion": "2.3.2.558",
   },
   "resourceVersion": "1.4",
   "name": "PaletteSwap",
