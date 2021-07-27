@@ -327,6 +327,7 @@
     {"id":{"name":"sTutorialControllerNoSwapDash","path":"sprites/sTutorialControllerNoSwapDash/sTutorialControllerNoSwapDash.yy",},"order":17,},
     {"id":{"name":"rSecret","path":"rooms/rSecret/rSecret.yy",},"order":21,},
     {"id":{"name":"sIcicle","path":"sprites/sIcicle/sIcicle.yy",},"order":2,},
+    {"id":{"name":"sVillagerFish","path":"sprites/sVillagerFish/sVillagerFish.yy",},"order":7,},
     {"id":{"name":"snd_Interact","path":"sounds/snd_Interact/snd_Interact.yy",},"order":28,},
     {"id":{"name":"sGearSmallBlacked","path":"sprites/sGearSmallBlacked/sGearSmallBlacked.yy",},"order":3,},
     {"id":{"name":"oBoxMoveTrigger","path":"objects/oBoxMoveTrigger/oBoxMoveTrigger.yy",},"order":0,},
