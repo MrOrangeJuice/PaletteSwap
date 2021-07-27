@@ -19,3 +19,7 @@
 			layer_set_visible("HiddenGreen", true);
 			break;
 	}
+	
+	if (global.hiddenLayerAlpha < 1){
+		global.hiddenLayerAlpha += 0.06;
+	}
