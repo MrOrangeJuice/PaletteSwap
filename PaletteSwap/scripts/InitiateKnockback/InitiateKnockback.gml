@@ -8,12 +8,18 @@ function InitiateKnockback(_object, _xVel, _yVel)
 	// First off determine what object is getting knocked-back.
 	if (_object.object_index == oPlayer.object_index) 
 	{
+		with (oPlayer){
 		// Next, determine what direction the player is facing.
-		_object.currentwalksp = _xVel;	
+		if (currentwalksp == 0 && !dashdown && !dashup){
+			currentwalksp = image_xscale * walksp;
+		} else {
+			currentwalksp = _xVel;	
+		}
 	
 		// Finally apply knockback to the player.
-		_object.hsp = _object.currentwalksp;
-		_object.vsp = _yVel;
-		_object.alarm[1] = room_speed * 0.75;
+		hsp = currentwalksp;
+		vsp = _yVel;
+		alarm[1] = room_speed * 0.75;
+		}
 	}
 }
