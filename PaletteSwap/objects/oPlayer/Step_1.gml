@@ -193,7 +193,6 @@ else if(!isDashing)
 		if(currentwalksp < 0)
 		{
 			currentwalksp += 0.25;
-			if (airborne) currentwalksp -= 0.1
 			// Round up
 			if(currentwalksp > -0.05)
 			{
@@ -203,7 +202,6 @@ else if(!isDashing)
 		if(currentwalksp > 0)
 		{
 			currentwalksp -= 0.25;
-			if (airborne) currentwalksp += 0.1
 			// Round down
 			if(currentwalksp < 0.05)
 			{
