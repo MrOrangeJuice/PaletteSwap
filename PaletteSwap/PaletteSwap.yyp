@@ -19,6 +19,7 @@
     {"id":{"name":"sRiftBubble","path":"sprites/sRiftBubble/sRiftBubble.yy",},"order":7,},
     {"id":{"name":"sSeasideBlue","path":"sprites/sSeasideBlue/sSeasideBlue.yy",},"order":1,},
     {"id":{"name":"sGlass","path":"sprites/sGlass/sGlass.yy",},"order":5,},
+    {"id":{"name":"rNewHub","path":"rooms/rNewHub/rNewHub.yy",},"order":31,},
     {"id":{"name":"fUI","path":"fonts/fUI/fUI.yy",},"order":0,},
     {"id":{"name":"sPlayerIdleGreen","path":"sprites/sPlayerIdleGreen/sPlayerIdleGreen.yy",},"order":3,},
     {"id":{"name":"snd_PlayerDamage","path":"sounds/snd_PlayerDamage/snd_PlayerDamage.yy",},"order":29,},
@@ -447,6 +448,7 @@
     {"id":{"name":"sCapsule","path":"sprites/sCapsule/sCapsule.yy",},"order":39,},
     {"id":{"name":"sGrass2","path":"sprites/sGrass2/sGrass2.yy",},"order":6,},
     {"id":{"name":"rAaronLevel","path":"rooms/rAaronLevel/rAaronLevel.yy",},"order":19,},
+    {"id":{"name":"oFishVillager","path":"objects/oFishVillager/oFishVillager.yy",},"order":4,},
     {"id":{"name":"sFernSkid2","path":"sprites/sFernSkid2/sFernSkid2.yy",},"order":2,},
     {"id":{"name":"rAlexLevel","path":"rooms/rAlexLevel/rAlexLevel.yy",},"order":23,},
     {"id":{"name":"sCheckpoint","path":"sprites/sCheckpoint/sCheckpoint.yy",},"order":0,},
@@ -517,6 +519,7 @@
     {"roomId":{"name":"rTutorial","path":"rooms/rTutorial/rTutorial.yy",},},
     {"roomId":{"name":"rTutorial2","path":"rooms/rTutorial2/rTutorial2.yy",},},
     {"roomId":{"name":"rSpeedrun3","path":"rooms/rSpeedrun3/rSpeedrun3.yy",},},
+    {"roomId":{"name":"rNewHub","path":"rooms/rNewHub/rNewHub.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
