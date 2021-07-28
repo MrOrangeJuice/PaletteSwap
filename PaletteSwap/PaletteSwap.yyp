@@ -298,6 +298,7 @@
     {"id":{"name":"sCheckpointInactive","path":"sprites/sCheckpointInactive/sCheckpointInactive.yy",},"order":1,},
     {"id":{"name":"snd_MenuSelect2","path":"sounds/snd_MenuSelect2/snd_MenuSelect2.yy",},"order":12,},
     {"id":{"name":"sEddy","path":"sprites/sEddy/sEddy.yy",},"order":0,},
+    {"id":{"name":"sVillagerFish","path":"sprites/sVillagerFish/sVillagerFish.yy",},"order":7,},
     {"id":{"name":"oRollSpawnNoSwap","path":"objects/oRollSpawnNoSwap/oRollSpawnNoSwap.yy",},"order":7,},
     {"id":{"name":"oFallFX","path":"objects/oFallFX/oFallFX.yy",},"order":5,},
     {"id":{"name":"snd_Menu","path":"sounds/snd_Menu/snd_Menu.yy",},"order":10,},
