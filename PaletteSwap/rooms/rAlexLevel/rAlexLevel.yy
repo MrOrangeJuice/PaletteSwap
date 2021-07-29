@@ -53,6 +53,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":248.0,"y":1456.0,"resourceVersion":"1.0","name":"inst_72A7D669","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oSeasideMusic","path":"objects/oSeasideMusic/oSeasideMusic.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":232.0,"y":144.0,"resourceVersion":"1.0","name":"inst_ECD40DB","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oColorLimiter","path":"objects/oColorLimiter/oColorLimiter.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":336.0,"y":96.0,"resourceVersion":"1.0","name":"inst_6BED4050","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"oLevelSplash","path":"objects/oLevelSplash/oLevelSplash.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":264.0,"y":96.0,"resourceVersion":"1.0","name":"inst_65E98765","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":184.0,"y":1440.0,"resourceVersion":"1.0","name":"inst_4A984472","tags":[],"resourceType":"GMRInstance",},
@@ -2469,6 +2470,7 @@
     {"name":"inst_6BD24910","path":"rooms/rAlexLevel/rAlexLevel.yy",},
     {"name":"inst_13E09373","path":"rooms/rAlexLevel/rAlexLevel.yy",},
     {"name":"inst_6811EE79","path":"rooms/rAlexLevel/rAlexLevel.yy",},
+    {"name":"inst_65E98765","path":"rooms/rAlexLevel/rAlexLevel.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

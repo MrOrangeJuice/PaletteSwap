@@ -36,6 +36,7 @@
             {"propertyId":{"name":"zone","path":"objects/oDangerTrigger/oDangerTrigger.yy",},"objectId":{"name":"oDangerTrigger","path":"objects/oDangerTrigger/oDangerTrigger.yy",},"value":"4","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"oDangerTrigger","path":"objects/oDangerTrigger/oDangerTrigger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.14,"scaleY":0.32,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1584.0,"y":1692.0,"resourceVersion":"1.0","name":"inst_1F928592","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oFactoryMusic","path":"objects/oFactoryMusic/oFactoryMusic.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":256.0,"y":192.0,"resourceVersion":"1.0","name":"inst_58374960","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"oLevelSplash","path":"objects/oLevelSplash/oLevelSplash.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":320.0,"y":192.0,"resourceVersion":"1.0","name":"inst_743739E2","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":128.999939,"y":1816.0,"resourceVersion":"1.0","name":"inst_41A777CB","tags":[],"resourceType":"GMRInstance",},
@@ -2019,6 +2020,7 @@
     {"name":"inst_10CB808A","path":"rooms/rFactory/rFactory.yy",},
     {"name":"inst_464C293B","path":"rooms/rFactory/rFactory.yy",},
     {"name":"inst_58374960","path":"rooms/rFactory/rFactory.yy",},
+    {"name":"inst_743739E2","path":"rooms/rFactory/rFactory.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
