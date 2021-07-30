@@ -287,11 +287,6 @@ else{
 			DoCollision(oPaletteWall, true);
 		}
 		
-		if (place_meeting(x,y+1,oWall))
-		{
-			instance_create_layer(x, y+8,"Coins",oFallFX);	
-		}
-		
 		x = x + hsp;
 		//apply gravity if dashing in air
 		if (jumped){
