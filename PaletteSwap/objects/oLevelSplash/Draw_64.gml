@@ -2,12 +2,12 @@
 // You can write your code in this editor
 if(out && xOffset != 128)
 {
-	xOffset += 4;
+	xOffset += 8;
 }
 
 if(!out && xOffset != 0)
 {
-	xOffset -= 4;	
+	xOffset -= 8;	
 }
 
 if(room == rPaletteTemple)
