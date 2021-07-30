@@ -11,4 +11,5 @@ if(room != rTutorial && global.loaded){
 		instance_create_layer(ds_list_find_value(global.loadCoinsX, c), ds_list_find_value(global.loadCoinsY, c), "Coins", oCoin);
 	}
 }
-global.textUp = false;
+global.canControlTimer = -1;
+global.paused = false;

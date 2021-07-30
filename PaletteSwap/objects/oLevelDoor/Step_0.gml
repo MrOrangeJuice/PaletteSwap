@@ -68,7 +68,7 @@ if(global.gearTotal >= gearRequirement)
 	if(place_meeting(x,y,oPlayer) && key_enter)
 	{
 		audio_play_sound(snd_PortalEnter,5,false);
-		global.textUp = true;
+		global.canControlTimer = room_speed;
 		global.color = 0;
 		Save();
 		switch(levelTo)
