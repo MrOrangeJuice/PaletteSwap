@@ -9,7 +9,7 @@
   "swfPrecision": 2.525,
   "bbox_left": 1,
   "bbox_right": 254,
-  "bbox_top": 100,
+  "bbox_top": 68,
   "bbox_bottom": 191,
   "HTile": false,
   "VTile": false,
@@ -27,6 +27,7 @@
     {"compositeImage":{"FrameId":{"name":"3f1fa9ed-9e62-472e-b7d7-da97e9d8506b","path":"sprites/sMotel/sMotel.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"3f1fa9ed-9e62-472e-b7d7-da97e9d8506b","path":"sprites/sMotel/sMotel.yy",},"LayerId":{"name":"d4933105-3c86-4ab5-a503-83ff5075d1f0","path":"sprites/sMotel/sMotel.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"3f1fa9ed-9e62-472e-b7d7-da97e9d8506b","path":"sprites/sMotel/sMotel.yy",},"LayerId":{"name":"c5bbcda3-9f16-4147-a3b3-bb979693b5f9","path":"sprites/sMotel/sMotel.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"3f1fa9ed-9e62-472e-b7d7-da97e9d8506b","path":"sprites/sMotel/sMotel.yy",},"LayerId":{"name":"c533e042-a7d7-444f-b190-009b672979be","path":"sprites/sMotel/sMotel.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sMotel","path":"sprites/sMotel/sMotel.yy",},"resourceVersion":"1.0","name":"3f1fa9ed-9e62-472e-b7d7-da97e9d8506b","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -68,6 +69,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Door","resourceVersion":"1.0","name":"d4933105-3c86-4ab5-a503-83ff5075d1f0","tags":[],"resourceType":"GMImageLayer",},
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"c5bbcda3-9f16-4147-a3b3-bb979693b5f9","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 2","resourceVersion":"1.0","name":"c533e042-a7d7-444f-b190-009b672979be","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
