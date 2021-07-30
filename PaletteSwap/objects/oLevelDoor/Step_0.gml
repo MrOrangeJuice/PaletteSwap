@@ -1,7 +1,7 @@
 /// @description Update visuals and check for entry
 
 // Get input
-key_enter = keyboard_check(ord("X"));
+key_enter = keyboard_check_pressed(ord("X"));
 
 if (key_enter)
 {
