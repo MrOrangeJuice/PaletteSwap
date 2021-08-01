@@ -1,7 +1,7 @@
 /// @description Player Hover
 
 // Get input
-key_enter = keyboard_check(ord("X"));
+key_enter = keyboard_check_pressed(ord("X"));
 
 if (key_enter)
 {
@@ -40,6 +40,8 @@ if(place_meeting(x, y, oPlayer) && oPortal.visible)
 		if(room == rFactory)
 		{
 			global.factoryCompleted = true;
+			audio_stop_sound(msc_FactoryIntro);
+			audio_stop_sound(msc_FactoryLoop);
 		}
 		Save();
 		SlideTransition(TRANS_MODE.GOTO, next_room);	

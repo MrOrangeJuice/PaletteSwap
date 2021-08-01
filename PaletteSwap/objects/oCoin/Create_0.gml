@@ -1,5 +1,7 @@
 /// @description Initialize Variables
 currentframe = 0;
+hsp = 0;
+vsp = 0;
 /*
 if(global.loaded){
 	instance_destroy();

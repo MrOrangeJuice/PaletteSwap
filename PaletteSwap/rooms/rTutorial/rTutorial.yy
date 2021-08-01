@@ -17,9 +17,6 @@
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"oTransition","path":"objects/oTransition/oTransition.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":336.0,"y":144.0,"resourceVersion":"1.0","name":"inst_3DFA4FA8","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":160.0,"y":144.0,"resourceVersion":"1.0","name":"inst_6D142AF","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[
-            {"propertyId":{"name":"next_room","path":"objects/oTunnelGateway/oTunnelGateway.yy",},"objectId":{"name":"oTunnelGateway","path":"objects/oTunnelGateway/oTunnelGateway.yy",},"value":"rTutorial2","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-          ],"isDnd":false,"objectId":{"name":"oTunnelGateway","path":"objects/oTunnelGateway/oTunnelGateway.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":5144.0,"y":216.0,"resourceVersion":"1.0","name":"inst_6BAB0B93","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oScreenDarken","path":"objects/oScreenDarken/oScreenDarken.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-96.0,"y":-960.0,"resourceVersion":"1.0","name":"inst_15C575D5","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
@@ -27,6 +24,9 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"oCheckpoint","path":"objects/oCheckpoint/oCheckpoint.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1144.0,"y":416.0,"resourceVersion":"1.0","name":"inst_552EC414","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oCheckpoint","path":"objects/oCheckpoint/oCheckpoint.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2568.0,"y":384.0,"resourceVersion":"1.0","name":"inst_78B69D3D","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oCheckpoint","path":"objects/oCheckpoint/oCheckpoint.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":4056.0,"y":544.0,"resourceVersion":"1.0","name":"inst_6A462C41","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"next_room","path":"objects/oTunnelGateway/oTunnelGateway.yy",},"objectId":{"name":"oTunnelGateway","path":"objects/oTunnelGateway/oTunnelGateway.yy",},"value":"rTutorial2","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"oTunnelGateway","path":"objects/oTunnelGateway/oTunnelGateway.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":5144.0,"y":216.0,"resourceVersion":"1.0","name":"inst_6BAB0B93","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Checkpoints","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"oBird","path":"objects/oBird/oBird.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3264.0,"y":328.0,"resourceVersion":"1.0","name":"inst_7D68757B","tags":[],"resourceType":"GMRInstance",},
@@ -331,7 +331,6 @@
     {"name":"inst_3DFA4FA8","path":"rooms/rTutorial/rTutorial.yy",},
     {"name":"inst_6D142AF","path":"rooms/rTutorial/rTutorial.yy",},
     {"name":"inst_15C575D5","path":"rooms/rTutorial/rTutorial.yy",},
-    {"name":"inst_6BAB0B93","path":"rooms/rTutorial/rTutorial.yy",},
     {"name":"inst_495BDC3","path":"rooms/rTutorial/rTutorial.yy",},
     {"name":"inst_5740BF4","path":"rooms/rTutorial/rTutorial.yy",},
     {"name":"inst_62C9C","path":"rooms/rTutorial/rTutorial.yy",},
@@ -562,6 +561,7 @@
     {"name":"inst_2074471","path":"rooms/rTutorial/rTutorial.yy",},
     {"name":"inst_48777D4F","path":"rooms/rTutorial/rTutorial.yy",},
     {"name":"inst_54B8D2DC","path":"rooms/rTutorial/rTutorial.yy",},
+    {"name":"inst_6BAB0B93","path":"rooms/rTutorial/rTutorial.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

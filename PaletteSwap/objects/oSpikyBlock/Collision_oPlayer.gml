@@ -7,7 +7,7 @@ if (!oPlayer.isInvulnerable)
 	global.hp -= damage;
 	oPlayer.isInvulnerable = true;
 			
-	InitiateKnockback(oPlayer, (3 * oConveyer.beltDirection), -7);
+	InitiateKnockback(other, other.image_xscale * -6, -7);
 			
 	global.knockedBack = true;
 }

@@ -201,7 +201,7 @@ else if(!isDashing)
 		}
 		if(currentwalksp > 0)
 		{
-			currentwalksp -= 0.25;	
+			currentwalksp -= 0.25;
 			// Round down
 			if(currentwalksp < 0.05)
 			{

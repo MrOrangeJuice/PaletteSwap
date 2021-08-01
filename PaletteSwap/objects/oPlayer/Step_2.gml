@@ -104,12 +104,18 @@ if(!isDashing){
 	x = x + hsp;
 
 	// Vertical Collision
-	if (place_meeting(x,y+vsp,oWall))
+	if (place_meeting(x,y+vsp,oWall) || place_meeting(x,y+ sign(vsp),oWall))
 	{
+		//if(prevAirborne && bottomWall && vsp >= 2 && !isDashing) instance_create_layer(x, y+6,"Coins",oFallFX);
 		DoCollision(oWall, true);
+		if(bottomWall) prevAirborne = false;
+	}
+	else
+	{
+		prevAirborne = true;
 	}
 	// palette wall Collision
-	if (place_meeting(x,y+vsp,oPaletteWall))
+	if (place_meeting(x,y+vsp,oPaletteWall) || place_meeting(x,y+ sign(vsp),oPaletteWall))
 	{
 		switch (global.color){
 			case 0:
@@ -153,7 +159,7 @@ if(!isDashing){
 else{
 	if(dashdown || dashup){
 		// Handle Vertical Collision Normally
-		if (place_meeting(x,y+vsp,oWall))
+		if (place_meeting(x,y+vsp,oWall) || place_meeting(x,y+sign(vsp),oWall))
 		{
 			wallY = 0;
 			while (!place_meeting(x,y+wallY,oWall))
@@ -167,7 +173,7 @@ else{
 			//collide with wall    |  -11 down, 5 up  |
 			DoDashCollision(oWall, (sign(vsp) * -8) - 3, 0, true);
 		}
-		if (place_meeting(x,y+vsp,oPaletteWall))
+		if (place_meeting(x,y+vsp,oPaletteWall) || place_meeting(x,y+sign(vsp),oPaletteWall))
 		{
 			wallY = 0;
 			while (!place_meeting(x,y+wallY,oPaletteWall))
@@ -215,7 +221,7 @@ else{
 	}
 	else {
 		// Horizontal Collision
-		if (place_meeting(x+hsp,y,oWall))
+		if (place_meeting(x+hsp,y,oWall) || place_meeting(x+sign(hsp),y,oWall))
 		{
 			// Determine where wall is
 			wallX = 0;
@@ -228,7 +234,7 @@ else{
 			DoDashCollision(oWall, -7, sign(hsp) * -6, false);
 		}
 		//palette block
-		if (place_meeting(x+hsp,y,oPaletteWall))
+		if (place_meeting(x+hsp,y,oPaletteWall) || place_meeting(x+sign(hsp),y,oPaletteWall))
 		{
 			wallX = 0;
 			while (!place_meeting(x+wallX,y,oPaletteWall))
@@ -280,6 +286,7 @@ else{
 		{
 			DoCollision(oPaletteWall, true);
 		}
+		
 		x = x + hsp;
 		//apply gravity if dashing in air
 		if (jumped){

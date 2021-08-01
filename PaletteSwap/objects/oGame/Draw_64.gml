@@ -74,7 +74,7 @@ if(room != MainMenu && room != rLevelSelect && room != rThanks && room != rStick
 	
 	// Draw Collectable Count
 	gearOffset = 0;
-	if(global.coins < 10)
+	if(global.gearTotal < 10)
 	{
 		gearOffset = 0;	
 	}

@@ -13,6 +13,7 @@ dashup = false;
 swimup = false;
 currentwalksp = 0;
 airborne = false;
+prevAirborne = false;
 canDash = true;
 isDashing = false;
 isRolling = false;
