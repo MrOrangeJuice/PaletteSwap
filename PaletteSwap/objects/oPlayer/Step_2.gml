@@ -10,6 +10,7 @@ if(collidingSpikes != noone){
 				InitiateKnockback(oPlayer, image_xscale * -6, -7);
 				global.knockedBack = true;
 				isRolling = false;
+				isDashing = false;
 				audio_play_sound(snd_Damage, 5, false);
 		}
 	}
@@ -18,7 +19,7 @@ else{
 	spikeImmune = false;
 }
 
-	bottomWall = place_meeting(x, y+1, oWall);
+	bottomWall = place_meeting(x, y+1, oWall) || place_meeting(x, y+1, oOneWayWall);
 	bottomPalette = place_meeting(x, y+1, oPaletteWall);
 if (!bottomWall && !bottomPalette && !wallgrab)
 {
