@@ -1,15 +1,15 @@
 /// @description Update Physics
 // Get Player Input
-key_left = keyboard_check(ord(leftKey));
-key_right = keyboard_check(ord(rightKey));
-key_jump = keyboard_check(ord(jumpKey)) || keyboard_check(jumpAltKey);
-key_jump_released = keyboard_check_released(ord(jumpKey)) || keyboard_check_released(jumpAltKey);
-key_down = keyboard_check(ord(downKey));
+key_left = keyboard_check(ord("A"));
+key_right = keyboard_check(ord("D"));
+key_jump = keyboard_check(ord("P")) || keyboard_check(vk_space);
+key_jump_released = keyboard_check_released(ord("P")) || keyboard_check_released(vk_space);
+key_down = keyboard_check(ord("S"));
 key_dash = 0;
-if(window_has_focus()) key_dash = keyboard_check_pressed(ord(dashKey)) || keyboard_check_pressed(dashAltKey);
-key_up = keyboard_check(ord(upKey));
-key_swap_down = keyboard_check_pressed(ord(swapDownKey)) || keyboard_check_pressed(ord(swapDownAltKey));
-key_swap_up = keyboard_check_pressed(ord(swapUpKey)) || keyboard_check_pressed(ord(swapUpAltKey));
+if(window_has_focus()) key_dash = keyboard_check_pressed(ord("O")) || keyboard_check_pressed(vk_lshift);
+key_up = keyboard_check(ord("W"));
+key_swap_down = keyboard_check_pressed(ord("Q")) || keyboard_check_pressed(ord("U"));
+key_swap_up = keyboard_check_pressed(ord("E")) || keyboard_check_pressed(ord("I"));
 
 if (key_left) || (key_right) || (key_jump) || (key_dash) || (key_down) || (key_up) || (key_jump_released) || (key_swap_up) || (key_swap_down)
 {
