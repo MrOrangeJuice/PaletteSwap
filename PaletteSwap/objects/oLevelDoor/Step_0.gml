@@ -1,7 +1,7 @@
 /// @description Update visuals and check for entry
 
 // Get input
-key_enter = keyboard_check(ord("X"));
+key_enter = keyboard_check_pressed(ord("X"));
 
 if (key_enter)
 {
@@ -68,6 +68,7 @@ if(global.gearTotal >= gearRequirement)
 	if(place_meeting(x,y,oPlayer) && key_enter)
 	{
 		audio_play_sound(snd_PortalEnter,5,false);
+		global.canControlTimer = room_speed;
 		global.color = 0;
 		Save();
 		switch(levelTo)
