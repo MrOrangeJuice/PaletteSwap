@@ -13,9 +13,12 @@ if (other.dashdown || other.dashup)
 else if (other.isDashing)
 {
 	eHP -= 1;
-		
+	//consistency alignment
+	if (other.y > y){
+		other.y = y;
+	}
 	// Send player flying.
-	InitiateKnockback(other, other.image_xscale * 8, -7);
+	InitiateKnockback(other, other.image_xscale * 6, -7);
 		 
 	// Refresh player's dash.
 	DashReset();

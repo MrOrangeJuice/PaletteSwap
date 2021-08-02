@@ -10,6 +10,7 @@ if(collidingSpikes != noone){
 				InitiateKnockback(oPlayer, image_xscale * -6, -7);
 				global.knockedBack = true;
 				isRolling = false;
+				isDashing = false;
 				audio_play_sound(snd_Damage, 5, false);
 		}
 	}
