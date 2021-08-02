@@ -19,7 +19,7 @@ else{
 	spikeImmune = false;
 }
 
-	bottomWall = place_meeting(x, y+1, oWall);
+	bottomWall = place_meeting(x, y+1, oWall) || place_meeting(x, y+1, oOneWayWall);
 	bottomPalette = place_meeting(x, y+1, oPaletteWall);
 if (!bottomWall && !bottomPalette && !wallgrab)
 {
