@@ -13,10 +13,11 @@ if(instance_exists(oPlayer))
 				}
 			if (place_meeting(x,y + vsp,other) && !place_meeting(x,y,other) && other.dirVert && sign(vsp) == other.dir)
 				{
+					//if (airborne) SwapSprite(sFernIdle2);
 					DoCollision(other, true);
 				}
 		} else {
-			if (place_meeting(x+hsp,y,other) && !place_meeting(x,y,other) && !other.dirVert && sign(hsp) != other.dir)
+			if (place_meeting(x+hsp,y,other) && !other.dirVert && sign(hsp) != other.dir)
 				{
 					// Determine where wall is
 					wallX = 0;
@@ -28,7 +29,7 @@ if(instance_exists(oPlayer))
 					FX.image_angle = sign(hsp) * 90;
 					DoDashCollision(other, -7, sign(hsp) * -6, false);
 				}
-			if (place_meeting(x,y+vsp,other) && !place_meeting(x,y,other) && other.dirVert && sign(vsp) == other.dir)
+			if (place_meeting(x,y+vsp,other) && other.dirVert && sign(vsp) == other.dir)
 				{
 					wallY = 0;
 					while (!place_meeting(x,y+wallY,other))
