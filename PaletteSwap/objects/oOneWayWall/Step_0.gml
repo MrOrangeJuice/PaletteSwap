@@ -13,7 +13,7 @@ if(instance_exists(oPlayer))
 				}
 			if (place_meeting(x,y + vsp,other) && !place_meeting(x,y,other) && other.dirVert && sign(vsp) == other.dir)
 				{
-					//if (airborne) SwapSprite(sFernIdle2);
+					if (airborne) SwapSprite(sFernIdle2);
 					DoCollision(other, true);
 				}
 		} else {
