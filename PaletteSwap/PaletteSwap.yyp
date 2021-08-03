@@ -391,6 +391,7 @@
     {"id":{"name":"msc_FactoryIntro","path":"sounds/msc_FactoryIntro/msc_FactoryIntro.yy",},"order":5,},
     {"id":{"name":"sBarrel","path":"sprites/sBarrel/sBarrel.yy",},"order":1,},
     {"id":{"name":"oLevelSelect","path":"objects/oLevelSelect/oLevelSelect.yy",},"order":0,},
+    {"id":{"name":"sHorrorCutscene","path":"sprites/sHorrorCutscene/sHorrorCutscene.yy",},"order":3,},
     {"id":{"name":"oPaletteWall","path":"objects/oPaletteWall/oPaletteWall.yy",},"order":1,},
     {"id":{"name":"rPaletteTemple","path":"rooms/rPaletteTemple/rPaletteTemple.yy",},"order":22,},
     {"id":{"name":"sCursorBig","path":"sprites/sCursorBig/sCursorBig.yy",},"order":20,},
