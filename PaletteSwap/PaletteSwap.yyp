@@ -114,6 +114,7 @@
     {"id":{"name":"oDanger","path":"objects/oDanger/oDanger.yy",},"order":8,},
     {"id":{"name":"sPlayerCanDashGreen","path":"sprites/sPlayerCanDashGreen/sPlayerCanDashGreen.yy",},"order":0,},
     {"id":{"name":"oCrateSpawn","path":"objects/oCrateSpawn/oCrateSpawn.yy",},"order":19,},
+    {"id":{"name":"sShack","path":"sprites/sShack/sShack.yy",},"order":50,},
     {"id":{"name":"tGreen","path":"tilesets/tGreen/tGreen.yy",},"order":6,},
     {"id":{"name":"sWaterBlue","path":"sprites/sWaterBlue/sWaterBlue.yy",},"order":4,},
     {"id":{"name":"oTutorialDirection","path":"objects/oTutorialDirection/oTutorialDirection.yy",},"order":1,},
