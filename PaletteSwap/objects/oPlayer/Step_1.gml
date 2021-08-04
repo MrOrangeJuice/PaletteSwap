@@ -355,6 +355,10 @@ if (global.knockedBack == true)
 {
 	SwapSprite(sFernHit);
 }
+else if(wallgrab)
+{
+	SwapSprite(sFernClimb);	
+}
 else if(isDashing)
 {
 	if(dashdown)
