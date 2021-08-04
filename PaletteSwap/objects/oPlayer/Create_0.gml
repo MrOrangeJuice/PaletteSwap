@@ -30,6 +30,7 @@ lastGroundedPosX = 0;
 lastGroundedPosY = 0;
 villager = false;
 canSwap = true;
+bottomWall = false;
 if(room == PaletteTempleLevel)
 {
 	canSwap = false;	

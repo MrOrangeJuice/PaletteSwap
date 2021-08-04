@@ -87,7 +87,7 @@ if(key_jump_released)
 
 sidewall = place_meeting(x + 2, y, oWall) || place_meeting(x - 2, y, oWall) || place_meeting(x + 2, y, oPaletteWall) || place_meeting(x - 2, y, oPaletteWall);
 
-if ((!sidewall || global.color != 2) && wallgrab){
+if ((!sidewall || global.color != 2 || bottomWall) && wallgrab){
 	wallgrab = false;
 	if (vsp < 0 && !isDashing){
 		vsp -= 4;
@@ -354,6 +354,10 @@ image_angle = 0;
 if (global.knockedBack == true)
 {
 	SwapSprite(sFernHit);
+}
+else if(wallgrab)
+{
+	SwapSprite(sFernClimb);	
 }
 else if(isDashing)
 {
