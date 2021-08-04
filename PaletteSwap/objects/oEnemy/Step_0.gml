@@ -7,7 +7,7 @@ if (eHP <= 0)
 }
 
 // Animation
-if (moveSpeed == 0){
+if (moveSpeed == 0 && instance_exists(oPlayer)){
 	image_xscale = sign(oPlayer.x - x);
 }
 else if (moveSpeed < 0) {
