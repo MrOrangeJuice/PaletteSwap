@@ -1,16 +1,13 @@
 {
   "spriteId": {
-    "name": "sWallMany",
-    "path": "sprites/sWallMany/sWallMany.yy",
+    "name": "sTutorialControllerNoSwapDash",
+    "path": "sprites/sTutorialControllerNoSwapDash/sTutorialControllerNoSwapDash.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "oAbstractWallBase",
-    "path": "objects/oAbstractWallBase/oAbstractWallBase.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -24,16 +21,17 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Walls",
-    "path": "folders/Objects/Walls.yy",
+    "name": "Tutorials",
+    "path": "folders/Objects/Tutorials.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oPaletteWall",
+  "name": "oTutorialDash",
   "tags": [],
   "resourceType": "GMObject",
 }

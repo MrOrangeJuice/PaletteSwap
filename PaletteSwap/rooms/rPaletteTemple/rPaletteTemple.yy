@@ -424,6 +424,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1936.0,"y":1792.0,"resourceVersion":"1.0","name":"inst_77052560","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oPortal","path":"objects/oPortal/oPortal.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1936.0,"y":1792.0,"resourceVersion":"1.0","name":"inst_4D1D9610","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oDoorPrompt","path":"objects/oDoorPrompt/oDoorPrompt.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1936.0,"y":1760.0,"resourceVersion":"1.0","name":"inst_47C525DA","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"oTutorialUpDash","path":"objects/oTutorialUpDash/oTutorialUpDash.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2516.0,"y":2288.0,"resourceVersion":"1.0","name":"inst_2E8679C7","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":4,"gridY":4,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Portals","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"oCrate","path":"objects/oCrate/oCrate.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1088.0,"y":1840.0,"resourceVersion":"1.0","name":"inst_73656E4B","tags":[],"resourceType":"GMRInstance",},
@@ -3312,6 +3313,7 @@
     {"name":"inst_7B85E92B","path":"rooms/rPaletteTemple/rPaletteTemple.yy",},
     {"name":"inst_51D35347","path":"rooms/rPaletteTemple/rPaletteTemple.yy",},
     {"name":"inst_40708E80","path":"rooms/rPaletteTemple/rPaletteTemple.yy",},
+    {"name":"inst_2E8679C7","path":"rooms/rPaletteTemple/rPaletteTemple.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
