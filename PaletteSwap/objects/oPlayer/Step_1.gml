@@ -297,7 +297,7 @@ else
 	// If timer is up
 	if(dashtime <= 0 && !dashdown && !swimming && !wallgrab)
 	{
-			if (place_meeting(x + (hsp * 2), y, oEnemy)){
+			if (place_meeting(x + (hsp * 2.5), y, oEnemy)){
 				oEnemy.canHit = false;
 			}
 		isDashing = false;

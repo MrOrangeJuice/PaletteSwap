@@ -10,7 +10,7 @@ if (other.dashdown || other.dashup)
 	// Refresh player's dash.
 	DashReset();
 }
-else if (other.isDashing)
+else if (other.isDashing || !canHit)
 {
 	eHP -= 1;
 	//consistency alignment
@@ -32,7 +32,7 @@ else if (other.isRolling)
 	DashReset();
 } 
 // If the player is not dashing, then knock them back and begin their iframes.
-else if (canHit)
+else /*if (canHit)*/
 {
 	// Damage and knockback the player if they're vulnerable.
 	if (!other.isInvulnerable) 

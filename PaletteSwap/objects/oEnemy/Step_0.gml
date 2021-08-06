@@ -6,7 +6,7 @@ if (eHP <= 0)
 	instance_deactivate_object(self);
 }
 
-if (!canHit && !(place_meeting(x, y, oPlayer) || place_meeting(x - (oPlayer.hsp * 2), y, oPlayer))) {
+if (!canHit && !(place_meeting(x, y, oPlayer) || place_meeting(x - (oPlayer.hsp * 2.5), y, oPlayer))) {
 	canHit = true;
 }
 
