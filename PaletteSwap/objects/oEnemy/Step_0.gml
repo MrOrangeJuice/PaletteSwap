@@ -6,6 +6,10 @@ if (eHP <= 0)
 	instance_deactivate_object(self);
 }
 
+if (!canHit && !(place_meeting(x, y, oPlayer) || place_meeting(x - (oPlayer.hsp * 2), y, oPlayer))) {
+	canHit = true;
+}
+
 // Animation
 if (moveSpeed == 0 && instance_exists(oPlayer)){
 	image_xscale = sign(oPlayer.x - x);

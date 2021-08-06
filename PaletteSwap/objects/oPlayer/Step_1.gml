@@ -297,6 +297,9 @@ else
 	// If timer is up
 	if(dashtime <= 0 && !dashdown && !swimming && !wallgrab)
 	{
+			if (place_meeting(x + (hsp * 2), y, oEnemy)){
+				oEnemy.canHit = false;
+			}
 		isDashing = false;
 		// Cancel roll if the dash ends without hitting a wall
 		isRolling = false;
