@@ -24,7 +24,36 @@ if(place_meeting(x, y, oPlayer) && oPortal.visible)
 	}
 	if(key_enter)
 	{
-		global.color = 0;
+		global.canControlTimer = room_speed * 3;
+		exiting = true;
+		with (oPlayer){
+			image_xscale = sign(other.x - x); 
+			SwapSprite(sFernRunNew);
+		}
+	}
+}
+else if(place_meeting(x, y, oPlayer))
+{
+	if(!prompt)
+	{
+		oDoorPrompt.visible = true;	
+		prompt = true;	
+	}
+}
+else
+{
+	if(prompt)
+	{
+		oDoorPrompt.visible = false;
+		prompt = false;
+	}
+}
+
+//delayed exiting sequence
+if (exiting && abs(oPlayer.x - x) <= 1.5){
+	exiting = false;
+	with (oPlayer) SwapSprite(sFernIdle2);
+	global.color = 0;
 		global.hp = 100;
 		audio_play_sound(snd_PortalEnter,5,false);
 		if(room == rPaletteTemple)
@@ -44,24 +73,9 @@ if(place_meeting(x, y, oPlayer) && oPortal.visible)
 			audio_stop_sound(msc_FactoryLoop);
 		}
 		Save();
-		SlideTransition(TRANS_MODE.GOTO, next_room);	
-	}
-}
-else if(place_meeting(x, y, oPlayer))
-{
-	if(!prompt)
-	{
-		oDoorPrompt.visible = true;	
-		prompt = true;	
-	}
-}
-else
-{
-	if(prompt)
-	{
-		oDoorPrompt.visible = false;
-		prompt = false;
-	}
+		SlideTransition(TRANS_MODE.GOTO, next_room)
+} else if (exiting) {
+	oPlayer.x += sign(x - oPlayer.x) * 3;
 }
 
 
