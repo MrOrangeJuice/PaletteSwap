@@ -471,6 +471,9 @@ if ((key_swap_down || key_swap_up) && swimming)
 if(global.hp <= 0){
 	death = instance_create_layer(x,y,"Player",oPlayerDeath);
 	death.villager = villager;
+	if (instance_exists(oEddy)){
+		death.canSwap = canSwap;
+	}
 	instance_create_layer(x,y,"Player",oGlasses);
 	instance_destroy();
 	/*

@@ -67,8 +67,20 @@ if(global.gearTotal >= gearRequirement)
 	portal.visible = true;	
 	if(place_meeting(x,y,oPlayer) && key_enter)
 	{
-		audio_play_sound(snd_PortalEnter,5,false);
-		global.canControlTimer = room_speed;
+		global.canControlTimer = room_speed * 3;
+		exiting = true;
+		with (oPlayer){
+			image_xscale = sign(other.x - x); 
+			SwapSprite(sFernRunNew);
+		}
+	}
+}
+
+//delayed exiting sequence
+if (exiting && abs(oPlayer.x - x) <= 1.5){
+	exiting = false;
+	with (oPlayer) SwapSprite(sFernIdle2);
+	audio_play_sound(snd_PortalEnter,5,false);
 		global.color = 0;
 		Save();
 		switch(levelTo)
@@ -96,7 +108,8 @@ if(global.gearTotal >= gearRequirement)
 				SlideTransition(TRANS_MODE.GOTO, rFactory);
 				break;
 		}
-	}
+} else if (exiting) {
+	oPlayer.x += sign(x - oPlayer.x) * 3;
 }
 
 PaletteAnimationSwap();
