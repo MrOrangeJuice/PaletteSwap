@@ -373,7 +373,18 @@ if (global.knockedBack == true)
 }
 else if(wallgrab)
 {
-	SwapSprite(sFernClimb);	
+	if(image_xscale == 1 && key_left)
+	{
+		SwapSprite(sFernClimbLook);	
+	}
+	else if(image_xscale == -1 && key_right)
+	{
+		SwapSprite(sFernClimbLook);	
+	}
+	else
+	{
+		SwapSprite(sFernClimb);	
+	}
 }
 else if(isDashing)
 {
