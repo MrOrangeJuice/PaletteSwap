@@ -17,7 +17,7 @@ if (gamepad_button_check_pressed(0,gp_face4) || gamepad_button_check_pressed(4,g
 // Render prompt
 if(place_meeting(x, y, oPlayer) && oPortal.visible)
 {
-	if(!prompt)
+	if(!prompt && !oPlayer.exiting)
 	{
 		oDoorPrompt.visible = true;	
 		prompt = true;	
@@ -25,9 +25,8 @@ if(place_meeting(x, y, oPlayer) && oPortal.visible)
 	if(key_enter)
 	{
 		global.canControlTimer = room_speed * 3;
-		exiting = true;
+		oPlayer.exiting = true;
 		with (oPlayer){
-			image_xscale = sign(other.x - x); 
 			SwapSprite(sFernRunNew);
 		}
 	}
@@ -50,8 +49,11 @@ else
 }
 
 //delayed exiting sequence
-if (exiting && abs(oPlayer.x - x) <= 1.5){
-	exiting = false;
+if (oPlayer.exiting && abs(oPlayer.x - x) <= 1.5 && oPlayer.bottomWall){
+	oPlayer.currentwalksp = 0;
+	oPlayer.isDashing = false;
+	oPlayer.exiting = false;
+	if (oPlayer.vsp < 0) oPlayer.vsp = 0;
 	with (oPlayer) SwapSprite(sFernIdle2);
 	global.color = 0;
 		global.hp = 100;
@@ -74,8 +76,9 @@ if (exiting && abs(oPlayer.x - x) <= 1.5){
 		}
 		Save();
 		SlideTransition(TRANS_MODE.GOTO, next_room)
-} else if (exiting) {
-	oPlayer.x += sign(x - oPlayer.x) * 3;
+} else if (oPlayer.exiting && place_meeting(x,y,oPlayer)  && abs(oPlayer.x - x) > 1.5) {
+	oPlayer.image_xscale = sign(x - oPlayer.x);
+	oPlayer.hsp = sign(x - oPlayer.x) * 3;
 }
 
 

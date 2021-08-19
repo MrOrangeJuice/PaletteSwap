@@ -1,5 +1,6 @@
 /// @description Update Physics
 // Get Player Input
+if (global.canControlTimer < 0) {
 key_left = keyboard_check(ord("A"));
 key_right = keyboard_check(ord("D"));
 key_jump = keyboard_check(ord("P")) || keyboard_check(vk_space);
@@ -67,6 +68,18 @@ if (gamepad_button_check_pressed(0,gp_shoulderr) || gamepad_button_check_pressed
 	key_swap_up = 1;
 	global.controller = 1;
 }
+} else {
+key_left = 0;
+key_right = 0;
+key_jump = 0;
+key_jump_released = 0;
+key_down = 0;
+key_dash = 0;
+key_dash = 0;
+key_up = 0;
+key_swap_down = 0;
+key_swap_up	= 0;
+}
 
 // Prevent player from swapping in certain rooms
 if(room == rTutorial || room == rTutorial2 || !canSwap)
@@ -75,7 +88,7 @@ if(room == rTutorial || room == rTutorial2 || !canSwap)
 	key_swap_up = 0;
 }
 
-if(!global.paused && !global.textUp && global.canControlTimer < 0){
+if(!global.paused && !global.textUp){
 
 //orient sprite
 if ((key_right - key_left) != 0 && !isDashing && !wallgrab) image_xscale = sign((key_right - key_left));
@@ -161,10 +174,10 @@ if (key_dash && canDash)
 // If player is dashing, don't worry about other inputs
 if (wallgrab && !isDashing){
 	if (key_up && !key_down){
-		if(global.canControlTimer < 0) vsp = -2;
+		 vsp = -2;
 	}
 	else if (key_down && !key_up){
-		if(global.canControlTimer < 0) vsp = 2;
+		 vsp = 2;
 	}
 	else vsp = 0;
 }
@@ -209,13 +222,13 @@ else if(!isDashing)
 			}
 		}
 	}
-	if(global.canControlTimer < 0) hsp = currentwalksp;
-	if(global.canControlTimer < 0) vsp = vsp + grv;
+	hsp = currentwalksp;
+	vsp = vsp + grv;
 
 	// Variable jump height
 	if vsp < 0 && (!(key_jump)) && jumpVar //if you're moving upwards in the air but not holding down jump
 	{
-		if(global.canControlTimer < 0) vsp *= 0.85; //essentially, divide your vertical speed
+		vsp *= 0.85; //essentially, divide your vertical speed
 	}
 	
 }
@@ -413,7 +426,7 @@ else
 		else
 		{
 			//idle
-		if (sign(hsp) == 0 && ( !(key_left || key_right) || (key_left && key_right) ) )
+		if (sign(hsp) == 0 && ( !(key_left || key_right) || (key_left && key_right) ) && !exiting )
 		{
 			//sprite_index = sFernIdle;
 			SwapSprite(sFernIdle2);
