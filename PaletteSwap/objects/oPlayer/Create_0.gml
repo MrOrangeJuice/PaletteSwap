@@ -22,6 +22,7 @@ jumpVar = true;
 jumpBuffer = 0;
 jumped = false; //purely to stop jumpdash
 skidSound = true;
+exiting = false;
 wallHit = false;
 swimming = false;
 wallgrab = false;

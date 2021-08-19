@@ -68,17 +68,19 @@ if(global.gearTotal >= gearRequirement)
 	if(place_meeting(x,y,oPlayer) && key_enter)
 	{
 		global.canControlTimer = room_speed * 3;
-		exiting = true;
+		oPlayer.exiting = true;
 		with (oPlayer){
-			image_xscale = sign(other.x - x); 
 			SwapSprite(sFernRunNew);
 		}
 	}
 }
 
 //delayed exiting sequence
-if (exiting && abs(oPlayer.x - x) <= 1.5){
-	exiting = false;
+if (oPlayer.exiting && abs(oPlayer.x - x) <= 1.5 && oPlayer.bottomWall){
+	oPlayer.currentwalksp = 0;
+	oPlayer.isDashing = false;
+	oPlayer.exiting = false;
+	if (oPlayer.vsp < 0) oPlayer.vsp = 0;
 	with (oPlayer) SwapSprite(sFernIdle2);
 	audio_play_sound(snd_PortalEnter,5,false);
 		global.color = 0;
@@ -108,8 +110,9 @@ if (exiting && abs(oPlayer.x - x) <= 1.5){
 				SlideTransition(TRANS_MODE.GOTO, rFactory);
 				break;
 		}
-} else if (exiting) {
-	oPlayer.x += sign(x - oPlayer.x) * 3;
+} else if (oPlayer.exiting && place_meeting(x,y,oPlayer) && abs(oPlayer.x - x) > 1.5) {
+	oPlayer.image_xscale = sign(x - oPlayer.x); 
+	oPlayer.hsp = sign(x - oPlayer.x) * 3;
 }
 
 PaletteAnimationSwap();
