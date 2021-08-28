@@ -1735,6 +1735,7 @@
 ],},"visible":true,"depth":1300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"PurpleTiles","tags":[],"resourceType":"GMRTileLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"oHiddenArea","path":"objects/oHiddenArea/oHiddenArea.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":8.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1472.0,"y":2192.0,"resourceVersion":"1.0","name":"inst_9E1469","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"oForbiddenTrigger","path":"objects/oForbiddenTrigger/oForbiddenTrigger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.28,"scaleY":0.24000001,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1208.0,"y":2596.0,"resourceVersion":"1.0","name":"inst_5773C839","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":1400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"AreaControls","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":49.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1048.0,"y":1912.0,"resourceVersion":"1.0","name":"inst_750F09BD","tags":[],"resourceType":"GMRInstance",},
@@ -2028,6 +2029,7 @@
     {"name":"inst_2810749C","path":"rooms/rNewHub/rNewHub.yy",},
     {"name":"inst_55915EBD","path":"rooms/rNewHub/rNewHub.yy",},
     {"name":"inst_46FBD12E","path":"rooms/rNewHub/rNewHub.yy",},
+    {"name":"inst_5773C839","path":"rooms/rNewHub/rNewHub.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
