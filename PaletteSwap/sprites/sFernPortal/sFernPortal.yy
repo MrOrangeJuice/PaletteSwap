@@ -39,6 +39,12 @@
     {"compositeImage":{"FrameId":{"name":"e2bcdb45-0c66-440d-948b-85974e506262","path":"sprites/sFernPortal/sFernPortal.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"e2bcdb45-0c66-440d-948b-85974e506262","path":"sprites/sFernPortal/sFernPortal.yy",},"LayerId":{"name":"35f71a47-a40d-4339-ab54-97d0be64acf7","path":"sprites/sFernPortal/sFernPortal.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sFernPortal","path":"sprites/sFernPortal/sFernPortal.yy",},"resourceVersion":"1.0","name":"e2bcdb45-0c66-440d-948b-85974e506262","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"dcc4e162-0269-48c5-8340-07dce4b7f461","path":"sprites/sFernPortal/sFernPortal.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"dcc4e162-0269-48c5-8340-07dce4b7f461","path":"sprites/sFernPortal/sFernPortal.yy",},"LayerId":{"name":"35f71a47-a40d-4339-ab54-97d0be64acf7","path":"sprites/sFernPortal/sFernPortal.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sFernPortal","path":"sprites/sFernPortal/sFernPortal.yy",},"resourceVersion":"1.0","name":"dcc4e162-0269-48c5-8340-07dce4b7f461","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"57e81bb9-6da7-4131-a0bb-c460175e8fa0","path":"sprites/sFernPortal/sFernPortal.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"57e81bb9-6da7-4131-a0bb-c460175e8fa0","path":"sprites/sFernPortal/sFernPortal.yy",},"LayerId":{"name":"35f71a47-a40d-4339-ab54-97d0be64acf7","path":"sprites/sFernPortal/sFernPortal.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sFernPortal","path":"sprites/sFernPortal/sFernPortal.yy",},"resourceVersion":"1.0","name":"57e81bb9-6da7-4131-a0bb-c460175e8fa0","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sFernPortal","path":"sprites/sFernPortal/sFernPortal.yy",},
@@ -48,7 +54,7 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 5.0,
+    "length": 7.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
@@ -58,6 +64,8 @@
             {"id":"7afa354d-8cdf-4ae9-9c18-24e1220b5045","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8d4f0e9c-790d-47ea-8b21-083a10fbf916","path":"sprites/sFernPortal/sFernPortal.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"3d062a62-f6c7-40d4-b9c9-ed4d5ba9cc47","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"381a201f-8cbd-49a2-8c99-89a6269c738f","path":"sprites/sFernPortal/sFernPortal.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"f69c1b2d-60bd-48ba-84b2-c99fe109c83e","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e2bcdb45-0c66-440d-948b-85974e506262","path":"sprites/sFernPortal/sFernPortal.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"877a0c48-3cb2-4392-bf92-5193f1efa52e","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dcc4e162-0269-48c5-8340-07dce4b7f461","path":"sprites/sFernPortal/sFernPortal.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"12744e4b-8ffc-4e04-8aca-997d8653e6ef","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"57e81bb9-6da7-4131-a0bb-c460175e8fa0","path":"sprites/sFernPortal/sFernPortal.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
