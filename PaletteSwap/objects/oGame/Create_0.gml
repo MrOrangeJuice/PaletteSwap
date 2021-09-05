@@ -90,3 +90,7 @@ gearHUDY = 12;
 global.color_limit = 4; //limit scrollover
 
 global.color_count = 4;
+
+//game scale settings
+global.gameWidth = 960;
+global.gameHeight = 540;
