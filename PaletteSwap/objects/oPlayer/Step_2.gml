@@ -1,4 +1,4 @@
-if(!global.paused && !global.textUp && global.canControlTimer < 0){
+if(!global.paused && global.canControlTimer < 0){
 	//Spike collision
 collidingSpikes = instance_place(x, y, oSpikes);
 if(collidingSpikes != noone){

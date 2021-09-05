@@ -17,7 +17,7 @@ if(!global.paused && started){
 
 lerpProgress += (1-lerpProgress) / 50;
 textProgress += global.textSpeed;
-global.textUp = true;
+//global.textUp = true;
 x1 = lerp(x1, x1Target, lerpProgress);
 x2 = lerp(x2, x2Target, lerpProgress);
 
@@ -34,7 +34,7 @@ if(key_space == 1){
 		}
 	}
 	else{
-		global.textUp = false;
+		//global.textUp = false;
 		oPlayer.canJump = false;
 		instance_destroy();
 	}

@@ -3,7 +3,7 @@
 function PaletteAnimationSwapSingle(){
 	framecount = sprite_get_number(sprite_index) / global.color_count;
 	image_index = currentframe + (global.color * framecount);
-	if (!global.paused && !global.textUp){
+	if (!global.paused){
 		currentframe += sprite_get_speed(sprite_index) / room_speed;
 	}
 	if (currentframe >= framecount){

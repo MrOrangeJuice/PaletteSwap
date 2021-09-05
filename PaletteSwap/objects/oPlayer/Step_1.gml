@@ -1,15 +1,15 @@
 /// @description Update Physics
 // Get Player Input
-key_left = keyboard_check(ord(leftKey));
-key_right = keyboard_check(ord(rightKey));
-key_jump = keyboard_check(ord(jumpKey)) || keyboard_check(jumpAltKey);
-key_jump_released = keyboard_check_released(ord(jumpKey)) || keyboard_check_released(jumpAltKey);
-key_down = keyboard_check(ord(downKey));
+key_left = keyboard_check(global.leftKey);
+key_right = keyboard_check(global.rightKey);
+key_jump = keyboard_check(global.jumpKey) || keyboard_check(global.jumpAltKey);
+key_jump_released = keyboard_check_released(global.jumpKey) || keyboard_check_released(global.jumpAltKey);
+key_down = keyboard_check(global.downKey);
 key_dash = 0;
-if(window_has_focus()) key_dash = keyboard_check_pressed(ord(dashKey)) || keyboard_check_pressed(dashAltKey);
-key_up = keyboard_check(ord(upKey));
-key_swap_down = keyboard_check_pressed(ord(swapDownKey)) || keyboard_check_pressed(ord(swapDownAltKey));
-key_swap_up = keyboard_check_pressed(ord(swapUpKey)) || keyboard_check_pressed(ord(swapUpAltKey));
+if(window_has_focus()) key_dash = keyboard_check_pressed(global.dashKey) || keyboard_check_pressed(global.dashAltKey);
+key_up = keyboard_check(global.upKey);
+key_swap_down = keyboard_check_pressed(global.swapDownKey) || keyboard_check_pressed(global.swapDownAltKey);
+key_swap_up = keyboard_check_pressed(global.swapUpKey) || keyboard_check_pressed(global.swapUpAltKey);
 
 if (key_left) || (key_right) || (key_jump) || (key_dash) || (key_down) || (key_up) || (key_jump_released) || (key_swap_up) || (key_swap_down)
 {
@@ -75,7 +75,7 @@ if(room == rTutorial || room == rTutorial2 || !canSwap)
 	key_swap_up = 0;
 }
 
-if(!global.paused && !global.textUp && global.canControlTimer < 0){
+if(!global.paused && global.canControlTimer < 0){
 
 //orient sprite
 if ((key_right - key_left) != 0 && !isDashing && !wallgrab) image_xscale = sign((key_right - key_left));
