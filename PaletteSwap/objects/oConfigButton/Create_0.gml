@@ -40,7 +40,7 @@ for (var i=255;i>=0;i--)
 // Set known characters.
 global.asc_def[8] = "Backspace";
 global.asc_def[9] = "Tab";
-global.asc_def[12] = "Numpad 5 (nmlk off)";
+global.asc_def[12] = "Numpad 5";
 global.asc_def[13] = "Enter";
 global.asc_def[19] = "Pause";
 global.asc_def[20] = "Caps lock";
