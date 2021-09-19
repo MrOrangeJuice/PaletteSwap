@@ -35,12 +35,12 @@ if (gamepad_axis_value(0,gp_axislv) > 0.9 || gamepad_button_check(0,gp_padd) || 
 	global.controller = 1;
 }
 
-if (gamepad_button_check(0,gp_face1) || gamepad_button_check(4,gp_face1))
+if (gamepad_button_check(0,gp_face1) || gamepad_button_check(4,gp_face1) && !global.textUp)
 {
 	key_jump = 1;
 	global.controller = 1;
 }
-if (gamepad_button_check_released(0,gp_face1) || gamepad_button_check_released(4,gp_face1))
+if (gamepad_button_check_released(0,gp_face1) || gamepad_button_check_released(4,gp_face1) && !global.textUp)
 {
 	key_jump_released = 1;
 }
