@@ -262,6 +262,7 @@
     {"id":{"name":"oTutorialUpDash","path":"objects/oTutorialUpDash/oTutorialUpDash.yy",},"order":5,},
     {"id":{"name":"oPortal","path":"objects/oPortal/oPortal.yy",},"order":5,},
     {"id":{"name":"sPortalFrame","path":"sprites/sPortalFrame/sPortalFrame.yy",},"order":5,},
+    {"id":{"name":"oMotelMusic","path":"objects/oMotelMusic/oMotelMusic.yy",},"order":6,},
     {"id":{"name":"oAirCurrent","path":"objects/oAirCurrent/oAirCurrent.yy",},"order":0,},
     {"id":{"name":"sBackToMenu","path":"sprites/sBackToMenu/sBackToMenu.yy",},"order":10,},
     {"id":{"name":"HiddenLayerEnd","path":"scripts/HiddenLayerEnd/HiddenLayerEnd.yy",},"order":14,},
@@ -297,6 +298,7 @@
     {"id":{"name":"oStainedGlass","path":"objects/oStainedGlass/oStainedGlass.yy",},"order":1,},
     {"id":{"name":"sBGFactory","path":"sprites/sBGFactory/sBGFactory.yy",},"order":8,},
     {"id":{"name":"oCoin","path":"objects/oCoin/oCoin.yy",},"order":2,},
+    {"id":{"name":"rMomentumMotel","path":"rooms/rMomentumMotel/rMomentumMotel.yy",},"order":32,},
     {"id":{"name":"sWaterTemp","path":"sprites/sWaterTemp/sWaterTemp.yy",},"order":3,},
     {"id":{"name":"sTest2","path":"sprites/sTest2/sTest2.yy",},"order":5,},
     {"id":{"name":"sGearSmall","path":"sprites/sGearSmall/sGearSmall.yy",},"order":2,},
@@ -541,6 +543,7 @@
     {"roomId":{"name":"rTutorial2","path":"rooms/rTutorial2/rTutorial2.yy",},},
     {"roomId":{"name":"rSpeedrun3","path":"rooms/rSpeedrun3/rSpeedrun3.yy",},},
     {"roomId":{"name":"rNewHub","path":"rooms/rNewHub/rNewHub.yy",},},
+    {"roomId":{"name":"rMomentumMotel","path":"rooms/rMomentumMotel/rMomentumMotel.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -609,7 +612,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.2.558",
+    "IDEVersion": "2.3.2.560",
   },
   "resourceVersion": "1.4",
   "name": "PaletteSwap",
