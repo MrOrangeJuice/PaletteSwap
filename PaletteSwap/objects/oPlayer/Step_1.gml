@@ -509,6 +509,7 @@ if(global.hp <= 0){
 	y = global.lastCheckpointY;
 	*/
 }
+
 }
 //update frame
 PaletteAnimationSwap();
