@@ -28,7 +28,6 @@
         {"FrameId":{"name":"62ee1841-65ad-4388-bbf6-3a2e92465a67","path":"sprites/sLogoSmall/sLogoSmall.yy",},"LayerId":{"name":"68761ab2-b8a5-4f81-ab52-d620f30434a2","path":"sprites/sLogoSmall/sLogoSmall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"62ee1841-65ad-4388-bbf6-3a2e92465a67","path":"sprites/sLogoSmall/sLogoSmall.yy",},"LayerId":{"name":"c40e97df-416c-4c63-9b3a-cd1909e49b57","path":"sprites/sLogoSmall/sLogoSmall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"62ee1841-65ad-4388-bbf6-3a2e92465a67","path":"sprites/sLogoSmall/sLogoSmall.yy",},"LayerId":{"name":"ffd51f76-aaf6-451c-829d-66c7fd17d064","path":"sprites/sLogoSmall/sLogoSmall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"62ee1841-65ad-4388-bbf6-3a2e92465a67","path":"sprites/sLogoSmall/sLogoSmall.yy",},"LayerId":{"name":"","path":"",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sLogoSmall","path":"sprites/sLogoSmall/sLogoSmall.yy",},"resourceVersion":"1.0","name":"62ee1841-65ad-4388-bbf6-3a2e92465a67","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
