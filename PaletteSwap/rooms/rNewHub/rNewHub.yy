@@ -72,6 +72,16 @@
             {"propertyId":{"name":"signMessage","path":"objects/oSign/oSign.yy",},"objectId":{"name":"oSign","path":"objects/oSign/oSign.yy",},"value":"It's a great day for fishin'\\nwouldn't ya say?","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"oFishVillager","path":"objects/oFishVillager/oFishVillager.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":661.0,"y":1883.0,"resourceVersion":"1.0","name":"inst_6FD4CFDF","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oMotel","path":"objects/oMotel/oMotel.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1088.0,"y":1800.0,"resourceVersion":"1.0","name":"inst_7C1B93A8","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"next_door_x","path":"objects/oDoor/oDoor.yy",},"objectId":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},"value":"1275","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"next_door_y","path":"objects/oDoor/oDoor.yy",},"objectId":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},"value":"1810","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"set_player_spawn","path":"objects/oDoor/oDoor.yy",},"objectId":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1376.0,"y":1864.0,"resourceVersion":"1.0","name":"inst_5DD4FC1B","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"next_door_x","path":"objects/oDoor/oDoor.yy",},"objectId":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},"value":"1375","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"next_door_y","path":"objects/oDoor/oDoor.yy",},"objectId":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},"value":"1810","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"set_player_spawn","path":"objects/oDoor/oDoor.yy",},"objectId":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1296.0,"y":1864.0,"resourceVersion":"1.0","name":"inst_C0FA8C8","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Portals","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Enemies","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
@@ -1106,6 +1116,8 @@
     {"name":"inst_AC72150","path":"rooms/rNewHub/rNewHub.yy",},
     {"name":"inst_426C7606","path":"rooms/rNewHub/rNewHub.yy",},
     {"name":"inst_1E0558A4","path":"rooms/rNewHub/rNewHub.yy",},
+    {"name":"inst_5DD4FC1B","path":"rooms/rNewHub/rNewHub.yy",},
+    {"name":"inst_C0FA8C8","path":"rooms/rNewHub/rNewHub.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

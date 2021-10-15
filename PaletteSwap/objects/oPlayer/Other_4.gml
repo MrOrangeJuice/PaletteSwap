@@ -1,6 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(room != rTutorial && global.loaded){
+if(useCurrentDoorSpawn){
+	useCurrentDoorSpawn = false;
+	x = currentDoorSpawnX;
+	y = currentDoorSpawnY;
+}
+else if(room != rTutorial && global.loaded){
 	x = global.loadX;
 	y = global.loadY;
 	global.coins = global.loadCoins;
