@@ -8,6 +8,7 @@ global.paused = false;
 global.cutscene = false;
 global.controller = 0;
 global.mouse = 0;
+global.textUp = false;
 
 global.hp = 100;
 global.maxHP = 100;
@@ -106,3 +107,6 @@ global.swapDownAltKey = ord("U");
 //game scale settings
 global.gameWidth = 960;
 global.gameHeight = 540;
+global.currentDoorId = 0;
+global.useCurrentDoorSpawn = false;
+global.isEnteringDoor = false;

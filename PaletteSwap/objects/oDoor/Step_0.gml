@@ -75,11 +75,6 @@ if (oPlayer.exiting && abs(oPlayer.x - x) <= 1.5 && oPlayer.bottomWall){
 			audio_stop_sound(msc_FactoryLoop);
 		}
 		Save();
-		if(set_player_spawn){
-			oPlayer.currentDoorSpawnX = next_door_x;
-			oPlayer.currentDoorSpawnY = next_door_y;
-			oPlayer.useCurrentDoorSpawn = true;
-		}
 		SlideTransition(TRANS_MODE.GOTO, next_room);	
 	}
 else if (oPlayer.exiting && place_meeting(x,y,oPlayer)  && abs(oPlayer.x - x) > 1.5) {

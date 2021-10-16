@@ -31,9 +31,6 @@ lastGroundedPosX = 0;
 lastGroundedPosY = 0;
 villager = false;
 canSwap = true;
-currentDoorSpawnX = 0;
-currentDoorSpawnY = 0;
-useCurrentDoorSpawn = false;
 bottomWall = false;
 if(room == PaletteTempleLevel)
 {
@@ -71,7 +68,12 @@ swapDownKey = "Q";
 swapDownAltKey = "U";
 swapUpKey = "E";
 swapUpAltKey = "I";
+useCurrentDoorSpawn = false;
 
 //dialog settings
 face = 0; //sprite
 eName = "Fern";
+
+if(global.useCurrentDoorSpawn){
+	useCurrentDoorSpawn = true;
+}

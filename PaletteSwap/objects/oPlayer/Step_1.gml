@@ -88,7 +88,7 @@ if(room == rTutorial || room == rTutorial2 || !canSwap)
 	key_swap_up = 0;
 }
 
-if(!global.paused && global.canControlTimer < 0 && !global.textUp){
+if(!global.paused && !global.textUp && !global.isEnteringDoor){
 
 //orient sprite
 if ((key_right - key_left) != 0 && !isDashing && !wallgrab) image_xscale = sign((key_right - key_left));
@@ -364,7 +364,7 @@ if (isInvulnerable)
 		iFrameCount = 0;
 	}
 }
-
+if(!global.isEnteringDoor){
 // Animation
 image_angle = 0;
 if (global.knockedBack == true)
@@ -437,7 +437,7 @@ else
 		else
 		{
 			//idle
-		if (sign(hsp) == 0 && ( !(key_left || key_right) || (key_left && key_right) ) && !exiting )
+		if (sign(hsp) == 0 && ( !(key_left || key_right) || (key_left && key_right) ) && !exiting)
 		{
 			//sprite_index = sFernIdle;
 			SwapSprite(sFernIdle2);
@@ -463,7 +463,7 @@ else
 		}
 	}
 }
-
+}
 
 
 // Palette Swap
