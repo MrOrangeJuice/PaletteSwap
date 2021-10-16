@@ -4,4 +4,6 @@ if (!triggered) {
 	triggered = true;
 	text = instance_create_layer(0,0,"FX",oText);
 	text.textMessage = textMessage;
+	SwapSprite(sNone);
+	visible = true;
 }

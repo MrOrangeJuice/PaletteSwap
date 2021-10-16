@@ -64,26 +64,38 @@ prevMousePos = device_mouse_x_to_gui(0);
 //reset tiles/ mouse
 if (layer_exists("GreenTiles")){
 	layer_set_visible("GreenTiles", false);	
+	if (layer_exists("GreenBackground"))
 	layer_set_visible("GreenBackground", false);
+	if (layer_exists("GreenClouds"))
 	layer_set_visible("GreenClouds", false);
+	if (layer_exists("GreenBGTile"))
 	layer_set_visible("GreenBGTile", false);
 }
 if (layer_exists("BlueTiles")){
 	layer_set_visible("BlueTiles", false);	
+	if (layer_exists("BlueBackground"))
 	layer_set_visible("BlueBackground", false);
+	if (layer_exists("BlueClouds"))
 	layer_set_visible("BlueClouds", false);
+	if (layer_exists("BlueBGTile"))
 	layer_set_visible("BlueBGTile", false);
 }
 if (layer_exists("RedTiles")){
-	layer_set_visible("RedTiles", false);	
+	layer_set_visible("RedTiles", false);
+	if (layer_exists("RedBackground"))
 	layer_set_visible("RedBackground", false);
+	if (layer_exists("RedClouds"))
 	layer_set_visible("RedClouds", false);
+	if (layer_exists("RedBGTile"))
 	layer_set_visible("RedBGTile", false);
 }
 if (layer_exists("PurpleTiles")){
-	layer_set_visible("PurpleTiles", false);	
+	layer_set_visible("PurpleTiles", false);
+	if (layer_exists("PurpleBackground"))
 	layer_set_visible("PurpleBackground", false);
+	if (layer_exists("PurpleClouds"))
 	layer_set_visible("PurpleClouds", false);
+	if (layer_exists("PurpleBGTile"))
 	layer_set_visible("PurpleBGTile", false);
 }
 cursor_sprite = sCursorNone;
@@ -95,9 +107,13 @@ switch (global.color) {
 		{
 		cursor_sprite = sCursor;
 		}
-		layer_set_visible("GreenTiles", true);	
+		if(layer_exists("GreenTiles"))
+		layer_set_visible("GreenTiles", true);
+		if(layer_exists("GreenBackground"))
 		layer_set_visible("GreenBackground", true);
+		if(layer_exists("GreenClouds"))
 		layer_set_visible("GreenClouds", true);
+		if(layer_exists("GreenBGTile"))
 		layer_set_visible("GreenBGTile", true);
 	break;
 	case 1:
@@ -105,9 +121,13 @@ switch (global.color) {
 		{
 		cursor_sprite = sCursorBlue;
 		}
-		layer_set_visible("BlueTiles", true);	
+		if(layer_exists("BlueTiles"))
+		layer_set_visible("BlueTiles", true);
+		if(layer_exists("BlueBackground"))
 		layer_set_visible("BlueBackground", true);
+		if(layer_exists("BlueClouds"))
 		layer_set_visible("BlueClouds", true);
+		if(layer_exists("BlueBGTile"))
 		layer_set_visible("BlueBGTile", true);
 	break;
 	case 2:
@@ -115,9 +135,13 @@ switch (global.color) {
 		{
 		cursor_sprite = sCursorRed;
 		}
-		layer_set_visible("RedTiles", true);	
+		if(layer_exists("RedTiles"))
+		layer_set_visible("RedTiles", true);
+		if(layer_exists("RedBackground"))
 		layer_set_visible("RedBackground", true);
+		if(layer_exists("RedClouds"))
 		layer_set_visible("RedClouds", true);
+		if(layer_exists("RedBGTile"))
 		layer_set_visible("RedBGTile", true);
 	break;
 	case 3:
@@ -125,9 +149,13 @@ switch (global.color) {
 		{
 		cursor_sprite = sCursorPurple;
 		}
-		layer_set_visible("PurpleTiles", true);	
+		if(layer_exists("PurpleTiles"))
+		layer_set_visible("PurpleTiles", true);
+		if(layer_exists("PurpleBackground"))
 		layer_set_visible("PurpleBackground", true);
+		if(layer_exists("PurpleClouds"))
 		layer_set_visible("PurpleClouds", true);
+		if(layer_exists("PurpleBGTile"))
 		layer_set_visible("PurpleBGTile", true);
 	break;
 }
