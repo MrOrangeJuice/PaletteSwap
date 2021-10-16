@@ -34,7 +34,7 @@ else
 }
 
 // Actually change level here.
-if (place_meeting(x, y, oPlayer) && (key_enter || global.controller)){
+if (place_meeting(x, y, oPlayer) && (key_enter)){
 	if (oPlayer.vsp < 0) oPlayer.vsp = 0;
 	global.color = 0;
 	Save();
