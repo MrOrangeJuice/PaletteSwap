@@ -3,7 +3,7 @@
 
 /// @description Draw Player Information
 
-
+if (!global.textUp) {
 // Draw Coin Count
 coinTextScale = max(coinTextScale * 0.95, 1);
 DrawSetText(c_black, fUI, fa_right, fa_top);
@@ -48,3 +48,5 @@ switch (global.color)
 paletteTextScale = max(paletteTextScale * 0.95, 1);
 DrawSetText(c_black, fUI, fa_right, fa_top);
 draw_text_transformed(RES_W-2,30, currentColor, paletteTextScale, paletteTextScale,0);
+
+}
