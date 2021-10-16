@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 if (triggered){
+	
 	//update tracker and upkeep
 	if (key_space) dialogTracker++;
 	//loop dialog order
