@@ -353,6 +353,7 @@
     {"id":{"name":"rSecret","path":"rooms/rSecret/rSecret.yy",},"order":21,},
     {"id":{"name":"sIcicle","path":"sprites/sIcicle/sIcicle.yy",},"order":2,},
     {"id":{"name":"snd_Interact","path":"sounds/snd_Interact/snd_Interact.yy",},"order":28,},
+    {"id":{"name":"oLevelChanger","path":"objects/oLevelChanger/oLevelChanger.yy",},"order":7,},
     {"id":{"name":"sGearSmallBlacked","path":"sprites/sGearSmallBlacked/sGearSmallBlacked.yy",},"order":3,},
     {"id":{"name":"oForbiddenTrigger","path":"objects/oForbiddenTrigger/oForbiddenTrigger.yy",},"order":0,},
     {"id":{"name":"tFactory","path":"tilesets/tFactory/tFactory.yy",},"order":9,},
