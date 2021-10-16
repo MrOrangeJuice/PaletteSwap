@@ -22,6 +22,7 @@ else
 x += (xTo - x) / jelliness;
 y += (yTo - y) / jelliness;
 
+	
 // Keep camera center inside room
 x = clamp(x,view_w_half+buff,room_width-view_w_half-buff);
 y = clamp(y,view_h_half+buff,room_height-view_h_half-buff);

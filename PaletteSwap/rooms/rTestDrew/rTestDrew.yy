@@ -17,6 +17,11 @@
         {"properties":[
             {"propertyId":{"name":"textMessage","path":"objects/oText/oText.yy",},"objectId":{"name":"oText","path":"objects/oText/oText.yy",},"value":"This is a test#meem time","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"oText","path":"objects/oText/oText.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":128.0,"y":128.0,"resourceVersion":"1.0","name":"inst_18AC67AB","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"textMessage","path":"objects/oDialogTrigger/oDialogTrigger.yy",},"objectId":{"name":"oDialogTrigger","path":"objects/oDialogTrigger/oDialogTrigger.yy",},"value":"hey!#this is test dialog.#gotta get these faces working...","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"talkingEntities","path":"objects/oDialogTrigger/oDialogTrigger.yy",},"objectId":{"name":"oDialogTrigger","path":"objects/oDialogTrigger/oDialogTrigger.yy",},"value":"\"oPlayer\"","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"dialogOrderString","path":"objects/oDialogTrigger/oDialogTrigger.yy",},"objectId":{"name":"oDialogTrigger","path":"objects/oDialogTrigger/oDialogTrigger.yy",},"value":"0","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"oDialogTrigger","path":"objects/oDialogTrigger/oDialogTrigger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.08,"scaleY":0.0933333337,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":688.0,"y":368.0,"resourceVersion":"1.0","name":"inst_1BAA75FD","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Text","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"FX","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
@@ -1857,6 +1862,7 @@
     {"name":"inst_C619D4E","path":"rooms/rTestDrew/rTestDrew.yy",},
     {"name":"inst_6D592B88","path":"rooms/rTestDrew/rTestDrew.yy",},
     {"name":"inst_428C24A7","path":"rooms/rTestDrew/rTestDrew.yy",},
+    {"name":"inst_1BAA75FD","path":"rooms/rTestDrew/rTestDrew.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

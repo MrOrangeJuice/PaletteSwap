@@ -68,3 +68,7 @@ swapDownKey = "Q";
 swapDownAltKey = "U";
 swapUpKey = "E";
 swapUpAltKey = "I";
+
+//dialog settings
+face = 0; //sprite
+eName = "Fern";
