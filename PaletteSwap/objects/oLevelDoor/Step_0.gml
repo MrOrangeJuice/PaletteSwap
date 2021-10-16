@@ -77,7 +77,7 @@ if(global.gearTotal >= gearRequirement)
 }
 
 //delayed exiting sequence
-if (oPlayer.exiting && abs(oPlayer.x - x) <= 1.5 && oPlayer.bottomWall){
+if (oPlayer.exiting && abs(oPlayer.x - x) <= 1.5 && abs(oPlayer.y - y) <= 20 && oPlayer.bottomWall){
 	oPlayer.currentwalksp = 0;
 	oPlayer.isDashing = false;
 	oPlayer.exiting = false;

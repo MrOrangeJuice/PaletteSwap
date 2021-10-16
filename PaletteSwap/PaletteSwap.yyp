@@ -372,6 +372,7 @@
     {"id":{"name":"sWallGreen","path":"sprites/sWallGreen/sWallGreen.yy",},"order":12,},
     {"id":{"name":"shDark","path":"shaders/shDark/shDark.yy",},"order":0,},
     {"id":{"name":"DrawSetText","path":"scripts/DrawSetText/DrawSetText.yy",},"order":2,},
+    {"id":{"name":"sInterior","path":"sprites/sInterior/sInterior.yy",},"order":23,},
     {"id":{"name":"sPotCracked","path":"sprites/sPotCracked/sPotCracked.yy",},"order":3,},
     {"id":{"name":"shTransparent","path":"shaders/shTransparent/shTransparent.yy",},"order":1,},
     {"id":{"name":"oBlownAir","path":"objects/oBlownAir/oBlownAir.yy",},"order":1,},
@@ -617,7 +618,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.3.574",
+    "IDEVersion": "2.3.2.560",
   },
   "resourceVersion": "1.4",
   "name": "PaletteSwap",
