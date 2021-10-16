@@ -34,7 +34,7 @@ else
 }
 
 // Actually change level here.
-if (abs(oPlayer.x - x) <= 1.5 && oPlayer.bottomWall && (key_enter || global.controller)){
+if (place_meeting(x, y, oPlayer) && (key_enter || global.controller)){
 	if (oPlayer.vsp < 0) oPlayer.vsp = 0;
 	global.color = 0;
 	Save();
