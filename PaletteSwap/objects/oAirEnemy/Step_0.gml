@@ -1,7 +1,7 @@
 /// @description Update Movement
 
 // Check what direction this enemy is moving in.
-if(!global.paused && !global.textUp){
+if(!global.paused){
 	
 	// Update movement based-on the behavior type.
 	switch (behavior)

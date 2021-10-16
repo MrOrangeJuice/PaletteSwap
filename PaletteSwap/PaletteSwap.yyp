@@ -109,6 +109,7 @@
     {"id":{"name":"oLevelDoor","path":"objects/oLevelDoor/oLevelDoor.yy",},"order":3,},
     {"id":{"name":"sShipDamagedNoCap","path":"sprites/sShipDamagedNoCap/sShipDamagedNoCap.yy",},"order":8,},
     {"id":{"name":"snd_Cannon","path":"sounds/snd_Cannon/snd_Cannon.yy",},"order":38,},
+    {"id":{"name":"sFernPortalReverse","path":"sprites/sFernPortalReverse/sFernPortalReverse.yy",},"order":32,},
     {"id":{"name":"sPortalEffect","path":"sprites/sPortalEffect/sPortalEffect.yy",},"order":4,},
     {"id":{"name":"sFernPortal","path":"sprites/sFernPortal/sFernPortal.yy",},"order":31,},
     {"id":{"name":"sRollSmall","path":"sprites/sRollSmall/sRollSmall.yy",},"order":2,},
@@ -616,7 +617,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.2.558",
+    "IDEVersion": "2.3.3.574",
   },
   "resourceVersion": "1.4",
   "name": "PaletteSwap",
