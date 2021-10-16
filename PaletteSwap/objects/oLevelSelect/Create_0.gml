@@ -13,6 +13,7 @@ level[10] = "rVolcano";
 level[11] = "rSpeedrun3";
 level[12] = "rNewHub";
 level[13] = "rMomentumMotel";
+level[14] = "rShack";
 levelCount = array_length_1d(level);
 menuIndex = 0;
 lastSelected = 0;

@@ -234,6 +234,7 @@
     {"id":{"name":"sFernSkidBeeg","path":"sprites/sFernSkidBeeg/sFernSkidBeeg.yy",},"order":26,},
     {"id":{"name":"sHealthbar","path":"sprites/sHealthbar/sHealthbar.yy",},"order":0,},
     {"id":{"name":"oAbstractWallBase","path":"objects/oAbstractWallBase/oAbstractWallBase.yy",},"order":0,},
+    {"id":{"name":"rShack","path":"rooms/rShack/rShack.yy",},"order":33,},
     {"id":{"name":"sCursorNone","path":"sprites/sCursorNone/sCursorNone.yy",},"order":15,},
     {"id":{"name":"oTutorialJump","path":"objects/oTutorialJump/oTutorialJump.yy",},"order":2,},
     {"id":{"name":"oGunWeasel","path":"objects/oGunWeasel/oGunWeasel.yy",},"order":13,},
@@ -550,6 +551,7 @@
     {"roomId":{"name":"rSpeedrun3","path":"rooms/rSpeedrun3/rSpeedrun3.yy",},},
     {"roomId":{"name":"rNewHub","path":"rooms/rNewHub/rNewHub.yy",},},
     {"roomId":{"name":"rMomentumMotel","path":"rooms/rMomentumMotel/rMomentumMotel.yy",},},
+    {"roomId":{"name":"rShack","path":"rooms/rShack/rShack.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -619,7 +621,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.2.558",
+    "IDEVersion": "2.3.2.560",
   },
   "resourceVersion": "1.4",
   "name": "PaletteSwap",
