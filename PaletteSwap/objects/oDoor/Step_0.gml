@@ -75,10 +75,11 @@ if (oPlayer.exiting && abs(oPlayer.x - x) <= 1.5 && oPlayer.bottomWall){
 			audio_stop_sound(msc_FactoryLoop);
 		}
 		Save();
-		SlideTransition(TRANS_MODE.GOTO, next_room)
-} else if (oPlayer.exiting && place_meeting(x,y,oPlayer)  && abs(oPlayer.x - x) > 1.5) {
+		SlideTransition(TRANS_MODE.GOTO, next_room);	
+	}
+else if (oPlayer.exiting && place_meeting(x,y,oPlayer)  && abs(oPlayer.x - x) > 1.5) {
 	oPlayer.image_xscale = sign(x - oPlayer.x);
-	oPlayer.hsp = sign(x - oPlayer.x) * 3;
+	oPlayer.hsp = sign(x - oPlayer.x) * 3;	
 }
 
 

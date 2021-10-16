@@ -1,16 +1,16 @@
 /// @description Update Physics
 // Get Player Input
 if (global.canControlTimer < 0) {
-key_left = keyboard_check(ord("A"));
-key_right = keyboard_check(ord("D"));
-key_jump = keyboard_check(ord("P")) || keyboard_check(vk_space);
-key_jump_released = keyboard_check_released(ord("P")) || keyboard_check_released(vk_space);
-key_down = keyboard_check(ord("S"));
+key_left = keyboard_check(global.leftKey);
+key_right = keyboard_check(global.rightKey);
+key_jump = keyboard_check(global.jumpKey) || keyboard_check(global.jumpAltKey);
+key_jump_released = keyboard_check_released(global.jumpKey) || keyboard_check_released(global.jumpAltKey);
+key_down = keyboard_check(global.downKey);
 key_dash = 0;
-if(window_has_focus()) key_dash = keyboard_check_pressed(ord("O")) || keyboard_check_pressed(vk_lshift);
-key_up = keyboard_check(ord("W"));
-key_swap_down = keyboard_check_pressed(ord("Q")) || keyboard_check_pressed(ord("U"));
-key_swap_up = keyboard_check_pressed(ord("E")) || keyboard_check_pressed(ord("I"));
+if(window_has_focus()) key_dash = keyboard_check_pressed(global.dashKey) || keyboard_check_pressed(global.dashAltKey);
+key_up = keyboard_check(global.upKey);
+key_swap_down = keyboard_check_pressed(global.swapDownKey) || keyboard_check_pressed(global.swapDownAltKey);
+key_swap_up = keyboard_check_pressed(global.swapUpKey) || keyboard_check_pressed(global.swapUpAltKey);
 
 if (key_left) || (key_right) || (key_jump) || (key_dash) || (key_down) || (key_up) || (key_jump_released) || (key_swap_up) || (key_swap_down)
 {
@@ -36,12 +36,12 @@ if (gamepad_axis_value(0,gp_axislv) > 0.9 || gamepad_button_check(0,gp_padd) || 
 	global.controller = 1;
 }
 
-if (gamepad_button_check(0,gp_face1) || gamepad_button_check(4,gp_face1))
+if (gamepad_button_check(0,gp_face1) || gamepad_button_check(4,gp_face1) && !global.textUp)
 {
 	key_jump = 1;
 	global.controller = 1;
 }
-if (gamepad_button_check_released(0,gp_face1) || gamepad_button_check_released(4,gp_face1))
+if (gamepad_button_check_released(0,gp_face1) || gamepad_button_check_released(4,gp_face1) && !global.textUp)
 {
 	key_jump_released = 1;
 }
@@ -88,7 +88,7 @@ if(room == rTutorial || room == rTutorial2 || !canSwap)
 	key_swap_up = 0;
 }
 
-if(!global.paused && !global.textUp){
+if(!global.paused && !global.textUp && !global.isEnteringDoor){
 
 //orient sprite
 if ((key_right - key_left) != 0 && !isDashing && !wallgrab) image_xscale = sign((key_right - key_left));
@@ -364,7 +364,7 @@ if (isInvulnerable)
 		iFrameCount = 0;
 	}
 }
-
+if(!global.isEnteringDoor){
 // Animation
 image_angle = 0;
 if (global.knockedBack == true)
@@ -437,7 +437,7 @@ else
 		else
 		{
 			//idle
-		if (sign(hsp) == 0 && ( !(key_left || key_right) || (key_left && key_right) ) && !exiting )
+		if (sign(hsp) == 0 && ( !(key_left || key_right) || (key_left && key_right) ) && !exiting)
 		{
 			//sprite_index = sFernIdle;
 			SwapSprite(sFernIdle2);
@@ -463,7 +463,7 @@ else
 		}
 	}
 }
-
+}
 
 
 // Palette Swap

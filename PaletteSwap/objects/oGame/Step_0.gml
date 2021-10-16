@@ -24,7 +24,7 @@ else
 
 global.canControlTimer--;
 
-if(global.coins != 100 && !global.paused && !global.textUp)
+if(global.coins != 100 && !global.paused)
 {
 	global.time++;
 }

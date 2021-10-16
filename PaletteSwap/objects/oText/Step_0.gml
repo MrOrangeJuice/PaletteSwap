@@ -18,10 +18,11 @@ if(!global.paused && started){
 lerpProgress += (1-lerpProgress) / 50;
 textProgress += global.textSpeed;
 global.textUp = true;
+//show_debug_message(global.textUp);
 x1 = lerp(x1, x1Target, lerpProgress);
 x2 = lerp(x2, x2Target, lerpProgress);
 
-if(key_space == 1){
+if(keyboard_check_released(vk_space)){
 	audio_play_sound(snd_Dialogue, 4, false);
 	lerpProgress = 0;
 	textProgress = 0;
@@ -35,7 +36,8 @@ if(key_space == 1){
 	}
 	else{
 		global.textUp = false;
-		oPlayer.canJump = false;
+		//show_debug_message(global.textUp);
+		//oPlayer.canJump = false;
 		instance_destroy();
 	}
 	//if(textProgress >= messageLength){
