@@ -8,11 +8,12 @@ global.paused = false;
 global.cutscene = false;
 global.controller = 0;
 global.mouse = 0;
+global.textUp = false;
 
 global.hp = 100;
 global.maxHP = 100;
 global.textSpeed = .75;
-global.textUp = false;
+//global.textUp = false;
 global.lastAxislv4Value = 0;
 global.lastAxislv0Value = 0;
 //global.coinId = 0;
@@ -91,6 +92,21 @@ global.color_limit = 4; //limit scrollover
 
 global.color_count = 4;
 
+global.leftKey = ord("A");
+global.rightKey = ord("D");
+global.upKey = ord("W");
+global.downKey = ord("S");
+global.jumpKey = ord("P");
+global.jumpAltKey = vk_space;
+global.dashKey = ord("O");
+global.dashAltKey = vk_lshift;
+global.swapUpKey = ord("E");
+global.swapUpAltKey = ord("I");
+global.swapDownKey = ord("Q");
+global.swapDownAltKey = ord("U");
 //game scale settings
 global.gameWidth = 960;
 global.gameHeight = 540;
+global.currentDoorId = 0;
+global.useCurrentDoorSpawn = false;
+global.isEnteringDoor = false;

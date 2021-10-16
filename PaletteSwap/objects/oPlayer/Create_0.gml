@@ -68,7 +68,12 @@ swapDownKey = "Q";
 swapDownAltKey = "U";
 swapUpKey = "E";
 swapUpAltKey = "I";
+useCurrentDoorSpawn = false;
 
 //dialog settings
-face = 0; //sprite
+face = sFernIcon; //sprite
 eName = "Fern";
+
+if(global.useCurrentDoorSpawn){
+	useCurrentDoorSpawn = true;
+}

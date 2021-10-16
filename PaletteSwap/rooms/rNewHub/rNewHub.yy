@@ -835,11 +835,10 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"oMotel","path":"objects/oMotel/oMotel.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1080.0,"y":1808.0,"resourceVersion":"1.0","name":"inst_7C1B93A8","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oShack","path":"objects/oShack/oShack.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1216.0,"y":2576.0,"resourceVersion":"1.0","name":"inst_2810749C","tags":[],"resourceType":"GMRInstance",},
         {"properties":[
-            {"propertyId":{"name":"levelTo","path":"objects/oLevelChanger/oLevelChanger.yy",},"objectId":{"name":"oLevelChanger","path":"objects/oLevelChanger/oLevelChanger.yy",},"value":"rMomentumMotel","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-          ],"isDnd":false,"objectId":{"name":"oLevelChanger","path":"objects/oLevelChanger/oLevelChanger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.5,"scaleY":4.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":984.0,"y":1840.0,"resourceVersion":"1.0","name":"inst_518F034C","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[
-            {"propertyId":{"name":"levelTo","path":"objects/oLevelChanger/oLevelChanger.yy",},"objectId":{"name":"oLevelChanger","path":"objects/oLevelChanger/oLevelChanger.yy",},"value":"rShack","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-          ],"isDnd":false,"objectId":{"name":"oLevelChanger","path":"objects/oLevelChanger/oLevelChanger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.5,"scaleY":4.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1192.0,"y":2608.0,"resourceVersion":"1.0","name":"inst_B9E3B1A","tags":[],"resourceType":"GMRInstance",},
+            {"propertyId":{"name":"set_player_spawn","path":"objects/oLevelDoor/oLevelDoor.yy",},"objectId":{"name":"oLevelDoor","path":"objects/oLevelDoor/oLevelDoor.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"doorId","path":"objects/oLevelDoor/oLevelDoor.yy",},"objectId":{"name":"oLevelDoor","path":"objects/oLevelDoor/oLevelDoor.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"levelTo","path":"objects/oLevelDoor/oLevelDoor.yy",},"objectId":{"name":"oLevelDoor","path":"objects/oLevelDoor/oLevelDoor.yy",},"value":"rHub","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"oLevelDoor","path":"objects/oLevelDoor/oLevelDoor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1264.0,"y":1872.0,"resourceVersion":"1.0","name":"inst_4A3191E5","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":700,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Portals","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":800,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Enemies","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
@@ -2037,8 +2036,7 @@
     {"name":"inst_55915EBD","path":"rooms/rNewHub/rNewHub.yy",},
     {"name":"inst_46FBD12E","path":"rooms/rNewHub/rNewHub.yy",},
     {"name":"inst_5773C839","path":"rooms/rNewHub/rNewHub.yy",},
-    {"name":"inst_518F034C","path":"rooms/rNewHub/rNewHub.yy",},
-    {"name":"inst_B9E3B1A","path":"rooms/rNewHub/rNewHub.yy",},
+    {"name":"inst_4A3191E5","path":"rooms/rNewHub/rNewHub.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

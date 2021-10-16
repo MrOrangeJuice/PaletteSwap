@@ -1,4 +1,19 @@
-if(!global.paused && !global.textUp){
+if(useCurrentDoorSpawn){
+	global.useCurrentDoorSpawn = false;
+	global.isEnteringDoor = true;
+	useCurrentDoorSpawn = false;
+	for (i = 0; i < instance_number(oLevelDoor); i++){
+		currentInstance = instance_find(oLevelDoor, i);
+		if(currentInstance.doorId == global.currentDoorId){
+			x = currentInstance.x;
+			y = currentInstance.y;
+		}
+	}
+	SwapSprite(sFernPortal);
+	alarm[4] = room_speed * .5;
+	
+}
+if(!global.paused && !global.textUp && !global.isEnteringDoor){
 	//Spike collision
 collidingSpikes = instance_place(x, y, oSpikes);
 if(collidingSpikes != noone){
