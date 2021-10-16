@@ -22,6 +22,7 @@ jumpVar = true;
 jumpBuffer = 0;
 jumped = false; //purely to stop jumpdash
 skidSound = true;
+exiting = false;
 wallHit = false;
 swimming = false;
 wallgrab = false;
@@ -33,6 +34,7 @@ canSwap = true;
 currentDoorSpawnX = 0;
 currentDoorSpawnY = 0;
 useCurrentDoorSpawn = false;
+bottomWall = false;
 if(room == PaletteTempleLevel)
 {
 	canSwap = false;	
@@ -57,15 +59,19 @@ currentframe = 0;
 key_left = 0;
 key_right = 0;
 global.wasDashReset = false;
-//leftKey = "A";
-//rightKey = "D";
-//upKey = "W";
-//downKey = "S";
-//jumpKey = "P";
-//jumpAltKey = vk_space;
-//dashKey = "O";
-//dashAltKey = vk_lshift;
-//swapDownKey = "Q";
-//swapDownAltKey = "U";
-//swapUpKey = "E";
-//swapUpAltKey = "I";
+leftKey = "A";
+rightKey = "D";
+upKey = "W";
+downKey = "S";
+jumpKey = "P";
+jumpAltKey = vk_space;
+dashKey = "O";
+dashAltKey = vk_lshift;
+swapDownKey = "Q";
+swapDownAltKey = "U";
+swapUpKey = "E";
+swapUpAltKey = "I";
+
+//dialog settings
+face = 0; //sprite
+eName = "Fern";

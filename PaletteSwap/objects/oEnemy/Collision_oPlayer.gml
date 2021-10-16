@@ -10,12 +10,13 @@ if (other.dashdown || other.dashup)
 	// Refresh player's dash.
 	DashReset();
 }
-else if (other.isDashing)
+else if (other.isDashing || !canHit)
 {
 	eHP -= 1;
-		
+	//consistency alignment
+	launch = -7 + ((bbox_top - other.y) / 20);
 	// Send player flying.
-	InitiateKnockback(other, other.image_xscale * 8, -7);
+	InitiateKnockback(other, other.image_xscale * 6, launch);
 		 
 	// Refresh player's dash.
 	DashReset();
@@ -31,7 +32,7 @@ else if (other.isRolling)
 	DashReset();
 } 
 // If the player is not dashing, then knock them back and begin their iframes.
-else 
+else /*if (canHit)*/
 {
 	// Damage and knockback the player if they're vulnerable.
 	if (!other.isInvulnerable) 

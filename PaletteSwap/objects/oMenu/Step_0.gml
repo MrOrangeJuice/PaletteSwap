@@ -121,6 +121,7 @@ if(key_select == 1){
 				break;
 			case 2:
 				SlideTransition(TRANS_MODE.GOTO, rStickTest);
+				break;
 			case 3:
 				if(file_exists("savedata.ini")){
 					file_delete("savedata.ini");

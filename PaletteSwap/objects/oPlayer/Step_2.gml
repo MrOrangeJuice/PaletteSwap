@@ -1,4 +1,4 @@
-if(!global.paused && global.canControlTimer < 0){
+if(!global.paused && global.canControlTimer < 0 && !global.textUp){
 	//Spike collision
 collidingSpikes = instance_place(x, y, oSpikes);
 if(collidingSpikes != noone){
@@ -10,6 +10,7 @@ if(collidingSpikes != noone){
 				InitiateKnockback(oPlayer, image_xscale * -6, -7);
 				global.knockedBack = true;
 				isRolling = false;
+				isDashing = false;
 				audio_play_sound(snd_Damage, 5, false);
 		}
 	}
@@ -18,7 +19,7 @@ else{
 	spikeImmune = false;
 }
 
-	bottomWall = place_meeting(x, y+1, oWall);
+	bottomWall = place_meeting(x, y+1, oWall) || place_meeting(x, y+1, oOneWayWall);
 	bottomPalette = place_meeting(x, y+1, oPaletteWall);
 if (!bottomWall && !bottomPalette && !wallgrab)
 {
@@ -32,7 +33,7 @@ else if ((swimming && (vsp >= 0 || dashup)) || !swimming){
 		jumped = false;
 	}
 	// Reset roll
-	if (canDash){
+	if (canDash && !place_meeting(x,y,oOneWayWall)){
 		isRolling = false;
 	}
 }
@@ -104,7 +105,7 @@ if(!isDashing){
 	x = x + hsp;
 
 	// Vertical Collision
-	if (place_meeting(x,y+vsp,oWall) || place_meeting(x,y+ sign(vsp),oWall))
+	if (place_meeting(x,y+vsp,oWall))
 	{
 		//if(prevAirborne && bottomWall && vsp >= 2 && !isDashing) instance_create_layer(x, y+6,"Coins",oFallFX);
 		DoCollision(oWall, true);
@@ -115,7 +116,7 @@ if(!isDashing){
 		prevAirborne = true;
 	}
 	// palette wall Collision
-	if (place_meeting(x,y+vsp,oPaletteWall) || place_meeting(x,y+ sign(vsp),oPaletteWall))
+	if (place_meeting(x,y+vsp,oPaletteWall))
 	{
 		switch (global.color){
 			case 0:
@@ -159,7 +160,7 @@ if(!isDashing){
 else{
 	if(dashdown || dashup){
 		// Handle Vertical Collision Normally
-		if (place_meeting(x,y+vsp,oWall) || place_meeting(x,y+sign(vsp),oWall))
+		if (place_meeting(x,y+vsp,oWall))
 		{
 			wallY = 0;
 			while (!place_meeting(x,y+wallY,oWall))
@@ -173,7 +174,7 @@ else{
 			//collide with wall    |  -11 down, 5 up  |
 			DoDashCollision(oWall, (sign(vsp) * -8) - 3, 0, true);
 		}
-		if (place_meeting(x,y+vsp,oPaletteWall) || place_meeting(x,y+sign(vsp),oPaletteWall))
+		if (place_meeting(x,y+vsp,oPaletteWall))
 		{
 			wallY = 0;
 			while (!place_meeting(x,y+wallY,oPaletteWall))
@@ -221,7 +222,7 @@ else{
 	}
 	else {
 		// Horizontal Collision
-		if (place_meeting(x+hsp,y,oWall) || place_meeting(x+sign(hsp),y,oWall))
+		if (place_meeting(x+hsp,y,oWall))
 		{
 			// Determine where wall is
 			wallX = 0;
@@ -234,7 +235,7 @@ else{
 			DoDashCollision(oWall, -7, sign(hsp) * -6, false);
 		}
 		//palette block
-		if (place_meeting(x+hsp,y,oPaletteWall) || place_meeting(x+sign(hsp),y,oPaletteWall))
+		if (place_meeting(x+hsp,y,oPaletteWall))
 		{
 			wallX = 0;
 			while (!place_meeting(x+wallX,y,oPaletteWall))

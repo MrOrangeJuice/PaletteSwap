@@ -77,6 +77,7 @@ if(key_select == 1){
 		audio_stop_sound(msc_FactoryLoop);
 		visible = false;
 		global.hp = 100;
+		global.textUp = false;
 		SlideTransition(TRANS_MODE.GOTO, MainMenu);
 		break;
 	case 2:

@@ -2,7 +2,7 @@
 //update frame
 if(instance_exists(oPlayer))
 {
-if(point_distance(x,y,oPlayer.x,oPlayer.y) < 24 && (!place_meeting(x,y,oPaletteWall) || global.color == 1))
+if(point_distance(x,y,oPlayer.x,oPlayer.y) < 20 && (!place_meeting(x,y,oPaletteWall) || global.color == 1))
 {
 	angle = arctan2(oPlayer.y - y, oPlayer.x - x);
 	hsp += cos(angle) * 3;

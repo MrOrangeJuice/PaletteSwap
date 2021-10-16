@@ -103,3 +103,6 @@ global.swapUpKey = ord("E");
 global.swapUpAltKey = ord("I");
 global.swapDownKey = ord("Q");
 global.swapDownAltKey = ord("U");
+//game scale settings
+global.gameWidth = 960;
+global.gameHeight = 540;

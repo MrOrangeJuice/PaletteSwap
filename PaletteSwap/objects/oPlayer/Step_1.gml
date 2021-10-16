@@ -1,5 +1,6 @@
 /// @description Update Physics
 // Get Player Input
+if (global.canControlTimer < 0) {
 key_left = keyboard_check(global.leftKey);
 key_right = keyboard_check(global.rightKey);
 key_jump = keyboard_check(global.jumpKey) || keyboard_check(global.jumpAltKey);
@@ -67,6 +68,18 @@ if (gamepad_button_check_pressed(0,gp_shoulderr) || gamepad_button_check_pressed
 	key_swap_up = 1;
 	global.controller = 1;
 }
+} else {
+key_left = 0;
+key_right = 0;
+key_jump = 0;
+key_jump_released = 0;
+key_down = 0;
+key_dash = 0;
+key_dash = 0;
+key_up = 0;
+key_swap_down = 0;
+key_swap_up	= 0;
+}
 
 // Prevent player from swapping in certain rooms
 if(room == rTutorial || room == rTutorial2 || !canSwap)
@@ -75,7 +88,7 @@ if(room == rTutorial || room == rTutorial2 || !canSwap)
 	key_swap_up = 0;
 }
 
-if(!global.paused && global.canControlTimer < 0){
+if(!global.paused && global.canControlTimer < 0 && !global.textUp){
 
 //orient sprite
 if ((key_right - key_left) != 0 && !isDashing && !wallgrab) image_xscale = sign((key_right - key_left));
@@ -87,7 +100,7 @@ if(key_jump_released)
 
 sidewall = place_meeting(x + 2, y, oWall) || place_meeting(x - 2, y, oWall) || place_meeting(x + 2, y, oPaletteWall) || place_meeting(x - 2, y, oPaletteWall);
 
-if ((!sidewall || global.color != 2) && wallgrab){
+if ((!sidewall || global.color != 2 || bottomWall) && wallgrab){
 	wallgrab = false;
 	if (vsp < 0 && !isDashing){
 		vsp -= 4;
@@ -161,10 +174,10 @@ if (key_dash && canDash)
 // If player is dashing, don't worry about other inputs
 if (wallgrab && !isDashing){
 	if (key_up && !key_down){
-		if(global.canControlTimer < 0) vsp = -2;
+		 vsp = -2;
 	}
 	else if (key_down && !key_up){
-		if(global.canControlTimer < 0) vsp = 2;
+		 vsp = 2;
 	}
 	else vsp = 0;
 }
@@ -209,13 +222,13 @@ else if(!isDashing)
 			}
 		}
 	}
-	if(global.canControlTimer < 0) hsp = currentwalksp;
-	if(global.canControlTimer < 0) vsp = vsp + grv;
+	hsp = currentwalksp;
+	vsp = vsp + grv;
 
 	// Variable jump height
 	if vsp < 0 && (!(key_jump)) && jumpVar //if you're moving upwards in the air but not holding down jump
 	{
-		if(global.canControlTimer < 0) vsp *= 0.85; //essentially, divide your vertical speed
+		vsp *= 0.85; //essentially, divide your vertical speed
 	}
 	
 }
@@ -297,6 +310,9 @@ else
 	// If timer is up
 	if(dashtime <= 0 && !dashdown && !swimming && !wallgrab)
 	{
+			if (place_meeting(x + (hsp * 2.5), y, oEnemy)){
+				oEnemy.canHit = false;
+			}
 		isDashing = false;
 		// Cancel roll if the dash ends without hitting a wall
 		isRolling = false;
@@ -355,6 +371,21 @@ if (global.knockedBack == true)
 {
 	SwapSprite(sFernHit);
 }
+else if(wallgrab)
+{
+	if(image_xscale == 1 && key_left)
+	{
+		SwapSprite(sFernClimbLook);	
+	}
+	else if(image_xscale == -1 && key_right)
+	{
+		SwapSprite(sFernClimbLook);	
+	}
+	else
+	{
+		SwapSprite(sFernClimb);	
+	}
+}
 else if(isDashing)
 {
 	if(dashdown)
@@ -406,7 +437,7 @@ else
 		else
 		{
 			//idle
-		if (sign(hsp) == 0 && ( !(key_left || key_right) || (key_left && key_right) ) )
+		if (sign(hsp) == 0 && ( !(key_left || key_right) || (key_left && key_right) ) && !exiting )
 		{
 			//sprite_index = sFernIdle;
 			SwapSprite(sFernIdle2);
@@ -464,6 +495,9 @@ if ((key_swap_down || key_swap_up) && swimming)
 if(global.hp <= 0){
 	death = instance_create_layer(x,y,"Player",oPlayerDeath);
 	death.villager = villager;
+	if (instance_exists(oEddy)){
+		death.canSwap = canSwap;
+	}
 	instance_create_layer(x,y,"Player",oGlasses);
 	instance_destroy();
 	/*
@@ -475,6 +509,7 @@ if(global.hp <= 0){
 	y = global.lastCheckpointY;
 	*/
 }
+
 }
 //update frame
 PaletteAnimationSwap();

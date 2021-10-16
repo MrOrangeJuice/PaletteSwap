@@ -17,14 +17,45 @@ if (gamepad_button_check_pressed(0,gp_face4) || gamepad_button_check_pressed(4,g
 // Render prompt
 if(place_meeting(x, y, oPlayer) && oPortal.visible)
 {
-	if(!prompt)
+	if(!prompt && !oPlayer.exiting)
 	{
 		oDoorPrompt.visible = true;	
 		prompt = true;	
 	}
 	if(key_enter)
 	{
-		global.color = 0;
+		global.canControlTimer = room_speed * 3;
+		oPlayer.exiting = true;
+		with (oPlayer){
+			SwapSprite(sFernRunNew);
+		}
+	}
+}
+else if(place_meeting(x, y, oPlayer))
+{
+	if(!prompt)
+	{
+		oDoorPrompt.visible = true;	
+		prompt = true;	
+	}
+}
+else
+{
+	if(prompt)
+	{
+		oDoorPrompt.visible = false;
+		prompt = false;
+	}
+}
+
+//delayed exiting sequence
+if (oPlayer.exiting && abs(oPlayer.x - x) <= 1.5 && oPlayer.bottomWall){
+	oPlayer.currentwalksp = 0;
+	oPlayer.isDashing = false;
+	oPlayer.exiting = false;
+	if (oPlayer.vsp < 0) oPlayer.vsp = 0;
+	with (oPlayer) SwapSprite(sFernIdle2);
+	global.color = 0;
 		global.hp = 100;
 		audio_play_sound(snd_PortalEnter,5,false);
 		if(room == rPaletteTemple)
@@ -51,22 +82,9 @@ if(place_meeting(x, y, oPlayer) && oPortal.visible)
 		}
 		SlideTransition(TRANS_MODE.GOTO, next_room);	
 	}
-}
-else if(place_meeting(x, y, oPlayer))
-{
-	if(!prompt)
-	{
-		oDoorPrompt.visible = true;	
-		prompt = true;	
-	}
-}
-else
-{
-	if(prompt)
-	{
-		oDoorPrompt.visible = false;
-		prompt = false;
-	}
+else if (oPlayer.exiting && place_meeting(x,y,oPlayer)  && abs(oPlayer.x - x) > 1.5) {
+	oPlayer.image_xscale = sign(x - oPlayer.x);
+	oPlayer.hsp = sign(x - oPlayer.x) * 3;	
 }
 
 
