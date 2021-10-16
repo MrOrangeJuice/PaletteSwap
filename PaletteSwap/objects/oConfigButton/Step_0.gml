@@ -22,43 +22,44 @@ if(GetHover() && !waitingForKey && mouse_check_button_pressed(mb_left)) {
 
 if(keyboard_check_pressed(vk_anykey) && waitingForKey){
 	waitingForKey = false;
-	key = keyboard_lastkey;
+	tempKey = global.asc_def[keyboard_lastkey];
+	realKey = keyboard_lastkey;
 	switch(buttonAction){
 		case 0:
-			oPlayer.leftKey = key;
+			global.leftKey = realKey;
 			break;
 		case 1:
-			oPlayer.rightKey = key;
+			global.rightKey = realKey;
 			break;
 		case 2:
-			oPlayer.upKey = key;
+			global.upKey = realKey;
 			break;
 		case 3:
-			oPlayer.downKey = key;
+			global.downKey = realKey;
 			break;
 		case 4:
-			oPlayer.jumpKey = key;
+			global.jumpKey = realKey;
 			break;
 		case 5:
-			oPlayer.jumpAltKey = key;
+			global.jumpAltKey = realKey;
 			break;
 		case 6:
-			oPlayer.dashKey = key;
+			global.dashKey = realKey;
 			break;
 		case 7:
-			oPlayer.dashAltKey = key;
+			global.dashAltKey = realKey;
 			break;
 		case 8:
-			oPlayer.swapUpKey = key;
+			global.swapUpKey = realKey;
 			break;
 		case 9:
-			oPlayer.swapUpAltKey = key;
+			global.swapUpAltKey = realKey;
 			break;
 		case 10:
-			oPlayer.swapDownKey = key;
+			global.swapDownKey = realKey;
 			break;
 		case 11:
-			oPlayer.swapDownAltKey = key;
+			global.swapDownAltKey = realKey;
 			break;
 		default:
 			break;

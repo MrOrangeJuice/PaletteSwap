@@ -1,6 +1,7 @@
 /// @description Update visuals and check for entry
 
 // Get input
+if(!global.isEnteringDoor){
 key_enter = keyboard_check_pressed(ord("X"));
 
 if (key_enter)
@@ -81,38 +82,19 @@ if (oPlayer.exiting && abs(oPlayer.x - x) <= 1.5 && abs(oPlayer.y - y) <= 20 && 
 	oPlayer.isDashing = false;
 	oPlayer.exiting = false;
 	if (oPlayer.vsp < 0) oPlayer.vsp = 0;
-	with (oPlayer) SwapSprite(sFernIdle2);
+	with (oPlayer) SwapSprite(sFernPortalReverse);
+	global.isEnteringDoor = true;
 	audio_play_sound(snd_PortalEnter,5,false);
 		global.color = 0;
-		Save();
-		switch(levelTo)
-		{
-			case "MainMenu":
-				audio_stop_sound(msc_Level);
-				SlideTransition(TRANS_MODE.GOTO, MainMenu);	
-				break;
-			case "rThanks":
-				SlideTransition(TRANS_MODE.GOTO, rThanks);
-				break;
-			case "rPaletteTemple":
-				SlideTransition(TRANS_MODE.GOTO, rPaletteTemple);	
-				break;
-			case "rAlexLevel":
-				audio_stop_sound(msc_Level);
-				SlideTransition(TRANS_MODE.GOTO, rAlexLevel);	
-				break;
-			case "rSecret":
-				audio_stop_sound(msc_Hub);
-				SlideTransition(TRANS_MODE.GOTO, rSecret);
-				break;
-			case "rFactory":
-				audio_stop_sound(msc_Hub);
-				SlideTransition(TRANS_MODE.GOTO, rFactory);
-				break;
+		if(set_player_spawn){
+			global.currentDoorId = doorId;
+			global.useCurrentDoorSpawn = true;
 		}
+		Save();
+		alarm[0] = room_speed * .3;
 } else if (oPlayer.exiting && place_meeting(x,y,oPlayer) && abs(oPlayer.x - x) > 1.5) {
 	oPlayer.image_xscale = sign(x - oPlayer.x); 
 	oPlayer.hsp = sign(x - oPlayer.x) * 3;
 }
-
+}
 PaletteAnimationSwap();

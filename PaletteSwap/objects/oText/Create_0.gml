@@ -14,6 +14,8 @@ textProgress = 0;
 
 curResponse = 0;
 global.textUp = true;
+oPlayer.canJump = false;
+//show_debug_message(global.textUp);
 curResponseId = 0;
 textList = ds_list_create();
 startOfText = 1;
