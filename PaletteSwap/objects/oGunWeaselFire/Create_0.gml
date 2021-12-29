@@ -1,3 +1,3 @@
 /// @description Init
-currentframe = 0;
 xdir = 0;
+event_inherited();
