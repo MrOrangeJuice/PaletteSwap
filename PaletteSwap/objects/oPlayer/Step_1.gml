@@ -308,7 +308,7 @@ else
 	dashtime--;
 	
 	// If timer is up
-	if(dashtime <= 0 && !dashdown && !swimming && !wallgrab)
+	if(dashtime <= dashEnd && !dashdown && !swimming && !wallgrab)
 	{
 			if (place_meeting(x + (hsp * 2.5), y, oEnemy)){
 				oEnemy.canHit = false;
@@ -488,14 +488,7 @@ if (key_swap_down && !swimming && room != rTutorial){
 	alarm[2] = room_speed * 0.2;
 }
 
-// If the player enters the blue palette, increase their dash velocity.
-// Otherwise, they have normal dash velocity/distance.
-if (global.color == 1) {
-	blueDashSp = 4;	
-}
-else {
-	blueDashSp = 0;	
-}
+AdjustDashParams();
 
 if ((key_swap_down || key_swap_up) && swimming)
 {

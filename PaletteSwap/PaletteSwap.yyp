@@ -26,6 +26,7 @@
     {"id":{"name":"snd_PlayerDamage","path":"sounds/snd_PlayerDamage/snd_PlayerDamage.yy",},"order":29,},
     {"id":{"name":"fGameBig","path":"fonts/fGameBig/fGameBig.yy",},"order":3,},
     {"id":{"name":"ScreenShake","path":"scripts/ScreenShake/ScreenShake.yy",},"order":0,},
+    {"id":{"name":"AdjustDashParams","path":"scripts/AdjustDashParams/AdjustDashParams.yy",},"order":15,},
     {"id":{"name":"sKindaBeegTitle","path":"sprites/sKindaBeegTitle/sKindaBeegTitle.yy",},"order":11,},
     {"id":{"name":"sFernClimb","path":"sprites/sFernClimb/sFernClimb.yy",},"order":28,},
     {"id":{"name":"sBigRed","path":"sprites/sBigRed/sBigRed.yy",},"order":23,},
@@ -654,7 +655,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.7.606",
+    "IDEVersion": "2.3.2.560",
   },
   "resourceVersion": "1.4",
   "name": "PaletteSwap",
