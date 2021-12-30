@@ -54,8 +54,13 @@ if (instance_exists(oPlayer) && oPlayer.exiting && abs(oPlayer.x - x) <= 1.5 && 
 	oPlayer.isDashing = false;
 	oPlayer.exiting = false;
 	if (oPlayer.vsp < 0) oPlayer.vsp = 0;
-	with (oPlayer) SwapSprite(sFernIdle2);
+	with (oPlayer) SwapSprite(sFernPortalReverse);
+	global.isEnteringDoor = true;
 	global.color = 0;
+	if(set_player_spawn){
+			global.currentDoorId = doorId;
+			global.useCurrentDoorSpawn = true;
+	}
 		global.hp = 100;
 		audio_play_sound(snd_PortalEnter,5,false);
 		if(room == rPaletteTemple)
@@ -74,8 +79,8 @@ if (instance_exists(oPlayer) && oPlayer.exiting && abs(oPlayer.x - x) <= 1.5 && 
 			audio_stop_sound(msc_FactoryIntro);
 			audio_stop_sound(msc_FactoryLoop);
 		}
-		Save();
-		SlideTransition(TRANS_MODE.GOTO, next_room);	
+		Save();	
+		alarm[0] = room_speed * .3;
 	}
 else if (instance_exists(oPlayer) && oPlayer.exiting && place_meeting(x,y,oPlayer)  && abs(oPlayer.x - x) > 1.5) {
 	oPlayer.image_xscale = sign(x - oPlayer.x);
