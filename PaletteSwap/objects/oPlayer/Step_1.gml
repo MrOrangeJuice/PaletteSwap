@@ -289,18 +289,18 @@ else
 	// Calculate movement
 	if(dashdown)
 	{
-		if(global.canControlTimer < 0) vsp = dashsp * 1.5;
+		if(global.canControlTimer < 0) vsp = (blueDashSp + dashsp) * 1.5;
 	}
 	else if (dashup){
-		if(global.canControlTimer < 0) vsp = dashsp * -0.9;
+		if(global.canControlTimer < 0) vsp = (blueDashSp + dashsp) * -0.9;
 	}
 	else if(dashright)
 	{
-		if(global.canControlTimer < 0) hsp = dashsp;
+		if(global.canControlTimer < 0) hsp = (blueDashSp + dashsp);
 	}
 	else if(dashleft)
 	{
-		if(global.canControlTimer < 0) hsp = -dashsp;
+		if(global.canControlTimer < 0) hsp = -(blueDashSp + dashsp);
 	}
 	
 	// Decrement timer and end dash if necessary
@@ -487,6 +487,16 @@ if (key_swap_down && !swimming && room != rTutorial){
 	canSwap = false;
 	alarm[2] = room_speed * 0.2;
 }
+
+// If the player enters the blue palette, increase their dash velocity.
+// Otherwise, they have normal dash velocity/distance.
+if (global.color == 1) {
+	blueDashSp = 4;	
+}
+else {
+	blueDashSp = 0;	
+}
+
 if ((key_swap_down || key_swap_up) && swimming)
 {
 	audio_play_sound(snd_NoSwap,5,false);

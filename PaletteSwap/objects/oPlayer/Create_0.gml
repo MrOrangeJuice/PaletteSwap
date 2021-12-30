@@ -5,6 +5,7 @@ vsp = 0;
 grv = 0.4;
 walksp = 4.5;
 dashsp = 8;
+blueDashSp = 0;
 dashtime = room_speed * 0.3;
 dashdown = false;
 dashleft = false;
