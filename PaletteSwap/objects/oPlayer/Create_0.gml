@@ -75,6 +75,9 @@ useCurrentDoorSpawn = false;
 face = sFernIcon; //sprite
 eName = "Fern";
 
+//how about not breaking on entering rooms?
+global.isEnteringDoor = false;
+
 if(global.useCurrentDoorSpawn){
 	useCurrentDoorSpawn = true;
 }

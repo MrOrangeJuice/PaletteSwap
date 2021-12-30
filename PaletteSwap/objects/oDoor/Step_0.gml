@@ -49,7 +49,7 @@ else
 }
 
 //delayed exiting sequence
-if (oPlayer.exiting && abs(oPlayer.x - x) <= 1.5 && oPlayer.bottomWall){
+if (instance_exists(oPlayer) && oPlayer.exiting && abs(oPlayer.x - x) <= 1.5 && oPlayer.bottomWall){
 	oPlayer.currentwalksp = 0;
 	oPlayer.isDashing = false;
 	oPlayer.exiting = false;
@@ -77,7 +77,7 @@ if (oPlayer.exiting && abs(oPlayer.x - x) <= 1.5 && oPlayer.bottomWall){
 		Save();
 		SlideTransition(TRANS_MODE.GOTO, next_room);	
 	}
-else if (oPlayer.exiting && place_meeting(x,y,oPlayer)  && abs(oPlayer.x - x) > 1.5) {
+else if (instance_exists(oPlayer) && oPlayer.exiting && place_meeting(x,y,oPlayer)  && abs(oPlayer.x - x) > 1.5) {
 	oPlayer.image_xscale = sign(x - oPlayer.x);
 	oPlayer.hsp = sign(x - oPlayer.x) * 3;	
 }
