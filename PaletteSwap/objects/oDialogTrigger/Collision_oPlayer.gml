@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (!triggered) {
+if (!triggered && !requiresActivation) {
 	triggered = true;
 	SwapSprite(sNone);
 	visible = true;

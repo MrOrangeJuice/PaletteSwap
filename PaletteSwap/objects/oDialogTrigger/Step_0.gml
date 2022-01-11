@@ -3,9 +3,12 @@
 if (triggered){
 	
 	//update tracker and upkeep
-	if (key_space) dialogTracker++;
+	if (key_space){
+		dialogTracker++;
+	}
 	//loop dialog order
-	if (dialogTracker >= ds_list_size(dialogOrder)) dialogTracker = 0;
+	if (dialogTracker >= ds_list_size(dialogOrder))
+		dialogTracker = 0;
 	
 	if (array_length_1d(talkingEntities) > 0 && ds_list_size(dialogOrder) > 0){
 //set faces and names to display

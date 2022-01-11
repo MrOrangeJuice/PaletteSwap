@@ -16,6 +16,12 @@
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"oPauseButtons","path":"objects/oPauseButtons/oPauseButtons.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":160.0,"y":192.0,"resourceVersion":"1.0","name":"inst_16E0E7F","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oScreenDarken","path":"objects/oScreenDarken/oScreenDarken.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-64.0,"y":-32.0,"resourceVersion":"1.0","name":"inst_25EAD01A","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"textMessage","path":"objects/oDialogTrigger/oDialogTrigger.yy",},"objectId":{"name":"oDialogTrigger","path":"objects/oDialogTrigger/oDialogTrigger.yy",},"value":"Greetings traveller, I'm\\nDon Mayor Gerald.\\nWelcome to our humble village.#Hiya. Do you know a\\nway off this planet?#This one doesn't waste any\\ntime. I'd love to help you but\\nunfortunately our portals are\\nall offline right now, so we're\\nall trapped here.#...","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"talkingEntities","path":"objects/oDialogTrigger/oDialogTrigger.yy",},"objectId":{"name":"oDialogTrigger","path":"objects/oDialogTrigger/oDialogTrigger.yy",},"value":"\"oPlayer\", \"oNPC\"","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"dialogOrderString","path":"objects/oDialogTrigger/oDialogTrigger.yy",},"objectId":{"name":"oDialogTrigger","path":"objects/oDialogTrigger/oDialogTrigger.yy",},"value":"1#0#0","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"requiresActivation","path":"objects/oDialogTrigger/oDialogTrigger.yy",},"objectId":{"name":"oDialogTrigger","path":"objects/oDialogTrigger/oDialogTrigger.yy",},"value":"False","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"oDialogTrigger","path":"objects/oDialogTrigger/oDialogTrigger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.07999996,"scaleY":0.119999975,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1568.0,"y":1872.0,"resourceVersion":"1.0","name":"inst_51E5AE01","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Pause","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"FX","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"tGreen","path":"tilesets/tGreen/tGreen.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":219,"SerialiseHeight":188,"TileSerialiseData":[
@@ -2036,6 +2042,7 @@
     {"name":"inst_46FBD12E","path":"rooms/rNewHub/rNewHub.yy",},
     {"name":"inst_5773C839","path":"rooms/rNewHub/rNewHub.yy",},
     {"name":"inst_4A3191E5","path":"rooms/rNewHub/rNewHub.yy",},
+    {"name":"inst_51E5AE01","path":"rooms/rNewHub/rNewHub.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
