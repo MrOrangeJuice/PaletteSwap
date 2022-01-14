@@ -10,14 +10,14 @@ if (triggered){
 	if (dialogTracker >= ds_list_size(dialogOrder))
 		dialogTracker = 0;
 	
-	if (array_length_1d(talkingEntities) > 0 && ds_list_size(dialogOrder) > 0){
+	if (array_length_1d(talkingEntities) > 0 && ds_list_size(dialogOrder) > 0 && instance_exists(text)){
 //set faces and names to display
 	//index dialogOrder to tracker, which you
 	//then use to index talkingEntities,
 	//reference their icon and name
 		talkingEntity = asset_get_index(talkingEntities[ds_list_find_value(dialogOrder, dialogTracker)]);
-		face = talkingEntity.face;
-		eName = talkingEntity.eName;
+		text.face = talkingEntity.face;
+		text.eName = talkingEntity.eName;
 	}
 	
 	//cleanup and prevent retriggering

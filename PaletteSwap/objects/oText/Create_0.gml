@@ -22,3 +22,9 @@ startOfText = 1;
 started = false;
 
 key_space = 0;
+
+//used for doalog text boxes- this should be false unless set by a dialog trigger
+isDialog = false;
+//used for dialog text
+face = 0;
+eName = "";

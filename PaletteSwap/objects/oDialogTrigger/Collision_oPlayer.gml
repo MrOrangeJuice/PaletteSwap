@@ -6,6 +6,7 @@ if (!triggered && !requiresActivation) {
 	visible = true;
 	
 	text = instance_create_layer(0,0,"FX",oText);
+	text.isDialog = true;
 	text.textMessage = textMessage;
 	
 	global.canControlTimer = 1;

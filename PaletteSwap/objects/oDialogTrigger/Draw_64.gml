@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+/* MOVED TO oText <=================================
+
 if (triggered){
 	//draw face and name here
 	draw_sprite(face, global.color, 3, RES_H / 2);
@@ -38,3 +40,4 @@ else if(global.color == 3){
 draw_text(55, RES_H/2 + 10, eName);
 
 }
+*/
