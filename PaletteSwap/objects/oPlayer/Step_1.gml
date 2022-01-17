@@ -488,6 +488,7 @@ if (key_swap_down && !swimming && room != rTutorial){
 	alarm[2] = room_speed * 0.2;
 }
 
+// Check if we need to change the player's dash because they changed palettes.
 AdjustDashParams();
 
 if ((key_swap_down || key_swap_up) && swimming)
