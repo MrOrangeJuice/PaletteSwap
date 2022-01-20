@@ -18,3 +18,5 @@ for(c = 0; c < string_length(dialogOrderString); c++){
 			ds_list_add(dialogOrder, real(string_copy(dialogOrderString, startOfText, c-startOfText+2)));
 		}
 	}
+
+alarm[0] = room_speed * 0.2;

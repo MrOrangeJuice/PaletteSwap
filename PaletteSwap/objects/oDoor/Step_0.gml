@@ -67,6 +67,9 @@ if (instance_exists(oPlayer) && oPlayer.exiting && abs(oPlayer.x - x) <= 1.5 && 
 		{
 			global.templeCompleted = true;
 			audio_stop_sound(msc_Level);
+			if (instance_exists(oEddy)){
+				global.spawnHubDialog = true;
+			}
 		}
 		if(room == rAlexLevel)
 		{
