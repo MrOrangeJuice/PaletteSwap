@@ -385,6 +385,14 @@ else if(wallgrab)
 	{
 		SwapSprite(sFernClimbLook);	
 	}
+	else if(key_up)
+	{
+		SwapSprite(sFernClimbUp);	
+	}
+	else if(key_down)
+	{
+		SwapSprite(sFernClimbDown);	
+	}
 	else
 	{
 		SwapSprite(sFernClimb);	

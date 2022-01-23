@@ -33,7 +33,11 @@ global.loaded = false;
 //global.coinId = 0;
 global.canControlTimer = -1;
 
+//flag for player being in a speedrun level
 global.isSpeedrun = false;
+
+//flag for activating dialog objects in the hub
+global.spawnHubDialog = false;
 
 // Player data
 global.tutorialCompleted = false;
