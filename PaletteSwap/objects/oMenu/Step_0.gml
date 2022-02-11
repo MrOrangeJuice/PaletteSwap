@@ -81,7 +81,7 @@ if(key_select == 1){
 				Load();
 				if(global.templeCompleted)
 				{
-					SlideTransition(TRANS_MODE.GOTO, rHub);
+					SlideTransition(TRANS_MODE.GOTO, rNewHub);
 				}
 				else
 				{

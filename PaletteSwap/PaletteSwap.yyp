@@ -449,6 +449,7 @@
     {"id":{"name":"oTitle","path":"objects/oTitle/oTitle.yy",},"order":7,},
     {"id":{"name":"sConveyorRight","path":"sprites/sConveyorRight/sConveyorRight.yy",},"order":7,},
     {"id":{"name":"sBlock","path":"sprites/sBlock/sBlock.yy",},"order":9,},
+    {"id":{"name":"sFernClimbDown","path":"sprites/sFernClimbDown/sFernClimbDown.yy",},"order":33,},
     {"id":{"name":"snd_BirdDeath","path":"sounds/snd_BirdDeath/snd_BirdDeath.yy",},"order":32,},
     {"id":{"name":"sRiftBig","path":"sprites/sRiftBig/sRiftBig.yy",},"order":41,},
     {"id":{"name":"PinkPH","path":"sprites/PinkPH/PinkPH.yy",},"order":6,},

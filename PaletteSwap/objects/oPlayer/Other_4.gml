@@ -13,3 +13,4 @@ if(room != rTutorial && global.loaded){
 }
 global.canControlTimer = -1;
 global.paused = false;
+//dialog flag reading

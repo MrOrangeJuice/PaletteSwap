@@ -17,3 +17,6 @@ if(levelComplete == "factory")
 		instance_destroy();	
 	}
 }
+
+face = sVillager;
+eName = "Don Mayor Gerald";

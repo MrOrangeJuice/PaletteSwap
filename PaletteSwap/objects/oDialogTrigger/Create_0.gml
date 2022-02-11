@@ -4,15 +4,13 @@ triggered = false;
 text = 0;
 key_space = 0;
 dialogTracker = 0;
-face = 0;
-eName = 0;
 
 //parse dialog order
 startOfText = 0;
 dialogOrder = ds_list_create();
 //reusing some of julien's code
 for(c = 0; c < string_length(dialogOrderString); c++){
-		if(string_char_at(textMessage, c) == "#"){
+		if(string_char_at(dialogOrderString, c) == "#"){
 			ds_list_add(dialogOrder, real(string_copy(dialogOrderString, startOfText, c-startOfText))); //real() pares to real (int)
 			startOfText = c+1;
 		}
@@ -20,3 +18,5 @@ for(c = 0; c < string_length(dialogOrderString); c++){
 			ds_list_add(dialogOrder, real(string_copy(dialogOrderString, startOfText, c-startOfText+2)));
 		}
 	}
+
+alarm[0] = room_speed * 0.2;
