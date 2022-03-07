@@ -436,6 +436,7 @@
     {"id":{"name":"sCursorBig","path":"sprites/sCursorBig/sCursorBig.yy",},"order":20,},
     {"id":{"name":"oPlayerDeath","path":"objects/oPlayerDeath/oPlayerDeath.yy",},"order":1,},
     {"id":{"name":"sEddyCutsceneEnd","path":"sprites/sEddyCutsceneEnd/sEddyCutsceneEnd.yy",},"order":2,},
+    {"id":{"name":"sInteriorWorn","path":"sprites/sInteriorWorn/sInteriorWorn.yy",},"order":27,},
     {"id":{"name":"oVendingInfo","path":"objects/oVendingInfo/oVendingInfo.yy",},"order":2,},
     {"id":{"name":"sSpikes","path":"sprites/sSpikes/sSpikes.yy",},"order":1,},
     {"id":{"name":"sFernSwimUpNew","path":"sprites/sFernSwimUpNew/sFernSwimUpNew.yy",},"order":23,},
