@@ -1,9 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 if (triggered){
-	
+	 started = true;
 	//update tracker and upkeep
-	if (key_space){
+	if (key_space && text.textProgress >= string_length(text.curResponse) && text.curResponseId < ds_list_size(text.textList) - 1){
 		dialogTracker++;
 	}
 	//loop dialog order
@@ -24,4 +24,5 @@ if (triggered){
 	if (!instance_exists(text)){
 		instance_destroy(self);
 	}
+	//skip first frame to line up with
 }

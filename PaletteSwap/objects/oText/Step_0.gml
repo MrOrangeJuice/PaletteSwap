@@ -24,6 +24,8 @@ x2 = lerp(x2, x2Target, lerpProgress);
 
 if(keyboard_check_released(vk_space)){
 	audio_play_sound(snd_Dialogue, 4, false);
+	if (textProgress >= string_length(curResponse)) {
+		
 	lerpProgress = 0;
 	textProgress = 0;
 	curResponseId++;
@@ -43,5 +45,9 @@ if(keyboard_check_released(vk_space)){
 	//if(textProgress >= messageLength){
 	//	instance_destroy();	
 	//}
+	} else {
+		lerpProgress = 1;
+		textProgress = string_length(curResponse);	
+	}
 }
 }
