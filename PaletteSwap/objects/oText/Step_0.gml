@@ -39,7 +39,7 @@ if(keyboard_check_released(vk_space)){
 	else{
 		global.textUp = false;
 		//show_debug_message(global.textUp);
-		//oPlayer.canJump = false;
+		oPlayer.canJump = true;
 		instance_destroy();
 	}
 	//if(textProgress >= messageLength){
