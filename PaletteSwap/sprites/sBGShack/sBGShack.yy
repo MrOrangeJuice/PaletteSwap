@@ -61,7 +61,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sBGShack","path":"sprites/sBGShack/sBGShack.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "sBGShack",
     "tags": [],
     "resourceType": "GMSequence",

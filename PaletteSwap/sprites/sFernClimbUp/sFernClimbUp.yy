@@ -199,7 +199,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sFernClimbUp","path":"sprites/sFernClimbUp/sFernClimbUp.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "sFernClimbUp",
     "tags": [],
     "resourceType": "GMSequence",

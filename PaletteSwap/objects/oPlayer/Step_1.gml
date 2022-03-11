@@ -373,11 +373,7 @@ if (global.knockedBack == true)
 }
 else if(wallgrab)
 {
-	if(key_up)
-	{
-		SwapSprite(sFernClimbUp);
-	}
-	else if(image_xscale == 1 && key_left)
+	if(image_xscale == 1 && key_left)
 	{
 		SwapSprite(sFernClimbLook);	
 	}
