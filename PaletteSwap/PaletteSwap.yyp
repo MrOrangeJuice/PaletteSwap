@@ -450,6 +450,7 @@
     {"id":{"name":"PinkPH","path":"sprites/PinkPH/PinkPH.yy",},"order":6,},
     {"id":{"name":"sGunWeaselFire","path":"sprites/sGunWeaselFire/sGunWeaselFire.yy",},"order":6,},
     {"id":{"name":"sPalette","path":"sprites/sPalette/sPalette.yy",},"order":48,},
+    {"id":{"name":"rSpeedrun4","path":"rooms/rSpeedrun4/rSpeedrun4.yy",},"order":32,},
     {"id":{"name":"DashReset","path":"scripts/DashReset/DashReset.yy",},"order":8,},
     {"id":{"name":"sCoin","path":"sprites/sCoin/sCoin.yy",},"order":0,},
     {"id":{"name":"sFernRoll","path":"sprites/sFernRoll/sFernRoll.yy",},"order":9,},
@@ -577,6 +578,7 @@
     {"roomId":{"name":"rTutorial2","path":"rooms/rTutorial2/rTutorial2.yy",},},
     {"roomId":{"name":"rSpeedrun3","path":"rooms/rSpeedrun3/rSpeedrun3.yy",},},
     {"roomId":{"name":"rNewHub","path":"rooms/rNewHub/rNewHub.yy",},},
+    {"roomId":{"name":"rSpeedrun4","path":"rooms/rSpeedrun4/rSpeedrun4.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
