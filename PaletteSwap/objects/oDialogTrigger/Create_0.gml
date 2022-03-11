@@ -4,6 +4,7 @@ triggered = false;
 text = 0;
 key_space = 0;
 dialogTracker = 0;
+started = false;
 
 //parse dialog order
 startOfText = 0;
