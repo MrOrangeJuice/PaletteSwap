@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (!triggered && !requiresActivation) {
+if (!triggered && !requiresActivation && (oPlayer.bottomWall || (oPlayer.bottomPalette && global.color != 1))) {
 	triggered = true;
 	SwapSprite(sNone);
 	visible = true;
@@ -13,4 +13,6 @@ if (!triggered && !requiresActivation) {
 	DashReset();
 	oPlayer.currentwalksp = 0;
 	if (oPlayer.vsp < 0) oPlayer.vsp = 0;
+} else {
+	oPlayer.canControlTimer = 0.4;
 }
