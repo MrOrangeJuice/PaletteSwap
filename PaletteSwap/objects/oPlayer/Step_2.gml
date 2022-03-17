@@ -48,7 +48,8 @@ else if ((swimming && (vsp >= 0 || dashup)) || !swimming){
 		jumped = false;
 	}
 	// Reset roll
-	if (canDash && !place_meeting(x,y,oOneWayWall)){
+	if (canDash && !place_meeting(x,y,oOneWayWall) && isRolling && !wallgrab){
+		y -= 6; //stop edge clip on landing roll lmao
 		isRolling = false;
 	}
 }
