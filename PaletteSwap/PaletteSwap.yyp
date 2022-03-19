@@ -208,6 +208,7 @@
     {"id":{"name":"oPiston","path":"objects/oPiston/oPiston.yy",},"order":16,},
     {"id":{"name":"sFernRunNoSwap","path":"sprites/sFernRunNoSwap/sFernRunNoSwap.yy",},"order":8,},
     {"id":{"name":"sCrab","path":"sprites/sCrab/sCrab.yy",},"order":0,},
+    {"id":{"name":"sInteriorWorn","path":"sprites/sInteriorWorn/sInteriorWorn.yy",},"order":27,},
     {"id":{"name":"oShack","path":"objects/oShack/oShack.yy",},"order":1,},
     {"id":{"name":"sCollectible","path":"sprites/sCollectible/sCollectible.yy",},"order":1,},
     {"id":{"name":"oColorLimiter","path":"objects/oColorLimiter/oColorLimiter.yy",},"order":1,},
