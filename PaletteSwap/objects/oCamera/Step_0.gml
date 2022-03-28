@@ -19,10 +19,16 @@ else
 }
 
 // Update object position
-x += (xTo - x) / jelliness;
-y += (yTo - y) / jelliness;
+dX = (xTo - x) / jelliness;
+dY = (yTo - y) / jelliness;
 
-	
+//reduce subpixel movement
+if (abs(dX) < 0.5) dX = 0;
+if (abs(dY) < 0.5) dY = 0;
+
+x += dX;
+y += dY;
+
 // Keep camera center inside room
 x = clamp(x,view_w_half+buff,room_width-view_w_half-buff);
 y = clamp(y,view_h_half+buff,room_height-view_h_half-buff);
