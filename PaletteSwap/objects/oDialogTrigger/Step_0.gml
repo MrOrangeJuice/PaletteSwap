@@ -9,7 +9,7 @@ if (triggered){
 	
 	 started = true;
 	//update tracker and upkeep
-	if (key_space && text.textProgress >= string_length(text.curResponse) && text.curResponseId < ds_list_size(text.textList) - 1){
+	if (keyboard_check_released(vk_space) && text.textProgress >= string_length(text.curResponse) && text.curResponseId < ds_list_size(text.textList) - 1){
 		dialogTracker++;
 	}
 	//loop dialog order
