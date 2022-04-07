@@ -10,7 +10,7 @@ if (!triggered && !requiresActivation && (other.bottomWall || (other.bottomPalet
 	text.textMessage = textMessage;
 
 	if (other.vsp < 0) other.vsp = 0;
-} else {
+} else if (!requiresActivation) {
 	global.canControlTimer = 1;
 	if (other.isDashing) DashReset(); 
 }
