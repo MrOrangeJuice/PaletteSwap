@@ -22,7 +22,7 @@ global.textUp = true;
 x1 = lerp(x1, x1Target, lerpProgress);
 x2 = lerp(x2, x2Target, lerpProgress);
 
-if(keyboard_check_released(vk_space)){
+if(key_space){
 	audio_play_sound(snd_Dialogue, 4, false);
 	if (textProgress >= string_length(curResponse)) {
 		
