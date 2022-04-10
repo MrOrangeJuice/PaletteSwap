@@ -41,8 +41,8 @@ if(room != MainMenu && room != rLevelSelect && room != rThanks && room != rStick
 			DrawSetText($2C142D, fUI, fa_right, fa_top);
 			break;
 	}
-	draw_sprite_stretched(sCoinStatic, global.color, 268 + coinOffset, 4, 16, 16);
-	draw_text_transformed(RES_W-2,7,"*" + string(global.coins), coinTextScale, coinTextScale,0);
+	draw_sprite_stretched(sCoinStatic, global.color, 428 + coinOffset, 4, 16, 16);
+	draw_text_transformed(480-2,7,"*" + string(global.coins), coinTextScale, coinTextScale,0);
 	
 	switch(room)
 	{
@@ -99,8 +99,8 @@ if(room != MainMenu && room != rLevelSelect && room != rThanks && room != rStick
 			break;
 			
 	}
-	draw_sprite_stretched(sGearSmall, global.color, 284 + gearOffset, 20, 16, 16);
-	draw_text_transformed(RES_W-2,22,"*" + string(global.gearTotal), collectableTextScale, collectableTextScale,0);
+	draw_sprite_stretched(sGearSmall, global.color, 444 + gearOffset, 20, 16, 16);
+	draw_text_transformed(480-2,22,"*" + string(global.gearTotal), collectableTextScale, collectableTextScale,0);
 
 	// Draw Time
 	if (global.isSpeedrun){
@@ -114,7 +114,7 @@ if(room != MainMenu && room != rLevelSelect && room != rThanks && room != rStick
 				DrawSetText($331800, fUI, fa_right, fa_top);
 				break;
 		}
-		draw_text_transformed(RES_W-2,37,"Time: " + string_format((global.time / room_speed), 0, 2), timeTextScale, timeTextScale,0);
+		draw_text_transformed(480-2,37,"Time: " + string_format((global.time / room_speed), 0, 2), timeTextScale, timeTextScale,0);
 	}
 	// Draw Player HP
 	/*

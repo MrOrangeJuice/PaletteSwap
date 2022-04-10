@@ -2,7 +2,7 @@
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
-  "origin": 0,
+  "origin": 4,
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
   "collisionTolerance": 0,
@@ -25,8 +25,8 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"dc74d668-8fdb-45b4-bea6-519ab163772f","path":"sprites/sFernPortrait/sFernPortrait.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"dc74d668-8fdb-45b4-bea6-519ab163772f","path":"sprites/sFernPortrait/sFernPortrait.yy",},"LayerId":{"name":"8782d42d-939c-4191-80d5-136b53617108","path":"sprites/sFernPortrait/sFernPortrait.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"dc74d668-8fdb-45b4-bea6-519ab163772f","path":"sprites/sFernPortrait/sFernPortrait.yy",},"LayerId":{"name":"48e3f558-9924-4e3a-a762-a0cd06bc831b","path":"sprites/sFernPortrait/sFernPortrait.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"dc74d668-8fdb-45b4-bea6-519ab163772f","path":"sprites/sFernPortrait/sFernPortrait.yy",},"LayerId":{"name":"8782d42d-939c-4191-80d5-136b53617108","path":"sprites/sFernPortrait/sFernPortrait.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"sFernPortrait","path":"sprites/sFernPortrait/sFernPortrait.yy",},"resourceVersion":"1.0","name":"dc74d668-8fdb-45b4-bea6-519ab163772f","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"a9c6f8f7-c9fa-4ab4-a1a6-3f68da8e521a","path":"sprites/sFernPortrait/sFernPortrait.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"a9c6f8f7-c9fa-4ab4-a1a6-3f68da8e521a","path":"sprites/sFernPortrait/sFernPortrait.yy",},"LayerId":{"name":"48e3f558-9924-4e3a-a762-a0cd06bc831b","path":"sprites/sFernPortrait/sFernPortrait.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
@@ -70,8 +70,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 0,
-    "yorigin": 0,
+    "xorigin": 16,
+    "yorigin": 16,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sFernPortrait","path":"sprites/sFernPortrait/sFernPortrait.yy",},

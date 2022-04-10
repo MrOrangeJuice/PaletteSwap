@@ -1,5 +1,5 @@
 #macro SAVEFILE "Save.ini"
-display_set_gui_size(RES_W,RES_H);
+display_set_gui_size(480,270);
 
 // Create basic global variables.
 global.coins = 0;
