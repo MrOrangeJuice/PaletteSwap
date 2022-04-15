@@ -577,8 +577,8 @@
     {"roomId":{"name":"rTutorial","path":"rooms/rTutorial/rTutorial.yy",},},
     {"roomId":{"name":"rTutorial2","path":"rooms/rTutorial2/rTutorial2.yy",},},
     {"roomId":{"name":"rSpeedrun3","path":"rooms/rSpeedrun3/rSpeedrun3.yy",},},
-    {"roomId":{"name":"rNewHub","path":"rooms/rNewHub/rNewHub.yy",},},
     {"roomId":{"name":"rSpeedrun4","path":"rooms/rSpeedrun4/rSpeedrun4.yy",},},
+    {"roomId":{"name":"rNewHub","path":"rooms/rNewHub/rNewHub.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
