@@ -7,6 +7,10 @@ if(room != MainMenu && room != rLevelSelect && room != rThanks && room != rStick
 	draw_sprite_stretched(sHealthbar, global.color, 5, 5, (global.hp / global.maxHP) * 60, 14);
 	draw_sprite(sColorBlindDisplay, global.color, 4, 4);
 	
+	
+	// Draw UI outline
+	draw_sprite(sUIShell,global.color,444,28);
+	
 	coinOffset = 0;
 	// Draw Coin Count
 	if(global.coins < 10)
@@ -41,8 +45,8 @@ if(room != MainMenu && room != rLevelSelect && room != rThanks && room != rStick
 			DrawSetText($2C142D, fUI, fa_right, fa_top);
 			break;
 	}
-	draw_sprite_stretched(sCoinStatic, global.color, 428 + coinOffset, 4, 16, 16);
-	draw_text_transformed(480-2,7,"*" + string(global.coins), coinTextScale, coinTextScale,0);
+	draw_sprite_stretched(sCoinStatic, global.color, 420 + coinOffset, 12, 16, 16);
+	draw_text_transformed(470,15,"*" + string(global.coins), coinTextScale, coinTextScale,0);
 	
 	switch(room)
 	{
@@ -99,8 +103,8 @@ if(room != MainMenu && room != rLevelSelect && room != rThanks && room != rStick
 			break;
 			
 	}
-	draw_sprite_stretched(sGearSmall, global.color, 444 + gearOffset, 20, 16, 16);
-	draw_text_transformed(480-2,22,"*" + string(global.gearTotal), collectableTextScale, collectableTextScale,0);
+	draw_sprite_stretched(sGearSmall, global.color, 436 + gearOffset, 28, 16, 16);
+	draw_text_transformed(470,30,"*" + string(global.gearTotal), collectableTextScale, collectableTextScale,0);
 
 	// Draw Time
 	if (global.isSpeedrun){
