@@ -81,11 +81,11 @@ if(key_select == 1){
 				Load();
 				if(global.templeCompleted)
 				{
-					SlideTransition(TRANS_MODE.GOTO, rSpeedrun4);
+					SlideTransition(TRANS_MODE.GOTO, rNewHub);
 				}
 				else
 				{
-					SlideTransition(TRANS_MODE.GOTO, rSpeedrun4);
+					SlideTransition(TRANS_MODE.GOTO, rTutorial);
 				}
 				break;
 			case 1:

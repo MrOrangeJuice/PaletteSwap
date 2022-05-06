@@ -510,8 +510,16 @@ if(global.hp <= 0){
 	if (instance_exists(oEddy)){
 		death.canSwap = canSwap;
 	}
+	
 	instance_create_layer(x,y,"Player",oGlasses);
 	instance_destroy();
+	
+	// Check if we're in a speedrun level
+	if (instance_exists(oSpeedrunEntry)) {
+		SlideTransition(TRANS_MODE.GOTO, room);
+		global.hp = 100;
+	}
+	
 	/*
 	global.hp = 100;
 	global.canControlTimer = 60;
