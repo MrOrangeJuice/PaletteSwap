@@ -477,6 +477,7 @@
     {"id":{"name":"sAirCurrent","path":"sprites/sAirCurrent/sAirCurrent.yy",},"order":0,},
     {"id":{"name":"sBush","path":"sprites/sBush/sBush.yy",},"order":0,},
     {"id":{"name":"sGunWeasel","path":"sprites/sGunWeasel/sGunWeasel.yy",},"order":5,},
+    {"id":{"name":"sFernPortrait","path":"sprites/sFernPortrait/sFernPortrait.yy",},"order":14,},
     {"id":{"name":"BrownPH","path":"sprites/BrownPH/BrownPH.yy",},"order":2,},
     {"id":{"name":"sGradient","path":"sprites/sGradient/sGradient.yy",},"order":9,},
     {"id":{"name":"sLeverBlock","path":"sprites/sLeverBlock/sLeverBlock.yy",},"order":33,},
