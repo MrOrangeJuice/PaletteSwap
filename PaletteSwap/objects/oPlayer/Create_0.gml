@@ -71,7 +71,7 @@ swapUpAltKey = "I";
 useCurrentDoorSpawn = false;
 
 //dialog settings
-face = sFernIcon; //sprite
+face = sFernPortrait; //sprite
 eName = "Fern";
 
 //how about not breaking on entering rooms?
