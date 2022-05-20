@@ -89,7 +89,7 @@ timeTextScale = 1.2;
 paletteTextScale = 1;
 collectableTextScale = 1;
 timeScaleSet = false;
-gearHUDX = 160;
+gearHUDX = 240;
 gearHUDY = 12;
 
 global.color_limit = 4; //limit scrollover

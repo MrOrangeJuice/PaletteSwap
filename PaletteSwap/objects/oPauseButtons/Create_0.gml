@@ -1,6 +1,6 @@
 /// @description Create
-global.menuX = 0;
-global.menuY = 0;
+global.menuX = 320;
+global.menuY = 180;
 buttonHeight = 32;
 button[0] = "Resume";
 //button[1] = "Save";
