@@ -10,6 +10,7 @@ if (count > 0){
 	text = instance_create_layer(x,y,"FX",oScreenText);
 	text.textMessage = "GO!";
 	global.textUp = false;
+	global.time = 0;
 	alarm[0] = room_speed;
 }
 count--;
