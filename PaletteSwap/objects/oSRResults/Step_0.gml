@@ -5,24 +5,30 @@ if (!displayed && room == rSRResults){
 	
 	//display results
 	text = instance_create_layer(x,y,"instances",oText);
+	pb = global.speedrunBests[srLevelID];
+	
 bigstring = "Time: " + string_format(finishedTime/room_speed, 0, 2) +"\n";
-if (finishedTime < time2 && (global.speedrunBests[srLevelID] > time2 || global.speedrunBests[srLevelID]==-1)){
+if (finishedTime < time2 && (pb > time2 || pb == -1)){
 	//award gear
 	bigstring += "You beat the time of "+ string_format(time2/room_speed, 0, 2) + "!\n";
 }
-if (finishedTime < time1 && (global.speedrunBests[srLevelID] > time1 || global.speedrunBests[srLevelID]==-1)){
+if (finishedTime < time1 && (pb > time1 || pb == -1)){
 	//award gear
 	bigstring += "You beat the time of "+ string_format(time1/room_speed, 0, 2) + "!\n";
 }
 //srLevelID will be used to access speedrunBests array, and maybe other speedrun level specific things
-if (finishedTime < global.speedrunBests[srLevelID] || global.speedrunBests[srLevelID]==-1){
+if (finishedTime < pb || pb == -1){
 	bigstring += "New personal best!";
 	global.speedrunBests[srLevelID] = finishedTime;
+}
+else {
+	bigstring += "Personal best: " + string_format(pb/room_speed, 0, 2) + ".";
 }
 text.textMessage = bigstring;
 }
 
 if (key_space){
 	SlideTransition(TRANS_MODE.GOTO, MainMenu);
+	Save();
 	instance_destroy(self);
 }
