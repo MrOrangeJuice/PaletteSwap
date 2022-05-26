@@ -105,6 +105,7 @@
     {"id":{"name":"SlideTransition","path":"scripts/SlideTransition/SlideTransition.yy",},"order":1,},
     {"id":{"name":"tInteriorBlue","path":"tilesets/tInteriorBlue/tInteriorBlue.yy",},"order":12,},
     {"id":{"name":"oTunnelGateway","path":"objects/oTunnelGateway/oTunnelGateway.yy",},"order":8,},
+    {"id":{"name":"rSRResults","path":"rooms/rSRResults/rSRResults.yy",},"order":33,},
     {"id":{"name":"oHubMusic","path":"objects/oHubMusic/oHubMusic.yy",},"order":0,},
     {"id":{"name":"tFactoryBlue","path":"tilesets/tFactoryBlue/tFactoryBlue.yy",},"order":10,},
     {"id":{"name":"oDangerTrigger","path":"objects/oDangerTrigger/oDangerTrigger.yy",},"order":3,},
@@ -506,6 +507,7 @@
     {"id":{"name":"rAlexLevel","path":"rooms/rAlexLevel/rAlexLevel.yy",},"order":23,},
     {"id":{"name":"sCheckpoint","path":"sprites/sCheckpoint/sCheckpoint.yy",},"order":0,},
     {"id":{"name":"rThanks","path":"rooms/rThanks/rThanks.yy",},"order":20,},
+    {"id":{"name":"oSRResults","path":"objects/oSRResults/oSRResults.yy",},"order":14,},
     {"id":{"name":"oGlasses","path":"objects/oGlasses/oGlasses.yy",},"order":3,},
     {"id":{"name":"sScaffoldingWood3d","path":"sprites/sScaffoldingWood3d/sScaffoldingWood3d.yy",},"order":15,},
     {"id":{"name":"oDanger3","path":"objects/oDanger3/oDanger3.yy",},"order":9,},
@@ -581,6 +583,7 @@
     {"roomId":{"name":"rSpeedrun3","path":"rooms/rSpeedrun3/rSpeedrun3.yy",},},
     {"roomId":{"name":"rSpeedrun4","path":"rooms/rSpeedrun4/rSpeedrun4.yy",},},
     {"roomId":{"name":"rNewHub","path":"rooms/rNewHub/rNewHub.yy",},},
+    {"roomId":{"name":"rSRResults","path":"rooms/rSRResults/rSRResults.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

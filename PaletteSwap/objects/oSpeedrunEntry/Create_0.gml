@@ -4,6 +4,5 @@ count = 3;
 alarm[0] = room_speed;
 text = instance_create_layer(x,y,"FX",oScreenText);
 text.textMessage = "Ready...";
-done = false;
 global.isSpeedrun = true;
 global.textUp = true;

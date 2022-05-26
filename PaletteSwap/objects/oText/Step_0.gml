@@ -39,7 +39,7 @@ if(key_space){
 	else{
 		global.textUp = false;
 		//show_debug_message(global.textUp);
-		oPlayer.canJump = true;
+		if (instance_exists(oPlayer)) oPlayer.canJump = true;
 		instance_destroy();
 	}
 	//if(textProgress >= messageLength){
