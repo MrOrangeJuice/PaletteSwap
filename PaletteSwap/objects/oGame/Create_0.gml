@@ -75,6 +75,13 @@ for(i = 0; i < global.factoryGears; i++)
 	global.factoryGearArray[i] = false;	
 }
 
+//array to store best times in speedrun levels
+srRooms = 1;
+global.speedrunBests = array_create(srRooms);
+for(i = 0; i < srRooms; i++){
+	global.speedrunBests[i] = -1;
+}
+
 // Set cursor
 prevMousePos = device_mouse_x_to_gui(0);
 

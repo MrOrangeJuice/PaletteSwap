@@ -2,7 +2,7 @@
 // You can write your code in this editor
 currentframe = 0;
 
-switch(switchChannel)
+switch(blockLength)
 {
 	case 0:
 		sprite_index = sLeverBlock;

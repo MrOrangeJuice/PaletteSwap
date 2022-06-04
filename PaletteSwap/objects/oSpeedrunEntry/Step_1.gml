@@ -8,9 +8,3 @@ if (gamepad_button_check_pressed(0,gp_face1) || gamepad_button_check_pressed(4,g
 	global.controller = 1;
 }
 }
-
-if (done && key_space){
-	global.color = 0;
-	global.isSpeedrun = false;
-	SlideTransition(TRANS_MODE.GOTO, next_room);
-}

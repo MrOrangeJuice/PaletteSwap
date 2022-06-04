@@ -29,8 +29,8 @@ if (gamepad_axis_value(0,gp_axislh) > 0.4 || gamepad_button_check(0,gp_padr) || 
 	key_right = 1;
 	global.controller = 1;
 }
-
-if (gamepad_axis_value(0,gp_axislv) > 0.9 || gamepad_button_check(0,gp_padd) || gamepad_axis_value(4,gp_axislv) > 0.9 || gamepad_button_check(4,gp_padd))
+												//better input priority determination on analog stick
+if ( (gamepad_axis_value(0,gp_axislv) > 0.4 && gamepad_axis_value(0,gp_axislv) > abs(gamepad_axis_value(0,gp_axislh))) || gamepad_button_check(0,gp_padd) || (gamepad_axis_value(4,gp_axislv) > 0.4 && gamepad_axis_value(4,gp_axislv) > abs(gamepad_axis_value(4,gp_axislh))) || gamepad_button_check(4,gp_padd))
 {
 	key_down = 1;
 	global.controller = 1;
@@ -52,7 +52,7 @@ if (gamepad_button_check_pressed(0,gp_face3) || gamepad_button_check_pressed(0,g
 	global.controller = 1;
 }
 
-if (gamepad_axis_value(0,gp_axislv) < -0.9 || gamepad_button_check(0,gp_padu) || gamepad_axis_value(4,gp_axislv) < -0.9 || gamepad_button_check(4,gp_padu))
+if ( (gamepad_axis_value(0,gp_axislv) < -0.4 && gamepad_axis_value(0,gp_axislv) < -1 * abs(gamepad_axis_value(0,gp_axislh))) || gamepad_button_check(0,gp_padu) || (gamepad_axis_value(4,gp_axislv) < -0.4 && gamepad_axis_value(4,gp_axislv) < -1 * abs(gamepad_axis_value(4,gp_axislh))) || gamepad_button_check(4,gp_padu))
 {
 	key_up = 1;
 	global.controller = 1;
@@ -510,8 +510,16 @@ if(global.hp <= 0){
 	if (instance_exists(oEddy)){
 		death.canSwap = canSwap;
 	}
+	
 	instance_create_layer(x,y,"Player",oGlasses);
 	instance_destroy();
+	
+	// Check if we're in a speedrun level
+	if (instance_exists(oSpeedrunEntry)) {
+		SlideTransition(TRANS_MODE.GOTO, room);
+		global.hp = 100;
+	}
+	
 	/*
 	global.hp = 100;
 	global.canControlTimer = 60;
