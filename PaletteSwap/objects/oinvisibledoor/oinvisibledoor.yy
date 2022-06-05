@@ -1,11 +1,17 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "YellowPH",
+    "path": "sprites/YellowPH/YellowPH.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "oLevelDoor",
+    "path": "objects/oLevelDoor/oLevelDoor.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -20,17 +26,17 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Game Objects",
-    "path": "folders/Objects/Game Objects.yy",
+    "name": "Portals",
+    "path": "folders/Objects/Portals.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oSpeedrunEntry",
+  "name": "oInvisibleDoor",
   "tags": [],
   "resourceType": "GMObject",
 }
