@@ -6,4 +6,8 @@ currentframe = 0;
 info = 0;
 createdInfo = false;
 portal = instance_create_layer(x,y,"Portals",oPortal);
+if (levelTo == "rMomentumMotel")
+{
+	portal.image_alpha = 0;
+}
 portal.visible = false;

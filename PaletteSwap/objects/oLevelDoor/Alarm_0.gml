@@ -30,4 +30,7 @@ switch(levelTo)
 			case "rNewHub":
 				SlideTransition(TRANS_MODE.GOTO, rNewHub);	
 				break;
+			case "rMomentumMotel":
+				SlideTransition(TRANS_MODE.GOTO, rMomentumMotel);
+				break;
 		}
