@@ -526,6 +526,7 @@
     {"id":{"name":"sFernHit","path":"sprites/sFernHit/sFernHit.yy",},"order":10,},
     {"id":{"name":"oMenuMusic","path":"objects/oMenuMusic/oMenuMusic.yy",},"order":3,},
     {"id":{"name":"oVendingMachine","path":"objects/oVendingMachine/oVendingMachine.yy",},"order":3,},
+    {"id":{"name":"sInteriorWorn","path":"sprites/sInteriorWorn/sInteriorWorn.yy",},"order":27,},
     {"id":{"name":"sVillagerBig","path":"sprites/sVillagerBig/sVillagerBig.yy",},"order":6,},
     {"id":{"name":"oFixingVillager","path":"objects/oFixingVillager/oFixingVillager.yy",},"order":0,},
     {"id":{"name":"oHint5","path":"objects/oHint5/oHint5.yy",},"order":4,},
