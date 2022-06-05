@@ -23,6 +23,7 @@
     {"id":{"name":"rNewHub","path":"rooms/rNewHub/rNewHub.yy",},"order":31,},
     {"id":{"name":"fUI","path":"fonts/fUI/fUI.yy",},"order":0,},
     {"id":{"name":"sPlayerIdleGreen","path":"sprites/sPlayerIdleGreen/sPlayerIdleGreen.yy",},"order":3,},
+    {"id":{"name":"rSpeedrun5","path":"rooms/rSpeedrun5/rSpeedrun5.yy",},"order":34,},
     {"id":{"name":"snd_PlayerDamage","path":"sounds/snd_PlayerDamage/snd_PlayerDamage.yy",},"order":29,},
     {"id":{"name":"fGameBig","path":"fonts/fGameBig/fGameBig.yy",},"order":3,},
     {"id":{"name":"ScreenShake","path":"scripts/ScreenShake/ScreenShake.yy",},"order":0,},
@@ -532,6 +533,7 @@
     {"id":{"name":"sFernHit","path":"sprites/sFernHit/sFernHit.yy",},"order":10,},
     {"id":{"name":"oMenuMusic","path":"objects/oMenuMusic/oMenuMusic.yy",},"order":3,},
     {"id":{"name":"oVendingMachine","path":"objects/oVendingMachine/oVendingMachine.yy",},"order":3,},
+    {"id":{"name":"sInteriorWorn","path":"sprites/sInteriorWorn/sInteriorWorn.yy",},"order":27,},
     {"id":{"name":"sVillagerBig","path":"sprites/sVillagerBig/sVillagerBig.yy",},"order":6,},
     {"id":{"name":"oFixingVillager","path":"objects/oFixingVillager/oFixingVillager.yy",},"order":0,},
     {"id":{"name":"oHint5","path":"objects/oHint5/oHint5.yy",},"order":4,},
@@ -593,6 +595,7 @@
     {"roomId":{"name":"rMomentumMotel","path":"rooms/rMomentumMotel/rMomentumMotel.yy",},},
     {"roomId":{"name":"rShack","path":"rooms/rShack/rShack.yy",},},
     {"roomId":{"name":"rSRResults","path":"rooms/rSRResults/rSRResults.yy",},},
+    {"roomId":{"name":"rSpeedrun5","path":"rooms/rSpeedrun5/rSpeedrun5.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
