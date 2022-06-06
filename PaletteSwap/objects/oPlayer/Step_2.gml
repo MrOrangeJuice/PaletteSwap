@@ -33,8 +33,7 @@ if(collidingSpikes != noone){
 else{
 	spikeImmune = false;
 }
-
-	bottomWall = place_meeting(x, y+1, oWall) || place_meeting(x, y+1, oOneWayWall);
+	bottomWall = place_meeting(x, y+1, oWall) || (place_meeting(x, y+1, oOneWayWall) && !place_meeting(x, y+0, oOneWayWall));
 	bottomPalette = place_meeting(x, y+1, oPaletteWall);
 if (!bottomWall && !bottomPalette && !wallgrab)
 {
