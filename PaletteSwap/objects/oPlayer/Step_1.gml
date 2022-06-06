@@ -377,11 +377,7 @@ else if(wallgrab)
 	{
 		SwapSprite(sFernClimbUp);
 	}
-	else if(image_xscale == 1 && key_left)
-	{
-		SwapSprite(sFernClimbLook);	
-	}
-	else if(image_xscale == -1 && key_right)
+	else if((image_xscale == 1 && key_left) || (image_xscale == -1 && key_right))
 	{
 		SwapSprite(sFernClimbLook);	
 	}
