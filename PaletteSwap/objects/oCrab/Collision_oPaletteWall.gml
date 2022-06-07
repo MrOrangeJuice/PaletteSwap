@@ -4,7 +4,9 @@
 //if stuck in palette block in non-blue palette, become dormant
 if (!dormant && global.color != 1) {
 	dormant = true;
+	SwapSprite(sSmolCrab);
 	//if youre stuck and color becomes blue, reactivate
 } else if (dormant && global.color == 1) {
-	dormant = false;	
+	dormant = false;
+	SwapSprite(sCrab);
 }
