@@ -1,6 +1,9 @@
 // @description Insert description here
 // You can write your code in this editor
 
+if (dormant){
+	PaletteAnimationSwap();
+} else {
 // Play crab death sound on death.
 if (eHP <= 0)
 {
@@ -10,3 +13,5 @@ if (eHP <= 0)
 
 // Inherit the parent event
 event_inherited();
+
+}
