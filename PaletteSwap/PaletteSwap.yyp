@@ -84,6 +84,7 @@
     {"id":{"name":"sFernSkidDust","path":"sprites/sFernSkidDust/sFernSkidDust.yy",},"order":3,},
     {"id":{"name":"oCartridge","path":"objects/oCartridge/oCartridge.yy",},"order":0,},
     {"id":{"name":"sWallCollisionDustBig","path":"sprites/sWallCollisionDustBig/sWallCollisionDustBig.yy",},"order":3,},
+    {"id":{"name":"sSmolCrab","path":"sprites/sSmolCrab/sSmolCrab.yy",},"order":7,},
     {"id":{"name":"sPiston","path":"sprites/sPiston/sPiston.yy",},"order":4,},
     {"id":{"name":"snd_Laser","path":"sounds/snd_Laser/snd_Laser.yy",},"order":37,},
     {"id":{"name":"oConveyer","path":"objects/oConveyer/oConveyer.yy",},"order":2,},
@@ -658,7 +659,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2022.5.0.8",
+    "IDEVersion": "2022.5.1.14",
   },
   "resourceVersion": "1.5",
   "name": "PaletteSwap",
