@@ -14,6 +14,7 @@ level[11] = "rSpeedrun3";
 level[12] = "rSpeedrun4";
 level[13] = "rNewHub";
 level[14] = "rButtonConfig";
+level[15] = "rSpeedrun5";
 levelCount = array_length_1d(level);
 menuIndex = 0;
 lastSelected = 0;
