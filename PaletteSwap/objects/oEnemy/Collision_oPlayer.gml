@@ -36,7 +36,7 @@ else if (other.isRolling)
 	DashReset();
 } 
 // If the player is not dashing, then knock them back and begin their iframes.
-else /*if (canHit)*/
+else if (!forgiveness)
 {
 	// Damage and knockback the player if they're vulnerable.
 	if (!other.isInvulnerable) 
