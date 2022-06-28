@@ -13,6 +13,7 @@ if(useCurrentDoorSpawn){
 	alarm[4] = room_speed * .5;
 	
 }
+
 if(!global.paused && !global.textUp && !global.isEnteringDoor){
 	//Spike collision
 collidingSpikes = instance_place(x, y, oSpikes);
