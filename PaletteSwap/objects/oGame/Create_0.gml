@@ -76,7 +76,7 @@ for(i = 0; i < global.factoryGears; i++)
 }
 
 //array to store best times in speedrun levels
-srRooms = 1;
+srRooms = 3;
 global.speedrunBests = array_create(srRooms);
 for(i = 0; i < srRooms; i++){
 	global.speedrunBests[i] = -1;

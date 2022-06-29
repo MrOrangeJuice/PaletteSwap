@@ -28,7 +28,7 @@ text.textMessage = bigstring;
 }
 
 if (key_space){
-	SlideTransition(TRANS_MODE.GOTO, MainMenu);
+	SlideTransition(TRANS_MODE.GOTO, rMomentumMotel);
 	Save();
 	instance_destroy(self);
 }
