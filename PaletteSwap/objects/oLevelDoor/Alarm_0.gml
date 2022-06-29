@@ -33,4 +33,16 @@ switch(levelTo)
 			case "rMomentumMotel":
 				SlideTransition(TRANS_MODE.GOTO, rMomentumMotel);
 				break;
+			case "rMomentumMotel":
+				audio_stop_sound(msc_Hub);
+				SlideTransition(TRANS_MODE.GOTO, rSpeedrun3);
+				break;
+			case "rMomentumMotel":
+				audio_stop_sound(msc_Hub);
+				SlideTransition(TRANS_MODE.GOTO, rSpeedrun4);
+				break;
+			case "rMomentumMotel":
+				audio_stop_sound(msc_Hub);
+				SlideTransition(TRANS_MODE.GOTO, rSpeedrun5);
+				break;
 		}
