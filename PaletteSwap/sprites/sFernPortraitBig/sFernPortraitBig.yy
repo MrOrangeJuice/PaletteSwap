@@ -71,8 +71,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "PaletteSwap",
-    "path": "PaletteSwap.yyp",
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "sFernPortraitBig",

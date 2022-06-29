@@ -3,3 +3,4 @@
 
 currentframe = 0;
 canHit = true;
+forgiveness = false;

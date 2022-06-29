@@ -3,9 +3,9 @@
 
 if (!blocked && (!pBlocked || global.color == 1)) {
 	if (dirVert){
-		other.vsp -= dir * 1;
+		//other.vsp -= dir * 1;
 	}
 	else {
-		other.hsp += dir * 1;
+		//other.hsp += dir * 1;
 	}
 }
