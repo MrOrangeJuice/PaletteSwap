@@ -9,11 +9,11 @@ if (!displayed && room == rSRResults){
 	
 bigstring = "Time: " + string_format(finishedTime/room_speed, 0, 2) +"\n";
 if (finishedTime < time2 && (pb > time2 || pb == -1)){
-	//award gear
+	global.gearTotal++;
 	bigstring += "You beat the time of "+ string_format(time2/room_speed, 0, 2) + "!\n";
 }
 if (finishedTime < time1 && (pb > time1 || pb == -1)){
-	//award gear
+	global.gearTotal++;
 	bigstring += "You beat the time of "+ string_format(time1/room_speed, 0, 2) + "!\n";
 }
 //srLevelID will be used to access speedrunBests array, and maybe other speedrun level specific things
