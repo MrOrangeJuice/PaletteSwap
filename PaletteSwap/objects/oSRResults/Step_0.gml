@@ -29,6 +29,8 @@ text.textMessage = bigstring;
 
 if (key_space){
 	SlideTransition(TRANS_MODE.GOTO, rMomentumMotel);
+	global.currentDoorId = srLevelID;
+	global.useCurrentDoorSpawn = true;
 	Save();
 	instance_destroy(self);
 }
