@@ -30,4 +30,19 @@ switch(levelTo)
 			case "rNewHub":
 				SlideTransition(TRANS_MODE.GOTO, rNewHub);	
 				break;
+			case "rMomentumMotel":
+				SlideTransition(TRANS_MODE.GOTO, rMomentumMotel);
+				break;
+			case "rSpeedrun3":
+				audio_stop_sound(msc_Hub);
+				SlideTransition(TRANS_MODE.GOTO, rSpeedrun3);
+				break;
+			case "rSpeedrun4":
+				audio_stop_sound(msc_Hub);
+				SlideTransition(TRANS_MODE.GOTO, rSpeedrun4);
+				break;
+			case "rSpeedrun5":
+				audio_stop_sound(msc_Hub);
+				SlideTransition(TRANS_MODE.GOTO, rSpeedrun5);
+				break;
 		}

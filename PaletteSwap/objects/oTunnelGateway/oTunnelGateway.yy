@@ -28,11 +28,13 @@
   ],
   "properties": [
     {"varType":5,"value":"rPaletteTemple","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"next_room","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":3,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"useDoorSpawn","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":0,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"doorTo_ID","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Level Components",
-    "path": "folders/Objects/Level Components.yy",
+    "name": "Portals",
+    "path": "folders/Objects/Portals.yy",
   },
   "resourceVersion": "1.0",
   "name": "oTunnelGateway",

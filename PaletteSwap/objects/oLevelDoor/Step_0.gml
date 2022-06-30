@@ -47,6 +47,18 @@ if(place_meeting(x, y, oPlayer))
 			case "rFactory":
 				info.levelName = "Mechanic Panic";
 				break;
+			case "rMomentumMotel":
+				info.levelName = "Momentum Motel";
+				break;
+			case "rSpeedrun3":
+				info.levelName = "Shrine Time";
+				break;
+			case "rSpeedrun4":
+				info.levelName = "Speedside Glide";
+				break;
+			case "rSpeedrun5":
+				info.levelName = "Working Overtime";
+				break;
 		}
 		info.levelRequirement = gearRequirement;
 		createdInfo = true;

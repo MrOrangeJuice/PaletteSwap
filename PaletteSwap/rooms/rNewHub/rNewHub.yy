@@ -844,8 +844,13 @@
         {"properties":[
             {"propertyId":{"name":"signMessage","path":"objects/oSign/oSign.yy",},"objectId":{"name":"oSign","path":"objects/oSign/oSign.yy",},"value":"It's a great day for fishin'\\nwouldn't ya say?","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"oFishVillager","path":"objects/oFishVillager/oFishVillager.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":661.0,"y":1891.0,"resourceVersion":"1.0","name":"inst_6FD4CFDF","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"oMotel","path":"objects/oMotel/oMotel.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1080.0,"y":1808.0,"resourceVersion":"1.0","name":"inst_7C1B93A8","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oShack","path":"objects/oShack/oShack.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1216.0,"y":2576.0,"resourceVersion":"1.0","name":"inst_2810749C","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"gearRequirement","path":"objects/oLevelDoor/oLevelDoor.yy",},"objectId":{"name":"oLevelDoor","path":"objects/oLevelDoor/oLevelDoor.yy",},"value":"0","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"levelTo","path":"objects/oLevelDoor/oLevelDoor.yy",},"objectId":{"name":"oLevelDoor","path":"objects/oLevelDoor/oLevelDoor.yy",},"value":"rMomentumMotel","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"set_player_spawn","path":"objects/oLevelDoor/oLevelDoor.yy",},"objectId":{"name":"oLevelDoor","path":"objects/oLevelDoor/oLevelDoor.yy",},"value":"False","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+            {"propertyId":{"name":"doorId","path":"objects/oLevelDoor/oLevelDoor.yy",},"objectId":{"name":"oLevelDoor","path":"objects/oLevelDoor/oLevelDoor.yy",},"value":"5","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"oLevelDoor","path":"objects/oLevelDoor/oLevelDoor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":16777215,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1000.0,"y":1872.0,"resourceVersion":"1.0","name":"inst_149B0A0C","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":700,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Portals","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":800,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Enemies","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
@@ -1746,6 +1751,7 @@
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"oHiddenArea","path":"objects/oHiddenArea/oHiddenArea.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":8.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1472.0,"y":2192.0,"resourceVersion":"1.0","name":"inst_9E1469","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oForbiddenTrigger","path":"objects/oForbiddenTrigger/oForbiddenTrigger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.28,"scaleY":0.24000001,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1208.0,"y":2596.0,"resourceVersion":"1.0","name":"inst_5773C839","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"oMotel","path":"objects/oMotel/oMotel.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1080.0,"y":1808.0,"resourceVersion":"1.0","name":"inst_7AB4E038","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":1400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"AreaControls","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"oWall","path":"objects/oWall/oWall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":49.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1048.0,"y":1912.0,"resourceVersion":"1.0","name":"inst_750F09BD","tags":[],"resourceType":"GMRInstance",},
@@ -1976,7 +1982,6 @@
     {"name":"inst_344A983C","path":"rooms/rNewHub/rNewHub.yy",},
     {"name":"inst_7073A705","path":"rooms/rNewHub/rNewHub.yy",},
     {"name":"inst_6FD4CFDF","path":"rooms/rNewHub/rNewHub.yy",},
-    {"name":"inst_7C1B93A8","path":"rooms/rNewHub/rNewHub.yy",},
     {"name":"inst_2C3764FE","path":"rooms/rNewHub/rNewHub.yy",},
     {"name":"inst_3C487C86","path":"rooms/rNewHub/rNewHub.yy",},
     {"name":"inst_66CA5C7A","path":"rooms/rNewHub/rNewHub.yy",},
@@ -2057,6 +2062,7 @@
     {"name":"inst_46FBD12E","path":"rooms/rNewHub/rNewHub.yy",},
     {"name":"inst_5773C839","path":"rooms/rNewHub/rNewHub.yy",},
     {"name":"inst_51E5AE01","path":"rooms/rNewHub/rNewHub.yy",},
+    {"name":"inst_149B0A0C","path":"rooms/rNewHub/rNewHub.yy",},
     {"name":"inst_3C4B2C91","path":"rooms/rNewHub/rNewHub.yy",},
     {"name":"inst_785515BC","path":"rooms/rNewHub/rNewHub.yy",},
     {"name":"inst_1E081B1C","path":"rooms/rNewHub/rNewHub.yy",},
@@ -2091,6 +2097,7 @@
     {"name":"inst_67B50D0E","path":"rooms/rNewHub/rNewHub.yy",},
     {"name":"inst_39893A1B","path":"rooms/rNewHub/rNewHub.yy",},
     {"name":"inst_462A15CE","path":"rooms/rNewHub/rNewHub.yy",},
+    {"name":"inst_7AB4E038","path":"rooms/rNewHub/rNewHub.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
