@@ -257,6 +257,7 @@
     {"id":{"name":"sCursorNone","path":"sprites/sCursorNone/sCursorNone.yy",},"order":15,},
     {"id":{"name":"oTutorialJump","path":"objects/oTutorialJump/oTutorialJump.yy",},"order":2,},
     {"id":{"name":"oGunWeasel","path":"objects/oGunWeasel/oGunWeasel.yy",},"order":13,},
+    {"id":{"name":"oPhysicalDoor","path":"objects/oPhysicalDoor/oPhysicalDoor.yy",},"order":7,},
     {"id":{"name":"sOneWay","path":"sprites/sOneWay/sOneWay.yy",},"order":8,},
     {"id":{"name":"oShadow","path":"sprites/oShadow/oShadow.yy",},"order":22,},
     {"id":{"name":"sMotel","path":"sprites/sMotel/sMotel.yy",},"order":46,},
