@@ -9,7 +9,9 @@ if(useCurrentDoorSpawn){
 			y = currentInstance.y;
 		}
 	}
-	SwapSprite(sFernPortal);
+	if (!global.skipPortalAnimation) {
+		SwapSprite(sFernPortal);
+	}
 	alarm[4] = room_speed * .5;
 	
 }

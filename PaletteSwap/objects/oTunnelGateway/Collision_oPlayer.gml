@@ -5,5 +5,6 @@ global.tutorialCompleted = true;
 if (useDoorSpawn){
 	global.currentDoorId = doorTo_ID;
 	global.useCurrentDoorSpawn = true;
+	global.skipPortalAnimation = true;
 }
 SlideTransition(TRANS_MODE.GOTO, next_room);

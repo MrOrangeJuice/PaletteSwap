@@ -94,7 +94,12 @@ if (oPlayer.exiting && abs(oPlayer.x - x) <= 1.5 && abs(oPlayer.y - y) <= 20 && 
 	oPlayer.isDashing = false;
 	oPlayer.exiting = false;
 	if (oPlayer.vsp < 0) oPlayer.vsp = 0;
-	with (oPlayer) SwapSprite(sFernPortalReverse);
+	if (!skipPortalAnim) {
+		with (oPlayer) SwapSprite(sFernPortalReverse);
+	} else {
+		with (oPlayer) SwapSprite(sFernIdle2);
+		global.skipPortalAnimation = true;	
+	}
 	global.isEnteringDoor = true;
 	audio_play_sound(snd_PortalEnter,5,false);
 		global.color = 0;

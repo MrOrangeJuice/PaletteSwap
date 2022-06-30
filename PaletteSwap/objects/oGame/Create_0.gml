@@ -121,3 +121,4 @@ global.gameHeight = 540;
 global.currentDoorId = 0;
 global.useCurrentDoorSpawn = false;
 global.isEnteringDoor = false;
+global.skipPortalAnimation = false;
