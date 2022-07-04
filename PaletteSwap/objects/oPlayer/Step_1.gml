@@ -289,18 +289,18 @@ else
 	// Calculate movement
 	if(dashdown)
 	{
-		if(global.canControlTimer < 0) vsp = dashsp * 1.5;
+		if(global.canControlTimer < 0) vsp = (blueDashSp + dashsp) * 1.5;
 	}
 	else if (dashup){
-		if(global.canControlTimer < 0) vsp = dashsp * -0.9;
+		if(global.canControlTimer < 0) vsp = (blueDashSp + dashsp) * -0.9;
 	}
 	else if(dashright)
 	{
-		if(global.canControlTimer < 0) hsp = dashsp;
+		if(global.canControlTimer < 0) hsp = (blueDashSp + dashsp);
 	}
 	else if(dashleft)
 	{
-		if(global.canControlTimer < 0) hsp = -dashsp;
+		if(global.canControlTimer < 0) hsp = -(blueDashSp + dashsp);
 	}
 	
 	// Decrement timer and end dash if necessary
@@ -308,7 +308,7 @@ else
 	dashtime--;
 	
 	// If timer is up
-	if(dashtime <= 0 && !dashdown && !swimming && !wallgrab)
+	if(dashtime <= dashEnd && !dashdown && !swimming && !wallgrab)
 	{
 			if (place_meeting(x + (hsp * 2.5), y, oEnemy)){
 				oEnemy.canHit = false;
@@ -373,15 +373,7 @@ if (global.knockedBack == true)
 }
 else if(wallgrab)
 {
-	if(key_up)
-	{
-		SwapSprite(sFernClimbUp);
-	}
-	else if(image_xscale == 1 && key_left)
-	{
-		SwapSprite(sFernClimbLook);	
-	}
-	else if(image_xscale == -1 && key_right)
+	if((image_xscale == 1 && key_left) || (image_xscale == -1 && key_right))
 	{
 		SwapSprite(sFernClimbLook);	
 	}
@@ -499,6 +491,10 @@ if (key_swap_down && !swimming && room != rTutorial){
 	canSwap = false;
 	alarm[2] = room_speed * 0.2;
 }
+
+// Check if we need to change the player's dash because they changed palettes.
+AdjustDashParams();
+
 if ((key_swap_down || key_swap_up) && swimming)
 {
 	audio_play_sound(snd_NoSwap,5,false);
@@ -510,8 +506,16 @@ if(global.hp <= 0){
 	if (instance_exists(oEddy)){
 		death.canSwap = canSwap;
 	}
+	
 	instance_create_layer(x,y,"Player",oGlasses);
 	instance_destroy();
+	
+	// Check if we're in a speedrun level
+	if (instance_exists(oSpeedrunEntry)) {
+		SlideTransition(TRANS_MODE.GOTO, room);
+		global.hp = 100;
+	}
+	
 	/*
 	global.hp = 100;
 	global.canControlTimer = 60;

@@ -47,6 +47,18 @@ if(place_meeting(x, y, oPlayer))
 			case "rFactory":
 				info.levelName = "Mechanic Panic";
 				break;
+			case "rMomentumMotel":
+				info.levelName = "Momentum Motel";
+				break;
+			case "rSpeedrun3":
+				info.levelName = "Shrine Time";
+				break;
+			case "rSpeedrun4":
+				info.levelName = "Speedside Glide";
+				break;
+			case "rSpeedrun5":
+				info.levelName = "Working Overtime";
+				break;
 		}
 		info.levelRequirement = gearRequirement;
 		createdInfo = true;
@@ -82,7 +94,12 @@ if (oPlayer.exiting && abs(oPlayer.x - x) <= 1.5 && abs(oPlayer.y - y) <= 20 && 
 	oPlayer.isDashing = false;
 	oPlayer.exiting = false;
 	if (oPlayer.vsp < 0) oPlayer.vsp = 0;
-	with (oPlayer) SwapSprite(sFernPortalReverse);
+	if (!skipPortalAnim) {
+		with (oPlayer) SwapSprite(sFernPortalReverse);
+	} else {
+		with (oPlayer) SwapSprite(sFernIdle2);
+		global.skipPortalAnimation = true;	
+	}
 	global.isEnteringDoor = true;
 	audio_play_sound(snd_PortalEnter,5,false);
 		global.color = 0;

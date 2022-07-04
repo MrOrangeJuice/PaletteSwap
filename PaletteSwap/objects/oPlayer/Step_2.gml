@@ -9,10 +9,13 @@ if(useCurrentDoorSpawn){
 			y = currentInstance.y;
 		}
 	}
-	SwapSprite(sFernPortal);
+	if (!global.skipPortalAnimation) {
+		SwapSprite(sFernPortal);
+	}
 	alarm[4] = room_speed * .5;
 	
 }
+
 if(!global.paused && !global.textUp && !global.isEnteringDoor){
 	//Spike collision
 collidingSpikes = instance_place(x, y, oSpikes);
@@ -33,8 +36,7 @@ if(collidingSpikes != noone){
 else{
 	spikeImmune = false;
 }
-
-	bottomWall = place_meeting(x, y+1, oWall) || place_meeting(x, y+1, oOneWayWall);
+	bottomWall = place_meeting(x, y+1, oWall) || (place_meeting(x, y+1, oOneWayWall) && !place_meeting(x, y+0, oOneWayWall));
 	bottomPalette = place_meeting(x, y+1, oPaletteWall);
 if (!bottomWall && !bottomPalette && !wallgrab)
 {
@@ -48,9 +50,14 @@ else if ((swimming && (vsp >= 0 || dashup)) || !swimming){
 		jumped = false;
 	}
 	// Reset roll
-	if (canDash && !place_meeting(x,y,oOneWayWall) && !(bottomPalette && global.color == 1) && isRolling && !wallgrab){
-		if (!place_meeting(x,y + 1,oOneWayWall)) y -= 6; //stop edge clip on landing roll lmao
-		isRolling = false;
+	if (canDash && !(bottomPalette && global.color == 1) && isRolling && !wallgrab){
+		//get colliding onewaywall
+		collWall = instance_place(x,y,oOneWayWall);
+			//there is no OWW     there is vertical wall & player moves opposite way
+		if (collWall == noone || (collWall.dirVert && collWall.dir = sign(vsp)) ) {
+			y -= 6; //stop edge clip on landing roll lmao
+			isRolling = false;
+		}
 	}
 }
 

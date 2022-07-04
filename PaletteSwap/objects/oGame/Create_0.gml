@@ -75,6 +75,13 @@ for(i = 0; i < global.factoryGears; i++)
 	global.factoryGearArray[i] = false;	
 }
 
+//array to store best times in speedrun levels
+srRooms = 3;
+global.speedrunBests = array_create(srRooms);
+for(i = 0; i < srRooms; i++){
+	global.speedrunBests[i] = -1;
+}
+
 // Set cursor
 prevMousePos = device_mouse_x_to_gui(0);
 
@@ -114,3 +121,4 @@ global.gameHeight = 540;
 global.currentDoorId = 0;
 global.useCurrentDoorSpawn = false;
 global.isEnteringDoor = false;
+global.skipPortalAnimation = false;

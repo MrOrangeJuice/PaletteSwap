@@ -23,5 +23,6 @@ function Load(){
 	global.vendingGearsCollected = ini_read_real("savegame", "totalVending", 0);
 	global.gearTotal = ini_read_real("savegame", "totalGears", 0);
 	global.coins = ini_read_real("savegame", "totalCoins", 0);
+	global.speedrunBests[0] = ini_read_real("savegame", "srPB0", -1);
 	ini_close();
 }
