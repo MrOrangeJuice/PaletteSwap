@@ -3,6 +3,7 @@
   "glyphOperations": 0,
   "interpreter": 0,
   "pointRounding": 0,
+  "applyKerning": 0,
   "fontName": "Early GameBoy",
   "styleName": "Regular",
   "size": 4.0,
@@ -20,6 +21,7 @@
     "path": "texturegroups/Default",
   },
   "ascenderOffset": 0,
+  "ascender": 0,
   "glyphs": {
     "32": {"x":2,"y":2,"w":3,"h":7,"character":32,"shift":3,"offset":0,},
     "33": {"x":110,"y":29,"w":2,"h":7,"character":33,"shift":5,"offset":1,},
@@ -128,7 +130,7 @@
   "maintainGms1Font": false,
   "parent": {
     "name": "Fonts",
-    "path": "folders/Objects/Fonts.yy",
+    "path": "folders/Fonts.yy",
   },
   "resourceVersion": "1.0",
   "name": "fUISmall",

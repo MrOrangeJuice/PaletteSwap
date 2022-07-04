@@ -3,6 +3,7 @@
   "glyphOperations": 0,
   "interpreter": 0,
   "pointRounding": 0,
+  "applyKerning": 0,
   "fontName": "Press Start 2P",
   "styleName": "Regular",
   "size": 6.0,
@@ -20,6 +21,7 @@
     "path": "texturegroups/Default",
   },
   "ascenderOffset": 0,
+  "ascender": 0,
   "glyphs": {
     "32": {"x":2,"y":2,"w":8,"h":9,"character":32,"shift":8,"offset":0,},
     "33": {"x":78,"y":46,"w":3,"h":9,"character":33,"shift":8,"offset":2,},
@@ -129,7 +131,7 @@
   "maintainGms1Font": false,
   "parent": {
     "name": "Fonts",
-    "path": "folders/Objects/Fonts.yy",
+    "path": "folders/Fonts.yy",
   },
   "resourceVersion": "1.0",
   "name": "fGame",
