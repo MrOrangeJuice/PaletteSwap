@@ -1,6 +1,9 @@
 /// @description Create
 global.menuX = 320;
 global.menuY = 180;
+
+pauseMenuX = 480;
+pauseMenuY = 270;
 buttonHeight = 32;
 button[0] = "Resume";
 //button[1] = "Save";

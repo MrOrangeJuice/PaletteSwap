@@ -9,7 +9,22 @@ if(room != MainMenu && room != rLevelSelect && room != rThanks && room != rStick
 	
 	
 	// Draw UI outline
-	draw_sprite(sUIShell,global.color,444,28);
+	if(global.coins < 10 && global.gearTotal < 10)
+	{
+		draw_sprite(sUIShellSmaller,global.color,444,28);
+	}
+	else if(global.coins < 100 && global.gearTotal < 100)
+	{
+		draw_sprite(sUIShellSmall,global.color,444,28);
+	}
+	else if(global.coins < 1000 && global.gearTotal < 1000)
+	{
+		draw_sprite(sUIShell,global.color,444,28);
+	}
+	else
+	{
+		draw_sprite(sUIShellBig,global.color,444,28);
+	}
 	
 	coinOffset = 0;
 	// Draw Coin Count

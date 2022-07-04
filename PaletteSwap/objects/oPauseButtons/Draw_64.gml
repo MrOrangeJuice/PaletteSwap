@@ -36,7 +36,7 @@ repeat(buttonCount){
 			break;
 		}
 	}
-	draw_text_transformed(global.menuX, global.menuY + buttonHeight * c - 48.5, button[c],1.5,1.5,0);
+	draw_text_transformed(pauseMenuX/2, pauseMenuY/2 + buttonHeight * c - 48.5, button[c],1.5,1.5,0);
 	// Draw main text
 	switch(global.color)
 	{
@@ -70,6 +70,6 @@ repeat(buttonCount){
 				break;
 		}
 	}
-	draw_text_transformed(global.menuX, global.menuY + buttonHeight * c - 50, button[c],1.5,1.5,0);
+	draw_text_transformed(pauseMenuX/2, pauseMenuY/2 + buttonHeight * c - 50, button[c],1.5,1.5,0);
 	c++;	
 }

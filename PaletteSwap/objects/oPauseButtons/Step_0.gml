@@ -29,6 +29,7 @@ var mouse_y_gui = device_mouse_y_to_gui(0);
 
 menuY = global.menuY - 50;
 
+/*
 if(global.mouse)
 {
 	if (mouse_y_gui > menuY) && (mouse_y_gui < menuBottom)
@@ -49,6 +50,7 @@ if(global.mouse)
 		}
 	}
 }
+*/
 
 if(key_select == 1){
 	switch(menuIndex){

@@ -26,6 +26,7 @@ if ((gamepad_axis_value(4,gp_axislv) < -0.4 && lastAxis4Value >= -0.4) || gamepa
 }
 
 // Mouse menu
+/*
 var mouse_y_gui = device_mouse_y_to_gui(0);
 if(menuActive && global.mouse)
 {
@@ -69,6 +70,7 @@ else if (!menuActive && global.mouse)
 		}
 	}
 }
+*/
 
 if(key_select == 1){
 	if(menuActive)

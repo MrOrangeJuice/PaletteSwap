@@ -98,15 +98,18 @@ if (layer_exists("PurpleTiles")){
 	if (layer_exists("PurpleBGTile"))
 	layer_set_visible("PurpleBGTile", false);
 }
-cursor_sprite = sCursorNone;
+
+//cursor_sprite = sCursorNone;
 	
 //set tile layers and cursor
 switch (global.color) {
 	case 0: 
+		/*
 		if(global.mouse)
 		{
 		cursor_sprite = sCursor;
 		}
+		*/
 		if(layer_exists("GreenTiles"))
 		layer_set_visible("GreenTiles", true);
 		if(layer_exists("GreenBackground"))
@@ -117,10 +120,12 @@ switch (global.color) {
 		layer_set_visible("GreenBGTile", true);
 	break;
 	case 1:
+		/*
 		if(global.mouse)
 		{
 		cursor_sprite = sCursorBlue;
 		}
+		*/
 		if(layer_exists("BlueTiles"))
 		layer_set_visible("BlueTiles", true);
 		if(layer_exists("BlueBackground"))
@@ -131,10 +136,12 @@ switch (global.color) {
 		layer_set_visible("BlueBGTile", true);
 	break;
 	case 2:
+		/*
 		if(global.mouse)
 		{
 		cursor_sprite = sCursorRed;
 		}
+		*/
 		if(layer_exists("RedTiles"))
 		layer_set_visible("RedTiles", true);
 		if(layer_exists("RedBackground"))
@@ -145,10 +152,12 @@ switch (global.color) {
 		layer_set_visible("RedBGTile", true);
 	break;
 	case 3:
+		/*
 		if(global.mouse)
 		{
 		cursor_sprite = sCursorPurple;
 		}
+		*/
 		if(layer_exists("PurpleTiles"))
 		layer_set_visible("PurpleTiles", true);
 		if(layer_exists("PurpleBackground"))
