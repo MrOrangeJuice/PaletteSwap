@@ -30,7 +30,7 @@ else if (other.isRolling)
 	// Send player flying.
 	//InitiateKnockback(other, other.hsp, -7);
 	launch = (153.125 * other.grv + (other.bbox_bottom - bbox_top) + 56) / -17.5;
-	InitiateKnockback(other, other.image_xscale * 6, launch);
+	InitiateKnockback(other, other.hsp, launch);
 		
 	// Refresh player's dash.
 	DashReset();
@@ -45,7 +45,7 @@ else if (!forgiveness)
 		global.hp -= damage;
 		other.isInvulnerable = true;
 			
-		InitiateKnockback(other, other.image_xscale * -6, -7);
+		InitiateKnockback(other, other.hsp, -7);
 			
 		global.knockedBack = true;
 		other.isRolling = false;
