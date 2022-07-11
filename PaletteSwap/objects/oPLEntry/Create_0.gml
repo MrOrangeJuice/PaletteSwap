@@ -7,6 +7,5 @@ if(!file_exists("savedata.ini")){
 	playerRef.x = 32;
 	playerRef.y = 1904;
 	playerRef.canSwap = false;
-	instance_find(oDialogTrigger, 0).requiresActivation = false;
-	instance_find(oDialogTrigger, 1).requiresActivation = false;
+	alarm[0] = room_speed;
 }
