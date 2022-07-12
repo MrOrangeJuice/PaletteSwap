@@ -3,7 +3,7 @@
 if (!triggered && !requiresActivation && (other.bottomWall || (other.bottomPalette && global.color != 1)) && other.hsp == 0 && !other.isRolling) {
 	triggered = true;
 	SwapSprite(sNone);
-	visible = true;
+	x = 0;
 	
 	text = instance_create_layer(0,0,"FX",oText);
 	text.isDialog = true;
