@@ -1,7 +1,7 @@
 /// @description Swap Input
 
 // Get input
-key_enter = keyboard_check_pressed(ord("P"));
+key_enter = (keyboard_check_released(vk_space) || keyboard_check_released(ord("P")) || keyboard_check_pressed(vk_enter));
 
 if (key_enter)
 {
