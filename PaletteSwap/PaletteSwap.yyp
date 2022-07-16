@@ -519,6 +519,7 @@
     {"id":{"name":"rAlexLevel","path":"rooms/rAlexLevel/rAlexLevel.yy",},"order":23,},
     {"id":{"name":"sCheckpoint","path":"sprites/sCheckpoint/sCheckpoint.yy",},"order":0,},
     {"id":{"name":"rThanks","path":"rooms/rThanks/rThanks.yy",},"order":20,},
+    {"id":{"name":"sEddyPortrait","path":"sprites/sEddyPortrait/sEddyPortrait.yy",},"order":8,},
     {"id":{"name":"oSRResults","path":"objects/oSRResults/oSRResults.yy",},"order":14,},
     {"id":{"name":"oGlasses","path":"objects/oGlasses/oGlasses.yy",},"order":3,},
     {"id":{"name":"sScaffoldingWood3d","path":"sprites/sScaffoldingWood3d/sScaffoldingWood3d.yy",},"order":15,},
