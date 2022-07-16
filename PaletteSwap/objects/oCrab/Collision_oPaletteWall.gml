@@ -8,7 +8,7 @@ if (!dormant && global.color != 1) {
 	//if youre stuck and color becomes blue, reactivate
 } else if (dormant && global.color == 1) {
 	dormant = false;
-	SwapSprite(sCrab);
+	SwapSprite(sCrabNew);
 	//enable collision forgiveness 
 	forgiveness = true;
 	alarm[0] = room_speed * 0.5;
