@@ -2,7 +2,8 @@
 // You can write your code in this editor
 
 //if stuck in palette block in non-blue palette, become dormant
-if (!dormant && global.color != 1) {
+if (!dormant && global.color != 1 && abs(CalculateCollisionOverlap(self, other)[0]) > 32) {
+	
 	dormant = true;
 	SwapSprite(sSmolCrab);
 	//if youre stuck and color becomes blue, reactivate

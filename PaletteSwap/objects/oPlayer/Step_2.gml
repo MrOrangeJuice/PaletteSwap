@@ -321,6 +321,8 @@ else{
 	}
 	
 }
+//stop infinite underwater roll
+if (swimming) isRolling = false;
 
 if(place_meeting(x,y+1,oConveyer) && currentwalksp == 0) {
 	if (key_left && !key_right && place_meeting(x +1, y, oAbstractWallBase)) {
