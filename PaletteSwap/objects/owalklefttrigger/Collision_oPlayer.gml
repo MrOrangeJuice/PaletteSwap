@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 if (!dormant){
-	other.canControlTimer = 1;
-	other.hsp = -2.5;
+	global.canControlTimer = 1;
+	other.currentwalksp = -2.5;
+	other.image_xscale = -1;
+	canBeTrashed = true;
 }
