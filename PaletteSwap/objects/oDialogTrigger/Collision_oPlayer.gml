@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (!triggered && !requiresActivation && (other.bottomWall || (other.bottomPalette && global.color != 1)) && other.hsp == 0 && !other.isRolling) {
+if (!triggered && !dormant && (other.bottomWall || (other.bottomPalette && global.color != 1)) && other.hsp == 0 && !other.isRolling) {
 	triggered = true;
 	SwapSprite(sNone);
 	
@@ -9,7 +9,7 @@ if (!triggered && !requiresActivation && (other.bottomWall || (other.bottomPalet
 	text.textMessage = textMessage;
 
 	if (other.vsp < 0) other.vsp = 0;
-} else if (!triggered && !requiresActivation) {
+} else if (!triggered && !dormant) {
 	global.canControlTimer = 1;
-	if (other.isDashing) DashReset(); 
+	if (other.isDashing) DashReset();
 }

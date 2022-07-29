@@ -17,6 +17,10 @@ else
 		jelliness = 1;
 	}	
 }
+//special camera placement for momentum motel
+if (room == rMomentumMotel){
+	yTo -= RES_H / 6; //position fern at the lower 1/3 line across the screen
+}
 
 // Update object position
 dX = (xTo - x) / jelliness;

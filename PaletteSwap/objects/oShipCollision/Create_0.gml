@@ -2,5 +2,5 @@
 audio_play_sound(snd_Flip, 5, false);
 //enable dialog trigger
 if (instance_exists(oDialogTrigger)) {
-	instance_find(oDialogTrigger, 0).requiresActivation = false;
+	instance_find(oDialogTrigger, 0).dormant = false;
 }
