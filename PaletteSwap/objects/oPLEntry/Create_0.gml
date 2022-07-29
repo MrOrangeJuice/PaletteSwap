@@ -7,5 +7,5 @@ if(!file_exists("savedata.ini")){
 	playerRef.x = 32;
 	playerRef.y = 1904;
 	playerRef.canSwap = false;
-	alarm[0] = room_speed;
+	//alarm[0] = room_speed;
 }

@@ -1,4 +1,6 @@
 /// @description Look for player input
+if (initiated) {
+
 key_swap_down = keyboard_check_pressed(ord("Q")) || keyboard_check_pressed(ord("U"));
 key_swap_up = keyboard_check_pressed(ord("E")) || keyboard_check_pressed(ord("I"));
 
@@ -30,4 +32,14 @@ if(key_swap_up || key_swap_down)
 	ScreenShake(2,10);
 	global.paused = false;
 	instance_destroy();	
+}
+
+}
+//reveal cutscene end when dialog is gone
+else if (!instance_find(oText, 0)) {
+	global.cutscene = true;
+	global.paused = true;
+	initiated = true;
+	visible = true;
+	audio_play_sound(snd_Eddy, 5, false);
 }
