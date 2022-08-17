@@ -45,4 +45,7 @@ switch(levelTo)
 				audio_stop_sound(msc_Hub);
 				SlideTransition(TRANS_MODE.GOTO, rSpeedrun5);
 				break;
+			case "rShack":
+				SlideTransition(TRANS_MODE.GOTO, rShack);
+				break;
 		}
