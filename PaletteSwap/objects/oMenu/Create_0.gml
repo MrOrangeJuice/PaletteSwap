@@ -22,6 +22,7 @@ menuIndex = 0;
 prevMenuIndex = 0;
 optionsIndex = 0;
 prevOptionIndex = 0;
+saveDeleteConfirm = false;
 menuActive = true;
 lastSelected = 0;
 lastAxis0Value = 0;
