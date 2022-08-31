@@ -5,5 +5,5 @@
 // Inherit the parent event
 event_inherited();
 
-face = sVillagerDMG;
+face = sDMGPortrait;
 eName = "Mayor Gerald";
