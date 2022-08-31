@@ -42,8 +42,10 @@ else if(global.color == 3){
 draw_text_transformed((x1+x2)/2, y1+8, print, 1.25, 1.25, 0);
 
 if (isDialog) { //DIALOG SPECIFIC DRAWS
-	//draw face and name here
-	draw_sprite(face, global.color, 3, RES_H / 2);
+	//draw face, portrait, and name here
+	draw_sprite(sDialoguePortrait,global.color, 0, RES_H / 2 - 16);
+	draw_sprite(sNamePortrait,global.color, 40, RES_H / 2 + 4);
+	draw_sprite(face, global.color, 4, RES_H / 2 - 12);
 	
 	DrawSetText(c_black, fGame, fa_center, fa_top);
 // Draw shadow
@@ -60,7 +62,7 @@ else if(global.color == 2){
 else if(global.color == 3){
 	draw_set_color($2C142D);
 }
-draw_text(55, RES_H/2 + 11, eName);
+draw_text(72, RES_H/2 + 11, eName);
 // Draw main text
 if(global.color == 0)
 {
@@ -75,5 +77,5 @@ else if(global.color == 2){
 else if(global.color == 3){
 	draw_set_color($B8208E);
 }
-draw_text(55, RES_H/2 + 10, eName);
+draw_text(72, RES_H/2 + 10, eName);
 }
