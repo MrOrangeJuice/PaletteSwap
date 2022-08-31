@@ -166,6 +166,7 @@
     {"id":{"name":"sBeegFernRed","path":"sprites/sBeegFernRed/sBeegFernRed.yy",},"order":21,},
     {"id":{"name":"sTempleGreen","path":"sprites/sTempleGreen/sTempleGreen.yy",},"order":5,},
     {"id":{"name":"sPaletteBlue","path":"sprites/sPaletteBlue/sPaletteBlue.yy",},"order":8,},
+    {"id":{"name":"sMotelTable","path":"sprites/sMotelTable/sMotelTable.yy",},"order":14,},
     {"id":{"name":"snd_Swap","path":"sounds/snd_Swap/snd_Swap.yy",},"order":9,},
     {"id":{"name":"sButton","path":"sprites/sButton/sButton.yy",},"order":30,},
     {"id":{"name":"sHint9","path":"sprites/sHint9/sHint9.yy",},"order":8,},
