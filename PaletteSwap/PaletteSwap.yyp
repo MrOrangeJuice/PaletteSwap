@@ -313,6 +313,7 @@
     {"id":{"name":"tSeaside","path":"tilesets/tSeaside/tSeaside.yy",},"order":0,},
     {"id":{"name":"sSeasideGreen","path":"sprites/sSeasideGreen/sSeasideGreen.yy",},"order":0,},
     {"id":{"name":"sHint2","path":"sprites/sHint2/sHint2.yy",},"order":1,},
+    {"id":{"name":"sVillagerMotel","path":"sprites/sVillagerMotel/sVillagerMotel.yy",},"order":13,},
     {"id":{"name":"rRedTest","path":"rooms/rRedTest/rRedTest.yy",},"order":15,},
     {"id":{"name":"sMainCapsule","path":"sprites/sMainCapsule/sMainCapsule.yy",},"order":42,},
     {"id":{"name":"sThankYou","path":"sprites/sThankYou/sThankYou.yy",},"order":9,},
