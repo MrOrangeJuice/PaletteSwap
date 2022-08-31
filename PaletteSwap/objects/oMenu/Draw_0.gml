@@ -36,7 +36,18 @@ repeat(optionCount){
 	else {
 		draw_set_color($37802A);
 	}
-	draw_text_transformed(optionsX, optionsY + buttonHeight * d + 1.5, options[d],1.5,1.5,0);
+	if(d == 3 && saveDeleteConfirm == 2)
+	{
+		draw_text_transformed(optionsX, optionsY + buttonHeight * d + 1.5, "Save Deleted!",1.5,1.5,0);
+	}
+	else if(d == 3 && saveDeleteConfirm == 1)
+	{
+		draw_text_transformed(optionsX, optionsY + buttonHeight * d + 1.5, "Are You Sure?",1.5,1.5,0);
+	}
+	else
+	{
+		draw_text_transformed(optionsX, optionsY + buttonHeight * d + 1.5, options[d],1.5,1.5,0);
+	}
 	// Draw normal text
 	if(optionsIndex == d) {
 		draw_set_color($37802A);
@@ -44,6 +55,17 @@ repeat(optionCount){
 	else {
 		draw_set_color($45D1A5);
 	}
-	draw_text_transformed(optionsX, optionsY + buttonHeight * d, options[d],1.5,1.5,0);
+	if(d == 3 && saveDeleteConfirm == 2)
+	{
+		draw_text_transformed(optionsX, optionsY + buttonHeight * d, "Save Deleted!",1.5,1.5,0);
+	}
+	else if(d == 3 && saveDeleteConfirm)
+	{
+		draw_text_transformed(optionsX, optionsY + buttonHeight * d, "Are You Sure?",1.5,1.5,0);
+	}
+	else
+	{
+		draw_text_transformed(optionsX, optionsY + buttonHeight * d, options[d],1.5,1.5,0);
+	}
 	d++;	
 }

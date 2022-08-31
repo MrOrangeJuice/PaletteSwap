@@ -123,11 +123,24 @@ if(key_select == 1){
 				SlideTransition(TRANS_MODE.GOTO, rStickTest);
 				break;
 			case 3:
-				if(file_exists("savedata.ini")){
-					file_delete("savedata.ini");
+				if(saveDeleteConfirm == 0)
+				{
+					saveDeleteConfirm++;
+				}
+				else if(saveDeleteConfirm == 1)
+				{
+					if(file_exists("savedata.ini")){
+						file_delete("savedata.ini");
+					}
+					saveDeleteConfirm++;
+				}
+				else if(saveDeleteConfirm == 2)
+				{
+					// Do nothing
 				}
 				break;
 			case 4:
+				saveDeleteConfirm = 0;
 				global.mouse = 0;
 				menuActive = true;
 				break;

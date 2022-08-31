@@ -59,6 +59,9 @@ if(place_meeting(x, y, oPlayer))
 			case "rSpeedrun5":
 				info.levelName = "Working Overtime";
 				break;
+			case "rShack":
+				info.levelName = "?????";
+				break;
 		}
 		info.levelRequirement = gearRequirement;
 		createdInfo = true;
