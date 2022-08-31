@@ -2,7 +2,7 @@
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
-  "origin": 4,
+  "origin": 0,
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
   "collisionTolerance": 0,
@@ -10,7 +10,7 @@
   "bbox_left": 0,
   "bbox_right": 383,
   "bbox_top": 12,
-  "bbox_bottom": 239,
+  "bbox_bottom": 243,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"7b414fab-3aaf-444a-91aa-3b8772af1f99","path":"sprites/sBGSeasideBlueClouds/sBGSeasideBlueClouds.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7b414fab-3aaf-444a-91aa-3b8772af1f99","path":"sprites/sBGSeasideBlueClouds/sBGSeasideBlueClouds.yy",},"LayerId":{"name":"6b18fb24-a0c5-41c6-ac54-fe6209f03ca2","path":"sprites/sBGSeasideBlueClouds/sBGSeasideBlueClouds.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sBGSeasideBlueClouds","path":"sprites/sBGSeasideBlueClouds/sBGSeasideBlueClouds.yy",},"resourceVersion":"1.0","name":"7b414fab-3aaf-444a-91aa-3b8772af1f99","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"91fe92f6-c287-48a1-8bcd-401c98f89870","path":"sprites/sBGCloudsBlue/sBGCloudsBlue.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"91fe92f6-c287-48a1-8bcd-401c98f89870","path":"sprites/sBGCloudsBlue/sBGCloudsBlue.yy",},"LayerId":{"name":"c19cfc42-c419-4399-97ee-c8d0d71717a4","path":"sprites/sBGCloudsBlue/sBGCloudsBlue.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sBGCloudsBlue","path":"sprites/sBGCloudsBlue/sBGCloudsBlue.yy",},"resourceVersion":"1.0","name":"91fe92f6-c287-48a1-8bcd-401c98f89870","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sBGSeasideBlueClouds","path":"sprites/sBGSeasideBlueClouds/sBGSeasideBlueClouds.yy",},
+    "spriteId": {"name":"sBGCloudsBlue","path":"sprites/sBGCloudsBlue/sBGCloudsBlue.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"e1cb2bf3-12c2-4ae5-ad86-253add025f7f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7b414fab-3aaf-444a-91aa-3b8772af1f99","path":"sprites/sBGSeasideBlueClouds/sBGSeasideBlueClouds.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"554404e1-e1c7-4df6-a2c6-655d18e54acc","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"91fe92f6-c287-48a1-8bcd-401c98f89870","path":"sprites/sBGCloudsBlue/sBGCloudsBlue.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -54,18 +54,18 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 192,
-    "yorigin": 128,
+    "xorigin": 0,
+    "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sBGSeasideBlueClouds","path":"sprites/sBGSeasideBlueClouds/sBGSeasideBlueClouds.yy",},
+    "parent": {"name":"sBGCloudsBlue","path":"sprites/sBGCloudsBlue/sBGCloudsBlue.yy",},
     "resourceVersion": "1.4",
-    "name": "sBGSeasideBlueClouds",
+    "name": "sBGCloudsBlue",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default (2) (2) (2)","resourceVersion":"1.0","name":"6b18fb24-a0c5-41c6-ac54-fe6209f03ca2","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c19cfc42-c419-4399-97ee-c8d0d71717a4","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Backgrounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sBGSeasideBlueClouds",
+  "name": "sBGCloudsBlue",
   "tags": [],
   "resourceType": "GMSprite",
 }
