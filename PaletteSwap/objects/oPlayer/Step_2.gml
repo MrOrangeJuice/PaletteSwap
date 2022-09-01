@@ -7,6 +7,9 @@ if(useCurrentDoorSpawn){
 		if(currentInstance.doorId == global.currentDoorId){
 			x = currentInstance.x;
 			y = currentInstance.y;
+			if (global.skipPortalAnimation){
+				y += 16 //dont exit doors midair lol
+			}
 		}
 	}
 	if (!global.skipPortalAnimation) {
