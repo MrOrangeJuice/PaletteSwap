@@ -38,6 +38,8 @@ global.isSpeedrun = false;
 
 //flag for activating dialog objects in the hub
 global.spawnHubDialog = false;
+//control for dialog cam
+global.useDialogCam = false;
 
 // Player data
 global.tutorialCompleted = false;

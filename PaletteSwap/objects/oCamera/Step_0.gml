@@ -21,6 +21,9 @@ else
 if (room == rMomentumMotel){
 	yTo -= RES_H / 6; //position fern at the lower 1/3 line across the screen
 }
+if (global.useDialogCam){
+	yTo += RES_H / 6;
+}
 
 // Update object position
 dX = (xTo - x) / jelliness;

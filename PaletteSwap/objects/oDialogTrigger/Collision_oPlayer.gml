@@ -9,6 +9,8 @@ if (!triggered && !dormant && (other.bottomWall || (other.bottomPalette && globa
 	text.textMessage = textMessage;
 
 	if (other.vsp < 0) other.vsp = 0;
+	
+	global.useDialogCam = true;
 } else if (!triggered && !dormant) {
 	global.canControlTimer = 1;
 	if (other.isDashing) DashReset();

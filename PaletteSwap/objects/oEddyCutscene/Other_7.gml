@@ -6,4 +6,4 @@ instance_find(oDialogTrigger, 1).dormant = false;
 global.cutscene = false;
 global.paused = false;
 visible = false;
-alarm[0] = room_speed * 5;
+alarm[0] = room_speed * 0.5;
