@@ -60,25 +60,32 @@ if(key_select == 1){
 		instance_deactivate_object(oPauseButtons);
 		break;
 	case 1:
-		global.color = 0;
-		/*
-		global.coinId = 0;
-		global.loaded = false;
-		global.coinsDestroyed = false;
-		ds_list_clear(global.coinArrX);
-		ds_list_clear(global.coinArrY);
-		ds_list_clear(global.loadCoinsX);
-		ds_list_clear(global.loadCoinsY);
-		*/
-		global.color_limit = 2;
-		audio_stop_sound(msc_Level);
-		audio_stop_sound(msc_Seaside);
-		audio_stop_sound(msc_FactoryIntro);
-		audio_stop_sound(msc_FactoryLoop);
-		visible = false;
-		global.hp = 100;
-		global.textUp = false;
-		SlideTransition(TRANS_MODE.GOTO, MainMenu);
+		if(room == rSpeedrun3 || room == rSpeedrun4 || room == rSpeedrun5)
+		{
+			SlideTransition(TRANS_MODE.GOTO, room);
+		}
+		else
+		{
+			global.color = 0;
+			/*
+			global.coinId = 0;
+			global.loaded = false;
+			global.coinsDestroyed = false;
+			ds_list_clear(global.coinArrX);
+			ds_list_clear(global.coinArrY);
+			ds_list_clear(global.loadCoinsX);
+			ds_list_clear(global.loadCoinsY);
+			*/
+			global.color_limit = 2;
+			audio_stop_sound(msc_Level);
+			audio_stop_sound(msc_Seaside);
+			audio_stop_sound(msc_FactoryIntro);
+			audio_stop_sound(msc_FactoryLoop);
+			visible = false;
+			global.hp = 100;
+			global.textUp = false;
+			SlideTransition(TRANS_MODE.GOTO, MainMenu);
+		}
 		break;
 	case 2:
 		game_end();
