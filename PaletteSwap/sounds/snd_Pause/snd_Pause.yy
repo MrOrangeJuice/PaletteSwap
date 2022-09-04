@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 0.5,
   "preload": false,
@@ -11,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_Pause.wav",
-  "duration": 0.525272,
+  "duration": 0.520272,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

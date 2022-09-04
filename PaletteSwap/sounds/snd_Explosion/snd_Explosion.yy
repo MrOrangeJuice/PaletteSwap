@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 0.5,
   "preload": false,
@@ -11,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_Explosion.wav",
-  "duration": 0.58593,
+  "duration": 0.58093,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

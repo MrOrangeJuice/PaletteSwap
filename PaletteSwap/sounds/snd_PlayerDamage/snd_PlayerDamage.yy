@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 0.6,
   "preload": false,
@@ -11,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_PlayerDamage.wav",
-  "duration": 0.118719,
+  "duration": 0.113719,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

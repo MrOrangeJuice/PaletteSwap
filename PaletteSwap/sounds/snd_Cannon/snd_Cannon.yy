@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 0.4,
   "preload": false,
@@ -11,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_Cannon.wav",
-  "duration": 0.220306,
+  "duration": 0.215306,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
