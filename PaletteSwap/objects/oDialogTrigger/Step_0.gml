@@ -4,6 +4,7 @@ if (triggered){
 	
 	//cleanup and prevent retriggering
 	if (!instance_exists(text)){
+		global.useDialogCam = false;
 		instance_destroy(self);
 	}
 	

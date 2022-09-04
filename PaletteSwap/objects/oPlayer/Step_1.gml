@@ -289,18 +289,18 @@ else
 	// Calculate movement
 	if(dashdown)
 	{
-		if(global.canControlTimer < 0) vsp = (blueDashSp + dashsp) * 1.5;
+		if(global.canControlTimer < 0) vsp = (dashsp) * 1.5;
 	}
 	else if (dashup){
-		if(global.canControlTimer < 0) vsp = (blueDashSp + dashsp) * -0.9;
+		if(global.canControlTimer < 0) vsp = (dashsp) * -0.9;
 	}
 	else if(dashright)
 	{
-		if(global.canControlTimer < 0) hsp = (blueDashSp + dashsp);
+		if(global.canControlTimer < 0) hsp = (dashsp);
 	}
 	else if(dashleft)
 	{
-		if(global.canControlTimer < 0) hsp = -(blueDashSp + dashsp);
+		if(global.canControlTimer < 0) hsp = -(dashsp);
 	}
 	
 	// Decrement timer and end dash if necessary

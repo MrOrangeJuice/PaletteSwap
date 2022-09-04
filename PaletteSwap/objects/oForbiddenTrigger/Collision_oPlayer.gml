@@ -8,6 +8,6 @@ if (indexer != -1 && global.color != sequence[indexer]) indexer = -1;
 }
 else if (!started){
 	//start cutscene
-	instance_create_layer(other.x,other.y-180,"FX",oEdd0);
+	alarm[0] = room_speed * 0.4;
 	started = true;
 }
