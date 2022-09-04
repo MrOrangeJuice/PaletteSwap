@@ -21,6 +21,12 @@ function Save(){
 	ini_write_real("savegame", "factoryGear3", global.factoryGearArray[2]);
 	ini_write_real("savegame", "factoryGear4", global.factoryGearArray[3]);
 	ini_write_real("savegame", "factoryGear5", global.factoryGearArray[4]);
+	ini_write_real("savegame", "speedrun1Gear1", global.speedrun1GearArray[0]);
+	ini_write_real("savegame", "speedrun1Gear2", global.speedrun1GearArray[1]);
+	ini_write_real("savegame", "speedrun2Gear1", global.speedrun2GearArray[0]);
+	ini_write_real("savegame", "speedrun2Gear2", global.speedrun2GearArray[1]);
+	ini_write_real("savegame", "speedrun3Gear1", global.speedrun3GearArray[0]);
+	ini_write_real("savegame", "speedrun3Gear2", global.speedrun3GearArray[1]);
 	ini_write_real("savegame", "totalVending", global.vendingGearsCollected);
 	ini_write_real("savegame", "totalGears", global.gearTotal);
 	ini_write_real("savegame", "totalCoins", global.coins);

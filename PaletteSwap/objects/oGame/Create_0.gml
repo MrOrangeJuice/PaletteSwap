@@ -55,6 +55,9 @@ global.templeGears = 4;
 global.seasideGears = 4;
 global.vendingGears = 7;
 global.factoryGears = 5;
+global.speedrun1Gears = 2;
+global.speedrun2Gears = 2;
+global.speedrun3Gears = 2;
 global.vendingGearsCollected = 0;
 global.gearTotal = 0;
 global.allPalettesUnlocked = false;
@@ -75,6 +78,24 @@ global.factoryGearArray = array_create(global.factoryGears);
 for(i = 0; i < global.factoryGears; i++)
 {
 	global.factoryGearArray[i] = false;	
+}
+
+global.speedrun1GearArray = array_create(global.speedrun1Gears);
+for(i = 0; i < global.speedrun1Gears; i++)
+{
+	global.speedrun1GearArray[i] = false;	
+}
+
+global.speedrun2GearArray = array_create(global.speedrun2Gears);
+for(i = 0; i < global.speedrun2Gears; i++)
+{
+	global.speedrun2GearArray[i] = false;	
+}
+
+global.speedrun3GearArray = array_create(global.speedrun3Gears);
+for(i = 0; i < global.speedrun3Gears; i++)
+{
+	global.speedrun3GearArray[i] = false;	
 }
 
 //array to store best times in speedrun levels
