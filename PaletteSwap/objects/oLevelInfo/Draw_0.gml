@@ -46,11 +46,27 @@ if(global.gearTotal >= levelRequirement)
 				if(global.factoryGearArray[i]) draw_sprite(sGearSmall,global.color,x-startingX+(i*16),y+16);	
 			}
 		case "Shrine Time":
-			startingX = 8 * (global.factoryGears - 1);
-			for(i = 0; i < global.factoryGears; i++)
+			startingX = 8 * (global.speedrun1Gears - 1);
+			for(i = 0; i < global.speedrun1Gears; i++)
 			{
-				if(!global.factoryGearArray[i]) draw_sprite(sGearSmallBlacked,global.color,x-startingX+(i*16),y+16);	
-				if(global.factoryGearArray[i]) draw_sprite(sGearSmall,global.color,x-startingX+(i*16),y+16);	
+				if(!global.speedrun1GearArray[i]) draw_sprite(sGearSmallBlacked,global.color,x-startingX+(i*16),y+16);	
+				if(global.speedrun1GearArray[i]) draw_sprite(sGearSmall,global.color,x-startingX+(i*16),y+16);	
+			}
+			break;
+		case "Speedside Glide":
+			startingX = 8 * (global.speedrun2Gears - 1);
+			for(i = 0; i < global.speedrun2Gears; i++)
+			{
+				if(!global.speedrun2GearArray[i]) draw_sprite(sGearSmallBlacked,global.color,x-startingX+(i*16),y+16);	
+				if(global.speedrun2GearArray[i]) draw_sprite(sGearSmall,global.color,x-startingX+(i*16),y+16);	
+			}
+			break;
+		case "Working Overtime":
+			startingX = 8 * (global.speedrun3Gears - 1);
+			for(i = 0; i < global.speedrun3Gears; i++)
+			{
+				if(!global.speedrun3GearArray[i]) draw_sprite(sGearSmallBlacked,global.color,x-startingX+(i*16),y+16);	
+				if(global.speedrun3GearArray[i]) draw_sprite(sGearSmall,global.color,x-startingX+(i*16),y+16);	
 			}
 			break;
 	}
