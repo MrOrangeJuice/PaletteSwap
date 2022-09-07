@@ -1,6 +1,8 @@
 /// @description Move
 
 // Horizontal Collision
+if (!global.paused)
+{
 if (place_meeting(x+hsp,y,oWall))
 {
 	hsp *= -1;
@@ -23,3 +25,4 @@ if (place_meeting(x,y+vsp,oWall))
 
 y = y + vsp;
 rollangle += rollsp;
+}
