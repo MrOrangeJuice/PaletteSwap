@@ -1,7 +1,7 @@
 /// @description Swap Palette and Spawn Prompt or Text
 
 // Get input
-key_enter = keyboard_check_pressed(ord("X"));
+key_enter = keyboard_check_released(ord("X"));
 //key_space = keyboard_check_pressed(vk_space) || keyboard_check_pressed(ord("P"));
 
 if (key_enter)
@@ -9,7 +9,7 @@ if (key_enter)
 	global.controller = 0;
 }
 
-if (gamepad_button_check_pressed(0,gp_face4) || gamepad_button_check_pressed(4,gp_face4))
+if (gamepad_button_check_released(0,gp_face4) || gamepad_button_check_released(4,gp_face4))
 {
 	key_enter = 1;
 	global.controller = 1;
