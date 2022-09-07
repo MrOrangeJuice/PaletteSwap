@@ -10,3 +10,6 @@ res.srLevelID = srLevelID;
 res.finishedTime = global.time;
 
 SlideTransition(TRANS_MODE.GOTO, rSRResults);
+
+//stop extra collisions lol
+instance_destroy(self);
