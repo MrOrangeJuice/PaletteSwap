@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 if(!global.paused && triggered && !global.canControlTimer && started){
-key_space = keyboard_check_released(vk_space) || keyboard_check_released(ord("P")) || keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("X"));
+key_space = keyboard_check_released(vk_space) || keyboard_check_released(ord("P")) || keyboard_check_released(vk_enter) || keyboard_check_released(ord("X"));
 
 //update dependent text object
 if (instance_exists(text)) text.key_space = key_space;
