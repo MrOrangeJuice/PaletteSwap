@@ -5,4 +5,5 @@ if (global.color == 0){
 }
 else {
 	started = false; //go back to start
+	indexer = -1;
 }
