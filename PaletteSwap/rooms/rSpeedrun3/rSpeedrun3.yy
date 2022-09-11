@@ -23,6 +23,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_25EAD01A","properties":[],"isDnd":false,"objectId":{"name":"oScreenDarken","path":"objects/oScreenDarken/oScreenDarken.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-464.0,"y":-224.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_16DC05E1","properties":[],"isDnd":false,"objectId":{"name":"oColorLimiter","path":"objects/oColorLimiter/oColorLimiter.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":192.0,"y":96.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_EACB6DA","properties":[],"isDnd":false,"objectId":{"name":"oSpeedrunEntry","path":"objects/oSpeedrunEntry/oSpeedrunEntry.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":616.0,"y":344.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6ED443","properties":[],"isDnd":false,"objectId":{"name":"oLevelMusic","path":"objects/oLevelMusic/oLevelMusic.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":312.0,"y":192.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Enemies","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_21BA4CA4","properties":[],"isDnd":false,"objectId":{"name":"oBird","path":"objects/oBird/oBird.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1200.0,"y":1208.0,},
@@ -977,6 +978,7 @@
     {"name":"inst_680E531D","path":"rooms/rSpeedrun3/rSpeedrun3.yy",},
     {"name":"inst_7AB21A41","path":"rooms/rSpeedrun3/rSpeedrun3.yy",},
     {"name":"inst_5B73CBA1","path":"rooms/rSpeedrun3/rSpeedrun3.yy",},
+    {"name":"inst_6ED443","path":"rooms/rSpeedrun3/rSpeedrun3.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

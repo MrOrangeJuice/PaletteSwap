@@ -9,6 +9,12 @@ res.time2 = time2;
 res.srLevelID = srLevelID;
 res.finishedTime = global.time;
 
+audio_play_sound(snd_Collectible,5,false);
+audio_stop_sound(msc_Level);
+audio_stop_sound(msc_Seaside);
+audio_stop_sound(msc_FactoryLoop);
+audio_stop_sound(msc_FactoryIntro);
+
 SlideTransition(TRANS_MODE.GOTO, rSRResults);
 
 //stop extra collisions lol

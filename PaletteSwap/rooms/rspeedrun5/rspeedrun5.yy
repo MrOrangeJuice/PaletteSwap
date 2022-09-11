@@ -23,6 +23,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_25EAD01A_1_1","properties":[],"isDnd":false,"objectId":{"name":"oScreenDarken","path":"objects/oScreenDarken/oScreenDarken.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-1025.0,"y":-503.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_16DC05E1_1_1","properties":[],"isDnd":false,"objectId":{"name":"oColorLimiter","path":"objects/oColorLimiter/oColorLimiter.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":192.0,"y":96.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_EACB6DA_1_1","properties":[],"isDnd":false,"objectId":{"name":"oSpeedrunEntry","path":"objects/oSpeedrunEntry/oSpeedrunEntry.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":616.0,"y":344.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_78272C6A","properties":[],"isDnd":false,"objectId":{"name":"oFactoryMusic","path":"objects/oFactoryMusic/oFactoryMusic.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":256.0,"y":120.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Checkpoints","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1E37CE65_1","properties":[],"isDnd":false,"objectId":{"name":"oCheckpoint","path":"objects/oCheckpoint/oCheckpoint.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":272.0,"y":1616.0,},
@@ -1085,6 +1086,7 @@
     {"name":"inst_6CD16DCA","path":"rooms/rSpeedrun5/rSpeedrun5.yy",},
     {"name":"inst_48A86574","path":"rooms/rSpeedrun5/rSpeedrun5.yy",},
     {"name":"inst_208B9BDB","path":"rooms/rSpeedrun5/rSpeedrun5.yy",},
+    {"name":"inst_78272C6A","path":"rooms/rSpeedrun5/rSpeedrun5.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
