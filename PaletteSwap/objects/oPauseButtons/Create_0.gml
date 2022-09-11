@@ -6,7 +6,7 @@ if(room == rSpeedrun3 || room == rSpeedrun4 || room == rSpeedrun5)
 {
 	button[0] = "Resume";
 	button[1] = "Restart";
-	button[2] = "Quit";
+	button[2] = "Hub";
 }
 else
 {

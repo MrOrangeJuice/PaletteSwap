@@ -20,6 +20,10 @@ switch(levelTo)
 				audio_stop_sound(msc_Hub);
 				SlideTransition(TRANS_MODE.GOTO, rSecret);
 				break;
+			case "rCredits":
+				audio_stop_sound(msc_Hub);
+				SlideTransition(TRANS_MODE.GOTO, rCredits);
+				break;
 			case "rFactory":
 				audio_stop_sound(msc_Hub);
 				SlideTransition(TRANS_MODE.GOTO, rFactory);

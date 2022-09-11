@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sVendingPrice",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,21 +27,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"364051f5-8d32-4b86-ad79-eb36e47648cb","path":"sprites/sVendingPrice/sVendingPrice.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"364051f5-8d32-4b86-ad79-eb36e47648cb","path":"sprites/sVendingPrice/sVendingPrice.yy",},"LayerId":{"name":"b615d844-1831-449c-a440-84043aaac1b4","path":"sprites/sVendingPrice/sVendingPrice.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sVendingPrice","path":"sprites/sVendingPrice/sVendingPrice.yy",},"resourceVersion":"1.0","name":"364051f5-8d32-4b86-ad79-eb36e47648cb","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"44a66a45-fca4-4a91-a07d-87286643ade9","path":"sprites/sVendingPrice/sVendingPrice.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"44a66a45-fca4-4a91-a07d-87286643ade9","path":"sprites/sVendingPrice/sVendingPrice.yy",},"LayerId":{"name":"b615d844-1831-449c-a440-84043aaac1b4","path":"sprites/sVendingPrice/sVendingPrice.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sVendingPrice","path":"sprites/sVendingPrice/sVendingPrice.yy",},"resourceVersion":"1.0","name":"44a66a45-fca4-4a91-a07d-87286643ade9","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"10713641-98e8-476c-b72d-e56ee05a8494","path":"sprites/sVendingPrice/sVendingPrice.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"10713641-98e8-476c-b72d-e56ee05a8494","path":"sprites/sVendingPrice/sVendingPrice.yy",},"LayerId":{"name":"b615d844-1831-449c-a440-84043aaac1b4","path":"sprites/sVendingPrice/sVendingPrice.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sVendingPrice","path":"sprites/sVendingPrice/sVendingPrice.yy",},"resourceVersion":"1.0","name":"10713641-98e8-476c-b72d-e56ee05a8494","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ad1c5001-7e1e-47a7-a24a-bfc47053553e","path":"sprites/sVendingPrice/sVendingPrice.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ad1c5001-7e1e-47a7-a24a-bfc47053553e","path":"sprites/sVendingPrice/sVendingPrice.yy",},"LayerId":{"name":"b615d844-1831-449c-a440-84043aaac1b4","path":"sprites/sVendingPrice/sVendingPrice.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sVendingPrice","path":"sprites/sVendingPrice/sVendingPrice.yy",},"resourceVersion":"1.0","name":"ad1c5001-7e1e-47a7-a24a-bfc47053553e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"364051f5-8d32-4b86-ad79-eb36e47648cb",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"44a66a45-fca4-4a91-a07d-87286643ade9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"10713641-98e8-476c-b72d-e56ee05a8494",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ad1c5001-7e1e-47a7-a24a-bfc47053553e",},
   ],
   "sequence": {
-    "spriteId": {"name":"sVendingPrice","path":"sprites/sVendingPrice/sVendingPrice.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sVendingPrice",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -49,12 +46,12 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"d6f16a10-5a8b-4a5a-b4a1-9c8d2497aadc","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"364051f5-8d32-4b86-ad79-eb36e47648cb","path":"sprites/sVendingPrice/sVendingPrice.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"5b5b9923-aecc-455b-88c5-e3249d01f66e","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"44a66a45-fca4-4a91-a07d-87286643ade9","path":"sprites/sVendingPrice/sVendingPrice.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"d9363193-4a8e-4ddf-bde2-ddf83437fb32","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"10713641-98e8-476c-b72d-e56ee05a8494","path":"sprites/sVendingPrice/sVendingPrice.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"64d8a3ea-8de3-42ec-a907-4c56b077b4fb","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ad1c5001-7e1e-47a7-a24a-bfc47053553e","path":"sprites/sVendingPrice/sVendingPrice.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +67,13 @@
     "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sVendingPrice","path":"sprites/sVendingPrice/sVendingPrice.yy",},
-    "resourceVersion": "1.4",
-    "name": "sVendingPrice",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b615d844-1831-449c-a440-84043aaac1b4","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b615d844-1831-449c-a440-84043aaac1b4","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "UI",
     "path": "folders/Sprites/UI.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sVendingPrice",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

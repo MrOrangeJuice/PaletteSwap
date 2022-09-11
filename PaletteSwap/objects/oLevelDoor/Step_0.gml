@@ -23,10 +23,10 @@ if(place_meeting(x, y, oPlayer))
 		switch(levelTo)
 		{
 			case "MainMenu":
-				info.levelName = "Finish Demo";
+				info.levelName = "Finish Game";
 				break;
 			case "rThanks":
-				info.levelName = "Finish Demo\nBut Cooler";
+				info.levelName = "Finish Game\nBut Cooler";
 				break;
 			case "rPaletteTemple":
 				info.levelName = "Palette Shrine";
@@ -43,6 +43,9 @@ if(place_meeting(x, y, oPlayer))
 				{
 					info.levelName = "Secret Room";	
 				}
+				break;
+			case "rCredits":
+				info.levelName = "Finish Game";
 				break;
 			case "rFactory":
 				info.levelName = "Mechanic Panic";

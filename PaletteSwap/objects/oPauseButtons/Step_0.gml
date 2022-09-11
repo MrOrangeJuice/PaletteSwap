@@ -88,7 +88,16 @@ if(key_select == 1){
 		}
 		break;
 	case 2:
-		game_end();
+		if(room == rSpeedrun3 || room == rSpeedrun4 || room == rSpeedrun5)
+		{
+			global.color = 0;
+			global.isSpeedrun = false;
+			SlideTransition(TRANS_MODE.GOTO, rMomentumMotel);
+		}
+		else
+		{
+			game_end();
+		}
 		break;
 	default:
 		break;

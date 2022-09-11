@@ -1,5 +1,5 @@
 /// @description Swap Input
-if(room == rStickTest)
+if(room == rStickTest || room == rCredits)
 {
 	image_speed = 0;	
 }

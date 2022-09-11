@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "oRaveBG",
   "spriteId": {
     "name": "sRaveBG",
     "path": "sprites/sRaveBG/sRaveBG.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -27,8 +31,4 @@
     "name": "Misc",
     "path": "folders/Objects/Misc.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "oRaveBG",
-  "tags": [],
-  "resourceType": "GMObject",
 }

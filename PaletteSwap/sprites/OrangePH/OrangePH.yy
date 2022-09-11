@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "OrangePH",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"28a6488f-e34a-4c4e-92f9-cdf18651c821","path":"sprites/OrangePH/OrangePH.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"28a6488f-e34a-4c4e-92f9-cdf18651c821","path":"sprites/OrangePH/OrangePH.yy",},"LayerId":{"name":"4597d6a2-5e5e-4948-ace1-b34a8d70e986","path":"sprites/OrangePH/OrangePH.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"OrangePH","path":"sprites/OrangePH/OrangePH.yy",},"resourceVersion":"1.0","name":"28a6488f-e34a-4c4e-92f9-cdf18651c821","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"28a6488f-e34a-4c4e-92f9-cdf18651c821",},
   ],
   "sequence": {
-    "spriteId": {"name":"OrangePH","path":"sprites/OrangePH/OrangePH.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "OrangePH",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"96099f3c-d437-45d8-a049-bb72a389691a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"28a6488f-e34a-4c4e-92f9-cdf18651c821","path":"sprites/OrangePH/OrangePH.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"OrangePH","path":"sprites/OrangePH/OrangePH.yy",},
-    "resourceVersion": "1.4",
-    "name": "OrangePH",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"4597d6a2-5e5e-4948-ace1-b34a8d70e986","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4597d6a2-5e5e-4948-ace1-b34a8d70e986","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Placeholders",
     "path": "folders/Sprites/Placeholders.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "OrangePH",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "sTutorialKeyboardDownDash",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,57 +27,27 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b32e04f7-ec09-4414-9a19-a2a11466c9f6","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b32e04f7-ec09-4414-9a19-a2a11466c9f6","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":{"name":"3215ea26-3a8f-4d5d-88fd-060d7988d9b8","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sTutorialKeyboardDownDash","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"b32e04f7-ec09-4414-9a19-a2a11466c9f6","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0044f1d4-5906-4640-a717-46822762ccca","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0044f1d4-5906-4640-a717-46822762ccca","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":{"name":"3215ea26-3a8f-4d5d-88fd-060d7988d9b8","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sTutorialKeyboardDownDash","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"0044f1d4-5906-4640-a717-46822762ccca","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"15bdc374-3bca-43d5-88c2-a60b23dda0c8","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"15bdc374-3bca-43d5-88c2-a60b23dda0c8","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":{"name":"3215ea26-3a8f-4d5d-88fd-060d7988d9b8","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sTutorialKeyboardDownDash","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"15bdc374-3bca-43d5-88c2-a60b23dda0c8","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3231f4e5-b08f-4497-ae2f-8cb1749e9bcb","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3231f4e5-b08f-4497-ae2f-8cb1749e9bcb","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":{"name":"3215ea26-3a8f-4d5d-88fd-060d7988d9b8","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sTutorialKeyboardDownDash","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"3231f4e5-b08f-4497-ae2f-8cb1749e9bcb","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"3bdb108f-ab09-4a5b-8a30-a93f1d34a84f","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3bdb108f-ab09-4a5b-8a30-a93f1d34a84f","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":{"name":"3215ea26-3a8f-4d5d-88fd-060d7988d9b8","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sTutorialKeyboardDownDash","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"3bdb108f-ab09-4a5b-8a30-a93f1d34a84f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5dec7637-f2dd-4ba4-9e54-665d8251e66c","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5dec7637-f2dd-4ba4-9e54-665d8251e66c","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":{"name":"3215ea26-3a8f-4d5d-88fd-060d7988d9b8","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sTutorialKeyboardDownDash","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"5dec7637-f2dd-4ba4-9e54-665d8251e66c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e85d7d1b-ab50-4fc3-b55a-f186b97fdc83","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e85d7d1b-ab50-4fc3-b55a-f186b97fdc83","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":{"name":"3215ea26-3a8f-4d5d-88fd-060d7988d9b8","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sTutorialKeyboardDownDash","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"e85d7d1b-ab50-4fc3-b55a-f186b97fdc83","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e63d9fd9-c962-4ce8-acf1-f27b4c8132ab","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e63d9fd9-c962-4ce8-acf1-f27b4c8132ab","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":{"name":"3215ea26-3a8f-4d5d-88fd-060d7988d9b8","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sTutorialKeyboardDownDash","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"e63d9fd9-c962-4ce8-acf1-f27b4c8132ab","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"846f8ccb-41c9-4a41-a0c2-f83c2f5ce0c8","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"846f8ccb-41c9-4a41-a0c2-f83c2f5ce0c8","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":{"name":"3215ea26-3a8f-4d5d-88fd-060d7988d9b8","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sTutorialKeyboardDownDash","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"846f8ccb-41c9-4a41-a0c2-f83c2f5ce0c8","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e9d09a2d-6c36-497f-a4eb-2503a4c16352","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e9d09a2d-6c36-497f-a4eb-2503a4c16352","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":{"name":"3215ea26-3a8f-4d5d-88fd-060d7988d9b8","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sTutorialKeyboardDownDash","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"e9d09a2d-6c36-497f-a4eb-2503a4c16352","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"242ae492-2439-4574-aeab-0ecedd88ad93","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"242ae492-2439-4574-aeab-0ecedd88ad93","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":{"name":"3215ea26-3a8f-4d5d-88fd-060d7988d9b8","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sTutorialKeyboardDownDash","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"242ae492-2439-4574-aeab-0ecedd88ad93","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"dbbb387d-c960-4d36-a968-9d729f34f4d0","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"dbbb387d-c960-4d36-a968-9d729f34f4d0","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":{"name":"3215ea26-3a8f-4d5d-88fd-060d7988d9b8","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sTutorialKeyboardDownDash","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"dbbb387d-c960-4d36-a968-9d729f34f4d0","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"006f1289-e517-44e5-a43f-0d029d4e8cb3","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"006f1289-e517-44e5-a43f-0d029d4e8cb3","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":{"name":"3215ea26-3a8f-4d5d-88fd-060d7988d9b8","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sTutorialKeyboardDownDash","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"006f1289-e517-44e5-a43f-0d029d4e8cb3","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"47d3f339-1921-4706-825e-9382ada5c8c4","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"47d3f339-1921-4706-825e-9382ada5c8c4","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":{"name":"3215ea26-3a8f-4d5d-88fd-060d7988d9b8","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sTutorialKeyboardDownDash","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"47d3f339-1921-4706-825e-9382ada5c8c4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c64e3232-e41f-4bfe-9462-505f932f30bd","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c64e3232-e41f-4bfe-9462-505f932f30bd","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":{"name":"3215ea26-3a8f-4d5d-88fd-060d7988d9b8","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sTutorialKeyboardDownDash","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"c64e3232-e41f-4bfe-9462-505f932f30bd","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"7763014a-7e0c-4b1c-af7a-8d27976016da","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7763014a-7e0c-4b1c-af7a-8d27976016da","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"LayerId":{"name":"3215ea26-3a8f-4d5d-88fd-060d7988d9b8","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sTutorialKeyboardDownDash","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","name":"7763014a-7e0c-4b1c-af7a-8d27976016da","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b32e04f7-ec09-4414-9a19-a2a11466c9f6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0044f1d4-5906-4640-a717-46822762ccca",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"15bdc374-3bca-43d5-88c2-a60b23dda0c8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3231f4e5-b08f-4497-ae2f-8cb1749e9bcb",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3bdb108f-ab09-4a5b-8a30-a93f1d34a84f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5dec7637-f2dd-4ba4-9e54-665d8251e66c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e85d7d1b-ab50-4fc3-b55a-f186b97fdc83",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e63d9fd9-c962-4ce8-acf1-f27b4c8132ab",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"846f8ccb-41c9-4a41-a0c2-f83c2f5ce0c8",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e9d09a2d-6c36-497f-a4eb-2503a4c16352",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"242ae492-2439-4574-aeab-0ecedd88ad93",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dbbb387d-c960-4d36-a968-9d729f34f4d0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"006f1289-e517-44e5-a43f-0d029d4e8cb3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"47d3f339-1921-4706-825e-9382ada5c8c4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c64e3232-e41f-4bfe-9462-505f932f30bd",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7763014a-7e0c-4b1c-af7a-8d27976016da",},
   ],
   "sequence": {
-    "spriteId": {"name":"sTutorialKeyboardDownDash","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "sTutorialKeyboardDownDash",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 3.0,
@@ -85,7 +58,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"32bf08ab-266c-44a5-9f7b-8f8be5649924","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b32e04f7-ec09-4414-9a19-a2a11466c9f6","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"e05454bc-5e8e-46d3-aad2-e933995d0e9d","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0044f1d4-5906-4640-a717-46822762ccca","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"2a58b840-b407-4916-a722-f9a82d073ba8","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"15bdc374-3bca-43d5-88c2-a60b23dda0c8","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -102,7 +75,7 @@
             {"id":"86339dec-5b26-42ea-803c-c42eaf88656c","Key":13.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"47d3f339-1921-4706-825e-9382ada5c8c4","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"c4d2a442-b3df-4cc4-a7ea-cd6f73bdcc29","Key":14.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c64e3232-e41f-4bfe-9462-505f932f30bd","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"16db9353-39df-47bd-8de5-a127c857f5b0","Key":15.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7763014a-7e0c-4b1c-af7a-8d27976016da","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -118,22 +91,13 @@
     "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sTutorialKeyboardDownDash","path":"sprites/sTutorialKeyboardDownDash/sTutorialKeyboardDownDash.yy",},
-    "resourceVersion": "1.4",
-    "name": "sTutorialKeyboardDownDash",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3215ea26-3a8f-4d5d-88fd-060d7988d9b8","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3215ea26-3a8f-4d5d-88fd-060d7988d9b8","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Tutorial",
     "path": "folders/Sprites/Tutorial.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "sTutorialKeyboardDownDash",
-  "tags": [],
-  "resourceType": "GMSprite",
 }
