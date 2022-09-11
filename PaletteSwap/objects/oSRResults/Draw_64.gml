@@ -1,5 +1,6 @@
 /// @description Draw
 
+
 if(draw1)
 {
 	draw_sprite(sCollectibleBlacked,0,128,80);
