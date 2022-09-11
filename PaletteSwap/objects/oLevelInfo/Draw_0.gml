@@ -45,6 +45,7 @@ if(global.gearTotal >= levelRequirement)
 				if(!global.factoryGearArray[i]) draw_sprite(sGearSmallBlacked,global.color,x-startingX+(i*16),y+16);	
 				if(global.factoryGearArray[i]) draw_sprite(sGearSmall,global.color,x-startingX+(i*16),y+16);	
 			}
+			break;
 		case "Shrine Time":
 			startingX = 8 * (global.speedrun1Gears - 1);
 			for(i = 0; i < global.speedrun1Gears; i++)
