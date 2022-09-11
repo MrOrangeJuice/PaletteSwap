@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "tSeasideBlue",
   "spriteId": {
     "name": "sSeasideBlue",
     "path": "sprites/sSeasideBlue/sSeasideBlue.yy",
@@ -20,126 +23,126 @@
   "tile_count": 256,
   "autoTileSets": [],
   "tileAnimationFrames": [
-    {"frames":[
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"animation_1","frames":[
         65,
         66,
         67,
         68,
-      ],"resourceVersion":"1.0","name":"animation_1","tags":[],"resourceType":"GMTileAnimation",},
-    {"frames":[
+      ],},
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"animation_2","frames":[
         69,
         70,
         71,
         72,
-      ],"resourceVersion":"1.0","name":"animation_2","tags":[],"resourceType":"GMTileAnimation",},
-    {"frames":[
+      ],},
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"animation_3","frames":[
         73,
         74,
         75,
         76,
-      ],"resourceVersion":"1.0","name":"animation_3","tags":[],"resourceType":"GMTileAnimation",},
-    {"frames":[
+      ],},
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"animation_4","frames":[
         77,
         78,
         79,
         80,
-      ],"resourceVersion":"1.0","name":"animation_4","tags":[],"resourceType":"GMTileAnimation",},
-    {"frames":[
+      ],},
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"animation_5","frames":[
         81,
         82,
         83,
         84,
-      ],"resourceVersion":"1.0","name":"animation_5","tags":[],"resourceType":"GMTileAnimation",},
-    {"frames":[
+      ],},
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"animation_6","frames":[
         85,
         86,
         87,
         88,
-      ],"resourceVersion":"1.0","name":"animation_6","tags":[],"resourceType":"GMTileAnimation",},
-    {"frames":[
+      ],},
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"animation_7","frames":[
         89,
         90,
         91,
         92,
-      ],"resourceVersion":"1.0","name":"animation_7","tags":[],"resourceType":"GMTileAnimation",},
-    {"frames":[
+      ],},
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"animation_8","frames":[
         93,
         94,
         95,
         96,
-      ],"resourceVersion":"1.0","name":"animation_8","tags":[],"resourceType":"GMTileAnimation",},
-    {"frames":[
+      ],},
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"animation_9","frames":[
         97,
         98,
         99,
         100,
-      ],"resourceVersion":"1.0","name":"animation_9","tags":[],"resourceType":"GMTileAnimation",},
-    {"frames":[
+      ],},
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"animation_10","frames":[
         101,
         102,
         103,
         104,
-      ],"resourceVersion":"1.0","name":"animation_10","tags":[],"resourceType":"GMTileAnimation",},
-    {"frames":[
+      ],},
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"animation_11","frames":[
         105,
         106,
         107,
         108,
-      ],"resourceVersion":"1.0","name":"animation_11","tags":[],"resourceType":"GMTileAnimation",},
-    {"frames":[
+      ],},
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"animation_12","frames":[
         109,
         110,
         111,
         112,
-      ],"resourceVersion":"1.0","name":"animation_12","tags":[],"resourceType":"GMTileAnimation",},
-    {"frames":[
+      ],},
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"animation_13","frames":[
         113,
         114,
         115,
         116,
-      ],"resourceVersion":"1.0","name":"animation_13","tags":[],"resourceType":"GMTileAnimation",},
-    {"frames":[
+      ],},
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"animation_14","frames":[
         117,
         118,
         119,
         120,
-      ],"resourceVersion":"1.0","name":"animation_14","tags":[],"resourceType":"GMTileAnimation",},
-    {"frames":[
+      ],},
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"animation_15","frames":[
         121,
         122,
         123,
         124,
-      ],"resourceVersion":"1.0","name":"animation_15","tags":[],"resourceType":"GMTileAnimation",},
-    {"frames":[
+      ],},
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"animation_16","frames":[
         125,
         126,
         127,
         128,
-      ],"resourceVersion":"1.0","name":"animation_16","tags":[],"resourceType":"GMTileAnimation",},
-    {"frames":[
+      ],},
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"animation_17","frames":[
         129,
         130,
         131,
         132,
-      ],"resourceVersion":"1.0","name":"animation_17","tags":[],"resourceType":"GMTileAnimation",},
-    {"frames":[
+      ],},
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"animation_18","frames":[
         133,
         134,
         135,
         136,
-      ],"resourceVersion":"1.0","name":"animation_18","tags":[],"resourceType":"GMTileAnimation",},
-    {"frames":[
+      ],},
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"animation_19","frames":[
         137,
         138,
         139,
         140,
-      ],"resourceVersion":"1.0","name":"animation_19","tags":[],"resourceType":"GMTileAnimation",},
-    {"frames":[
+      ],},
+    {"resourceType":"GMTileAnimation","resourceVersion":"1.0","name":"animation_20","frames":[
         249,
         250,
         251,
         252,
-      ],"resourceVersion":"1.0","name":"animation_20","tags":[],"resourceType":"GMTileAnimation",},
+      ],},
   ],
   "tileAnimationSpeed": 5.0,
   "tileAnimation": {
@@ -1180,8 +1183,4 @@
     "name": "Tile Sets",
     "path": "folders/Tile Sets.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "tSeasideBlue",
-  "tags": [],
-  "resourceType": "GMTileSet",
 }
