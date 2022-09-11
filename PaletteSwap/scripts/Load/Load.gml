@@ -30,5 +30,7 @@ function Load(){
 	global.gearTotal = ini_read_real("savegame", "totalGears", 0);
 	global.coins = ini_read_real("savegame", "totalCoins", 0);
 	global.speedrunBests[0] = ini_read_real("savegame", "srPB0", -1);
+	global.speedrunBests[1] = ini_read_real("savegame", "srPB1", -1);
+	global.speedrunBests[2] = ini_read_real("savegame", "srPB2", -1);
 	ini_close();
 }
