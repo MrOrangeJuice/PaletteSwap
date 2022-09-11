@@ -31,5 +31,7 @@ function Save(){
 	ini_write_real("savegame", "totalGears", global.gearTotal);
 	ini_write_real("savegame", "totalCoins", global.coins);
 	ini_write_real("savegame", "srPB0", global.speedrunBests[0]);
+	ini_write_real("savegame", "srPB1", global.speedrunBests[1]);
+	ini_write_real("savegame", "srPB2", global.speedrunBests[2]);
 	ini_close();
 }
