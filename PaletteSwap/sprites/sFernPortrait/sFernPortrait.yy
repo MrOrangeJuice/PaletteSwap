@@ -28,6 +28,9 @@
   "gridY": 0,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dc74d668-8fdb-45b4-bea6-519ab163772f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b3cc54d6-7dd3-4bca-921f-ee8d34c9236e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8a457a2d-9ad7-4570-99aa-20015cf6a525",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"516fb212-2599-44ab-a11b-6c905b5968ee",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -39,12 +42,15 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 4.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"99c9c839-e0b6-4b7a-af7b-ce9958061b15","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dc74d668-8fdb-45b4-bea6-519ab163772f","path":"sprites/sFernPortrait/sFernPortrait.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0aa2e4da-c8f9-4337-b3a5-f62e822938fb","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b3cc54d6-7dd3-4bca-921f-ee8d34c9236e","path":"sprites/sFernPortrait/sFernPortrait.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c7031a52-b11a-4680-b3d9-f08d188b15c5","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8a457a2d-9ad7-4570-99aa-20015cf6a525","path":"sprites/sFernPortrait/sFernPortrait.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c740afb6-29c7-45f7-bb5e-1b7e5ab2dc73","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"516fb212-2599-44ab-a11b-6c905b5968ee","path":"sprites/sFernPortrait/sFernPortrait.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
