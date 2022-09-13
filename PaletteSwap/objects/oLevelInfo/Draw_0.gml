@@ -47,7 +47,8 @@ if(global.gearTotal >= levelRequirement)
 			}
 			break;
 		case "Shrine Time":
-			startingX = 8 * (global.speedrun1Gears - 1);
+			draw_text(x - 24, y + 12, global.speedrunBests[0] == -1 ? "No Time" : global.speedrunBests[0]/60);
+			startingX = 8 * (global.speedrun1Gears - 1) - 32;
 			for(i = 0; i < global.speedrun1Gears; i++)
 			{
 				if(!global.speedrun1GearArray[i]) draw_sprite(sGearSmallBlacked,global.color,x-startingX+(i*16),y+16);	
@@ -55,7 +56,8 @@ if(global.gearTotal >= levelRequirement)
 			}
 			break;
 		case "Speedside Glide":
-			startingX = 8 * (global.speedrun2Gears - 1);
+			draw_text(x - 24, y + 12, global.speedrunBests[1] == -1 ? "No Time" : global.speedrunBests[1]/60);
+			startingX = 8 * (global.speedrun2Gears - 1) - 32;
 			for(i = 0; i < global.speedrun2Gears; i++)
 			{
 				if(!global.speedrun2GearArray[i]) draw_sprite(sGearSmallBlacked,global.color,x-startingX+(i*16),y+16);	
@@ -63,7 +65,8 @@ if(global.gearTotal >= levelRequirement)
 			}
 			break;
 		case "Working Overtime":
-			startingX = 8 * (global.speedrun3Gears - 1);
+			draw_text(x - 24, y + 12, global.speedrunBests[2] == -1 ? "No Time" : global.speedrunBests[2]/60);
+			startingX = 8 * (global.speedrun3Gears - 1) - 32;
 			for(i = 0; i < global.speedrun3Gears; i++)
 			{
 				if(!global.speedrun3GearArray[i]) draw_sprite(sGearSmallBlacked,global.color,x-startingX+(i*16),y+16);	
