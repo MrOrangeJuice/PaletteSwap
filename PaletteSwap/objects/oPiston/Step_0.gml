@@ -11,7 +11,7 @@ if(crashingDown && place_meeting(x,y+1,oConveyer))
 
 if(crashingDown && place_meeting(x,y+1,oPlayer))
 {
-	if (!oPlayer.isInvulnerable) 
+	if (!oPlayer.isInvulnerable && oPlayer.bottomWall) 
 	{
 		audio_play_sound(snd_Damage, 5, false);
 		global.hp -= 100;
