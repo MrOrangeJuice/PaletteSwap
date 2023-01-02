@@ -50,6 +50,7 @@ global.factoryCompleted = false;
 // Options
 global.fullscreen = false;
 global.colorblind = false;
+global.music = true;
 
 global.templeGears = 4;
 global.seasideGears = 4;
