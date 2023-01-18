@@ -16,7 +16,7 @@
   ],
   "exportToGame": true,
   "supportedTargets": 113497714299118,
-  "extensionVersion": "1.1.5",
+  "extensionVersion": "1.1.3",
   "packageId": "",
   "productId": "",
   "author": "",
