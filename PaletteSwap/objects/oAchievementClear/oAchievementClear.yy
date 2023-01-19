@@ -1,11 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oVendingMachine",
-  "spriteId": {
-    "name": "sVendingMachine",
-    "path": "sprites/sVendingMachine/sVendingMachine.yy",
-  },
+  "name": "oAchievementClear",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
@@ -25,13 +22,12 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Interactables",
-    "path": "folders/Objects/Level Components/Interactables.yy",
+    "name": "Game Objects",
+    "path": "folders/Objects/Game Objects.yy",
   },
 }

@@ -202,6 +202,7 @@
     {"id":{"name":"sFernClimbLook","path":"sprites/sFernClimbLook/sFernClimbLook.yy",},"order":29,},
     {"id":{"name":"oHint8","path":"objects/oHint8/oHint8.yy",},"order":7,},
     {"id":{"name":"oHiddenArea","path":"objects/oHiddenArea/oHiddenArea.yy",},"order":4,},
+    {"id":{"name":"oAchievementClear","path":"objects/oAchievementClear/oAchievementClear.yy",},"order":16,},
     {"id":{"name":"oMap","path":"objects/oMap/oMap.yy",},"order":11,},
     {"id":{"name":"sNone","path":"sprites/sNone/sNone.yy",},"order":31,},
     {"id":{"name":"msc_FactoryLoop","path":"sounds/msc_FactoryLoop/msc_FactoryLoop.yy",},"order":4,},

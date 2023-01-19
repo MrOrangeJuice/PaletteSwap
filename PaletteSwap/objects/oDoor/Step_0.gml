@@ -66,6 +66,10 @@ if (instance_exists(oPlayer) && oPlayer.exiting && abs(oPlayer.x - x) <= 1.5 && 
 		if(room == rPaletteTemple)
 		{
 			global.templeCompleted = true;
+			if (!steam_get_achievement("temple"))
+			{
+				steam_set_achievement("temple");
+			}
 			audio_stop_sound(msc_Level);
 			if (instance_exists(oEddy)){
 				global.spawnHubDialog = true;
@@ -74,11 +78,19 @@ if (instance_exists(oPlayer) && oPlayer.exiting && abs(oPlayer.x - x) <= 1.5 && 
 		if(room == rAlexLevel)
 		{
 			global.seasideCompleted = true;
+			if (!steam_get_achievement("seaside"))
+			{
+				steam_set_achievement("seaside");
+			}
 			audio_stop_sound(msc_Seaside);
 		}
 		if(room == rFactory)
 		{
 			global.factoryCompleted = true;
+			if (!steam_get_achievement("factory"))
+			{
+				steam_set_achievement("factory");
+			}
 			audio_stop_sound(msc_FactoryIntro);
 			audio_stop_sound(msc_FactoryLoop);
 		}

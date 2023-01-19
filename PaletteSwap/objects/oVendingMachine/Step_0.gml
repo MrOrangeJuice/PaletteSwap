@@ -39,6 +39,13 @@ if(global.vendingGearsCollected < global.vendingGears)
 		global.coins -= 200;
 		global.gearTotal++;
 		global.vendingGearsCollected++;
+		if(global.gearTotal == 26)
+		{
+			if (!steam_get_achievement("100"))
+			{
+				steam_set_achievement("100");
+			}	
+		}
 		audio_play_sound(snd_Collectible,5,false);
 		Save();
 	}
