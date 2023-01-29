@@ -33,5 +33,8 @@ function Save(){
 	ini_write_real("savegame", "srPB0", global.speedrunBests[0]);
 	ini_write_real("savegame", "srPB1", global.speedrunBests[1]);
 	ini_write_real("savegame", "srPB2", global.speedrunBests[2]);
+	ini_write_real("options", "colorblindMode", global.colorblind);
+	ini_write_real("options", "musicToggle", global.music);
+	ini_write_real("options", "fullscreen", global.fullscreen);
 	ini_close();
 }
