@@ -122,6 +122,7 @@
     {"id":{"name":"snd_MenuSelect","path":"sounds/snd_MenuSelect/snd_MenuSelect.yy",},"order":11,},
     {"id":{"name":"sCollectibleBlacked","path":"sprites/sCollectibleBlacked/sCollectibleBlacked.yy",},"order":6,},
     {"id":{"name":"oSpeedrunEntry","path":"objects/oSpeedrunEntry/oSpeedrunEntry.yy",},"order":8,},
+    {"id":{"name":"sDustSmall","path":"sprites/sDustSmall/sDustSmall.yy",},"order":0,},
     {"id":{"name":"sFernPortraitBig","path":"sprites/sFernPortraitBig/sFernPortraitBig.yy",},"order":51,},
     {"id":{"name":"sBGMotelPurple","path":"sprites/sBGMotelPurple/sBGMotelPurple.yy",},"order":21,},
     {"id":{"name":"oMotel","path":"objects/oMotel/oMotel.yy",},"order":0,},

@@ -95,6 +95,7 @@
     {"name":"snd_MenuSelect","order":11,"path":"sounds/snd_MenuSelect/snd_MenuSelect.yy",},
     {"name":"sCollectibleBlacked","order":6,"path":"sprites/sCollectibleBlacked/sCollectibleBlacked.yy",},
     {"name":"oSpeedrunEntry","order":8,"path":"objects/oSpeedrunEntry/oSpeedrunEntry.yy",},
+    {"name":"sDustSmall","order":13,"path":"sprites/sDustSmall/sDustSmall.yy",},
     {"name":"sFernPortraitBig","order":51,"path":"sprites/sFernPortraitBig/sFernPortraitBig.yy",},
     {"name":"sBGMotelPurple","order":21,"path":"sprites/sBGMotelPurple/sBGMotelPurple.yy",},
     {"name":"sFernSwimNew","order":17,"path":"sprites/sFernSwimNew/sFernSwimNew.yy",},
