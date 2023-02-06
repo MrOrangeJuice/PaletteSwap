@@ -126,18 +126,6 @@ global.color_limit = 4; //limit scrollover
 
 global.color_count = 4;
 
-global.leftKey = ord("A");
-global.rightKey = ord("D");
-global.upKey = ord("W");
-global.downKey = ord("S");
-global.jumpKey = ord("P");
-global.jumpAltKey = vk_space;
-global.dashKey = ord("O");
-global.dashAltKey = vk_lshift;
-global.swapUpKey = ord("E");
-global.swapUpAltKey = ord("I");
-global.swapDownKey = ord("Q");
-global.swapDownAltKey = ord("U");
 //game scale settings
 global.gameWidth = 960;
 global.gameHeight = 540;

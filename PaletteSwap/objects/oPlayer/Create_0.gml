@@ -50,26 +50,10 @@ iFrameCount = 0;
 isInvulnerable = false;
 
 controller = 0;
-global.controller = 0;
 
 currentframe = 0;
 
-//fix crash on death >:(
-key_left = 0;
-key_right = 0;
 global.wasDashReset = false;
-leftKey = "A";
-rightKey = "D";
-upKey = "W";
-downKey = "S";
-jumpKey = "P";
-jumpAltKey = vk_space;
-dashKey = "O";
-dashAltKey = vk_lshift;
-swapDownKey = "Q";
-swapDownAltKey = "U";
-swapUpKey = "E";
-swapUpAltKey = "I";
 useCurrentDoorSpawn = false;
 
 //dialog settings

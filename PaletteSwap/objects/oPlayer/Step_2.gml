@@ -65,7 +65,7 @@ else if ((swimming && (vsp >= 0 || dashup)) || !swimming){
 }
 
 //skidding check
-if ( ((hsp > 2 || (skidding && hsp > 0)) && key_left) || ((hsp < -2 || (skidding && hsp < 0)) && key_right) ) {
+if ( ((hsp > 2 || (skidding && hsp > 0)) && global.leftKeyHeld) || ((hsp < -2 || (skidding && hsp < 0)) && global.rightKeyHeld) ) {
 	skidding = true;
 }
 else skidding = false;
@@ -114,7 +114,7 @@ if(!isDashing){
 		}
 	}
 		//reset red palette speed if not holding down a button
-		if (!(key_left && hsp < 0) && !(key_right && hsp > 0)){
+		if (!(global.leftKeyHeld && hsp < 0) && !(global.rightKeyHeld && hsp > 0)){
 			walksp = 4.5;
 		}
 		//speed decay
@@ -328,11 +328,11 @@ else{
 if (swimming) isRolling = false;
 
 if(place_meeting(x,y+1,oConveyer) && currentwalksp == 0) {
-	if (key_left && !key_right && place_meeting(x +1, y, oAbstractWallBase)) {
+	if (global.leftKeyHeld && !global.rightKeyHeld && place_meeting(x +1, y, oAbstractWallBase)) {
 		x--;
 	}
 
-	if (!key_left && key_right && place_meeting(x -1, y, oAbstractWallBase)) {
+	if (!global.leftKeyHeld && global.rightKeyHeld && place_meeting(x -1, y, oAbstractWallBase)) {
 		x++;
 	}
 }
