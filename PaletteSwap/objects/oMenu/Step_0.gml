@@ -93,6 +93,7 @@ if(key_select == 1){
 				menuActive = false;
 				break;
 			case 2:
+				steam_shutdown();
 				game_end();
 				break;
 				
@@ -120,7 +121,16 @@ if(key_select == 1){
 				else if(global.colorblind) global.colorblind = false;
 				break;
 			case 2:
-				SlideTransition(TRANS_MODE.GOTO, rStickTest);
+				if(!global.music)
+				{
+					global.music = true;
+					audio_play_sound(msc_Title,10,true);
+				}
+				else if(global.music) 
+				{
+					global.music = false;
+					audio_stop_sound(msc_Title);
+				}
 				break;
 			case 3:
 				if(saveDeleteConfirm == 0)
@@ -213,4 +223,14 @@ if(global.colorblind)
 else
 {
 	options[1] = "Color Blind: Off";	
+}
+
+// Update music toggle
+if(global.music)
+{
+	options[2] = "Music: On";	
+}
+else
+{
+	options[2] = "Music: Off";	
 }

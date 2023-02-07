@@ -48,8 +48,9 @@ global.seasideCompleted = false;
 global.factoryCompleted = false;
 
 // Options
-global.fullscreen = false;
+global.fullscreen = true;
 global.colorblind = false;
+global.music = true;
 
 global.templeGears = 4;
 global.seasideGears = 4;
@@ -133,3 +134,5 @@ global.currentDoorId = 0;
 global.useCurrentDoorSpawn = false;
 global.isEnteringDoor = false;
 global.skipPortalAnimation = false;
+
+steam_init();

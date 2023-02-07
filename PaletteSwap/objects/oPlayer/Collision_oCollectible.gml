@@ -23,5 +23,12 @@ else
 	{
 		global.factoryGearArray[other.gid] = true;	
 	}
+	if(global.gearTotal == 26)
+	{
+		if (!steam_get_achievement("100"))
+		{
+			steam_set_achievement("100");
+		}	
+	}
 }
 instance_destroy(other);
