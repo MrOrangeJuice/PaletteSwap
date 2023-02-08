@@ -527,7 +527,6 @@
     {"id":{"name":"oDashReset","path":"objects/oDashReset/oDashReset.yy",},"order":10,},
     {"id":{"name":"MainMenu","path":"rooms/MainMenu/MainMenu.yy",},"order":1,},
     {"id":{"name":"oLevelMusic","path":"objects/oLevelMusic/oLevelMusic.yy",},"order":1,},
-    {"id":{"name":"Steamworks","path":"extensions/Steamworks/Steamworks.yy",},"order":0,},
     {"id":{"name":"oLevelInfo","path":"objects/oLevelInfo/oLevelInfo.yy",},"order":3,},
     {"id":{"name":"sPlayerDashGreen","path":"sprites/sPlayerDashGreen/sPlayerDashGreen.yy",},"order":1,},
     {"id":{"name":"Load","path":"scripts/Load/Load.yy",},"order":11,},

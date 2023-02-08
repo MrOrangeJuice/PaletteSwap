@@ -93,7 +93,6 @@ if(key_select == 1){
 				menuActive = false;
 				break;
 			case 2:
-				steam_shutdown();
 				game_end();
 				break;
 				
