@@ -96,7 +96,7 @@ if(key_select == 1){
 		}
 		else
 		{
-			steam_shutdown();
+			//steam_shutdown();
 			game_end();
 		}
 		break;

@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function Save(){
 	instance_create_layer(-64,-64,"Instances",oAutosave);
-	file_bin_open("savedata.sav", 1)
+	saveFile = file_bin_open("savedata.sav", 1);
 	saveData = buffer_create(16384, buffer_grow, 1);
 	buffer_write(saveData, buffer_bool, global.tutorialCompleted);
 	buffer_write(saveData, buffer_bool, global.templeCompleted);
@@ -36,8 +36,8 @@ function Save(){
 	buffer_write(saveData, buffer_bool, global.colorblind);
 	buffer_write(saveData, buffer_bool, global.music);
 	buffer_write(saveData, buffer_bool, global.fullscreen);
-	file_bin_write_byte("savedata.sav", saveData);
-	file_bin_close("savedata.sav");
+	file_bin_write_byte(saveFile, saveData);
+	file_bin_close(saveFile);
 	ini_open("savedata.ini");
 	ini_write_real("savegame", "tutorialCompleted", global.tutorialCompleted);
 	ini_write_real("savegame", "templeCompleted", global.templeCompleted);
