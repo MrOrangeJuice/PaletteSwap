@@ -2,6 +2,42 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function Save(){
 	instance_create_layer(-64,-64,"Instances",oAutosave);
+	file_bin_open("savedata.sav", 1)
+	saveData = buffer_create(16384, buffer_grow, 1);
+	buffer_write(saveData, buffer_bool, global.tutorialCompleted);
+	buffer_write(saveData, buffer_bool, global.templeCompleted);
+	buffer_write(saveData, buffer_bool, global.seasideCompleted);
+	buffer_write(saveData, buffer_bool, global.factoryCompleted);
+	buffer_write(saveData, buffer_bool, global.allPalettesUnlocked);
+	buffer_write(saveData, buffer_bool, global.templeGearArray[0]);
+	buffer_write(saveData, buffer_bool, global.templeGearArray[1]);
+	buffer_write(saveData, buffer_bool, global.templeGearArray[2]);
+	buffer_write(saveData, buffer_bool, global.templeGearArray[3]);
+	buffer_write(saveData, buffer_bool, global.seasideGearArray[0]);
+	buffer_write(saveData, buffer_bool, global.seasideGearArray[1]);
+	buffer_write(saveData, buffer_bool, global.seasideGearArray[2]);
+	buffer_write(saveData, buffer_bool, global.seasideGearArray[3]);
+	buffer_write(saveData, buffer_bool, global.factoryGearArray[0]);
+	buffer_write(saveData, buffer_bool, global.factoryGearArray[1]);
+	buffer_write(saveData, buffer_bool, global.factoryGearArray[2]);
+	buffer_write(saveData, buffer_bool, global.factoryGearArray[3]);
+	buffer_write(saveData, buffer_bool, global.speedrun1GearArray[0]);
+	buffer_write(saveData, buffer_bool, global.speedrun1GearArray[1]);
+	buffer_write(saveData, buffer_bool, global.speedrun2GearArray[0]);
+	buffer_write(saveData, buffer_bool, global.speedrun2GearArray[1]);
+	buffer_write(saveData, buffer_bool, global.speedrun3GearArray[0]);
+	buffer_write(saveData, buffer_bool, global.speedrun3GearArray[1]);
+	buffer_write(saveData, buffer_u64, global.vendingGearsCollected);
+	buffer_write(saveData, buffer_u64, global.gearTotal);
+	buffer_write(saveData, buffer_u64, global.coins);
+	buffer_write(saveData, buffer_f64, global.speedrunBests[0]);
+	buffer_write(saveData, buffer_f64, global.speedrunBests[1]);
+	buffer_write(saveData, buffer_f64, global.speedrunBests[2]);
+	buffer_write(saveData, buffer_bool, global.colorblind);
+	buffer_write(saveData, buffer_bool, global.music);
+	buffer_write(saveData, buffer_bool, global.fullscreen);
+	file_bin_write_byte("savedata.sav", saveData);
+	file_bin_close("savedata.sav");
 	ini_open("savedata.ini");
 	ini_write_real("savegame", "tutorialCompleted", global.tutorialCompleted);
 	ini_write_real("savegame", "templeCompleted", global.templeCompleted);
