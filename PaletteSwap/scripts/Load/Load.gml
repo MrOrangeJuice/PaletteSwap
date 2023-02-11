@@ -5,6 +5,7 @@ function Load(){
 	saveData = file_bin_read_byte(saveFile);
 	file_bin_close(saveFile);
 	ini_open("savedata.ini");
+	buffer_read()
 	global.tutorialCompleted = ini_read_real("savegame", "tutorialCompleted", 0);
 	global.templeCompleted = ini_read_real("savegame", "templeCompleted", 0);
 	global.seasideCompleted = ini_read_real("savegame", "seasideCompleted", 0);
