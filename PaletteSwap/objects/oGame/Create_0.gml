@@ -146,5 +146,3 @@ global.currentDoorId = 0;
 global.useCurrentDoorSpawn = false;
 global.isEnteringDoor = false;
 global.skipPortalAnimation = false;
-
-steam_init();

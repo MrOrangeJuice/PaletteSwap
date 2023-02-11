@@ -142,6 +142,8 @@ if (jumpBuffer > 0) && (key_jump) && (canJump)
 	}
 	jumped = true;
 	global.knockedBack = false;
+	// Spawn VFX
+	instance_create_layer(x,y+8,"FX",oDustFX);
 }
 
 // Check if player can dash
