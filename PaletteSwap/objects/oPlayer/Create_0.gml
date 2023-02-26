@@ -16,6 +16,7 @@ swimup = false;
 currentwalksp = 0;
 airborne = false;
 prevAirborne = false;
+prevFrameAirborne = false;
 canDash = true;
 isDashing = false;
 isRolling = false;
