@@ -144,9 +144,11 @@ if(!isDashing){
 	}
 	
 	// Check for landing
-	if(!airborne && prevFrameAirborne)
+	if(!airborne && prevFrameAirborne && !landing)
 	{
 		if(!swimming && !wallgrab) instance_create_layer(x,y+8,"FX",oDustSmallFX);
+		landing = true;
+		alarm[5] = room_speed * 0.1;
 	}
 	
 	// palette wall Collision

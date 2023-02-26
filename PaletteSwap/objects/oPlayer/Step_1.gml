@@ -372,6 +372,10 @@ if (global.knockedBack == true)
 {
 	SwapSprite(sFernHit);
 }
+else if(landing)
+{
+	SwapSprite(sFernLand);	
+}
 else if(wallgrab)
 {
 	if((image_xscale == 1 && key_left) || (image_xscale == -1 && key_right))
