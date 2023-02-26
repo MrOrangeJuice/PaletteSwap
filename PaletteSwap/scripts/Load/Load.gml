@@ -2,13 +2,17 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function Load(){
 	if (file_exists("savedata.ini")) {
-		return ConvertOldSave();
+		return ConvertIniSave();
 	}
 	if (file_exists("saveData.sav") == false){
 		return false;
 	}
 	saveData = buffer_load("saveData.sav");
 	buffer_seek(saveData, buffer_seek_start, 0);
+	saveVersionNum = buffer_read(saveData, buffer_string);
+	if (saveVersionNum != global.versionNum) {
+		
+	}
 	global.tutorialCompleted = buffer_read(saveData, buffer_bool);
 	global.templeCompleted = buffer_read(saveData, buffer_bool);
 	global.seasideCompleted = buffer_read(saveData, buffer_bool);

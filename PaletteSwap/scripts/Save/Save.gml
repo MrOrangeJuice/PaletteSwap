@@ -3,6 +3,7 @@
 function Save(){
 	instance_create_layer(-64,-64,"Instances",oAutosave);
 	saveData = buffer_create(16384, buffer_grow, 1);
+	buffer_write(saveData, buffer_string, global.versionNum);
 	buffer_write(saveData, buffer_bool, global.tutorialCompleted);
 	buffer_write(saveData, buffer_bool, global.templeCompleted);
 	buffer_write(saveData, buffer_bool, global.seasideCompleted);

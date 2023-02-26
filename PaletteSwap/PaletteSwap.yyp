@@ -243,7 +243,7 @@
     {"id":{"name":"sLeverBlockLong","path":"sprites/sLeverBlockLong/sLeverBlockLong.yy",},"order":35,},
     {"id":{"name":"sBackToMenu","path":"sprites/sBackToMenu/sBackToMenu.yy",},"order":28,},
     {"id":{"name":"sBlownAir2","path":"sprites/sBlownAir2/sBlownAir2.yy",},"order":3,},
-    {"id":{"name":"ConvertOldSave","path":"scripts/ConvertOldSave/ConvertOldSave.yy",},"order":16,},
+    {"id":{"name":"ConvertIniSave","path":"scripts/ConvertIniSave/ConvertIniSave.yy",},"order":16,},
     {"id":{"name":"sTitle","path":"sprites/sTitle/sTitle.yy",},"order":7,},
     {"id":{"name":"sHint4","path":"sprites/sHint4/sHint4.yy",},"order":3,},
     {"id":{"name":"rTestJulien","path":"rooms/rTestJulien/rTestJulien.yy",},"order":3,},
