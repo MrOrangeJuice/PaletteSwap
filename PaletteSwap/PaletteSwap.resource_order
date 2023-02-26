@@ -205,6 +205,7 @@
     {"name":"sLeverBlockLong","order":35,"path":"sprites/sLeverBlockLong/sLeverBlockLong.yy",},
     {"name":"sBackToMenu","order":28,"path":"sprites/sBackToMenu/sBackToMenu.yy",},
     {"name":"sBlownAir2","order":3,"path":"sprites/sBlownAir2/sBlownAir2.yy",},
+    {"name":"ConvertOldSave","order":16,"path":"scripts/ConvertOldSave/ConvertOldSave.yy",},
     {"name":"sTitle","order":7,"path":"sprites/sTitle/sTitle.yy",},
     {"name":"sHint4","order":3,"path":"sprites/sHint4/sHint4.yy",},
     {"name":"rTestJulien","order":3,"path":"rooms/rTestJulien/rTestJulien.yy",},
