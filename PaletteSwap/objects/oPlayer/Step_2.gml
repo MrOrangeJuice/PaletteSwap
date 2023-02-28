@@ -130,6 +130,7 @@ if(!isDashing){
 	
 	x = x + hsp;
 
+
 	// Vertical Collision
 	if (place_meeting(x,y+vsp,oWall))
 	{
@@ -141,6 +142,15 @@ if(!isDashing){
 	{
 		prevAirborne = true;
 	}
+	
+	// Check for landing
+	if(!airborne && prevFrameAirborne && !landing)
+	{
+		if(!swimming && !wallgrab) instance_create_layer(x,y+8,"FX",oDustSmallFX);
+		landing = true;
+		alarm[5] = room_speed * 0.1;
+	}
+	
 	// palette wall Collision
 	if (place_meeting(x,y+vsp,oPaletteWall))
 	{
@@ -326,6 +336,8 @@ else{
 }
 //stop infinite underwater roll
 if (swimming) isRolling = false;
+
+prevFrameAirborne = airborne;
 
 if(place_meeting(x,y+1,oConveyer) && currentwalksp == 0) {
 	if (key_left && !key_right && place_meeting(x +1, y, oAbstractWallBase)) {

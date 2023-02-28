@@ -132,6 +132,8 @@ if (jumpBuffer > 0) && (key_jump) && (canJump)
 	if(global.canControlTimer < 0) vsp = -10;
 	audio_play_sound(snd_Jump, 5, false);
 	canJump = false;
+	// Spawn VFX
+	if(!swimming && !wallgrab) instance_create_layer(x,y+8,"FX",oDustFX);
 	if (wallgrab && global.canControlTimer < 0){
 		wallgrab = false;
 		vsp = -5.8;
@@ -142,10 +144,7 @@ if (jumpBuffer > 0) && (key_jump) && (canJump)
 	}
 	jumped = true;
 	global.knockedBack = false;
-	// Spawn VFX
-	instance_create_layer(x,y+8,"FX",oDustFX);
 }
-
 // Check if player can dash
 if (isDashing && !wallgrab && !global.wasDashReset)
 {
@@ -372,6 +371,10 @@ image_angle = 0;
 if (global.knockedBack == true)
 {
 	SwapSprite(sFernHit);
+}
+else if(landing)
+{
+	SwapSprite(sFernLand);	
 }
 else if(wallgrab)
 {
