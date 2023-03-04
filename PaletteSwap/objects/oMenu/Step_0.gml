@@ -93,7 +93,6 @@ if(key_select == 1){
 				menuActive = false;
 				break;
 			case 2:
-				steam_shutdown();
 				game_end();
 				break;
 				
@@ -139,8 +138,8 @@ if(key_select == 1){
 				}
 				else if(saveDeleteConfirm == 1)
 				{
-					if(file_exists("savedata.ini")){
-						file_delete("savedata.ini");
+					if(file_exists("saveData.sav")){
+						file_delete("saveData.sav");
 					}
 					saveDeleteConfirm++;
 				}

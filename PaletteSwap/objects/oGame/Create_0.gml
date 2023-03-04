@@ -1,6 +1,8 @@
 #macro SAVEFILE "Save.ini"
 display_set_gui_size(RES_W,RES_H);
 
+global.versionNum = "0.4.5";
+
 // Create basic global variables.
 global.coins = 0;
 global.time = 0;
@@ -134,5 +136,3 @@ global.currentDoorId = 0;
 global.useCurrentDoorSpawn = false;
 global.isEnteringDoor = false;
 global.skipPortalAnimation = false;
-
-steam_init();

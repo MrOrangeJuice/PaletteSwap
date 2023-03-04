@@ -3,10 +3,6 @@
 if(room == rTutorial2)
 {
 	global.tutorialCompleted = true;
-	if (!steam_get_achievement("tutorial"))
-	{
-		steam_set_achievement("tutorial");
-	}
 }
 //used for momentum motel and old shack
 if (useDoorSpawn){

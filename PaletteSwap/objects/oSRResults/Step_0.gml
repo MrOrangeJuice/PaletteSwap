@@ -10,45 +10,10 @@ if (!displayed && room == rSRResults){
 bigstring = "Time: " + string_format(finishedTime/room_speed, 0, 2) +"\n";
 if (finishedTime < time2 && (pb > time2 || pb == -1)){
 	global.gearTotal++;
-	switch(srLevelID)
-	{
-		case 0:
-			if (!steam_get_achievement("templespeed"))
-			{
-				steam_set_achievement("templespeed");
-			}
-			break;
-		case 1:
-			if (!steam_get_achievement("seasidespeed"))
-			{
-				steam_set_achievement("seasidespeed");
-			}
-			break;
-		case 2:
-			if (!steam_get_achievement("factoryspeed"))
-			{
-				steam_set_achievement("factoryspeed");
-			}
-			break;
-	}
-	if(global.gearTotal == 26)
-	{
-		if (!steam_get_achievement("100"))
-		{
-			steam_set_achievement("100");
-		}	
-	}
 	bigstring += "You beat the time of "+ string_format(time2/room_speed, 0, 2) + "!\n";
 }
 if (finishedTime < time1 && (pb > time1 || pb == -1)){
 	global.gearTotal++;
-	if(global.gearTotal == 26)
-	{
-		if (!steam_get_achievement("100"))
-		{
-			steam_set_achievement("100");
-		}	
-	}
 	bigstring += "You beat the time of "+ string_format(time1/room_speed, 0, 2) + "!\n";
 }
 //srLevelID will be used to access speedrunBests array, and maybe other speedrun level specific things
