@@ -470,6 +470,7 @@
     {"id":{"name":"sFernIcon","path":"sprites/sFernIcon/sFernIcon.yy",},"order":0,},
     {"id":{"name":"oDustFX","path":"objects/oDustFX/oDustFX.yy",},"order":6,},
     {"id":{"name":"rTutorialOLD","path":"rooms/rTutorialOLD/rTutorialOLD.yy",},"order":10,},
+    {"id":{"name":"sHealthBarFrameVillager","path":"sprites/sHealthBarFrameVillager/sHealthBarFrameVillager.yy",},"order":30,},
     {"id":{"name":"rHub","path":"rooms/rHub/rHub.yy",},"order":17,},
     {"id":{"name":"sWallMany","path":"sprites/sWallMany/sWallMany.yy",},"order":13,},
     {"id":{"name":"oLever","path":"objects/oLever/oLever.yy",},"order":7,},
