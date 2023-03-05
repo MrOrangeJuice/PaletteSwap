@@ -144,7 +144,7 @@ if(!isDashing){
 	}
 	
 	// Check for landing
-	if(!airborne && prevFrameAirborne && !landing)
+	if(!airborne && prevFrameAirborne && !landing && !swimming)
 	{
 		if(!swimming && !wallgrab) instance_create_layer(x,y+8,"FX",oDustSmallFX);
 		landing = true;
@@ -338,6 +338,25 @@ else{
 if (swimming) isRolling = false;
 
 prevFrameAirborne = airborne;
+
+// Spawn bubbles if swimming
+if(swimming)
+{
+	randomize();
+	// Spawn way more if dashing
+	if(dashleft || dashup || dashdown || dashright)
+	{
+		bubbleChance = irandom_range(1,3);
+	}
+	else
+	{
+		bubbleChance = irandom_range(1,15);
+	}
+	if(bubbleChance == 2)
+	{
+		instance_create_layer(x+random_range(-8,8),y+random_range(-8,8),"Bubbles",oBubble);	
+	}
+}
 
 if(place_meeting(x,y+1,oConveyer) && currentwalksp == 0) {
 	if (key_left && !key_right && place_meeting(x +1, y, oAbstractWallBase)) {
