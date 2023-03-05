@@ -375,9 +375,9 @@ if (global.knockedBack == true)
 {
 	SwapSprite(sFernHit);
 }
-else if(landing)
+else if(landing && abs(lastAirspeed) >= 8)
 {
-	SwapSprite(sFernLand);	
+	SwapSprite(sFernLand);
 }
 else if(wallgrab)
 {

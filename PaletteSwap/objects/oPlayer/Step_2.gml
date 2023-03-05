@@ -338,6 +338,9 @@ else{
 if (swimming) isRolling = false;
 
 prevFrameAirborne = airborne;
+if (vsp != 0){
+	lastAirspeed = vsp;
+}
 
 if(place_meeting(x,y+1,oConveyer) && currentwalksp == 0) {
 	if (global.leftKeyHeld && !global.rightKeyHeld && place_meeting(x +1, y, oAbstractWallBase)) {

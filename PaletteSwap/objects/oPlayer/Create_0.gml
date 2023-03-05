@@ -17,6 +17,7 @@ currentwalksp = 0;
 airborne = false;
 prevAirborne = false;
 prevFrameAirborne = false;
+lastAirspeed = 0;
 landing = false;
 canDash = true;
 isDashing = false;

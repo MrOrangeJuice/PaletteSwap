@@ -6,12 +6,12 @@ if(instance_exists(oPlayer))
 
 	with (playerRef){ //THIS BLOCK EXECUTES AS THE PLAYER
 		if (!isDashing){
-			if (place_meeting(x + hsp,y,other) && !place_meeting(x,y,other) && !other.dirVert && sign(hsp) != other.dir)
+			if (place_meeting(x + hsp,y,other) && !other.dirVert && sign(hsp) != other.dir)
 				{
 					DoCollision(other, false);
 					currentwalksp = 0;
 				}
-			if (place_meeting(x,y + vsp,other) && !place_meeting(x,y,other) && other.dirVert && sign(vsp) == other.dir)
+			if (place_meeting(x,y + vsp,other) && other.dirVert && sign(vsp) == other.dir)
 				{
 					//if (place_meeting(x,y,other) && vsp > 0) y -= 6; //this may no longer be needed with new place_meeting
 					DoCollision(other, true);
