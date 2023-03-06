@@ -337,6 +337,7 @@
     {"id":{"name":"sBGCloudsPurple","path":"sprites/sBGCloudsPurple/sBGCloudsPurple.yy",},"order":14,},
     {"id":{"name":"sFlyingSpawn","path":"sprites/sFlyingSpawn/sFlyingSpawn.yy",},"order":1,},
     {"id":{"name":"oPhysicsCrate","path":"objects/oPhysicsCrate/oPhysicsCrate.yy",},"order":18,},
+    {"id":{"name":"oBubble","path":"objects/oBubble/oBubble.yy",},"order":8,},
     {"id":{"name":"snd_Lever","path":"sounds/snd_Lever/snd_Lever.yy",},"order":35,},
     {"id":{"name":"snd_Pause2","path":"sounds/snd_Pause2/snd_Pause2.yy",},"order":14,},
     {"id":{"name":"snd_Flip","path":"sounds/snd_Flip/snd_Flip.yy",},"order":19,},

@@ -294,6 +294,7 @@
     {"name":"sBGCloudsPurple","order":14,"path":"sprites/sBGCloudsPurple/sBGCloudsPurple.yy",},
     {"name":"sFlyingSpawn","order":1,"path":"sprites/sFlyingSpawn/sFlyingSpawn.yy",},
     {"name":"oPhysicsCrate","order":18,"path":"objects/oPhysicsCrate/oPhysicsCrate.yy",},
+    {"name":"oBubble","order":8,"path":"objects/oBubble/oBubble.yy",},
     {"name":"snd_Lever","order":35,"path":"sounds/snd_Lever/snd_Lever.yy",},
     {"name":"snd_Pause2","order":14,"path":"sounds/snd_Pause2/snd_Pause2.yy",},
     {"name":"snd_Flip","order":19,"path":"sounds/snd_Flip/snd_Flip.yy",},

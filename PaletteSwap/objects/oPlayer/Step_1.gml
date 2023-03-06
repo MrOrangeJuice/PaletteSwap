@@ -488,6 +488,8 @@ if (global.swapUpKeyPress && !swimming && room != rTutorial){
 	ScreenShake(2,10);
 	canSwap = false;
 	alarm[2] = room_speed * 0.2;
+	// Destroy all bubbles
+	instance_destroy(oBubble);
 }
 if (global.swapDownKeyPress && !swimming && room != rTutorial){
 	global.color--;
@@ -498,6 +500,8 @@ if (global.swapDownKeyPress && !swimming && room != rTutorial){
 	ScreenShake(2,10);
 	canSwap = false;
 	alarm[2] = room_speed * 0.2;
+	// Destroy all bubbles
+	instance_destroy(oBubble);
 }
 
 // Check if we need to change the player's dash because they changed palettes.
