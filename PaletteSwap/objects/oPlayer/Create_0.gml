@@ -1,5 +1,15 @@
 /// @description Initialize Variables
 
+key_left = 0;
+key_right = 0;
+key_jump = 0;
+key_jump_released = 0;
+key_down = 0;
+key_dash = 0;
+key_up = 0;
+key_swap_down = 0;
+key_swap_up	= 0;
+
 hsp = 0;
 vsp = 0;
 grv = 0.4;

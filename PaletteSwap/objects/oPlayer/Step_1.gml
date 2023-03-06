@@ -1,74 +1,16 @@
 /// @description Update Physics
 // Get Player Input
-/*
+
 if (global.canControlTimer < 0) {
-key_left = keyboard_check(global.leftKey);
-key_right = keyboard_check(global.rightKey);
-key_jump = keyboard_check(global.jumpKey) || keyboard_check(global.jumpAltKey);
-key_jump_released = keyboard_check_released(global.jumpKey) || keyboard_check_released(global.jumpAltKey);
-key_down = keyboard_check(global.downKey);
-key_dash = 0;
-if(window_has_focus()) key_dash = keyboard_check_pressed(global.dashKey) || keyboard_check_pressed(global.dashAltKey);
-key_up = keyboard_check(global.upKey);
-key_swap_down = keyboard_check_pressed(global.swapDownKey) || keyboard_check_pressed(global.swapDownAltKey);
-key_swap_up = keyboard_check_pressed(global.swapUpKey) || keyboard_check_pressed(global.swapUpAltKey);
-
-if (key_left) || (key_right) || (key_jump) || (key_dash) || (key_down) || (key_up) || (key_jump_released) || (key_swap_up) || (key_swap_down)
-{
-	global.controller = 0;
-}
-
-// Gamepad input
-if (gamepad_axis_value(0,gp_axislh) < -0.4 || gamepad_button_check(0,gp_padl) || gamepad_axis_value(4,gp_axislh) < -0.4 || gamepad_button_check(4,gp_padl))
-{
-	key_left = 1;
-	global.controller = 1;
-}
-
-if (gamepad_axis_value(0,gp_axislh) > 0.4 || gamepad_button_check(0,gp_padr) || gamepad_axis_value(4,gp_axislh) > 0.4 || gamepad_button_check(4,gp_padr))
-{
-	key_right = 1;
-	global.controller = 1;
-}
-												//better input priority determination on analog stick
-if ( (gamepad_axis_value(0,gp_axislv) > 0.4 && gamepad_axis_value(0,gp_axislv) > abs(gamepad_axis_value(0,gp_axislh))) || gamepad_button_check(0,gp_padd) || (gamepad_axis_value(4,gp_axislv) > 0.4 && gamepad_axis_value(4,gp_axislv) > abs(gamepad_axis_value(4,gp_axislh))) || gamepad_button_check(4,gp_padd))
-{
-	key_down = 1;
-	global.controller = 1;
-}
-
-if (gamepad_button_check(0,gp_face1) || gamepad_button_check(4,gp_face1) && !global.textUp)
-{
-	key_jump = 1;
-	global.controller = 1;
-}
-if (gamepad_button_check_released(0,gp_face1) || gamepad_button_check_released(4,gp_face1) && !global.textUp)
-{
-	key_jump_released = 1;
-}
-
-if (gamepad_button_check_pressed(0,gp_face3) || gamepad_button_check_pressed(0,gp_face2) || gamepad_button_check_pressed(4,gp_face3) || gamepad_button_check_pressed(4,gp_face2))
-{
-	key_dash = 1;
-	global.controller = 1;
-}
-
-if ( (gamepad_axis_value(0,gp_axislv) < -0.4 && gamepad_axis_value(0,gp_axislv) < -1 * abs(gamepad_axis_value(0,gp_axislh))) || gamepad_button_check(0,gp_padu) || (gamepad_axis_value(4,gp_axislv) < -0.4 && gamepad_axis_value(4,gp_axislv) < -1 * abs(gamepad_axis_value(4,gp_axislh))) || gamepad_button_check(4,gp_padu))
-{
-	key_up = 1;
-	global.controller = 1;
-}
-
-if (gamepad_button_check_pressed(0,gp_shoulderl) || gamepad_button_check_pressed(0,gp_shoulderl) || gamepad_button_check_pressed(4,gp_shoulderl) || gamepad_button_check_pressed(4,gp_shoulderl))
-{
-	key_swap_down = 1;
-	global.controller = 1;
-}
-if (gamepad_button_check_pressed(0,gp_shoulderr) || gamepad_button_check_pressed(0,gp_shoulderr) || gamepad_button_check_pressed(4,gp_shoulderr) || gamepad_button_check_pressed(4,gp_shoulderr))
-{
-	key_swap_up = 1;
-	global.controller = 1;
-}
+key_left = global.leftKeyHeld;
+key_right = global.rightKeyHeld;
+key_jump = global.jumpKeyHeld;
+key_jump_released = global.jumpKeyRelease;
+key_down = global.downKeyHeld;
+key_dash = global.dashKeyPress;
+key_up = global.upKeyHeld;
+key_swap_down = global.swapDownKeyPress;
+key_swap_up = global.swapUpKeyPress;
 } else {
 key_left = 0;
 key_right = 0;
@@ -76,27 +18,25 @@ key_jump = 0;
 key_jump_released = 0;
 key_down = 0;
 key_dash = 0;
-key_dash = 0;
 key_up = 0;
 key_swap_down = 0;
 key_swap_up	= 0;
 }
 
-*/
 
 // Prevent player from swapping in certain rooms
 if(room == rTutorial || room == rTutorial2 || !canSwap)
 {
-	global.swapUpKeyPress = 0;
-	global.swapDownKeyPress = 0;
+	key_swap_up = 0;
+	key_swap_down = 0;
 }
 
 if(!global.paused && !global.textUp && !global.isEnteringDoor){
 
 //orient sprite
-if ((global.rightKeyHeld - global.leftKeyHeld) != 0 && !isDashing && !wallgrab) image_xscale = sign(global.rightKeyHeld - global.leftKeyHeld);
+if ((key_right - key_left) != 0 && !isDashing && !wallgrab) image_xscale = sign(key_right - key_left);
 // If player doesn't release jump, they can't jump again
-if(global.jumpKeyRelease)
+if(key_jump_released)
 {
 	canJump = true;
 }
@@ -113,13 +53,13 @@ if ((!sidewall || global.color != 2 || bottomWall) && wallgrab){
 
 // Decrement jump buffer
 jumpBuffer -= 1;
-if (jumpBuffer > 0) && (global.jumpKeyHeld) && (canJump)
+if (jumpBuffer > 0) && (key_jump) && (canJump)
 {
 	jumpBuffer = 0;
 	if (swimming && isDashing)
 	{
 		thsp = 0;
-		if (global.leftKeyHeld && dashleft || global.rightKeyHeld && dashright){
+		if (key_left && dashleft || key_right && dashright){
 			thsp = dashsp;
 		}
 		DashReset();
@@ -163,7 +103,7 @@ else
 }
 
 // Check dash
-if (global.dashKeyPress && canDash)
+if (key_dash && canDash)
 {
 	isDashing = true;
 	global.knockedBack = false;
@@ -177,10 +117,10 @@ if (global.dashKeyPress && canDash)
 
 // If player is dashing, don't worry about other inputs
 if (wallgrab && !isDashing){
-	if (global.upKeyHeld && !global.downKeyHeld){
+	if (key_up && !key_down){
 		 vsp = -2;
 	}
-	else if (global.downKeyHeld && !global.upKeyHeld){
+	else if (key_down && !key_up){
 		 vsp = 2;
 	}
 	else vsp = 0;
@@ -188,7 +128,7 @@ if (wallgrab && !isDashing){
 else if(!isDashing)
 {
 	// Build up speed depending on inputs
-	if(global.leftKeyHeld && !global.rightKeyHeld)
+	if(key_left && !key_right)
 	{
 		currentwalksp -= 0.25;
 		if(currentwalksp < -walksp)
@@ -196,7 +136,7 @@ else if(!isDashing)
 			currentwalksp = -walksp;
 		}
 	}
-	if(global.rightKeyHeld && !global.leftKeyHeld)
+	if(key_right && !key_left)
 	{
 		currentwalksp += 0.25;
 		if(currentwalksp > walksp)
@@ -205,7 +145,7 @@ else if(!isDashing)
 		}
 	}
 	// Slow down if not moving
-	if (!(global.leftKeyHeld || global.rightKeyHeld) || (global.leftKeyHeld && global.rightKeyHeld))
+	if (!(key_left || key_right) || (key_left && key_right))
 	{
 		if(currentwalksp < 0)
 		{
@@ -230,7 +170,7 @@ else if(!isDashing)
 	vsp = vsp + grv;
 
 	// Variable jump height
-	if vsp < 0 && (!(global.jumpKeyHeld)) && jumpVar //if you're moving upwards in the air but not holding down jump
+	if vsp < 0 && (!(key_jump)) && jumpVar //if you're moving upwards in the air but not holding down jump
 	{
 		vsp *= 0.85; //essentially, divide your vertical speed
 	}
@@ -261,18 +201,18 @@ else
 			image_xscale *= -1;
 		}
 		//normal dashes
-		else if(global.downKeyHeld && (airborne || swimming))
+		else if(key_down && (airborne || swimming))
 		{
 			dashdown = true;	
 		}
-		else if (global.upKeyHeld && swimming){
+		else if (key_up && swimming){
 			dashup = true;	
 		}
-		else if(global.rightKeyHeld && !global.leftKeyHeld)
+		else if(key_right && !key_left)
 		{
 			dashright = true;	
 		}
-		else if(global.leftKeyHeld && !global.rightKeyHeld)
+		else if(key_left && !key_right)
 		{
 			dashleft = true;	
 		}
@@ -324,7 +264,7 @@ else
 		// Maintain momentum if holding direction
 		if(dashleft)
 		{
-			if(global.leftKeyHeld)
+			if(key_left)
 			{
 				currentwalksp = -6;
 			}
@@ -335,7 +275,7 @@ else
 		}
 		if(dashright)
 		{
-			if(global.rightKeyHeld)
+			if(key_right)
 			{
 				currentwalksp = 6;
 			}
@@ -381,15 +321,15 @@ else if(landing && abs(lastAirspeed) >= 8)
 }
 else if(wallgrab)
 {
-	if((image_xscale == 1 && global.leftKeyHeld) || (image_xscale == -1 && global.rightKeyHeld))
+	if((image_xscale == 1 && key_left) || (image_xscale == -1 && key_right))
 	{
 		SwapSprite(sFernClimbLook);	
 	}
-	else if(global.upKeyHeld)
+	else if(key_up)
 	{
 		SwapSprite(sFernClimbUp);	
 	}
-	else if(global.downKeyHeld)
+	else if(key_down)
 	{
 		SwapSprite(sFernClimbDown);	
 	}
@@ -449,7 +389,7 @@ else
 		else
 		{
 			//idle
-		if (sign(hsp) == 0 && ( !(global.leftKeyHeld || global.rightKeyHeld) || (global.leftKeyHeld && global.rightKeyHeld) ) && !exiting)
+		if (sign(hsp) == 0 && ( !(key_left || key_right) || (key_left && key_right) ) && !exiting)
 		{
 			//sprite_index = sFernIdle;
 			SwapSprite(sFernIdle2);
@@ -479,7 +419,7 @@ else
 
 
 // Palette Swap
-if (global.swapUpKeyPress && !swimming && room != rTutorial){
+if (key_swap_up && !swimming && room != rTutorial){
 	global.color++;
 	if (global.color >= global.color_limit) global.color = 0;
 	// Create swapping effects
@@ -491,7 +431,7 @@ if (global.swapUpKeyPress && !swimming && room != rTutorial){
 	// Destroy all bubbles
 	instance_destroy(oBubble);
 }
-if (global.swapDownKeyPress && !swimming && room != rTutorial){
+if (key_swap_down && !swimming && room != rTutorial){
 	global.color--;
 	if (global.color < 0) global.color = global.color_limit - 1;
 	// Create swapping effects
@@ -507,7 +447,7 @@ if (global.swapDownKeyPress && !swimming && room != rTutorial){
 // Check if we need to change the player's dash because they changed palettes.
 AdjustDashParams();
 
-if ((global.swapUpKeyPress || global.swapDownKeyPress) && swimming)
+if ((key_swap_up || key_swap_down) && swimming)
 {
 	audio_play_sound(snd_NoSwap,5,false);
 	ScreenShake(2,10);
