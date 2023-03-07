@@ -428,6 +428,7 @@
     {"name":"sInteriorRed","order":26,"path":"sprites/sInteriorRed/sInteriorRed.yy",},
     {"name":"oHiddenLayerManager","order":12,"path":"objects/oHiddenLayerManager/oHiddenLayerManager.yy",},
     {"name":"sHint5","order":4,"path":"sprites/sHint5/sHint5.yy",},
+    {"name":"sPoster","order":53,"path":"sprites/sPoster/sPoster.yy",},
     {"name":"oShip","order":5,"path":"objects/oShip/oShip.yy",},
     {"name":"fGame","order":1,"path":"fonts/fGame/fGame.yy",},
     {"name":"sEddyCutsceneNew","order":7,"path":"sprites/sEddyCutsceneNew/sEddyCutsceneNew.yy",},
