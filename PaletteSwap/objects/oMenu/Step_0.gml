@@ -138,8 +138,8 @@ if(key_select == 1){
 				}
 				else if(saveDeleteConfirm == 1)
 				{
-					if(file_exists("saveData.sav")){
-						file_delete("saveData.sav");
+					if(file_exists("saveData.ini")){
+						file_delete("saveData.ini");
 					}
 					saveDeleteConfirm++;
 				}

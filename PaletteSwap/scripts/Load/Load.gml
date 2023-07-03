@@ -34,7 +34,7 @@ function Load(){
     global.speedrunBests[1] = ini_read_real("savegame", "srPB1", -1);
     global.speedrunBests[2] = ini_read_real("savegame", "srPB2", -1);
 	global.colorblind = ini_read_real("savegame", "colorblind", false);
-	global.music = ini_read_real("savegame", "music", false);
+	global.music = ini_read_real("savegame", "music", true);
 	global.fullscreen = ini_read_real("savegame", "fullscreen", false);
     ini_close();
 }
