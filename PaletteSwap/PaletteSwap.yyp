@@ -79,7 +79,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.2.0.71",
+    "IDEVersion": "2023.4.0.84",
   },
   "resources": [
     {"id":{"name":"rOldTutorialCopy","path":"rooms/rOldTutorialCopy/rOldTutorialCopy.yy",},},
@@ -115,6 +115,7 @@
     {"id":{"name":"sKindaBeegTitle","path":"sprites/sKindaBeegTitle/sKindaBeegTitle.yy",},},
     {"id":{"name":"sFernClimb","path":"sprites/sFernClimb/sFernClimb.yy",},},
     {"id":{"name":"sBigRed","path":"sprites/sBigRed/sBigRed.yy",},},
+    {"id":{"name":"NewLoad","path":"scripts/NewLoad/NewLoad.yy",},},
     {"id":{"name":"rTutorial2OLD","path":"rooms/rTutorial2OLD/rTutorial2OLD.yy",},},
     {"id":{"name":"oButton","path":"objects/oButton/oButton.yy",},},
     {"id":{"name":"sTitleNew","path":"sprites/sTitleNew/sTitleNew.yy",},},
@@ -359,6 +360,7 @@
     {"id":{"name":"oTutorialJump","path":"objects/oTutorialJump/oTutorialJump.yy",},},
     {"id":{"name":"sDust","path":"sprites/sDust/sDust.yy",},},
     {"id":{"name":"oGunWeasel","path":"objects/oGunWeasel/oGunWeasel.yy",},},
+    {"id":{"name":"NewSave","path":"scripts/NewSave/NewSave.yy",},},
     {"id":{"name":"sOneWay","path":"sprites/sOneWay/sOneWay.yy",},},
     {"id":{"name":"oShadow","path":"sprites/oShadow/oShadow.yy",},},
     {"id":{"name":"sBGCloudsBlue","path":"sprites/sBGCloudsBlue/sBGCloudsBlue.yy",},},
