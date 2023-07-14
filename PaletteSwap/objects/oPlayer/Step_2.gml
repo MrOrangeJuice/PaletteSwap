@@ -147,7 +147,7 @@ if(!isDashing){
 	if(!airborne && prevFrameAirborne && !landing && !swimming)
 	{
 		if(!swimming && !wallgrab) instance_create_layer(x,y+8,"FX",oDustSmallFX);
-		landing = true;
+		//landing = true;
 		alarm[5] = room_speed * 0.1;
 	}
 	

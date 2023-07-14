@@ -79,7 +79,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.4.0.84",
+    "IDEVersion": "2023.6.0.89",
   },
   "resources": [
     {"id":{"name":"rOldTutorialCopy","path":"rooms/rOldTutorialCopy/rOldTutorialCopy.yy",},},
@@ -177,6 +177,7 @@
     {"id":{"name":"sPiston","path":"sprites/sPiston/sPiston.yy",},},
     {"id":{"name":"snd_Laser","path":"sounds/snd_Laser/snd_Laser.yy",},},
     {"id":{"name":"oConveyer","path":"objects/oConveyer/oConveyer.yy",},},
+    {"id":{"name":"oDashStartFX","path":"objects/oDashStartFX/oDashStartFX.yy",},},
     {"id":{"name":"snd_Dialogue","path":"sounds/snd_Dialogue/snd_Dialogue.yy",},},
     {"id":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},},
     {"id":{"name":"oHint7","path":"objects/oHint7/oHint7.yy",},},
@@ -435,6 +436,7 @@
     {"id":{"name":"rExample","path":"rooms/rExample/rExample.yy",},},
     {"id":{"name":"oEnemyFX","path":"objects/oEnemyFX/oEnemyFX.yy",},},
     {"id":{"name":"sOil","path":"sprites/sOil/sOil.yy",},},
+    {"id":{"name":"sDashVFX","path":"sprites/sDashVFX/sDashVFX.yy",},},
     {"id":{"name":"oStainedGlass","path":"objects/oStainedGlass/oStainedGlass.yy",},},
     {"id":{"name":"sBGFactory","path":"sprites/sBGFactory/sBGFactory.yy",},},
     {"id":{"name":"oCoin","path":"objects/oCoin/oCoin.yy",},},
