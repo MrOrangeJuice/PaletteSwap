@@ -3,6 +3,22 @@
 if(room != MainMenu && room != rLevelSelect && room != rThanks && room != rStickTest && room != rCredits && !global.textUp)
 {
 	// healthbar
+	// Decide to use the villager healthbar or normal one
+	player = instance_find(oPlayer, 0);
+	playerDeath = instance_find(oPlayerDeath, 0);
+	villager = instance_find(oVillager, 0);
+	if (instance_exists(oVillager)) {
+		if (villager.collected == true) draw_sprite_stretched(sHealthBarFrameVillager, global.color, 4, 4, 80, 16);
+		else draw_sprite_stretched(sHealthBarFrame, global.color, 4, 4, 64, 16);
+	}
+	else if (instance_exists(oPlayerDeath)) {
+		if (playerDeath.villager == true) draw_sprite_stretched(sHealthBarFrameVillager, global.color, 4, 4, 80, 16);
+		else draw_sprite_stretched(sHealthBarFrame, global.color, 4, 4, 64, 16);
+	}
+	else if (instance_exists(oPlayer)) {
+		if (player.villager == true) draw_sprite_stretched(sHealthBarFrameVillager, global.color, 4, 4, 80, 16);
+		else draw_sprite_stretched(sHealthBarFrame, global.color, 4, 4, 64, 16);
+	}
 	draw_sprite_stretched(sHealthBarBase, global.color, 4, 4, 64, 16);
 	draw_sprite_stretched(sHealthbar, global.color, 5, 5, (global.hp / global.maxHP) * 60, 14);
 	draw_sprite(sColorBlindDisplay, global.color, 4, 4);
