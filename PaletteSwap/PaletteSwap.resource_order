@@ -79,7 +79,6 @@
     {"name":"sSeasideBlue","order":1,"path":"sprites/sSeasideBlue/sSeasideBlue.yy",},
     {"name":"sGlass","order":5,"path":"sprites/sGlass/sGlass.yy",},
     {"name":"rNewHub","order":31,"path":"rooms/rNewHub/rNewHub.yy",},
-    {"name":"oInputManager","order":16,"path":"objects/oInputManager/oInputManager.yy",},
     {"name":"sPlayerIdleGreen","order":3,"path":"sprites/sPlayerIdleGreen/sPlayerIdleGreen.yy",},
     {"name":"rSpeedrun5","order":34,"path":"rooms/rSpeedrun5/rSpeedrun5.yy",},
     {"name":"snd_PlayerDamage","order":29,"path":"sounds/snd_PlayerDamage/snd_PlayerDamage.yy",},
