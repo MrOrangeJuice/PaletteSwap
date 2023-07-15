@@ -2,18 +2,8 @@
 // You can write your code in this editor
 
 // Get input
-key_enter = keyboard_check_pressed(ord("X"));
+key_enter = global.signKeyPress;
 
-if (key_enter)
-{
-	global.controller = 0;
-}
-
-if (gamepad_button_check_pressed(0,gp_face4) || gamepad_button_check_pressed(4,gp_face4))
-{
-	key_enter = 1;
-	global.controller = 1;
-}
 
 if(place_meeting(x, y, oPlayer))
 {

@@ -18,7 +18,7 @@ global.p3KeyPress = keyboard_check_pressed(palette3KeyStore);
 global.p4KeyPress = keyboard_check_pressed(palette4KeyStore);
 
 global.signKeyPress = keyboard_check_pressed(continueKeyStore);
-global.continueRelease = keyboard_check_released(continueKeyStore) || keyboard_check_released(continueAltKeyStore)|| global.jumpKeyRelease;
+global.continueRelease = keyboard_check_released(continueKeyStore) || keyboard_check_released(continueAltKeyStore) || global.jumpKeyRelease;
 
 if (keyboard_check(vk_anykey))
 {
@@ -78,25 +78,44 @@ if (gamepad_button_check_pressed(0,gp_shoulderr) || gamepad_button_check_pressed
 	global.controller = 1;
 }
 
+if (p1cooldown > 0) p1cooldown--;
 if ( (gamepad_axis_value(0,gp_axisrv) < -0.4 && gamepad_axis_value(0,gp_axisrv) < -1 * abs(gamepad_axis_value(0,gp_axisrh))) || (gamepad_axis_value(4,gp_axisrv) < -0.4 && gamepad_axis_value(4,gp_axisrv) < -1 * abs(gamepad_axis_value(4,gp_axisrh))) )
 { //up
-	global.p1KeyPress = 1;
-	global.controller = 1;
+	if (p1cooldown <= 0){
+		global.p1KeyPress = 1;
+		global.controller = 1;
+	}
+	p1cooldown = maxinputcooldown;
 }
+
+if (p2cooldown > 0) p2cooldown--;
 if ( (gamepad_axis_value(0,gp_axisrv) > 0.4 && gamepad_axis_value(0,gp_axisrv) > abs(gamepad_axis_value(0,gp_axisrh))) || (gamepad_axis_value(4,gp_axisrv) > 0.4 && gamepad_axis_value(4,gp_axisrv) > abs(gamepad_axis_value(4,gp_axisrh))) )
 { //down
-	global.p3KeyPress = 1;
-	global.controller = 1;
+	if (p2cooldown <= 0){
+		global.p3KeyPress = 1;
+		global.controller = 1;
+	}
+	p2cooldown = maxinputcooldown;
 }
+
+if (p3cooldown > 0) p3cooldown--;
 if ( (gamepad_axis_value(0,gp_axisrh) < -0.4 && gamepad_axis_value(0,gp_axisrh) < -1 * abs(gamepad_axis_value(0,gp_axisrv))) || (gamepad_axis_value(4,gp_axisrh) < -0.4 && gamepad_axis_value(4,gp_axisrh) < -1 * abs(gamepad_axis_value(4,gp_axisrv))) )
 { //left
-	global.p4KeyPress = 1;
-	global.controller = 1;
+	if (p3cooldown <= 0){
+		global.p4KeyPress = 1;
+		global.controller = 1;
+	}
+	p3cooldown = maxinputcooldown;
 }
+
+if (p4cooldown > 0) p4cooldown--;
 if ( (gamepad_axis_value(0,gp_axisrh) > 0.4 && gamepad_axis_value(0,gp_axisrh) > abs(gamepad_axis_value(0,gp_axisrv))) || (gamepad_axis_value(4,gp_axisrh) > 0.4 && gamepad_axis_value(4,gp_axisrh) > abs(gamepad_axis_value(4,gp_axisrv))) )
 { //right
-	global.p2KeyPress = 1;
-	global.controller = 1;
+	if (p4cooldown <= 0){
+		global.p2KeyPress = 1;
+		global.controller = 1;
+	}
+	p4cooldown = maxinputcooldown;
 }
 
 

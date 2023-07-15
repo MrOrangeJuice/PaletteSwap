@@ -11,6 +11,10 @@ key_dash = global.dashKeyPress;
 key_up = global.upKeyHeld;
 key_swap_down = global.swapDownKeyPress;
 key_swap_up = global.swapUpKeyPress;
+key_swap_one = global.p1KeyPress;
+key_swap_two = global.p2KeyPress;
+key_swap_three = global.p3KeyPress;
+key_swap_four = global.p4KeyPress;
 } else {
 key_left = 0;
 key_right = 0;
@@ -21,6 +25,10 @@ key_dash = 0;
 key_up = 0;
 key_swap_down = 0;
 key_swap_up	= 0;
+key_swap_one = 0;
+key_swap_two = 0;
+key_swap_three = 0;
+key_swap_four = 0;
 }
 
 
@@ -420,34 +428,28 @@ else
 
 // Palette Swap
 if (key_swap_up && !swimming && room != rTutorial){
-	global.color++;
-	if (global.color >= global.color_limit) global.color = 0;
-	// Create swapping effects
-	instance_create_layer(x,y,"FX",oRift);
-	audio_play_sound(snd_Swap,5,false);
-	ScreenShake(2,10);
-	canSwap = false;
-	alarm[2] = room_speed * 0.2;
-	// Destroy all bubbles
-	instance_destroy(oBubble);
+	SwapPalette(self, global.color + 1);
 }
 if (key_swap_down && !swimming && room != rTutorial){
-	global.color--;
-	if (global.color < 0) global.color = global.color_limit - 1;
-	// Create swapping effects
-	instance_create_layer(x,y,"FX",oRift);
-	audio_play_sound(snd_Swap,5,false);
-	ScreenShake(2,10);
-	canSwap = false;
-	alarm[2] = room_speed * 0.2;
-	// Destroy all bubbles
-	instance_destroy(oBubble);
+	SwapPalette(self, global.color - 1);
+}
+if (key_swap_one && global.color != 0 && !swimming && room != rTutorial){
+	SwapPalette(self, 0);
+}
+if (key_swap_two && global.color != 1 && !swimming && global.color_limit > 1 && room != rTutorial){
+	SwapPalette(self, 1);
+}
+if (key_swap_three && global.color != 2 && !swimming && global.color_limit > 2  && room != rTutorial){
+	SwapPalette(self, 2);
+}
+if (key_swap_four && global.color != 3 && !swimming && global.color_limit > 3  && room != rTutorial){
+	SwapPalette(self, 3);
 }
 
 // Check if we need to change the player's dash because they changed palettes.
 AdjustDashParams();
 
-if ((key_swap_up || key_swap_down) && swimming)
+if ((key_swap_up || key_swap_down || key_swap_one || key_swap_two || key_swap_three || key_swap_four) && swimming)
 {
 	audio_play_sound(snd_NoSwap,5,false);
 	ScreenShake(2,10);

@@ -9,6 +9,10 @@ key_dash = 0;
 key_up = 0;
 key_swap_down = 0;
 key_swap_up	= 0;
+key_swap_one = 0;
+key_swap_two = 0;
+key_swap_three = 0;
+key_swap_four = 0;
 
 hsp = 0;
 vsp = 0;

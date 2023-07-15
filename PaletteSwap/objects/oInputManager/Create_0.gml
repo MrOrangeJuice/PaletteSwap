@@ -16,6 +16,12 @@ global.p4KeyPress = 0;
 global.signKeyPress = 0;
 global.continueRelease = 0;
 
+p1cooldown = 0;
+p2cooldown = 0;
+p3cooldown = 0;
+p4cooldown = 0;
+maxinputcooldown = 12;
+
 leftKeyStore = ord("A");
 rightKeyStore = ord("D");
 upKeyStore = ord("W");
@@ -32,7 +38,7 @@ palette1KeyStore = ord("1");
 palette2KeyStore = ord("2");
 palette3KeyStore = ord("3");
 palette4KeyStore = ord("4");
-continueKeyStore = ord("x");
+continueKeyStore = ord("X");
 continueAltKeyStore = vk_enter;
 
 global.controller = 0;
