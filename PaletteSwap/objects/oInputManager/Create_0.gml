@@ -1,5 +1,9 @@
 /// @description Init input
 // You can write your code in this editor
+global.leftKeyPressed = 0;
+global.rightKeyPressed = 0;
+global.upKeyPressed = 0;
+global.downKeyPressed = 0;
 global.leftKeyHeld = 0;
 global.rightKeyHeld = 0;
 global.upKeyHeld = 0;
@@ -15,12 +19,7 @@ global.p3KeyPress = 0;
 global.p4KeyPress = 0;
 global.signKeyPress = 0;
 global.continueRelease = 0;
-
-p1cooldown = 0;
-p2cooldown = 0;
-p3cooldown = 0;
-p4cooldown = 0;
-maxinputcooldown = 12;
+global.menuSelect = 0;
 
 leftKeyStore = ord("A");
 rightKeyStore = ord("D");
@@ -42,3 +41,12 @@ continueKeyStore = ord("X");
 continueAltKeyStore = vk_enter;
 
 global.controller = 0;
+
+lastLeftAxis0vValue = 0;
+lastLeftAxis4vValue = 0;
+lastLeftAxis0hValue = 0;
+lastLeftAxis4hValue = 0;
+lastRightAxis0vValue = 0;
+lastRightAxis4vValue = 0;
+lastRightAxis0hValue = 0;
+lastRightAxis4hValue = 0;

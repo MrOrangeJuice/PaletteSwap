@@ -21,3 +21,7 @@ menuBottom = ((RES_H / 2) + ((buttonHeight) * buttonCount) - 50);
 prevMenuIndex = 0;
 menuOffset = -2;
 instance_deactivate_object(oPauseButtons);
+
+key_down = 0;
+key_up = 0;
+key_select = 0;

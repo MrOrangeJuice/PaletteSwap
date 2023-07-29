@@ -20,3 +20,6 @@ menuIndex = 0;
 lastSelected = 0;
 lastAxis0Value = 0;
 lastAxis4Value = 0;
+key_left = 0;
+key_right = 0;
+key_select = 0;

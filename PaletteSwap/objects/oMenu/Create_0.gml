@@ -32,3 +32,7 @@ menuBottom = menuY + ((buttonHeight) * buttonCount);
 optionBottom = optionsY + ((buttonHeight) * optionCount);
 menuOffset = 12;
 optionOffset = 2;
+
+key_down = 0;
+key_up = 0;
+key_select = 0;
