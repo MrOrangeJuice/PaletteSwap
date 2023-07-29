@@ -37,6 +37,10 @@ if(room == rTutorial || room == rTutorial2 || !canSwap)
 {
 	key_swap_up = 0;
 	key_swap_down = 0;
+	key_swap_one = 0;
+	key_swap_two = 0;
+	key_swap_three = 0;
+	key_swap_four = 0;
 }
 
 if(!global.paused && !global.textUp && !global.isEnteringDoor){
