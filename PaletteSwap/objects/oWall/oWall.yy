@@ -33,5 +33,5 @@
     "path": "sprites/sWallGreen/sWallGreen.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

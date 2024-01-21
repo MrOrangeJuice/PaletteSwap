@@ -79,7 +79,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.6.0.89",
+    "IDEVersion": "2023.11.1.129",
   },
   "resources": [
     {"id":{"name":"rOldTutorialCopy","path":"rooms/rOldTutorialCopy/rOldTutorialCopy.yy",},},
@@ -331,6 +331,7 @@
     {"id":{"name":"snd_Coin","path":"sounds/snd_Coin/snd_Coin.yy",},},
     {"id":{"name":"sFernSwimUp","path":"sprites/sFernSwimUp/sFernSwimUp.yy",},},
     {"id":{"name":"sCheckpoint2","path":"sprites/sCheckpoint2/sCheckpoint2.yy",},},
+    {"id":{"name":"oRedCartridge","path":"objects/oRedCartridge/oRedCartridge.yy",},},
     {"id":{"name":"sLever","path":"sprites/sLever/sLever.yy",},},
     {"id":{"name":"sFernJumpDown","path":"sprites/sFernJumpDown/sFernJumpDown.yy",},},
     {"id":{"name":"tInteriorRed","path":"tilesets/tInteriorRed/tInteriorRed.yy",},},
@@ -596,6 +597,7 @@
     {"id":{"name":"sCoin","path":"sprites/sCoin/sCoin.yy",},},
     {"id":{"name":"sFernRoll","path":"sprites/sFernRoll/sFernRoll.yy",},},
     {"id":{"name":"oFactoryMusic","path":"objects/oFactoryMusic/oFactoryMusic.yy",},},
+    {"id":{"name":"sRedCartridge","path":"sprites/sRedCartridge/sRedCartridge.yy",},},
     {"id":{"name":"sFernPalette","path":"sprites/sFernPalette/sFernPalette.yy",},},
     {"id":{"name":"sFlyingExplode","path":"sprites/sFlyingExplode/sFlyingExplode.yy",},},
     {"id":{"name":"sIcicleGrow","path":"sprites/sIcicleGrow/sIcicleGrow.yy",},},
@@ -717,6 +719,7 @@
     {"roomId":{"name":"rSpeedrun5","path":"rooms/rSpeedrun5/rSpeedrun5.yy",},},
     {"roomId":{"name":"rCredits","path":"rooms/rCredits/rCredits.yy",},},
   ],
+  "templateType": null,
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
   ],

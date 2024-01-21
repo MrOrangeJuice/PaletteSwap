@@ -52,4 +52,7 @@ switch(levelTo)
 			case "rShack":
 				SlideTransition(TRANS_MODE.GOTO, rShack);
 				break;
+			case "rVolcano":
+				SlideTransition(TRANS_MODE.GOTO, rVolcano);
+				break;
 		}

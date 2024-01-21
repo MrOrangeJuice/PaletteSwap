@@ -1,20 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oPaletteWall",
+  "name": "oRedCartridge",
   "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Walls",
-    "path": "folders/Objects/Walls.yy",
+    "name": "Level Components",
+    "path": "folders/Objects/Level Components.yy",
   },
-  "parentObjectId": {
-    "name": "oAbstractWallBase",
-    "path": "objects/oAbstractWallBase/oAbstractWallBase.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -31,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sWallMany",
-    "path": "sprites/sWallMany/sWallMany.yy",
+    "name": "sRedCartridge",
+    "path": "sprites/sRedCartridge/sRedCartridge.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -65,6 +65,9 @@ if(place_meeting(x, y, oPlayer))
 			case "rShack":
 				info.levelName = "?????";
 				break;
+			case "rVolcano":
+				info.levelName = "Volcano";
+				break;
 		}
 		info.levelRequirement = gearRequirement;
 		createdInfo = true;

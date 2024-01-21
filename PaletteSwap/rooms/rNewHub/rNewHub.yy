@@ -255,6 +255,7 @@
     {"name":"inst_A919DC8","path":"rooms/rNewHub/rNewHub.yy",},
     {"name":"inst_69499367","path":"rooms/rNewHub/rNewHub.yy",},
     {"name":"inst_2810749C","path":"rooms/rNewHub/rNewHub.yy",},
+    {"name":"inst_1656AB4B","path":"rooms/rNewHub/rNewHub.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -358,6 +359,12 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oLevelDoor","path":"objects/oLevelDoor/oLevelDoor.yy",},"propertyId":{"name":"doorId","path":"objects/oLevelDoor/oLevelDoor.yy",},"value":"6",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oLevelDoor","path":"objects/oLevelDoor/oLevelDoor.yy",},"propertyId":{"name":"skipPortalAnim","path":"objects/oLevelDoor/oLevelDoor.yy",},"value":"True",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1208.0,"y":2640.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1656AB4B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oLevelDoor","path":"objects/oLevelDoor/oLevelDoor.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oLevelDoor","path":"objects/oLevelDoor/oLevelDoor.yy",},"propertyId":{"name":"gearRequirement","path":"objects/oLevelDoor/oLevelDoor.yy",},"value":"5",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oLevelDoor","path":"objects/oLevelDoor/oLevelDoor.yy",},"propertyId":{"name":"levelTo","path":"objects/oLevelDoor/oLevelDoor.yy",},"value":"rVolcano",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oLevelDoor","path":"objects/oLevelDoor/oLevelDoor.yy",},"propertyId":{"name":"set_player_spawn","path":"objects/oLevelDoor/oLevelDoor.yy",},"value":"True",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oLevelDoor","path":"objects/oLevelDoor/oLevelDoor.yy",},"propertyId":{"name":"doorId","path":"objects/oLevelDoor/oLevelDoor.yy",},"value":"10",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3072.0,"y":1504.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Enemies","depth":900,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Coins","depth":1000,"effectEnabled":true,"effectType":null,"gridX":8,"gridY":8,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
